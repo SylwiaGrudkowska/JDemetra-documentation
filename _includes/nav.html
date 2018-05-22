@@ -1,0 +1,39 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign url_parts_size = url_parts | size %}
+{% assign rm = url_parts | last %}
+{% assign base_url = page.url | replace: rm %}
+
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand" href="/">{{ site.title }}</a>
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">	
+		<ul class="navbar-nav mr-auto">
+		{% for menu in site.data.navigation %}
+		{% if menu.subitems != null %}
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="{{ menu.href }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ menu.title }}</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown01">
+				{% for item in menu.subitems %}
+				{% capture url %}{{ menu.href }}{{ item.href }}{% endcapture %}
+				{% if page.url contains url %}
+				{% capture current_folder %}{{ url }}{% endcapture %}
+				{% endif %}
+					<a class="dropdown-item" href="{{ menu.href }}{{ item.href }}">{{ item.title }}</a>
+				{% endfor %}
+				</div>
+			</li>
+		{% else %}
+			{% if page.url contains menu.href %}
+			{% capture current_folder %}{{ menu.href }}{% endcapture %}
+			{% endif %}
+			<li {% if menu.href == page.url %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+				<a class="nav-link" href="{{ menu.href }}">{{ menu.title }}</a>
+			</li>
+		{% endif %}
+		{% endfor %}
+		</ul>
+	    <a href="http://www.github.com/jdemetra/"><i class="fa fa-github" style="font-size:36px;color:white;"></i></a>
+	</div>
+</nav>
