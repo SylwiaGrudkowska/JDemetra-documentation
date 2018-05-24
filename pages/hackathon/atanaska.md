@@ -6,8 +6,6 @@ order: 0
 ---
 
 
-#### ARIMA
-
 Identification of the ARIMA part of the RegARIMA model can be done either in an automatic way or by the user who specifies the appropriate parameters. This choice is controlled by the **Automatic** option and results in a list of parameters specific to the chosen ARIMA identification procedure. When the **Automatic** option is marked, the order of the ARIMA model results from the automatic identification procedure. The maximum order of the regular polynomials is 3, and the maximum order of seasonal polynomials is 1. The parameters available for automatic model identification are presented below.
 
 **Automatic** (*automdl; ami;idif, inic*)
