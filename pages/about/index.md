@@ -76,8 +76,7 @@ the core application. The main features that can be enriched are listed
 below:
 * Time series providers: the users could add their own modules to 
 download series from other databases; 
-* Diagnostics on seasonal 
-adjustment; 
+* Diagnostics on seasonal adjustment; 
 * Output of SA processing.
  
 As mentioned above, the API could be used to generate completely independent applications, but also to 
@@ -98,10 +97,10 @@ operating systems that support the Java VM (Virtual Machine) such as:
 JDemetra+ runs on the Java SE Runtime Environment (JRE) 
 version 8 update 21 or later. JRE can be downloaded to the user’s 
 platform from one of the sites listed below: 
-* [Windows, Linux and 
+	* [Windows, Linux and 
 Solaris](http://www.oracle.com/technetwork/java/javase/downloads/index.h 
 tml) 
-* Mac OS: [Mac OS X 10.6](http://support.apple.com/downloads), [OS X Lion 
+	* Mac OS: [Mac OS X 10.6](http://support.apple.com/downloads), [OS X Lion 
 10.7](http://www.oracle.com/technetwork/java/javase/downloads/index.html). 
 
 ##### Footnotes
