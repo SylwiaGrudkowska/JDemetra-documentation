@@ -10,7 +10,7 @@ order: 0
 
 Identification of the ARIMA part of the RegARIMA model can be done either in an automatic way or by the user who specifies the appropriate parameters. This choice is controlled by the **Automatic** option and results in a list of parameters specific to the chosen ARIMA identification procedure. When the **Automatic** option is marked, the order of the ARIMA model results from the automatic identification procedure. The maximum order of the regular polynomials is 3, and the maximum order of seasonal polynomials is 1. The parameters available for automatic model identification are presented below.
 
-**Automatic** (*automdl; ami;idif, inic**)
+**Automatic** (*automdl; ami;idif, inic*)
 
 When marked it enables an automatic modelling of the ARIMA model to be performed.
 
@@ -49,6 +49,6 @@ If marked, it compares the model identified by the automatic procedure to the de
 
 #### Footnotes
 [^25]: Cancellation issue is described in 7.1.1.6.
-[^26]: A time series {x_t} is said to have a unit root if it can be modelled as {x_t} = {\phi_0} + {\phi_1} {y_t -1} and {\phi_1}=1
+[^26]: A time series {x_t} is said to have a unit root if it can be modelled as {x} rsub {t} = {ϕ} rsub {0} + {ϕ} rsub {1} {y} rsub {t -1} and {\phi_1}=1
 [^27]: See 7.1.1
 [^28]: See 7.6.1.3
