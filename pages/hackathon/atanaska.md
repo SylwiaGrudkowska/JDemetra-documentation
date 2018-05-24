@@ -49,6 +49,6 @@ If marked, it compares the model identified by the automatic procedure to the de
 
 #### Footnotes
 [^25]: Cancellation issue is described in 7.1.1.6.
-[^26]: A time series {x_t} is said to have a unit root if it can be modelled as {x} rsub {t} = {ϕ} rsub {0} + {ϕ} rsub {1} {y} rsub {t -1} and {\phi_1}=1
+[^26]: A time series $x_t$ is said to have a unit root if it can be modelled as $x_t = \phi_0 + \phi_1 y_{t -1}$ and $\phi_1 = 1$
 [^27]: See 7.1.1
 [^28]: See 7.6.1.3
