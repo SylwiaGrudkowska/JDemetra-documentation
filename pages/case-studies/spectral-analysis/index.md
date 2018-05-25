@@ -55,26 +55,25 @@ graph are distributed randomly around a constant without any visible
 peaks, then it is highly probable that the series is a random process.
 The presence of seasonality in a time series is manifested in a spectral
 graph by the peaks on the seasonal frequencies.
-
-1.  The spectral graphs are available from: *Tools* → *Spectral
-    analysis.*
-![Text](/assets/img/user-guide/image1_342.jpeg)
-
-Figure 3.152: Tools for spectral analysis. 
-
-
-2.  When the first option is chosen JDemetra+ displays an empty
-    *Auto-regressive spectrum* window. To start an analysis drag a
-    single time series from the *Providers* window and drop it into the
-    *Drop data here* area.
-
 ![Text](/assets/img/user-guide/image2_342.jpeg)
 
 
 Figure 3.153: Launching an auto-regressive spectrum.
 
-3.  An auto-regressive spectrum graph available in JDemetra+ is based on
-    the relevant tool from the X-13ARIMA-SEATS program. It shows the
+
+1. The spectral graphs are available from: *Tools* → *Spectral
+    analysis.*
+	![Text](/assets/img/user-guide/image1_342.jpeg)
+
+	Figure 3.152: Tools for spectral analysis.
+
+2. When the first option is chosen JDemetra+ displays an empty
+    *Auto-regressive spectrum* window. To start an analysis drag a
+    single time series from the *Providers* window and drop it into the
+    *Drop data here* area.
+	
+3. An auto-regressive spectrum graph available in JDemetra+ is based on 
+the relevant tool from the X-13ARIMA-SEATS program. It shows the
     spectral density (spectrum) function, which reformulates the content
     of the stationary time series' autocovariances in terms of
     amplitudes at frequencies of half a cycle per month or less. The
@@ -114,7 +113,7 @@ The *Auto-regressive - Properties* window contains the following options:
 
 Figure 3.154: Auto-regressive spectrum's properties.
 
-4.  The seasonality test described above uses an empirical criterion to
+The seasonality test described above uses an empirical criterion to
     check whether the series has a seasonal component that is
     predictable (stable) enough that it can be estimated with reasonable
     success. The peak has to be greater than median of the 61 spectrum
