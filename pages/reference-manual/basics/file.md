@@ -20,19 +20,5 @@ It offers the following functions:
 {: .text-center}
 ![Text](/assets/img/reference-manual/manual/File menu.jpg)
 
-### Container
 
-Container includes basic tools to display the data. The following items 
-are available: Chart, Grid, Growth Chart and List. 
-
-{: .text-center}
-![Text](/assets/img/reference-manual/manual/Container tools.jpg)
-
-Several containers 
-can be opened at the same time. Each of them may include multiple time 
-series. Chart plots the time series as a graph. This function opens an 
-empty window. To display a given series drag and drop the series from 
-the Providers window into it. More than one series can be displayed on 
-one graph. The chart is automatically rescaled after adding a new 
-series. 
 
