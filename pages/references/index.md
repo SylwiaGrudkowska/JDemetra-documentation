@@ -1,5 +1,5 @@
 ---
-layout: left-menu
+layout: default
 title: References
 order: 5
 ---

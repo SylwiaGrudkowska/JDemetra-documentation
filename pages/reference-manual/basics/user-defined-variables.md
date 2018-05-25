@@ -25,7 +25,7 @@ series from a browser of the application, available in the *Providers* window. D
 re-opened. Therefore, it is a convenient solution for creating 
 user-defined variables.
 
-The video below presents how to import the variables to JDemetra/+.
+The video below presents how to import the variables to JDemetra+.
 
 By default, JDemetra+ uses the conventions Vars_#number to name 
 the series in the *Variables* window. The original name of the series is 

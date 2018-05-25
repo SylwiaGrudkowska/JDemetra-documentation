@@ -8,7 +8,7 @@ order: 2
 The *Calendars* section of the *Workspace* stores default and user-defined 
 calendars used for detecting and estimating calendar effects.
 Each workspace contains the default calendar. The user can add new 
-calendars to this section by creating them directly in JDemetra/= or by 
+calendars to this section by creating them directly in JDemetra+ or by 
 importing them from the external file. The picture below presents the 
 example of the workspace that contains two user defined calendars.
 

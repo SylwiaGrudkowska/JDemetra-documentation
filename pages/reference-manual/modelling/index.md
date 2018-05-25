@@ -155,3 +155,136 @@ procedure. The maximum order of the regular polynomials is 3, and the
 maximum order of seasonal polynomials is 1. The parameters available for 
 automatic model identification are presented below. 
 
+**Automatic** (*automdl; ami;idif, inic*)
+
+When marked it enables an automatic modelling of the ARIMA model to be performed.
+
+**Accept Default** (*-;-*)
+
+Controls whether the default model (ARIMA(0,1,1)(0,1,1)) may be chosen in the first step of the automatic model identification. More explicitly, if the Ljung-Box Q-statistics for the residuals is acceptable, the default model is accepted and no further attempt will be made to identify and other. By default, the **Accept Default** option is false.
+
+**Cancelation limit** (*ami; cancel*)
+
+A limit for the AR and the MA roots to be assumed equal[^25]. This option is used in the automatic identification of the differencing order. If the difference in moduli of an AR and an MA root (when estimating ARIMA(1,0,1)(1,0,1) models in the second step of the automatic identification of the differencing polynomial) is smaller than **Cancelation limit**, the two roots cancel out. The default parameter value is 0.05.
+
+**Initial UR (Diff.)** (*ami; ub1*)
+
+The threshold value for the initial unit root[^26] test in the automatic differencing procedure. When one of the roots in the estimation of the (2,0,0)(1,0,0) plus mean model, which is performed in the first step of the automatic model identification procedure, is larger than **First unit root limit**, in modulus, it is set equal to unity.
+This value should be less than 1 and greater than 0.8. The default parameter value is 0.97.
+
+**Final UR (Diff.)** (*ami; ub2*)
+
+The threshold value for the final unit root test in the automatic differencing procedure. When one of the roots in the estimation of the (1,0,1)(1,0,1) plus mean model, which is performed in the second step of the automatic model identification procedure, is larger than **Second unit root limit**, in modulus, it is checked if there is a common factor in the corresponding AR and MA polynomials of the ARMA model that can be cancelled (see **Cancelation limit**)). If there is no cancellation, the AR root it is set equal to unity (i.e. the differencing order changes). The value of the **Second unit root limit** should be less than 1 and greater than 0.8.The default parameter value is 0.91.
+
+**Arma limit** (*ami; tsig*)
+
+The threshold value for t-statistics of ARMA coefficients used for the final test of model parsimony[^27]. If the highest order of ARMA coefficient has a t-value less than this value in magnitude, JDemetra+ will reduce the order of the model. The value given for **ArmaLimit** is also used for the final check of the constant term; if the constant term has a t-value less than **ArmaLimit** in magnitude, the program will remove the constant term from the set of regressors. The ArmaLimit value should be greater than zero. The default parameter value is 1.
+
+**Reduce CV** (*automdl; reducecv*)
+
+The percentage by which the outlier critical value will be reduced when the preferred model is found to have a Ljung-Box Q-statistic[^28]. with an unacceptable confidence coefficient (7.1.1.1). The parameter should be between 0 and 1, and will only be active when automatic outlier identification is selected. The reduced critical value will be set to (1−**ReduceCV**)×CV), where CV is the original critical value. The default parameter value is 0.12.
+
+**LjungBox limit** (*-;-*)
+
+Acceptance criterion for the confidence intervals of the Ljung-Box Q-statistic. If the Ljung-Box Q-statistics for the residuals of a final model (checked at lag 24 if the series is monthly, 16 if the series is quarterly) is greater than **LjungBox limit**, the model is rejected, the outlier critical value is reduced, and model and outlier identification (if specified) is redone with a reduced value (see the **Reduce CV** argument). After two unfruitful attempts, a default model (usually (3,1,1)(0,1,1)) will be used. The default parameter value is 0.95.
+
+**Compare to default** (*ami; amicomp*)
+
+If marked, it compares the model identified by the automatic procedure to the default model (ARIMA(0,1,1)(0,1,1)) and the model with the best fit is selected. The criteria for a comparison are the residual diagnostics from the automatically identified model and those of the default model (the residual standard error and the confidence coefficient of the Ljung-Box Q-statistic), the number of outliers and the structure and estimated parameters of the model identified by the automatic procedure. The comparison is done because the default model is robust and departure from this model can be unstable. By default, the **Compare to default** option is false. 
+
+
+**TRAMO specification options for manual identification of the ARIMA model.**
+
+**Option**
+
+
+* [Automatic](#automatic)
+* [Mean](#mean)
+* [P](#p)
+* [phi](#phi)
+* [D](#d)
+* [Q](#q)
+* [theta](#theta)
+* [BP](#bp)
+* [Bphi](#bphi)
+* [BD](#bd)
+* [BQ](#bq)
+* [Btheta](#btheta)
+
+### Automatic
+*automdl; ami;idif, inic* 
+
+When marked it enables an automatic modelling of the ARIMA model to be performed.
+
+#### Mean
+*mean;imean*
+	
+When marked it is considered that the mean is part of the ARIMA model (it highly depends on the chosen model). lue defined by the user.
+
+#### P
+*arima; p*	
+
+The order of the non-seasonal autoregressive polynomial. The maximum order of the non-seasonal autoregressive polynomial is 4. The default value is 0.
+
+#### phi
+*arima; phi, jpr*	
+Coefficients of the non-seasonal, autoregressive polynomial (AR). If used, each non-seasonal AR parameter in the model requires a label that indicates the procedure of its estimation. The choice can be made from:
+* Undefined - estimates a parameter without the use of any user defined input (the default value).
+* Initial - estimates a parameter using as initial condition the value defined by the user.
+* Fixed - holds a parameter fixed during estimation at the value defined by the user.
+
+#### D
+*arima; d*	
+
+Non-seasonal differencing order. The maximum number of non-seasonal differences is 2. The default value is 1.
+
+#### Q
+*arima; q*	
+
+The order of the non-seasonal moving average polynomial. The maximum order of the non-seasonal moving average polynomial is 4. The default value is 1.
+
+#### theta
+*arima; th, jqr*
+
+Coefficients of the parameters of the non-seasonal, moving average polynomial (MA). If used, to each non-seasonal MA parameter in the model a label that indicates the procedure of its estimation should be assigned. The choice can be made from:
+* Undefined - estimates a parameter without the use of any user defined input (the default value).
+* Initial - estimates a parameter using as initial condition the value defined by the user.
+* Fixed - holds a parameter fixed during estimation at the value defined by the user.
+
+#### BP
+*arima; bp*
+
+The order of the seasonal autoregressive polynomial. The default value is 0.
+
+#### Bphi 
+
+*arima;bphi, jps*
+
+Coefficients of the seasonal autoregressive polynomial (AR). If used, to each seasonal AR parameter in the model a label that indicates the procedure of its estimation should be assigned. The choice can be made from:
+* Undefined - estimates a parameter without the use of any user defined input (the default value).
+* Initial - estimates a parameter using as initial condition the value defined by the user.
+* Fixed - holds a parameter fixed during estimation at the value defined by the user.
+
+#### BD
+*arima; bd*
+
+Seasonal differencing order. The maximum number of seasonal differences is 1. The default value is 1.
+
+#### BQ
+*arima; bq*
+
+The order of the seasonal moving average polynomial. The maximum order of the seasonal moving average polynomial is 1. The default value is 1.
+
+#### Btheta
+*arima; bth, jqs*
+
+Coefficients of the parameters of the seasonal moving average polynomial (MA). If used, each seasonal MA parameter in the model requires a label that indicates the procedure of its estimation. The choice can be made from:
+* Undefined - estimates a parameter without the use of any user defined input (the default value).
+* Initial - estimates a parameter using as initial condition the value defined by the user.
+* Fixed - holds a parameter fixed during estimation at the value defined by the user.
+
+#### Footnotes
+[^25]: Cancellation issue is described in 7.1.1.6.
+[^26]: A time series $x_t$ is said to have a unit root if it can be modelled as $x_t = \phi_0 + \phi_1 y_{t -1}$ and $\phi_1 = 1$
+[^27]: See 7.1.1
+[^28]: See 7.6.1.3

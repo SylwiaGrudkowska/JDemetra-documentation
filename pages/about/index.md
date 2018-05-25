@@ -87,7 +87,7 @@ reason, most of the analysis tools are common to both algorithms, e.g.
 the revision history and the sliding spans, even if they were originally 
 developed in only one of them. On the other hand, all the features 
 developed in the original programs have not always been implemented in 
-JDemetra+; for in-stance, by contrast with TRAMO/SEATS, JDemetra+ does 
+JDemetra+; for instance, by contrast with TRAMO/SEATS, JDemetra+ does 
 not separate the long-term trend from the cycle. JDemetra+ runs on 
 operating systems that support the Java VM (Virtual Machine) such as: 
 * Microsoft Windows Vista SP1/Windows 7/8; 
