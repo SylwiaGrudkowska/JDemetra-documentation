@@ -1,4 +1,13 @@
-1.  About JDemetra+ User Guide
+---
+layout: left-menu
+title: Atanaska
+tagline: technical documentation for JDemetra+ using GitHub Pages
+description: Basics
+order: 1
+---
+
+About JDemetra+ User Guide {#about-jdemetra-user-guide}
+--------------------------
 
 This document aims to introduce users to the main features of JDemetra+
 enabling them to take advantage of this program and understand the
@@ -26,7 +35,7 @@ JDemetra+ uses the notation "X12", "X13","Arima", "RegArima" and
 the *JDemetra+ User Guide* when the references to the user interface are
 made.
 
-1.  Who should use this document?
+### Who should use this document? {#who-should-use-this-document}
 
 With JDemetra+, which is an extremely user-friendly software,
 pre-adjustment and decomposition of a time series can be performed
@@ -46,7 +55,7 @@ sketch of the X-13ARIMA-SEATS and TRAMO/SEATS algorithms and concepts as
 well as a bibliography are included in the *JDemetra+ Reference Manual*
 (2017).
 
-1.  How the document is organized
+### How the document is organized {#how-the-document-is-organized}
 
 The *JDemetra+ User Guide* is divided into three parts.
 
@@ -66,7 +75,7 @@ seasonal adjustment and skill in time series analysis. This chapter
 refers to specific parts of the *JDemetra+ Reference Manual* (2017) and
 in this way guides the user throughout the whole document.
 
-1.  How to use this document
+### How to use this document {#how-to-use-this-document}
 
 With JDemetra+ seasonal adjustment can be performed in several ways.
 Additional functionalities designed for time series analysis, not
@@ -119,9 +128,10 @@ The calendars scenario explains how to define country-specific holidays
 and include them into a national calendar. It also deals with the more
 sophisticated types of calendar and explains how to import them.
 
-1.  Preliminary issues: uploading and visualizing data
+Preliminary issues: uploading and visualizing data {#preliminary-issues-uploading-and-visualizing-data}
+==================================================
 
-    1.  Overview of the JDemetra+
+### Overview of the JDemetra+ {#overview-of-the-jdemetra}
 
 The installation procedure and system requirements are discussed in the
 *JDemetra+ Reference Manual* (2017), section 1.2.
@@ -188,7 +198,7 @@ To open the file, right-click on the appropriate provider from the
 providers follows the same logic. Examples of loading data for each
 provider type are presented in this chapter.
 
-1.  Source data
+### Source data {#source-data}
 
 JDemetra+ deals with several data sources. The allowed data sources
 include:
@@ -213,7 +223,7 @@ All standard databases (Oracle, SQLServer, DB2, MySQL) are supported by
 JDemetra+ via JDBC, which is a generic interface to many relational
 databases. Other providers can be added by users by creating plugins.
 
-1.  Spreadsheets
+#### Spreadsheets {#spreadsheets}
 
 The Spreadsheets data source corresponds to the series prepared in the
 Excel file. The file should have true dates in the first column (or in
@@ -235,7 +245,7 @@ information (like data periodicity, starting and ending period) directly
 from the first column (or from the first row, depending on the chosen
 data orientation (vertical or horizontal)).
 
-1.  Import data
+### Import data {#import-data}
 
 To import data from a given data source, click on this data source in
 the *Providers* window (2.1.1), choose *Open* option and specify the
@@ -305,7 +315,7 @@ Figure 2.8: Choice of an Excel spreadsheet.
 >
 > Figure 2.10: Dataset structure.
 
-1.  Displaying data
+### Displaying data {#displaying-data}
 
 <!-- -->
 
@@ -371,7 +381,8 @@ Figure 2.15: Renaming a time series.
 >
 > Figure 2.17: *Chart* window.
 
-1.  Seasonal adjustment and other time-series analysis with JDemetra+
+Seasonal adjustment and other time-series analysis with JDemetra+ {#seasonal-adjustment-and-other-time-series-analysis-with-jdemetra}
+=================================================================
 
 The aim of this chapter is to introduce the main functionalities of
 JDemetra+. This chapter uses a step-by-step approach to the primary
