@@ -1,13 +1,5 @@
----
-layout: left-menu
-title: Atanaska
-tagline: technical documentation for JDemetra+ using GitHub Pages
-description: Basics
-order: 1
----
+1.  About JDemetra+ User Guide
 
-About JDemetra+ User Guide {#about-jdemetra-user-guide}
---------------------------
 This document aims to introduce users to the main features of JDemetra+
 enabling them to take advantage of this program and understand the
 output from consecutive steps of the analysis. The document includes
@@ -34,7 +26,7 @@ JDemetra+ uses the notation "X12", "X13","Arima", "RegArima" and
 the *JDemetra+ User Guide* when the references to the user interface are
 made.
 
-### Who should use this document? {#who-should-use-this-document}
+1.  Who should use this document?
 
 With JDemetra+, which is an extremely user-friendly software,
 pre-adjustment and decomposition of a time series can be performed
@@ -54,7 +46,7 @@ sketch of the X-13ARIMA-SEATS and TRAMO/SEATS algorithms and concepts as
 well as a bibliography are included in the *JDemetra+ Reference Manual*
 (2017).
 
-### How the document is organized {#how-the-document-is-organized}
+1.  How the document is organized
 
 The *JDemetra+ User Guide* is divided into three parts.
 
@@ -74,8 +66,7 @@ seasonal adjustment and skill in time series analysis. This chapter
 refers to specific parts of the *JDemetra+ Reference Manual* (2017) and
 in this way guides the user throughout the whole document.
 
-### How to use this document {#how-to-use-this-document}
-
+1.  How to use this document
 
 With JDemetra+ seasonal adjustment can be performed in several ways.
 Additional functionalities designed for time series analysis, not
@@ -128,11 +119,9 @@ The calendars scenario explains how to define country-specific holidays
 and include them into a national calendar. It also deals with the more
 sophisticated types of calendar and explains how to import them.
 
-Preliminary issues: uploading and visualizing data {#preliminary-issues-uploading-and-visualizing-data}
-==================================================
+1.  Preliminary issues: uploading and visualizing data
 
-### Overview of the JDemetra+ {#overview-of-the-jdemetra}
-
+    1.  Overview of the JDemetra+
 
 The installation procedure and system requirements are discussed in the
 *JDemetra+ Reference Manual* (2017), section 1.2.
@@ -140,9 +129,7 @@ The installation procedure and system requirements are discussed in the
 The default view of JDemetra+ window, which is displayed after launching
 the program, is shown below.
 
-> ![F:\\A User Guide\\Overview
-> 1.jpg](../../assets/img/hackathon/Aimage1.jpeg){width="6.104166666666667in"
-> height="3.0381944444444446in"}
+> <img src="../../assets/img/hackathon/Aimage1.jpeg" alt="F:\A User Guide\Overview 1.jpg" style="width:6.10417in;height:3.03819in" />
 
 Figure 2.1: JDemetra+ default window.
 
@@ -153,17 +140,14 @@ left mouse button, a drop-down menu will appear. Clicking on an entry in
 the drop-down menu selects the highlighted item. Some of the functions
 available in the menu of the application are described in the Chapter 3.
 
-> ![Intro 1](../../assets/img/hackathon/Aimage2.jpeg){width="4.584722222222222in"
-> height="1.5284722222222222in"}
+> <img src="../../assets/img/hackathon/Aimage2.jpeg" alt="Intro 1" style="width:4.58472in;height:1.52847in" />
 
 Figure 2.2: The main menu.
 
 The *Browsers* panel presents the list of the data sources and organizes
 the imported series within each data providers.
 
-> ![F:\\A User Guide\\Overview
-> 2.jpg](../../assets/img/hackathon/Aimage3.jpeg){width="3.040277777777778in"
-> height="1.7680555555555555in"}
+> <img src="../../assets/img/hackathon/Aimage3.jpeg" alt="F:\A User Guide\Overview 2.jpg" style="width:3.04028in;height:1.76806in" />
 
 Figure 2.3: The *Workspace* window.
 
@@ -193,9 +177,7 @@ calendar (3.4.3).
 A blank zone on the right is designated for displaying the actual
 analyses.
 
-> ![F:\\A User Guide\\Overview
-> 3.jpg](../../assets/img/hackathon/Aimage4.jpeg){width="3.05625in"
-> height="1.7916666666666667in"}
+> <img src="../../assets/img/hackathon/Aimage4.jpeg" alt="F:\A User Guide\Overview 3.jpg" style="width:3.05625in;height:1.79167in" />
 
 Figure 2.4: The *Providers* window.
 
@@ -206,7 +188,7 @@ To open the file, right-click on the appropriate provider from the
 providers follows the same logic. Examples of loading data for each
 provider type are presented in this chapter.
 
-### Source data {#source-data}
+1.  Source data
 
 JDemetra+ deals with several data sources. The allowed data sources
 include:
@@ -231,7 +213,7 @@ All standard databases (Oracle, SQLServer, DB2, MySQL) are supported by
 JDemetra+ via JDBC, which is a generic interface to many relational
 databases. Other providers can be added by users by creating plugins.
 
-#### Spreadsheets {#spreadsheets}
+1.  Spreadsheets
 
 The Spreadsheets data source corresponds to the series prepared in the
 Excel file. The file should have true dates in the first column (or in
@@ -243,8 +225,7 @@ middle and in the end of time series.
 
 An example is presented below:
 
-> ![](../../assets/img/hackathon/Aimage5.png){width="1.9055555555555554in"
-> height="2.3583333333333334in"}
+> <img src="../../assets/img/hackathon/Aimage5.png" style="width:1.90556in;height:2.35833in" />
 
 Figure 2.5: Example of an Excel spreadsheet that can be imported to
 JDemetra+.
@@ -254,7 +235,7 @@ information (like data periodicity, starting and ending period) directly
 from the first column (or from the first row, depending on the chosen
 data orientation (vertical or horizontal)).
 
-### Import data {#import-data}
+1.  Import data
 
 To import data from a given data source, click on this data source in
 the *Providers* window (2.1.1), choose *Open* option and specify the
@@ -265,9 +246,7 @@ the data from an Excel file.
 1.  From the *Providers* window right-click on the *Spreadsheets* branch
     and choose *Open* option.
 
-> ![F:\\A User Guide\\Overview
-> 4.jpg](../../assets/img/hackathon/Aimage6.jpeg){width="3.063888888888889in"
-> height="2.3201388888888888in"}
+> <img src="../../assets/img/hackathon/Aimage6.jpeg" alt="F:\A User Guide\Overview 4.jpg" style="width:3.06389in;height:2.32014in" />
 >
 > Figure 2.6: Data provider available by default.
 
@@ -300,18 +279,13 @@ the data from an Excel file.
 Next, in the *Source* section click the grey "...." button (see below)
 to open the file.
 
-> ![F:\\A User Guide\\Overview
-> 5.jpg](../../assets/img/hackathon/Aimage7.jpeg){width="4.280555555555556in"
-> height="3.0520833333333335in"}
+> <img src="../../assets/img/hackathon/Aimage7.jpeg" alt="F:\A User Guide\Overview 5.jpg" style="width:4.28056in;height:3.05208in" />
 >
 > Figure 2.7: Data source window.
 
 1.  Choose a file and click *OK*.
 
-> ![C:\\Users\\st05sg\\Documents\\Sylwia\\SEZONOWOŚĆ\\JDemetra
-> Plus\\JDemetra+ User Guide\\Overview
-> 6.jpg](../../assets/img/hackathon/Aimage8.jpeg){width="3.5284722222222222in"
-> height="2.1694444444444443in"}
+> <img src="../../assets/img/hackathon/Aimage8.jpeg" alt="C:\Users\st05sg\Documents\Sylwia\SEZONOWOŚĆ\JDemetra Plus\JDemetra+ User Guide\Overview 6.jpg" style="width:3.52847in;height:2.16944in" />
 
 Figure 2.8: Choice of an Excel spreadsheet.
 
@@ -321,21 +295,17 @@ Figure 2.8: Choice of an Excel spreadsheet.
     Otherwise, the functionality that enables converting the time series
     frequency will not be available.
 
-> ![F:\\A User Guide\\Overview
-> 6.jpg](../../assets/img/hackathon/Aimage9.jpeg){width="4.824305555555555in"
-> height="3.4402777777777778in"}
+> <img src="../../assets/img/hackathon/Aimage9.jpeg" alt="F:\A User Guide\Overview 6.jpg" style="width:4.82431in;height:3.44028in" />
 >
 > Figure 2.9: Options for importing data.
 
 1.  The data are organized in a tree structure.
 
-> ![F:\\A User Guide\\Overview
-> 7.jpg](../../assets/img/hackathon/Aimage10.jpeg){width="4.231944444444444in"
-> height="2.959722222222222in"}
+> <img src="../../assets/img/hackathon/Aimage10.jpeg" alt="F:\A User Guide\Overview 7.jpg" style="width:4.23194in;height:2.95972in" />
 >
 > Figure 2.10: Dataset structure.
 
-### Displaying data {#displaying-data}
+1.  Displaying data
 
 <!-- -->
 
@@ -343,9 +313,7 @@ Figure 2.8: Choice of an Excel spreadsheet.
     grid* option from the local menu. The graph is displayed in the
     panel on the right.
 
-> ![F:\\A User Guide\\Overview
-> 8.jpg](../../assets/img/hackathon/Aimage11.jpeg){width="5.877777777777778in"
-> height="2.3826388888888888in"}
+> <img src="../../assets/img/hackathon/Aimage11.jpeg" alt="F:\A User Guide\Overview 8.jpg" style="width:5.87778in;height:2.38264in" />
 >
 > Figure 2.11: Time series graph.
 
@@ -353,10 +321,7 @@ Figure 2.8: Choice of an Excel spreadsheet.
     adjust the view of the picture, save it and/or save it in a given
     location.
 
-> ![C:\\Users\\st05sg\\Documents\\Sylwia\\SEZONOWOŚĆ\\JDemetra
-> Plus\\JDemetra+ User Guide\\Overview
-> 10.jpg](../../assets/img/hackathon/Aimage12.jpeg){width="3.4715277777777778in"
-> height="3.1979166666666665in"}
+> <img src="../../assets/img/hackathon/Aimage12.jpeg" alt="C:\Users\st05sg\Documents\Sylwia\SEZONOWOŚĆ\JDemetra Plus\JDemetra+ User Guide\Overview 10.jpg" style="width:3.47153in;height:3.19792in" />
 >
 > Figure 2.12: Local menu basic options for the time series graph.
 
@@ -364,10 +329,7 @@ Figure 2.8: Choice of an Excel spreadsheet.
     button, more sophisticated options are available, in addition to the
     standard ones shown in Figure 2.12.
 
-> ![C:\\Users\\st05sg\\Documents\\Sylwia\\SEZONOWOŚĆ\\JDemetra
-> Plus\\JDemetra+ User Guide\\Overview
-> 11.jpg](../../assets/img/hackathon/Aimage13.jpeg){width="3.1979166666666665in"
-> height="3.0284722222222222in"}
+> <img src="../../assets/img/hackathon/Aimage13.jpeg" alt="C:\Users\st05sg\Documents\Sylwia\SEZONOWOŚĆ\JDemetra Plus\JDemetra+ User Guide\Overview 11.jpg" style="width:3.19792in;height:3.02847in" />
 >
 > Figure 2.13: Full local menu options.
 
@@ -379,20 +341,14 @@ Figure 2.8: Choice of an Excel spreadsheet.
     can switch between chart and grid view. For both views (chart and
     grid) the local menu is available.
 
-> ![C:\\Users\\st05sg\\Documents\\Sylwia\\SEZONOWOŚĆ\\JDemetra
-> Plus\\JDemetra+ User Guide\\Overview
-> 12.jpg](../../assets/img/hackathon/Aimage14.jpeg){width="3.6416666666666666in"
-> height="1.9625in"}
+> <img src="../../assets/img/hackathon/Aimage14.jpeg" alt="C:\Users\st05sg\Documents\Sylwia\SEZONOWOŚĆ\JDemetra Plus\JDemetra+ User Guide\Overview 12.jpg" style="width:3.64167in;height:1.9625in" />
 >
 > Figure 2.14: *Chart & grid* view.
 
 1.  *Rename* option (see Figure 2.12) enables to change the time series
     name.
 
-> ![C:\\Users\\st05sg\\Documents\\Sylwia\\SEZONOWOŚĆ\\JDemetra
-> Plus\\JDemetra+ User Guide\\Overview
-> 13.jpg](../../assets/img/hackathon/Aimage15.jpeg){width="3.5284722222222222in"
-> height="3.084722222222222in"}
+> <img src="../../assets/img/hackathon/Aimage15.jpeg" alt="C:\Users\st05sg\Documents\Sylwia\SEZONOWOŚĆ\JDemetra Plus\JDemetra+ User Guide\Overview 13.jpg" style="width:3.52847in;height:3.08472in" />
 
 Figure 2.15: Renaming a time series.
 
@@ -403,10 +359,7 @@ Figure 2.15: Renaming a time series.
     existence and size of deterministic and stochastic seasonality in
     data.
 
-> ![C:\\Users\\st05sg\\Documents\\Sylwia\\SEZONOWOŚĆ\\JDemetra
-> Plus\\JDemetra+ User Guide\\Overview
-> 14.jpg](../../assets/img/hackathon/Aimage16.jpeg){width="4.631944444444445in"
-> height="4.0569444444444445in"}
+> <img src="../../assets/img/hackathon/Aimage16.jpeg" alt="C:\Users\st05sg\Documents\Sylwia\SEZONOWOŚĆ\JDemetra Plus\JDemetra+ User Guide\Overview 14.jpg" style="width:4.63194in;height:4.05694in" />
 >
 > Figure 2.16: *Split into the yearly components* option’s result.
 
@@ -414,14 +367,12 @@ Figure 2.15: Renaming a time series.
     *Container* → *Chart* from the main menu. Next, drag a drop series
     to the *Chart* window. Local menu options are available.
 
-> ![F:\\A User Guide\\Overview
-> 9.jpg](../../assets/img/hackathon/Aimage17.jpeg){width="5.792361111111111in"
-> height="2.6868055555555554in"}
+> <img src="../../assets/img/hackathon/Aimage17.jpeg" alt="F:\A User Guide\Overview 9.jpg" style="width:5.79236in;height:2.68681in" />
 >
 > Figure 2.17: *Chart* window.
 
-Seasonal adjustment and other time-series analysis with JDemetra+ {#seasonal-adjustment-and-other-time-series-analysis-with-jdemetra}
-=================================================================
+1.  Seasonal adjustment and other time-series analysis with JDemetra+
+
 The aim of this chapter is to introduce the main functionalities of
 JDemetra+. This chapter uses a step-by-step approach to the primary
 features of JDemetra+. It presents typical scenarios for time series
