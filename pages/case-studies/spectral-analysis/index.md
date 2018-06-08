@@ -55,10 +55,9 @@ graph are distributed randomly around a constant without any visible
 peaks, then it is highly probable that the series is a random process.
 The presence of seasonality in a time series is manifested in a spectral
 graph by the peaks on the seasonal frequencies.
-![Text](/assets/img/user-guide/image2_342.jpeg)
+	![Text](/assets/img/user-guide/image3_342.jpeg)
 
-
-Figure 3.153: Launching an auto-regressive spectrum.
+	Figure 3.154: Auto-regressive spectrum's properties.
 
 
 1. The spectral graphs are available from: *Tools* → *Spectral
@@ -71,6 +70,9 @@ Figure 3.153: Launching an auto-regressive spectrum.
     *Auto-regressive spectrum* window. To start an analysis drag a
     single time series from the *Providers* window and drop it into the
     *Drop data here* area.
+	![Text](/assets/img/user-guide/image2_342.jpeg)
+	
+	Figure 3.153: Launching an auto-regressive spectrum.
 	
 3. An auto-regressive spectrum graph available in JDemetra+ is based on 
 the relevant tool from the X-13ARIMA-SEATS program. It shows the
@@ -81,39 +83,36 @@ the relevant tool from the X-13ARIMA-SEATS program. It shows the
     as the specification of the frequency grid and the order of the
     autoregresive polynomial (30 by default) can be specified by opening
     the *Window* → *Properties* from the main menu.
+	
 
-The *Auto-regressive - Properties* window contains the following options:
+	The *Auto-regressive - Properties* window contains the following options:
 
--   *Log* - a log transformation of a time series;
+	-   *Log* - a log transformation of a time series;
 
--   *Differencing* - transforms a data by calculating a regular (order
-    1,2..) or seasonal (order 4, 12, depending on the time series
-    frequency) differences;
+	-   *Differencing* - transforms a data by calculating a regular (order
+		1,2..) or seasonal (order 4, 12, depending on the time series
+		frequency) differences;
 
--   *Differencing lag* - the number of lags that the program will use
-    to take differences. For example, if $Differencing\ lag = 3\ $then
-    the differencing filter does not apply to the first lag (default)
-    but to the third lag.
+	-   *Differencing lag* - the number of lags that the program will use
+		to take differences. For example, if $Differencing\ lag = 3\ $then
+		the differencing filter does not apply to the first lag (default)
+		but to the third lag.
 
--   *Last years* - a number of years at the end of the time series
-    taken to produce autoregresive spectrum. By default, it is 0, which
-    means that the whole time series is considered.
+	-   *Last years* - a number of years at the end of the time series
+		taken to produce autoregresive spectrum. By default, it is 0, which
+		means that the whole time series is considered.
 
--   *Auto-regressive polynomial order* - the number of lags in the AR
-    model that is used to estimate the spectral density. By default, the
-    order of the autoregressive polynomial is set to 30 lags.
+	-   *Auto-regressive polynomial order* - the number of lags in the AR
+		model that is used to estimate the spectral density. By default, the
+		order of the autoregressive polynomial is set to 30 lags.
 
--   *Resolution* - the value 1 plots the spectral density estimate for
-    the frequencies $\omega_{j} = \frac{2\pi j}{n}$, where
-    $n \in ( - \pi;\pi)$ is the size of the sample used to estimate the
-    AR model. Increasing this value, which is set to 5 by default, will
-    increase the precision of this grid.
+	-   *Resolution* - the value 1 plots the spectral density estimate for
+		the frequencies $\omega_{j} = \frac{2\pi j}{n}$, where
+		$n \in ( - \pi;\pi)$ is the size of the sample used to estimate the
+		AR model. Increasing this value, which is set to 5 by default, will
+		increase the precision of this grid.
 
-![Text](/assets/img/user-guide/image3_342.jpeg)
-
-Figure 3.154: Auto-regressive spectrum's properties.
-
-The seasonality test described above uses an empirical criterion to
+4. The seasonality test described above uses an empirical criterion to
     check whether the series has a seasonal component that is
     predictable (stable) enough that it can be estimated with reasonable
     success. The peak has to be greater than median of the 61 spectrum
@@ -123,41 +122,41 @@ The seasonality test described above uses an empirical criterion to
     auto-regressive spectrum see the *JDemetra+ Reference Manual*
     (2017), item 7.3.2.
 
-![Text](/assets/img/user-guide/image4_342.jpeg)
+	![Text](/assets/img/user-guide/image4_342.jpeg)
 
-Figure 3.155: An example of an-auto-regressive spectrum.
+	Figure 3.155: An example of an-auto-regressive spectrum.
 
 5. The second spectral graph is a periodogram. To perform the analysis 
 of a single time series using this tool, choose *Tools* →*Spectral 
 analysis* → *Periodogram* and drag and drop series from the 
 *Providers* window to the empty *Periodogram* window*. * 
 
-![Text](/assets/img/user-guide/image5_342.jpeg)
+	![Text](/assets/img/user-guide/image5_342.jpeg)
 
-Figure 3.156: Launching a periodogram.
+	Figure 3.156: Launching a periodogram.
 
-The sample size and data transformations can be specified by opening
-the *Window* → *Properties*, in the main menu. The *Periodogram -
-Properties* window contains the following options:
+	The sample size and data transformations can be specified by opening
+	the *Window* → *Properties*, in the main menu. The *Periodogram -
+	Properties* window contains the following options:
 
--   *Log* - a log transformation of a time series;
+	-   *Log* - a log transformation of a time series;
 
--   *Differencing* - transforms a data by calculating regular (order
-    1,2..) or seasonal (order 4, 12, depending on the time series
-    frequency) differences;
+	-   *Differencing* - transforms a data by calculating regular (order
+		1,2..) or seasonal (order 4, 12, depending on the time series
+		frequency) differences;
 
--   *Differencing lag* - the number of lags that you will use to take
-    differences. For example, if $Differencing\ lag = 3\ $then the
-    differencing filter does not apply to the first lag (default) but to
-    the third lag.
+	-   *Differencing lag* - the number of lags that you will use to take
+		differences. For example, if $Differencing\ lag = 3\ $then the
+		differencing filter does not apply to the first lag (default) but to
+		the third lag.
 
--   *Last years* - a number of years at the end of the time series
-    taken to produce periodogram. By default it is 0, which means that
-    the whole time series is considered.
+	-   *Last years* - a number of years at the end of the time series
+		taken to produce periodogram. By default it is 0, which means that
+		the whole time series is considered.
 
-![Text](/assets/img/user-guide/image6_342.jpeg)
+	![Text](/assets/img/user-guide/image6_342.jpeg)
 
-Figure 3.157: Periodogram's properties.
+	Figure 3.157: Periodogram's properties.
 
 6.  The periodogram is one of the earliest tools used for the analysis
     of time series in the frequency domain. It enables the user to
@@ -168,53 +167,54 @@ Figure 3.157: Periodogram's properties.
     periodogram see the *JDemetra+ Reference Manual* (2017), item
     7.3.1.
 
-![Text](/assets/img/user-guide/image7_342.jpeg)
+	![Text](/assets/img/user-guide/image7_342.jpeg)
 
-Figure 3.158: An example of a periodogram.
+	Figure 3.158: An example of a periodogram.
 
 7.  The third spectral graph is a Tukey spectrum. To perform the
     analysis of time series using this tool, choose *Tools* → *Spectral
     analysis* → *Tukey spectrum* and drag and drop a single series from
     the *Providers* window to the empty *Periodogram* window*.*
 
-![Text](/assets/img/user-guide//image8_342.jpeg)
+	![Text](/assets/img/user-guide//image8_342.jpeg)
 
-Figure 3.159: Launching a Tukey spectrum.
+	Figure 3.159: Launching a Tukey spectrum.
 
 8.  The Tukey spectrum estimates the spectral density by smoothing the
     > periodogram.
 
-![Text](/assets/img/user-guide/image9_342.jpeg)
-Figure 3.160: An example of a Tukey spectrum.
+	![Text](/assets/img/user-guide/image9_342.jpeg)
+	
+	Figure 3.160: An example of a Tukey spectrum.
 
 9.  The options for the Tuckey window can be specified by opening the
     *Window* → *Properties* from the main menu. The *Periodogram -
     Properties* window contains the following options:
 
--   *Log* - a log transformation of a time series.
+	-   *Log* - a log transformation of a time series.
 
--   *Differencing* - transforms a data by calculating regular (order 1,
-     2..) or seasonal (order 4, 12, depending on the time series
-    frequency) differences.
+	-   *Differencing* - transforms a data by calculating regular (order 1,
+		 2..) or seasonal (order 4, 12, depending on the time series
+		frequency) differences.
 
--   *Differencing lag* - the number of lags that you will use to take
-    differences. For example, if $Differencing\ lag = 3\ $then the
-    differencing filter does not apply to the first lag (default) but
-    to the third lag.
+	-   *Differencing lag* - the number of lags that you will use to take
+		differences. For example, if $Differencing\ lag = 3\ $then the
+		differencing filter does not apply to the first lag (default) but
+		to the third lag.
 
--   *Taper part* -- parameter larger than 0 and smaller or equal to one
-    that shapes the curvature of the smoothing function that is
-    applied to the auto-covariance function.
+	-   *Taper part* -- parameter larger than 0 and smaller or equal to one
+		that shapes the curvature of the smoothing function that is
+		applied to the auto-covariance function.
 
--   *Window length* -- the size of the window that is used to smooth the
-    auto-covariance function. The value zero considers the whole
-    series.
+	-   *Window length* -- the size of the window that is used to smooth the
+		auto-covariance function. The value zero considers the whole
+		series.
 
--   *Window type* -- it refers to the weighting scheme that it is used
-    to smooth the auto-covariance function. The available windows
-    types (*Square*, *Welch*, *Tukey*, *Barlett*, *Hamming*, *Parzen*)
-    are suitable to estimate the spectral density.
+	-   *Window type* -- it refers to the weighting scheme that it is used
+		to smooth the auto-covariance function. The available windows
+		types (*Square*, *Welch*, *Tukey*, *Barlett*, *Hamming*, *Parzen*)
+		are suitable to estimate the spectral density.
 
-![Text](/assets/img/user-guide/image10_342.jpeg)
+	![Text](/assets/img/user-guide/image10_342.jpeg)
 
-Figure 3.161: Tukey spectrum's properties.
+	Figure 3.161: Tukey spectrum's properties.

@@ -23,7 +23,7 @@ Specification button (see the ‘JDemetra+ User Guide’ (2017), 3.3.2).
 The default specification for TRAMO is TR5, while for RegARIMA it is 
 RG4c. 
 
-Table 4.1: Pre-defined modelling specifications.
+Pre-defined modelling specifications.
 
 {: .table .table-bordered}
 | Settings      |Transformation   | Pre-adjustment for leap-year | Working days | Trading days | Easter effect | Outliers| ARIMA model|

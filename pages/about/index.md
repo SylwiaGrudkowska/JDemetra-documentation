@@ -103,6 +103,72 @@ tml)
 	* Mac OS: [Mac OS X 10.6](http://support.apple.com/downloads), [OS X Lion 
 10.7](http://www.oracle.com/technetwork/java/javase/downloads/index.html). 
 
+### Installing and uninstalling JDemetra+ {#installing-and-uninstalling-jdemetra}
+
+JDemetra+ is a stand-alone application packed in a zip package. It is
+accessible from *Collaboration in research and methodology for official
+statistics* webpage ([<span
+class="underline">www.cros-portal.eu</span>](http://www.cros-portal.eu/)).
+
+Once downloaded to the PC it can be extracted to any folder on your
+system. The archive contains two versions of executable file (32-bit
+version and 64-bit version). The user should execute the version that
+matches the system version. The executable file is located in the
+appropriate nbdemetra/bin directory.
+
+If the launching of JDemetra+ fails, you can try the following
+operations:
+
+-   Check if Java SE Runtime Environment (JRE) is properly installed by
+    > typing in the following command in a terminal: *java --version*
+
+-   Check the logs in your home directory:
+
+    -   %appdata%/.nbdemetra/dev/var/log/ for Windows;
+
+    -   \~/.nbdemetra/dev/var/log/ for Linux and Solaris;
+
+    -   \~/Library/Application Support/.nbdemetra/dev/var/log/ for Mac
+        > OS X.
+
+In order to remove a previously installed JDemetra+ version, the user
+should delete an appropriate JDemetra+ folder.
+
+### Running JDemetra+ {#running-jdemetra}
+
+To open an application, navigate to the destination folder and double
+click on *nbdemetra.exe* or *nbdemetra64.exe* depending on the system
+version (*nbdemetra.exe* for the 32-bit system version and
+*nbdemetra64.exe* for the 64-bit system version).
+
+{: .text-center}
+
+![Text](/assets/img/reference-manual/manual/A_Ref1.jpg)
+
+*Running JDemetra+.*
+
+### Closing JDemetra+ {#closing-jdemetra}
+
+To close the application, select *File → Exit* from the main menu (See
+Chapter 3).
+
+{: .text-center}
+
+![Text](/assets/img/reference-manual/manual/A_Ref2.jpg)
+
+*Closing JDemetra+.*
+
+The other way is to click on the close box in the upper right-hand
+corner of the JDemetra+ window. If there is any unsaved work, JDemetra+
+will display a warning and provide the user with the opportunity to save
+it. The message box is shown below.
+
+{: .text-center}
+
+![Text](/assets/img/reference-manual/manual/A_Ref3.jpg)
+
+*The warning from leaving JDemetra+ without saving the workspace.*
+
 ##### Footnotes
 
 [^1]: Eurostat is the statistical office of the European Union. Its task is to provide the European Union with statistics at European level that enable comparisons between countries and regions.
