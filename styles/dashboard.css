@@ -78,34 +78,22 @@ h1 {
 /*
  * Drop down left menu
  */
+ 
 nav.left ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-nav.left ul li a:hover {
-	color: #FFF;
-}
 
+/* All levels */
 nav.left ul li a {
   display: block;
-  background: #F7F7F7;
-  color: #292B2C;
-  padding: 10px 15px;
   text-decoration: none;
   -webkit-transition: 0.2s linear;
   -moz-transition: 0.2s linear;
   -ms-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
-}
-nav.left ul li a:hover {
-  background: #2980b9;
-  color: #FFF;
-}
-nav.left ul li a.active {
-  background: #2980b9;
-  color: #FFF;
 }
 
 nav.left ul li a .fa {
@@ -115,19 +103,55 @@ nav.left ul li a .fa {
   margin-right: 5px;
 }
 
-nav.left ul li ul li a {
-  background: #444;
-  border-left: 4px solid transparent;
+/* Level 1 */
+nav.left > ul > li > a:hover {
+  background: #2980b9;
   color: #FFF;
-  padding: 10px 20px;
-}
-nav.left ul li ul li a:hover {
-  background: #333;
-  border-left: 4px solid #3498db;
 }
 
-nav.left ul li.sub-menu ul li a.active {
+nav.left > ul > li > a {
+  background: #F7F7F7;
+  color: #292B2C;
+  padding: 10px 15px;
+}
+
+nav.left > ul > li > a.active {
+  background: #2980b9;
+  color: #FFF;
+}
+
+/* Level 2 */
+nav.left > ul > li > ul > li > a {
+  background: #777;
+  border-left: 4px solid transparent;
+  color: #FFF;
+  padding: 10px 15px 10px 20px;
+}
+
+/* Level 3 */
+nav.left > ul > li > ul > li > ul > li > a {
+  background: #555;
+  border-left: 4px solid transparent;
+  color: #FFF;
+  padding: 10px 15px 10px 29px;
+}
+
+/* Level 4 */
+nav.left > ul > li > ul > li > ul > li > ul > li > a {
   background: #333;
+  border-left: 4px solid transparent;
+  color: #FFF;
+  padding: 10px 15px 10px 38px;
+}
+
+/* Levels 2-n */
+nav.left > ul > li ul li a:not([href]):not([tabindex]) {
+  color: #fff
+}
+
+nav.left > ul > li ul li a.active,
+nav.left > ul > li ul li a:hover {
+  background: #88c3cc;
   border-left: 4px solid #3498db;
 }
 
@@ -135,9 +159,41 @@ nav.left ul li.sub-menu ul li a.active {
 .right {
   float: right;
 }
+
 .left {
   float: left;
 }
 
-
 img { max-width: 800px;}
+
+.image-wrapper {
+  margin-bottom: 5px;
+}
+
+/*Tables*/
+.table-style {
+  /*Bootstrap's .small*/
+  font-size: 80%;
+  font-weight: 400;
+}
+
+/*Bootstrap's .table-sm*/
+.table-style td,
+.table-style th {
+  padding:.3rem
+}
+
+/*Bootstrap's .table-bordered header style*/
+.table-style thead th {
+  border-bottom: 2px solid #777;
+}
+
+/*Bootstrap's .table-bordered border style*/
+.table-style td, .table-style th {
+  border: 1px solid #777;
+}
+
+table.table-style > thead th {
+  text-align: center;
+  background: #f7f7f7;
+}

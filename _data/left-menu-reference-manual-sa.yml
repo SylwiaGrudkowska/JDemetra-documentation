@@ -1,0 +1,14 @@
+- title: "Specifications"
+  file: "index"
+  subitems:
+    - title: "X13"
+      file: "sa-spec-X13"
+    - title: "TramoSeats"
+      file: "sa-spec-tramo"
+- title: "Output"
+  file: "output"
+  subitems:
+    - title: "X13"
+      file: "sa-output-X13"
+    - title: "TramoSeats"
+      file: "sa-output-tramo"

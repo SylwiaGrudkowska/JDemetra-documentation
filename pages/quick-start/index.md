@@ -1,7 +1,6 @@
 ---
 layout: left-menu
 title: Introduction
-order: 0
 ---
 
 The *Quick Start* aims to introduce the JDemetra+ 2.2 software, which 

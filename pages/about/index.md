@@ -3,7 +3,6 @@ layout: left-menu
 title: A brief description of JDemetra+
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
-order: 0
 ---
 <br/>
   
@@ -15,9 +14,93 @@ developed by the National Bank of Belgium in cooperation with the
 Deutsche Bundesbank and [Eurostat](http://ec.europa.eu/eurostat)[^1].
 The tool includes the [TRAMO/SEATS](../../sa/methods/tramosetas) 
 and [X-12-ARIMA/X-13ARIMA-SEATS](../../quick-start/sa-process.html#manual-interventions) methods and enables the implementation of the ‘ESS 
-Guidelines on Seasonal Adjustment’ (2015). 
+Guidelines on Seasonal Adjustment’ (2015).
+This section discusses:
+* [Historical background of JDemetra+](#historical-background)
+* [Characteristic of JDemetra+ software](#software-characteristic)
 
-### Software characteristic
+ 
+### Historical background 
+---------------------
+
+Seasonal adjustment (SA) is an important component of the official
+statistics business process. This technique is widely used for
+estimating and removing seasonal and calendar-related movements from
+time series resulting in data that present a clear picture of economic
+phenomena. Therefore, Eurostat[^1] takes part in various activities that
+aim to promote, develop and maintain a publicly available software
+solution for SA in line with established best practices.
+
+Among many seasonal adjustment methods that produce reliable results for
+large datasets the most widely used and recommended ones are
+X-12-ARIMA[^2] /X-13ARIMA-SEATS[^3] developed at the U.S. Census Bureau
+and TRAMO/SEATS[^4] developed by Victor Gómez and Agustín Maravall, from
+the Banco de España. Both methods are divided into two main parts. The
+first part is called a pre-adjustment. It removes various deterministic
+effects from the series by means of a regression model with ARIMA[^5]
+noise. The second part is the decomposition of the time series that aims
+to estimate and remove a seasonal component from the time series.
+TRAMO/SEATS and X-12-ARIMA/X-13ARIMA-SEATS use a very similar approach
+in the first part to estimate the same model on the processing step, but
+they differ completely in the decomposition step. Therefore, comparing
+results from decomposition is often difficult. Furthermore, their
+diagnostics focus on different aspects and their outputs take completely
+different forms.
+
+The TRAMO/SEATS method was originally implemented in 2001 in the program
+TSW (Tramo-Seats-Windows), which is a Windows extension of programs
+TRAMO and SEATS. Since then, a considerable amount of changes and
+additions have been added, that affect many important input parameters,
+as well as the output obtained. These changes resulted in program TSW+
+launched in 2014.[^6] A LINUX version of TRAMO-SEATS is also available. 
+
+For X-13ARIMA-SEATS the U.S. Census Bureau provides the Windows
+interface called [Win X-13](https://www.census.gov/srd/www/winx13/).[^7]
+Distributions of X-13ARIMA-SEATS for Linux and Unix platforms are also
+available.[^8]
+
+Both the above seasonal adjustment programs were originally written in
+FORTRAN, which is currently recognized as a declining language. The
+FORTRAN limitations *–* especially for the creation of reusable
+components and for the management of complex problems *–* make the
+maintenance of the relevant IT codes increasingly burdensome.
+
+These original seasonal adjustment programs are commonly perceived by
+users as difficult to operate. Therefore, to improve access to these SA
+methods for non-specialists, Eurostat introduced new software called
+Demetra. It offered a user-friendly interface to the two SA algorithms:
+TRAMO/SEATS and X-12-ARIMA and facilitated the comparison of the output
+from those two algorithms. Even so, Demetra uses the FORTRAN libraries,
+which, together with an insufficient product development and handling of
+errors, is a factor that caused a rapid decline in software’s usage.
+
+In 2009, the European Statistical System (ESS) launched its ‘*Guidelines
+on Seasonal Adjustment*’ [^9]. As Demetra could not be adapted to the
+new requirements in the *Guidelines*, Eurostat, in cooperation with the
+National Bank of Belgium (NBB), started a project aiming to develop
+improved software called Demetra+[^10]. It was released in 2012. This
+tool provides a common approach for seasonal adjustment using the
+TRAMO/SEATS and X-12-ARIMA methods, which is more coherent with the
+*Guidelines*. It includes a unified graphical interface and input/output
+diagnostics for the two methods. Demetra+ source code is written in C++
+and uses the two original FORTRAN modules, as well as .NET libraries.
+Therefore Demetra+ software is non-extensible and cannot be used in IT
+environments other than Windows. For these reasons it seems that in
+long-term perspective it will not meet users’ expectations.
+
+Therefore, Eurostat took an initiative to create new software that is
+based on Demetra+ experience but is platform independent and extensible.
+The resulting program is called JDemetra+. The NBB has been developing
+it since 2012. From the typical user perspective in comparison with
+Demetra+, numerous improvements have been implemented in JDemetra+, in
+terms of both layout and functionalities. The most critical innovation
+is the re-writing of the original FORTRAN codes of
+X-12-ARIMA/X-13ARIMA-SEATS and TRAMO/SEATS in JAVA, following a real
+object-oriented approach. These functionalities are discussed in the
+next section.
+
+
+### Software characteristic {#software-characteristic}
 
 JDemetra+ offers up-to-date versions of leading seasonal adjustment 
 algorithms rewritten in Java, which is a crucial factor that enables the 
@@ -50,8 +133,6 @@ functionalities should be highlighted:
 * Spectral analysis (X-12-ARIMA definition); 
 * Sliding spans (X-12-ARIMA); 
 * Wiener-Kolmogorov analysis (for unobserved ARIMA components model, SEATS-like). 
-
-### JDemetra+ architecture
 
 JDemetra+ is written using object-oriented programming 
 (OOP) methodology. It allows developers to design software in a modular 
@@ -103,72 +184,16 @@ tml)
 	* Mac OS: [Mac OS X 10.6](http://support.apple.com/downloads), [OS X Lion 
 10.7](http://www.oracle.com/technetwork/java/javase/downloads/index.html). 
 
-### Installing and uninstalling JDemetra+ {#installing-and-uninstalling-jdemetra}
 
-JDemetra+ is a stand-alone application packed in a zip package. It is
-accessible from *Collaboration in research and methodology for official
-statistics* webpage ([<span
-class="underline">www.cros-portal.eu</span>](http://www.cros-portal.eu/)).
-
-Once downloaded to the PC it can be extracted to any folder on your
-system. The archive contains two versions of executable file (32-bit
-version and 64-bit version). The user should execute the version that
-matches the system version. The executable file is located in the
-appropriate nbdemetra/bin directory.
-
-If the launching of JDemetra+ fails, you can try the following
-operations:
-
--   Check if Java SE Runtime Environment (JRE) is properly installed by
-    > typing in the following command in a terminal: *java --version*
-
--   Check the logs in your home directory:
-
-    -   %appdata%/.nbdemetra/dev/var/log/ for Windows;
-
-    -   \~/.nbdemetra/dev/var/log/ for Linux and Solaris;
-
-    -   \~/Library/Application Support/.nbdemetra/dev/var/log/ for Mac
-        > OS X.
-
-In order to remove a previously installed JDemetra+ version, the user
-should delete an appropriate JDemetra+ folder.
-
-### Running JDemetra+ {#running-jdemetra}
-
-To open an application, navigate to the destination folder and double
-click on *nbdemetra.exe* or *nbdemetra64.exe* depending on the system
-version (*nbdemetra.exe* for the 32-bit system version and
-*nbdemetra64.exe* for the 64-bit system version).
-
-{: .text-center}
-
-![Text](/assets/img/reference-manual/manual/A_Ref1.jpg)
-
-*Running JDemetra+.*
-
-### Closing JDemetra+ {#closing-jdemetra}
-
-To close the application, select *File → Exit* from the main menu (See
-Chapter 3).
-
-{: .text-center}
-
-![Text](/assets/img/reference-manual/manual/A_Ref2.jpg)
-
-*Closing JDemetra+.*
-
-The other way is to click on the close box in the upper right-hand
-corner of the JDemetra+ window. If there is any unsaved work, JDemetra+
-will display a warning and provide the user with the opportunity to save
-it. The message box is shown below.
-
-{: .text-center}
-
-![Text](/assets/img/reference-manual/manual/A_Ref3.jpg)
-
-*The warning from leaving JDemetra+ without saving the workspace.*
 
 ##### Footnotes
 
 [^1]: Eurostat is the statistical office of the European Union. Its task is to provide the European Union with statistics at European level that enable comparisons between countries and regions.
+[^2]: X-12-ARIMA is a seasonal adjustment program developed and supported by the U.S. Census Bureau. It includes all the capabilities of the X-11 program (see DAGUM, E.B. (1980)), which estimates trend and seasonal component using moving averages. X-12-ARIMA offers useful enhancements including: extension of the time series with forecasts and backcasts from the ARIMA models prior to seasonal adjustment, adjustment for effects estimated with user-defined regressors, additional seasonal and trend filter options, alternative seasonal-trend-irregular decomposition, additional diagnostics of the quality and stability of the adjustments, extensive time series modelling and model selection capabilities for linear regression models with ARIMA errors. For basic information on the X-12-ARIMA program see ‘X-12-ARIMA Reference Manual’ (2011). More information on X-12-ARIMA can be found at http://www.census.gov.
+[^3]: X-13ARIMA-SEATS is a seasonal adjustment program developed and supported by the U.S. Census Bureau that contains two seasonal adjustment modules: the enhanced X-11 seasonal adjustment procedure and an ARIMA model based seasonal adjustment procedure from the SEATS seasonal adjustment program developed by GÓMEZ, V., and MARAVALL, A. (2013). For information on the X-13ARIMA-SEATS program see ‘X-13ARIMA-SEATS Reference Manual’ (2015). More information on X-13ARIMA-SEATS can be found at http://www.census.gov. 
+[^4]: TRAMO/SEATS is a model-based seasonal adjustment method developed by Victor Gómez and Agustin Maravall (the Banco de España). It consists of two linked programs: TRAMO and SEATS. TRAMO ("Time Series Regression with ARIMA Noise, Missing Observations, and Outliers") performs estimation, forecasting, and interpolation of regression models with missing observations and ARIMA errors, in the presence of possibly several types of outlier. SEATS ("Signal Extraction in ARIMA Time Series") performs an ARIMA-based decomposition of an observed time series into unobserved components. Both programs are supported by the Banco de España. For basic information on the TRAMO/SEATS see CAPORELLO, G., and MARAVALL, A. (2004). More information on TRAMO/SEATS can be found at www.bde.es. 
+[^5]: For description of the ARIMA model see 7.2.1.
+[^6]: MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014).
+[^7]: Documentation on Win X-X13 can be found on: https://www.census.gov/srd/www/winx13/WinX13Doc.html.
+[^8]: (2015), ‘X-13ARIMA-SEATS Quick Reference for Unix\Linux’.
+[^9]: Endorsed by the Statistical Programme Committee, the European Statistical System (ESS) ‘Guidelines on Seasonal Adjustment’ (2009) aim to harmonize European practices and to improve the comparability of infra-annual national statistics as well as enhance the overall quality of the European Union and the euro area aggregates. The ‘ESS Guidelines on Seasonal Adjustment’ (2009) and its revised version released in 2015 cover all the key steps of the seasonal and calendar adjustment process. They discuss both the theoretical aspects and practical implementation of seasonal adjustment issues.

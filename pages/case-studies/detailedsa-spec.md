@@ -1,0 +1,96 @@
+---
+layout: left-menu
+title: Defining and modifying a specification
+tagline: technical documentation for JDemetra+ using GitHub Pages
+description: Basics
+---
+
+In general, the user can influence on the parameters of the seasonal
+adjustment process by creating a specification with given settings or by
+changing some settings in the specification currently in use.
+
+1.  To create a new specification go to the *Workspace* window choose a
+    node for which you wish to add a specification (Modelling or
+    Seasonal adjustment) and choose a method (*tramo* or *regarima* for
+    *Modelling*, *tramoseats* or *x13* for *Seasonal adjustment*). Click
+    on the left mouse button and choose a *New* option. The user can
+    also import the specification from the external file with the
+    *Import from* option.
+	
+	{: .text-center.image-wrapper}
+
+	![Text](/assets/img/user-guide/UG_SA_image1.jpg)
+
+	{: .text-center.small}
+
+	**Adding a new specification**
+
+2.  Next, unfold the node (the *tramoseats* node in the case presented
+    here) and right click on the newly created specification
+    (*TramoSeatsSpec-1* in the case presented below) to open the local
+    menu. The local menu offers the following options:
+
+	-   **Open** -- displays the specification's settings
+
+	-   **Export to** -- enables the user to save the specification in a
+		config file.
+
+	-   **Delete** -- removes the specification from the workspace.
+
+	-   **Rename** -- enables the user to change the name of the
+		user-defined specification.
+
+	-   **Edit comments** -- a functionality for monitoring a seasonal
+		adjustment process is implemented. The user can add and modify short
+		notes concerning a given time series. These notes are visible in the
+		Comments column in the Processing window. The notes are displayed
+		when the user hovers the mouse on the given cell.
+
+	-   **Create document** -- adds a new document to the relevant place in
+		the *Seasonal adjustment → documents* section and assigns the
+		specification selected by the user to it.
+
+	-   **Clone** -- creates the copy of the specification and adds it to
+		the list.
+
+	Chose **Open** from the menu.
+
+	{: .text-center.image-wrapper}
+
+	![Text](/assets/img/user-guide/UG_SA_image2.jpg)
+
+	{: .text-center.small}
+	
+	**Opening a new specification**
+
+3.  The *Specification* window is divided into several section. The
+    actual content depends on the choice made by the user in the step 1
+    of this scenario. To introduce changes unfold the sections, modify
+    the current settings (chose from the list or insert the value by
+    hand) and confirm the changes with the *OK* button.
+
+	{: .text-center.image-wrapper}
+
+	![Text](/assets/img/user-guide/UG_SA_image3.jpg)
+
+	{: .text-center.small}
+	**Modifying a new specification**
+
+4.  User-defined specifications are usually used for seasonal adjustment
+    of many time series (*Statistical methods* → *Seasonal adjustment* →
+    *Multi Processing* → *New*). The user intervention can be also made
+    after a modelling/seasonal adjustment process. In such case, to
+    introduce changes click on the *Specification* button. JDemetra+
+    opens the S*pecifications* panel on the right. Unfold the sections,
+    modify the current settings (chose from the list or insert the value
+    by hand) and confirm the changes with the *Apply* button. JDemetra+
+    automatically apply the new settings and displays the outcome
+    resulting from the modified specification.
+
+	{: .text-center.image-wrapper}
+
+	![Text](/assets/img/user-guide/UG_SA_image4.jpg)
+
+	{: .text-center.small}
+	
+	**Modifying a specification which is currently in use**
