@@ -3,7 +3,6 @@ layout: left-menu
 title: What's new in JDemetra+ 2.2
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
-order: 0
 ---
 
 JDemetra+ version 2.2.0 features vital enhancements resulting from the 

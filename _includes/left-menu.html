@@ -1,25 +1,54 @@
-<nav class='col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar left'>
-<ul>
-  {% assign groups = (site.pages | where_exp:"p", "p.url contains include.folder" | group_by: "category" | sort: 'category' | reverse ) %}
-	{% for g in groups %}
-		{% if g.name != "" %}
-		<li class="sub-menu">
-			<a href="#">{{g.name}}<div class='fa fa-caret-down right'></div></a>
-			<ul {% if g.name == page.category %} class="opened" {% endif %}>
-			{% assign sorted_pages = (g.items | sort:'order' ) %}
-			{% for p in sorted_pages %}
-				<li><a {% if p.url == page.url %} class="active" {% else %} {% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
-			{% endfor %}
-			</ul>
-		</li>
-		{% else %}
-			{% assign sorted_pages = (g.items | sort:'order' ) %}
-			{% for p in sorted_pages %}
-			<li>
-			  <a {% if p.url == page.url %} class="active" {% endif %} href="{{ p.url }}">{{ p.title }}</a>
-			</li>
-			{% endfor %}
+{% if include.init %}
+	{% assign menu = include.folder | remove: '/pages/' | append: '/' | remove: '//' | replace: '/', '-' | prepend: 'left-menu-' %}
+	{% assign menu-items = site.data[menu] %}
+	{% assign last-char = page.url | slice: -1, 1 %}
+	{% if last-char == '/' %}
+		{% assign searched-item = 'index' %}
+	{% else %}
+		{% assign searched-item = page.url | remove: '.html' | split: '/' | last %}
+	{% endif %}
+	{% include left-menu.html init-items = menu-items items = menu-items searched-item = searched-item path='' %}
+{% elsif include.level == null and include.init == null %}
+	{% for item in include.items %}
+		{% assign path = include.path | append: item.title | append: '/' %}
+		{% if item.file == include.searched-item %}
+			<nav class='col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar left'>
+				<ul>
+					{% assign path-items = path | split: '/' %}
+					{% include left-menu.html items = include.init-items level = 0 folder = include.folder path-items = path-items %}
+				</ul>
+			</nav>
+		{% else if item.subitems != null %}
+			{% assign menu-items = item.subitems %}
+			{% include left-menu.html init-items = include.init-items items = menu-items searched-item = include.searched-item path = path %}
 		{% endif %}
 	{% endfor %}
-	</ul>
-</nav>
+{% else %}
+	{% for item in include.items %}
+		{% assign level = include.level | plus: 1 %}
+		{% if item.file == null %}
+			{% assign url = '#'%}
+		{% else %}
+			{% assign url = include.folder | append: item.file | append: '.html' %}
+		{% endif %}
+		{% if include.path-items[include.level] == item.title %} 
+			{% assign isInPath = true %} 
+		{% else %} 
+			{% assign isInPath = false %} 
+		{% endif %}
+		{% if isInPath and include.path-items.size == level %} 
+			{% assign isActive = true %} 
+		{% else %} 
+			{% assign isActive = false %}
+		{% endif %}
+		<li {% if item.subitems != null %} class='sub-menu' {% endif %}>
+			<a {% if isActive %} class='active' {% endif %} href='{{ url }}'>{{ item.title }}{% if item.subitems != null %}<div class='fa fa-caret-down right'></div>{% endif %}</a>
+			{% if item.subitems != null %}
+				{% assign menu-items = item.subitems %}
+				<ul {% if isInPath %} class='opened' {% endif %}>
+					{% include left-menu.html items=menu-items level=level folder=include.folder path-items=include.path-items %}
+				</ul>
+			{% endif %}
+		</li>
+	{% endfor %}
+{% endif %}

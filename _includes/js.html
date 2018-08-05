@@ -25,10 +25,16 @@
 		}
 	 });
 	
-	$(".sub-menu a").click(function () {
+	$('.sub-menu > ul a, .sub-menu > a.active').click(function () {
 	  $(this).parent(".sub-menu").children("ul").slideToggle("100");
 	  $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
 	});
+	
+	//Prevent reloading same page:
+	$('nav.left a.active').click(function(evt) {
+		evt.preventDefault();
+	});
+	
 </script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

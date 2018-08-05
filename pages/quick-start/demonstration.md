@@ -7,8 +7,13 @@ order: 2
 ---
 The default view of the JDemetra+ window, which is displayed after launching the program, is shown below. 
 
-{: .text-center}
+{: .text-center.image-wrapper}
+
 ![Text](/assets/img/quick-start/Jd+mainwindow.jpg)
+
+{: .text-center.small}
+
+**JDemetra+ default window**
 
 On the left two panels are visible: the *Workspace* panel and the *Providers* panel. The *Providers* panel presents the list of the data sources and organizes the imported series within each data provider. By default, JDemetra+ supports the following data sources:
 * JDBC;
@@ -23,15 +28,26 @@ On the left two panels are visible: the *Workspace* panel and the *Providers* pa
 All standard databases (Oracle, SQLServer, DB2, MySQL) are supported by JDemetra+ via JDBC, which is a generic interface to many relational databases. Other providers can be added by users by creating plugins.
 We will now focus on the Spreadsheets data source, which corresponds to the series prepared in an Excel file. The file should have dates in Excel date format. Dates should be placed in the first column (or in the first row) and titles of the series in the corresponding cell of the first row (or in the first column). The top-left cell [A1] can include text or it can be left empty. The empty cells are interpreted by JDemetra+ as missing values and they can appear at the beginning, in the middle and at the end of the time series. The example is shown below.
 
-{: .text-center}
+{: .text-center.image-wrapper}
+
 ![Text](/assets/img/quick-start/Spreadsheet.jpg)
+
+{: .text-center.small}
+
+**Example of an excel spreadsheet that can be imported to JDemetra+**
+
 
 ## Importing the series
 
 Once the spreadsheet is prepared and saved, it can be imported to JDemetra+ as it is shown in the video below.
 
-{: .text-center}
+{: .text-center.image-wrapper}
+
 ![Text](/assets/img/quick-start/Import_spreadsheet.gif)
+
+{: .text-center.small}
+
+**Importing the series**
 
 The data are organized in a tree structure. If you expand all the 
 plus-signs under the spreadsheet you will see all the series within each 
@@ -50,7 +66,8 @@ window and launch the seasonal adjustment process. Explore the results
 and save them. The gif below shows the details of the actions required 
 for the seasonal adjustment process. 
 
-{: .text-center}
+{: .text-center.image-wrapper}
+
 ![Text](/assets/img/quick-start/FirstSAprocess.gif)
 
 ## Manual interventions
@@ -60,7 +77,9 @@ changes introduced in a given settings' section may lead to changes in
 the output for other parts of the results. The options for the seasonal 
 adjustment procedure are explained [here](../manual/sa-input).
 
-{: .text-center}
+
+{: .text-center.image-wrapper}
+
 ![Text](/assets/img/quick-start/First-SA-process-specifcation.gif)
 
 ## Output options
@@ -76,5 +95,6 @@ diagnostics and statistics. The full list of items can be found
 [here](https://github.com/Immurb/TestWiki/wiki/The-output-items-for-the- 
 CVS-matrix-format). 
 
-{: .text-center}
+{: .text-center.image-wrapper}
+
 ![Text](/assets/img/quick-start/FirstSAprocess-results.gif)

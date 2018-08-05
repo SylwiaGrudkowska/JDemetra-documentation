@@ -41,7 +41,7 @@
 	
 	<div class="container-fluid">
 	  <div class="row">
-	    {% include left-menu.html folder=current_folder %}
+	    {% include left-menu.html init=true folder=current_folder %}
 		<main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
 			<h2>{{ page.title }}</h2>
 		  {{ content }}
