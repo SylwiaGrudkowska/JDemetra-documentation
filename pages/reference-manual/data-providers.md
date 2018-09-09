@@ -27,7 +27,7 @@ The allowed data sources include:
 All standard databases (Oracle, SQLServer, DB2, MySQL) are supported by
 JDemetra+ via JDBC, which is a generic interface to many relational
 databases. Other providers can be added by users by creating plugins
-(see item 3.4.6). To import data, right-click on the appropriate
+(see *Plugins* section in [Tools](tools.html)). To import data, right-click on the appropriate
 provider from the *Providers* panel and specify the required parameters.
 For all providers the procedure follows the same logic. The requirements
 for each of these data sources as well as the importing procedure are
@@ -55,7 +55,7 @@ sheets’ names.
 Series uploaded to the *Providers* window can be displayed (see
 ‘*JDemetra+ User Guide*’ (2017), item 2.1.4), modified and tested (see
 ‘*JDemetra+ User Guide*’ (2017), item 3.4) and used in estimation
-routines (Chapters 4 and 5). The data sources can be restored after
+routines (see [Modelling](modelling.html) and [Seasonal adjustment](sa.html)). The data sources can be restored after
 re-starting the application so that there is no need to fetch them
 again. This functionality can be set in the *Behaviour* tab available at
 the *Option* item from the *Tools* menu.
@@ -88,7 +88,7 @@ data orientation (vertical or horizontal)).
 ### Import data {#import-data}
 
 To import data from a given data source, click on this data source in
-the *Providers* window (2.1.1), choose *Open* option and specify the
+the *Providers* window shown below, choose *Open* option and specify the
 import details, such as a path to a data file. These details vary
 according to data providers. The scenario below presents how to import
 the data from an Excel file.

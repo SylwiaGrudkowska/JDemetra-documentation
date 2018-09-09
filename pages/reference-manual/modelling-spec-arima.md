@@ -40,12 +40,10 @@ used unless changed by the user.
 #### Estimate
 
 The *Estimate* section specifies the details of estimation procedure of
-the RegARIMA model determined in the *Regression* and *Arima* sections,
-which are explained in the items 4.1.2.3 and 4.1.2.4.
+the RegARIMA model determined in the [*Regression*](#regression) and [*Arima*](#arima) sections.
 
 **RegARIMA specification -- options for the *Estimate* section**
 
-**Option**
 
  - **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **td**, *regression{variables=td}* - Assigns a type of     model-estimated regression effect to pre-specified regression variables. Option is available when **Calendar**            $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **option** is set to *Default* or *Holidays*. Acceptable values:
     * *None* -- means that no calendar variables will be included in the regression.
@@ -72,7 +70,6 @@ estimating the RegARIMA model.
 
 **RegARIMA specification -- options for the *Transformation* section**
 
-**Option**
 
  - **Function**, *transform{function=}* - Transformation of data. [^32] The user can choose between:
    * *None* -- no transformation of data;
@@ -100,14 +97,13 @@ argument.
 
 **RegARIMA specification -- options for the *Regression* section**
 
-**Option** 
 
  - **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **option**, *regression{variables = td1nolpyear, td,       tdnoleapyear, td1coef}*  - Specifies the type of calendar being assigned to the series. The following types of calendar    estimation are available:
     * *None* -- excludes calendar variables from the regression model.
     * *Default* -- means that a default JDemetra+ calendar, which does not include any country-specific holidays, will be        used.
-    * *Stock* -- estimates day-of-week effects for inventories and other stock reported for the $w^{\text{th}}$ day of the        month (to denote the last day of the month enter 31).The option is not supported yet.
+    * *Stock* -- estimates day-of-week effects for inventories and other stock reported for the $w^{\text{th}}$ day of the        month (to denote the last day of the month enter 31). The option is not supported yet.
     * *Holidays* -- corresponds to the pre-defined trading day variables, modified to take into account country specific         holidays. It means that after choosing this option the user should specify the type of the trading day effect             (**Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **TradingDays**) and a previously defined calendar       that includes the country specific holidays (**Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $               **holidays**).
-    * *UserDefined* -- used when the user wants to specify his own trading day variables. With this option calendar            effects are captured only by regression variables chosen by the user from the previously created list of user-defined      variables (see 3.1.2).
+    * *UserDefined* -- used when the user wants to specify his own trading day variables. With this option calendar            effects are captured only by regression variables chosen by the user from the previously created list of user-defined      variables.
 
     The default setting is *Default*. 
  - **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **holidays**, *regression{variables=holiday}* - List of    user-defined calendars to be used to create calendar regression variables. Option is available when **Calendar**          $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **option** is set to *Holidays*.
@@ -115,7 +111,7 @@ argument.
  The default setting is *Default,* which implies that the default calendar is used and no country-specific holidays are 
  considered.
  - **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **userVariables**, *regressionariables=}* - List of        predefined regression variables to be included in the model. Option is available when **Calendar** $\rightarrow \ $       **tradingDays** $\rightarrow \ $ **option** is set to *UserDefined*.
-  When the user chooses the *UserDefined* type for the trading day effect estimation, one must specify the corresponding    variables. It should be noted that such variables must have been previously defined (see 3.1.2), otherwise the list in    the field **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **userVariables** is empty.
+  When the user chooses the *UserDefined* type for the trading day effect estimation, one must specify the corresponding    variables. It should be noted that such variables must have been previously defined, otherwise the list in    the field **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **userVariables** is empty.
   The default setting is *Unsused.* |
  - **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **td**, *regression{variables=td}* - Assigns a type of     model-estimated regression effect to pre-specified regression variables. Option is available when **Calendar**            $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **option** is set to *Default* or *Holidays*. Acceptable values:
     * *None* -- means that no calendar variables will be included in the regression.
@@ -160,7 +156,7 @@ argument.
   * Temporary change (TC);[^44] 
   * Seasonal outliers (SO). 
 
-  Descriptions and formulas are available in 7.1.1.
+  Descriptions and formulas are available in section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
   By default, no pre-specified outlier is included in the specification.
 - **Intervention variables**, *regression{user=}* - defined as in TRAMO. Following the definition, these effects are        special events known a-priori (strikes, devaluations, political events, and so on). Intervention variables are modelled   as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as  combinations of the following basic structures:[^45]
   * Dummy variables;[^46] 
@@ -171,9 +167,9 @@ argument.
 
    $B$ is backshift operator (i.e. $B^{k}X_{t} = X_{t - k}$) and $s$ is frequency of the time series ($s = 12\ $for a        monthly time series, $s = 4\ $for a quarterly time series). 
    These operations enable to generate not only AO, LS, TC, SO and RP outliers but also sophisticated intervention           variables that are well-adjusted to the particular case. No intervention variables are included in the pre-defined        specifications. They can only be added to the user-defined specifications.Intervention variables are not implemented in    X-13ARIMA-SEATS, however they can be created by the user and introduced to the model as user-defined variables.
-- **Ramp effects**, *regression{variables = (rp)}* - A ramp effect means a linear increase or decrease in the level of the   series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series      span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in 7.1.1.
+- **Ramp effects**, *regression{variables = (rp)}* - A ramp effect means a linear increase or decrease in the level of the   series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series      span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
   No ramps are included in the pre-defined specifications. They can only be added to the user-defined specifications.
-- **User-defined variables**, *regression{user=}* - The user-defined variable is an external regressor included by the      user in the RegARIMA model. To add a user-defined variable to the model, one must specify the corresponding variable in   the *Variables* window. First, click the *Unnamed* item and then click the *Name* field to expand a list of available     variables and choose a variable from the list. It should be noted that such variables must have been previously defined   (see 3.1.2), otherwise the list is empty. The user-defined regression variable associated to a specific component should   not contain effects that have to be associated with another component. Therefore, the following rules should be obeyed:
+- **User-defined variables**, *regression{user=}* - The user-defined variable is an external regressor included by the      user in the RegARIMA model. To add a user-defined variable to the model, one must specify the corresponding variable in   the *Variables* window. First, click the *Unnamed* item and then click the *Name* field to expand a list of available     variables and choose a variable from the list. It should be noted that such variables must have been previously defined, otherwise the list is empty. The user-defined regression variable associated to a specific component should   not contain effects that have to be associated with another component. Therefore, the following rules should be obeyed:
   * The variable assigned to the trend or to the seasonally adjusted series should not contain a seasonal pattern; 
   * The variable assigned to the seasonal should contain neither a trend nor a level (i.e. should have a zero mean); 
   * The variable assigned to the irregular should contain neither a seasonal pattern nor a trend (i.e. should have a zero    mean); 
@@ -211,7 +207,6 @@ model.
 
 **RegARIMA specification -- options for the *Outliers* section**
 
-**Option**
 - **Is enabled**, *outlier, --* - Enables/disables the automatic detection of outliers in the span determined by the        **Detection span** option. By default, the checkbox is marked, which implies that the automatic identification of         outliers is enabled. 
 - **Detection span** $\rightarrow \ $ **type**, *outlier, span* - A span of the time series to be searched for outliers.     The available parameter's values are: 
   * *All* -- full time series span is considered in the modelling;
@@ -250,7 +245,6 @@ identification are presented below.
 **RegARIMA specification - options for the automatic
 identification of the *ARIMA* model**
 
-**Option** 
 
 - **Automatic**, *automdl; --* - When marked it enables automatic modelling of the ARIMA model to be performed.
 
@@ -287,7 +281,6 @@ MA parameters.
 
 **RegARIMA specification - options for the manual identification of the ARIMA model**
 
-**Option**
 
 - **Automatic**, *automdl; --* - When unmarked it enables the user to enter the parameters of the ARIMA model.
 
@@ -337,13 +330,19 @@ MA parameters.
 
 [^32]: The test for log-level specification used by TRAMO/SEATS is based
     on the maximum likelihood estimation of the parameter $\lambda$ in
-    the Box-Cox transformations (which is a power transformations such
-    that the transformed values of the time series $\text{y\ }$are a
+    the Box-Cox transformations (which is a power transformation such
+    that the transformed values of the time series $\text{y }$are a
     monotonic function of the observations, i.e.
-    $y_{i}^{\alpha} = \left\{ \begin{matrix}
-    \frac{y_{i}^{\alpha} - 1}{\lambda},\ \lambda \neq 0 \\
-    \log y_{i}^{\alpha},\ \lambda = 0 \\
-    \end{matrix} \right.\ $. The program first fits two Airline models
+    
+    $$
+    y^{\alpha} = 
+    \begin{cases}
+    \frac{y_{i}^{\alpha} - 1}{\lambda}, \lambda \neq 0 \\\\
+    \log  y_{i}^{\alpha}, \lambda = 0
+    \end{cases}
+    $$
+
+    The program first fits two Airline models
     (i.e. ARIMA (0,1,1)(0,1,1)) to the time series: one in logs
     ($\lambda = 0$), other without logs ($\lambda = 1$). The test
     compares the sum of squares of the model without logs with the sum
@@ -411,7 +410,7 @@ MA parameters.
 
 [^50]: MAKRIDAKIS, S., WHEELWRIGHT, S.C., and HYNDMAN R.J. (1998).
 
-[^51]: Cancellation issue is described in 7.1.1.6.
+[^51]: Cancellation issue is described in  section *7.1.1.6 Cancellation of AR and MA factors* in the *Annex*.
 
 [^52]: A time series $x_{t}$ is said to have a unit root if it can be
     modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and
@@ -419,13 +418,13 @@ MA parameters.
 
 [^53]: GÓMEZ, V., and MARAVALL, A. (1997).
 
-[^54]: See 7.1.1.
+[^54]: See section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
 
-[^55]: See 7.6.1.3.
+[^55]: See section *7.6.1.3 Ljung-Box test* in the *Annex*.
 
-[^56]: See 7.6.1.3.
+[^56]: See section *7.6.1.3 Ljung-Box test* in the *Annex*.
 
-[^57]: Cancellation issue is described in 7.1.1.6.
+[^57]: Cancellation issue is described in  section *7.1.1.6 Cancellation of AR and MA factors* in the *Annex*.
 
 [^58]: A time series $x_{t}$ is said to have a unit root if it can be
     modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and
@@ -433,10 +432,10 @@ MA parameters.
 
 [^59]: GÓMEZ, V., and MARAVALL, A. (1997).
 
-[^60]: See 7.1.1.
+[^60]: See section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
 
-[^61]: See 7.6.1.3.
+[^61]: See section *7.6.1.3 Ljung-Box test* in the *Annex*.
 
-[^62]: See 7.6.1.3.
+[^62]: See section *7.6.1.3 Ljung-Box test* in the *Annex*.
 
 [^63]: For description of specificifications see 4.1

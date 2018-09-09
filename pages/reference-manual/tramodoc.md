@@ -54,7 +54,7 @@ The options for the *TramoDoc* include:
     JDemetra+ re-estimates the complete seasonal adjustment model
     automatically, so the results are updated immediately. The user can
     modify the specification and validate the newly introduced changes
-    using the *Specification* functionality (see 4.1).
+    using the *Specification* functionality (see [Modelling-Specifications](modelling-specifications.html)).
 
 -   **Lock** – prevents the series from the *TramoDoc* from being
     changed when the user double clicks on a new one in the *Providers*

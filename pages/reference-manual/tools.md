@@ -5,7 +5,7 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-The Tools menu includes, among other functionalities, tools which are helpful for a graphical analysis of the time series. The ‘X-13ARIMA-SEATS Reference Manual’ (2015) strongly recom-mends studying a high resolution plot of the time series as it is helpful to get information about e.g. seasonal patterns, potential outliers and stochastic non-stationarity. Also the ‘ESS Guidelines on Seasonal Adjustment’ (2015) recommend carrying out a graphical analysis on both unadjusted data and the initial run of the seasonal adjustment software. In particular, the graphical analysis should consider: 
+The Tools menu includes, among other functionalities, tools which are helpful for a graphical analysis of the time series. The ‘X-13ARIMA-SEATS Reference Manual’ (2015) strongly recommends studying a high resolution plot of the time series as it is helpful to get information about e.g. seasonal patterns, potential outliers and stochastic non-stationarity. Also the ‘ESS Guidelines on Seasonal Adjustment’ (2015) recommend carrying out a graphical analysis on both unadjusted data and the initial run of the seasonal adjustment software. In particular, the graphical analysis should consider: 
 * The length of the series and a model span;  
 * The presence of zeros, outliers or problems in the data;  
 * The structure of the series: presence of a long term and cyclical movements, of a sea-sonal component, volatility etc.;  
@@ -13,7 +13,7 @@ The Tools menu includes, among other functionalities, tools which are helpful fo
 * The decomposition scheme (additive, multiplicative).
 
 
-The ‘ESS Guidelines on Seasonal Adjustment’ (2015), recommend that this exercise should be per-formed and documented for the most important series to be adjusted at least once a year.
+The ‘ESS Guidelines on Seasonal Adjustment’ (2015), recommend that this exercise should be performed and documented for the most important series to be adjusted at least once a year.
 The following functionalities are available from the Tools menu:
 
 * [**Container**](#container) – includes several tools for displaying data in a time domain;
@@ -45,16 +45,7 @@ items are available: *Chart*, *Grid*, *Growth Chart* and *List*.
 
 Several containers 
 can be opened at the same time. Each of them may include multiple time 
-series. Chart plots the time series as a graph. This function opens an 
-empty window. To display a given series drag and drop the series from 
-the Providers window into it. More than one series can be displayed on 
-one graph. The chart is automatically rescaled after adding a new 
-series. The series to display can be also dragged from the other windows 
-(e.g. from the Variables window) or directly from the windows that 
-display the results of the estimation procedure. 
-
-Several containers can be opened at the same time. Each of them may
-include multiple time series.
+series.  
 
 *Chart* plots the time series as a graph. This function opens an empty
 window. To display a given series drag and drop the series from the
@@ -205,11 +196,11 @@ Options that are characteristic for *Grid* are:
 
 -   **Zoom** – option for modifying the chart size.
 
-The explanation of other options can be found below Figure 3.29.
+The explanation of other options can be found below the "*Local menu options for chart*" figure in section [**Container**](#container).
 
 When none of the series is selected, the local menu offers a reduced
 list of options. The explanation of the functions available for the
-local menu is given below Figure 3 .29.
+local menu is given below the "*Local menu options for chart*" figure in section [**Container**](#container).
 
 {: .text-center.image-wrapper}
 
@@ -243,9 +234,9 @@ are characteristic for *Growth chart* are:
 
 -   **Edit last year** – for clarity and readability purposes, only five
     last years of observations are shown by default. This setting can be
-    adjusted to the user needs in the *Options* section (see 3.4.7).
+    adjusted to the user needs in the [*Options*](#options) section.
 
-The explanation of other options can be found below Figure 3 .29.
+The explanation of other options can be found below the "*Local menu options for chart*" figure in section [**Container**](#container).
 
 *List* provides basic information about chosen time series, like the
 start and end date, the number of observations and a sketch of data
@@ -255,7 +246,7 @@ Right click displays the local menu with all available options. Apart
 from the standard options, the local menu for *List* enables marking the
 series that match the selected frequency (yearly, half-yearly,
 quarterly, monthly) using the *Select by frequency* option. The
-explanation of other options can be found below Figure 3 .29.
+explanation of other options can be found below the "*Local menu options for chart*" figure in section [**Container**](#container).
 
 {: .text-center.image-wrapper}
 
@@ -267,7 +258,7 @@ explanation of other options can be found below Figure 3 .29.
 
 For a selected series a local menu offers an extended list of options.
 The explanation of the functions available for the local menu is given
-below Figure 3.29.
+below the "*Local menu options for chart*" figure in section [**Container**](#container).
 
 {: .text-center.image-wrapper}
 
@@ -308,12 +299,11 @@ of the series and a panel on the right that presents the graph of an
 aggregate). The local menu for the list of series offers the option
 *Select by frequenc*y, which marks all the series on the list that are
 yearly, half-yearly, quarterly or monthly (depending on the user’s
-choice). The explanation of the other options can be found below Figure
-3 .29. The local menu for the panel on the left offers functionalities
+choice). The explanation of the other options can be found below the "*Local menu options for chart*" figure in section [**Container**](#container). The local menu for the panel on the left offers functionalities
 that are analogous to the ones that are available for the *List*
 functionalities, while the options available for the local menu for the
 panel on the left are the same as the ones available for *Chart* (see
-3.4.1).
+[*Container*](#container)).
 
 {: .text-center.image-wrapper}
 
@@ -331,7 +321,7 @@ PACF function. By default, the window presents the results for
 non-seasonally and seasonally differenced series
 \\(\left( d = 1,D = 1 \right)\\). These settings can be changed through
 the *Properties* window (*Tools* *→ Properties*). Some explanations of a
-periodogram and the PACF function can be found in Erreur : source de la
+periodogram and the PACF function can be found in the *7.3 Spectral analysis* section in the *Annex*.
 référence non trouvée.
 
 {: .text-center.image-wrapper}
@@ -346,7 +336,7 @@ The typical results are shown below. The bottom left graph presents
 partial autocorrelation coefficients (vertical bars) and confidence
 intervals. The right-click local menu offers several functionalities for
 a differenced series. The explanation of available options can be found
-below Figure 3 .29.
+below the "*Local menu options for chart*" figure in section [**Container**](#container).
 
 {: .text-center.image-wrapper}
 
@@ -401,23 +391,19 @@ plugins.
 are related to JDemetra+. This functionality, however, is currently not
 operational for the JDemetra+ plugins.
 * The *Downloaded* panel is designed for installation of the new plugins
-from the local machine. This process in explained in detail in Erreur :
-source de la référence non trouvée.
+from the local machine. This process in explained in more detail below.
 * The *Settings* panel is designated for adding the update centres, which
 are the places to hold plugins. For each centre the user can specify
 proxy settings and a time interval for the automatic checking for
 updates. At the moment this functionality is not operational for the
 JDemetra+ plugins.
 
-Plugins
--------
-
 Installation of the new plugins from the local machine can be done from
 the *Plugin* functionality activated from the *Tools* menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage22.jpeg)
+![Text](/assets/img/annex/UG_A_image22.png)
 
 {: .text-center.small}
 
@@ -429,7 +415,7 @@ the folder in which the plugins have been saved and click **OK** button.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage23.jpeg)
+![Text](/assets/img/annex/UG_A_image23.png)
 
 {: .text-center.small}
 
@@ -439,7 +425,7 @@ The new plugin is now visible in the panel.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage24.jpeg)
+![Text](/assets/img/annex/UG_A_image24.png)
 
 {: .text-center.small}
 
@@ -449,7 +435,7 @@ Click on it and choose the **Install** button.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage25.jpeg)
+![Text](/assets/img/annex/UG_A_image25.png)
 
 {: .text-center.small}
 
@@ -461,7 +447,7 @@ the process.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage26.jpeg)
+![Text](/assets/img/annex/UG_A_image26.png)
 
 {: .text-center.small}
 
@@ -471,7 +457,7 @@ Next, mark the terms of agreements and choose **Install**.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage27.jpeg)
+![Text](/assets/img/annex/UG_A_image27.png)
 
 {: .text-center.small}
 
@@ -481,7 +467,7 @@ Then the process is started.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage28.jpeg)
+![Text](/assets/img/annex/UG_A_image28.png)
 
 {: .text-center.small}
 
@@ -492,7 +478,7 @@ close the window.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage29.jpeg)
+![Text](/assets/img/annex/UG_A_image29.png)
 
 {: .text-center.small}
 
@@ -506,7 +492,7 @@ installation of the NbDemetra-ODBC plugin.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage30.jpeg)
+![Text](/assets/img/annex/UG_A_image30.png)
 
 {: .text-center.small}
 
@@ -532,7 +518,7 @@ Inactive plugins can be activated or uninstalled.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage31.jpeg)
+![Text](/assets/img/annex/UG_A_image31.png)
 
 {: .text-center.small}
 
@@ -540,7 +526,7 @@ Inactive plugins can be activated or uninstalled.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage32.jpeg)
+![Text](/assets/img/annex/UG_A_image32.png)
 
 {: .text-center.small}
 
@@ -553,7 +539,7 @@ deactivation.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage33.jpeg)
+![Text](/assets/img/annex/UG_A_image33.png)
 
 {: .text-center.small}
 
@@ -564,7 +550,7 @@ restarted immediately after the uninstallation is completed or not.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage34.jpeg)
+![Text](/assets/img/annex/UG_A_image34.png)
 
 {: .text-center.small}
 
@@ -575,39 +561,42 @@ restart is necessary to complete the process.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage35.jpeg)
+![Text](/assets/img/annex/UG_A_image35.png)
 
 {: .text-center.small}
 
 **Information concerning the restarting of JDemetra+**
 
-NETBEANS plugins embedded with JDemetra+ 
------------------------------------------
 
-By default, the JDemetra+ includes the plugins listed in Table 7.17.
+### NETBEANS plugins embedded with JDemetra+ 
 
-Table 7.17: Default JDemetra+ plugins.
+By default, the JDemetra+ includes the plugins listed in the table below
 
-  **Name**                         **Category**         **Description**
-  -------------------------------- -------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------
-  NbDemetra -- Anomaly detection   SA core algorithms   Identification of outliers
-  NbDemetra -- Spreadsheet         IO (Input/output)    Time series providers for spreadsheet (Excel, OpenOffice)
-  NbDemetra -- Common              IO (Input/output)    Common time series providers, like XML and TXT
-  NbDemetra -- JDBC                IO (Input/output)    Time series provider for the JDBC sources
-  NbDemetra -- ODBC                IO (Input/output)    Time series provider for the ODBC sources
-  NbDemetra -- SDMX                IO (Input/output)    Time series provider for SDMX files
-  NbDemetra -- Core                SA core algorithms   Encapsulation of the core algorithms
-  NbDemetra -- UI                  SA core algorithms   Basic graphical components
-  NbDemetra -- Branding            SA core algorithms   
-  NbDemetra -- SA                  SA core algorithms   Default SA framework, including TRAMO/SEATS and X-13ARIMA-SEATS. This implementation can lead to small differences in comparison with the original programs.
+Default JDemetra+ plugins.
+
+{: .table .table-style}
+
+  |**Name**                |        **Category**         |        **Description**   |
+  |------------------------|-----------------------------|--------------------------| 
+  |NbDemetra -- Anomaly detection | SA core algorithms  | Identification of outliers|
+  |NbDemetra -- Spreadsheet |  IO (Input/output)  | Time series providers for spreadsheet (Excel, OpenOffice)|
+  |NbDemetra -- Common      |  IO (Input/output)  |  Common time series providers, like XML and TXT|
+  |NbDemetra -- JDBC        |  IO (Input/output)  |  Time series provider for the JDBC sources
+  |NbDemetra -- ODBC        |  IO (Input/output)  |  Time series provider for the ODBC sources
+  |NbDemetra -- SDMX        |  IO (Input/output)  |  Time series provider for SDMX files
+  |NbDemetra -- Core        |  SA core algorithms |  Encapsulation of the core algorithms
+  |NbDemetra -- UI          |  SA core algorithms |  Basic graphical components
+  |NbDemetra -- Branding    |  SA core algorithms |  
+  |NbDemetra -- SA          |  SA core algorithms |  Default SA framework, including TRAMO/SEATS and X-13ARIMA-SEATS. This implementation can lead to small differences in comparison with the original programs.|
+
 
 This list is displayed in the *Installed* panel, available from the
-*Plugin* functionality, activated from the *Tools* menu (Figure 7.27.11:
-Activation of the *Plugin* functionality from the *Tools* menu.).
+*Plugin* functionality, activated from the *Tools* menu (Figure
+*Activation of the Plugin functionality from the Tools menu* in [**Plugins**](#plugins) section).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage36.jpeg)
+![Text](/assets/img/annex/UG_A_image36.png)
 
 {: .text-center.small}
 
@@ -717,11 +706,11 @@ The *Statistics* tab includes options to control:
     -   **Default components** – a list of series and diagnostics that
         are displayed in the **SAProcessing** \\(\rightarrow\\)
         **Output** window. The list of default items can be modified
-        with the respective **Select** button (see Figure 3 .44: The
-        Default components section on the Statistics tab.).
+        with the respective **Select** button (see figure below: "*The
+        Default components section on the Statistics tab*").
 
     -   **Diagnostics** – a list of diagnostics tests, for which the
-        user can modify the default settings (see Figure 3 .45).
+        user can modify the default settings (see figure "*The panel for modification of the settings for the tests in the Basic checks section*" below).
 
 {: .text-center.image-wrapper}
 
@@ -732,8 +721,7 @@ The *Statistics* tab includes options to control:
 **The *Default components* section on the *Statistics* tab**
 
 The explanations for the list of series and diagnostics that are
-displayed in the *Default components* section can be found under Erreur
-: source de la référence non trouvée.
+displayed in the *Default components* section can be found under section *7.7 The output items* in the *Annex*.
 
 To modify the settings for a particular measure, double click on a
 selected row (select the test’s name from the list and click on the

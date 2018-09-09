@@ -32,7 +32,7 @@ description: Basics
 
 1.  Once the time series is marked by clicking on it with the left mouse
     button, more sophisticated options are available, in addition to the
-    standard ones shown in Figure 2.12.
+    standard ones shown above.
 
 	{: .text-center.image-wrapper}
 
@@ -58,7 +58,7 @@ description: Basics
 
 	***Chart & grid* view**
 
-1.  *Rename* option (see Figure 2.12) enables to change the time series
+1.  *Rename* option (see below) enables to change the time series
     name.
 
 	{: .text-center.image-wrapper}

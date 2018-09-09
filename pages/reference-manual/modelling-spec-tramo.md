@@ -25,7 +25,7 @@ given. Small variants from the original solutions are indicated by an
 asterisk in the tables presented in this chapter. For an exact 
 description of the different parameters, the user should refer to the 
 documentation of TSW+. Some additional explanations about the TRAMO 
-model, its parameters and estimation procedure are given in 7.1.1. For 
+model, its parameters and estimation procedure are given in section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*. For 
 the pre-defined specifications the parameters are disabled, while in the 
 case of the user-defined specifications the user can set them 
 individually. However, as in some cases the choice of a given value 
@@ -37,8 +37,7 @@ changed by the user.
 
 #### Estimate
 The *Estimate* section specifies the details of estimation procedure of 
-the TRAMO model determined in the Regression and Arima sections, which 
-are explained in the items 4.1.1.3 and 4.1.1.5. 
+the TRAMO model determined in the [Regression](#regression) and [Arima](#arima) sections. 
 
 **Model span →  type** (*–; –*)
 
@@ -187,7 +186,7 @@ By default, the checkbox is marked, which implies that the t-test is used.
    * Temporary change[^15] (TC); 
    * Seasonal outliers (SO).
 
-   Descriptions and formulas are available in 7.1.1.
+   Descriptions and formulas are available in section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
    No pre-specified outliers are included in the pre-defined specifications. They can only be added to the user-defined specifications.
    
   - **Intervention variables** (*regression variables; --*)
@@ -204,10 +203,10 @@ By default, the checkbox is marked, which implies that the t-test is used.
     These basic structures enable the generation of not only AO, LS, TC, SO and RP outliers but also sophisticated intervention variables that are well-adjusted to the particular case. 
     No intervention variables are included in the pre-defined specifications. They can only be added to the user-defined specifications. 
     
- - **Ramp effects**, *regression variables; --* - A ramp effect means a linear increase or decrease in the level of the series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series      span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in the       section 7.1.1. 
+ - **Ramp effects**, *regression variables; --*  A ramp effect means a linear increase or decrease in the level of the series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series      span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*. 
    No ramps are included in the pre-defined specifications. They can only be added to the user-defined specifications.
 
- - **User-defined variables**, *regression variables; --* - The user-defined variable is an external regressor included by the user in the TRAMO model. To add a user-defined variable to the model, one must specify the corresponding variable by   clicking the *Name* field and choosing a variable from the list. It should be noted that such variables must have been    previously defined (see 3.1.2), otherwise the list is empty. The user-defined regression variable associated to a         specific component should not contain effects that have to be associated with another component. Therefore, the           following rules should be obeyed: 
+ - **User-defined variables**, *regression variables; --* The user-defined variable is an external regressor included by the user in the TRAMO model. To add a user-defined variable to the model, one must specify the corresponding variable by   clicking the *Name* field and choosing a variable from the list. It should be noted that such variables must have been    previously defined, otherwise the list is empty. The user-defined regression variable associated to a         specific component should not contain effects that have to be associated with another component. Therefore, the           following rules should be obeyed: 
     * The variable assigned to the trend or to the seasonally adjusted series should not contain a seasonal pattern;
     * The variable assigned to the seasonal should not contain a trend (or level); 
     * The variable assigned to the irregular should contain neither a seasonal pattern nor a trend (or level). 
@@ -240,12 +239,11 @@ By default, the checkbox is marked, which implies that the t-test is used.
 
 The *Outliers* section enables the user to perform an automatic
 detection of additive outliers, temporary change outliers, level shifts,
-seasonal outliers, or any combination of these four basic outlier's
+seasonal outliers, or any combination of these four basic outlier
 types, using the specified model.
 
 **TRAMO specification -- options for the *Outliers* section**
 
-**Option** 
 
  - **Is enabled** (*outliers; iatip*)
  Enables/disables the automatic detection of outliers in the span determined by the **Detection span** option. By default, the checkbox is marked, which implies that the automatic identification of         outliers is enabled.           |
@@ -289,7 +287,6 @@ automatic model identification are presented below.
 
 **TRAMO specification -- options for the automatic identification of the ARIMA model**
 
-**Option** 
 
 - **Automatic** (*automdl; ami;idif, inic\**) When marked it enables an automatic modelling of the ARIMA model to be performed. 
 
@@ -322,7 +319,6 @@ polynomial with roots inside the unit circle.
 
 **TRAMO specification *--* options for manual identification of the ARIMA model**
 
-**Option**
 - **Automatic**, *ami; idif,inic* - When unmarked it enables the user to enter the parameters of the ARIMA model.
 
 - **Mean**, *mean;imean* - When marked it is considered that the mean is part of the ARIMA model (it highly depends on the   chosen model).
@@ -353,7 +349,7 @@ polynomial with roots inside the unit circle.
 
 ##### Footnotes
 
-[^1]: For a description of both models see 7.2.1.
+[^1]: For a description of both models see section *7.2.1 Mean and seasonal effects of calendar variables* in the *Annex*.
 
 [^2]: TSW+ is a Windows extension of programs TRAMO and SEATS. See
     MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014).
@@ -448,23 +444,23 @@ polynomial with roots inside the unit circle.
 
 [^21]: MAKRIDAKIS, S., WHEELWRIGHT, S.C., and HYNDMAN, R.J. (1998).
 
-[^22]: Cancellation issue is described in 7.1.1.6.
+[^22]: Cancellation issue is described in  section *7.1.1.6 Cancellation of AR and MA factors* in the *Annex*.
 
 [^23]: A time series $x_{t}$ is said to have a unit root if it can be
     modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and
     $\phi_{1} = 1.$
 
-[^24]: See 7.1.1.
+[^24]: See section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
 
-[^25]: See 7.6.1.3.
+[^25]: See section *7.6.1.3 Ljung-Box test* in the *Annex*.
 
-[^26]: Cancellation issue is described in 7.1.1.6.
+[^26]: Cancellation issue is described in  section *7.1.1.6 Cancellation of AR and MA factors* in the *Annex*.
 
 [^27]: A time series $x_{t}$ is said to have a unit root if it can be
     modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and
     $\phi_{1} = 1.$
 
-[^28]: See 7.1.1.
+[^28]: See section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
 
-[^29]: See 7.6.1.3.
+[^29]: See section *7.6.1.3 Ljung-Box test* in the *Annex*.
 
