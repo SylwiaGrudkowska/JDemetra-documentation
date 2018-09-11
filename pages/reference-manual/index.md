@@ -50,8 +50,8 @@ regression, stationarity*, *ARIMA process* and so on. Readers with
 insufficient background to follow this document are encouraged to refer
 to an appropriate textbook, e.g. CHATFIELD (2004). Some background
 knowledge about seasonality in the time series can be gained from the
-e-learning courses on seasonal adjustment that are available at [<span
-class="underline">http://www.sa-elearning.eu/</span>](http://www.sa-elearning.eu/).
+e-learning courses on seasonal adjustment that are available [<span
+class="underline">here</span>](https://ec.europa.eu/eurostat/cros/content/e-learning-course-seasonal-adjustment_en).
 
 ### How the document is organised {#how-the-document-is-organised}
 

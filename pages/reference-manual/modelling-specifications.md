@@ -11,7 +11,7 @@ specifications can be changed by the user in the **Tools → Options** menu. The
 window, contains a set of the pre-defined specifications that enables 
 the user to model the time series using two options: the TRAMO model or 
 the RegARIMA model. The set of pre-defined modelling specifications is 
-presented in Table 4.1. It contains the most commonly used 
+presented in the table below. It contains the most commonly used 
 specifications for seasonal adjustment. The pre-defined specifications 
 correspond to the terminology used in TSW+[^1]. The users are strongly 
 recommended to start their analysis with one of those specifications 

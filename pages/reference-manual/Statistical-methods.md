@@ -5,7 +5,7 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-The Statistical methods menu includes functionalities for modelling, analysis and seasonal ad-justment of a time series. They are divided into three groups:
+The Statistical methods menu includes functionalities for modelling, analysis and seasonal adjustment of a time series. They are divided into three groups:
 * **[Anomaly Detection](#anomaly-detection)** – allows for a purely automatic identification of regression effects;
 * **[Modelling](#modelling)** – enables time series modelling using the TRAMO and RegARIMA models; 
 * **[Seasonal adjustment](#seasonal-adjustment)** – intended for seasonal adjustment of the time series with the TRAMO/SEATS and X-13ARIMA-SEATS methods. 

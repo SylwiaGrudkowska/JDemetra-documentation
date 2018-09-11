@@ -56,4 +56,4 @@ The options for the *TramoSeatsDoc* include:
     seasonal adjustment model automatically, so the results are updated
     immediately. The user can modify the specification and validate the
     newly introduced changes using the *Specification* functionality
-    (see 4.1 and 5.1).
+    (see [Modelling-Specifications](modelling-specifications.html) and [Seasonal adjustment-Specifications](sa-specifications.html)).

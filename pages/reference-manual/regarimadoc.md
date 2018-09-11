@@ -58,7 +58,7 @@ The options for *RegArimaDoc* include:
     re-estimates the complete seasonal adjustment model automatically,
     so the results are updated immediately. The user can modify the
     specification and validate the newly introduced changes using the
-    *Specifications* functionality (see 4.1).
+    *Specifications* functionality (see [Specifications](modelling-specifications.html)).
 
 -   **Lock** – prevents the series from the *RegArimaDoc* from being
     changed when the user double clicks on a new one in the *Providers*
