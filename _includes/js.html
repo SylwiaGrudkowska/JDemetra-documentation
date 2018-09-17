@@ -14,27 +14,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async type="text/javascript" ></script>  
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script>	
-	$('.sub-menu ul').each(function(){
-		if(!$(this).hasClass("opened")){
-			$(this).hide();
-		} else {
-			var item = $(this).parent(".sub-menu").find(".right");
-			item.removeClass("fa-caret-down");
-			item.addClass("fa-caret-up");
-		}
-	 });
-	
-	$('.sub-menu > ul a, .sub-menu > a.active').click(function () {
-	  $(this).parent(".sub-menu").children("ul").slideToggle("100");
-	  $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+<script>
+	$(".sub-menu > ul a, .sub-menu > a.active, .sub-menu a[href='#']").click(function () {
+		var $this = $(this);
+		$this.parent(".sub-menu").children("ul").stop().slideToggle("100");
+		$this.find(".right").toggleClass("fa-caret-up fa-caret-down");
 	});
 	
 	//Prevent reloading same page:
-	$('nav.left a.active').click(function(evt) {
+	$("nav.left a.active").click(function(evt) {
 		evt.preventDefault();
 	});
-	
 </script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

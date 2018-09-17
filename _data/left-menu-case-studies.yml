@@ -26,6 +26,8 @@
           file: "detailedsa-nonseasonal" 
         - title: "User-defined outliers"
           file: "detailedsa-outliers" 
+        - title: "User-defined calendar variables"
+          file: "detailedsa-calendarvariables"
         - title: "Series span and model span"
           file: "detailedsa-span"     
         - title: "Transformation choice"

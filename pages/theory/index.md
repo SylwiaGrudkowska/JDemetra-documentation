@@ -1,9 +1,13 @@
 ---
 layout: left-menu
-title: Seasonal adjustment methods -- TRAMO/SEATS and X-13ARIMA-SEATS
+title: Seasonal adjustment methods - TRAMO/SEATS and X-13ARIMA-SEATS
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
+This section describes selected aspects of the seasonal adjustment methods and
+technical issues including descriptions of the theoretical models used
+by X-12-ARIMA and TRAMO/SEATS. Information provided here are vital for a good understanding of the
+results produced by the software.
 
 TRAMO/SEATS is a model-based seasonal adjustment method developed by
 Victor Gómez (Ministerio de Hacienda), and Agustin Maravall (Banco de

@@ -20,9 +20,9 @@ be used to replicate the results presented in the document.
 The *Quick Start* is intended for beginners, who have only a basic 
 knowledge of seasonality and its estimation in time series. Therefore, 
 the case study included in this document is a basic one. For an 
-explanation of each step of more advanced examples refer to the **Case studies**.
+explanation of each step of more advanced examples refer to the [*Case studies*](../case-studies/).
 Information about the JDemetra+ software and its functionalities is included in the 
-**Reference Manual**.
+[*Reference Manual*](../reference-manual/).
 
 It is assumed that the reader is familiar with time series related 
 concepts. Readers with insufficient background to follow this document 
