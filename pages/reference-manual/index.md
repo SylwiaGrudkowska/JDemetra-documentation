@@ -53,11 +53,11 @@ class="underline">here</span>](https://ec.europa.eu/eurostat/cros/content/e-lear
 
 In the *Reference Manual* section the user can find:
 
-- explanation of the purpose of the main windows: [Data providers](/reference-manual/data-providers.html) and [Workspace] (reference-manual/workspace.html)
-- information on the (calendars)[../reference-manual/calendars.html] and user-defined
-(regression variables)[../reference-manual/user-defined-variables.html].
-- discussion of the options implemented in the [application menu](../reference-manual/application-menu.html)
-- presentation of the options for the [seasonal adjustment specifications](../reference-manual/sa-specifications.html) 
+- explanation of the purpose of the main windows: [Data providers](../reference-manual/data-providers.html) and [Workspace](../reference-manual/workspace.html).
+- information on the [calendars](../reference-manual/calendars.html) and user-defined
+[regression variables](../reference-manual/user-defined-variables.html).
+- discussion of the options implemented in the [application menu](../reference-manual/application-menu.html).
+- presentation of the options for the [seasonal adjustment specifications](../reference-manual/sa-specifications.html).
 - discussion of the [results from the pre-defined and user-defined seasonal adjustment processes](../reference-manual/output.html).
 
 

@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: TramoSeats
+title: Specifications
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
@@ -8,14 +8,14 @@ description: Basics
 The primary aim of the seasonal adjustment process is to remove seasonal
 fluctuations from the time series. To achieve this goal, seasonal
 adjustment methods decompose the original time series into components
-that capture specific movements. These components are: trend-cycle,
-seasonality and irregularity (see 7.1). The trend-cycle component
+that capture specific movements. These components are: [trend-cycle,
+seasonality and irregularity](../theory/index.html). The trend-cycle component
 includes long-term and medium-term movements in the data. For seasonal
 adjustment purposes there is no need to divide this component into two
 parts. JDemetra+ refers to the trend-cycle as trend and consequently
 this convention is used in this document.
 
-This chapter presents the options of the seasonal adjustment processes
+This section presents the options of the seasonal adjustment processes
 performed by the methods implemented in JDemetra+
 (X-12-ARIMA/X-13ARIMA-SEATS and TRAMO/SEATS) and discusses the output
 displayed by JDemetra+. As these seasonal adjustment methods use
@@ -26,7 +26,7 @@ original programs, in JDemetra+ some quality indicators have been
 implemented for both methods, therefore their descriptions in this
 document are provided.
 
-Specifications
+Pre-defined specifications
 --------------
 
 The *Seasonal adjustment* section of the *Workspace* window contains a
@@ -246,6 +246,8 @@ and multi-documents is *RSAfull*, while for X-13ARIMA-SEATS it is RSA4c.
     > time series. Moreover, the Airline model approximates well many
     > other models and provides an excellent "benchmark" model[^10].
 
+User-defined specifications
+--------------
 The user may add new seasonal adjustment specifications to the
 *Workspace* window. To do it, go to the *Seasonal adjustment* section,
 right click on the *tramoseats* or *x13* item in the *specifications*

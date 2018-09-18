@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: User defined variables
+title: User-defined variables
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---

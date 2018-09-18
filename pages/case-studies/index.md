@@ -56,12 +56,12 @@ related issues the user should refer to the [bibliography](..references/)
 
 The *Case Studies* includes a set of scenarios.They focuses on varous topics, such as:
  - [Simple](../case-studies/modelling-basic.html) and [advanced](../case-studies/modelling-advanced.html) time series modelling
- - [Automatic seasonal adjustment process)(../case-studies/simplesa.html)
+ - [Automatic seasonal adjustment process)(/case-studies/simplesa.html)
  - [Manual setting of the parameters of teh seasonal adjustemnt process](../case-studies/specification.html)
  - [Generating teh output from teh seasonal adjustment procedure](../case-studies/output.html)
  - Options for the [revision policies](../case-studies/revision.html)
- - Setting the (calendars)[../case-studies/calendars-main.html]
- - Tools for (spectral analysis)[../case-studies/spectralanalysis.html] and (spectral graphs)[../case-studies/spectralgraphs.html]
+ - Setting the (calendars)[/case-studies/calendars-main.html]
+ - Tools for (spectral analysis)[/case-studies/spectralanalysis.html] and (spectral graphs)[/case-studies/spectralgraphs.html]
  
 
 ### How to use this document {#how-to-use-this-document}

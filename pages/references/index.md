@@ -3,6 +3,11 @@ layout: default
 title: References
 order: 5
 ---
+This section describes selected aspects of the seasonal adjustment methods and
+technical issues including descriptions of the theoretical models used
+by X-12-ARIMA and TRAMO/SEATS. These descriptions of the seasonal
+adjustment related concepts are vital for a good understanding of the
+results produced by the software.
 
 D\'AGOSTINO, R.B. (1970), 'Transformation to normality of the null
 distribution of g1', *Biometrika*, 57: 679-681.

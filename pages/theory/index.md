@@ -25,8 +25,8 @@ are: GÓMEZ, V., and MARAVALL, A. (1996), GÓMEZ, V., and MARAVALL, A.
 TRAMO/SEATS method, TRAMO/SEATS software (DOS version and TSW+ -- Tramo
 Seats Windows software and several interfaces) and its documentation as
 well as papers on methodology and application of the programs, can be
-found in the dedicated section of the Banco de España site.
-([[www.bde.es]{.underline}](http://www.bde.es), Services
+found in the dedicated section of the [Banco de España site].
+(www.bde.es) (Services
 $\rightarrow \ $Professionals $\rightarrow \ $Statistical and
 Econometric Software).
 
@@ -38,8 +38,7 @@ the SEATS program developed at the Banco de España. The program is now
 used by the U.S. Census Bureau for a seasonal adjustment of time series.
 Users can download the X-13ARIMA-SEATS application, which is a Windows
 interface for the X-13ARIMA-SEATS program. Detailed information on
-X-13ARIMA-SEATS can be found at
-[[www.census.gov]{.underline}](file:///\\Gimecb01\homedir-eh$\grudkow\Seasonal%20adjustment\JDemetra+%20Reference%20Manual\www.census.gov).
+X-13ARIMA-SEATS can be found at [U.S. Census Bureau](www.census.gov).
 
 In contrast to the earlier product (X-12-ARIMA), X-13ARIMA-SEATS
 includes not only the enhanced X-11 seasonal adjustment procedure but
@@ -63,23 +62,17 @@ series while SEATS is able to decompose series with 2, 3, 4, 6 and 12
 observations per year. The main components, each representing the impact
 of certain types of phenomena on the time series ($X_{t}$), are:
 
--   The trend ($T_{t}$) that captures long-term and medium-term
-    > behaviour;
+-   The trend ($T_{t}$) that captures long-term and medium-term behaviour;
 
--   The seasonal component ($S_{t}$) representing intra-year
-    > fluctuations, monthly or quarterly, that are repeated more or less
-    > regularly year after year;
+-   The seasonal component ($S_{t}$) representing intra-year fluctuations, monthly or quarterly, that are repeated more or less regularly year after year;
 
--   The irregular component ($I_{t}$) combining all the other more or
-    > less erratic fluctuations not covered by the previous components.
+-   The irregular component ($I_{t}$) combining all the other more or less erratic fluctuations not covered by the previous components.
 
 In general, the trend consists of 2 sub-components:
 
 -   The long-term evolution of the series;
 
--   The cycle, that represents the smooth, almost periodic movement
-    > around the long-term evolution of the series. It reveals a
-    > succession of phases of growth and recession.
+-   The cycle, that represents the smooth, almost periodic movement around the long-term evolution of the series. It reveals a succession of phases of growth and recession.
 
 For seasonal adjustment purposes both TRAMO/SEATS and X-13ARIMA-SEATS do
 not separate the long-term trend from the cycle as these two components
