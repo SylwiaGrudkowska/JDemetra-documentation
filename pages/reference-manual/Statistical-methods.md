@@ -6,9 +6,9 @@ description: Basics
 ---
 
 The Statistical methods menu includes functionalities for modelling, analysis and seasonal adjustment of a time series. They are divided into three groups:
-* **[Anomaly Detection](#anomaly-detection)** – allows for a purely automatic identification of regression effects;
-* **[Modelling](#modelling)** – enables time series modelling using the TRAMO and RegARIMA models; 
-* **[Seasonal adjustment](#seasonal-adjustment)** – intended for seasonal adjustment of the time series with the TRAMO/SEATS and X-13ARIMA-SEATS methods. 
+* [Anomaly Detection](#anomaly-detection) – allows for a purely automatic identification of regression effects;
+* [Modelling](#modelling) – enables time series modelling using the TRAMO and RegARIMA models; 
+* [Seasonal adjustment](#seasonal-adjustment) – intended for seasonal adjustment of the time series with the TRAMO/SEATS and X-13ARIMA-SEATS methods. 
 
 {: .text-center.image-wrapper}
 
@@ -22,7 +22,7 @@ The Statistical methods menu includes functionalities for modelling, analysis an
 
 The primary goal of functionalities that are available in the *Anomaly
 Detection* section is an identification of atypical values called
-outliers. According to the ‘*ESS Guidelines on Seasonal Adjustment*’
+outliers. According to the [‘*ESS Guidelines on Seasonal Adjustment*’](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3)
 (2015), seasonal adjustment methods are likely to be severely affected
 by the presence of such values; therefore they should be detected and
 replaced simultaneously or before estimating the seasonal and calendar
@@ -85,7 +85,7 @@ JDemetra+ removes the last observations from the series and calculates a
 one-period-ahead out-of-sample forecast of the series. The forercasted
 values are then compared with the actual values. The user may decide how
 many of the last observations will be considered (one, two, or three) in
-this procedure (click on the *123* button and specify the number). The
+this procedure (click on the **123** button and specify the number). The
 number of columns visible in the panel on the left is adjusted
 accordingly to the user choice.
 
@@ -133,7 +133,7 @@ second threshold value, then this observation is classified as
 containing a "possible error" and marked in orange. If this value is
 greater than the second threshold value, then the new observation is
 classified as containing a "likely error" and marked in red. Otherwise,
-the observation is accepted as without error[^12].
+the observation is accepted as without an error[^1].
 
 {: .text-center.image-wrapper}
 
@@ -169,16 +169,8 @@ To save the report click **OK** and select a destination folder.
 
 The *Outlier Detection* tool allows for an identification of an ARIMA
 model, including detection of outliers, interpolation of missing values
-and estimation of calendar effects. The assessment of the last
-observations’ quality is not performed. Instead, the outliers are
-highlighted in green (transitory changes), red (level shifts), blue
-(additive outliers) and violet (seasonal outliers). By default the
-seasonal outliers are not considered. The user may change this setting
-in the *Properties* menu.
-
-A step-by-step demonstration of the *Outlier Detection* tool
-capabilities can be found in the ‘*JDemetra+ User Guide*’ (2017), item
-3.3.1.
+and estimation of calendar effects. A step-by-step demonstration of the *Outlier Detection* tool
+capabilities and options can be found [here](../case-studies/modelling-basic.html).
 
 ### Modelling {#modelling}
 
@@ -190,8 +182,7 @@ time series analysis and prediction of a short-term development.
 The *Modelling* section includes all capabilities from the TRAMO and
 RegARIMA models. It is flexible in specifying model parameters. The
 results can be saved and refreshed with updated series. Instructions on
-how to use this functionality is given in the ‘*JDemetra+ User Guide*’
-(2017), item 3.3.2.
+how to use this functionality is given in [the step-by-step demonstration on advdanced time series analysis](../case-studies/modelling-advanced.html)
 
 {: .text-center.image-wrapper}
 
@@ -212,12 +203,11 @@ seasonal adjustment. Finally, the *Direct-Indirect Seasonal Adjustment*
 tool enables for a comparison of the results from direct and indirect
 seasonal adjustment performed for the aggregated series.
 
-The guidance for using these functionalities is given in the ‘*JDemetra+
-User Guide*’ (2017) (basic scenario that allows for generating seasonal
-adjustment in an automatic way is presented in 3.1, different types of
-user interventions are discussed in 3.2, the *Seasonality Tests* tool is
-explained in 3.4.1 while the capabilities of *Direct-Indirect Seasonal
-Adjustment* are shown in 3.2.1.8).
+The guidance for using these functionalities is given in the Case Studies section:
+- [basic scenario that allows for generating seasonal adjustment in an automatic way](../case-studies/simplesa.html);
+- [different types of user interventions](../case-studies/detailedsa.html);
+- [*Seasonality Tests*](); 
+- [*Direct-Indirect Seasonal Adjustment*](../case-studies/detailedsa-direct.html).
 
 {: .text-center.image-wrapper}
 
@@ -226,3 +216,5 @@ Adjustment* are shown in 3.2.1.8).
 {: .text-center.small}
 
 **The *Seasonal Adjustment* menu.**
+
+[^1]: CAPORELLO, G., and MARAVALL, A. (2004a)

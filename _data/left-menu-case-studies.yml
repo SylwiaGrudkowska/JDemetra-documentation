@@ -68,5 +68,5 @@
       file: "calendars-composite"
 - title: "Spectral graphs"
   file: "spectralgraphs"     
-- title: "Spectral analysis"
-  file: "spectralanalysis"
+- title: "Seasonality tests"
+  file: "seasonalitytests"

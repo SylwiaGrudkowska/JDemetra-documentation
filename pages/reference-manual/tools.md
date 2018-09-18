@@ -5,7 +5,7 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-The Tools menu includes, among other functionalities, tools which are helpful for a graphical analysis of the time series. The ‘X-13ARIMA-SEATS Reference Manual’ (2015) strongly recommends studying a high resolution plot of the time series as it is helpful to get information about e.g. seasonal patterns, potential outliers and stochastic non-stationarity. Also the ‘ESS Guidelines on Seasonal Adjustment’ (2015) recommend carrying out a graphical analysis on both unadjusted data and the initial run of the seasonal adjustment software. In particular, the graphical analysis should consider: 
+The Tools menu includes, among other functionalities, tools which are helpful for a graphical analysis of the time series. The [*‘X-13ARIMA-SEATS Reference Manual’ (2015)*](https://www.census.gov/ts/x13as/docX13ASHTML.pdf) strongly recommends studying a high resolution plot of the time series as it is helpful to get information about e.g. seasonal patterns, potential outliers and stochastic non-stationarity. Also the *‘ESS Guidelines on Seasonal Adjustment’ (2015)* recommend carrying out a graphical analysis on both unadjusted data and the initial run of the seasonal adjustment software. In particular, the graphical analysis should consider: 
 * The length of the series and a model span;  
 * The presence of zeros, outliers or problems in the data;  
 * The structure of the series: presence of a long term and cyclical movements, of a sea-sonal component, volatility etc.;  
@@ -13,16 +13,16 @@ The Tools menu includes, among other functionalities, tools which are helpful fo
 * The decomposition scheme (additive, multiplicative).
 
 
-The ‘ESS Guidelines on Seasonal Adjustment’ (2015), recommend that this exercise should be performed and documented for the most important series to be adjusted at least once a year.
-The following functionalities are available from the Tools menu:
+The [*‘ESS Guidelines on Seasonal Adjustment’ (2015)*]((https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3), recommend that this exercise should be performed and documented for the most important series to be adjusted at least once a year.
+The following functionalities are available from the *Tools* menu:
 
-* [**Container**](#container) – includes several tools for displaying data in a time domain;
-* [**Spectral analysis**](#spectral-analysis) – contains tools for analysis of time series in a frequency domain;
-* [**Aggregation**](#aggregation) – enables the user to investigate the graph of the sum of multiple time se-ries;
-* [**Differencing**](#differencing) – allows for inspection the first regular differences of the time series;
-* [**Spreadsheet profiler**](#spreadsheet profiler) – offers the Excel-type view of the XLS file imported to JDe-metra+.
-* [**Plugins**](#plugins) – allows the installation and activation of plugins, which extend JDemetra+ functionalities.
-* [**Options**](#options) – presents the default interface settings and allows for their modification.
+* [*Container*](#container) – includes several tools for displaying data in a time domain;
+* [*Spectral analysis*](#spectral-analysis) – contains tools for analysis of time series in a frequency domain;
+* [*Aggregation*](#aggregation) – enables the user to investigate the graph of the sum of multiple time series;
+* [*Differencing*](#differencing) – allows for inspection the first regular differences of the time series;
+* [*Spreadsheet profiler*](#spreadsheet profiler) – offers the Excel-type view of the XLS file imported to JDemetra+.
+* [*Plugins*](#plugins) – allows the installation and activation of plugins, which extend JDemetra+ functionalities.
+* [*Options*](#options) – presents the default interface settings and allows for their modification.
 
 {: .text-center.image-wrapper}
 ![Text](/assets/img/reference-manual/manual/Tools menu.jpg)
@@ -62,7 +62,7 @@ graph. The chart is automatically rescaled after adding a new series.
 **Launching the *Chart* functionality**
 
 The series to display can be also dragged from the other windows (e.g.
-from the *Variables* window) or directly from the windows that display
+from the [*Variables*](../reference-manual/user-defined-variables.html) window) or directly from the windows that display
 the results of the estimation procedure.
 
 {: .text-center.image-wrapper}
@@ -150,9 +150,6 @@ A list of possible actions includes:
 -   **Configure** – enables the user to customize a chart and a series
     display.
 
-Some of these options are investigated further in the ‘*JDemetra+ User
-Guide*’ (2017), 2.1.4.
-
 *Grid* enables the user to display the selected time series as a table.
 This function opens an empty window. To display a given series drag and
 drop the series from the *Providers* window into it. More than one
@@ -196,11 +193,11 @@ Options that are characteristic for *Grid* are:
 
 -   **Zoom** – option for modifying the chart size.
 
-The explanation of other options can be found below the "*Local menu options for chart*" figure in section [**Container**](#container).
 
 When none of the series is selected, the local menu offers a reduced
-list of options. The explanation of the functions available for the
-local menu is given below the "*Local menu options for chart*" figure in section [**Container**](#container).
+list of options. The explanation of other options can be found below the '*Local menu options for chart*' 
+figure in the [*Container*](#container) section.
+
 
 {: .text-center.image-wrapper}
 
@@ -236,17 +233,17 @@ are characteristic for *Growth chart* are:
     last years of observations are shown by default. This setting can be
     adjusted to the user needs in the [*Options*](#options) section.
 
-The explanation of other options can be found below the "*Local menu options for chart*" figure in section [**Container**](#container).
+The explanation of other options can be found below the '*Local menu options for chart*' figure in the [*Container*](#container)section.
 
 *List* provides basic information about chosen time series, like the
 start and end date, the number of observations and a sketch of data
 graph. This function opens an empty window. To display information, drag
-and drop the series from the *Providers* window into the *List* window.
+and drop the series from the [*Providers*](../reference-manual/data-providers.html) window into the *List* window.
 Right click displays the local menu with all available options. Apart
 from the standard options, the local menu for *List* enables marking the
 series that match the selected frequency (yearly, half-yearly,
 quarterly, monthly) using the *Select by frequency* option. The
-explanation of other options can be found below the "*Local menu options for chart*" figure in section [**Container**](#container).
+explanation of other options can be found below the '*Local menu options for chart*' figure in the [**Container**](#container) section.
 
 {: .text-center.image-wrapper}
 
@@ -258,7 +255,7 @@ explanation of other options can be found below the "*Local menu options for cha
 
 For a selected series a local menu offers an extended list of options.
 The explanation of the functions available for the local menu is given
-below the "*Local menu options for chart*" figure in section [**Container**](#container).
+below the '*Local menu options for chart*' figure in the [**Container**](#container) section.
 
 {: .text-center.image-wrapper}
 
@@ -273,9 +270,8 @@ below the "*Local menu options for chart*" figure in section [**Container**](#co
 The *Spectral analysis* section provides three spectral graphs for an
 in-depth analysis of time series in the frequency domain. These graphs
 are *Auto-regressive Spectrum*, *Periodogram* and *Tukey Spectrum*.
-Brief information on a spectral analysis is given in 7.3. A detailed
-presentation of the abovementioned tools can be found in the ‘*JDemetra+
-User Guide*’ (2017), item 3.4.2.
+For more information the user may study [a basic desription of spectral analysis](../theory/spectral.html)
+and [a detailed presentation of the abovementioned tools](../case-studies/spectralgraphs.html).
 
 {: .text-center.image-wrapper}
 
@@ -299,7 +295,7 @@ of the series and a panel on the right that presents the graph of an
 aggregate). The local menu for the list of series offers the option
 *Select by frequenc*y, which marks all the series on the list that are
 yearly, half-yearly, quarterly or monthly (depending on the user’s
-choice). The explanation of the other options can be found below the "*Local menu options for chart*" figure in section [**Container**](#container). The local menu for the panel on the left offers functionalities
+choice). The explanation of the other options can be found below the '*Local menu options for chart*' figure in the [*Container*](#container) section. The local menu for the panel on the left offers functionalities
 that are analogous to the ones that are available for the *List*
 functionalities, while the options available for the local menu for the
 panel on the left are the same as the ones available for *Chart* (see
@@ -321,8 +317,7 @@ PACF function. By default, the window presents the results for
 non-seasonally and seasonally differenced series
 \\(\left( d = 1,D = 1 \right)\\). These settings can be changed through
 the *Properties* window (*Tools* *→ Properties*). Some explanations of a
-periodogram and the PACF function can be found in the *7.3 Spectral analysis* section in the *Annex*.
-référence non trouvée.
+periodogram and the PACF function can be found [here](../theory/spectral_periodogram.html).
 
 {: .text-center.image-wrapper}
 
@@ -336,7 +331,7 @@ The typical results are shown below. The bottom left graph presents
 partial autocorrelation coefficients (vertical bars) and confidence
 intervals. The right-click local menu offers several functionalities for
 a differenced series. The explanation of available options can be found
-below the "*Local menu options for chart*" figure in section [**Container**](#container).
+below the "*Local menu options for chart*" figure in the [*Container*](#container) section.
 
 {: .text-center.image-wrapper}
 
@@ -350,9 +345,8 @@ For the *Partial autocorrelation* and the *Periodogram* panels the
 right-button menu offers a copy series option that allows data to be
 exported to the another application and a graph to be printed and saved
 as a clipboard or as a jpg file. Information about the partial
-autocorrelation function is given in 7.9. The description of a
-periodogram is available in the ‘*JDemetra+ User Guide*’ (2017), item
-3.4.2
+autocorrelation function is given [here](../theory/ACF_and_PACF.html). The description of a
+periodogram is presented in [the Spectral graphs scenario](/case-studies/spectralgraphs.html).
 
 ### Spreadsheet profiler {#spreadsheet-profiler}
 
@@ -592,7 +586,7 @@ Default JDemetra+ plugins.
 
 This list is displayed in the *Installed* panel, available from the
 *Plugin* functionality, activated from the *Tools* menu (Figure
-*Activation of the Plugin functionality from the Tools menu* in [**Plugins**](#plugins) section).
+*Activation of the Plugin functionality from the Tools menu* in [Plugins](#plugins) section).
 
 {: .text-center.image-wrapper}
 
@@ -663,7 +657,7 @@ The *Demetra UI* tab allows for setting:
 -   Default number of last years of the time series displayed in charts
     representing growth rates (**Growth rates**).
 
--   Controls the view of the window for adding pre-specified outliers
+-   Controls the view of the window for adding pre-specified outliers.
     (**Pre-specified Outliers**)
 
 -   Visibility of icons in the context menus (**Context Menus**).
@@ -706,9 +700,7 @@ The *Statistics* tab includes options to control:
     -   **Default components** – a list of series and diagnostics that
         are displayed in the **SAProcessing** \\(\rightarrow\\)
         **Output** window. The list of default items can be modified
-        with the respective **Select** button (see figure below: "*The
-        Default components section on the Statistics tab*").
-
+        with the respective **Select** button (see figure below)
     -   **Diagnostics** – a list of diagnostics tests, for which the
         user can modify the default settings (see figure "*The panel for modification of the settings for the tests in the Basic checks section*" below).
 
@@ -721,7 +713,7 @@ The *Statistics* tab includes options to control:
 **The *Default components* section on the *Statistics* tab**
 
 The explanations for the list of series and diagnostics that are
-displayed in the *Default components* section can be found under section *7.7 The output items* in the *Annex*.
+displayed in the *Default components* section can be found [here](../theory/output.html).
 
 To modify the settings for a particular measure, double click on a
 selected row (select the test’s name from the list and click on the
@@ -743,7 +735,7 @@ and test used in a diagnostic procedure can be found in 7.12.
 
 The users can customize the diagnostics and they can specify the default
 for the different outputs. Their preferences are saved between different
-sessions of JD+. This new feature is accessible in the *Statistics* tab
+sessions of JDemetra+. This new feature is accessible in the *Statistics* tab
 of the *Options* panel.
 
 {: .text-center.image-wrapper}
@@ -757,7 +749,7 @@ of the *Options* panel.
 The *Data Transfer* tab contains multiple technologies that define the
 behaviour of the drag and drop and copy-paste actions. To change the
 default settings, double click on the selected item. Once the
-modifications are introduced, confirm them with the *OK* button.
+modifications are introduced, confirm them with the **OK** button.
 
 {: .text-center.image-wrapper}
 
@@ -770,7 +762,7 @@ modifications are introduced, confirm them with the *OK* button.
 folders where the data can be found. This way, the application can use
 the data from different computers. Otherwise, the user would need to
 have access to the exact path where the data is located. To add a
-relative location, select the data provider, click “*+*” button and
+relative location, select the data provider, click “**+**” button and
 specify the location.
 
 {: .text-center.image-wrapper}

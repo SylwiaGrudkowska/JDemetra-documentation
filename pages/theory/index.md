@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: Seasonal adjustment methods - TRAMO/SEATS and X-13ARIMA-SEATS
+title: Seasonal adjustment methods -- TRAMO/SEATS and X-13ARIMA-SEATS
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
@@ -50,10 +50,8 @@ thereby enlarge the range of economic time series that can be adequately
 seasonally adjusted.
 
 In general, X-13ARIMA-SEATS can perform seasonal adjustment in two ways:
-either using ARIMA model-based seasonal adjustment as in SEATS or by
-means of an enhanced X-11 method. The ARIMA model-based method
-implemented in SEATS is characterised in 7.1.2 while the non-parametric
-method X-11 implemented in X-13ARIMA-SEATS is presented in 7.1.3.
+either using ARIMA model-based seasonal adjustment as in [SEATS](../theory/SA_SEATS.html) or by
+means of an enhanced [X-11 method](../theory/SA_X11.html).
 
 The seasonal adjustment methods available in JDemetra+ aim to decompose
 a time series into components and remove seasonal fluctuations from the
