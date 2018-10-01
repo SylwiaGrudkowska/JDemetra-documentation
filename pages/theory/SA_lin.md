@@ -38,9 +38,9 @@ For this purpose both TRAMO and RegARIMA use regression models with
 ARIMA errors. With these models TRAMO and RegARIMA also produce
 forecasts.
 
-  ---------------------------------------- ---------
+
   $z_{t} = y_{t}\mathbf{\beta} + x_{t}$,   \[7.5\]
-  ---------------------------------------- ---------
+  
 
 where:
 
@@ -49,7 +49,7 @@ $z_{t}$ is the original series;
 $\mathbf{\beta} = (\beta_{1},\ldots,\beta_{n})$ -- a vector of
 regression coefficients;
 
-$y_{t} = (y_{1t},\ldots,y_{\text{nt}})$ -- $\text{n\ }$regression
+$y_{t} = (y_{1t},\ldots,y_{\text{nt}})$ -- $\text{n}$ regression
 variables (the trading day variables, the leap year effect, outliers,
 the Easter effect, ramps, intervention variables, user-defined
 variables);
@@ -63,31 +63,31 @@ zero mean and a constant variance.
 The polynomial $\phi\left( B \right)$ is a stationary autoregressive
 (AR) polynomial in $B$, which is a product of the stationary regular AR
 polynomial in $B$ and the stationary seasonal polynomial
-in$\text{\ B}^{s}$:[^4]
+in $\text{B}^{s}$:[^4]
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------
+  
   $$\phi\left( B \right) = \phi_{p}\left( B \right)\Phi_{p_{s}}\left( B^{s} \right) = (1 + \phi_{1}B + \ldots + \phi_{p}B^{p})(1 + \Phi_{1}B^{s} + \ldots + \Phi_{p_{s}}B^{p_{s}s})$$   \[7.6\]
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------
+  
 
 where:
 
-$\text{p\ }$-- the number of regular AR terms, (in
+$\text{p}$ -- the number of regular AR terms, (in
 JDemetra+$\ \ p \leq 3)$;
 
 $p_{s}$ -- the number of seasonal AR terms, (in
-JDemetra+$\text{\ \ }p_{s} \leq 1)$;
+JDemetra+ $p_{s} \leq 1)$;
 
-$\text{s\ }$-- the number of observations per year (frequency of the
+$\text{s}$ -- the number of observations per year (frequency of the
 time series).
 
 The polynomial $\theta(B)$ is an invertible moving average (MA)
 polynomial in $B$, which is a product of the invertible regular MA
 polynomial in $B$ and the invertible seasonal MA polynomial
-in$\text{\ B}$:
+in $\text{B}$:
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------
+  
   $\theta\left( B \right) = \theta_{q}\left( B \right)\Theta_{q_{s}}\left( B^{s} \right) = (1 + \theta_{1}B + \ldots + \theta_{q}B^{q})(1 + \Theta_{1}B^{s} + \ldots + \Theta_{q_{s}}B^{q_{s}s})$,   \[7.7\]
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------
+
 
 where:
 
@@ -101,15 +101,14 @@ modulus is greater than 1. When invertible an MA process,
 $x_{t} = \theta\left( B \right)a_{t},$ can be expressed as
 
 An AR process of infinite order, $\pi\left( B \right)x_{t} = a_{t}$,
-where , $\pi\left( B \right) = \pi_{0} + \pi_{1}B + \ldots$.[^5]
+where , $\pi\left( B \right) = \pi_{0} + \pi_{1}B + \ldots$ [^5]
 
 The polynomial $\delta\left( B \right)$ is the non-stationary AR
 polynomial in $B$ (unit roots):
 
-  ---------------------------------------------------------------- ---------
+  
   $\delta\left( B \right) = {(1 - B)}^{d}{(1 - B^{s})}^{d_{s}}$,   \[7.8\]
-  ---------------------------------------------------------------- ---------
-
+  
 where:
 
 $d$ -- regular differencing order, ($d \leq 1)$;
@@ -135,7 +134,7 @@ procedure of the ARIMA model with regression variables are presented in
 the later in this section.
 
 Among the deterministic effects one can distinguish between the calendar
-effects and outliers. The calendar effects are discussed in 7.2. The
+effects and outliers. The calendar effects are discussed in the [Calendar effects](../theory/Calendars.html) section. The
 impact of different types of outliers on time series is illustrated with
 several examples by FRANSES, P.H. (1998) For example, it was explained
 that additive outliers, which are described later in this section, yield
@@ -145,11 +144,11 @@ parameters. This effect is especially prominent when the size of the
 outlier is considerable.
 
 KAISER, R., and MARAVALL, A. (1999) express the impact of the outliers
-on the observed series as[^6]:
+on the observed series as:[^6]
 
-  --------------------------------------------------------------------------------------------------------- ---------
+  
   $y_{t}^{*} = \sum_{j = 1}^{k}\xi_{j}\left( B \right)\omega_{j}I_{t}^{\left( \tau_{j} \right)} + y_{t}$,   \[7.9\]
-  --------------------------------------------------------------------------------------------------------- ---------
+ 
 
 where:
 
@@ -172,7 +171,7 @@ The optimal choice of regression variables (and/or intervention
 variables) requires knowledge from the user about the time series being
 modelled[^7]. On the contrary, outliers, frequently used in modelling
 seasonal economic time series, can be automatically detected by
-JDemetra+ (see 4.1.1.4 for TRAMO and 4.1.2.4 for RegARIMA). The
+JDemetra+ (see [Specifiations - TRAMO](../reference-manual/modelling-spec-tramo.html) section for TRAMO and [Specifiations - ARIMA](../reference-manual/modelling-spec-arima.html) section for RegARIMA). The
 procedure described in GÓMEZ, V., and MARAVALL, A. (2001a) identifies
 the ARIMA model structure in the presence of deterministic effects.
 Therefore, the number of identified outliers may depend on the ARIMA
@@ -182,67 +181,78 @@ The types of outliers that can be automatically identified and estimated
 by JDemetra+ without any user intervention are:
 
 -   Additive Outlier (AO) -- a point outlier which occurs at a given
-    > time$\text{\ t}_{0}$. For the additive outlier
-    > $\xi_{j}\left( B \right) = 1$, which results in the regression
-    > variable:
+     time $t_0$. For the additive outlier
+     $\xi_{j}( B) = 1$, which results in the regression
+     variable:
 
-  ------------------------------------------------- ----------
-  $\text{AO}_{t}^{t_{0}} = \left\{ \begin{matrix}   \[7.10\]
-  1\ for\ t = t_{0} \\                              
-  0\ for\ t \neq t_{0} \\                           
-  \end{matrix} \right.\ $;                          
-  ------------------------------------------------- ----------
+  
+  $$
+  AO_{t}^{t_{0}} = 
+  \begin{cases}   
+  1  \text{ for }  t = t_{0} \\\\                              
+  0  \text{ for }  t \neq t_{0}                            
+  \end{cases}
+  $$;               \[7.10\]           
+  
 
 -   Level shift (LS) -- a variable for a constant level shift beginning
-    > at the given time$\text{\ t}_{0}$. For the level shift
-    > $\xi_{j}\left( B \right) = \frac{1}{1 - B}$, which results in the
-    > regression variable:
+     at the given time $t_{0}$. For the level shift
+     $\xi_{j}\left( B \right) = \frac{1}{1 - B}$, which results in the
+     regression variable:
 
-  ------------------------------------------------- ----------
-  $\text{LS}_{t}^{t_{0}} = \left\{ \begin{matrix}   \[7.11\]
-   - 1\ for\ t < t_{0} \\                           
-  0\ for\ t \geq t_{0} \\                           
-  \end{matrix} \right.\ $;                          
-  ------------------------------------------------- ----------
+  $$
+  LS_{t}^{t_{0}} = 
+  \begin{cases}   
+  -1  \text{ for }  t < t_{0} \\\\                              
+  0  \text{ for }  t \geq t_{0}                            
+  \end{cases}
+  $$;               \[7.11\]
+                          
+  
 
 -   Temporary change[^8] (TC) -- a variable for an effect on the given
-    > time$\text{\ t}_{0}$ that decays exponentially over the following
-    > periods. For the temporary change
-    > $\xi_{j}\left( B \right) = \frac{1}{1 - \delta B}$, which results
-    > in the regression variable:
+     time $t_{0}$ that decays exponentially over the following
+     periods. For the temporary change
+     $\xi_{j}\left( B \right) = \frac{1}{1 - \delta B}$, which results
+     in the regression variable:
 
-  ------------------------------------------------- ----------
-  $\text{TC}_{t}^{t_{0}} = \left\{ \begin{matrix}   \[7.12\]
-  0\ for\ t < t_{0} \\                              
-  \alpha^{t - t_{0}}\ for\ t \geq t_{0} \\          
-  \end{matrix} \right.\ $;                          
-  ------------------------------------------------- ----------
+  $$
+  TC_{t}^{t_{0}} = 
+  \begin{cases}   
+  0  \text{ for }  t < t_{0} \\\\                              
+  \alpha^{t - t_{0}}  \text{ for }  t \geq t_{0}                            
+  \end{cases}
+  $$;               \[7.12\]
+                         
+  
 
 > where $\alpha$ is a rate of decay back to the previous level
 > $(0 < \alpha < 1)$.
 
 -   Seasonal outliers (SO) -- a variable that captures an abrupt change
-    > in the seasonal pattern on the given date $t_{0}\ $and maintains
-    > the level of the series with a contrasting change spread over the
-    > remaining periods. It is modelled by the regression variable:
+     in the seasonal pattern on the given date $t_{0}\ $and maintains
+     the level of the series with a contrasting change spread over the
+     remaining periods. It is modelled by the regression variable:
 
-  --------------------------------------------------------------- ----------
-  $$\text{SO}_{t}^{t_{0}} = \left\{ \begin{matrix}                \[7.13\]
-  0\ for\ t < t_{0} \\                                            
-  1\ for\ t \geq t_{0},\ t\ same\ month/quarter\ as\ t_{0}\  \\   
-  \frac{- 1}{(s - 1)}\text{\ otherwise} \\                        
-  \end{matrix} \right.\ ,$$                                       
-  --------------------------------------------------------------- ----------
+  
+  $$
+  SO_{t}^{t_{0}} = 
+  \begin{cases}   
+  0  \text{ for }  t < t_{0} \\\\                              
+  1  \text{ for }  t \geq t_{0}, \text{$t$ same month/quarter as $t_{0}$}   \\\\                    \frac{- 1}{(s - 1)} \text{ otherwise}       
+  \end{cases}
+  $$;               \[7.13\]
+                             
+  
 
 where $s$ is a frequency of the time series ($s = 12\ $for a monthly
 time series, $s = 4\ $for a quarterly time series).
 
-The shapes generated by the formulas given above are presented in Figure
-7.1.
+The shapes generated by the formulas given above are presented in the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage1.jpeg)
+![Text](/assets/img/annex/UG_A_image1.png)
 
 {: .text-center.small}
 
@@ -253,13 +263,16 @@ shifts cancels out to form a temporary level change effect, which is a
 permanent level shift spanned between two given dates. It is modelled by
 the regression variable:
 
-  ---------------------------------------------------------------- ----------
-  $\text{TLS}_{t}^{ {(t}_{0}{,\ t}_{1})} = \left\{ \begin{matrix}   \[7.14\]
-  0\ for\ t < t_{0} \\                                             
-  1\ for\ t_{1} \geq t \geq t_{0}\  \\                             
-  0\ for\ t > t_{1} \\                                             
-  \end{matrix} \right.\ $.                                         
-  ---------------------------------------------------------------- ----------
+  $$
+  TLS_{t}^{ {(t}_{0}{,\ t}_{1})} =
+  \begin{cases}   
+  0  \text{ for }  t < t_{0} \\\\                              
+  1  \text{ for }  t_{1} \geq t \geq t_{0}   \\\\                    
+  0 \text{ for } t > t_{1}       
+  \end{cases}
+  $$;               \[7.14\]
+                                           
+  
 
 JDemetra+ also identifies other pre-defined regression variables, for
 which a necessary input, such as location and process that generates the
@@ -269,16 +282,17 @@ variable, is provided by the user. This group includes:
     the series over a specified time interval $t_{0}$ to$\ t_{1}$. It is
     modelled by a regression variable:
 
-  --------------------------------------------------------------------- ----------
-  $\text{RP}_{t}^{ {(t}_{0}{,\ t}_{1})} = \left\{ \begin{matrix}         \[7.15\]
-   - 1\ for\ t \leq t_{0} \\                                            
-   - \frac{t - t_{0}}{t_{1} - t_{0}} - 1\ for\ t_{0} < t < t_{1}\  \\   
-  0\ for\ t \geq t_{1} \\                                               
-  \end{matrix} \right.\ $.                                              
-  --------------------------------------------------------------------- ----------
+$$
+  RP_{t}^{ {(t}_{0}{,\ t}_{1})} =
+  \begin{cases}   
+ -1 \text{ for } t \leq t_{0} \\\\                              
+ -\frac{t - t_{0}}{t_{1} - t_{0}} - 1 \text{ for } t_{0} < t < t_{1}   \\\\    0 \text{ for } t \geq t_{1}       
+  \end{cases}
+  $$;               \[7.15\]
+                                             
 
--   Intervention variables which are combinations of five basic
-    > structures[^9]:
+
+   Intervention variables which are combinations of five basic structures[^9]:
 
 <!-- -->
 
@@ -299,7 +313,7 @@ The structures considered by intervention variables allow for generation
 of all pre-defined outliers described by \[7.10\] -- \[7.15\], as well
 as some more sophisticated effects. An example can be a level shift
 effect reached after a sequence of damped overshootings and
-undershootings, presented in Figure 7.2 and denoted there as IV. Another
+undershootings, presented in the figure below and denoted there as IV. Another
 example of an outlier that can be created with intervention variables is
 a pure seasonal outlier ($PSO)$, which, in contrast to the seasonal
 outlier described above, does not affect the trend. The set of pure
@@ -308,19 +322,21 @@ seasonal outliers is used to model the seasonal change of regime
 the seasonal pattern affecting from $t_{0}$ (possibly) all seasons of
 the series. It is defined as:
 
-  -------------------------------------------- ----------
-  $\text{SCR}_{i,j} = \left\{ \begin{matrix}   \[7.16\]
-  1\ for\ t\epsilon j\ and\ t < t_{0} \\       
-  0\ for\ t \notin j\ or\ t \geq t_{0} \\      
-   - 1\ for\ t\epsilon s\ and\ t < t_{0} \\    
-  \end{matrix} \right.\ $;                     
-  -------------------------------------------- ----------
+  $$
+  SCR_{i,j} =
+  \begin{cases}   
+ 1 \text{ for } t \epsilon j \text{ and } t < t_{0} \\\\                    
+ 0 \text{ for } t \notin j \text{ or } t \geq t_{0} \\\\    
+ -1 \text{ for } t \epsilon s \text{ and } t < t_{0}       
+  \end{cases}
+  $$;               \[7.16\]
+                     
 
 where $j = 1,\ldots s - 1$.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage2.jpeg)
+![Text](/assets/img/annex/UG_A_image2.png)
 
 {: .text-center.small}
 
@@ -334,7 +350,7 @@ CHEN, B.-C., and LIU, L.-M. (1993) with some modifications (see GÓMEZ,
 V., and MARAVALL, A. (2001)). It iterates between two stages: the first
 is automatic outlier detection and correction and the second automatic
 model identification. The parameters of the AMI procedure are described
-in 4.1.1.5. Unless the parameters are set by the user the program runs
+in the [Specifiations - ARIMA](../reference-manual/modelling-spec-arima.html) section. Unless the parameters are set by the user the program runs
 with the default values.
 
 The algorithm starts with the identification of the default model and
@@ -343,16 +359,19 @@ specification is performed. It is based on the maximum likelihood
 estimation of the parameter $\lambda$ in the Box-Cox transformation,
 which is a power transformation such that the transformed values of the
 time series $y\ $are a monotonic function of the observations, i.e.
-$y^{\alpha} = \left\{ \begin{matrix}
-\frac{\left( y_{i}^{\alpha} - 1 \right)}{\lambda},\ \lambda \neq 0 \\
-\log{y_{i}^{\alpha},\ \lambda = 0} \\
-\end{matrix} \right.\ $. First, two Airline models (i.e. ARIMA
-(0,1,1)(0,1,1)) with a mean) are fitted to the time series: one in logs
+$$
+  y^{\alpha} =
+  \begin{cases}   
+ \frac{\left( y_{i}^{\alpha} - 1 \right)}{\lambda}, \lambda \neq 0 \\\\       \log{y_{i}^{\alpha}, \lambda = 0}       
+  \end{cases}
+  $$; 
+
+First, two Airline models (i.e. ARIMA(0,1,1)(0,1,1)) with a mean) are fitted to the time series: one in logs
 ($\lambda = 0$), other without logs ($\lambda = 1$). The test compares
 the sum of squares of the model without logs with the sum of squares
 multiplied by the square of the geometric mean of the (regularly and
 seasonally) differenced series in the case of the model in logs. Logs
-are taken in the case this last function is the minimum.[^11] By
+are taken in the case this last function is the minimum[^11]. By
 default, both TRAMO and X-12-ARIMA have a slight bias towards the log
 transformation.
 
@@ -368,18 +387,18 @@ seasonality.
 Once these pre-tests have been completed, the original series is
 corrected for all pre-specified outliers and regression effects provided
 by the user, if any. Next, the order of the differencing
-polynomial$\text{\ δ}\left( B \right)$­ that contains the unit roots is
+polynomial $\text{δ}\left( B \right)$­ that contains the unit roots is
 identified and it is decided whether to specify a mean for the series or
 not. The identification of the ARMA model, i.e. the order of
-$\phi\left( B \right)\ $and$\text{\ θ}\left( B \right)\ $­is performed
+$\phi\left( B \right)\ $and $\text{θ}\left( B \right)\ $ ­is performed
 using the Hannan and Rissanen method by the means of minimising the
 Bayesian information criterion with some constraints aimed at increasing
-the parsimony and favouring balanced models.[^12] This procedure
+the parsimony and favouring balanced models[^12]. This procedure
 produces the initial values of the ARIMA model parameters. The search is
 done sequentially: for the fixed regular polynomials, the seasonal ones
 are obtained, and vice versa. When the estimated roots of the AR and MA
 processes are close to each other, the order of the ARIMA model can be
-reduced.[^13] The identification and estimation of the model is carried
+reduced[^13]. The identification and estimation of the model is carried
 out using Exact Maximum Likelihood (EML) or the Unconditional Least
 Squares method.
 
@@ -391,10 +410,10 @@ the standard deviation of these residuals are used in the outlier
 detection procedure. For each observation, $t$-tests are computed for
 all types of outlier considered in the automatic procedure (AO, TC, LS,
 SO), following the procedure proposed in CHEN, B.-C., and LIU, L.-M.
-(1993). The program compares$\text{\ t}$-statistics to a critical value
+(1993). The program compares$\text{t}$-statistics to a critical value
 determined by the series length. If there are outliers, for which the
 absolute $t$-values are greater than a critical value, the one with the
-greatest absolute$\text{\ t}$-value is selected. After correcting for
+greatest absolute$\text{t}$-value is selected. After correcting for
 the identified outlier, the process is started again to test if there is
 another outlier. The procedure is repeated until for none of the
 potential outliers, the $t$-statistic exceeds the critical value. If
@@ -405,18 +424,18 @@ the bias produced in the estimators sequentially obtained[^15]. If there
 are outliers for which the absolute $t$-values are greater than the
 critical value, the one with the greatest absolute $t$-value is selected
 and the algorithm continues to the estimation of the ARMA model
-parameters. Otherwise, the algorithm stops.[^16] The estimated residuals
+parameters. Otherwise, the algorithm stops[^16]. The estimated residuals
 from the final ARIMA model are checked for adequacy against the
 estimated residuals produced by the balanced model. The final model
 identified by the AMI procedure must show some improvement over the
 default model in these residual diagnostics; otherwise, the program will
-accept the default model.[^17]
+accept the default model[^17].
 
 #### Automatic model identification procedure in RegARIMA
 
 The original RegARIMA algorithm developed by the U.S. Census Bureau
 includes two automatic model selection procedures: *automdl* that is
-based on TRAMO and *pickmdl* that originates from X-11-ARIMA88.[^18] The
+based on TRAMO and *pickmdl* that originates from X-11-ARIMA88[^18]. The
 algorithm implementation in JDemetra+ for RegARIMA follows the TRAMO
 logic. It is very similar to the TRAMO procedure presented in the
 previous section, but contains modifications to make use of the
@@ -428,7 +447,7 @@ effect[^20], option to reduce a series of level shifts to the temporary
 level shift. In comparison with TRAMO, there are also differences in the
 values of the default parameters. Besides, by default, RegARIMA does not
 favour balanced models. The log/level test in RegARIMA is based on the
-Corrected Akaike Information Criterion (AICC).[^21] Similarly, the
+Corrected Akaike Information Criterion (AICC)[^21]. Similarly, the
 estimation of calendar effects is based on AICC. As a result, the model
 selected by RegARIMA can differ from the model that TRAMO would select,
 especially in the case of series contaminated with some deterministic
@@ -450,15 +469,26 @@ Schwarz-Bayes Information Criterion (BIC)[^26].
 
 The formulae for the model selection criteria used by JDemetra+ are:
 
-  $\text{AIC}_{N} = - 2L_{N} + {2n}_{p}$,                                              \[7.17\]
-  ------------------------------------------------------------------------------------ ----------
-  $\text{AIC}C_{N} = - 2L_{N} + 2n_{p}\left( 1 - \frac{n_{p} + 1}{N} \right)^{- 1}$,   \[7.18\]
-  $\text{HQ}_{N} = - 2L_{N} + 2n_{p}\text{loglogN}$,                                   \[7.19\]
-  $\text{BI}C_{N} = - 2L_{N} + n_{p}\text{logN}$.                                      \[7.20\]
+  $$
+  AIC_{N} = -2L_{N} + {2n}_{p}
+  $$                                          \[7.17\]
+  
+
+$$
+AICC_{N} = - 2L_{N} + 2n_{p}\left( 1 - \frac{n_{p} + 1}{N} \right)^{- 1}
+$$   \[7.18\]
+
+$$
+HQ_{N} = - 2L_{N} + 2n_{p}\text{loglogN}
+$$                         \[7.19\]
+
+$$
+BIC_{N} = - 2L_{N} + n_{p}\text{logN}
+$$                           \[7.20\]
 
 where:
 
-$\text{N\ }$-- a number of observations in time series;
+$\text{N}$-- a number of observations in time series;
 
 $n_{p}$ -- a number of estimate parameters;
 
@@ -486,12 +516,12 @@ therefore only AR and MA parameters are being identified.
 In the first step, a high-order$\ AR(m)$, where $m > max(p,q)$, model is
 fitted to the time series $X_{t}$. The maximum order of $p$ and $q$ is
 given a-priori. In JDemetra+ it is equal to 3 for both $p$ and
-$\text{q.}$ The residuals$\ {\widehat{a}}_{k}$ from this model are used
+$q$. The residuals $$\widehat{a}_{k}$$ from this model are used
 to provide estimates of the innovations in the ARMA model $a_{t}$:
 
-  ----------------------------------------------------------------- ----------
-  $a_{t} = X_{t} - \sum_{k = 1}^{m}{ {\widehat{a}}_{k}X}_{t - k}$.   \[7.21\]
-  ----------------------------------------------------------------- ----------
+  
+  $$a_{t} = X_{t} - \sum_{k = 1}^{m}{\widehat{a}_{k}X}_{t - k}$$   \[7.21\]
+  
 
 In the second step the parameters $p$ and $q$ of the ARMA model are
 estimated using a least squares linear regression of $X_{t}$ onto
@@ -501,12 +531,12 @@ skipped if the ARMA model fitted in the second step includes only an
 autoregressive part.
 
 Finally, the Hannan-Rissanen algorithm selects a pair of $p$ and $q$
-values for which $\text{BIC}_{p,q}$ is the smallest. $\text{BIC}_{p,q}$
+values for which $BIC_{p,q}$ is the smallest. $BIC_{p,q}$
 is defined as:
 
-  ------------------------------------------------------------------------------------------------------------------------- ----------
+ 
   $$\text{BIC}_{p,q} = \log\left( \sigma_{p,q}^{2} \right) + \frac{\left( p + q \right)\log\left( n - d \right)}{n - d}$$   \[7.22\]
-  ------------------------------------------------------------------------------------------------------------------------- ----------
+
 
 where:
 
@@ -553,31 +583,26 @@ be provided by the user[^30].
 
 We consider the regression model:
 
-  ----------------------------- ----------
-  $y = X\beta + \varepsilon$.   \[7.23\]
-  ----------------------------- ----------
+
+  $y = X\beta + \varepsilon$   \[7.23\]
+  
 
 The least squares problem consists in minimizing the quantity
 $\left\| X\beta - y \right\|^{2}$.
 
 Provided that the regression variables are independent, it is possible
-to find an orthogonal matrix $Q$, so that $Q \bullet X = \begin{pmatrix}
-R \\
-0 \\
-\end{pmatrix}\ $where $\text{R\ }$is upper
-triangular.$Q \bullet X = \left( \frac{R}{0} \right)\text{\ \ where\ R\ is\ upper\ triangular}$$Q \bullet X = \left( \frac{R}{0} \right)\text{whereRisuppertriangular}$
+to find an orthogonal matrix $Q$, so that $Q \bullet X = \left( \frac{R}{0} \right)$ where $R$ is upper
+triangular. 
 
 We have now to minimize:
 
-  ----------------------------------------------------------------------------------------------------------------- ----------
-  $$\left\| QX\beta - Qy \right\|_{2}^{2} = \left\| \begin{pmatrix}                                                 \[7.24\]
-  R \\                                                                                                              
-  0 \\                                                                                                              
-  \end{pmatrix}\ \beta - Qy \right\|_{2}^{2} = \left\| R\beta - a \right\|_{2}^{2} + \left\| b \right\|_{2}^{2}$$   
-  ----------------------------------------------------------------------------------------------------------------- ----------
+  $$\left\| QX\beta - Qy \right\|_{2}^{2} = \left\|                                                  
+  \left( \frac{R}{0} \right)                                                                                       
+  \ \beta - Qy \right\|_{2}^{2} = \left\| R\beta - a \right\|_{2}^{2} + \left\| b \right\|_{2}^{2}$$   \[7.24\]
+  
 
-where $\left( \text{Qy} \right)_{0\ldots x - 1} = a$ and
-$\left( \text{Qy} \right)_{x\ldots n - 1} = b$.
+where $Qy_{0\ldots x - 1} = a$ and
+$Qy_{x\ldots n - 1} = b$.
 
 The minimum of the previous norm is obtained by setting
 $\beta = R^{- 1}a$. In that case
