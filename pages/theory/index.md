@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: Seasonal adjustment methods -- TRAMO/SEATS and X-13ARIMA-SEATS
+title: Seasonal adjustment methods - TRAMO/SEATS and X-13ARIMA-SEATS
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---

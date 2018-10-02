@@ -9,8 +9,8 @@ One of the important steps in of the a validation of the model is an
 analysis of the out-of-sample forecasts[^1]. Using the identified TRAMO
 model JDemetra+ produces the point forecasts, the forecast standard
 errors, and a prediction interval. The prediction interval on the
-transformed scale is denoted
-as$\ point\ forcast \pm K \times forcast\ standard\ error$, where $K$ is
+transformed scale is denoted 
+as$\ point\ forecast \pm K \times forecast\ standard\ error$, where $K$ is
 the standard error multiplier taken from a table of the normal
 distribution, corresponding to the specified coverage probability.
 JDemetra+ displays 95% prediction interval, which corresponds to
@@ -67,7 +67,7 @@ A standard local menu, which is available for this table, includes:
     horizontal to vertical.
 
 -   **Reverse chronology** -- displays the series from last to first
-    observation
+    observation.
 
 -   **Single time series** -- when it is marked observations are divided
     by calendar's periods. Otherwise, data are presented as a standard
@@ -91,8 +91,50 @@ A standard local menu, which is available for this table, includes:
 **Paste** and **Clear** are disabled as they are not relevant for this
 view.
 
-When a time series is marked, a local menu offers he options that are
-described under Figure 3.20.
+When a time series is marked, a local menu offers the following options:
+
+-   **Open** – opens selected time series in the new window that contain
+    *Chart* and *Grid* panels.
+
+-   **Open with** – opens the time series in a separate window according
+    to the user choice (*Chart* *& grid* or *Simple chart*). The *All ts
+    views* option is not currently available.
+
+-   **Save** – saves the marked series in a spreadsheet file or in a
+    text file.
+
+-   **Rename** – enables the user to change the time series name.
+
+-   **Copy** – copies series and allows it to be pasted to another
+    application e.g. into Excel.
+
+-   **Paste** – pastes the time series previously marked.
+
+-   **Select all** – selects all time series presented in the graph.
+
+-   **Transpose** – changes the orientation of the table from horizontal
+    to vertical.
+
+-   **Reverse chronology** – displays the series from the last to the
+    first observation.
+
+-   **Single time series** – removes from the table all time series
+    apart from the selected one.
+	
+-   **Clear** – removes all time series from the chart.
+
+-   **Edit format** – enables the user to change a data format.
+
+-   **Use color scheme** – allows the series to be displayed in colour.
+
+-   **Color scheme** – allows the colour scheme used in the graph to be
+    changed.
+
+-   **Show bars** – presents values in a table as horizontal bars.
+
+-   **Show crosshair** – highlights an active cell.
+
+-   **Zoom** – option for modifying the chart size.
 
 {: .text-center.image-wrapper}
 

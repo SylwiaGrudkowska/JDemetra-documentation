@@ -6,11 +6,10 @@ description: Basics
 ---
 
 The TRAMO/SEATS method consists of two linked programs: TRAMO and SEATS.
-The results from TRAMO, which are displayed under the *Pre-processing*
-node, are explained in 4.2. This section focuses on the nodes that are
-not described there, in particular on the output produced by SEATS.
-Therefore, the sections that are explained here are: *Main results*,
-*Decomposition, Benchmarking* and *Diagnostic.* Their content is
+The results from TRAMO are displayed in the [Output from a modelling procedure](../reference-manual/output-modelling.html)section. 
+This section focuses on the nodes that arenot described there, in particular on the output produced by SEATS.
+Therefore, the sections that are explained here are: [*Main results*](../reference-manual/sa-output-tramo.html#main-results),
+[*Decomposition*](../reference-manual/sa-output-tramo.html#decomposition), [*Benchmarking*](../reference-manual/sa-output-tramo.html#benchmarking) and [*Diagnostic*](../reference-manual/sa-output-tramo.html#diagnostic). Their content is
 accessible once the user selects the appropriate node from the left-hand
 side seasonal adjustment results panel.
 
@@ -74,9 +73,9 @@ Further sections of the *Main results* node includes summary information
 from TRAMO and SEATS and presents the main statistics that assess the
 quality of the outcomes.
 
-Information about the TRAMO part of the process includes the estimation
+[Information about the TRAMO part of the process includes the estimation
 span, number of observations, transformation (if any) and deterministic
-effects. It is discussed in detail in 4.2.2.
+effects](../reference-manual/model-generalities.html). 
 
 {: .text-center.image-wrapper}
 
@@ -166,6 +165,13 @@ The components can be also expressed in a compact form:
 |                                                                              |         |
 |------------------------------------------------------------------------------|---------|
 | \\(\varphi_{i}\left( B \right)x_{\text{it}} = \theta_{i}(B)a_{\text{it}}\\), | \[5.4\] |
+
+
+|                                                                                                        |         |
+|--------------------------------------------------------------------------------------------------------|---------|
+| \\(\varphi_{i}\left( B \right){\delta}_{i}\left( B \right)x_{\text{it}} = \theta_{i}(B)a_{\text{it}}\\) | \[5.3\] |
+
+
 
 where \\(\varphi_{i}\left( B \right)\\) is a product of the stationary
 (\\(\delta_{i}\left( B \right))\ \\)and the non-stationary

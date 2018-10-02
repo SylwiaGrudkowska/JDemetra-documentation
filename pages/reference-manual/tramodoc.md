@@ -7,7 +7,7 @@ description: Basics
 
 *TramoDoc* is a main menu item that includes functionalities designated
 for *Tramo* documents. To create a *Tramo* document select *Tramo* from
-*the Statistical methods* \\(\rightarrow\\)*Modelling* \\(\rightarrow\\)
+*the Statistical methods* \\(\rightarrow\\) *Modelling* \\(\rightarrow\\)
 *Single Analysis* menu.
 
 {: .text-center.image-wrapper}

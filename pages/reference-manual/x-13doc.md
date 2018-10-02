@@ -7,7 +7,7 @@ description: Basics
 
 *X13Doc* is a main menu item that includes functionalities designated
 for *X13* documents. To create a *X13* document select *X13* from the
-*Statistical methods* \\(\rightarrow\\) *Single Analysis* menu.
+*Seasonal Adjustment* \\(\rightarrow\\) *Statistical Methods* \\(\rightarrow\\) *Single Analysis* menu.
 
 {: .text-center.image-wrapper}
 

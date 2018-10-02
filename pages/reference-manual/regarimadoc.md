@@ -8,7 +8,7 @@ description: Basics
 *RegArimaDoc* is a main menu item that includes functionalities
 designated for *RegArima* documents. To create a *RegArima* document
 select *RegArima* from the *Statistical methods*
-\\(\rightarrow\\)*Modelling* \\(\rightarrow\\) *Single Analysis* menu.
+\\(\rightarrow\\) *Modelling* \\(\rightarrow\\) *Single Analysis* menu.
 
 
 {: .text-center.image-wrapper}
@@ -32,7 +32,7 @@ when a newly created or existing *RegArima* document is active.
 
 *RegArimaDoc-\#number* is a default name that corresponds to the
 *RegArima* document’s name. The default name can be changed by the user
-in the *Workspace* window (right click on *RegArimaDoc-\#number* under
+in the [*Workspace* window](../reference-manual/workspace.html) (right click on *RegArimaDoc-\#number* under
 the *regarima* node in the *Workspace* window and select rename from the
 local menu).
 

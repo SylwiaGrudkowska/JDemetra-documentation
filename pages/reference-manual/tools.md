@@ -13,7 +13,7 @@ The Tools menu includes, among other functionalities, tools which are helpful fo
 * The decomposition scheme (additive, multiplicative).
 
 
-The [*‘ESS Guidelines on Seasonal Adjustment’ (2015)*]((https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3), recommend that this exercise should be performed and documented for the most important series to be adjusted at least once a year.
+The [*‘ESS Guidelines on Seasonal Adjustment’ (2015)*](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3), recommend that this exercise should be performed and documented for the most important series to be adjusted at least once a year.
 The following functionalities are available from the *Tools* menu:
 
 * [*Container*](#container) – includes several tools for displaying data in a time domain;
@@ -233,7 +233,7 @@ are characteristic for *Growth chart* are:
     last years of observations are shown by default. This setting can be
     adjusted to the user needs in the [*Options*](#options) section.
 
-The explanation of other options can be found below the '*Local menu options for chart*' figure in the [*Container*](#container)section.
+The explanation of other options can be found below the '*Local menu options for chart*' figure in the [*Container*](#container) section.
 
 *List* provides basic information about chosen time series, like the
 start and end date, the number of observations and a sketch of data
@@ -243,7 +243,7 @@ Right click displays the local menu with all available options. Apart
 from the standard options, the local menu for *List* enables marking the
 series that match the selected frequency (yearly, half-yearly,
 quarterly, monthly) using the *Select by frequency* option. The
-explanation of other options can be found below the '*Local menu options for chart*' figure in the [**Container**](#container) section.
+explanation of other options can be found below the '*Local menu options for chart*' figure in the [*Container*](#container) section.
 
 {: .text-center.image-wrapper}
 
@@ -255,7 +255,7 @@ explanation of other options can be found below the '*Local menu options for cha
 
 For a selected series a local menu offers an extended list of options.
 The explanation of the functions available for the local menu is given
-below the '*Local menu options for chart*' figure in the [**Container**](#container) section.
+below the '*Local menu options for chart*' figure in the [*Container*](#container) section.
 
 {: .text-center.image-wrapper}
 

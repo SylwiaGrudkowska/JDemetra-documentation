@@ -47,7 +47,7 @@ be set by the user. Specifications described in this section are sets of
 parameters and values assigned to them that contain all information
 necessary for seasonal adjustment. The default critical values used by
 the tests included in the specifications can be changed by the user in
-the *Tools* \\(\rightarrow\\) *Options* menu (see 3.4.7).
+the [*Tools* \\(\rightarrow\\) *Options* menu](../reference-manual/tools.html#options).
 
 The set of pre-defined specifications for seasonal adjustment
 encompasses the most commonly used sets of seasonal adjustment
@@ -56,8 +56,7 @@ the terminology used in TSW+. The users are strongly recommended to
 start their analysis with one of those specifications (usually *RSA4c*
 or *RSA5c* for X-13ARIMA-SEATS and *RSA4*, *RSA5* or *RSAfull* for
 TRAMO/SEATS). The user is expected to adjust the specification to the
-specific needs the using the *Specification* button (see the ‘*JDemetra+
-User Guide*’ (2017), 3.2.1). The default specification for TRAMO/SEATS
+specific needs the using the [*Specification* button](../case-studies/modelling-advanced.html). The default specification for TRAMO/SEATS
 and multi-documents is *RSAfull*, while for X-13ARIMA-SEATS it is RSA4c.
 
 **Pre-defined seasonal adjustment specifications**
@@ -237,14 +236,14 @@ and multi-documents is *RSAfull*, while for X-13ARIMA-SEATS it is RSA4c.
     (transitory changes), using a default critical value.
 
 -   **ARIMA model** – the choice between fixing the ARIMA model
-    > structure to (0,1,1)(0,1,1) or searching for the ARIMA model using
-    > an automatic model identification procedure (AMI). The
-    > (0,1,1)(0,1,1) model (called the Airline model) is used as a
-    > default model in several TRAMO/SEATS and X-13ARIMA-SEATS
-    > specifications because it has been shown in many studies that this
-    > model is appropriate for many real seasonal monthly or a quarterly
-    > time series. Moreover, the Airline model approximates well many
-    > other models and provides an excellent "benchmark" model[^10].
+    structure to (0,1,1)(0,1,1) or searching for the ARIMA model using
+    an automatic model identification procedure (AMI). The
+    (0,1,1)(0,1,1) model (called the Airline model) is used as a
+    default model in several TRAMO/SEATS and X-13ARIMA-SEATS
+    specifications because it has been shown in many studies that this
+    model is appropriate for many real seasonal monthly or a quarterly
+    time series. Moreover, the Airline model approximates well many
+    other models and provides an excellent "benchmark" model[^10].
 
 User-defined specifications
 --------------
@@ -272,3 +271,8 @@ settings accordingly and confirm with the **OK** button.
 {: .text-center.small}
 
 **Changing settings of seasonal adjustment specification**
+
+##### Footnotes
+
+[^10]: [MARAVALL, A. (2009), 'Identification of Reg-ARIMA Models and of Problematic Series in Large Scale Applications: Program TSW (TRAMO-SEATS for Windows)](http://www.bde.es/webbde/es/secciones/servicio/software/tramo/Large_Scale_TSW.pdf), Banco de España
+

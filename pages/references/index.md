@@ -254,7 +254,9 @@ Oxford.
 
 MARAVALL, A. (2000), 'An Application of Tramo and Seats', *Annali di
 Statistica: Seasonal Adjustment Procedures. Experiences and
-Perspectives*, 129, X, 20.MARAVALL, A. (2003), 'A class of diagnostics
+Perspectives*, 129, X, 20.
+
+MARAVALL, A. (2003), 'A class of diagnostics
 in the ARIMA-model-based decomposition of a time series', in 'Seasonal
 Adjustment, MANNA M., and PERONACI, R (eds.), European Central Bank.
 
@@ -277,7 +279,7 @@ and Brief Review of Applied Time Series Analysis', Banco de España,
 MARAVALL, A. (2009), 'Identification of Reg-ARIMA Models and of
 Problematic Series in Large Scale Applications: Program TSW (TRAMO-SEATS
 for Windows)', Banco de España,
-[<http://www.bde.es/webbde/es/secciones/servicio/software/tramo/Large_Scale_TSW.pdf>.]{.underline}
+[http://www.bde.es/webbde/es/secciones/servicio/software/tramo/Large_Scale_TSW.pdf>.]
 
 MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014), 'New
 features and modifications in TRAMO-SEATS', Banco de España,

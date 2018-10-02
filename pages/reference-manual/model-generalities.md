@@ -8,9 +8,7 @@ description: Basic
 The *Model* node includes basic information about the outcome of the
 model identification procedure and checking the goodness of fit. The
 summary information about the final model is available directly from the
-main *Model* node. The content of this panel depends on the
-specifications used for processing and the results of the seasonal
-adjustment[^63].
+main *Model* node. The content of this panel depends on the [settings](../reference-manual/modelling-specifications.html) applied to the modelling procedure.
 
 {: .text-center.image-wrapper}
 
@@ -37,7 +35,7 @@ monthly time series and the span \[II-1994 : I-2011\] represents a
 quarterly time series). The message *Series has been log-transformed* is
 only displayed if a logarithmic transformation has been applied.
 
-In the case of the pre-defined specifications: TR0, TR1, TR3, RG0, RG1
+In the case of [the pre-defined specifications](../reference-manual/modelling-specifications.html): TR0, TR1, TR3, RG0, RG1
 and RG3 no trading day effect is estimated. For TR2, RG2c, TR4 and RG4c
 pre-defined specifications, working day effects and the leap year effect
 are pre-tested and estimated if present. If the working day effect is
@@ -81,8 +79,8 @@ the likelihood, it should be 0. However, it is never exactly the case,
 due to numerical approximations. Usually, the scores can be improved by
 using a higher precision (smaller tolerance). This precision is
 controlled by the **Tolerance** parameter in the **Estimate** section of
-the *Specifications* window (see 4.1.1.1 for Tramo and 4.1.2.1 for
-Arima).
+the *Specifications* window (see how to use this parameter [for Tramo](../reference-manual/modelling-spec-tramo.html#estimate) and [for
+Arima](../reference-manual/modelling-spec-arima.html#estimate)).
 
 An example of the output is presented in the chart below.
 
@@ -124,8 +122,8 @@ significant [^67].
 
 **The estimation's results of the ARIMA model**
 
-For the fixed ARIMA parameters (see 4.1.1.4 or 4.1.2.4), JDemetra+ shows
-only the values of the parameters. Figure 4.16 presents the output from
+For the [fixed ARIMA parameters](../reference-manual/modelling-spec-tramo.html#tramo-specification--options-for-manual-identification-of-the-arima-model), JDemetra+ shows
+only the values of the parameters. Figure below presents the output from
 the manually chosen ARIMA model (2,0,0)(0,1,1) with a fixed parameter
 *BTheta(1).* For the fixed parameter the *T-Stat* and *(P\|T\|\>t)* are
 not displayed as no estimation is done for this parameter.
@@ -203,7 +201,7 @@ effect is not significant.
 
 **The results of the estimation of a leap year effect**
 
-When the option *UserDefined* (see 4.1.1.3 or 4.1.2.3) is used,
+When the option [*UserDefined*](../reference-manual/modelling-spec-tramo.html#regression) is used,
 JDemetra+ displays the *User-defined calendar variables* section with
 variables and corresponding estimation results (the values of the
 parameters, corresponding t-statistics and p-values). The outcome of the
@@ -255,7 +253,7 @@ also enabled, they appear in the same table as other outliers.
 
 **The results of the outlier identification procedure that enables seasonal outliers**
 
-Results for pre-specified outliers (see 4.1.1.3 and 4.1.2.3) are
+Results for [pre-specified outliers](../reference-manual/modelling-spec-tramo.html#regression) are
 displayed in a separate table.
 
 {: .text-center.image-wrapper}
@@ -316,11 +314,16 @@ observations[^68].
 **The results of the estimation of the missing observations**
 
 Detailed results are divided into several sections and are investigated
-in the sections 4.2.3 -- 4.2.8 of this document.
+in the following sections:
+- [Forecasts](../reference-manual/forecasts.html)
+- [Regressors](../reference-manual/regressors.html)
+- [ARIMA](../reference-manual/arima.html)
+- [Pre-adjustment series](../reference-manual/pre-adjustment-series.html)
+- [Residuals](../reference-manual/residuals.html)
+- [Likelihood](../reference-manual/likelihood.html)
 
 ##### Footnotes
 
-[^63]: For description of specifications see 4.1.
 
 [^64]: The likelihood function is the joint probability (density)
     function of observable random variables. It is viewed as the
@@ -329,9 +332,8 @@ in the sections 4.2.3 -- 4.2.8 of this document.
     particular set of dependent variable values that occur in the
     sample.
 
-[^65]: AIC, AICC, BIC and Hannan-Quinn criteria are used by
-    X-13ARIMA-SEATS while BIC (TRAMO definition) by TRAMO/SEATS.
-    Information criteria formulas are given in 7.1.1.3. These criteria
+[^65]: [AIC, AICC, BIC and Hannan-Quinn criteria are used by
+    X-13ARIMA-SEATS while BIC (TRAMO definition)](../theory/SA_lin.html#model-selection-criteria) by TRAMO/SEATS. These criteria
     are used in seasonal adjustment procedures for the selection of the
     proper ARIMA model. The model with the smaller value of the model
     selection criteria is preferred.

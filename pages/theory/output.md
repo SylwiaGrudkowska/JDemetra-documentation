@@ -32,7 +32,7 @@ A list of output items of JDemetra+ CSV, TXT and XLS formats.
  |$$s\_ f$$                       |Forecasts of the seasonal component|
  |$$i$$                           |Irregular component (including deterministic effects)|
  |$$i\_ f$$                       |Forecasts of the irregular component|
- |$$\det$$                        |All deterministic effects|
+ |$${det}$$                        |All deterministic effects|
  |$$det\_ f$$                     |Forecasts of the deterministic effects|
  |$${cal}$$                  |Calendar effects|
  |$$cal\_ f$$                     |Forecasts of the calendar effects|
@@ -103,23 +103,23 @@ The CSV matrix of JDemetra+ may contain:
 | $${likelihood.bicc}$$        | BIC corrected for length          |
 | $${residuals.ser}$$          | Standard error of the residuals (unbiased, TRAMO-like)  |
 | $$residuals.ser - ml$$            | Standard error of the residuals (ML, X-13ARIMA-SEATS-like)  |
-| $${esiduals.mean}$$          | Test on the mean of the residuals |
+| $${residuals.mean}$$          | Test on the mean of the residuals |
 | $${residuals.skewness}$$     | Test on the skewness of the residuals    |
 | $${residuals.kurtos}$$  | Test on the kurtosis of the residuals   |
-| $${residuals.}{\ dh}$$  | Test on the normality of the residuals (Doornik-Hansen tests)  |
-| $${residuals.}{\ lb}$$  | The Ljung-Box test on the residuals  |
-| $${residuals.}{\ lb2}$$ | The Ljung-Box test on the squared residuals  |
-| $${residuals.}{\ seaslb}$$  | The Ljung-Box test on the residuals at seasonal lags  |
-| $${residuals.}{\ bp}$$  | The Box-Pierce test on the residuals  |
-| $${esiduals.}\ bp2$$        | The Box-Pierce test on the squared residuals   |
-| $${residuals.}{\ seasbp}$$  | The Box-Pierce test on the residuals at seasonal lags   |
+| $${residuals.dh}$$  | Test on the normality of the residuals (Doornik-Hansen tests)  |
+| $${residuals.lb}$$  | The Ljung-Box test on the residuals  |
+| $${residuals.lb2}$$ | The Ljung-Box test on the squared residuals  |
+| $${residuals.seaslb}$$  | The Ljung-Box test on the residuals at seasonal lags  |
+| $${residuals.bp}$$  | The Box-Pierce test on the residuals  |
+| $${esiduals.bp2$$        | The Box-Pierce test on the squared residuals   |
+| $${residuals.seasbp}$$  | The Box-Pierce test on the residuals at seasonal lags   |
 | $${residuals.nruns}$$        | Test on the number of runs of the residuals |
 | $${residuals.lruns}$$        | Test on the length of runs of the residuals |
 | $$mstatistics.m1$$                | The relative contribution of the irregular over three months span  |
 | $$mstatistics.m2$$                | The relative contribution of the irregular component to the stationary portion of the variance |
 | $$mstatistics.m3$$                | The amount of period to period change in the irregular component as compared to the amount of period to period change in the trend-cycle |
 | $$mstatistics.m4$$                | The amount of autocorrelation in the irregular as described by the average duration of run  |
-| $$mstatistics.m5$$                | The number of periods it takes the change in the trend- cycle to surpass the amount of change in the irregular  |
+| $$mstatistics.m5$$                | The number of periods it takes the change in the trend-cycle to surpass the amount of change in the irregular  |
 | $$mstatistics.m6$$                | The amount of year to year change in the irregular as compared to the amount of year to year change in the seasonal |
 | $$mstatistics.m7$$                | The amount of moving seasonality present relative to the amount of stable seasonality  |
 | $$mstatistics.m8$$                | The size of the fluctuations in the seasonal component throughout the whole series |
@@ -129,21 +129,21 @@ The CSV matrix of JDemetra+ may contain:
 | $${mstatistics.q}$$          | Summary of the M-Statistics       |
 | $$mstatistics.q - m2$$            | Summary of the M-Statistics  without M2   |
 | $${diagnostics.quality}$$    | Summary of the diagnostics  |
-| $${diagnostics.basic\ checks.\ definition:2}$$  | Definition test   |                                  
-| $${diagnostics.basic\ checks.\ annual\ totals:2}$$  | Annual totals test |
-| $${diagnostics.visual\ spectral\ analysis.\ spectral\ seas\ peaks}$$ | Test of the presence of the  visual seasonal peaks in SA  and/or irregular   |
-| $${diagnostics.visual\ spectral\ analysis.\ spectral\ td\ peaks}$$    | Test of the presence of the  visual trading day peaks in SA and/or irregular       |
-| $${diagnostics.regarima\ residuals.\ normality:2}$$  | Test of the normality of the residuals       |
-| $${diagnostics.regarima\ residuals.\ independence:2}$$  | Test of the independence of the residuals   |
-| $${diagnostics.regarima\ residuals.\ spectral\ td\ peaks:2}$$   | Test of the presence of trading day peaks in the residuals  |
-| $${diagnostics.regarima\ residuals.\ spectral\ seas\ peaks:2}$$  | Test of the presence of seasonal peaks in the residuals |
-| $${diagnostics.residual\ seasonality.\ on\ sa:2}$$ | Test of the presence of residual seasonality in the SA series  |
-| $${diagnostics.residual\ seasonality.\  on\ sa\ (last 3 years):2}$$  | Test of the presence of residual seasonality.}$$on\ sa\ (last\ 3\ years):2$$    |
-| $${diagnostics.residual\ seasonality.\ on\ irregular:2}$$ | Test of the presence of residual seasonality in the irregular series (last periods) |
-| $$diagnostics.seats.seas\$$ variance:2$$ | Test on the variance of the seasonal component       |
+| $${diagnostics.basic\ checks.definition:2}$$  | Definition test   |                                  
+| $${diagnostics.basic\ checks.annual\ totals:2}$$  | Annual totals test |
+| $${diagnostics.visual\ spectral\ analysis.spectral\ seas\ peaks}$$ | Test of the presence of the  visual seasonal peaks in SA  and/or irregular   |
+| $${diagnostics.visual\ spectral\ analysis.spectral\ td\ peaks}$$    | Test of the presence of the  visual trading day peaks in SA and/or irregular       |
+| $${diagnostics.regarima\ residuals.normality:2}$$  | Test of the normality of the residuals       |
+| $${diagnostics.regarima\ residuals.independence:2}$$  | Test of the independence of the residuals   |
+| $${diagnostics.regarima\ residuals.spectral\ td\ peaks:2}$$   | Test of the presence of trading day peaks in the residuals  |
+| $${diagnostics.regarima\ residuals.spectral\ seas\ peaks:2}$$  | Test of the presence of seasonal peaks in the residuals |
+| $${diagnostics.residual\ seasonality.on\ sa:2}$$ | Test of the presence of residual seasonality in the SA series  |
+| $${diagnostics.residual\ seasonality.on\ sa\ (last\ 3\ years):2}$$  | Test of the presence of residual seasonality on\ sa\ (last\ 3\ years):2$$    |
+| $${diagnostics.residual\ seasonality.on\ irregular:2}$$ | Test of the presence of residual seasonality in the irregular series (last periods) |
+| $$diagnostics.seats.seas\ variance:2$$ | Test on the variance of the seasonal component       |
 | $$diagnostics.seats.irregular\ variance:2$$   | Test on the variance of the irregular component      |
 | $$diagnostics.seats.seas/irr\ cross - correlation:2$$  | Test on the cross-correlation between the seasonal and the irregular component    |
-| $$\log$$                          | Log transformation                |
+| $${log}$$                          | Log transformation                |
 | $${adjust}$$                 | Pre-adjustment of the series for  leap year |
 | $${arima.mean}$$             | Mean correction                   |
 | $${arima.p}$$                | The regular autoregressive order of the ARIMA model    |
@@ -163,7 +163,7 @@ The CSV matrix of JDemetra+ may contain:
 | $$regression.easter:3$$           | Coefficient and test on the Easter variable      |
 | $${regression.nout}$$        | Number of outliers                |
 | $${regression.out}\left( i \right):3$$   | Coefficient and test on  $i^{{th}}\ $the outlier (max $i$=16)           |
-| $${decomposition.seasonality}$$ | Presence of a seasonal component(1 -- present, 0 -- not present)  |
+| $${decomposition.seasonality}$$ | Presence of a seasonal component (1 -- present, 0 -- not present)  |
 | $${decomposition.trendfilter}$$ | The order of the trend filter     |
 | $${decomoposition.seasfilter}$$ | The order of the seasonal filter  |
 

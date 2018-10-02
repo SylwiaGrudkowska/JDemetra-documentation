@@ -5,7 +5,7 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basic
 ---
 
-The *Arima* section demonstrates a theoretical spectrum[^1] of the
+The *Arima* section demonstrates [a theoretical spectrum](../theory/spectral.html) of the
 stationary and non-stationary models. The local menu, which is available
 for the graph, offers the copy and export options, including sending the
 graph to the printer and saving the graph as clipboard or as a file in
@@ -20,12 +20,12 @@ time series data to the another application.
 
 **Theoretical spectrum of the ARIMA model**
 
-In the bottom part the panel the ARIMA model used by TRAMO is presented
-using symbolic notation[^2] \\((P,D,Q)(PB,DB,QB)\\). Estimated
+In the bottom part the panel [the ARIMA model](../theory/SA_lin.html) used by TRAMO is presented
+using symbolic notation \\((P,D,Q)(PB,DB,QB)\\). Estimated
 parameters’ coefficients (regular and seasonal AR and MA) are shown in
 closed form (i.e. using the backshift operator[^3] \\(B\\)). For each
 regular AR root (i.e. the solution of the characteristic equation) the
-argument and modulus are given. Details are given in 7.1.2.1.
+[argument and modulus](../theory/SA_SEATS.html#derivation-of-the-models-for-the-components) are given.
 
 {: .text-center.image-wrapper}
 
@@ -41,10 +41,4 @@ component the regular roots would be assigned.
 
 ##### Footnotes
 
-[^1]: Basic information about spectrum is presented in 7.3.
-
-[^2]: See 7.1.1.
-
-[^3]: A backshift operator \\(B\ \\)is defined as:
-    \\(B^{k}\text{yx}_{t} = x_{t - k}\\). It is used to denote lagged
-    series.
+[^3]: A backshift operator \\(B\ \\)is defined as: ($B^{k}x_{t} = x_{t - k})$. It is used to denote lagged series.

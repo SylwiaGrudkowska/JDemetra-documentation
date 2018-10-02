@@ -16,12 +16,12 @@ specifications for seasonal adjustment. The pre-defined specifications
 correspond to the terminology used in TSW+[^1]. The users are strongly 
 recommended to start their analysis with one of those specifications 
 (usually RG4c or RG5c for RegARIMA and TR4 or TR5 for TRAMO) then, if 
-need be, to change some of the options afterwards using the 
-*Specification* button (see the ‘JDemetra+ User Guide’ (2017), 3.3.2). 
+need be, to change some of the options afterwards using [the 
+*Specification* button](../case-studies/modelling-advanced.html). 
 The default specification for TRAMO is TR5, while for RegARIMA it is 
 RG4c. 
 
-Pre-defined modelling specifications.
+#### Pre-defined modelling specifications
 
 {: .table .table-style}
 | Settings      |Transformation   | Pre-adjustment for leap-year | Working days | Trading days | Easter effect | Outliers| ARIMA model|
@@ -55,6 +55,8 @@ in many studies that this model is appropriate for many real monthly and
 quarterly time series with a statistically significant seasonal pattern. 
 Moreover, the Airline model approximates well many other models and 
 provides an excellent "benchmark" model. 
+
+#### User-defined specifications 
 
 The user may add new modelling 
 specifications to the *Workspace* window. To do this, go to the 

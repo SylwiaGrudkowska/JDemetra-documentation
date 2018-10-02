@@ -180,9 +180,9 @@ components and decomposition. The estimation results can be useful for
 time series analysis and prediction of a short-term development.
 
 The *Modelling* section includes all capabilities from the TRAMO and
-RegARIMA models. It is flexible in specifying model parameters. The
+RegARIMA models. It is flexible in [specifying model parameters](../reference-manual/modelling-specifications.html). The
 results can be saved and refreshed with updated series. Instructions on
-how to use this functionality is given in [the step-by-step demonstration on advdanced time series analysis](../case-studies/modelling-advanced.html)
+how to use this functionality is given in [the step-by-step demonstration on advanced time series analysis](../case-studies/modelling-advanced.html).
 
 {: .text-center.image-wrapper}
 

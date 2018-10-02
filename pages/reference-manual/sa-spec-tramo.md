@@ -20,10 +20,15 @@ JDemetra+.
 
 **A list of the TRAMO/SEATS specification’s sections**
 
-To avoid unnecessary repetitions, the description of *Series*,
-*Estimate*, *Transformation*, *Regression*, *Outliers* and *Arima* nodes
-is omitted, as it is provided in 4.1.1. Therefore, this section focuses
-on the decomposition part of the seasonal adjustment process and the
+To avoid unnecessary repetitions, click on the respective link for a description of the following sections of the TRAMO/SEATS specification:
+
+* [*Estimate*](/reference-manual/modelling-spec-tramo.html#estimate); 
+* [*Transformation*](/reference-manual/modelling-spec-tramo.html#transformation); 
+* [*Regression*](/reference-manual/modelling-spec-tramo.html#regression); 
+* [*Outliers*](/reference-manual/modelling-spec-tramo.html#outliers);
+* [*Arima*](/reference-manual/modelling-spec-tramo.html#arima).
+ 
+This section focuses on the decomposition part of the seasonal adjustment process and the
 options for benchmarking.
 
 To facilitate the comparison between JDemetra+ specifications and
@@ -50,197 +55,116 @@ determining changes also in the components and in the components
 structure. In this case the adjustment over the whole series may produce
 sub-optimal results mainly in the most recent period and in the initial
 parts of the series. Therefore it is reasonable to limit long time
-series to the most recent observations[^11]. The *Series* section allows
+series to the most recent observations. The *Series* section allows
 the user to limit the span (data interval) of the data to modelled or
 seasonally adjusted.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Option</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Series span</strong> <span class="math inline">→ </span> <strong>type </strong></p>
-<p><em>–; –</em></p></td>
-<td><p>Specifies the span (data interval) of the time series to be used in the seasonal adjustment process. When the user limits the original time series to a given span, only this span will be used in the computations. The available parameters for this option are:</p>
-<ul>
-<li><blockquote>
-<p><em>All</em> – a full time series span is considered in the modelling;</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>From</em> – a date of the first time series observation is included in the pre-processing model;</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>To</em> – a date of the last time series observation is included in the pre-processing model;</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>Between</em> – dates of the first and the last time series observations are included in the pre-processing model;</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>Last</em> – a specific number of observations from the end of the time series is included in the pre-processing model;</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>First</em> – a specific number of observations from the beginning of the time series is included in the pre-processing model;</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>Excluding</em> – a specific number of observations is excluded from the beginning (<em>first</em>) and/or end (<em>last</em>) of the time series in the pre-processing model.</p>
-</blockquote></li>
-</ul>
-<p>With the options <em>Last</em>, <em>First</em>, <em>Excluding</em> the span can be computed dynamically on the series. The default setting is <em>All</em>.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Series span</strong> <span class="math inline">→ </span> <strong>Preliminary Check </strong></p>
-<p><em>–; –</em></p></td>
-<td><p>When marked, it checks the quality of the input series and excludes from a processing the highly problematic ones: e.g. these with a high number of outliers, identical observations and/or missing values above the respective threshold values. When unmarked, the thresholds are ignored and process is performed, when possible.</p>
-<p>By default, the checkbox is marked.</p></td>
-</tr>
-</tbody>
-</table>
+###### **Series span →  type**<br> *–; –*
+
+Specifies the span (data interval) of the time series to be used in the seasonal adjustment process. When the user limits the original time series to a given span, only this span will be used in the computations. The available parameters for this option are:
+* *All* – full time series span is considered in the seasonal adjustment;
+* *From* – date of the first time series observation is included in the seasonal adjustment;
+* *To* – date of the last time series observation is included in the seasonal adjustment;
+* *Between* – dates of the first and the last time series observations are included in the seasonal adjustment;
+* *Last* – a specific number of observations from the end of the time series is included in the seasonal adjustment;
+* *First* – a specific number of observations from the beginning of the time series is included in the seasonal adjustment;
+* *Excluding* – a specific number of observations is excluded from the beginning (*First*) and/or end (*Last*) of the time series in the seasonal adjustment.
+With the options *Last*, *First* and *Excluding* the span can be computed dynamically on the series. The default setting is *All*.
+
+###### **Series span →  Preliminary check**<br> *–; –*
+
+When marked, it checks the quality of the input series and excludes from a processing the highly problematic 
+ones: e.g. these with a high number of outliers, identical observations and/or missing values 
+above the respective threshold values. 
+When unmarked, the thresholds are ignored and process is performed, when possible. 
+By default, the checkbox is marked.
 
 #### Seats
 
 This section includes the settings relevant for the decomposition step,
-performed by the SEATS algorithm. A basic description of the SEATS
-method can be found in 7.1.2.
+performed by the [SEATS algorithm](../theory/SA_SEATS.html).
 
-Table 5.2: TRAMO/SEATS specification – options for the Seats section.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Item</strong></th>
-<th><strong>Comments</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><strong>Approximation mode</strong></p>
-<p><em>Seats parameters; noadmiss</em></p></td>
-<td><p>In general, SEATS decomposes the ARIMA model received from TRAMO. On some occasions, the ARIMA model identified by TRAMO results in a so called non-admissible<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> decomposition i.e. a decomposition for which the condition that all components have a non-negative spectrum for all frequencies has failed. In such cases an approximation might be used to choose an acceptable ARIMA model. The available actions that can be performed in the case of a non-admissible decomposition are:</p>
-<ul>
-<li><blockquote>
-<p><em>None</em> – when the model does not accept an admissible decomposition, no approximation is made, which means that no decomposition is performed by SEATS<em>;</em></p>
-</blockquote></li>
-<li><blockquote>
-<p><em>Legacy</em> – when the model does not accept an admissible decomposition, it is automatically replaced with a decomposable one. The forecasts of the components obtained from SEATS with a new ARIMA model (sum of the components forecasts) will not add to the series forecast of the model passed by TRAMO.</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>Noisy</em> – a new ARIMA model is obtained by adding a white noise to the non-admissible model estimated by TRAMO. In this case, the forecasts of the series from TRAMO and from SEATS are the same; also the sum of the components forecasts is the same as the forecast of the series with the TRAMO model.</p>
-</blockquote></li>
-</ul>
-<p>The default setting is <em>Legacy</em>.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>MA unit root boundary</strong></p>
-<p><em>Seats parameters; xl</em></p></td>
-<td>A parameter to control the estimation of the AR and MA roots of the model. When the modulus of a root converges within an interval around 1, the program automatically fixes the root. More specifically, when the modulus of an estimated root falls in the range (<em>xl</em><strong>,</strong> 1), it is set to 1 if it is a root in the AR polynomial. If a root is in the MA polynomial, it is set to <em>xl</em>. The default value is 0.95.</td>
-</tr>
-<tr class="even">
-<td><p><strong>Trend boundary</strong></p>
-<p><em>Seats parameters; rmod </em></p></td>
-<td>The trend boundary is defined for the modulus of the inverse of the real AR roots. If the modulus of the inverse of the real root is greater than the <strong>Trend boundary</strong>, the AR root is integrated into the trend component. Otherwise the root is integrated into the seasonal component or transitory component (see <strong>Seasonal boundary</strong>). The default parameter value is 0.5.</td>
-</tr>
-<tr class="odd">
-<td><p><strong>Seasonal tolerance</strong></p>
-<p><em>Seats parameters; epsphi</em></p></td>
-<td>The tolerance (measured in degrees) to allocate the AR non-real roots to the seasonal component (if the modulus of the inverse complex AR root is greater than the <strong>Trend boundary</strong> and the frequency of this root differs from one of the seasonal frequencies by less than <strong>Seasonal tolerance</strong>) or the transitory component (otherwise). The default parameter value is <span class="math inline">$\frac{\pi}{90}$</span> rad (2 degrees).</td>
-</tr>
-<tr class="even">
-<td><p><strong>Seasonal boundary</strong></p>
-<p><em>Seats parameters; smod</em></p></td>
-<td>The seasonal boundary is defined for the modulus of the inverse of the real negative AR roots. If the modulus of the inverse negative real root is greater (or equal) than <strong>Seasonal boundary</strong>, the AR root is integrated into the seasonal component. Otherwise the root is integrated into the trend or transitory component (see <strong>Trend boundary</strong>). The default parameter value is 0.8.</td>
-</tr>
-<tr class="odd">
-<td><p><strong>Seasonal boundary (unique)</strong></p>
-<p><em>Seats parameters; smod</em></p></td>
-<td>A boundary, from which a negative AR root is integrated in the seasonal component when the root is the unique seasonal root. The default parameter value is 0.8.</td>
-</tr>
-<tr class="even">
-<td><strong>Method<br />
-</strong></td>
-<td><p>The estimation method of the unobserved components.</p>
-<p>Options:</p>
-<ul>
-<li><blockquote>
-<p><em>Burman</em> – the algorithm, which is used by the original TRAMO/SEATS method. Although it is the most efficient one, it cannot handle MA unit roots and it may become numerically unstable when some roots of the MA polynomial are near 1. In such cases the Wiener-Kolmogorov approach may lead to a significant underestimation of the standard deviations of the components.</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>KalmanSmoother</em> – the most robust algorithm. It is not disturbed by (quasi-) unit roots in MA. It is slightly slower than the Burman's algorithm<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. It should also be noted that it provides exact measures of the standard errors of the estimates (identical to the McElroy's results).</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>McElroyMatrix</em> – the algorithm, which is much slower than the two other options and presents the same stability issues as the Burman's algorithm. However, it provides additional results (full covariance matrix of the estimates) that may be useful.</p>
-</blockquote></li>
-</ul>
-<p>The default setting is <em>Burman.</em></p></td>
-</tr>
-</tbody>
-</table>
-<section class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>See 7.1.2.<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>The disturbance filter of Koopman is nearly as fast as the Burman’s solution. However, it does not provide the standard deviations of the estimates.<a href="#fnref2" class="footnote-back">↩</a></p></li>
-</ol>
-</section>
+###### **Approximation mode**<br> *Seats parameters; noadmiss*
+
+In general, SEATS decomposes the ARIMA model received from TRAMO. On some occasions, 
+the ARIMA model identified by TRAMO results 
+in a so called non-admissible decomposition i.e. a decomposition for which the condition that all components 
+have a non-negative spectrum for all frequencies has failed. In such cases an approximation might be used to 
+choose an acceptable ARIMA model. The available actions that can be performed in the case of a non-admissible 
+decomposition are:
+
+- *None* – when the model does not accept an admissible decomposition, no approximation is made, which means that no decomposition is performed by SEATS
+- *Legacy* – when the model does not accept an admissible decomposition, it is automatically replaced with a decomposable one. The forecasts of the components obtained from SEATS with a new ARIMA model (sum of the components forecasts) will not add to the series forecast of the model passed by TRAMO.
+- *Noisy* – a new ARIMA model is obtained by adding a white noise to the non-admissible model estimated by TRAMO. In this case, the forecasts of the series from TRAMO and from SEATS are the same; also the sum of the components forecasts is the same as the forecast of the series with the TRAMO model.
+
+The default setting is *Legacy*.
+
+###### **MA unit root boundary**<br> *Seats parameters; xl*
+
+A parameter to control the estimation of the AR and MA roots of the model. When the modulus of a root converges within an interval around 1, the program automatically fixes the root. More specifically, when the modulus of an estimated root falls in the range (<em>xl</em><strong>,</strong> 1), it is set to 1 if it is a root in the AR polynomial. If a root is in the MA polynomial, it is set to *xl*. The default value is 0.95.
+
+###### **Trend boundary**<br> *Seats parameters; rmod*
+
+The trend boundary is defined for the modulus of the inverse of the real AR roots. If the modulus of the inverse of the real root is greater than the <strong>Trend boundary</strong>, the AR root is integrated into the trend component. Otherwise the root is integrated into the seasonal component or transitory component (see <strong>Seasonal boundary</strong>). The default parameter value is 0.5.
+
+###### **Seasonal tolerance**<br> *Seats parameters; epsphi*
+
+The tolerance (measured in degrees) to allocate the AR non-real roots to the seasonal component (if the modulus of the inverse complex AR root is greater than the <strong>Trend boundary</strong> and the frequency of this root differs from one of the seasonal frequencies by less than <strong>Seasonal tolerance</strong>) or the transitory component (otherwise). The default parameter value is <span class="math inline">$\frac{\pi}{90}$</span> rad (2 degrees).
+
+###### **Seasonal boundary**<br> *Seats parameters; smod*
+
+The seasonal boundary is defined for the modulus of the inverse of the real negative AR roots. If the modulus of the inverse negative real root is greater (or equal) than <strong>Seasonal boundary</strong>, the AR root is integrated into the seasonal component. Otherwise the root is integrated into the trend or transitory component (see <strong>Trend boundary</strong>). The default parameter value is 0.8.
+
+###### **Seasonal boundary (unique)**<br> *Seats parameters; smod*
+
+A boundary, from which a negative AR root is integrated in the seasonal component when the root is the unique seasonal root. The default parameter value is 0.8.
+
+###### **Method**<br> *–; –*
+
+The estimation method of the unobserved components. 
+
+Options:
+- *Burman* – the algorithm, which is used by the original TRAMO/SEATS method. Although it is the most efficient one, it cannot handle MA unit roots and it may become numerically unstable when some roots of the MA polynomial are near 1. In such cases the Wiener-Kolmogorov approach may lead to a significant underestimation of the standard deviations of the components.
+- *KalmanSmoother* – the most robust algorithm. It is not disturbed by (quasi-) unit roots in MA. It is slightly slower than the Burman's algorithm[^1]. It should also be noted that it provides exact measures of the standard errors of the estimates (identical to the McElroy's results).
+- *McElroyMatrix* – the algorithm, which is much slower than the two other options and presents the same stability issues as the Burman's algorithm. However, it provides additional results (full covariance matrix of the estimates) that may be useful.
+
+The default setting is Burman.
+
 
 #### Benchmarking
 
-The *Benchmarking* section allows forcing the annual sums of the
+The *Benchmarking* section allows for a [benchmarking](../theory/benchmarking.html), i.e. forcing the annual sums of the
 seasonally adjusted data to be equal to the annual sums of the raw or
-calendar adjusted data. For a description of a benchmarking see 7.8.
+calendar adjusted data.
 
-Table 5.3: TRAMO\\SEATS specification – options for the Benchmarking
-section.
+###### **Is enabled**<br> *–; –*
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Option</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Is enabled</strong></td>
-<td>Enables the user to perform a benchmarking. By default, the checkbox is unmarked.</td>
-</tr>
-<tr class="even">
-<td><strong>Target</strong></td>
-<td><p>Specifies the target variable for the benchmarking procedure.</p>
-<p>Options:</p>
-<ul>
-<li><blockquote>
-<p><em>Original</em> – the raw time series are considered as a target data;</p>
-</blockquote></li>
-<li><blockquote>
-<p><em>Calendar Adjusted</em> – the time series adjusted for calendar effects are considered as a target data.</p>
-</blockquote></li>
-</ul>
-<p>The default setting is <em>Original</em>.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>Use forecast</strong></td>
-<td>The forecasts of the seasonally adjusted series and of the target variable (<strong>Target</strong>) are used in the benchmarking computation so the benchmarking constraint is applied also to the forecasting period. By default, the checkbox in unmarked (forecasts are not used).</td>
-</tr>
-<tr class="even">
-<td><strong>Rho</strong></td>
-<td>The value of the AR(1) parameter (set between 0 and 1). The default value of 1 is equivalent to the Denton benchmarking.</td>
-</tr>
-<tr class="odd">
-<td><strong>Lambda</strong></td>
-<td>A parameter that relates to the weights in the regression equation; it is typically equal to 0, 1/2 or 1. A parameter equal to 1 (default value) makes the method equivalent to the multiplicative benchmarking, while a parameter equal to 0 makes the method equivalent to the additive benchmarking.</td>
-</tr>
-</tbody>
-</table>
+Enables the user to perform a benchmarking. By default, the checkbox is unmarked.
+
+###### **Target**<br> *–; –*
+
+Specifies the target variable for the benchmarking procedure.
+
+- *Original* – the raw time series are considered as a target data;
+- *Calendar Adjusted* – the time series adjusted for calendar effects are considered as a target data.
+
+The default setting is *Original*.
+
+###### **Use forecast**<br> *–; –*
+
+The forecasts of the seasonally adjusted series and of the target variable (<strong>Target</strong>) are used in the benchmarking computation so the benchmarking constraint is applied also to the forecasting period. By default, the checkbox in unmarked (forecasts are not used).
+
+###### **Rho**<br> *–; –*
+
+The value of the AR(1) parameter (set between 0 and 1). The default value of 1 is equivalent to the Denton benchmarking.
+
+###### **Lambda**<br> *–; –*
+
+A parameter that relates to the weights in the regression equation; it is typically equal to 0, 1/2 or 1. A parameter equal to 1 (default value) makes the method equivalent to the multiplicative benchmarking, while a parameter equal to 0 makes the method equivalent to the additive benchmarking.
 
 
- 
+##### Footnotes
 
+[^1]: The disturbance filter of Koopman is nearly as fast as the Burman’s solution. However, it does not provide the standard deviations of the estimates.
 

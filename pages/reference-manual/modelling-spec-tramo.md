@@ -9,11 +9,11 @@ The options presented in this section are based on the TSW+ program developed by
 Maravall and Victor Gómez. The options available for the Tramo specification are divided into five parts. They are presented in the 
 order in which they are displayed in the graphical interface of 
 JDemetra+. These sections are: 
-* [Estimate](#estimate)
-* [Transformation](#transformation)
-* [Regression](#regression)
-* [Outliers](#outliers)
-* [Arima](#arima)
+* [*Estimate*](#estimate);
+* [*Transformation*](#transformation);
+* [*Regression*](#regression);
+* [*Outliers*](#outliers);
+* [*Arima*](#arima).
 
 To facilitate the comparison between JDemetra+ specifications and 
 specifications used in TSW+, under each option the name of the 
@@ -122,7 +122,7 @@ and user-defined regression variables are selected with the
    **holidays**). 
    * *UserDefined* -- used when the user wants to specify his own trading day variables. With this option the 
      calendar effects are captured only by the regression variables chosen by the user from the previously 
-     created list of the user-defined variables (see 6.2).
+     created list of the [user-defined variables](../reference-manual/user-defined-variables.html).
 
    The default setting is *Default*. 
 
@@ -139,8 +139,8 @@ and user-defined regression variables are selected with the
    
    List of the predefined regression variables to be included in the model. Option is available when **Calendar**  $\rightarrow \ $ **tradingDays** $\rightarrow \ $**option** is set to *UserDefined*. 
    When the user chooses the *UserDefined* type for a trading day effect estimation, one must specify the corresponding      
-   variables by clicking the field and choosing variables from the list. It should be noted that such variables need to be   
-   already defined (see 6.2), otherwise the list is empty.
+   variables by clicking the field and choosing variables from the list. It should be noted that [such variables need to be   
+   already defined](../reference-manual/user-defined-variables.html), otherwise the list is empty.
   The default setting is *Unsused.* 
 
  - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $ **tradingDays**<br> *regression variables, itrad*
@@ -211,7 +211,9 @@ By default, the checkbox is marked, which implies that the t-test is used.
    *  $\frac{1}{(1 - \delta_{s}B^{s })}$,
    *  $(0 < \delta_{s} \leq 1)$;
    *  $\frac{1}{(1 - B)(1 - B^{s})}$;
-    where $B$ is backshift operator (i.e. $B^{k}X_{t} = X_{t - k}$) and $s$ is frequency of the time series ($s = 12\ $for a monthly time series, $s = 4\ $for a quarterly time series). These basic structures enable the generation of not only AO, LS, TC, SO and RP outliers but also sophisticated intervention variables that are well-adjusted to the particular case. 
+    where $B$ is backshift operator (i.e. $B^{k}X_{t} = X_{t - k}$) and $s$ is frequency of the time series ($s = 12\ $for a monthly time series, $s = 4\ $for a quarterly time series). 
+
+These basic structures enable generation of not only AO, LS, TC, SO and RP outliers but also sophisticated intervention variables that are well-adjusted to the particular case. 
     No intervention variables are included in the pre-defined specifications. They can only be added to the user-defined specifications. 
     
  - **Ramp effects**<br> *regression variables; --* 
@@ -229,13 +231,14 @@ By default, the checkbox is marked, which implies that the t-test is used.
     
 	The user-defined variables should cover the period of the dependent series and the appropriate number of forecasts. For the other periods, the variables are implicitly set to 0. If the forecasts are not provided, it will not alter the     results of the seasonal adjustment but the forecasts of the final components will be unusable. 
     The effect of the user-defined variable can be assigned to the:
-    * Trend;
-    * Irregular component;
-    * Seasonal component; 
-    * Seasonally adjusted series;
-    * None of the above, which implies that it exists as an additional component (option *Undefined*), which is a default setting[^18]. With this option, the regression variable is used to improve the modelling, but it is not removed from the series for the decomposition[^19].
+    * *Trend*;
+    * *Irregular component*;
+    * *Seasonal component*; 
+    * *Seasonally adjusted series*;
+    * *Undefined* (a default setting), which implies that the effect is an additional component [^18]. With this option the regression variable is used to improve the modelling, but it is not removed from the series for the decomposition[^19].
     
-    The calendar component is not available in this section. Therefore, a user-defined variable assigned to the calendar effect should be added in the calendar part of the specification. 
+    
+	The calendar component is not available in this section. Therefore, a user-defined variable assigned to the calendar effect should be added in the calendar part of the specification. 
     For the user-defined variable the structure of the lags can be specified using the options *first lag* and *last lag*.[^20] When the regression variable $x_{t}$ is introduced with *first lag* = $l_a$ and *last lag* = $l_b$,            JDemetra+ includes in the TRAMO model a set of variables, $x_{t - l_{a}}$,...,$\ x_{t - l_{ b}}$,and estimates the        respective regression coefficients called the impulse response weights.
     To include only the first lag ($x_{t - 1})\ $of the user-defined variable ($x_{t})\ $in the RegARIMA model, the user should put *first lag* = *last lag* = 1. If for a monthly series one puts *first lag* = 0 and *last lag* = 11, it means    that in addition to the instantaneous effect of the user-defined variable, also the effects of 11 lagged explanatory      variables are included in the model. In this case the set of estimated coefficients, called a transfer function,          describe how the changes in $x_{t}$ that took place over a year are transferred to the dependent variable.        
     However, the lagged variables are often collinear, so that caution is needed in attributing much meaning to each coefficient.[^21] 
@@ -318,7 +321,7 @@ procedure. The maximum order of the regular polynomials is 3, and the
 maximum order of seasonal polynomials is 1. The parameters available for
 automatic model identification are presented below.
 
-**TRAMO specification -- options for the automatic identification of the ARIMA model**
+#### **TRAMO specification -- options for the automatic identification of the ARIMA model**
 
 
 - **Automatic**<br> *automdl; ami;idif, inic\**
@@ -327,28 +330,28 @@ automatic model identification are presented below.
 
 - **Accept Default**
   
-  Controls whether the default model (ARIMA(0,1,1)(0,1,1)) may be chosen in the first step of the automatic model identification. More explicitly, if the Ljung-Box Q-statistics LINK for the residuals is acceptable, the       default model is accepted and no further attempt will be made to identify and other. By default, the **Accept Default**   option is false. 
+  Controls whether the default model (ARIMA(0,1,1)(0,1,1)) may be chosen in the first step of the automatic model identification. More explicitly, if the [Ljung-Box Q-statistics](../theory/Tests_LB.html) for the residuals is acceptable, the       default model is accepted and no further attempt will be made to identify and other. By default, the **Accept Default**   option is false. 
 - **Cancelation limit**<br> *ami; cancel*
    
-   A limit for the AR and the MA roots to be assumed equal[^26]. This option is used in the automatic identification of the differencing order. If the difference in moduli of an AR and an MA root (when      estimating ARIMA(1,0,1)(1,0,1) models in the second step of the automatic identification of the differencing polynomial)   is smaller than **Cancelation limit**, the two roots cancel out. The default parameter value is 0.05.
+   [A limit for the AR and the MA roots to be assumed equal](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors). This option is used in the automatic identification of the differencing order. If the difference in moduli of an AR and an MA root (when      estimating ARIMA(1,0,1)(1,0,1) models in the second step of the automatic identification of the differencing polynomial)   is smaller than **Cancelation limit**, the two roots cancel out. The default parameter value is 0.05.
 - **Initial UR (Diff.)**<br> ami; ub1*
 
   The threshold value for the initial unit root[^27] test in the automatic differencing procedure. When one of the roots in the estimation of the (2,0,0)(1,0,0) plus mean model, which is           performed in the first step of the automatic model identification procedure, is larger than **First unit root limit**,    in modulus, it is set equal to unity. 
   This value should be less than 1 and greater than 0.8. The default parameter value is 0.97.
  - **Final UR (Diff.)**<br>*ami; ub2*
 
-   A unit root test in the automatic differencing procedure. When one of the roots in the estimation of the (1,0,1)(1,0,1) plus mean model, which is performed in the second step of the automatic model            identification procedure, is larger than **Second unit root limit**, in modulus, it is checked if there is a common       factor in the corresponding AR and MA polynomials of the ARMA model that can be cancelled (see **Cancelation limit**)).    If there is no cancellation, **the** AR root it is set equal to unity (i.e. the differencing order changes). The value    of the **Second unit root limit** should be less than 1 and greater than 0.8.The default parameter value is 0.91.
+   A unit root test in the automatic differencing procedure. When one of the roots in the estimation of the (1,0,1)(1,0,1) plus mean model, which is performed in the second step of the automatic model            identification procedure, is larger than **Second unit root limit**, in modulus, it is checked if there is a common       factor in the corresponding AR and MA polynomials of the ARMA model that can be [cancelled](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors) (see **Cancelation limit**)).    If there is no cancellation, **the** AR root it is set equal to unity (i.e. the differencing order changes). The value    of the **Second unit root limit** should be less than 1 and greater than 0.8.The default parameter value is 0.91.
  - **Arma limit**<br>*ami; tsig*
  
-   The threshold value for t-statistics of ARMA coefficients used for the final test of model parsimony[^28]. If the highest order of ARMA coefficient has a t-value less than this value in magnitude,          JDemetra+ will reduce the order of the model. The value given for **ArmaLimit** is also used for the final check of the   constant term; if the constant term has a t-value less than **ArmaLimit** in magnitude, the program will remove the       constant term from the set of regressors.
+   The threshold value for t-statistics of ARMA coefficients used for the final test of [a model parsimony](../theory/SA_lin.html#automatic-model-identification-procedure-in-tramo). If the highest order of ARMA coefficient has a t-value less than this value in magnitude,          JDemetra+ will reduce the order of the model. The value given for **ArmaLimit** is also used for the final check of the   constant term; if the constant term has a t-value less than **ArmaLimit** in magnitude, the program will remove the       constant term from the set of regressors.
    The **ArmaLimit** value should be greater than zero. The default parameter value is 1.
  
  - **Reduce CV**<br>*automdl; reducecv*
  
-   The percentage by which the outlier critical value will be reduced when the preferred model is found to have a Ljung-Box Q-statistic[^29] with an unacceptable confidence coefficient.     The parameter should be between 0 and 1, and will only be active when automatic outlier identification is selected. The    reduced critical value will be set to (1−**ReduceCV**)×CV), where CV is the original critical value. The default          parameter value is 0.12.
+   The percentage by which the outlier critical value will be reduced when the preferred model is found to have a [Ljung-Box Q-statistic](../theory/Tests_LB.html) with an unacceptable confidence coefficient.     The parameter should be between 0 and 1, and will only be active when automatic outlier identification is selected. The    reduced critical value will be set to (1−**ReduceCV**)×CV), where CV is the original critical value. The default          parameter value is 0.12.
  - **LjungBox limit**
  
-    Acceptance criterion for the confidence intervals of the Ljung-Box Q-statistic. If the Ljung-Box Q-statistics for the residuals of a final model (checked at lag 24 if the series is monthly, 16 if the series is          quarterly) is greater than **LjungBox limit**, the model is rejected, the outlier critical value is reduced, and model    and outlier identification (if specified) is redone with a reduced value (see the **Reduce CV** argument). After two      unfruitful attempts, a default model (usually (3,1,1)(0,1,1)) will be used. 
+    Acceptance criterion for the confidence intervals of the [Ljung-Box Q-statistic](../theory/Tests_LB.html). If the Ljung-Box Q-statistics for the residuals of a final model (checked at lag 24 if the series is monthly, 16 if the series is          quarterly) is greater than **LjungBox limit**, the model is rejected, the outlier critical value is reduced, and model    and outlier identification (if specified) is redone with a reduced value (see the **Reduce CV** argument). After two      unfruitful attempts, a default model (usually (3,1,1)(0,1,1)) will be used. 
    The default parameter value is 0.95. 
  - **Compare to default**<br>*ami; amicomp*
  
@@ -369,7 +372,7 @@ the rest of the parameters are estimated. However, users should not
 specify initial values for the MA parameters that yield the MA
 polynomial with roots inside the unit circle.
 
-**TRAMO specification *--* options for manual identification of the ARIMA model**
+#### **TRAMO specification *--* options for manual identification of the ARIMA model**
 
 - **Automatic**<br> *ami; idif, inic*
 
@@ -424,8 +427,6 @@ polynomial with roots inside the unit circle.
 
 
 ##### Footnotes
-
-[^1]: For a description of both models see section *7.2.1 Mean and seasonal effects of calendar variables* in the *Annex*.
 
 [^2]: TSW+ is a Windows extension of programs TRAMO and SEATS. See
     MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014).
@@ -495,8 +496,7 @@ polynomial with roots inside the unit circle.
 
 [^14]: Definitions from '*X-12-ARIMA Reference Manual'* (2011).
 
-[^15]: In the TRAMO/SEATS method this type of outlier is called
-    transitory change.
+[^15]: In the TRAMO/SEATS method this type of outlier is called transitory change.
 
 [^16]: See GÓMEZ, V., and MARAVALL, A. (1997).
 
@@ -520,23 +520,10 @@ polynomial with roots inside the unit circle.
 
 [^21]: MAKRIDAKIS, S., WHEELWRIGHT, S.C., and HYNDMAN, R.J. (1998).
 
-[^22]: Cancellation issue is described in  section *7.1.1.6 Cancellation of AR and MA factors* in the *Annex*.
-
-[^23]: A time series $x_{t}$ is said to have a unit root if it can be
-    modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and
-    $\phi_{1} = 1.$
-
-[^24]: See section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
-
-[^25]: See section *7.6.1.3 Ljung-Box test* in the *Annex*.
-
-[^26]: Cancellation issue is described in  section *7.1.1.6 Cancellation of AR and MA factors* in the *Annex*.
 
 [^27]: A time series $x_{t}$ is said to have a unit root if it can be
     modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and
     $\phi_{1} = 1.$
 
-[^28]: See section *7.1.1. Linearisation with the TRAMO and RegARIMA models* in the *Annex*.
 
-[^29]: See section *7.6.1.3 Ljung-Box test* in the *Annex*.
 

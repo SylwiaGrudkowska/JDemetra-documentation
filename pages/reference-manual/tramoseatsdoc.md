@@ -7,7 +7,7 @@ description: Basics
 
 *TramoSeatsDoc* is a default name for the main menu item that includes
 functionalities designated for *TramoSeats* documents. To create a
-*TramoSeats* document select *TramoSeats* from the *Statistical methods*
+*TramoSeats* document select *TramoSeats* from the *Seasonal Adjustment* \\(\rightarrow\\) *Statistical methods*
 \\(\rightarrow\\) *Single Analysis* menu.
 
 {: .text-center.image-wrapper}
