@@ -1,7 +1,5 @@
-- title: "Home"
-  href: "/"
 - title: "About JDemetra+"
-  href: "/pages/about/"
+  href: "/"
 - title: "What's new"
   href: "/pages/basic/"
   subitems:

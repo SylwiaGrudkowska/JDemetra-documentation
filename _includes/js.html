@@ -15,15 +15,22 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script>
-	$(".sub-menu > ul a, .sub-menu > a.active, .sub-menu a[href='#']").click(function () {
+	$(".sub-menu > a").click(function () {
 		var $this = $(this);
-		$this.parent(".sub-menu").children("ul").stop().slideToggle("100");
-		$this.find(".right").toggleClass("fa-caret-up fa-caret-down");
+		$this.closest(".sub-menu").children("ul").stop().slideToggle("100");
+		if ($this.hasClass("right")) {
+			$this.toggleClass("fa-caret-up fa-caret-down");
+		} else {
+			$this.find("right").toggleClass("fa-caret-up fa-caret-down");
+		}
 	});
 	
-	//Prevent reloading same page:
-	$("nav.left a.active").click(function(evt) {
+	$("nav.left a.active, .fa-caret-down, .fa-caret-up").click(function(evt) {
 		evt.preventDefault();
+	});
+	
+	$(".fa-caret-down, .fa-caret-up").click(function(evt) {
+		$(this).toggleClass("fa-caret-up fa-caret-down");
 	});
 </script>
 
