@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: Data Sources
+title: Data sources
 ---
 
 The default view of the JDemetra+ window, which is displayed after launching the program, is shown below. 
@@ -12,8 +12,10 @@ The default view of the JDemetra+ window, which is displayed after launching the
 {: .text-center.small}
 
 **JDemetra+ default window**
-
-On the left two panels are visible: the **Workspace** panel and the **Providers** panel. The **Providers** panel presents the list of the data sources and organizes the imported series within each data provider. By default, JDemetra+ supports the following data sources:
+By default, on the left hand side of the window two panels are visible: the [*Workspace* panel](../reference-manual/workspace.html) and the [*Providers* panel](../reference-manual/data-providers.html). 
+The *Workspace* panel stores the work performed by the user in a coherent and structured way.
+The *Providers* panel presents the list of the [data sources](../quick-start/datasources.html) and organizes the imported series within each data provider. 
+By default, JDemetra+ supports the following data sources:
 * JDBC;
 * ODBC;
 * SDMX;
@@ -33,10 +35,12 @@ We will now focus on the Spreadsheets data source, which corresponds to the seri
 {: .text-center.small}
 **Example of an Excel spreadsheet that can be imported to JDemetra+**
 
-Once the spreadsheet is prepared and saved, it can be imported to JDemetra+. For the instructions click the tutorial below.
+Once the spreadsheet is prepared and saved, it can be imported to JDemetra+ as it is shown by the tutorial below.
 
-
-<video src="/assets/video/Open_Spreadsheat.mov" width="610" height="343" frameborder="0" autoplay="false" controls="true"></video>
-
+{: .text-center.image-wrapper}
 
 ![Alt](/assets/img/quick-start/Import_spreadsheet.gif)
+
+{: .text-center.small}
+
+**An example of importing process for the Excel file**

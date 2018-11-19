@@ -1,6 +1,6 @@
 ---
-layout: left-menu
 title: About JDemetra+ Reference Manual
+layout: left-menu
 ---
 
 The *Reference Manual* aims to guide the user through
@@ -20,7 +20,7 @@ JDemetra+ uses the notation "X12", "X13","Arima", "RegArima", "Tramo",
 "ARIMA", "RegARIMA", "TRAMO", "SEATS" and "TRAMO/SEATS" respectively.
 This notation is also used in this page only when the references to the user interface are made.
 
-### Users for whom the *Referenced Manual* is intended {#users-to-whom-this-document-is-intended}
+### Users for whom the *Reference Manual* is intended {#users-to-whom-this-document-is-intended}
 
 This section provides information useful for the beginners, i.e.
 those who have only basic knowledge of the idea of seasonality and
@@ -33,8 +33,8 @@ The *Reference Manual* does not describe the detailed working of the seasonal
 adjustment methods, nor the underlying mathematics. It assumes that the
 reader has acquired a background knowledge of the concept of seasonal
 adjustment and is familiar with the X-12-ARIMA, the X-13ARIMA-SEATS and
-the TRAMO/SEATS methods. A brief outline of the X-12-ARIMA, the
-X-13ARIMA-SEATS and the TRAMO/SEATS algorithms and concepts is included.
+the TRAMO-SEATS methods. A brief outline of the X-12-ARIMA, the
+X-13ARIMA-SEATS and the TRAMO-SEATS algorithms and concepts is included.
 For readers interested in studying the seasonal adjustment methods
 further, a bibliography is provided [here](../pages/references/).
 
