@@ -5,7 +5,7 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-The Tools menu includes, among other functionalities, tools which are helpful for a graphical analysis of the time series. The [*‘X-13ARIMA-SEATS Reference Manual’ (2015)*](https://www.census.gov/ts/x13as/docX13ASHTML.pdf) strongly recommends studying a high resolution plot of the time series as it is helpful to get information about e.g. seasonal patterns, potential outliers and stochastic non-stationarity. Also the *‘ESS Guidelines on Seasonal Adjustment’ (2015)* recommend carrying out a graphical analysis on both unadjusted data and the initial run of the seasonal adjustment software. In particular, the graphical analysis should consider: 
+The Tools menu includes, among other functionalities, tools that are helpful for a graphical analysis of the time series. The [*‘X-13ARIMA-SEATS Reference Manual’ (2015)*](https://www.census.gov/ts/x13as/docX13ASHTML.pdf) strongly recommends studying a high resolution plot of the time series as it is helpful to get information about e.g. seasonal patterns, potential outliers and stochastic non-stationarity. Also the *‘ESS Guidelines on Seasonal Adjustment’ (2015)* recommends carrying out a graphical analysis on both unadjusted data and the initial run of the seasonal adjustment software. In particular, the graphical analysis should consider: 
 * The length of the series and a model span;  
 * The presence of zeros, outliers or problems in the data;  
 * The structure of the series: presence of a long term and cyclical movements, of a sea-sonal component, volatility etc.;  

@@ -6,7 +6,7 @@ description: Basics
 category: Application menu
 ---
 
-The View menu contains functionalities allowing for customising the view of an application to the user needs. 
+The View menu contains functionalities that allow the view of an application to be customized according to the user needs. 
 It offers the following items:
 * **Split** – the function is not operational in the current version of the software.
 * **Toolbars** – displays selected toolbars under the main menu. The *File* toolbar contains the *Save all* icon.

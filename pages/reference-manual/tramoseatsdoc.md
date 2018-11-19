@@ -38,7 +38,7 @@ The options for the *TramoSeatsDoc* include:
 
 -   **Paste** – pastes the time series to the *TramoSeatsDoc* window and
     performs seasonal adjustment for this time series using settings
-    selected for the current process. The series need to be previously
+    selected for the current process. The series needs to be previously
     copied, e.g. from the *Providers* window. Otherwise the message
     informing that the action cannot be done is displayed.
 
@@ -48,7 +48,7 @@ The options for the *TramoSeatsDoc* include:
     this option, first create *TramoSeats* document and drag and drop
     the data into it. Then save the workspace and close JDemetra+. Next,
     update the time series (add/change the observations, but do not
-    change neither the localisation of the file nor the file name) and
+    change either the localisation of the file or the file name) and
     open JDemetra+ once again. Open the previously saved workspace and
     double click on the respective *TramoSeats* document in the
     *Workspace* window. Finally, chose the **Refresh data** option from
