@@ -41,11 +41,11 @@ The functions available in the main menu of the application are explained below.
 -------------
 
 The empty zone on the right is a place where JDemetra+ displays various
-windows (Figure 2.6). More than one window can be displayed at the same
+windows (see the figure below). More than one window can be displayed at the same
 time. Windows can overlap each other with the foremost window being in
-focus or active. The active window has a darkened title bar. The windows
-in the results panel can be arranged in many different ways, depending
-on the user’s needs (item 3.5). The example below shows one of the
+focus or active. The active window has a darkened title bar. [The windows
+in the results panel can be arranged in many different ways](../reference-manual/window.html), depending
+on the user’s needs. The example below shows one of the
 possible views of this panel. The results of the user’s analysis are
 displayed in the respective windows. The picture below shows two panels
 – a window containing seasonal adjustment results (upper panel) and the

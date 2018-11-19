@@ -7,7 +7,7 @@ description: Basics
 
 *X13Doc* is a main menu item that includes functionalities designated
 for *X13* documents. To create a *X13* document select *X13* from the
-*Statistical methods* \\(\rightarrow\\) *Single Analysis* menu.
+*Seasonal Adjustment* \\(\rightarrow\\) *Statistical Methods* \\(\rightarrow\\) *Single Analysis* menu.
 
 {: .text-center.image-wrapper}
 
@@ -36,7 +36,7 @@ The options for the *X13Doc* include:
 
 -   **Paste** – pastes the time series to the *X13Doc* window and
     performs seasonal adjustment for this time series using settings
-    selected for the current process. The series need to be previously
+    selected for the current process. The series needs to be previously
     copied, e.g. from the *Providers* window. Otherwise the message
     informing that the action cannot be done is displayed.
 
@@ -57,8 +57,7 @@ The options for the *X13Doc* include:
 
 -   **Lock** – prevents the series from the *X13Doc* from being changed
     when the user double clicks on a new one in the *Providers* window.
-    However, with this option the user can still change the
-    specification’s settings.
+    However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec**. to workspace – copy the specification of the active
     document into the workspace. In that way, it can be used for other

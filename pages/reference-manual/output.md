@@ -4,20 +4,10 @@ title: Output from a seasonal adjustment procedure
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-
-The structure and the content of the output presented in the *Input* and
-*Pre-processing* nodes is the same for both seasonal adjustment methods.
-These sections are described in 4.2.1 and 4.2.2. The content of the
-other nodes depends on the decomposition method. As both methods vary
-substantially in their approach to the decomposition, the description of
-the output is presented separately for both methods.
-Documents
----------
-
-The *Documents* section, which belongs to the *Seasonal Adjustment*
-node, is designed to store results of the seasonal adjustment process
-resulting from the TRAMO/SEATS and X-13ARIMA-SEATS methods. These
-documents are displayed in the *TramoSeatsDoc* windows (for a time
+The results of the seasonal adjustment process
+resulting from the TRAMO/SEATS and X-13ARIMA-SEATS methods is presented in the *Documents* section,
+which belongs to the *Seasonal Adjustment* node.
+These documents are displayed in the *TramoSeatsDoc* windows (for a time
 series adjusted with TRAMO/SEATS), the *RegArimaSeatsDoc* window (for a
 time series adjusted with X-13ARIMA-SEATS) and the *SAProcessing* window
 (for a set of series adjusted with one or both methods).
@@ -26,7 +16,7 @@ There are several ways to create this document. One of them is to choose
 the relevant option from the main application menu. For an analysis of a
 single time series select *Statistical methods* → *Seasonal Adjustment*
 → *Seasonal adjustment* → *Single analysis*→ *TramoSeats/X13* and follow
-the ‘*JDemetra+ User Guide*’ (2017), case study 3.1.1.
+[this scenario](../case-studies/simplesa-single.html).
 
 {: .text-center.image-wrapper}
 
@@ -43,7 +33,7 @@ seasonal adjustment of the series inserted into the document’s window.
 
 For an analysis of a time series dataset select *Statistical methods* →
 *Seasonal Adjustment* → *Seasonal adjustment* → *Multiprocessing* →
-*New* and follow the ‘*JDemetra+ User Guide*’ (2017), case study 3.1.2.
+*New* and follow [this scenario](../case-studies/simplesa-muliple.html).
 
 {: .text-center.image-wrapper}
 
@@ -95,11 +85,10 @@ in the *Workspace\_\#number* tree.
 **Creating a new document in the *Seasonal adjustment* section**
 
 All documents are added to the relevant part of the *Workspace* window.
-Once the workspace is saved (see 3.1) all the documents defined for this
+Once [the workspace is saved](../reference-manual/file.html) all the documents defined for this
 workspace are saved as well. The user may then investigate the saved
-results of the seasonal adjustment and update them following the
-‘*JDemetra+ User Guide*’ (2017), case study 3.1.1 (for single time
-series adjustment) or 3.1.2 (for seasonal adjustment of a dataset).
+results of the seasonal adjustment and update [the documents for a single time series](../simplesa-single.html) 
+and [the documents for a dataset](../simplesa-muliple.html). 
 
 {: .text-center.image-wrapper}
 
@@ -168,9 +157,8 @@ content of the section using the vertical scrollbar.
 
 **The seasonal adjustment results**
 
-The structure and the content of the output presented in the *Input* and
-*Pre-processing* nodes is the same for both seasonal adjustment methods.
-These sections are described in 4.2.1 and 4.2.2. The content of the
+The structure and the content of the output presented in the [*Input*](../reference-manual/input.html) and
+[*Pre-processing*](../model-generalities.html) nodes is the same for both seasonal adjustment methods. The content of the
 other nodes depends on the decomposition method. As both methods vary
 substantially in their approach to the decomposition, the description of
 the output is presented separately for both methods.

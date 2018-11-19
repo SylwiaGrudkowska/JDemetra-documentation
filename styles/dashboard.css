@@ -164,31 +164,35 @@ nav.left > ul > li ul li a:hover {
   float: left;
 }
 
+.hidden {
+  display: none;
+}
+
 img { max-width: 800px;}
 
 .image-wrapper {
   margin-bottom: 5px;
 }
 
-/*Tables*/
+/* Tables */
 .table-style {
-  /*Bootstrap's .small*/
+  /* Bootstrap's .small */
   font-size: 80%;
   font-weight: 400;
 }
 
-/*Bootstrap's .table-sm*/
+/* Bootstrap's .table-sm */
 .table-style td,
 .table-style th {
   padding:.3rem
 }
 
-/*Bootstrap's .table-bordered header style*/
+/* Bootstrap's .table-bordered header style */
 .table-style thead th {
   border-bottom: 2px solid #777;
 }
 
-/*Bootstrap's .table-bordered border style*/
+/* Bootstrap's .table-bordered border style */
 .table-style td, .table-style th {
   border: 1px solid #777;
 }

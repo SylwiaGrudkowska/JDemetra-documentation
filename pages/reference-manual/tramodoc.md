@@ -7,7 +7,7 @@ description: Basics
 
 *TramoDoc* is a main menu item that includes functionalities designated
 for *Tramo* documents. To create a *Tramo* document select *Tramo* from
-*the Statistical methods* \\(\rightarrow\\)*Modelling* \\(\rightarrow\\)
+*the Statistical methods* \\(\rightarrow\\) *Modelling* \\(\rightarrow\\)
 *Single Analysis* menu.
 
 {: .text-center.image-wrapper}
@@ -37,7 +37,7 @@ The options for the *TramoDoc* include:
 
 -   **Paste** – pastes the time series to the *TramoDoc* window and
     performs seasonal adjustment for this time series using settings
-    selected for the current process. The series need to be previously
+    selected for the current process. The series needs to be previously
     copied, e.g. from the *Providers* window. Otherwise the message
     informing that the action cannot be done is displayed.
 
@@ -58,8 +58,7 @@ The options for the *TramoDoc* include:
 
 -   **Lock** – prevents the series from the *TramoDoc* from being
     changed when the user double clicks on a new one in the *Providers*
-    window. However, with this option the user can still change
-    specification’s settings.
+    window. However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec**. to workspace – copy the specification of the active
     document into the workspace. In that way, it can be used for other

@@ -97,7 +97,7 @@ uncertainties in the results.
 
 The normality of residuals is crucial for the validity of the prediction
 intervals produced in forecasting. To assess this property the
-Doornik-Hansen[^5] test is applied. To give more insight into the
+[Doornik-Hansen](../theory/Tests_DW.html)test is applied. To give more insight into the
 outcome of this test also the closeness between the residuals mean,
 skewness and kurtosis is tested. A significant value of one of these
 statistics indicates that the standardized residuals do not follow a
@@ -113,8 +113,8 @@ performance.
 
 **The results of normality of residuals tests**
 
-The independence is assessed by the results of the Ljung-Box
-Q-statistics[^6] and the Box-Pierce Q-statistics[^7] computed on the
+The independence is assessed by the results of the [Ljung-Box
+Q-statistics](../theory/Tests_LB.html) and the [Box-Pierce Q-statistics](../theory/Tests_BP.html) computed on the
 regular and seasonal lags. These tests check for the presence of
 autocorrelation between lags, which is a sign that the values of
 residuals are not independent. The number of lags that are taken into
@@ -125,9 +125,8 @@ in residuals consider the first two seasonal lags, irrespective of the
 time series frequency.
 
 Another test that checks for the presence of autocorrelation in the
-residuals is the Durbin–Watson statistic. A test outcome that is close
-to 2 indicates no sign of autocorrelation. For details of the Durbin
-–Watson test see 7.6.1.2.
+residuals is the [Durbin–Watson statistic](../theory/Tests_DW.html). A test outcome that is close
+to 2 indicates no sign of autocorrelation.
 
 {: .text-center.image-wrapper}
 
@@ -205,7 +204,7 @@ distribution of residuals.
 
 **The detailed results of normality of residuals tests**
 
-To assess the independence in detail, the autocorrelation function[^8]
+To assess the independence in detail, the [autocorrelation function](../theory/ACF_and_PACF.html)
 of residuals with standard deviations, the Ljung-Box Q-statistics and
 the Box-Pierce statistics are computed through each lag.
 
@@ -257,8 +256,8 @@ residual autocorrelation structures.
 
 #### Distribution
 
-The sample autocorrelation function (ACF) and sample partial
-autocorrelation function (PACF) of the (regularly and seasonally
+The sample [autocorrelation function (ACF) and sample partial
+autocorrelation function (PACF)](../theory/ACF_and_PACF.html) of the (regularly and seasonally
 differenced, if necessary) time series \\(y_{t}\\) are tools used in a
 well-established procedure of an identification of an ARIMA model that
 originates from the Box-Jenkins method. The significant lags observed
@@ -271,9 +270,7 @@ appearance of the ACF and PACF.
 As model residuals are expected to be a random process, the ACF and PACF
 functions for residuals are expected not to contain any significant
 values. The user is expected to examine these functions in the usual way
-(check if the significant lags are present). For a description of the
-autocorrelation function and the partial autocorrelation function, see
-7.9.
+(check if the significant lags are present). 
 
 The ACF and PACF graphs are accompanied by the picture that shows the
 histogram of the residuals, which is compared with a normal
@@ -296,21 +293,11 @@ autocorrelation function and distribution of residuals**
 
 In this section two spectral plots obtained for the residuals from the
 TRAMO model are displayed. These graphs present two spectrum estimators
-of the residuals: periodogram and autoregressive spectrum[^9]. They help
+of the residuals: [periodogram](../theory/spectral_periodogram.html) and [autoregressive spectrum](../theory/spectral_AR.html)[^1]. They help
 to reveal any seasonal and trading day effects remaining in the
-residuals. The theory behind these graphs is given in 7.3 while the
-description of these graphics can be found in the JDemetra+ User Guide
-(2017), section 3.4.2.
+residuals (see also [a scenerio that cocnerns these graphs](../case-studies/spectralgraphs.html)).
 
 ##### Footnotes
 
-[^5]: See 7.6.1.1.
-
-[^6]: See 7.6.1.3.
-
-[^7]: See 7.6.1.4.
-
-[^8]: See 7.6.
-
-[^9]: The theoretical motivation for the choice of spectral estimator is
+[^1]: The theoretical motivation for the choice of spectral estimator is
     provided by SOKUP, R., and FINDLEY, D. (1999).

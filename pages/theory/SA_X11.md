@@ -13,9 +13,7 @@ Moving averages have two important drawbacks:
 
 -   They are not resistant and might be deeply impacted by outliers;
 
--   The smoothing of the ends of the series cannot be done except with
-    > asymmetric moving averages which introduce phase-shifts and delays
-    > in the detection of turning points.
+-   The smoothing of the ends of the series cannot be done except with asymmetric moving averages which introduce phase-shifts and delays in the detection of turning points.
 
 These drawbacks adversely affect the X-11 output and stimulate the
 development of this method. To overcome these flaws first the series are
@@ -34,7 +32,7 @@ divided into two parts.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage13.jpeg)
+![Text](/assets/img/annex/UG_A_image13.png)
 
 {: .text-center.small}
 
@@ -42,20 +40,20 @@ divided into two parts.
 
 #### Moving averages
 
-The moving average of coefficients$\ \left\{ \theta_{i} \right\}$ is
+The moving average of coefficient $\theta_{i}$ is
 defined as:
 
-  --------------------------------------------------------------------- ----------
+  
   $$M\left( X_{t} \right) = \sum_{k = - p}^{+ f}\theta_{k}X_{t + k}$$   \[7.61\]
-  --------------------------------------------------------------------- ----------
+ 
 
 The value at time $t$ of the series is therefore replaced by a weighted
 average of $p$ \"past\" values of the series, the current value, and $f$
 \"future\" values of the series. The quantity $p + f + 1\ $is called the
-moving average order. When $p$ is equal to$\text{\ f}$, that is, when
+moving average order. When $p$ is equal to $f$, that is, when
 the number of points in the past is the same as the number of points in
 the future, the moving average is said to be centred. If, in addition,
-$\theta_{- k} = \theta_{k}$ for any$\text{\ k}$, the moving average $M$
+$\theta_{- k} = \theta_{k}$ for any $k$, the moving average $M$
 is said to be symmetric. One of the simplest moving averages is the
 symmetric moving average of order $P = 2p + 1$ where all the weights are
 equal to$\ \frac{1}{P}$.
@@ -63,7 +61,7 @@ equal to$\ \frac{1}{P}$.
 This moving average formula works well for all time series observations,
 except for the first $p$ values and last $f$ values. Generally, with a
 moving average of order $p + f + 1\ $calculated for instant
-$\text{t\ }$with points $\text{p\ }$in the past and points $f$ in the
+$t$nwith points $p$ in the past and points $f$ in the
 future, it will be impossible to smooth out the first $p$ values and the
 last $f$ values of the series because of lack of input to the moving
 average formula.
@@ -76,7 +74,7 @@ series extended by forecasts.
 
 For the estimation of the seasonal component, X-13ARIMA-SEATS uses
 $P \times Q$ composite moving averages, obtained by composing a simple
-moving average of order$\text{\ P}$, which coefficients are all equal to
+moving average of order $P$, which coefficients are all equal to
 $\frac{1}{P}$, and a simple moving average of order $Q$, which
 coefficients are all equal to $\frac{1}{Q}$.
 
@@ -85,11 +83,11 @@ initial estimation of trend X-11 method uses a $2 \times 4$ moving
 average in case of a quarterly time series while for a monthly time
 series a $2 \times 12\ $moving average is applied. The $2 \times 4$
 moving average is an average of order 5 with coefficients
-$\frac{1}{8}\left\{ 1,\ 2,\ 2,\ 2,\ 1 \right\}$. It eliminates frequency
+$$\frac{1}{8}\left\{1, 2, 2, 2, 1\right\}$$. It eliminates frequency
 $\frac{\pi}{2}$ corresponding to period 4 and therefore it is suitable
 for seasonal adjustment of the quarterly series with a constant
 seasonality. The $2 \times 12$ moving average, with coefficients
-$\frac{1}{24}\left\{ 1,\ 2,\ 2,\ 2,\ 2,\ 2,\ 2,\ 2,\ 2,\ 2,\ 2,\ 2,\ 1 \right\}\ $that
+$$\frac{1}{24}\left\{1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1\right\} $$that
 retains linear trends, eliminates order-$12$ constant seasonality and
 minimises the variance of the irregular component. The $2 \times 4$ and
 $2 \times 12$ moving averages are also used in the X-11 method to
@@ -103,9 +101,9 @@ These filters have been chosen for their smoothing properties. The
 coefficients of a Henderson moving average of order $2p + 1$ may be
 calculated using the formula:
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------
+
   $\theta_{i} = \frac{315\left\lbrack \left( n - 1 \right)^{2} - i^{2} \right\rbrack\left\lbrack n^{2} - i^{2} \right\rbrack\left\lbrack \left( n + 1 \right)^{2} - i^{2} \right\rbrack\left\lbrack {3n}^{2} - 16 - 11i^{2} \right\rbrack}{8n\left( n^{2} - 1 \right)\left( {4n}^{2} - 1 \right)\left( {4n}^{2} - 9 \right)\left( 4n^{2} - 25 \right)}$,   \[7.62\]
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------
+
 
 where: $n = p + 2$$n = p + 2$.
 
@@ -120,98 +118,104 @@ section.
 The basic algorithm of the X-11 method will be presented for a monthly
 time series $X_{t}$ that is assumed to be decomposable into trend,
 seasonality and irregular component according to an additive model
-$X_{t} = \text{TC}_{t} + S_{t} + I_{t}$.
+$X_{t} = TC_{t} + S_{t} + I_{t}$.
 
 A simple seasonal adjustment algorithm can be thought of in eight steps.
 The steps presented below are designed for the monthly time series. In
 the algorithm that is run for the quarterly time series the $2 \times 4$
 moving average instead of the $2 \times 12$ moving average is used.
 
-1.  ***Estimation of Trend by*** $\mathbf{2 \times 12}$ ***moving
+  ***Estimation of Trend by*** $\mathbf{2 \times 12}$ ***moving
     average:***
 
-  ------------------------------------------------- ----------
-  $\text{TC}_{t}^{(1)} = M_{2 \times 12}(X_{t})$.   \[7.63\]
-  ------------------------------------------------- ----------
+  $TC_{t}^{(1)} = M_{2 \times 12}(X_{t})$   \[7.63\]
+  
 
-2.  ***Estimation of the Seasonal-Irregular component:***
+  ***Estimation of the Seasonal-Irregular component:***
 
-  --------------------------------------------------------------------- ----------
-  $\left( S_{t} + I_{t} \right)^{(1)} = X_{t} - \text{TC}_{t}^{(1)}$.   \[7.64\]
-  --------------------------------------------------------------------- ----------
+  
+  $\left( S_{t} + I_{t} \right)^{(1)} = X_{t} - \text{TC}_{t}^{(1)}$   \[7.64\]
 
-3.  ***Estimation of the Seasonal component by*** $\mathbf{3 \times 3}$
+
+  ***Estimation of the Seasonal component by*** $\mathbf{3 \times 3}$
     ***moving average over each month:***
 
-  ------------------------------------------------------------------------------------------------------- ----------
-  $\text{\ S}_{t}^{(1)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(1)} \right\rbrack$.   \[7.65\]
-  ------------------------------------------------------------------------------------------------------- ----------
+  
+  $S_{t}^{(1)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(1)} \right\rbrack$   \[7.65\]
+ 
 
 The moving average used here is a $3 \times 3$ moving average over
-$5$$5$ terms, with coefficients
-$\frac{1}{9}\left\{ 1,\ 2,\ 3,\ 2,\ 1 \right\}$. The seasonal component
-is then centred using a$\ 2 \times 12$ moving average.
+$5$ $5$ terms, with coefficients
+$$\frac{1}{9} \left\{1, 2, 3, 2, 1 \right\}$$. The seasonal component
+is then centred using a $2 \times 12$ moving average.
 
-  ---------------------------------------------------------------------------------------- ----------
-  ${\widetilde{S}}_{t}^{(1)} = S_{t}^{(1)} - M_{2 \times 12}\left( S_{t}^{(1)} \right)$.   \[7.66\]
-  ---------------------------------------------------------------------------------------- ----------
 
-4.  ***Estimation of the seasonally adjusted series:***
+  $$
+   \widetilde{S}_{t}^{(1)} = S_{t}^{(1)} - M_{2 \times 12}\left( S_{t}^{(1)} \right)
+  $$   \[7.66\]
 
-  ---------------------------------------------------------------------------------------------------------------------- ----------
-  $\text{SA}_{t}^{\left( 1 \right)} = \left( \text{TC}_{t} + I_{t} \right)^{(1)} = X_{t} - {\widetilde{S}}_{t}^{(1)}$.   \[7.67\]
-  ---------------------------------------------------------------------------------------------------------------------- ----------
+
+  ***Estimation of the seasonally adjusted series:***
+
+
+  $$
+  SA_{t}^{\left( 1 \right)} = \left( \text{TC}_{t} + I_{t} \right)^{(1)} = X_{t} - {\widetilde{S}}_{t}^{(1)}
+  $$   \[7.67\]
+
 
 This first estimation of the seasonally adjusted series must, by
 construction, contain less seasonality. The X-11 method again executes
 the algorithm presented above, changing the moving averages to take this
 property into account.
 
-5.  ***Estimation of Trend by 13-term Henderson moving average:***
+  ***Estimation of Trend by 13-term Henderson moving average:***
 
-  -------------------------------------------------------------------------------- ----------
-  $\text{TC}_{t}^{(2)} = H_{13}\left( \text{SA}_{t}^{\left( 1 \right)} \right)$.   \[7.68\]
-  -------------------------------------------------------------------------------- ----------
+  
+  $$
+  TC_{t}^{(2)} = H_{13}\left( \text{SA}_{t}^{\left( 1 \right)} \right)
+  $$   \[7.68\]
+  
 
 Henderson moving averages, while they do not have special properties in
 terms of eliminating seasonality (limited or none at this stage), have a
 very good smoothing power and retain a local polynomial trend of degree
 $2$ and preserve a local polynomial trend of degree $3$.
 
-6.  ***Estimation of the Seasonal-Irregular component:***
+  ***Estimation of the Seasonal-Irregular component:***
 
-  ---------------------------------------------------------------------- ----------
-  $$\left( S_{t} + I_{t} \right)^{(2)} = X_{t} - \text{TC}_{t}^{(2)}$$   \[7.69\]
-  ---------------------------------------------------------------------- ----------
+ 
+  $$
+  \left( S_{t} + I_{t} \right)^{(2)} = X_{t} - \text{TC}_{t}^{(2)}
+  $$   \[7.69\]
+  
 
-7.  ***Estimation of the Seasonal component by*** $\mathbf{3 \times 5}$
+  ***Estimation of the Seasonal component by*** $\mathbf{3 \times 5}$
     ***moving average over each month:***
 
-  --------------------------------------------------------------------------------------------------------- ----------
-  $$\text{\ S}_{t}^{(2)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(2)} \right\rbrack.$$   \[7.70\]
-  --------------------------------------------------------------------------------------------------------- ----------
+  $$S_{t}^{(2)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(2)} \right\rbrack$$   \[7.70\]
+
 
 The moving average used here is a $3 \times 5$ moving average over $7$
 terms, of coefficients
-$\frac{1}{15}\left\{ 1,\ 2,\ 3,\ 3,\ 3,\ 2,\ 1 \right\}$ and retains
+$$\frac{1}{15} \left\{ 1,\ 2,\ 3,\ 3,\ 3,\ 2,\ 1 \right\}$$ and retains
 linear trends. The coefficients are then normalised such that their sum
 over the whole $12$-month period is approximately cancelled out:
 
-  ------------------------------------------------------------------------------------------ ----------
-  $${\widetilde{S}}_{t}^{(2)} = S_{t}^{(2)} - M_{2 \times 12}\left( S_{t}^{(2)} \right).$$   \[7.71\]
-  ------------------------------------------------------------------------------------------ ----------
+  
+  $${ \widetilde{S}}_{t}^{(2)} = S_{t}^{(2)} - M_{2 \times 12}\left( S_{t}^{(2)} \right)$$   \[7.71\]
+ 
 
 8.  ***Estimation of the seasonally adjusted series:***
 
-  ------------------------------------------------------------------------------------------------------------------------ ----------
-  $$\text{SA}_{t}^{\left( 2 \right)} = \left( \text{TC}_{t} + I_{t} \right)^{(2)} = X_{t} - {\widetilde{S}}_{t}^{(2)}.$$   \[7.72\]
-  ------------------------------------------------------------------------------------------------------------------------ ----------
+
+  $$SA_{t}^{\left( 2 \right)} = \left(TC_{t} + I_{t} \right)^{(2)} = X_{t} - {\widetilde{S}}_{t}^{(2)}$$   \[7.72\]
+ 
 
 The whole difficulty lies, then, in the choice of the moving averages
 used for the estimation of the trend in steps $1$ and $5$ on the one
 hand, and for the estimation of the seasonal component in steps $3$ and
-$5$.The course of the algorithm in the form that is implemented in
-JDemetra+ is presented in Figure 7.4. The adjustment for trading day
+$5$. The course of the algorithm in the form that is implemented in
+JDemetra+ is presented in the figure below. The adjustment for trading day
 effects, which is present in the original X-11 program, is omitted here,
 as since calendar correction is performed by the RegARIMA model,
 JDemetra+ does not perform further adjustment for these effects in the
@@ -219,7 +223,7 @@ decomposition step.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage14.jpeg)
+![Text](/assets/img/annex/UG_A_image14.png)
 
 {: .text-center.small}
 
@@ -237,11 +241,11 @@ on.
 The Census X-11 program presents four processing stages (A, B, C, and
 D), plus 3 stages, E, F, and G, that propose statistics and charts and
 are not part of the decomposition per se. In stages B, C and D the basic
-algorithm is used as is indicated in Figure 75.
+algorithm is used as is indicated in the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage15.jpeg)
+![Text](/assets/img/annex/UG_A_image15.png)
 
 {: .text-center.small}
 
@@ -414,15 +418,16 @@ steps.
 An estimate of the seasonal component is obtained by smoothing, month by
 month and therefore column by column, Table D9bis using a simple 7-term
 moving average, i.e. of coefficients
-$\frac{1}{7}\left\{ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1 \right\}$. In order not to
+$$\frac{1}{7} \left\{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\right\}$$. In order not to
 lose three points at the beginning and end of each column, all columns
 are completed as follows. Let us assume that the column that corresponds
 to the month is composed of $N$ values
-$\left\{ x_{1},\ x_{2},\ x_{3},\ \ldots x_{N - 1},\ x_{N} \right\}$. It
+$$
+\left\{ x_{1},\ x_{2},\ x_{3},\ \ldots x_{N - 1},\ x_{N} \right\}.
+$$ 
+It
 will be transformed into a series
-$\left\{ {x_{- 2},x_{- 1}{,x}_{0},x}_{1},\ x_{2},\ x_{3},\ \ldots x_{N - 1},\ x_{N},x_{N + 1},\ x_{N + 1},\ x_{N + 2},\ x_{N + 3} \right\}\ $with:
-$x_{- 2} = x_{- 1} = x_{0} = \frac{x_{1} + x}_{2} + x_{3}}{3}$ and
-$x_{N + 1} = x_{N + 2} = x_{N + 3} = \frac{x_{N} + x}_{N - 1} + x_{N - 2}}{3}$.
+$$\left\{ {x_{- 2},x_{- 1}{,x}_{0},x}_{1},\ x_{2},\ x_{3},\ \ldots x_{N - 1},\ x_{N},x_{N + 1},\ x_{N + 1},\ x_{N + 2},\ x_{N + 3} \right\}\$$ with $$x_{- 2} = x_{- 1} = x_{0} = \frac{x_{1} + x_{2} + x_{3}}{3}$$ and $$x_{N + 1} = x_{N + 2} = x_{N + 3} = \frac{x_{N} + x_{N - 1} + x_{N - 2}}{3}$$.
 We then have the required estimates: $S = M_{7}(D9bis)$ and
 $I = D9bis - S$.
 
@@ -430,12 +435,12 @@ $I = D9bis - S$.
 
 For each $i^{\text{th}}$ month the mean annual changes for each
 component is obtained by calculating
-${\overline{S}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}\left| S_{i,t} - S_{i,t - 1} \right|$
+$${\overline{S}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}\left| S_{i,t} - S_{i,t - 1} \right|$$
 and
-${\overline{I}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}\left| I_{i,t} - I_{i,t - 1} \right|$,
-where $N_{i}$ refers to the number of months $\text{i\ }$in the data,
+$${\overline{I}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}\left| I_{i,t} - I_{i,t - 1} \right|$$,
+where $N_{i}$ refers to the number of months $\text{i}$in the data,
 and the moving seasonality ratio of month $i$:
-$\text{MSR}_{i} = \frac{\ {\overline{I}}_{i}}{ {\overline{S}}_{i}}$.
+$$MSR_{i} = \frac{\ {\overline{I}}_{i}}{ {\overline{S}}_{i}}$$.
 These ratios are presented in *Details* of the *Quality Measures* node
 under the *Decomposition (X11)* section. These ratios are used to
 compare the year-on-year changes in the irregular component with those
@@ -451,9 +456,9 @@ but the user can select different moving averages for each month.
 
 The overall Moving Seasonality Ratio is calculated as follows:
 
-  ---------------------------------------------------------------------------------------------------------- ----------
+
   $$\text{MSR}_{i} = \frac{\sum_{i}^{}{N_{i}\ }\ {\overline{I}}_{i}}{\sum_{i}^{}N_{i}{\overline{S}}_{i}}$$   \[7.73\]
-  ---------------------------------------------------------------------------------------------------------- ----------
+
 
 ***Step 4: Selecting a moving average and estimating the seasonal
 component***
@@ -464,15 +469,11 @@ to the Seasonal/Irregular component in Table D8 modified, for extreme
 values, using values in Table D9.
 
 The default selection procedure of a moving average is based on the
-Moving Seasonality Ratio in the following way (Figure 7.6):
+Moving Seasonality Ratio in the following way:
 
--   If this ratio occurs within zone A (MSR \< 2.5), a $3 \times 3$
-    > moving average is used; if it occurs within zone C (3.5 \< MSR \<
-    > 5.5), a $3 \times 5$ moving average is selected; if it occurs
-    > within zone E (MSR \> 6.5), a $3 \times 9$ moving average is used;
+-   If this ratio occurs within zone A (MSR \< 2.5), a $3 \times 3$ moving average is used; if it occurs within zone C (3.5 \< MSR \< 5.5), a $3 \times 5$ moving average is selected; if it occurs within zone E (MSR \> 6.5), a $3 \times 9$ moving average is used;
 
--   If the MSR occurs within zone B or D, one year of observations is
-    > removed from the end of the series, and the MSR is recalculated.
+-   If the MSR occurs within zone B or D, one year of observations is removed from the end of the series, and the MSR is recalculated.
     > If the ratio again occurs within zones B or D, we start over
     > again, removing a maximum of five years of observations. If this
     > does not work, i.e. if we are again within zones B or D, a
@@ -487,7 +488,7 @@ averages.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage16.jpeg)
+![Text](/assets/img/annex/UG_A_image16.png)
 
 {: .text-center.small}
 
@@ -514,7 +515,7 @@ changing pattern of retail trade turnover in the Christmas time) may be
 reasonable in such cases. It may even be sensible to take into account
 the possibility of period-specific (e.g. month-specific) standard
 deviations, which can be done by changing the default settings of the
-**calendarsigma** parameter (see 5.1.2.2) The value of the
+**calendarsigma** parameter (see [Specifications-X13](../reference-manual/sa-spec-X13.html) section). The value of the
 **calendarsigma** parameter will have an impact on the method of
 calculation of the moving standard deviation in the procedure for
 extreme values detection presented below.
@@ -524,15 +525,17 @@ extreme values detection presented below.
 The seasonal component is estimated by smoothing the SI component
 separately for each period using a $3 \times 3$ moving average, i.e.:
 
-  ------------------------------------- ----------
-  $\frac{1}{9} \times \begin{Bmatrix}   \[7.74\]
+  
+  $$
+  \frac{1}{9} \times \begin{Bmatrix}   
   1,0,0,0,0,0,0,0,0,0,0,0, \\           
   2,0,0,0,0,0,0,0,0,0,0,0, \\           
   3,0,0,0,0,0,0,0,0,0,0,0, \\           
   2,0,0,0,0,0,0,0,0,0,0,0, \\           
   1,0,0,0,0,0,0,0,0,0,0,0, \\           
-  \end{Bmatrix}$.                       
-  ------------------------------------- ----------
+  \end{Bmatrix}
+  $$ \[7.74\]                       
+
 
 ***Step 2: Normalizing the seasonal factors***
 
@@ -552,7 +555,7 @@ By default, a moving standard deviation of the irregular component is
 calculated at five-year intervals. Each standard deviation is associated
 with the central year used to calculate it. The values in the central
 year, which in the absolute terms deviate from average by more than the
-**Usigma** parameter (by default, 2.5 standard deviations, see 7.1.2.2)
+**Usigma** parameter (by default, 2.5 standard deviations, see [Specifications-X13](../reference-manual/sa-spec-X13.html) section)
 are marked as extreme values and assigned a zero weight. After excluding
 the extreme values the moving standard deviation is calculated once
 again.
@@ -570,13 +573,10 @@ component are:
     absolute terms) from the 0 (additive) or 1 (multiplicative) are
     assigned a full weight (equal to one);
 
--   Values which lie between 1.5 and 2.5 standard deviations away (in
-    > the absolute terms) from the 0 (additive) or 1 (multiplicative)
-    > are assigned a weight that varies linearly between 0 and 1
-    > depending on their position.
+-   Values which lie between 1.5 and 2.5 standard deviations away (in the absolute terms) from the 0 (additive) or 1 (multiplicative) are assigned a weight that varies linearly between 0 and 1 depending on their position.
 
 The default boundaries for the detection of the extreme values can be
-changed with **LSigma** and **USigma** parameters (see 7.1.2.2).
+changed with **LSigma** and **USigma** parameters (see [Specifications-X13](../reference-manual/sa-spec-X13.html) section).
 
 ***Step 6: Adjusting extreme values of the seasonal-irregular
 component***

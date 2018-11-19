@@ -35,7 +35,7 @@ available actions:
     a table.
 
 -   **Open with** -- opens the time series in a separate window
-    according to the user choice (chart & grid or only chart). The **All
+    according to the user choice (*chart & grid* or only *chart*). The **All
     ts views** option is not currently available.
 
 -   **Save** -- saves a table as a spreadsheet file or a text file.

@@ -43,18 +43,19 @@ The following items can appear here:
 
 -   **Total outliers effect (out)** – the effects of the outliers on the trend, irregular and seasonal components;
 
--   **Regression effect on the series (reg\_y)** – user-defined variable effect assigned the series (the *Component type* option for the *User-defined variables* parameter is set to *Series*; see 4.1.1.3 or 4.1.2.3);
+-   **Regression effect on the series (reg\_y)** – user-defined variable effect assigned the series (the *Component type* option for the *User-defined variables* parameter is set to *Series*; see a decription of [Tramo specification](../reference-manual/modelling-spec-tramo.html#regression) or [Arima specification](../reference-manual/modelling-spec-arima.html#regression));
 
--   **Regression effect on the seasonally adjusted series (reg\_sa)** – the effect of user-defined variables effects assigned to the seasonally adjusted series (the *Component type* option for the *User-defined variables* parameter is set to *Trend*, *Irregular* and/or *SeasonallyAdjusted*; see 4.1.1.3 or 4.1.2.3);
+-   **Regression effect on the seasonally adjusted series (reg\_sa)** – the effect of user-defined variables effects assigned to the seasonally adjusted series (the *Component type* option for the *User-defined variables* parameter is set to *Trend*, *Irregular* and/or *SeasonallyAdjusted*; see a decription of [Tramo specification](../reference-manual/modelling-spec-tramo.html#regression) or [Arima specification](../reference-manual/modelling-spec-arima.html#regression));
 
--   **Regression effect on the trend component (reg\_t)** – the effect of ramps, intervention variables, for which \\(Delta \neq 0\\) and \\(DeltaS = 0,\ \\)[^1] and user-defined variables assigned to the trend component (the *Component type* option for the *User-defined variables* parameter is set to *Trend*; see 4.1.1.3 or 4.1.2.3);
+-   **Regression effect on the trend component (reg\_t)** – the effect of ramps, intervention variables, for which \\(Delta \neq 0\\) and \\(DeltaS = 0,\ \\)[^1] and user-defined variables assigned to the trend component (the *Component type* option for the *User-defined variables* parameter is set to *Trend*; see a decription of [Tramo specification](../reference-manual/modelling-spec-tramo.html#regression) or [Arima specification](../reference-manual/modelling-spec-arima.html#regression));
 
--   **Regression effect on the seasonal component** **(reg\_s)** – the effect of intervention variables for which \\(DeltaS \neq 0\\)[^1] and user-defined variables assigned to the seasonal component (the *Component type* option for the *User-defined variables* parameter is set to *Series*; see 4.1.1.3 or 4.1.2.3);
+-   **Regression effect on the seasonal component** **(reg\_s)** – the effect of intervention variables for which \\(Delta \neq 0\\) and \\(DeltaS \neq 0,\ \\)[^2] and user-defined variables assigned to the seasonal component (the *Component type* option for the *User-defined variables* parameter is set to *Series*; see a decription of [Tramo specification](../reference-manual/modelling-spec-tramo.html#regression) or [Arima specification](../reference-manual/modelling-spec-arima.html#regression));
 
--   **Regression effect on the irregular component (reg\_i)** – the effect of user-defined variables effects assigned to irregular component (the *Component type* option for the *User-defined variables* parameter is set to *Irregular*; see 4.1.1.3 or 4.1.2.3);
+-   **Regression effect on the irregular component (reg\_i)** – the effect of user-defined variables effects assigned to irregular component (the *Component type* option for the *User-defined variables* parameter is set to *Irregular*; see a decription of [Tramo specification](../reference-manual/modelling-spec-tramo.html#regression) or [Arima specification](../reference-manual/modelling-spec-arima.html#regression));
 
--   **Total regression effect (reg)** – the sum of the regression effects on the trend, seasonal component, irregular component, seasonally adjusted series and the separate regression effects assigned to none of components (in the last case the *Component type* option for the *User-defined variables* parameter should be set to *Undefined*; see 4.1.1.3 or 4.1.2.3).
+-   **Total regression effect (reg)** – the sum of the regression effects on the trend, seasonal component, irregular component, seasonally adjusted series and the separate regression effects assigned to none of components (in the last case the *Component type* option for the *User-defined variables* parameter should be set to *Undefined*; see a decription of [Tramo specification](../reference-manual/modelling-spec-tramo.html#regression) or [Arima specification](../reference-manual/modelling-spec-arima.html#regression)).
 
 ##### Footnotes
 
-[^1] When both Delta≠0 and DeltaS≠0, an intervention variable is automatically assigned to the seasonal component.
+[^1]: When \\(Delta \neq 0\\) and \\(DeltaS = 0,\ \\), an intervention variable is automatically assigned to the trend component.
+[^2]: When both \\(Delta \neq 0\\) and \\(DeltaS \neq 0,\ \\), an intervention variable is automatically assigned to the seasonal component. 

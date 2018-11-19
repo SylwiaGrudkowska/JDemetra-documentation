@@ -6,7 +6,7 @@ description: Basics
 ---
 
 The *Help* menu allows access to the documentation attached to software
-(*Help Contents*). For JDemetra+ 2.2.0 no documentation is provided.
+(*Help Contents*). For JDemetra+ 2.2.2 no documentation is provided.
 *About* includes basic information about JDemetra+, Java versions and
 directories used by an application.
 

@@ -56,7 +56,7 @@ Series uploaded to the *Providers* window can be displayed (see
 ‘*JDemetra+ User Guide*’ (2017), item 2.1.4), modified and tested (see
 ‘*JDemetra+ User Guide*’ (2017), item 3.4) and used in estimation
 routines (see [Modelling](modelling.html) and [Seasonal adjustment](sa.html)). The data sources can be restored after
-re-starting the application so that there is no need to fetch them
+re-starting the application so that there is no need to get them
 again. This functionality can be set in the *Behaviour* tab available at
 the *Option* item from the *Tools* menu.
 
@@ -90,7 +90,7 @@ data orientation (vertical or horizontal)).
 To import data from a given data source, click on this data source in
 the *Providers* window shown below, choose *Open* option and specify the
 import details, such as a path to a data file. These details vary
-according to data providers. The scenario below presents how to import
+according to data providers. The example below show how to import
 the data from an Excel file.
 
 1.  From the *Providers* window right-click on the *Spreadsheets* branch
@@ -153,8 +153,8 @@ the data from an Excel file.
 1.  The user may specify *Data format*, *Frequency* and *Aggregation
     type*, however this step is not compulsory. When these options are
     specified JDemetra+ is able to convert the time series frequency.
-    Otherwise, the functionality that enables converting the time series
-    frequency will not be available.
+    Otherwise, the functionality that enables the time series frequency to be converted 
+     will not be available.
 
 	{: .text-center.image-wrapper}
 

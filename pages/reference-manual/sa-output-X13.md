@@ -9,12 +9,13 @@ description: Basics
 The X-13ARIMA-SEATS method consists of two linked parts: the RegARIMA
 model and the decomposition step that can be performed using the X-11
 algorithm or the SEATS program. The results from the RegARIMA model,
-which are displayed under the *Pre-processing* node, are explained in
-4.2. The output from the decomposition step is presented in the three
-nodes: *Decomposition*, *Benchmarking* and *Diagnostics*. The majority
-of indicators displayed in the *Diagnostics* is shared with TRAMO/SEATS
-and are discussed in 5.2.1.4. The *Benchmarking* section is covered in
-5.2.1.3. For the *Main results* node only one section is different from
+which are displayed under the [Output from a modelling procedure](../reference-manual/output-modelling.html)section. 
+The output from the decomposition step is presented in the three
+nodes: [*Decomposition*](../reference-manual/sa-output-tramo.html#decomposition), 
+[*Benchmarking*](../reference-manual/sa-output-tramo.html#benchmarking) 
+and [*Diagnostics*](../reference-manual/sa-output-tramo.html#diagnostic). 
+The majority of indicators displayed in the *Diagnostics* is shared with TRAMO/SEATS. 
+For the *Main results* node only one section is different from
 the output produced by TRAMO/SEATS. This section focuses on the nodes
 that are not handled elsewhere, i.e. the output produced by X-11.
 Therefore the sections that are explained here are *Decomposition* and
@@ -64,9 +65,9 @@ The message *Series has been log-transformed* is only displayed if a
 logarithmic transformation has been applied. Otherwise, the message does
 not appear.
 
-The *m-statistics* section provides summary indicators (\\(q\\) and
-\\(q - m2)\ \\)from analysis of M-statistics. The details of these
-measures are given in 5.2.2.2.3. The result displayed in green indicates
+The [*m-statistics* section](../reference-manual/sa-output-X13.html#quality-measures) 
+provides summary indicators (\\(q\\) and
+\\(q - m2)\ \\)from analysis of M-statistics. The result displayed in green indicates
 that the given indicator’s value has been accepted. When the indicator
 is above one, the test fails and the statistic is displayed in red.
 
@@ -88,7 +89,7 @@ the X-11 algorithm and the set of quality measures.
 The decomposition step of X-13ARIMA-SEATS is performed by an iterative
 algorithm X-11, which general principle is an estimation of the
 different components using the appropriate moving averages. The results
-of each step of the algorithm are saved in the successive tables, which
+of each step of the algorithm are saved in the successive [tables](../theory/SA_X11.html#x-11-tables), which
 are displayed in this section. However, some tables produced by the
 original X-11 algorithm are omitted. The tables are divided into six
 groups, which correspond to the main steps of the algorithm:
@@ -137,22 +138,19 @@ the table, and choose table’s name.
 
 **X-11 outcomes presented as tables**
 
-A full list of the X-11 tables displayed by JDemetra+ can be found in
-7.1.3.2.4 7. The description of the all options from the local menu is
+The description of the all options from the local menu is
 available below Figure 4.11.
 
 ##### **Final filters**
 
 The length of the seasonal and trend moving average filters used to
-estimate the final seasonal factors and the final trend depends on the
-time series and is selected automatically by the X-11 algorithm on a
+estimate the final seasonal factors and the final trend depend on the
+time series and are [selected automatically](../theory/SA_lin.html#model-selection-criteria) by the X-11 algorithm on a
 basis of the time series properties. In short, JDemetra+ selects the
 filters automatically, taking into account the global moving seasonality
 ratio, which is computed on preliminary estimates of the irregular
-component and of the seasonal. The selection criteria are discussed in
-7.1.1.3. In the case of user-defined seasonal adjustment specifications,
-the lengths of the seasonal and trend filters can be chosen manually
-(see 5.1.2.2).
+component and of the seasonal. In the case of user-defined seasonal adjustment specifications,
+[the lengths of the seasonal and trend filters can be chosen manually](../reference-manual/sa-spec-X13.html#x11).
 
 {: .text-center.image-wrapper}
 
@@ -162,8 +160,8 @@ the lengths of the seasonal and trend filters can be chosen manually
 
 **Information about filters used by the X-11 algorithm to calculate the final estimate of the seasonal component and trend**
 
-For user-defined specifications the different seasonal filters can be
-applied for each period (see 5.1.2.2). In such case JDemetra+ informs
+For user-defined specifications [the different seasonal filters can be
+applied for each period](../reference-manual/sa-spec-X13.html#x11). In such case JDemetra+ informs
 that the composite filter has been applied. The orders of seasonal
 filters can be checked in the *Specification* panel in the *X11* **→**
 *Details on seasonal filter* section.
@@ -309,10 +307,8 @@ series:
 In the case of an additive decomposition, for each component the average
 absolute changes over several periods are calculated as[^38]:
 
-|     |                                                                                                |          |
-|-----|------------------------------------------------------------------------------------------------|----------|
-|     | \\(\text{Component}_{d} = \frac{1}{n - d}\sum_{t = d + 1}^{n}{|Table_{t} - Table_{t - d}|}\\), | \[5.28\] |
-
+$$\text{Component}_{d} = \frac{1}{n - d}\sum_{t = d + 1}^{n}{|Table_{t} - Table_{t - d}|}\quad\left[5.28\right]$$    
+ 
 where:
 
 \\(d\\) – time lag in periods (from a monthly time series \\(d\\) varies
@@ -356,13 +352,29 @@ denotes total changes in the raw time series.
 Data presented in Table F2B indicate the relative contribution of each
 component to the percent changes (differences) in the original series
 over each span, and are calculated as:
-\\(\frac{I_{d}^{2}}{O_{d}^{*2}}\\), \\(\frac{C_{d}^{2}}{O_{d}^{*2}}\\),
-\\(\frac{S_{d}^{2}}{O_{d}^{*2}}\\), \\(\frac{P_{d}^{2}}{O_{d}^{*2}}\\)
-and \\(\frac{\{TD\& H}_{d}^{2}}{O_{d}^{*2}}\\) where:
+
+\\(\frac{I_{d}^{2}}{O_{d}^{*2}}\\),   
+
+\\(\frac{C_{d}^{2}}{O_{d}^{*2}}\\),
+
+\\(\frac{S_{d}^{2}}{O_{d}^{*2}}\\), 
+
+\\(\frac{P_{d}^{2}}{O_{d}^{*2}}\\)
+
+and \\(\frac{\{TD\& H}_{d}^{2}}{O_{d}^{*2}}\\) 
+
+where:
 \\(O_{d}^{*2} = I_{d}^{2} + C_{d}^{2} + S_{d}^{2} + P_{d}^{2}{+ TD\& H}_{d}^{2}\\).
+
 The last column presents the *Ratio* calculated as:
-\\(100 \times \frac{O_{d}^{*2}}{O_{d}^{2}}\\), which is an indicator of
-how well the approximation \\({(O_{d}^{*})}^{2} \approx O_{d}^{2}\\)
+
+\\(100 \times \frac{O_{d}^{*2}}{O_{d}^{2}}\\), 
+
+which is an indicator of how well the approximation
+
+ \\({(O_{d}^{*})}^{2} \approx O_{d}^{2}\\)
+ 
+ 
 holds.
 
 {: .text-center.image-wrapper}
@@ -435,10 +447,10 @@ formula[^40]:
 
 |     |                                                                                                                      |          |
 |-----|----------------------------------------------------------------------------------------------------------------------|----------|
-|     | \\[\text{Corr}_{k}I = \frac{\sum_{t = k + 1}^{N}{(I_{t} - 1)(I_{t - k} - 1)}}{\sum_{t = 1}^{N}{(I_{t} - 1)}^{2}},\\] | \[5.31\] |
+|     | \\[\text{Corr}_{k}I = \frac{\sum_{t = k + 1}^{N}{(I_{t} - 1)(I_{t - k} - 1)}}{\sum_{t = 1}^{N}{(I_{t} - 1)}^{2}}\\] | \[5.31\] |
 
 where \\(N\\) is number of observations in the time series and
-\\(\text{k\ }\\)the lag.
+\\(\text{k}\\)the lag.
 
 {: .text-center.image-wrapper}
 
@@ -468,21 +480,26 @@ will be computed separately for each period (in case the option
 
 For each \\(i^{\text{th}}\\) month we will be looking at the mean annual
 changes for each component by calculating:
+
 \\({\overline{S}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}\left| S_{i,t} - S_{i,t - 1} \right|\\)
+
 and
+
 \\({\overline{I}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}\left| I_{i,t} - I_{i,t - 1} \right|\\),
+
+
 where \\(N_{i}\\) refers to the number of months \\(\text{i\ }\\)in the
 data, and the moving seasonality ratio of month \\(i\\):
-\\(\text{MSR}_{i} = \frac{\ {\overline{I}}_{i}}{{\overline{S}}_{i}}\\).
+
+\\(\text{MSR}_{i} = \frac{\{\overline{I}}_{i}}{{\overline{S}}_{i}}\\).
+
 These ratios are published in Table D9A in X13-ARIMA-SEATS software. In
 JDemetra+ they are presented in the details of the quality measures.
 
-The Moving Seasonality Ratio (MSR) is used to measure the amount of
+The [Moving Seasonality Ratio (MSR)](../theory/SA_X11.html#choosing-the-composite-moving-averages-when-estimating-the-seasonal-component) is used to measure the amount of
 noise in the Seasonal-Irregular component. By studying these values, the
-user can select for each period the seasonal filter that is the most
-suitable given the noisiness of the series (see option **Seasonal
-filter** in 5.1.2.2). The description of MSR and the rules for selecting
-the seasonal filters are given in 7.1.3.2.2.
+user can [select for each period the seasonal filter](../reference-manual/sa-spec-X13.html#seasonal-filter-x11-seasonalma) that is the most
+suitable given the noisiness of the series.
 
 {: .text-center.image-wrapper}
 

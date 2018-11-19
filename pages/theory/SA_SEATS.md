@@ -205,7 +205,7 @@ established by the real axis and the orthogonal imaginary axis.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage3.jpeg)
+![Text](/assets/img/annex/UG_A_image3.png)
 
 {: .text-center.small}
 
@@ -230,11 +230,11 @@ quarterly time series $(1 - B^{4})$. Its characteristic equation is
 ${(z}^{4} - 1) = 0$ with solutions given by$\ z = \sqrt[4]{1}$, i.e.
 $z_{1,2} = \pm 1$ and $z_{3,4} = \pm i1$. The first two solutions are
 real and the last two are complex conjugates. They are represented by
-the black points on the unit circle of Figure 7.4.
+the black points on the unit circle on the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage4.jpeg)
+![Text](/assets/img/annex/UG_A_image4.png)
 
 {: .text-center.small}
 
@@ -244,7 +244,7 @@ For the seasonal differencing operator $(1 - B^{12})$ applied to the
 monthly time series the characteristic equation ${\ (z}^{12} - 1) = 0$
 has twelve non-stationary solutions given by$\ z = \sqrt[12]{1}:$ two
 real and ten complex conjugates, represented by the white circles in
-Figure 7.4.
+unit roots figure above.
 
 The complex conjugates roots generate the periodic movements of the
 type:
@@ -271,49 +271,34 @@ be completed.
 For quarterly series the seasonal movements are produced by complex
 conjugates roots with angular frequencies at $\frac{\pi}{2}$ (one cycle
 per year) and $\pi$ (two cycles per year). The corresponding number of
-cycles per year and the length of the movements are presented in Table
-7.1
+cycles per year and the length of the movements are presented in the table below
 
 **Seasonal frequencies for a quarterly time series**
 
  {: .table .table-style}
-| **Angular       | **Frequency     | **Cycles per    | **Length of the |
-| frequency**     | (cycles per     | year**          | movement        |
-|                 | unit time) **   |                 | measured in     |
-| $$\omega$$      |                 |                 | quarters (**    |
-|                 | ***f***         |                 | $\tau$**)**     |
+| **Angular frequency ($\omega$)**      | **Frequency (cycles per unit time) ($f$)**  | **Cycles per year**   | **Length of the movement measured in quarters ($\tau$)** |
 |-----------------|-----------------|-----------------|-----------------|
-| $$\pi/2$$       | 0.25            | $$1$$           | 4               |
-| $$\pi$$         | 0.5             | $$2$$           | 2               |
+| $\frac{\pi}{2}$       | 0.25            | 1           | 4               |
+| $\pi$         | 0.5             | 2           | 2               |
 
 For monthly time series the seasonal movements are produced by complex
 conjugates roots at the angular frequencies:
 $\ \frac{\pi}{6},\frac{\pi}{3},\ \frac{\pi}{2},\ \frac{2\pi}{3},\ \frac{5\pi}{6}\ $and
 $\pi$. The corresponding number of cycles per year and the length of the
-movements are presented in Table 7.2: Seasonal frequencies for a monthly
+movements are presented in the table below: Seasonal frequencies for a monthly
 time series.
 
-Table 7.2: Seasonal frequencies for a monthly time series.
- {: .table .table-style}
-+-----------------+-----------------+-----------------+-----------------+
-| **Angular       | **Frequency     | **Cycles per    | **Length of the |
-| frequency**     | (cycles per     | year**          | movement        |
-|                 | unit time) **   |                 | measured in     |
-| $$\omega$$      |                 |                 | months (**      |
-|                 | ***f***         |                 | $\tau$**)**     |
-+=================+=================+=================+=================+
-| $$\pi/6$$       | 0.083           | $$1$$           | 12              |
-+-----------------+-----------------+-----------------+-----------------+
-| $$\pi/3$$       | 0.167           | $$2$$           | 6               |
-+-----------------+-----------------+-----------------+-----------------+
-| $$\pi/2$$       | 0.250           | $$3$$           | 4               |
-+-----------------+-----------------+-----------------+-----------------+
-| $$2\pi/3$$      | 0.333           | $$4$$           | 3               |
-+-----------------+-----------------+-----------------+-----------------+
-| $$5\pi/6$$      | 0.417           | $$5$$           | 2.4             |
-+-----------------+-----------------+-----------------+-----------------+
-| $$\pi$$         | 0.500           | $$6$$           | 2               |
-+-----------------+-----------------+-----------------+-----------------+
+**Seasonal frequencies for a monthly time series**
+
+{: .table .table-style}
+| **Angular frequency ($\omega$)**    | **Frequency (cycles per unit time) ($f$)**    | **Cycles per year**    | **Length of the movement measured in months ($\tau$)**    |
+|-----------------|-----------------|-----------------|-----------------|
+| $\frac{\pi}{6}$       | 0.083           | 1           | 12              |
+| $\frac{\pi}{3}$       | 0.167           | 2           | 6               |
+| $\frac{\pi}{2}$       | 0.250           | 3           | 4               |
+| $\frac{2\pi}{3}$      | 0.333           | 4           | 3               |
+| $\frac{5\pi}{6}$      | 0.417           | 5           | 2.4             |
+| $$\pi$$         | 0.500           | 6           | 2               |
 
 In JDemetra+ SEATS assigns the roots of the AR full polynomial to the
 components according to their associated modulus and frequency,
@@ -359,7 +344,7 @@ i.e.:[^38]
     Otherwise it goes to the transitory component. Also, when
     $\text{Bphi} > 0$, roots are assigned to the transitory component.
 
-Further details about JDemetra+ parameters see section 5.1.1.2.
+Further details about JDemetra+ parameters see section [TramoSeats](../reference-manual/sa-spec-tramo.html).
 
 It should be highlighted that when$\ Q > P$, where $Q$ and $P$ denote
 the orders of the polynomials $\varphi\left( B \right)$ and $\theta(B)$,
@@ -419,12 +404,12 @@ components[^45]. However, there is a price to be paid as canonical
 components can produce larger revisions in the preliminary estimators of
 the component[^46] than any other admissible decomposition.
 
-Figure 7.5 represents the pseudo-spectrum for the canonical trend and an
+The figure below represents the pseudo-spectrum for the canonical trend and an
 admissible trend.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage5.jpeg)
+![Text](/assets/img/annex/UG_A_image5.png)
 
 {: .text-center.small}
 
@@ -448,8 +433,8 @@ $B$ is the backward operator,
 
 $F$ is the forward operator.
 
-A pseudo-spectrum for a monthly time series $x_{t}\ $ is presented in
-Figure 7.6: The pseudo-spectrum for a monthly series. The frequency
+A pseudo-spectrum for a monthly time series $x_{t}\ $is presented in
+the figure below: The pseudo-spectrum for a monthly series. The frequency
 $\omega = 0$ is associated with the trend, frequencies in the range
 \[$0 + \epsilon_{1},\ \frac{\pi}{6} - \epsilon_{2}$\] with
 $\left[0 + \epsilon_{1},\ \frac{\pi}{6} - \epsilon_{2}\right]$ 
@@ -468,7 +453,7 @@ $\frac{2\pi}{6},\ \frac{3\pi}{6},\ \frac{4\pi}{6},\frac{5\pi}{6},\pi$).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage6.jpeg)
+![Text](/assets/img/annex/UG_A_image6.png)
 
 {: .text-center.small}
 
@@ -476,11 +461,11 @@ $\frac{2\pi}{6},\ \frac{3\pi}{6},\ \frac{4\pi}{6},\frac{5\pi}{6},\pi$).
 
 In the decomposition procedure, the pseudo-spectrum of the time series
 $x_{t}$ is divided into the spectra of its components (in the
-example of Figure 7.7 four components were obtained).
+example figure below, four components were obtained).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage7.jpeg)
+![Text](/assets/img/annex/UG_A_image7.png)
 
 {: .text-center.small}
 
@@ -563,11 +548,11 @@ $$\nu_{i}\left(B,F\right)=\nu_{0}+ \sum_{j = 1}^{\infty}\nu_{ij}(B^{j}+F^{j})$$
 is the WK filter.
 
 The example of the WK filters obtained for the pseudo-spectra of the
-series of Figure 7.7 is shown in Figure 7.8: WK filters for components.
+series illustrated above is shown on the figure below: WK filters for components.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage8.jpeg)
+![Text](/assets/img/annex/UG_A_image8.png)
 
 {: .text-center.small}
 
@@ -608,15 +593,11 @@ example, for the series with a highly stochastic seasonal component the
 filter adapts to the width of the seasonal peaks and the seasonally
 adjusted series does not display any spurious seasonality[^51]. Examples
 of WK filters for stochastic and stable seasonal components are
-presented in Figure 7.9.
-
-![\\\\Gimecb01\\homedir-eh\$\\grudkow\\Seasonal adjustment\\JDemetra+
-Reference Manual\\seasonal
-component.
+presented on the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage9.jpeg)
+![Text](/assets/img/annex/UG_A_image9.png)
 
 {: .text-center.small}
 
@@ -674,12 +655,12 @@ $R\left( \omega \right) = 0,$ so that these frequencies are ignored in
 computing the trend resulting in spectral zeros in
 $g_{\widehat{s}}\left( \omega \right)$. For this reason, unlike the
 spectrum of the component, the component spectrum contains dips as it
-can be seen in the Figure 7.10: Component spectrum and estimator
+can be seen on the figure below: Component spectrum and estimator
 spectrum for trend.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage10.jpeg)
+![Text](/assets/img/annex/UG_A_image10.png)
 
 {: .text-center.small}
 
@@ -692,13 +673,13 @@ $\widetilde{\nu}\left( \omega \right) = 1$, the full variation of
 $x_{t}$ for that frequency is passed to $${\widehat{s}}_{t}$$, while if
 $$\widetilde{\nu}\left(\omega\right) = 0 $$ the variation of $x_{t}$ for
 that frequency is fully ignored in the computation of
-$${\widehat{s}}_{t}$$. These two cases are well illustrated by Figure 7.11
+$${\widehat{s}}_{t}$$. These two cases are well illustrated by the figure below
 that shows the square gain of the WK filter for two series already
-analysed in Figure 7.9.
+analysed in the figure abive (Fiure: WK filters for stable and stochastic seasonal components).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage11.jpeg)
+![Text](/assets/img/annex/UG_A_image11.png)
 
 {: .text-center.small}
 
@@ -836,12 +817,11 @@ past innovations in series;
 
 $\xi_{i}{(F)}^{+}a_{t + 1}$ is an effect of future innovations.
 
-For the two cases already presented in Figure 7.9 and Figure 7.11, the
-psi-weights are shown in the figure below.
+For the two cases already presented in figure *WK filters for stable and stochastic seasonal components* and figure *The squared gain of the WK filter for stable and stochastic seasonal components* above, the psi-weights are shown in the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage12.jpeg)
+![Text](/assets/img/annex/UG_A_image12.png)
 
 It can be shown that $${\xi}_{- 1},\ldots,\xi_{- j}$$ are convergent and
 $$\xi_{j},\ldots, {\xi}_{1},\xi_{0}$$ are divergent. From \[7.57\], the

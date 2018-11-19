@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: Workspace menu
+title: The Workspace menu
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---

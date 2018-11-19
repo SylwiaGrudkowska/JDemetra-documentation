@@ -45,8 +45,6 @@
           file: "Tests_LB"  
         - title: "Box-Pierce test"
           file: "Tests_BP"    
-        - title: "Wald-Wolfowitz test (Runs test) "
-          file: "Tests_WW"  
     - title: "Seasonality tests"
       file: "Tests_seas"
       subitems:

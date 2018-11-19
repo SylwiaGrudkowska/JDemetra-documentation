@@ -1,12 +1,12 @@
 ---
 layout: left-menu
-title: User defined variables
+title: User-defined variables
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 User defined variables are simply time series used as explanatory regressors in the 
-RegARIMA and the TRAMO models. Although JDemetra+ allows the user for 
-indicating any time series as a variable to avoid misleading or 
+RegARIMA and the TRAMO models. Although JDemetra+ allows the user to 
+indicate any time series as a variable to avoid misleading or 
 erroneous results, the following rules should be kept: 
 * User-defined regression variables are used for measuring abnormalities and therefore 
 they should not contain a seasonal pattern. 
