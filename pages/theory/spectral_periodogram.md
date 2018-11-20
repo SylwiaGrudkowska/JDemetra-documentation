@@ -221,7 +221,7 @@ frequency $$ω_{j}$$ :[^74]
 
 
   $$
-  I\left(\omega_{j} \right) = \sum_{\left|k\right|< n}^{\ }\widehat{\gamma}\left(k\right)e^{-ik\omega_{j}} = \widehat{\gamma}\left(0\right) + 2\sum_{k=1}^{n-1}\widehat{\gamma}\left(k\right)\cos{(k\omega_{j})}}
+  I\left(\omega_{j} \right) = \sum_{\left|k\right|< n}^{\ }\widehat{\gamma}\left(k\right)_{\ }e^{-ik\omega_{j}} = \widehat{\gamma}\left(0\right)_{\ } + 2\sum_{k=1}^{n-1}\widehat{\gamma}\left(k\right)\cos{(k\omega_{j})}}_{\ }
   $$   \[7.116\]
 
 and for the zero frequency
