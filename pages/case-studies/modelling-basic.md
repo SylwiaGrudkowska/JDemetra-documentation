@@ -27,11 +27,11 @@ Manual* (2017) are included for further details.
     the *Window* menu. The default settings are visible in the *Outliers
     Detection - Properties* window. The user can modify the
     specification used for an outlier detection (*Default
-    Specification*), use a default critical value for an outlier
-    detection or change it (enter new critical value into a *Critical
-    value* box) and choose a transformation type (see 3.2.1.6). In the
-    *Outliers to display* section one can decide which outlier's types
-    are considered in the identification procedure. The outliers are
+    Specification*), use the default critical value for an outlier
+    detection or change it (i.e. enter a new critical value into a *Critical
+    value* box) and choose the transformation type (see 3.2.1.6). In the
+    *Outliers to display* section one can decide which outliers
+    are to be considered in the identification procedure. Outliers are
     described in the *JDemetra+ Reference Manual* (2017), item 7.1.1.
 
 	{: .text-center.image-wrapper}
@@ -40,7 +40,7 @@ Manual* (2017) are included for further details.
 
 	{: .text-center.small}
 	
-	**The settings for outliers' detection procedure**
+	**The settings for the outlier detection procedure**
 
 3.  By default, the pre-defined TR4 specification will be used for time
     series modelling. To learn about the settings used for this
@@ -58,8 +58,8 @@ Manual* (2017) are included for further details.
 	**Investigating the settings of a pre-defined specification**
 
 4.  To change the specification click on the cell next to the *Default
-    Specification* item and choose a specification from the list. Change
-    other settings, if necessary.
+    Specification* item and choose a specification from the list. You can change
+    other settings similarly.
 
 	{: .text-center.image-wrapper}
 
@@ -69,7 +69,7 @@ Manual* (2017) are included for further details.
 
 	**The choice of the Default specification**
 
-5.  To start the modelling, drag and drop series from the *Providers*
+5.  To start the modelling, drag and drop the series from the *Providers*
     window to the *Outliers detection* window.
 
 	{: .text-center.image-wrapper}
@@ -78,10 +78,10 @@ Manual* (2017) are included for further details.
 
 	{: .text-center.small}
 	
-	**Starting an outlier detection**
+	**Starting the outlier detection procedure**
 
 6.  To display the results of the modelling, click on the time series
-    header. JDemetra+ shows the outcomes in the upper panel and the time
+    header. JDemetra+ shows the results in the upper panel and the time
     series graph in the bottom panel. The results include selection
     criteria, estimated ARIMA model, identified outliers (see the
     *JDemetra+ Reference Manual* (2017), item 7.1.1) and calendar
