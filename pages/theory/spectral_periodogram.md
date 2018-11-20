@@ -154,7 +154,7 @@ corresponding to the harmonics**
 
 {: .table .table-style}
   |**Frequency**                                   |**Degrees of freedom**   |**Sum of squares decomposition**|
-  |----------------------------------------------- |------------------------ |-------------------------------------------------------------------------------------------|
+  |----------------------------------------------- |------------------------       |-------------------------------------------------------------------------------------------|
   |$\omega_{0}$(mean)                              |1                        |${a_{0}^{2}}_{\ } = n^{- 1}\left( \sum_{t = 1}^{n}x_{t} \right)^{2} = I\left( 0 \right)$|
   |$$\omega_{1}$$                                  |2                        |$${2r_{1}^{2}}_{\ } = 2{|a_{1}|}^{2} = 2I\left( \omega_{1} \right)$$|
   |$$\vdots$$                                      |$$\vdots$$               |$$\vdots$$|
@@ -183,11 +183,9 @@ reasons.
 Using the decomposition presented in Table 7.13 the periodogram can be
 expressed as:
 
- $I\left( \omega_{j} \right)\mathbf{=}\begin{matrix}                                                                                                                                                                                                                        \[7.113\]
-  \text{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } \\                                                                                                                         
-  r_{j}^{2} = \frac{1}{2}{(\alpha}_{j}^{2} + \beta_{j}^{2}) = \ {\frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\cos{\left( {t\frac{2\pi j}{n}}_{\ } \right)\ }} \right)}^{2} + \frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\sin\left( t\frac{2\pi j}{n} \right)_{\ }} \right)^{2} \\   
-  \text{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } \\                                                                                                                                                                                                                           
-  \end{matrix}$,                                                                                                                                                                                                                                                             
+$$
+ mathbb{I}\left(\omega_{j}\right)=r_{j}^{2} = \frac{1}{2}{\left({\alpha}_{j}}^{2} + {\beta_{j}}^{2}\right) = \frac{1}{n}{\left(\sum_{t = 1}^{n}x_{t}\cos{\left({t\frac{2\pi j}\right)}}} \right)}^{2} + \frac{1}{n}\left(\sum_{t=1}^{n}x_{t}\sin{\left(t\frac{2\pi j}{n}}\right)\right)^{2}   
+$$    \[7.113\] ,                                                                                                                                                                                                                                                              
 
 where $j = 0,\ldots,\left\lbrack \frac{n}{2} \right\rbrack$*.*
 
