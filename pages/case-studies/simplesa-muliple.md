@@ -4,17 +4,17 @@ title: Simple seasonal adjustment of multiple time series
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-This scenario is intended for a seasonal adjustment of a dataset of
+This scenario is intended for the seasonal adjustment of a dataset with
 multiple time series. It is especially useful when hundreds of series
 need to be processed and the quality of their adjustment assessed. This
 scenario can be used in a regular production process. As it does not
-focus on individual series, it is not recommended for an adjustment of
-key indicators that requires a detailed analysis of results and refining
+focus on individual series, it is not recommended for the adjustment of
+key indicators that requires a detailed analysis of the results and possible refining
 of the seasonal adjustment settings. The scenario shows the steps of the
-data generating process for multiple series, with references to
-appropriate parts of the *JDemetra+ Reference Manual* (2017) for more
-detailed explanations. Although this case study is intended for the
-datasets, it can be also performed for a single time series, provided
+data generating process for multiple series, with references to the
+appropriate sections of the *JDemetra+ Reference Manual* (2017) for more
+detailed explanations. Although this case study is intended for
+datasets with multiple time series, it can be also performed for a single time series, provided
 that the analysis is done in a multi-document.
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
@@ -27,16 +27,17 @@ that the analysis is done in a multi-document.
 
 	{: .text-center.small}
 
-	**Launching a seasonal adjustment for a dataset**
+	**Launching the seasonal adjustment for a
+datasets with multiple time series**
 
 2.  JDemetra+ opens an empty window (default name: *SAProcessing-1*). By
     default, one of the pre-defined specifications (see the *JDemetra+
-    Reference Manual* (2017), section 5.1 will be used for a seasonal
-    adjustment of a dataset. To change the specification used for an
+    Reference Manual* (2017), section 5.1 will be used for the seasonal
+    adjustment of the dataset. To change the specification used for an
     adjustment in the current document, click on the button marked in
     the picture below. This will provide you with the alternative
-    methods of adjustment. To change the settings for a pre-defined
-    specification used by default for an adjustment, see *JDemetra+
+    methods of adjustment. To change the settings from a pre-defined
+    specification used by default for the adjustment, see *JDemetra+
     Reference Manual* (2017), section 3.4.7).
 
 	{: .text-center.image-wrapper}
@@ -45,12 +46,12 @@ that the analysis is done in a multi-document.
 
 	{: .text-center.small}
 
-	**Default window for seasonal adjustment process for a dataset**
+	**Default window for seasonal adjustment process of the dataset**
 
 3.  The list available from the *SAProcessing* window includes the
     pre-defined specifications and the user-defined specifications (if
     any). For a description of the user-defined specifications see
-    3.2.1.1). Click on the specification that will be used for a
+    3.2.1.1). Click on the specification that will be used for the
     seasonal adjustment (in the example below *RSA4* is selected).
 
 	{: .text-center.image-wrapper}
@@ -69,7 +70,7 @@ that the analysis is done in a multi-document.
     apply different specifications to the same time series in order to
     compare the results. The series visible in the *SAProcessing* window
     are not seasonally adjusted yet (*Status* -- \"Unprocessed\").
-    Adjustment will be performed using *RSA4* specification. For a newly
+    Thw adjustment will be performed using *RSA4* specification. For a newly
     created *SAProcessing* window the *Estimation* column is always set
     to *Concurrent*, which means that previous results for these time
     series will not be taken into account once this seasonal adjustment
@@ -121,9 +122,9 @@ that the analysis is done in a multi-document.
 7.  When the user clicks on an individual time series in the
     *SAProcessing* window, detailed results are displayed in the panel
     below the list of the series. By default, a summary of results is
-    displayed, accompanied by two graphs: original data,
-    seasonally-adjusted series and the trend-cycle on the left and SI
-    ratio values on the right. These diagnostics and graphs are
+    displayed, accompanied by two graphs: an overlay graph on the left with the original data,
+    seasonally-adjusted series and the trend-cycle and the SI
+    ratio grapg on the right. These diagnostics and graphs are
     discussed in *JDemetra+ Reference Manual* (2017), Chapter 4 and
     Chapter 5 (see 5.2.2 for X-13ARIMA-SEATS, 5.2.1 for TRAMO/SEATS).
 
@@ -138,14 +139,13 @@ that the analysis is done in a multi-document.
 8.  The *Main results* panel provides information on the quality of the
     adjustment. Study the diagnostic section using the vertical
     scrollbar. The results are marked in green, yellow or red, depending
-    on the result of a statistical test used. Those in green denote that
-    the problematic characteristic has not been detected (e.g. lack of
-    normality of residuals, the autocorrelation in residuals). The
-    outcome in yellow means that the test outcome is uncertain. The
-    outcomes in red denote cases where an issue should be addressed.
-    Hence, test statistics will indicate the need to improve the model.
+    on the result of a statistical test used. Those in green indicate that
+    no problematic characteristic have been detected (e.g. lack of
+    normality of residuals, the autocorrelation in residuals). Yellow indicates that the test outcome is uncertain. The
+    outcomes in red highlight cases where an issue should be addressed.
+    Hence, test statistics will indicate the need (if any) to improve the model.
     Ideally, the model should be improved so that no test statistics
-    indicate uncertainties is the results.
+    indicate uncertainties in the results.
 
 	{: .text-center.image-wrapper}
 
@@ -156,7 +156,7 @@ that the analysis is done in a multi-document.
 	**The diagnostics results -- simple seasonal adjustment of a multiple time series**
 
 9.  To explore the results, expand the tree on the left and click on the
-    desired node. Here *out-of-sample test* was chosen (see the
+    desired node. Here the *out-of-sample test* was chosen (see the
     *JDemetra+ Reference Manual* (2017), 4.2.3).
 
 	{: .text-center.image-wrapper}
@@ -205,7 +205,7 @@ that the analysis is done in a multi-document.
 
 	{: .text-center.small}
 
-	**Defining an export details**
+	**Defining the export details**
 
 14. To save the workspace that includes the results in the processing
     window (named *SAProcessing-1* in the example) select *Save
