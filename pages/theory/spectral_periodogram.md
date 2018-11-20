@@ -195,12 +195,16 @@ $\overline{\mathbf{x}}\mathbf{=}a_{0}\mathbf{e}_{0}$ \[7.106\] can be
 rearranged to show that the sum of squares is equal to the sum of the
 squared coefficients:
 
- $$\mathbf{x} - a_{0}\mathbf{e}_{0} =\sum_{j=1}^{\lbrack(n - 1)/2\rbrack}\left(\alpha_{j}\mathbf{c}_{j}+\beta_{j}\mathbf{s}}_{j}\right) + a_{n/2}\mathbf{e}_{n/2}
+ $$
+ \mathbf{x} - a_{0}\mathbf{e}_{0} =\sum_{j=1}^{\lbrack(n - 1)/2\rbrack}\left(\alpha_{j}\mathbf{c}_{j}+\beta_{j}\mathbf{s}_{j}\right) + a_{n/2}\mathbf{e}_{n/2}
  $$.   \[7.114\]
 
-Thus the sample variance of $x_{t}^{\ }$ can be expressed as:
+Thus the sample variance of $$x_{t}$$ can be expressed as:
 
- $n^{- 1}\sum_{t = 1}^{n}{ { {(x}_{t}^{\ } - \overline{x})}^{2} =}n^{- 1}\left( \sum_{k = 1}^{\lbrack(n - 1)/2\rbrack}{2\text{\ r}_{j}^{2} + a_{n/2}^{2}} \right)\ $,   \[7.115\]
+$$
+n^{- 1}\sum_{t=1}^{n}{\left(x_{t}-\overline{x}\right(}^{2}=n^{-1}\left(\sum_{k=1}^{\lbrack(n - 1)/2\rbrack}2{r_{j}}^{2}
++{a_{n/2}}^{2}\right 
+$$,   \[7.115\]
 
 where $a_{n/2}^{2}$ is excluded if $n$ is odd.
 
