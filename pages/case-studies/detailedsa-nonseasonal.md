@@ -4,7 +4,7 @@ title: Non-seasonal time series
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-The *ESS Guidelines on Seasonal Adjustment* (2015) recommend to apply a
+The *ESS Guidelines on Seasonal Adjustment* (2015) recommend to apply
 seasonal adjustment only to those time series for which the seasonal
 and/or calendar effects can be properly explained, identified and
 estimated. Therefore, seasonal adjustment of non-seasonal time series is
@@ -12,13 +12,13 @@ an inappropriate treatment. This case study explains how to recognize a
 non-seasonal time series using the tools and functionalities implemented
 in JDemetra+.
 
-1.  The picture below shows the result from seasonal adjustment
-    performed for a stock market turnover in Greece using the RSA4c
+1.  The picture below shows the results from the seasonal adjustment
+    of a stock market turnover series from Greece using the RSA4c
     specification. The test diagnostics do not indicate any problems in
     the modelling phase (residual seasonality statistics and
     out-of-sample tests are displayed in green). The seasonality seems
     to be removed from the time series, but the overall assessment is
-    uncertain, due to the failure of m-statistics and the visual
+    uncertain, due to the failure of the m-statistics and the visual
     spectral analysis.
 
 	{: .text-center.image-wrapper}
@@ -27,20 +27,20 @@ in JDemetra+.
 
 	{: .text-center.small}
 	
-	**The diagnostic results for stock market turnover in Greece.
+	**The diagnostic results for stock market turnover in Greece**
 
-2.  The inspection of a graph hints the source of the problem. The
+2.  The inspection of a graph hints at the source of the problem. The
     original time series does not manifest any seasonal movements (left
-    panel). It should be noted that when X-13ARIMA-SEATS method is used
+    panel). It should be noted that when the X-13ARIMA-SEATS method is used
     for seasonal adjustment, the seasonal component is estimated
-    regardless the properties of the original time series (right panel).
+    regardless of the properties of the original time series (right panel).
     It means that the seasonal component is estimated even if there are
-    no signs of a presence of the seasonal fluctuations in the time
+    no signs of the presence of seasonal fluctuations in the time
     series. In the picture below the seasonal component (blue line) is
-    moving rather than stable and the averages for the specific months
+    moving rather than being stable and the averages for the specific months
     (red lines) are not at the same level, suggesting some intra-year
     differences between seasons. Nevertheless, the SI ratios (dots) are
-    rather far from seasonal component, indicating that the irregular
+    rather far from the seasonal component, indicating that the irregular
     movements dominate over the seasonal ones.
 
 	{: .text-center.image-wrapper}
@@ -54,10 +54,10 @@ in JDemetra+.
 3.  The seasonality tests performed for the original time series[^1] are
     ambiguous. Some suggest that seasonality is not present (the
     outcomes of three tests: the auto-correlation at seasonal lags, the
-    spectral peaks test and the seasonal dummies test indicate no
+    spectral peaks test and the seasonal dummies test all indicate no
     seasonality in the original time series). These tests are available
     in the *Diagnostic* section of the output tree. The descriptions of
-    the tests are given in 3.4.1.The seasonality tests can be also
+    these tests are given in 3.4.1. The seasonality tests can also be
     executed independently from the seasonal adjustment process, as it
     is shown in 3.4.1.
 
@@ -85,7 +85,7 @@ in JDemetra+.
     test. For the series presented in this case study the result of the
     combined seasonality test confirms that the movements observed in
     the time series are not stable and regular enough to be recognized
-    as the seasonal ones.
+    as seasonal ones.
 
 	{: .text-center.image-wrapper}
 
@@ -99,7 +99,7 @@ in JDemetra+.
     in the original time series the seasonal component is always
     estimated by X-13ARIMA-SEATS, as shown in the picture below (from
     the panel on the left choose *Main results* → *Table*). Therefore
-    the X-13ARIMA-SEATS users should always check the outcome of the
+    X-13ARIMA-SEATS users should always check the outcome of the
     combined seasonality test.
 
 	{: .text-center.image-wrapper}
@@ -110,7 +110,7 @@ in JDemetra+.
 	
 	**Decomposition's results**
 
-7.  In general, in case of a non-seasonal time series the TRAMO/SEATS
+7.  In general, in the case of a non-seasonal time series the TRAMO/SEATS
     method produces more coherent results than X-13ARIMA-SEATS. When no
     seasonal movements are detected the non-seasonal ARIMA model is used
     and the seasonal component is not estimated.
@@ -120,21 +120,21 @@ in JDemetra+.
 	![Text](/assets/img/user-guide/UG_SA_image11.jpg)
 
 	{: .text-center.small}
-	**Decomposition result for a non-seasonal time series**
+	**Decomposition result for a non-seasonal time series - TRAMO/SEATS**
 
 8.  Consequently, the *SI ratios* (dots) estimated by TRAMO/SEATS are
     equal to the irregular component and for each month the seasonal
     component is equal to the mean (red, horizontal line), which is
-    zero.
+    one.
 
 	{: .text-center.image-wrapper}
 
 	![Text](/assets/img/user-guide/UG_SA_image12.jpg)
 
 	{: .text-center.small}
-	**SI ratios for a non-seasonal time series**
+	**SI ratios for a non-seasonal time series - TRAMO/SEATS**
 
 ##### Footnotes
 
 [^1]: When the series are non-stationary a differentiation is performed
-    before seasonality tests.
+    before the seasonality tests.
