@@ -25,8 +25,7 @@ are: GÓMEZ, V., and MARAVALL, A. (1996), GÓMEZ, V., and MARAVALL, A.
 TRAMO/SEATS method, TRAMO/SEATS software (DOS version and TSW+ -- Tramo
 Seats Windows software and several interfaces) and its documentation as
 well as papers on methodology and application of the programs, can be
-found in the dedicated section of the [Banco de España site].
-(www.bde.es) (Services
+found in the dedicated section of the [Banco de España site](https://www.bde.es/bde/es/) (Services
 $\rightarrow \ $Professionals $\rightarrow \ $Statistical and
 Econometric Software).
 
@@ -38,7 +37,7 @@ the SEATS program developed at the Banco de España. The program is now
 used by the U.S. Census Bureau for a seasonal adjustment of time series.
 Users can download the X-13ARIMA-SEATS application, which is a Windows
 interface for the X-13ARIMA-SEATS program. Detailed information on
-X-13ARIMA-SEATS can be found at [U.S. Census Bureau](www.census.gov).
+X-13ARIMA-SEATS can be found at [U.S. Census Bureau](https://www.census.gov/).
 
 In contrast to the earlier product (X-12-ARIMA), X-13ARIMA-SEATS
 includes not only the enhanced X-11 seasonal adjustment procedure but
@@ -87,29 +86,31 @@ TRAMO/SEATS considers two decomposition models:
 -   The additive model: $X_{t} = T_{t} + S_{t} + I_{t}$;
 
 -   The log additive model:
-    > ${log(X}_{t}) = log(T_{t}) + log(S_{t}) + log(I_{t})$.
+     $log(X_{t}) = log(T_{t}) + log(S_{t}) + log(I_{t})$.
 
 Apart from these two decomposition types X-13ARIMA-SEATS allows the user
 to apply also the multiplicative
-model:$\text{\ X}_{t} = T_{t} \times S_{t} \times I_{t}$.
+model: $X_{t} = T_{t} \times S_{t} \times I_{t}$.
 
 A time series $x_{t}$, which is a subject to a decomposition, is assumed
 to be a realisation of a discrete-time stochastic, covariance-stationary
 linear process, which is a collection of random variables
-$\left\{ x_{t} \right\}$, where $t$ denotes time. It can be shown that
+$x_{t}$, where $t$ denotes time. It can be shown that
 any stochastic, covariance-stationary process can be presented in the
 form:
 
-  ------------------------------------------ ---------
+  
   $x_{t} = \mu_{t} + {\widetilde{x}}_{t}$,   \[7.1\]
-  ------------------------------------------ ---------
+  
 
 where $\mu_{t}$ is a linearly deterministic component and
 ${\widetilde{x}}_{t}$ is a linearly interderministic component, such as:
 
-  ------------------------------------------------------------------- ---------
-  ${\widetilde{x}}_{t} = {\sum_{j = 0}^{\infty}\psi_{j}a}_{t - j}$,   \[7.2\]
-  ------------------------------------------------------------------- ---------
+  
+  $$
+  {\widetilde{x}}_{t} = {\sum_{j = 0}^{\infty}\psi_{j}a}_{t - j}
+  $$,   \[7.2\]
+  
 
 where $\sum_{j = 0}^{\infty}\psi_{i}^{2} < \infty$ (coefficients
 $\psi_{j}$ are absolutely summable), $\psi_{0} = 1$ and $a_{t}$ is the
@@ -117,16 +118,14 @@ white noise error with zero mean and constant variance $V_{a}$. The
 error term $a_{t}$ represents the one-period ahead forecast error of
 $x_{t}$, that is:
 
-  ---------------------------------------------------------- ---------
-  $a_{t} = {\widetilde{x}}_{t} - {\widehat{x}}_{t|t - 1}$,   \[7.3\]
-  ---------------------------------------------------------- ---------
+  
+  $$
+  a_{t} = {\widetilde{x}}_{t} - {\widehat{x}}_{t|t - 1}
+  $$,   \[7.3\]
+  
 
-where ${\widehat{x}}_{t|t - 1}$ is the forecast of ${\widetilde{x}}_{t}$
-made at period $t - 1$. As $a_{t}$ represents what is new in
-${\widetilde{x}}_{t}$ in point $t$, i.e., not contained in the past
-values of ${\widetilde{x}}_{t}$, it is also called innovation of the
-process. From \[7.3\] ${\widetilde{x}}_{t}$ can be viewed as a linear
-filter applied to the innovations.
+where $${\widehat{x}}_{t|t - 1}$$ is the forecast of $${\widetilde{x}}_{t}$$
+made at period $t - 1$. As $a_{t}$ represents what is new in $${\widetilde{x}}_{t}$$ in point $t$, i.e., not contained in the past values of $${\widetilde{x}}_{t}$$, it is also called innovation of the process. From \[7.3\] $${\widetilde{x}}_{t}$$ can be viewed as a linear filter applied to the innovations.
 
 The equation 7.1 is called a Wold representation. It presents a process
 as a sum of linearly deterministic component $\mu_{t}$ and linearly
@@ -136,12 +135,13 @@ $x_{t - 1}$ is known and the second one is impossible to predict
 perfectly. This explains why the stochastic process cannot be perfectly
 predicted.
 
-Under suitable conditions ${\widetilde{x}}_{t}$ can be presented as a
-weighted sum of its past values and $a_{t}$, i.e.:
+Under suitable conditions $${\widetilde{x}}_{t}$$ can be presented as a weighted sum of its past values and $a_{t}$, i.e.:
 
-  ---------------------------------------------------------------------------------------- ---------
-  ${ {\widetilde{x}}_{t} = \sum_{j = 0}^{\infty}\pi_{j}{\widetilde{x}}_{t - j} + a}_{t}$,   \[7.4\]
-  ---------------------------------------------------------------------------------------- ---------
+
+  $$
+  { {\widetilde{x}}_{t} = \sum_{j = 0}^{\infty}\pi_{j}{\widetilde{x}}_{t - j} + a}_{t}
+  $$,   \[7.4\]
+
 
 In general, for the observed time series, the assumptions concerning the
 nature of the process \[7.1\] do not hold for various reasons. Firstly,
@@ -170,9 +170,9 @@ components. There is a fundamental difference in how this process is
 performed in TRAMO/SEATS and X-13ARIMA-SEATS. In TRAMO/SEATS the
 decomposition is performed by the SEATS procedure, which follows a so
 called ARIMA model based approach. In principle, it aims to derive the
-components with statistical models. More information is given in 7.1.2.
+components with statistical models. More information is given in the [SEATS](..theory/SA_SEATS.html) section.
 X-13ARIMA-SEATS offers two algorithms for decomposition: SEATS and X-11.
-The X-11 algorithm, which is described in 7.1.3, decomposes a series by
+The X-11 algorithm, which is described in the [X-11](..theory/SA_X11.html) section, decomposes a series by
 means of linear filters. Finally, in both methods the final components
 are derived by the assignment of the deterministic effects to the
 stochastic components. Consequently, the role of the ARIMA models is
@@ -184,9 +184,9 @@ summary, the decomposition procedure that results in an estimation of
 the seasonal component requires prior identification of the
 deterministic effects and their removal from the time series. This is
 achieved through the linearisation process performed by the TRAMO and
-the RegARIMA models, shortly discussed in 7.1.1.The linearised series is
-then decomposed into the stochastic components with SEATS (7.1.2) or
-X-11 (7.1.3) algorithms.
+the RegARIMA models, shortly discussed in the [Linearisation with the TRAMO and RegARIMA models](..theory/SA_lin.html) section.The linearised series is
+then decomposed into the stochastic components with [SEATS](..theory/SA_SEATS.html) or
+[X-11](..theory/SA_X11.html) algorithms.
 
 
 
