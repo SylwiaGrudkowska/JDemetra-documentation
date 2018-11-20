@@ -192,11 +192,9 @@ I\left(\omega_{j}\right)=r_{j}^{2}=\frac{1}{2}\left({\alpha}_{j}}^{2} + {\beta_{
 $$    \[7.113\] ,  
 
 $$
-I\left( \omega_{j} \right)\mathbf{=}\begin{matrix}                                                                                                                                                                                                                        
-  \text{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } \\                                                                                                                         
-  r_{j}^{2} = \frac{1}{2}{(\alpha}_{j}^{2} + \beta_{j}^{2}) = \ {\frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\cos{\left( {t\frac{2\pi j}{n}}_{\ } \right)\ }} \right)}^{2} + \frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\sin\left( t\frac{2\pi j}{n} \right)_{\ }} \right)^{2} \\   
-  \text{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } \\                                                                                                                                                                                                                           
-  \end{matrix}$$  \[7.113\]
+I\left( \omega_{j} \right)\mathbf{=}\begin{matrix}                                                                                r_{j}^{2} = \frac{1}{2}{(\alpha}_{j}^{2} + \beta_{j}^{2}) = \ {\frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\cos{\left( {t\frac{2\pi j}{n}}_{\ } \right)\ }} \right)}^{2} + \frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\sin\left( t\frac{2\pi j}{n} \right)_{\ }} \right)^{2} \\   
+\end{matrix}
+$$  \[7.113\]
 
 where $j = 0,\ldots,\left\lbrack \frac{n}{2} \right\rbrack$*.*
 
