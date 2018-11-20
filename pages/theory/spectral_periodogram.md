@@ -208,19 +208,21 @@ $$,   \[7.115\]
 
 where $a_{n/2}^{2}$ is excluded if $n$ is odd.
 
-The term $2\text{\ r}_{j}^{2}$ in \[7.115\] is then the contribution of
+The term $$2{r_{j}}^{2}$$ in \[7.115\] is then the contribution of
 the $j^{\text{th}}$ harmonic to the variance and \[7.115\] shows then
 how the total variance is partitioned.
 
 The periodogram ordinate $I\left( \omega_{j} \right)$ and the
 autocovariance coefficient $\gamma(k)$ are both quadratic forms of
-$\left\{ x_{t} \right\}.$ It can be shown that the periodogram and
+$$x_{t}$$. It can be shown that the periodogram and
 autocovarinace function are related and the periodogram can be written
 in terms of the sample autocovariance function for any non-zero Fourier
-frequency$\text{\ ω}_{j}$:[^74]
+frequency $$ω_{j}$$ :[^74]
 
 
-  $$I\left( \omega_{j} \right) = \sum_{\left| k \right| < n}^{\ }{\widehat{\gamma}\left( k \right)}_{\ }e^{- ik\omega_{j}} = {\widehat{\gamma}\left( 0 \right)}_{\ } + 2\sum_{k = 1}^{n - 1}{\widehat{\gamma}\left( k \right)\cos{(k\omega_{j})}}_{\ }$$   \[7.116\]
+  $$
+  I\left(\omega_{j} \right) = \sum_{\left|k\right|< n}^{\ }\widehat{\gamma}\left(k \right)e^{-ik\omega_{j}} = \widehat{\gamma}\left( 0\right)}+ 2\sum_{k=1}^{n-1}\widehat{\gamma}\left(k\right)\cos{(k\omega_{j})}}
+  $$   \[7.116\]
 
 and for the zero frequency
 $\ I\left( 0 \right) = n\left| \overline{x} \right|^{2}$.
@@ -229,7 +231,9 @@ Once comparing \[7.116\] with an expression for the spectral density of
 a stationary process:
 
  
-  $$f\left( \omega_{\ } \right) = \frac{1}{2\pi}\sum_{k < - \infty}^{\infty}{\gamma\left( k \right)}_{\ }e^{- ik\omega_{\ }} = \frac{1}{2\pi}\left\lbrack {\gamma\left( 0 \right)}_{\ } + 2\left( \sum_{k = 1}^{\infty}{\gamma\left( k \right)\cos{(k\omega_{\ })}} \right) \right\rbrack$$   \[7.117\]
+  $$
+  f\left( \omega \right) = \frac{1}{2\pi}\sum_{k< -\infty}^{\infty}\gamma\left(k \right)e^{-ik\omega} = \frac{1}{2\pi}\lbrack{\gamma\left( 0 \right) + 2\left(\sum_{k = 1}^{\infty}\gamma\left(k\right)\cos{(k\omega)}\right)\rbrack
+  $$   \[7.117\]
 
 it can be noticed that the periodogram is a sample analog of the
 population spectrum. In fact, it can be shown that the periodogram is
