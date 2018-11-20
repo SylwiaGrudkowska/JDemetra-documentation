@@ -113,18 +113,32 @@ $$.
 
 Equation \[7.107\] can be seen as an OLS regression of $x_{t}\ $on a
 constant and the trigonometric terms. As the vector of explanatory
-variables includes $\text{n\ }$elements, the number of explanatory
+variables includes $$n$$ elements, the number of explanatory
 variables in \[7.107\] is equal to the number of observations. HAMILTON,
 J.D. (1994) shows that the explanatory variables are linearly
 independent, which implies that an OLS regression yields a perfect fit
 (i.e. without an error term). The coefficients have the form of a simple
 OLS projection of the data on the orthonormal basis:
 
-  $${\widehat{a}}_{0}\ \ \ \  = \frac{1}{\sqrt{n}}\sum_{t = 1}^{n}x_{t}$$                                                                                                                                             \[7.108\]
-  $${\widehat{a}}_{n/2} = \frac{1}{\sqrt{n}}\sum_{t = 1}^{n}{ {( - 1)}^{t}x}_{t}\left( \text{only\ when\ }\text{n\ }\text{is\ even} \right)$$                                                                          \[7.109\]
-  $${\widehat{a}}_{0}\ \ \ \  = \frac{1}{\sqrt{n}}\sum_{t = 1}^{n}x_{t}$$                                                                                                                                             \[7.110\]
-  ${\widehat{\alpha}}_{j} = \ 2^{1/2}r_{j}\cos\theta_{j} = \left( \frac{n}{2} \right)^{- 1/2}\sum_{t = 1}^{n}{x_{t}\cos{\left( {t\frac{2\pi j}{n}}_{\ } \right)\ }}$,$\ j = 1,\ldots,\lbrack\frac{n - 1}{2}\rbrack$   \[7.111\]
-  ${ {\widehat{\beta}}_{j} = 2^{1/2}r}_{j}\sin\theta_{j} = \left( \frac{n}{2} \right)^{- 1/2}\sum_{t = 1}^{n}{x_{t}\sin\left( t\frac{2\pi j}{n} \right)_{\ }}$, $j = 1,\ldots,\lbrack\frac{n - 1}{2}\rbrack$           \[7.112\]
+  $$
+  {\widehat{a}}_{0}=\frac{1}{\sqrt{n}}\sum_{t=1}^{n}x_{t}
+  $$ \[7.108\]
+  
+  $$
+  {\widehat{a}}_{n/2}=\frac{1}{\sqrt{n}}\sum_{t=1}^{n}{(-1)}^{t}x_{t}\left(   only when n is even \right)
+  $$  \[7.109\]
+  
+  $$
+  {\widehat{a}}_{0}=\frac{1}{\sqrt{n}}\sum_{t=1}^{n}x_{t}
+  $$  \[7.110\]
+  
+  $$
+  {\widehat{\alpha}}_{j} = 2^{1/2}r_{j}\cos{\theta_{j}} = {left(\frac{n}{2} \right)}^{- 1/2}\sum_{t = 1}^{n}{x_{t}\cos{\left(t\frac{2\pi j}{n}}, j = 1,\ldots,\lbrack\frac{n - 1}{2}\rbrack
+  $$   \[7.111\]
+  
+
+  $$
+  {\widehat{\beta}}_{j} = 2^{1/2}r_{j}\sin{\theta_{j}} = {\left( \frac{n}{2} \right)}^{-1/2}\sum_{t = 1}^{n}x_{t}\sin{\left(t\frac{2\pi j}{n} \right)}, j = 1,\ldots,\lbrack\frac{n - 1}{2}\rbrack$$           \[7.112\]
 
 With \[7.107\] the total sum of squares
 $\sum_{t = 1}^{n}\left| x_{t} \right|^{2}$ can be decomposed into
