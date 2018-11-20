@@ -136,5 +136,5 @@ in JDemetra+.
 
 ##### Footnotes
 
-[^1]: When the series are non-stationary a differentiation is performed
+[^1]: When the series are non-stationary differentiation is performed
     before the seasonality tests.
