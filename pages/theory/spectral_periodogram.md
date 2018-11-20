@@ -195,7 +195,8 @@ $\overline{\mathbf{x}}\mathbf{=}a_{0}\mathbf{e}_{0}$ \[7.106\] can be
 rearranged to show that the sum of squares is equal to the sum of the
 squared coefficients:
 
- $\mathbf{x} - a_{0}\mathbf{e}_{0} = \sum_{j = 1}^{\lbrack(n - 1)/2\rbrack}{({\alpha_{j}}_{\ }\mathbf{c}_{j}\ {+ \ \beta_{j}\mathbf{s}}_{j}) + a_{n/2}\mathbf{e}_{n/2}}$.   \[7.114\]
+ $$\mathbf{x} - a_{0}\mathbf{e}_{0} =\sum_{j=1}^{\lbrack(n - 1)/2\rbrack}\left(\alpha_{j}\mathbf{c}_{j}+\beta_{j}\mathbf{s}}_{j}\right) + a_{n/2}\mathbf{e}_{n/2}
+ $$.   \[7.114\]
 
 Thus the sample variance of $x_{t}^{\ }$ can be expressed as:
 
