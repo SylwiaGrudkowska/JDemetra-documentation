@@ -75,7 +75,7 @@ for Tramo and [here](../reference-manual/modelling-spec-arima.html) for RegArima
 
 {: .text-center.small}
 
-**Creating a new user-defined specification in the *Modelling* section**.
+**Creating a new user-defined specification in the *Modelling* section**
 
 ##### Footnotes
 
