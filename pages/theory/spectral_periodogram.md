@@ -219,11 +219,6 @@ autocovarinace function are related and the periodogram can be written
 in terms of the sample autocovariance function for any non-zero Fourier
 frequency $$ω_{j}$$ :[^74]
 
-
-  $$
-  I\left(\omega_{j} \right) = \sum_{\left|k\right|< n}^{\ }\{widehat{\gamma}\left(k\right)_{\ }e^{-ik\omega_{j}} = {\widehat{\gamma}\left(0\right)_{\ } + 2\sum_{k=1}^{n-1}{\widehat{\gamma}\left(k\right)\cos{(k\omega_{j})}}_{\ }
-  $$   \[7.116\]
-  
   $$
   I\left( \omega_{j} \right) = \sum_{\left| k \right| < n}^{\ }{\widehat{\gamma}\left( k \right)}_{\ }e^{- ik\omega_{j}} = {\widehat{\gamma}\left( 0 \right)}_{\ } + 2\sum_{k = 1}^{n - 1}{\widehat{\gamma}\left( k \right)\cos{(k\omega_{j})}}_{\ }
   $$   \[7.116\]
@@ -236,8 +231,13 @@ a stationary process:
 
  
   $$
-  f\left( \omega \right) = \frac{1}{2\pi}\sum_{k< -\infty}^{\infty}\gamma\left(k \right)e^{-ik\omega} = \frac{1}{2\pi}\lbrack{\gamma\left( 0 \right) + 2\left(\sum_{k = 1}^{\infty}\gamma\left(k\right)\cos{(k\omega)}\right)\rbrack
+  f\left( \omega \right) = \frac{1}{2\pi}\sum_{k< -\infty}^{\infty}\gamma\left(k \right)_{\ }e^{-ik\omega_{\ }} = \frac{1}{2\pi}\lbrack{\gamma\left( 0 \right)_{\ } + 2\left(\sum_{k = 1}^{\infty}\gamma\left(k\right)\cos{(k\omega)}\right)\rbrack
   $$   \[7.117\]
+
+   $$
+f\left( \omega_{\ } \right) = \frac{1}{2\pi}\sum_{k < - \infty}^{\infty}{\gamma\left( k \right)}_{\ }e^{- ik\omega_{\ }} = \frac{1}{2\pi}\left\lbrack {\gamma\left( 0 \right)}_{\ } + 2\left(\sum_{k = 1}^{\infty}{\gamma\left( k \right)\cos{(k\omega_{\ })}} \right) \right\rbrack
+   $$   \[7.117\]
+
 
 it can be noticed that the periodogram is a sample analog of the
 population spectrum. In fact, it can be shown that the periodogram is
