@@ -76,15 +76,15 @@ periodogram decomposes the total sum of squares
 $\sum_{t = 1}^{n}\left| x_{t} \right|^{2}$ into a sums of components
 associated with the Fourier frequencies $$ω_{j}$$:
 
+$$
+  \sum_{t=1}^{n}{\left|x_{t}\right|}^{2} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}\left|a_{j}\right|^{2} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}{I\left( \omega_{j} \right)}
+$$   \[7.106\]
 
-  $$\sum_{t = 1}^{n}\left| x_{t} \right|^{2} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}\left| a_{j} \right|^{2} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}{I\left( \omega_{j} \right)}$$   \[7.106\]
-
-If$\ \mathbf{x\  \in}\ \mathbb{R}^{n}$, $\omega_{j}$ and
-${- \omega}_{j}$ are both in
-$\left( - \pi, \right.\ \left. \ \  - \pi \right\rbrack\ $and $a_{j}$ is
-presented in its polar form
-(i.e.$\text{\ a}_{j} = r_{j}\exp\left( i\theta_{j} \right)$), where
-$r_{j}$ is the modulus of$\text{\ a}_{j}$, then \[7.104\] can be
+If $\ \mathbf{x\  \in}\ \mathbb{R}^{n}$, $\omega_{j}$ and
+$${-\omega}_{j}$$ are both in
+$$\lbrack- \pi, -\pi \rbrack$$ and $$a_{j}$$ is presented in its polar form
+(i.e.$$a_{j} = r_{j}\exp\left( i\theta_{j} \right)$$), where
+$r_{j}$ is the modulus of $$a_{j}$$, then \[7.104\] can be
 rewritten in the form:
 
 
