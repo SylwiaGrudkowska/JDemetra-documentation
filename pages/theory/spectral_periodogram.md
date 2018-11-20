@@ -88,10 +88,13 @@ $r_{j}$ is the modulus of $$a_{j}$$, then \[7.104\] can be
 rewritten in the form:
 
 
- $$\text{\ \ }\mathbf{x} = a_{0}\mathbf{e}_{0} + \sum_{j = 1}^{\lbrack\frac{n - 1}{2}\rbrack}{ {2^{1/2}r}_{j}{(\mathbf{c}}_{j}\cos\theta_{j}{- \mathbf{s}}_{j}\sin\theta_{j}) + a_{n/2}\mathbf{e}_{n/2}}\ $$   \[7.107\]
+ $$
+ \mathbf{x} = a_{0}\mathbf{e}_{0} + \sum_{j = 1}^{\lbrack\frac{n - 1}{2}\rbrack}{ {2^{1/2}r}_{j}{(\mathbf{c}}_{j}\cos\theta_{j}{- \mathbf{s}}_{j}\sin\theta_{j}) + a_{n/2}\mathbf{e}_{n/2}}
+ $$   \[7.107\]
 
-The orthonormal basis for $\mathbb{R}^{n}$ is
-$\{\mathbf{e}_{0},\ \mathbf{c}_{1},\mathbf{s}_{1},\ldots,\mathbf{c}_{\lbrack\frac{n - 1}{2}\rbrack},\mathbf{s}_{\lbrack\frac{n - 1}{2}\rbrack},\ \mathbf{e}_{\frac{n}{2}\ (excluded\ if\ n\ is\ odd)}\}$,
+The orthonormal basis for $$\mathbb{R}^{n}$$ is
+$$\{\mathbf{e}_{0},\mathbf{c}_{1},\mathbf{s}_{1},\ldots,\mathbf{c}_{\lbrack\frac{n - 1}{2}\rbrack},\mathbf{s}_{\lbrack\frac{n - 1}{2}\rbrack},\mathbf{e}_{\frac{n}{2}\(excluded\ if\ n\ is\ odd)}\}
+$$,
 where:
 
 $\mathbf{e}_{0}$ is a vector composed of n elements equal to
