@@ -166,7 +166,28 @@ corresponding to the harmonics**
 
 Source: DE ANTONIO, D., and PALATE, J. (2015).
 
-$${a_{0}^{2}}_{\ }=n^{- 1}\left( \sum_{t=1}^{n}x_{t} \right)^{2} = I\left( 0 \right)$$
+$$
+{a_{0}^{2}}_{\ }=n^{- 1}\left( \sum_{t=1}^{n}x_{t} \right)^{2} = I\left( 0 \right)
+$$
+
+$$
+{2r_{1}^{2}}_{\ } = 2{|a_{1}|}^{2} = 2I\left( \omega_{1} \right)
+$$
+
+$$\vdots$$
+
+$${2r_{k}^{2}}_{\ } = 2{|a_{k}|}^{2} = 2I\left( \omega_{k} \right)$$
+
+$$\vdots$$
+
+$$
+a_{n/2}^{2} = I\left( \pi \right)
+$$
+
+
+$$
+\sum_{\mathbf{t = 1}}^{\mathbf{n}}\mathbf{x}_{\mathbf{t}}^{\mathbf{2}}
+$$
 
 
 Obviously, if series were random then each component
@@ -186,10 +207,6 @@ reasons.
 
 Using the decomposition presented in Table 7.13 the periodogram can be
 expressed as:
-
-$$
-I\left(\omega_{j}\right)=r_{j}^{2}=\frac{1}{2}\left({\alpha}_{j}}^{2} + {\beta_{j}}^{2}\right)=\frac{1}{n}{\left(\sum_{t = 1}^{n}x_{t}\cos{\left(t\frac{2\pi j}{n}\right)}\right)}^{2} + \frac{1}{n}{\left(\sum_{t=1}^{n}x_{t}\sin{\left(t\frac{2\pi j}{n}\right)}\right)}^{2}   
-$$    \[7.113\] ,  
 
 $$
 I\left( \omega_{j} \right)\mathbf{=}\begin{matrix}                                                                                r_{j}^{2} = \frac{1}{2}{(\alpha}_{j}^{2} + \beta_{j}^{2}) = \ {\frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\cos{\left( {t\frac{2\pi j}{n}}_{\ } \right)\ }} \right)}^{2} + \frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\sin\left( t\frac{2\pi j}{n} \right)_{\ }} \right)^{2} \\   
