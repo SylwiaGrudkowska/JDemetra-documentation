@@ -44,31 +44,28 @@ $$e_{j} = n^{- \frac{1}{2}}\left(e^{-i\omega_{j}},e^{-i{2\omega}_{j}},
 sense that:
 
  $$
- {\mathbf{e}_{j}}^{*}\{mathbf{e}_{k}} = n^{- 1}\sum_{r=1}^{n}e^{ir(\omega_{j} - \omega_{k})} = 
- \left\{\begin{matrix}  
-  1,\ if\ j = k \\                                                                                                         
-  0,\ if\ j \neq k \\                                                                                                      
-  \end{matrix}.
-$$  \[7.103\]                                                                                                
+ {\mathbf{e}_{j}}^{*}\{mathbf{e}_{k}} = n^{- 1}\sum_{r=1}^{n}e^{ir(\omega_{j} - \omega_{k})} = \left{
+ \begin{bmatrix}  
+  1,\ if\ j \= k \\                                                                                                         
+  0,\ if\ j \ \neq k\\                                                                                                      
+  \end{bmatrix}.
+$$  \[7.103\]   
 
-where $\mathbf{e}_{j}^{*}$ denotes the row vector, which $k^{\text{th}}$
-component is the complex conjugate of the $k^{\text{th}}$ component of
-$\mathbf{e}_{j}$.[^72] These vectors are a basis of $F_{n}$, so that any
-$\mathbf{x \in}\mathbb{C}^{n}$ can be expressed as a sum of $n$
-components:
+where $$\mathbf{e}_{j}^{*}$$ denotes the row vector, which $$k^{th}$$
+component is the complex conjugate of the $$k^{th}$$ component of
+$$\mathbf{e}_{j}$$.[^72] These vectors are a basis of $$F_{n}$$, so that any
+$$\mathbf{x}\in\mathbb{C}^{n}$$ can be expressed as a sum of $$n$$ components:
 
  $$\mathbf{x} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}{a_{j}\mathbf{e}_{j}}$$   \[7.104\]
 
 where the coefficients
-$a_{j} = \mathbf{e}_{j}^{*}{\mathbf{x =}n}^{- \frac{1}{2}}\sum_{t = 1}^{n}x_{t}e^{- it\omega_{j}}$
-are derived from \[7.104\] by multiplying the equation on the left by
-$\mathbf{e}_{j}^{*}$ and using \[7.102\].
+$$a_{j} = \mathbf{e}_{j}^{*}\mathbf{x}=n^{-\frac{1}{2}}\sum_{t = 1}^{n}x_{t}e^{-it\omega_{j}}$$ are derived from \[7.104\] by multiplying the equation on the left by $$\mathbf{e}_{j}^{*}$$ and using \[7.102\].
 
-The sequence of $\left\{ a_{j},j \in F_{n} \right\}$ is referred as a
+The sequence of $$\{a_{j},j\in F_{n}\}$$ is referred as a
 discrete Fourier transform of $\mathbf{x}\mathbb{\in C}^{n}$ and the
 periodogram $I(\omega_{j})$ of $\mathbf{x}$ at Fourier frequency
 $\omega_{j} = \frac{2\pi j}{n}$ is defined as the square of the Fourier
-transform $\left\{ a_{j} \right\}$ of $\mathbf{x}$:
+transform $$\{a_{j}\}$$ of $\mathbf{x}$: 
 
  $${I\left( \omega_{j} \right)\mathbf{=}{\left| a_{j} \right|^{2}}_{\ } = n^{- \ 1}\left| \sum_{t = 1}^{n}x_{t}e^{- it\omega_{j}} \right|^{2}}_{\mathbf{\ }}$$   \[7.105\]
 
