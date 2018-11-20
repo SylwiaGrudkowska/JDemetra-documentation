@@ -31,7 +31,7 @@ components in order to avoid a distorted or biased estimation.
 The use of the RegARIMA models is recommended by the ‘*ESS Guidelines on
 Seasonal Adjustment*’ (2015) to estimate and remove outliers before
 estimating the seasonal effect. As the presence of outliers could
-strongly affect the quality of the decomposition, the various types of
+greatly affect the quality of the decomposition, the various types of
 outlier (i.e. additive outliers, transitory changes, level shifts, etc.)
 should be detected and corrected for.
 
@@ -40,7 +40,7 @@ become available. The manual inspection of the data is problematic,
 especially in the case of large databases. Moreover, it usually relies
 on some simple measures, which do not consider the full information
 contained in the series, but just a few values. Therefore the results
-can be strongly affected by seasonality, noise, or special events.
+can be severaly affected by seasonality, noise, or special events.
 
 JDemetra+ includes two tools dedicated for automatic identification of
 outliers: *Check Last* and *Outliers Detection*. Both are based on the
@@ -200,7 +200,7 @@ series using the TRAMO/SEATS or X-13ARIMA-SEATS methods. It also offers
 several seasonality tests that can be used to scrutinize the presence
 and the nature of seasonal movements in time series independently from
 seasonal adjustment. Finally, the *Direct-Indirect Seasonal Adjustment*
-tool enables for a comparison of the results from direct and indirect
+tool enables a comparison of the results from direct and indirect
 seasonal adjustment performed for the aggregated series.
 
 The guidance for using these functionalities is given in the Case Studies section:

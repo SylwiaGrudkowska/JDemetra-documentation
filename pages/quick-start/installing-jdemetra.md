@@ -5,13 +5,13 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 JDemetra+ is a stand-alone application packed in a zip package. To run JDemetra+ the Java RE 8 or higher is needed. Java RE can be 
-downloaded from [Java Web Site](www.java.com/en/download). 
+downloaded from [Oracle website](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 The official release of JDemetra+ is accessible at 
-[https://github.com/jdemetra/jdemetra-app/releases/tag/v2.2.0](https://github.com/jdemetra/jdemetra-app/releases/tag/v2.2.0). The site presents all available releases 
+[a dedicated Github page](https://github.com/jdemetra/jdemetra-app/releases). The site presents all available releases - both official releases (labelled in green as latest releases) and pre-releases (labelled in red) - 
 packed in zip packages. From the *Latest release* section either choose 
-the Installer appropriate for your Operating System (Windows, Linux, 
-macOS, Solaris) or take the portable zip-file. The installation process 
+the installer appropriate for your operating system (Windows, Linux, 
+Mac OS, Solaris) or take the portable zip-file. The installation process 
 is straightforward and intuitive. For example, when the zip-file is 
 chosen and downloaded, then under Windows OS the application can be found 
 in the "bin"-folder of the installation/unpacked zip. To open an 
@@ -27,17 +27,10 @@ nbdemetra64.exe for the 64-bit system version).
 
 **Launching JDemetra+**
 
-Once downloaded to the PC it can be extracted to any folder on your
-system. The archive contains two versions of executable file (32-bit
-version and 64-bit version). The user should execute the version that
-matches the system version. The executable file is located in the
-appropriate nbdemetra/bin directory.
-
 If the launching of JDemetra+ fails, you can try the following
 operations:
 
--   Check if Java SE Runtime Environment (JRE) is properly installed by
-    > typing in the following command in a terminal: *java --version*
+-   Check if Java SE Runtime Environment (JRE) is properly installed by typing in the following command in a terminal: *java --version*
 
 -   Check the logs in your home directory:
 
@@ -45,8 +38,7 @@ operations:
 
     -   \~/.nbdemetra/dev/var/log/ for Linux and Solaris;
 
-    -   \~/Library/Application Support/.nbdemetra/dev/var/log/ for Mac
-        > OS X.
+    -   \~/Library/Application Support/.nbdemetra/dev/var/log/ for Mac OS X.
 
 In order to remove a previously installed JDemetra+ version, the user
 should delete an appropriate JDemetra+ folder.
@@ -68,8 +60,7 @@ version (*nbdemetra.exe* for the 32-bit system version and
 
 ### Closing JDemetra+ {#closing-jdemetra}
 
-To close the application, select *File → Exit* from the main menu (See
-Chapter 3).
+To close the application, select *File → Exit* from the [File menu](http://localhost:4000/pages/reference-manual/file.html).
 
 {: .text-center.image-wrapper}
 

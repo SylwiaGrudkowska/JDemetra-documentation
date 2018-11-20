@@ -9,9 +9,7 @@ This section discusses the options available for the RegARIMA
 specifications, which are based on the original X-13ARIMA-SEATS program
 developed by the U.S. Census Bureau. 
 
-The options available for the RegaRIMA specification are divided into five parts. They are presented in the 
-order in which they are displayed in the graphical interface of 
-JDemetra+. These sections are: 
+The options available for the RegaRIMA specification are divided into five parts. These sections are: 
 * [*Estimate*](#estimate);
 * [*Transformation*](#transformation);
 * [*Regression*](#regression);
@@ -40,11 +38,11 @@ user should refer to the documentation of the original X-13ARIMA-SEATS
 program[^30]. Some additional explanations about the RegARIMA model, its
 parameters and estimation procedure are given [here](../pages/theory/SA_lin.html).
 
-For the pre-defined specifications the parameters are fixed, while in the
+For the pre-defined specifications the parameters are fixed, but in the
 case of the user-defined specification the user can set them
 individually. However, as in some cases the choice of a given value
 results in limitation of the possible alternatives for other parameters,
-the user is not entirely free to set the parameters values. Most
+the user is not entirely free to set the values of the parameters. Most
 arguments have default values; these are given in the documentation and
 used unless changed by the user.
 
@@ -85,8 +83,8 @@ estimating the RegARIMA model.
    *transform {function=}* 
  
      Transformation of data. [^32] The user can choose between:
-   * *None* -- no transformation of data;
-   * *Log* -- takes logs of data;
+   * *None* -- no transformation of the data;
+   * *Log* -- takes logs of the data;
    * *Auto* -- the program tests for the log-level specification. This option is recommended for automatic modelling of         many series.
 
    The default setting is *Auto*.
@@ -98,7 +96,7 @@ estimating the RegARIMA model.
   
     Options for proportional adjustment for the leap year effect. The option is available when **Function** is set to *Log*. **Adjust** can be set to:
     * *LeapYear* -- performs a leap year adjustment of monthly or quarterly data;
-    * *LengthofPeriod* -- performs a length-of-month adjustment on a monthly data or length-of-quarter adjustment on a          quarterly data; 
+    * *LengthofPeriod* -- performs a length-of-month adjustment on monthly data or length-of-quarter adjustment on quarterly data; 
     * *None* -- does not include a correction for the length of the period.
 
     The default setting is *None*. 
@@ -174,10 +172,10 @@ argument.
     
 - **Calendar** $\rightarrow\ $ **easter** $\rightarrow\ $ **IsEnabled**<br> *regression; variables and/or aictest* 
     
-	The option enables the user to consider the Easter effect in the RegARIMA model. When the user ticks this option it means     that the correction for the Easter effect is considered. The inclusion of the Easter effect to the model depends on the   choice made in the *Pretest* section. Otherwise a correction for the Easter effect is not performed. 
+	The option enables the user to consider the Easter effect in the RegARIMA model. When the user ticks this option it means     that the correction for the Easter effect is considered. The inclusion of the Easter effect in the model depends on the   choice made in the *Pretest* section. Otherwise a correction for the Easter effect is not performed. 
 - **Calendar** $\rightarrow \ $ **easter** $\mathbf{\rightarrow}$ **Use Julian Easter** 
     
-	When marked, it enables to        include Easter, which date derives from Julian calendar and is converted to Gregorian calendar date. By default, the      checkbox is unmarked. 
+	When marked, it enables Easter to be included, the date of which is derived from the Julian calendar and is converted to Gregorian calendar date. By default, the      checkbox is unmarked. 
 - **Calendar** $\rightarrow\ $ **easter** $\rightarrow\ $ **Pre-test**<br> *regression; aictest*
     
 	Pre-tests the significance of the Easter regression variable using the AICC statistics. The user can choose between the following options:
@@ -204,14 +202,14 @@ argument.
   By default, no pre-specified outlier is included in the specification.
 - **Intervention variables**<br> *regression {user=}*
 
-    The intervention variables are defined as in TRAMO. Following the definition, these effects are special events known a-priori (strikes, devaluations, political events, and so on). Intervention variables are modelled   as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as  combinations of the following basic structures:[^45]
+    The intervention variables are defined as in TRAMO. Following the definition, these effects are special events known a priori (strikes, devaluations, political events, and so on). Intervention variables are modelled   as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as  combinations of the following basic structures:[^45]
   * Dummy variables[^46];
   * Any possible sequence of ones and zeros;
   * $\frac{1}{(1 - \delta B)}$, $(0 < \delta \leq 1)$; 
   * $\frac{1}{(1 - \delta_{s}B^{s})}$, $(0 < \delta_{s} \leq 1)$;
   * $\frac{1}{(1 - B)(1 - B^{s})} $; where $B$ is a backshift operator (i.e. $B^{k}X_{t} = X_{t - k}$) and $s$ is frequency of the time series ($s = 12\ $for a monthly time series, $s = 4\ $for a quarterly time series). 
    
-  These operations enable to generate not only AO, LS, TC, SO and RP outliers but also sophisticated intervention variables that are well-adjusted to the particular case. No intervention variables are included in the pre-defined        specifications. They can only be added to the user-defined specifications.Intervention variables are not implemented in    X-13ARIMA-SEATS, however they can be created by the user and introduced to the model as [user-defined variables](..case-studies/detailed-calendarvariables.html).
+  These operations enable not only AO, LS, TC, SO and RP outliers to be generated, but also sophisticated intervention variables that are well-adjusted to the particular case. No intervention variables are included in the pre-defined        specifications. They can only be added to the user-defined specifications.Intervention variables are not implemented in    X-13ARIMA-SEATS, however they can be created by the user and introduced to the model as [user-defined variables](..case-studies/detailed-calendarvariables.html).
 - **Ramp effects**<br> *regression {variables = (rp)}*
 
    A ramp effect means a linear increase or decrease in the level of the series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series      span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html).
@@ -387,19 +385,20 @@ MA parameters.
    The order of the non-seasonal autoregressive polynomial. The maximum order of the non-seasonal autoregressive polynomial is 4. The default value is 0. 
 - **phi**<br> *arima; --* 
 
-  Coefficients of the non-seasonal autoregressive polynomial (AR). If used, to each non-seasonal AR   parameter in the model a label that indicates the procedure of its estimation should be assigned. The choice can be made   from: 
+  Coefficients of the non-seasonal autoregressive polynomial (AR). If it is used, a label that indicates the way in which it was estimated should be assigned to each non-seasonal AR parameter in the model. The choice can be made   from: 
    * *Undefined --* estimates a parameter without the use of any user defined input (the default value).
    * *Initial --* estimates a parameter using as initial condition the value defined by the user.
    * *Fixed* *--* holds a parameter fixed during estimation at the value defined by the user.
 - **D**<br> *arima; model* 
 
-  Non-seasonal differencing order. The maximum number of non-seasonal differences is 2. The default   value is 1.
+  Non-seasonal differencing order. The maximum number of non-seasonal differences is 2. The default value is 1.
 - **Q**<br> *arima; model*
 
-  The order of the non-seasonal moving average polynomial. The maximum order of the non-seasonal     moving average polynomial is 4. The default value is 1.
+  The order of the non-seasonal moving average polynomial. The maximum order of the non-seasonal moving average polynomial is 4. The default value is 1.
 - **theta**<br> *arima; --*
 
-  Coefficients of the parameters of the non-seasonal, moving average polynomial (MA). If used, to   each non-seasonal MA parameter in the model a label that indicates the procedure of its estimation should be assigned.     The choice can be made from:
+  Coefficients of the parameters of the non-seasonal, moving average polynomial (MA). If it is used, a label that indicates the way in which it was estimated should be assigned to each non-seasonal MA parameter in the model.
+  The choice can be made from:
    * *Undefined --* estimates a parameter without the use of any user defined input (the default value).
    * *Initial --* estimates a parameter using as initial condition the value defined by the user.
    * *Fixed* *--* holds a parameter fixed during estimation at the value defined by the user.
@@ -408,7 +407,8 @@ MA parameters.
    The order of the seasonal autoregressive polynomial. The default value is 0.
 - **Bphi**<br> *arima; --* 
 
-  Coefficients of the seasonal autoregressive polynomial (AR). If used, to each seasonal AR parameter in the      model a label that indicates the procedure of its estimation should be assigned. The choice can be made from:
+  Coefficients of the seasonal autoregressive polynomial (AR). If it is used, a label that indicates the way in which it was estimated should be assigned to each seasonal AR parameter in the model. 
+  The choice can be made from:
    * *Undefined --* estimates a parameter without the use of any user defined input (the default value).
    * *Initial --* estimates a parameter using as initial condition the value defined by the user.
    * *Fixed* *--* holds a parameter fixed during estimation at the value defined by the user.
@@ -420,7 +420,8 @@ MA parameters.
   The order of the seasonal moving average polynomial. The maximum order of the seasonal moving    average polynomial is 1. The default value is 1.
 - **btheta**<br> *arima; --*
 
-  Coefficients of the parameters of the seasonal moving average polynomial (MA). If used, to each   seasonal MA parameter in the model a label that indicates the procedure of its estimation should be assigned. The choice   can be made from:
+  Coefficients of the parameters of the seasonal moving average polynomial (MA). If it is used, a label that indicates the way in which it was estimated should be assigned to each seasonal MA parameter in the model. 
+  The choice can be made from:
    * *Undefined --* estimates a parameter without the use of any user defined input (the default value).
    * *Initial --* estimates a parameter using as initial condition the value defined by the user.
    * *Fixed* *--* holds a parameter fixed during estimation at the value defined by the user.

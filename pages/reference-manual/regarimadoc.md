@@ -50,8 +50,8 @@ The options for *RegArimaDoc* include:
     this option, first create *RegArimaDoc* document and drag and drop
     the time series into it. Then save the workspace and close
     JDemetra+. Next, update the time series (add/change the
-    observations, but do not change neither the localisation of the file
-    nor the file name) and open JDemetra+ once again. Open the
+    observations, but do not change either the localisation of the file
+    or the file name) and open JDemetra+ once again. Open the
     previously saved workspace and double click on the respective
     *RegArima* document in the *Workspace* window. Finally, chose the
     **Refresh data** option from the *RegArimaDoc* menu. JDemetra+
@@ -62,8 +62,7 @@ The options for *RegArimaDoc* include:
 
 -   **Lock** – prevents the series from the *RegArimaDoc* from being
     changed when the user double clicks on a new one in the *Providers*
-    window. However, with this option the user can still change
-    specification’s settings.
+    window. However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec**. **to workspace** – copy the specification of the
     active document into the workspace. In that way, it can be used for
