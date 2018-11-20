@@ -125,9 +125,9 @@ necessary.
 
 9.  To change a given setting, click on it and choose an option from the
     list and/or enter a value. In the picture below the series span was
-    shortened by first 12 observations. Inputs in green indicate that
+    shortened by the first 12 observations. Inputs in green indicate that
     the entered values are acceptable (appropriate format, data within
-    the allowed range and so on). To check the effect of the changes
+    the allowed range and so on). To apply the changes
     click on the *Apply* button in the bottom part of the window.
 
 	{: .text-center.image-wrapper}
@@ -140,8 +140,8 @@ necessary.
 
 10. Be aware that the changes introduced may lead to changes in the
     output for other parts of the results. The example below illustrates
-    that omitting the first 12 observations results in an automatic
-    detection of the trading day effect and the Easter effect, which
+    that omitting the first 12 observations results in automatic
+    detection of trading day effects and the Easter effect, which
     were not present in the previous model.
 
 	{: .text-center.image-wrapper}
@@ -163,7 +163,7 @@ necessary.
 
 	{: .text-center.small}
 
-	**Marking a decomposition results**
+	**Highlighting the output series**
 
 12. Copy the series by clicking the *Copy* item from the context menu or
     use the standard *Ctrl+C* keys. Other options from this menu are
@@ -176,7 +176,7 @@ necessary.
 
 	{: .text-center.small}
 
-	**Copying a dataset**
+	**Copying the series**
 
 13. Paste the series to the destination file (e.g. TXT, Excel).
 
@@ -186,7 +186,7 @@ necessary.
 
 	{: .text-center.small}
 
-	**Easy exporting data to Excel file**
+	**Easy exporting data to an Excel file**
 
 14. To save the document created in JDemetra+ (named *X13Doc-1* in our
     example) select *Save Workspace As...* item from the *File* menu.
@@ -224,7 +224,7 @@ necessary.
 
 17. The user can also add comments to the document. To display the
     comments and modify them, click on *Edit comments* from the context
-    menu (see Figure 3.16).
+    menu.
 
 	{: .text-center.image-wrapper}
 
@@ -232,15 +232,15 @@ necessary.
 
 	{: .text-center.small}
 
-	**An *Edit comments* window**
+	**An example of an *Edit comments* window**
 
-18. So far, the time series name is labelled as frozen. It means that
-    the user is being presented the results already saved in the
-    workspace. The option *Refresh data* is active when the given
+18. At the end of this process,
+    the user is presented with the results already saved in the
+    workspace. The option *Refresh data* becomes active when the given
     workspace is opened again. This option can be activated either from
     a local menu or from the main menu. Once it is activated, JDemetra+
-    refers to the data source defined in the workspace and uses the
-    current version of data to perform adjustment with settings saved in
+    refers to the data source defined in the workspace and uses this
+    current version of data to perform seasonal adjustment with the settings saved in
     the document.
 
 	{: .text-center.image-wrapper}
