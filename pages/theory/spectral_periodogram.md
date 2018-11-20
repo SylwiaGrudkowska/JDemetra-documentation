@@ -111,7 +111,7 @@ $$
 \mathbf{e}_{n/2} = {\left(- \left(n^{-\frac{1}{2}}\right),n^{- \frac{1}{2}},\ldots,{-\left(n\right)}^{- \frac{1}{2}}),n^{-\frac{1}{2}}\right)}^{'}
 $$. 
 
-Equation \[7.107\] can be seen as an OLS regression of $x_{t}\ $on a
+Equation \[7.107\] can be seen as an OLS regression of $$x_{t}$$ on a
 constant and the trigonometric terms. As the vector of explanatory
 variables includes $$n$$ elements, the number of explanatory
 variables in \[7.107\] is equal to the number of observations. HAMILTON,
@@ -125,7 +125,7 @@ OLS projection of the data on the orthonormal basis:
   $$ \[7.108\]
   
   $$
-  {\widehat{a}}_{n/2}=\frac{1}{\sqrt{n}}\sum_{t=1}^{n}{(-1)}^{t}x_{t}\left(   only when n is even \right)
+  {\widehat{a}}_{n/2}=\frac{1}{\sqrt{n}}\sum_{t=1}^{n}{(-1)}^{t}x_{t}\left(   \text{only when n is even} \right)
   $$  \[7.109\]
   
   $$
@@ -133,19 +133,18 @@ OLS projection of the data on the orthonormal basis:
   $$  \[7.110\]
   
   $$
-  {\widehat{\alpha}}_{j} = 2^{1/2}r_{j}\cos{\theta_{j}} = {left(\frac{n}{2} \right)}^{- 1/2}\sum_{t = 1}^{n}{x_{t}\cos{\left(t\frac{2\pi j}{n}}, j = 1,\ldots,\lbrack\frac{n - 1}{2}\rbrack
-  $$   \[7.111\]
+  {\widehat{\alpha}}_{j} = 2^{1/2}r_{j}\cos{\theta_{j}} = {\left(\frac{n}{2} \right)}^{- 1/2}\sum_{t = 1}^{n}x_{t}\cos{\left(t\frac{2\pi j}{n}\right)}, j   = 1,\ldots,\lbrack\frac{n - 1}{2}\rbrack
+  $$   \[7.111\] 
   
-
   $$
-  {\widehat{\beta}}_{j} = 2^{1/2}r_{j}\sin{\theta_{j}} = {\left( \frac{n}{2} \right)}^{-1/2}\sum_{t = 1}^{n}x_{t}\sin{\left(t\frac{2\pi j}{n} \right)}, j = 1,\ldots,\lbrack\frac{n - 1}{2}\rbrack$$           \[7.112\]
+  {\widehat{\beta}}_{j} = 2^{1/2}r_{j}\sin{\theta_{j}} = {\left( \frac{n}{2} \right)}^{-1/2}\sum_{t = 1}^{n}x_{t}\sin{\left(t\frac{2\pi j}{n} \right)}, j = 1,\ldots,\lbrack\frac{n - 1}{2}\rbrack
+  $$  \[7.112\]
 
 With \[7.107\] the total sum of squares
 $\sum_{t = 1}^{n}\left| x_{t} \right|^{2}$ can be decomposed into
-$2 \times \lbrack\frac{n - 1}{2}\rbrack\ $components corresponding to
-$\mathbf{c}_{j}\ $ and$\ \mathbf{s}_{j}$, which are grouped to produce
-the "frequency$\text{\ ω}_{j}\ $" component for 1 ≥$\ j$
-≥$\lbrack\frac{n - 1}{2}\rbrack$. As it is shown in the Table 7.13, the
+$$2 \times \lbrack\frac{n - 1}{2}\rbrack$$ components corresponding to
+$$\mathbf{c}_{j}$$ and $$\mathbf{s}_{j}$$, which are grouped to produce
+the "frequency $$ω_{j}$$" component for $$1 \geq j \geq \lbrack\frac{n - 1}{2}\rbrack$$. As it is shown in the Table 7.13, the
 value of the periodogram at the frequency $\omega_{j}$ is the
 contribution of the$\ j^{\text{th}}\ $harmonic to the total sum of
 squares $\sum_{t = 1}^{n}\left| x_{t} \right|^{2}$.
