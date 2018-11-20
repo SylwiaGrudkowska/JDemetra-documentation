@@ -33,14 +33,14 @@ The Fourier frequencies associated with the sample size $$n$$ are
 defined as a set of values $$ω_{j} = \frac{2\pi j}{n}$$,
 $$j = - \lbrack \frac{n-1}{2}\rbrack,\ldots,\lbrack\frac{n}{2}\rbrack$$,
 $$-\pi< \omega_{j} \leq \pi$$, $$j\in F_{n}$$, where
-$\left\lbrack h \right\rbrack$ denotes the largest integer less than or
+$$\lbrack h rbrack$$ denotes the largest integer less than or
 equal to $h$. The Fourier frequencies, which are called harmonics, are
 given by integer multiples of the fundamental frequency
 $\ \frac{2\pi}{n}$.
 
 Now the $n$ vectors
-${\ e}_{j} = n^{- \frac{1}{2}}\left( e^{- i\omega_{j}},\ e^{- i{2\omega}_{j}},{\ldots,e}^{- i\text{nω}_{j}} \right)^{'}$
-can be defined. Vectors $e_{1},\ldots e_{n}$ are orthonormal in the
+$$e_{j} = n^{- \frac{1}{2}}\left(e^{-i\omega_{j}},e^{-i{2\omega}_{j}},
+\ldots,e^{- inω_{j}}\right)^{'}$$ can be defined. Vectors $$e_{1},\ldots, e_{n}$$ are orthonormal in the
 sense that:
 
  $${\mathbf{e}_{j}^{*}\mathbf{e}}_{k} = n^{- 1}\sum_{r = 1}^{n}e^{ir(\omega_{j} - \omega_{k})} = \left\{ \begin{matrix}   \[7.103\]
