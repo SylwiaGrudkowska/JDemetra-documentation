@@ -99,7 +99,9 @@ where:
 
 $$\mathbf{e}_{0}$$ is a vector composed of n elements equal to $$n^{- 1/2}$$, which implies that $$\mathbf{a}_{0}\mathbf{e}_{0} = {(n^{-1}\sum_{t = 1}^{n}x_{t},\ldots,n^{- 1}\sum_{t=1}^{n}x_{t})}^{'}$$;
 
-$$\mathbf{c}_{j} =left(\frac{n}{2}\right)^{- 1/2}{(\cos\omega_{j},\cos{2\omega}_{j},\ldots,\cos{n\omega_{j}})}^{'}, for 1 \leq j \leq \lbrack \frac{(n - 1)}{2} \rbrack$$ ;
+$$
+\mathbf{c}_{j}=\left(\frac{n}{2}\right)^{- 1/2}{\left(\cos\omega_{j},\cos{2\omega}_{j},\ldots,\cos{n\omega_{j}}\right)}^{'}, for 1 \leq j \leq \lbrack \frac{(n - 1)}{2}\rbrack
+$$ ;
 
 $\mathbf{s}_{j} = {\left( \frac{n}{2} \right)^{- 1/2}(\sin\omega_{j},\sin{2\omega}_{j},\ldots,\sin{n\omega_{j}})}^{'},\ for\ 1 \leq j \leq \left\lbrack \frac{(n - 1)}{2} \right\rbrack$;
 
