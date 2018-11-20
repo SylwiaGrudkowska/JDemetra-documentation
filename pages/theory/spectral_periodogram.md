@@ -202,8 +202,8 @@ squared coefficients:
 Thus the sample variance of $$x_{t}$$ can be expressed as:
 
 $$
-n^{- 1}\sum_{t=1}^{n}{\left(x_{t}-\overline{x}\right(}^{2}=n^{-1}\left(\sum_{k=1}^{\lbrack(n - 1)/2\rbrack}2{r_{j}}^{2}
-+{a_{n/2}}^{2}\right 
+n^{- 1}\sum_{t=1}^{n}{\left(x_{t}-\overline{x}\right)}^{2}=n^{-1}\left(\sum_{k=1}^{\lbrack(n - 1)/2\rbrack}2{r_{j}}^{2}
++{a_{n/2}}^{2}\right) 
 $$,   \[7.115\]
 
 where $a_{n/2}^{2}$ is excluded if $n$ is odd.
