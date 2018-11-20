@@ -44,18 +44,11 @@ $$e_{j} = n^{- \frac{1}{2}}\left(e^{-i\omega_{j}},e^{-i{2\omega}_{j}},
 sense that:
 
  $$
- {\mathbf{e}_{j}}^{*}{\mathbf{e}_{k}}= n^{-1}\sum_{r=1}^{n}e^{ir(\omega_{j} - \omega_{k})} = \left{
- \begin{matrix}  
-  1,\ if\ j \= k \\                                                                                                         
-  0,\ if\ j \ \neq k\\                                                                                                      
-  \end{matrix}.
-$$  \[7.103\]  
-
- $$
  {\mathbf{e}_{j}^{*}\mathbf{e}}_{k} = n^{- 1}\sum_{r = 1}^{n}e^{ir(\omega_{j} - \omega_{k})} = \left\{ \begin{matrix}  
   1,\ if\ j = k \\                                                                                                         
   0,\ if\ j \neq k \\                                                                                                      
-  \end{matrix} \right.\ $$ \[7.103\]
+  \end{matrix} \right.\ 
+  $$ \[7.103\]
 
 where $$\mathbf{e}_{j}^{*}$$ denotes the row vector, which $$k^{th}$$
 component is the complex conjugate of the $$k^{th}$$ component of
@@ -74,8 +67,10 @@ $\omega_{j} = \frac{2\pi j}{n}$ is defined as the square of the Fourier
 transform $$\{a_{j}\}$$ of $\mathbf{x}$: 
 
 $$
-\mathbf{I}\left(\omega_{j}\right)={\left|a_{j}\right|^{2}}= n^{-1}\left| \sum_{t=1}^{n}x_{t}e^{-it\omega_{j}}\right|^{2}} 
+{I\left( \omega_{j} \right)\mathbf{=}{\left| a_{j} \right|^{2}}_{\ } = n^{- \ 1}\left| \sum_{t = 1}^{n}x_{t}e^{- it\omega_{j}} \right|^{2}}_{\mathbf{\ }}
 $$   \[7.105\]
+
+
 
 From \[7.103\] and \[7.104\] it can be shown that in fact the
 periodogram decomposes the total sum of squares
@@ -194,7 +189,14 @@ expressed as:
 
 $$
 I\left(\omega_{j}\right)=r_{j}^{2}=\frac{1}{2}\left({\alpha}_{j}}^{2} + {\beta_{j}}^{2}\right)=\frac{1}{n}{\left(\sum_{t = 1}^{n}x_{t}\cos{\left(t\frac{2\pi j}{n}\right)}\right)}^{2} + \frac{1}{n}{\left(\sum_{t=1}^{n}x_{t}\sin{\left(t\frac{2\pi j}{n}\right)}\right)}^{2}   
-$$    \[7.113\] ,                                                                                                                                                                                                                                                              
+$$    \[7.113\] ,  
+
+$$
+I\left( \omega_{j} \right)\mathbf{=}\begin{matrix}                                                                                                                                                                                                                        
+  \text{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } \\                                                                                                                         
+  r_{j}^{2} = \frac{1}{2}{(\alpha}_{j}^{2} + \beta_{j}^{2}) = \ {\frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\cos{\left( {t\frac{2\pi j}{n}}_{\ } \right)\ }} \right)}^{2} + \frac{1}{n}\left( \sum_{t = 1}^{n}{x_{t}\sin\left( t\frac{2\pi j}{n} \right)_{\ }} \right)^{2} \\   
+  \text{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } \\                                                                                                                                                                                                                           
+  \end{matrix}$$  \[7.113\]
 
 where $j = 0,\ldots,\left\lbrack \frac{n}{2} \right\rbrack$*.*
 
