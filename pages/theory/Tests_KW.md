@@ -19,7 +19,7 @@ $\chi^{2}\ $distribution. When this hypothesis is rejected on the
 original series, it is assumed that the values of a time series differ
 significantly between periods and the test results are displayed in
 green. The test is typically applied to $k$ groups of
-data$\ \left\{ x_{i} \right\}_{j}\ $each one$\ j = 1,\ldots,k$ is
+data $$\left\{ x_{i} \right\}_{j}\ $$each one$$\ j = 1,\ldots,k$$ is
 composed of $n_{j}$ observations which are indexed
 by$\ i = 1,\ldots,n_{j}$. Each month (or quarter) groups all the
 observations available for a certain number of years. As opposed to the
@@ -31,19 +31,19 @@ observables$\ N = n_{1} + \ldots + \ n_{g}$, thereby ignoring group
 membership. The test statistic is given by$:$
 
 
-  $$Q = \frac{\text{SS}_{t}}{\text{SS}_{e}}.$$   \[7.147\]
+  $$Q = \frac{\text{SS}_{t}}{\text{SS}_{e}}$$   \[7.147\]
 
 
 The test statistic is slightly different than the Friedman statistic.
 The numerator is defined
-as$\ \text{SS}_{t} = (N - 1)\sum_{j = 1}^{g}{ {n_{i}(\overline{r}}_{\text{.\ \ j\ }} - {\overline{r}}_{\ })}^{2}$
+as$$\ \text{SS}_{t} = (N - 1)\sum_{j = 1}^{g}{ {n_{i}(\overline{r}}_{\text{. j }} - {\overline{r}}_{\ })}^{2}$$
 and the denominator is equal
-to$\ \text{\ SS}_{e} = \frac{1}{n(k - 1)}\sum_{j = 1}^{g}{\sum_{i = 1}^{n_{j}}{ {(r}_{\text{i\ j}} - {\overline{r}}_{\ })}^{2}}$,
-where:$\ n_{\text{j\ }}$is the number of observations in group $j$
+to $$\text{SS}_{e} = \frac{1}{n(k - 1)}\sum_{j = 1}^{g}{\sum_{i = 1}^{n_{j}}{ {(r}_{\text{i j}} - {\overline{r}}_{\ })}^{2}}$$
+where:$$\ n_{\text{j }}$$ is the number of observations in group $j$
 (corresponding to the
-periods);$\ {\overline{r}}_{\bullet \ j}\text{\ \ }$is the average of
+periods);$$\ {\overline{r}}_{\bullet \ j}$$ is the average of
 the absolute ranks of the data in group
-$j$;$\ {\overline{r}}_{\ } = \frac{1}{2}(N + 1)$ is by definition the
+$j$; $$\ {\overline{r}}_{\ } = \frac{1}{2}(N + 1)$$ is by definition the
 average rank.
 
 Under the null hypothesis that all groups are generated from the same
