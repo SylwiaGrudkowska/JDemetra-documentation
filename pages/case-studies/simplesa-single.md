@@ -1,14 +1,14 @@
 ---
 layout: left-menu
-title: Simple seasonal adjustment of single time series
+title: Simple seasonal adjustment of a single time series
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
 This scenario guides the user through all the steps involved in the
-process of seasonally adjustment a single time series. Links to
+process of seasonally adjusting a single time series. Links to the
 appropriate parts of the *JDemetra+ Reference Manual* (2017) for
-detailed explanations on actions to be performed are enclosed when
+detailed explanations of actions to be performed are enclosed when
 necessary.
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
@@ -22,10 +22,9 @@ necessary.
 
 	{: .text-center.small}
 	
-	**Launching a seasonal adjustment for a single time series**
+	**Launching seasonal adjustment for a single time series**
 
-2.  An empty panel will be opened. Figure 3.2 presents the view, which
-    is displayed when the X-13ARIMA-SEATS method is chosen.
+2.  An empty panel will be opened. The picture below shows the view when the X-13ARIMA-SEATS method is chosen.
 
 	{: .text-center.image-wrapper}
 
@@ -33,7 +32,7 @@ necessary.
 
 	{: .text-center.small}
 
-	**Figure 3.2: Single analysis window**
+	**Single analysis window**
 
 3.  Select a data provider and unfold an already imported dataset. Drag
     and drop one time series from the *Providers* window to the *Drop
@@ -51,15 +50,15 @@ necessary.
 
 	**Starting a seasonal adjustment process**
 
-4.  When the user drops series into the document window (X13Doc in the
+4.  When the user drops a series into the document window (X13Doc in the
     example presented in this scenario) JDemetra+ starts the seasonal
     adjustment process automatically. By default, a summary of results
-    is displayed. It is accompanied with two graphs: the original data,
-    seasonally-adjusted series and the trend-cycle on the left and *SI
-    ratio* values on the right. The diagnostics and graphs are discussed
+    is displayed. It is accompanied with two graphs: an overlay graph on the left with the original unadjusted series,
+    the seasonally-adjusted series and the trend-cycle and the *SI
+    ratio* graph on the right. The diagnostics and graphs are discussed
     in the *JDemetra+ Reference Manual* (2017), Chapter 4 and Chapter 5
     (see 5.2.2 for X-13ARIMA-SEATS, 5.2.1 for TRAMO/SEATS). The *Main
-    results* panel provides a first impression about the quality of the
+    results* panel provides a first impression of the quality of the
     adjustment. Study the diagnostics section using the vertical
     scrollbar.
 
@@ -72,14 +71,14 @@ necessary.
 	**Simple seasonal adjustment, single time series: main results panel**
 
 5.  The results are in green, yellow or red text, depending on the
-    result of statistical test used. Those in green denote that the
-    problematic characteristic has not been detected (e.g. lack of
-    normality of residuals, the autocorrelation in residuals). The
-    outcome in yellow means that the test outcome is uncertain. The
-    outcomes in red denote cases where an issue should be addressed. The
-    user is expected to investigate the problematic test statistics and
-    try to improve the model, so as no uncertain or rejected tests'
-    results are present.
+    result of the statistical test. The results are
+    marked in green, yellow or red, depending on the result of the
+    statistical test used. Green indicates that problematic
+    characteristics have not been detected (e.g. lack of normality of
+    residuals, the autocorrelation in residuals). Yellow
+    indicates that the test outcome is uncertain. Those in red indicate that there are issues that should be addressed. 
+	The user is expected to investigate the problematic test statistics and try to improve the
+    model, so that no uncertain or rejected test results are present. 
 
 	{: .text-center.image-wrapper}
 
@@ -126,9 +125,9 @@ necessary.
 
 9.  To change a given setting, click on it and choose an option from the
     list and/or enter a value. In the picture below the series span was
-    shortened by first 12 observations. Inputs in green indicate that
+    shortened by the first 12 observations. Inputs in green indicate that
     the entered values are acceptable (appropriate format, data within
-    the allowed range and so on). To check the effect of the changes
+    the allowed range and so on). To apply the changes
     click on the *Apply* button in the bottom part of the window.
 
 	{: .text-center.image-wrapper}
@@ -141,8 +140,8 @@ necessary.
 
 10. Be aware that the changes introduced may lead to changes in the
     output for other parts of the results. The example below illustrates
-    that omitting the first 12 observations results in an automatic
-    detection of the trading day effect and the Easter effect, which
+    that omitting the first 12 observations results in automatic
+    detection of trading day effects and the Easter effect, which
     were not present in the previous model.
 
 	{: .text-center.image-wrapper}
@@ -164,7 +163,7 @@ necessary.
 
 	{: .text-center.small}
 
-	**Marking a decomposition results**
+	**Highlighting the output series**
 
 12. Copy the series by clicking the *Copy* item from the context menu or
     use the standard *Ctrl+C* keys. Other options from this menu are
@@ -177,7 +176,7 @@ necessary.
 
 	{: .text-center.small}
 
-	**Copying a dataset**
+	**Copying the series**
 
 13. Paste the series to the destination file (e.g. TXT, Excel).
 
@@ -187,7 +186,7 @@ necessary.
 
 	{: .text-center.small}
 
-	**Easy exporting data to Excel file**
+	**Easy exporting data to an Excel file**
 
 14. To save the document created in JDemetra+ (named *X13Doc-1* in our
     example) select *Save Workspace As...* item from the *File* menu.
@@ -225,7 +224,7 @@ necessary.
 
 17. The user can also add comments to the document. To display the
     comments and modify them, click on *Edit comments* from the context
-    menu (see Figure 3.16).
+    menu.
 
 	{: .text-center.image-wrapper}
 
@@ -233,15 +232,15 @@ necessary.
 
 	{: .text-center.small}
 
-	**An *Edit comments* window**
+	**An example of an *Edit comments* window**
 
-18. So far, the time series name is labelled as frozen. It means that
-    the user is being presented the results already saved in the
-    workspace. The option *Refresh data* is active when the given
+18. At the end of this process,
+    the user is presented with the results already saved in the
+    workspace. The option *Refresh data* becomes active when the given
     workspace is opened again. This option can be activated either from
     a local menu or from the main menu. Once it is activated, JDemetra+
-    refers to the data source defined in the workspace and uses the
-    current version of data to perform adjustment with settings saved in
+    refers to the data source defined in the workspace and uses this
+    current version of data to perform seasonal adjustment with the settings saved in
     the document.
 
 	{: .text-center.image-wrapper}

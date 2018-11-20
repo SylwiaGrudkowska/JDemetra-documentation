@@ -12,5 +12,5 @@ the specification for the most severe shortcomings (if any) and export
 the results. These instructions describe how to obtain results of
 satisfactory quality and in a reasonably short time. This is also useful
 for experienced users dealing with large datasets. Two paths are
-available here: *simple seasonal adjustment of single time series* and
+available here: *simple seasonal adjustment of a single time series* and
 *simple seasonal adjustment of multiple time series*.

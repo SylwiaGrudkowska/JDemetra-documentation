@@ -5,13 +5,13 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-In general, the user can influence on the parameters of the seasonal
+In general, the user can choose the parameters of the seasonal
 adjustment process by creating a specification with given settings or by
 changing some settings in the specification currently in use.
 
-1.  To create a new specification go to the *Workspace* window choose a
+1.  To create a new specification go to the *Workspace* window and choose a
     node for which you wish to add a specification (Modelling or
-    Seasonal adjustment) and choose a method (*tramo* or *regarima* for
+    Seasonal adjustment). Then choose a method (*tramo* or *regarima* for
     *Modelling*, *tramoseats* or *x13* for *Seasonal adjustment*). Click
     on the left mouse button and choose a *New* option. The user can
     also import the specification from the external file with the
@@ -23,7 +23,7 @@ changing some settings in the specification currently in use.
 
 	{: .text-center.small}
 
-	**Adding a new specification**
+	**Creating a new specification**
 
 2.  Next, unfold the node (the *tramoseats* node in the case presented
     here) and right click on the newly created specification
@@ -40,7 +40,7 @@ changing some settings in the specification currently in use.
 	-   **Rename** -- enables the user to change the name of the
 		user-defined specification.
 
-	-   **Edit comments** -- a functionality for monitoring a seasonal
+	-   **Edit comments** -- a functionality for monitoring how a seasonal
 		adjustment process is implemented. The user can add and modify short
 		notes concerning a given time series. These notes are visible in the
 		Comments column in the Processing window. The notes are displayed
@@ -64,9 +64,9 @@ changing some settings in the specification currently in use.
 	**Opening a new specification**
 
 3.  The *Specification* window is divided into several section. The
-    actual content depends on the choice made by the user in the step 1
+    actual content depends on the choice made by the user in step 1
     of this scenario. To introduce changes unfold the sections, modify
-    the current settings (chose from the list or insert the value by
+    the current settings (choose from the list or insert the value by
     hand) and confirm the changes with the *OK* button.
 
 	{: .text-center.image-wrapper}
@@ -78,13 +78,13 @@ changing some settings in the specification currently in use.
 
 4.  User-defined specifications are usually used for seasonal adjustment
     of many time series (*Statistical methods* → *Seasonal adjustment* →
-    *Multi Processing* → *New*). The user intervention can be also made
-    after a modelling/seasonal adjustment process. In such case, to
+    *Multi Processing* → *New*). The user can also make changes to the specification
+    after the modelling/seasonal adjustment process. In such a case, to
     introduce changes click on the *Specification* button. JDemetra+
-    opens the S*pecifications* panel on the right. Unfold the sections,
-    modify the current settings (chose from the list or insert the value
+    opens the *Specifications* panel on the right. Unfold the sections,
+    modify the current settings (choose from the list or insert the value
     by hand) and confirm the changes with the *Apply* button. JDemetra+
-    automatically apply the new settings and displays the outcome
+    automatically applies the new settings and displays the outcome
     resulting from the modified specification.
 
 	{: .text-center.image-wrapper}
