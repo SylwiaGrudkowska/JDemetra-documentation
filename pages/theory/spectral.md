@@ -2,7 +2,7 @@
 layout: left-menu
 title: Spectral analysis
 tagline: technical documentation for JDemetra+ using GitHub Pages
-description: Basics
+description: Basics 
 ---
 
 A time series $$x_{t}$$ with stationary covariance, mean $μ$ and
