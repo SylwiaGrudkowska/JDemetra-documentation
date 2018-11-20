@@ -103,9 +103,13 @@ $$
 \mathbf{c}_{j}=\left(\frac{n}{2}\right)^{- 1/2}{\left(\cos\omega_{j},\cos{2\omega}_{j},\ldots,\cos{n\omega_{j}}\right)}^{'}, for 1 \leq j \leq \lbrack \frac{(n - 1)}{2}\rbrack
 $$ ;
 
-$\mathbf{s}_{j} = {\left( \frac{n}{2} \right)^{- 1/2}(\sin\omega_{j},\sin{2\omega}_{j},\ldots,\sin{n\omega_{j}})}^{'},\ for\ 1 \leq j \leq \left\lbrack \frac{(n - 1)}{2} \right\rbrack$;
+$$
+\mathbf{s}_{j} = {\left( \frac{n}{2} \right)}^{-1/2}{\left(\sin{\omega_{j}},\sin{2\omega_{j}},\ldots,\sin{n\omega_{j}}\right)}^{'},\ for\ 1 \leq j \leq \lbrack \frac{(n - 1)}{2} \rbrack
+$$;
 
-$\mathbf{e}_{n/2} = {( - (n^{- \frac{1}{2}}),\text{\ n}^{- \frac{1}{2}},\ldots,{- (n}^{- \frac{1}{2}}),\ \text{\ n}^{- \frac{1}{2}})}^{'}$.
+$$
+\mathbf{e}_{n/2} = {\left(- \left(n^{-\frac{1}{2}}\right),n^{- \frac{1}{2}},\ldots,{-\left(n\right)}^{- \frac{1}{2}}),n^{-\frac{1}{2}}\right)}^{'}
+$$. 
 
 Equation \[7.107\] can be seen as an OLS regression of $x_{t}\ $on a
 constant and the trigonometric terms. As the vector of explanatory
