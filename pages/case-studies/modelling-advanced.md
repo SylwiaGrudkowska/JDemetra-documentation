@@ -6,9 +6,9 @@ description: Basics
 ---
 This scenario shows how to identify regression effects using the
 pre-defined or user-defined specifications (*JDemetra+ Reference Manual*
-(2017), item 4.1). It includes all capabilities from a pre-processing
-part of TRAMO and RegARIMA. It is flexible in specifying models, and the
-user can save results and refresh them with updated series.
+(2017), item 4.1). It includes all capabilities from the pre-processing
+part of TRAMO and RegARIMA. Model specification is flexible, and the
+user can both save and refresh results with updated series.
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
     *Modelling* → *Single Analysis* → *Tramo/RegArima*. The scenario
@@ -34,7 +34,7 @@ user can save results and refresh them with updated series.
 
 	**The modelling window**
 
-3.  To start a modelling, drag a series from the *Providers* window drop
+3.  To start, drag a series from the *Providers* window and drop
     it on the *Drop data here* box situated in the upper part of the
     *TramoDoc* window.
 
@@ -52,11 +52,11 @@ user can save results and refresh them with updated series.
     (2017), section 4.2. To explore the results, expand the tree in the
     *TramoDoc-1* window and click on the selected item. The details will
     be displayed in the bottom part of the window. The results include
-    the model selection criteria, the estimated ARIMA model, identified
+    the model selection criteria, the estimated ARIMA model, any identified
     outliers (see the *JDemetra+ Reference Manual* (2017), item 7.1.1)
-    and calendar effects (the *JDemetra+ Reference Manual* (2017), 7.2).
+    and any calendar effects (the *JDemetra+ Reference Manual* (2017), 7.2).
     Note that outliers and calendar effects are presented only if
-    specified in the model or if found automatically by the chosen
+    specified in the model or if detected automatically by the specified
     modelling routine.
 
 	{: .text-center.image-wrapper}
@@ -67,8 +67,8 @@ user can save results and refresh them with updated series.
 
 	**The modelling results**
 
-5.  In this example below the modelling is performed using the *TRfull*
-    specification (when TRAMO is chosen) or *TR4c* specification (when
+5.  In this example below the modelling is performed using the *TR4*
+    specification (when TRAMO is chosen) or the *TR4c* specification (when
     RegARIMA is chosen).
 
 	{: .text-center.image-wrapper}
@@ -77,7 +77,7 @@ user can save results and refresh them with updated series.
 
 	{: .text-center.small}
 
-	**Information concerning the specification used for the modelling process**
+	**The modelling results - TR4**
 
 6.  To change the specification open the properties dialog window by
     clicking on the *Specifications* button.
@@ -128,7 +128,7 @@ user can save results and refresh them with updated series.
     the changes introduced in the specification. Once the user has
     modified the default specification, the name visible in the upper
     part of the window is changed to TR, which indicates that the
-    user-defined settings are used.
+    user-defined settings are being used.
 
 	{: .text-center.image-wrapper}
 
@@ -136,7 +136,7 @@ user can save results and refresh them with updated series.
 
 	{: .text-center.small}
 
-	**The impact of the changes in the specification to the modelling results**
+	**The impact on the results of the specification changes**
 
 11. To copy the time series modelling results go to the *Pre-adjustment*
     item. In the table click on the upper-left cell.
@@ -165,15 +165,14 @@ user can save results and refresh them with updated series.
 
 14. The quality of the modelling can be assessed by studying the
     *Statistics* and *Out-of-sample test* sections. The results are
-    marked in green, yellow or red, depending on the result of
-    statistical test used. Those in green denote that the problematic
-    characteristic has not been detected (e.g. lack of normality of
-    residuals, the autocorrelation in residuals). The outcome in yellow
-    means that the test outcome is uncertain. The outcomes in red denote
-    cases where an issue should be addressed. The user is expected to
-    investigate the problematic test statistics and try to improve the
+    marked in green, yellow or red, depending on the result of the
+    statistical test used. Green indicates that problematic
+    characteristics have not been detected (e.g. lack of normality of
+    residuals, the autocorrelation in residuals). Yellow
+    indicates that the test outcome is uncertain. Those in red indicate that there are issues that should be addressed. 
+	The user is expected to investigate the problematic test statistics and try to improve the
     model, so that no uncertain or rejected test results are present.
-    The meaning of the displayed outcomes is discussed in the *JDemetra+
+    The colour coding of the displayed outcomes is explaoned in more detail in the *JDemetra+
     Reference Manual* (2017), item 4.2.
 
 	{: .text-center.image-wrapper}
@@ -182,7 +181,7 @@ user can save results and refresh them with updated series.
 
 	{: .text-center.small}
 
-	**Diagnostic results -- a time series modelling scenario**
+	**Investigating the diagnostic results -- a time series modelling scenario**
 
 15. To save the created document (named *TramoDoc-1* in the provided
     example) select a *Save Workspace As...* item from the *File* menu.
@@ -195,7 +194,7 @@ user can save results and refresh them with updated series.
 
 	**Saving the advanced time series modelling results**
 
-16. Enter the location, a workspace name and click *Save.*
+16. Enter the location, a workspace name and then click *Save.*
 
 	{: .text-center.image-wrapper}
 
