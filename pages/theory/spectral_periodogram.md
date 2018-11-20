@@ -44,12 +44,18 @@ $$e_{j} = n^{- \frac{1}{2}}\left(e^{-i\omega_{j}},e^{-i{2\omega}_{j}},
 sense that:
 
  $$
- {\mathbf{e}_{j}}^{*}\{mathbf{e}_{k}} = n^{- 1}\sum_{r=1}^{n}e^{ir(\omega_{j} - \omega_{k})} = \left{
- \begin{bmatrix}  
+ {\mathbf{e}_{j}}^{*}{\mathbf{e}_{k}}= n^{-1}\sum_{r=1}^{n}e^{ir(\omega_{j} - \omega_{k})} = \left{
+ \begin{matrix}  
   1,\ if\ j \= k \\                                                                                                         
   0,\ if\ j \ \neq k\\                                                                                                      
-  \end{bmatrix}.
-$$  \[7.103\]   
+  \end{matrix}.
+$$  \[7.103\]  
+
+ $$
+ {\mathbf{e}_{j}^{*}\mathbf{e}}_{k} = n^{- 1}\sum_{r = 1}^{n}e^{ir(\omega_{j} - \omega_{k})} = \left\{ \begin{matrix}  
+  1,\ if\ j = k \\                                                                                                         
+  0,\ if\ j \neq k \\                                                                                                      
+  \end{matrix} \right.\ $$ \[7.103\]
 
 where $$\mathbf{e}_{j}^{*}$$ denotes the row vector, which $$k^{th}$$
 component is the complex conjugate of the $$k^{th}$$ component of
@@ -155,7 +161,7 @@ corresponding to the harmonics**
 {: .table .table-style}
   |**Frequency**                                   |**Degrees of freedom**   |**Sum of squares decomposition**|
   |----------------------------------------------- |------------------------       |-------------------------------------------------------------------------------------------|
-  |$\omega_{0}$(mean)                              |1                        |${a_{0}^{2}}_{\ } = n^{- 1}\left( \sum_{t = 1}^{n}x_{t} \right)^{2} = I\left( 0 \right)$|
+  |$\omega_{0}$(mean)                              |1                        |${a_{0}^{2}}_{\ } = n^{- 1}\left( \sum_{t=1}^{n}x_{t} \right)^{2} = I\left( 0 \right)$|
   |$$\omega_{1}$$                                  |2                        |$${2r_{1}^{2}}_{\ } = 2{|a_{1}|}^{2} = 2I\left( \omega_{1} \right)$$|
   |$$\vdots$$                                      |$$\vdots$$               |$$\vdots$$|
   |$$\omega_{k}$$                                  |2                        |$${2r_{k}^{2}}_{\ } = 2{|a_{k}|}^{2} = 2I\left( \omega_{k} \right)$$|
@@ -164,6 +170,9 @@ corresponding to the harmonics**
   |**Total**                                       |$$\mathbf{n}$$           |$\sum_{\mathbf{t = 1}}^{\mathbf{n}}\mathbf{x}_{\mathbf{t}}^{\mathbf{2}}$$|
 
 Source: DE ANTONIO, D., and PALATE, J. (2015).
+
+$${a_{0}^{2}}_{\ }=n^{- 1}\left( \sum_{t=1}^{n}x_{t} \right)^{2} = I\left( 0 \right)$$
+
 
 Obviously, if series were random then each component
 $I\left( \omega_{j} \right)\ $would have the same expectation. On the
@@ -229,10 +238,6 @@ $\ I\left( 0 \right) = n\left| \overline{x} \right|^{2}$.
 Once comparing \[7.116\] with an expression for the spectral density of
 a stationary process:
 
- 
-  $$
-  f\left( \omega \right) = \frac{1}{2\pi}\sum_{k< -\infty}^{\infty}\gamma\left(k \right)_{\ }e^{-ik\omega_{\ }} = \frac{1}{2\pi}\lbrack{\gamma\left( 0 \right)_{\ } + 2\left(\sum_{k = 1}^{\infty}\gamma\left(k\right)\cos{(k\omega)}\right)\rbrack
-  $$   \[7.117\]
 
    $$
 f\left( \omega_{\ } \right) = \frac{1}{2\pi}\sum_{k < - \infty}^{\infty}{\gamma\left( k \right)}_{\ }e^{- ik\omega_{\ }} = \frac{1}{2\pi}\left\lbrack {\gamma\left( 0 \right)}_{\ } + 2\left(\sum_{k = 1}^{\infty}{\gamma\left( k \right)\cos{(k\omega_{\ })}} \right) \right\rbrack
