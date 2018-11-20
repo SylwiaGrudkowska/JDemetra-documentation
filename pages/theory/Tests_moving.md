@@ -49,7 +49,7 @@ mainly measures the magnitude of the seasonality;
 $$
 S_{B}^{2} = k\sum_{i = 1}^{N}\left( {\overline{X}}_{i \bullet} - {\overline{X}}_{\bullet \bullet} \right)^{2}
 $$ -- the inter-year sum of squares, which mainly measures the year-to-year
-movement of seasonality;
+movement of seasonality; 
 
 $$
 S_{R}^{2} = \sum_{i = 1}^{N}{\sum_{j = 1}^{k}\left( {\overline{X}}_{\text{ij}} - {\overline{X}}_{i \bullet} - {\overline{X}}_{\bullet j} - {\overline{X}}_{\bullet \bullet} \right)^{2}}
