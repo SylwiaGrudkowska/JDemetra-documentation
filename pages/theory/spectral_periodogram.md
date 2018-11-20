@@ -29,10 +29,10 @@ numbers[^71]:
 where $\mathbb{C}^{n}$ is the set of all column vectors with
 complex-valued components.
 
-The Fourier frequencies associated with the sample size $\text{n\ }$are
-defined as a set of values $\text{\ ω}_{j} = \frac{2\pi j}{n}$,
-$j = - \left\lbrack \frac{n - 1}{2} \right\rbrack,\ldots,\left\lbrack \frac{n}{2} \right\rbrack$,
-${- \pi < \omega}_{j} \leq \ \pi$, $j \in F_{n}$, where
+The Fourier frequencies associated with the sample size $$n$$ are
+defined as a set of values $$ω_{j} = \frac{2\pi j}{n}$$,
+$$j = - \lbrack \frac{n-1}{2}\rbrack,\ldots,\lbrack\frac{n}{2}\rbrack$$,
+$$-\pi< \omega_{j} \leq \pi$$, $$j\in F_{n}$$, where
 $\left\lbrack h \right\rbrack$ denotes the largest integer less than or
 equal to $h$. The Fourier frequencies, which are called harmonics, are
 given by integer multiples of the fundamental frequency
