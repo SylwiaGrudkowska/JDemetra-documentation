@@ -67,12 +67,14 @@ periodogram $I(\omega_{j})$ of $\mathbf{x}$ at Fourier frequency
 $\omega_{j} = \frac{2\pi j}{n}$ is defined as the square of the Fourier
 transform $$\{a_{j}\}$$ of $\mathbf{x}$: 
 
- $${I\left( \omega_{j} \right)\mathbf{=}{\left| a_{j} \right|^{2}}_{\ } = n^{- \ 1}\left| \sum_{t = 1}^{n}x_{t}e^{- it\omega_{j}} \right|^{2}}_{\mathbf{\ }}$$   \[7.105\]
+$$
+\mathbf{I}\left(\omega_{j}\right)={\left|a_{j}\right|^{2}}= n^{-1}\left| \sum_{t=1}^{n}x_{t}e^{-it\omega_{j}}\right|^{2}} 
+$$   \[7.105\]
 
 From \[7.103\] and \[7.104\] it can be shown that in fact the
-periodogram decoposes the total sum of squares
+periodogram decomposes the total sum of squares
 $\sum_{t = 1}^{n}\left| x_{t} \right|^{2}$ into a sums of components
-associated with the Fourier frequencies$\text{\ ω}_{j}$:
+associated with the Fourier frequencies $$ω_{j}$$:
 
 
   $$\sum_{t = 1}^{n}\left| x_{t} \right|^{2} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}\left| a_{j} \right|^{2} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}{I\left( \omega_{j} \right)}$$   \[7.106\]
