@@ -184,7 +184,7 @@ $$
 a_{n/2}^{2} = I\left( \pi \right)
 $$
 
-
+ 
 $$
 \sum_{\mathbf{t = 1}}^{\mathbf{n}}\mathbf{x}_{\mathbf{t}}^{\mathbf{2}}
 $$
