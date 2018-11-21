@@ -24,17 +24,18 @@ D.P., FELDPAUSCH, R.M., and BELL, W.R. (2007).
 
 For a monthly time series the RegARIMA model structure is as follows:
 
-  ---------------------------------------------------------------------------------------------------------------------------------- -----------
-  $\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{11}M_{11,t} - \gamma X_{t} \right) = \mu + (1 - B)a_{t}$,   \[7.155\]
-  ---------------------------------------------------------------------------------------------------------------------------------- -----------
+$$\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{11}M_{11,t} - \gamma X_{t} \right) = \mu + (1 - B)a_{t}
+$$,   \[7.155\]
 
 where:
 
-$M_{j,t} = \left\{ \begin{matrix}
+$$
+M_{j,t} = \left\{ \begin{matrix}
 1\ in\ month\ j = 1,\ldots 11 \\
  - 1\ in\ December \\
 0\ otherwise \\
-\end{matrix} \right.\ $ -- dummy variables;
+\end{matrix} \right.\ 
+$$ -- dummy variables;
 
 $y_{t}$ -- the original time series;
 
