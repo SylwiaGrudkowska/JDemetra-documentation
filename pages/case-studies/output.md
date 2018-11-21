@@ -218,5 +218,5 @@ description: Basics
 
 	{: .text-center.small}
 
-	**Generating output process results**
+	**Generating output - status information**
 	
