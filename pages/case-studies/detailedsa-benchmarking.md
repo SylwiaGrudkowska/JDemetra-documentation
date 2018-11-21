@@ -5,7 +5,7 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 Often one has two (or multiple) datasets of different frequency for the same
-target variable. Sometimes, however, these data are not coherent in the
+target variable. Sometimes, however, these datasets are not coherent in the
 sense that they don’t match up. Benchmarking[^1] is a method to overcome
 this situation. It happens quite often, as an aggregate of a higher-frequency
 measurement is not necessarily equal to the less-aggregated measurement.
