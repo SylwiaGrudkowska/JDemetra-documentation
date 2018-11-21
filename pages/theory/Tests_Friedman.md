@@ -26,7 +26,7 @@ $i$.
 
 The test statistic is given by:
 
-  $$Q = \frac{\text{SS}_{t}}{\text{SS}_{e}},$$   \[7.146\]
+  $$Q = \frac{\text{SS}_{t}}{\text{SS}_{e}},$$   \[1\] <!--- \[7.146\] -->
 
 
 where:
@@ -65,3 +65,6 @@ calculate the preliminary estimation of trend. Consequently, the first
 six and last six points in the series are not computed at this stage of
 calculation. The preliminary estimation of the trend is then used for
 the calculation of the preliminary estimation of the unmodified Seasonal -- Irregular.
+
+[^82]: The unmodified Seasonal -- Irregular component corresponds to the
+    Seasonal -- Irregular factors with the extreme values.
