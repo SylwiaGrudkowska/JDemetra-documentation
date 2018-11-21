@@ -4,15 +4,15 @@ title: Benchmarking
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-Often one has two (or multiple) data of different frequency for the same
+Often one has two (or multiple) datasets of different frequency for the same
 target variable. Sometimes, however, these data are not coherent in the
 sense that they don’t match up. Benchmarking[^1] is a method to overcome
-this situation. It happens quite often, as aggregate of higher-frequency
+this situation. It happens quite often, as an aggregate of a higher-frequency
 measurement is not necessarily equal to the less-aggregated measurement.
-Moreover, the sources of data may have different reliability. Usually it
+Moreover, the sources of data may have different reliability issues. Usually it
 is thought that less frequent data are more trustworthy as they are
 based on larger samples and compiled more precisely. In general, the
-more reliable measurements are considered as benchmarks.
+more reliable measurements are considered as the benchmark.
 
 In seasonal adjustment methods benchmarking means the procedure that
 ensures the consistency over the year between adjusted and
@@ -34,12 +34,12 @@ only benefit of this approach is that there is consistency over the year
 between adjusted and the non-seasonally adjusted data; this can be of
 particular interest when low-frequency (e.g. annual) benchmarking
 figures officially exist (e.g. National Accounts, Balance of Payments,
-External Trade, etc.) where users' needs for time consistency are
+External Trade, etc.) and where users' needs for time consistency are
 stronger.
 
 1.  Following the *ESS Guidelines on Seasonal Adjustment* (2015)
-    recommendations, by default, the benchmarking functionality is not
-    applied (the *Benchmarking* node is empty). To activate it, click on
+    recommendations the benchmarking functionality is not
+    applied by default (the *Benchmarking* node is empty). To activate it, click on
     the *Specifications* button and activate the checkbox in the
     *Benchmarking* section.
 	
@@ -52,10 +52,9 @@ stronger.
 	**Benchmarking option – a default view**
 
 1.  Three parameters can be set here. *Target* specifies the target
-    variable for the benchmarking procedure. It can be *Original* (the
-    raw time series are considered as target data) or *Calendar
-    Adjusted* (the time series adjusted for the calendar effects are
-    considered as target data). *Rho* is a value of the AR(1) parameter
+    variable for the benchmarking procedure. It can be either the *Original* (the
+    raw time series) or the *Calendar
+    Adjusted* (the time series adjusted for calendar effects). *Rho* is a value of the AR(1) parameter
     (set between 0 and 1). By default it is set to 1. Finally, *Lambda*
     is a parameter that relates to the weights in the regression
     equation. It is typically equal to 0 (for an additive
@@ -63,11 +62,11 @@ stronger.
     multiplicative decomposition). The default value is 1.
 
 2.  To launch the benchmarking procedure click on the apply button. The
-    results are displayed on four panels. The top-left one compares the
-    original product of a seasonal adjustment procedure with the result
+    results are displayed in four panels. The top-left one compares the
+    original output from the seasonal adjustment procedure with the result
     from applying a benchmarking to the seasonal adjustment. The
     bottom-left panel highlights the differences between these two
-    results. The outcomes are also presented in a table on the top-right
+    results. The outcomes are also presented in a table in the top-right
     panel. The relevant statistics concerning relative differences are
     presented in the bottom-right panel.
 
@@ -91,7 +90,7 @@ stronger.
 	**Options for benchmarking results**
 
 1.  The result of the benchmarking procedure (*benchmarking.result*) and
-    the target data (*benchmarking.target*) can be also exported to the
+    the target data (*benchmarking.target*) can be also exported to an
     Excel file (see 3.1.2).
 
 	{: .text-center.image-wrapper}
