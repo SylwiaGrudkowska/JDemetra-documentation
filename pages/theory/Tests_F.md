@@ -25,7 +25,7 @@ D.P., FELDPAUSCH, R.M., and BELL, W.R. (2007).
 For a monthly time series the RegARIMA model structure is as follows:
 
 $$\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{11}M_{11,t} - \gamma X_{t} \right) = \mu + (1 - B)a_{t}
-$$,   \[7.155\]
+$$,   \[1\] <!--- \[7.155\]     -->
 
 where:
 
@@ -53,7 +53,7 @@ variance.
 
 In the case of a quarterly series the estimated model has a form:
 
-$$\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{3}M_{3,t} - \gamma X_{t} \right) = \mu + (1 - B)a_{t}$$,   \[7.156\]
+$$\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{3}M_{3,t} - \gamma X_{t} \right) = \mu + (1 - B)a_{t}$$,  \[2\] <!--- \[7.156\]     -->
 
 where:
  
@@ -82,7 +82,7 @@ $\text{F}$ statistic:
   
   $$
   F = \frac{ {\widehat{\chi}}^{2}}{s - 1} \times \frac{n - d - k}{n - d}
-  $$*,*   \[7.157\]
+  $$*,*    \[3\] <!--- \[7.157\]     -->
 
 where $n$ is the sample size, $d$ is the degree of differencing, s is
 time series frequency (12 for a monthly series, 4 for a quarterly
