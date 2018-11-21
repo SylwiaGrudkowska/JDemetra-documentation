@@ -64,10 +64,9 @@ to, respectively, $$2.1865 - \frac{1}{60}$$ and $$2.1865 + \frac{1}{60}$$.
 The default frequencies ($d)\ $for calendar effect are: 2.188 (monthly
 series) and 0.280 (quarterly series). They are computed as:
 
- $\omega_{\text{ce}} = \frac{2\pi}{7}\left( n - 7 \times \left\lbrack \frac{n}{7} \right\rbrack \right)$,   \[7.158\]
-
+ $\omega_{\text{ce}} = \frac{2\pi}{7}\left( n - 7 \times \left\lbrack \frac{n}{7} \right\rbrack \right)$,   \[1\] <!---\[7.158\]      -->
 where:
-
+ 
 $n = \frac{365.25}{s}$, $s = 4$ for quarterly series and $s = 12$ for
 monthly series.
 
@@ -89,3 +88,7 @@ frequencies highlighted**
 
 This implies that it may be hard to disentangle both effects using the
 frequency domain techniques.
+
+
+[^85]: For definition of the periodogram and Fourier frequencies see
+    7.3.
