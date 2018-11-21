@@ -6,13 +6,13 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-The saved results from the seasonal adjustment multi-process can be
+The saved results from a seasonal adjustment multi-process can be
 refreshed when new or modified observations are available. JDemetra+
 offers several options for refreshing the output, which are in line with
 the *ESS Guidelines on Seasonal Adjustment* (2015) requirements.
 
-1.  To refresh the results open previously saved workspace using the
-    path *File* → *Open Workspace*. Choose the multi-document from the
+1.  To refresh the results open a previously saved workspace using the
+    path *File* → *Open Workspace*. Choose the multi-document option from the
     *Workspace* window (see 2.1.1) and double click on it to display the
     multi-document menu (*SAProcessing*).
 
@@ -34,11 +34,11 @@ the *ESS Guidelines on Seasonal Adjustment* (2015) requirements.
 
 	**The *Refresh* menu**
 
-The meaning of the consecutive options is presented in the following
+A description of the options is presented in the following
 table.
 
 {: .table .table-style}
-| **Option**                                                                            | **Meaning**                                                                                                                                                                                                                                                                                                 |
+| **Option**                                                                            | **Description**                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Partial concurrent adjustment → Fixed model                                           | The ARIMA model, outliers and other regression parameters are not re-identified and the values of all parameters are fixed. The transformation type remains unchanged.                                                                                                                                      |
 | Partial concurrent adjustment → Estimate regression coefficients                      | The ARIMA model, outliers and other regression parameters are not re-identified. The coefficients of the ARIMA model are fixed, other coefficients are re-estimated. The transformation type remains unchanged.                                                                                             |
@@ -49,11 +49,12 @@ table.
 | Concurrent                                                                            | Re-identification of the whole ARIMA model.                                                                                                                                                                                                                                                                 |
 
 
+
 ##### **Partial concurrent adjustment**
 
 According to the *ESS Guidelines on Seasonal Adjustment* (2015), partial
 concurrent adjustment is the strategy in which the model, filters,
 outliers and calendar regressors are re-identified once a year and the
-respective parameters and factors re-estimated every time a new or
+respective parameters and factors re-estimated every time new or
 revised data become available. JDemetra+ offers several types of partial
 concurrent adjustment.
