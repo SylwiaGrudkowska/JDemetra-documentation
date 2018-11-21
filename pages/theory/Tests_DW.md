@@ -7,16 +7,18 @@ description: Basics
 
 The Durbin-Watson statistic is defined by[^81]:
 
- $d = \frac{\sum_{t = 2}^{N}\left( {\widehat{a}}_{t} - {\widehat{a}}_{t - 1} \right)^{2}}{\sum_{t = 1}^{N}{\widehat{a}}_{t}^{2}}$,   \[7.143\]
+ $$
+ d = \frac{\sum_{t = 2}^{N}\left( {\widehat{a}}_{t} - {\widehat{a}}_{t - 1} \right)^{2}}{\sum_{t = 1}^{N}{\widehat{a}}_{t}^{2}}
+ $$   \[7.143\]
 
 where:
 
 ${\widehat{a}}_{t}$ -- residual from the model.
 
 Since
-$\sum_{t = 2}^{N}\left( {\widehat{a}}_{t} - {\widehat{a}}_{t - 1} \right)^{2} \cong \ $2$\sum_{t = 1}^{N}{\widehat{a}}_{t}^{2} - 2\sum_{t = 2}^{N}{ {\widehat{a}}_{t}{\widehat{a}}_{t - 1}}$,
+$$\sum_{t = 2}^{N}\left( {\widehat{a}}_{t} - {\widehat{a}}_{t - 1} \right)^{2} \cong \ $$2$$\sum_{t = 1}^{N}{\widehat{a}}_{t}^{2} - 2\sum_{t = 2}^{N}{ {\widehat{a}}_{t}{\widehat{a}}_{t - 1}}$$,
 then the approximation $d \cong 2(1 - r_{z,1})$, where
-$r_{z,1} = \frac{\sum_{t = 1}^{N}{ {\widehat{a}}_{t}{\widehat{a}}_{t - 1}}}{\sum_{t = 1}^{N}{\widehat{a}}_{t}^{2}}$
+$$r_{z,1} = \frac{\sum_{t = 1}^{N}{ {\widehat{a}}_{t}{\widehat{a}}_{t - 1}}}{\sum_{t = 1}^{N}{\widehat{a}}_{t}^{2}}$$
 is the autocorrelation coefficient of the residuals at lag 1, is true.
 
 The Durbin-Watson statistics is between 0 and 4. When the model provides
@@ -48,7 +50,7 @@ To test for negative autocorrelation at significance$\ \alpha$, the test
 statistic $(4 - d)$ is compared to the lower ($d_{L,\alpha}\ )\ $and
 upper ($d_{U,\alpha})$ critical values:
 
--   If $\left( 4 - d \right) < d_{L,\alpha}\text{\ \ \ }$there is
+-   If $\left( 4 - d \right) < d_{L,\alpha}$ there is
     > statistical evidence that the error terms are negatively
     > autocorrelated.
 

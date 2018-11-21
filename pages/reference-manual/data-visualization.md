@@ -86,8 +86,8 @@ description: Basics
 
 1.  To display more than one series on the graph, select *Tools* →
     *Container* → *Chart* from the main menu. Next, drag a drop series
-    to the *Chart* window. Local menu options are available.
-
+    to the *Chart* window.
+	
 	{: .text-center.image-wrapper}
 
 	![Text](/assets/img/reference-manual/manual/Aimage17.jpeg)

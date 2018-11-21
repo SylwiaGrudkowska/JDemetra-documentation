@@ -19,7 +19,7 @@ To facilitate the comparison between JDemetra+ specifications and
 specifications used in TSW+, under each option the name of the 
 corresponding specification and argument from the original software is 
 given. Small variants from the original solutions are indicated by an 
-asterisk in the tables presented in this chapter. For an exact 
+asterisk in the tables presented in this page. For an exact 
 description of the different parameters, the user should refer to the 
 documentation of TSW+. Some additional explanations about the TRAMO 
 model, its parameters and estimation procedure are given in [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html). For 
@@ -38,7 +38,7 @@ the TRAMO model determined in the [Regression](#regression) and [Arima](#arima) 
 
 **Model span →  type**<br> *–; –*
 
-Specifies the span (data interval) of the time series to be used for the estimation the RegARIMA model coefficients. The RegARIMA model is then applied to the whole series. With this argument the data early in the series can be prevented from affecting the forecasts, or, alternatively, data late in the series are excluded from the modelling span, so that they do not influence the regression estimates. The possible values of the parameter are:
+Specifies the span (data interval) of the time series to be used for the estimation the Tramo model coefficients. The Tramo model is then applied to the whole series. With this argument the data early in the series can be prevented from affecting the forecasts, or, alternatively, data late in the series are excluded from the modelling span, so that they do not influence the regression estimates. The possible values of the parameter are:
 * *All* – full time series span is considered in the modelling;
 * *From* – date of the first time series observation is included in the pre-processing model;
 * *To* – date of the last time series observation is included in the pre-processing model;
@@ -66,7 +66,8 @@ Transformation of data. The user can choose between:
   * *None* – no transformation of data;
   * *Auto* – the program tests for the log-level specification. This option is recommended for an automatic modelling of many series.
   * *Log* – takes logs of data.
-The default setting is *Auto*.
+
+  The default setting is *Auto*.
      
 **Fct**<br> *Transformation; fct*
 
@@ -85,26 +86,25 @@ and user-defined regression variables are selected with the
  
   Determines the manner in which the calendar effects are entered in the TRAMO model. It can be done in 
   two ways: automatically (on a basis of the specified test) or manually. The calendar effects that are 
-  considered here are: a trading day, a working day and a leap year. The significance of the Easter effect 
+  considered here are: trading day, working day and leap year effects. The significance of the Easter effect 
   is considered in the subsequent part of this section.   
 
-   * *Unused* -- the calendar effects included in the TRAMO model are those specified by the user through 
-     the **Option**,**tradingDays** and **LeapYear** parameters.
+   * *Unused* -- no test is performed for the calendar effects. JDemetra+ includes in the TRAMO model the calendar effects specified by the user under the 
+     **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **tradingDays** and **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **LeapYear** parameter options.
    * *FTest* -- the choice of the number of calendar variables to be included in the TRAMO model is based on 
-     the outcome of F-tests computed on the models with the trading day variables and with the working day 
+     the outcome of F-tests computed on the two models: one with the trading day variables and the other with the working day 
      variable (F-test is performed on the coefficients of the calendar variables). The model with higher 
-     F value is chosen, provided that it is higher than **Pftd** (see **Calendar** $\rightarrow \ $ **tradingDays**$\rightarrow \ $**Pftd**).
+     P-value is chosen, provided that it is higher than **Pftd** (see **Calendar** $\rightarrow \ $ **tradingDays**$\rightarrow \ $**Pftd**).
     * *WaldTest* -- working days are restricted to trading days. The choice of the number of calendar variables
       to be included in the TRAMO model is based on the outcome of the Wald test computed on that restriction. 
-      The F-test computed on the preferred model must be higher than **Pftd** (see **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $**Pftd**). 
+      The P-value computed on the preferred model must be higher than **Pftd** (see **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $**Pftd**). 
 
     The default setting is *Unused*.  
     
  -  **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $ **Pftd**<br> *Trading day; pftd*
  
-    P-Value applied in the test specified by the **automatic** parameter to assess the significance of the pre-tested calendar effect 
-    and to decide if the calendar effects are included in the TRAMO model. The **Pftd** option is displayed when              
-    **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **automatic** is set to *FTest* or *WaldTest*. 
+    P-Value applied in the test specified by the **automatic** parameter to assess the significance of the pre-tested calendar effects 
+    and to decide if the calendar effects are included in the TRAMO model. The **Pftd** option is displayed when **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **automatic** is set to *FTest* or *WaldTest*. 
     The default **Pftd** setting is 0.01.
 
 - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $ **option**<br> *Trading day; itrad\**
@@ -117,9 +117,8 @@ and user-defined regression variables are selected with the
      of the month (to denote the last day of the month enter the number 31).
    * *Holidays* -- corresponds to the pre-defined trading day variables, modified to take into account country
    specific holidays. It means that after choosing this option the user should specify the type of a trading days 
-   effect **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**TradingDays**) and a previously defined 
-   calendar that includes the country specific holidays (**Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $       
-   **holidays**). 
+   effect under **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**TradingDays** and a previously defined 
+   calendar that includes the country specific holidays (**Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**holidays**). 
    * *UserDefined* -- used when the user wants to specify his own trading day variables. With this option the 
      calendar effects are captured only by the regression variables chosen by the user from the previously 
      created list of the [user-defined variables](../reference-manual/user-defined-variables.html).
@@ -128,16 +127,14 @@ and user-defined regression variables are selected with the
 
  -  **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**holidays**<br> *Regression variables; ireg\**
     
-	List of user-defined calendars to be used to create the calendar is available when **Calendar** $\rightarrow $**tradingDays**
+	List of user-defined calendars to be used to create the calendar is available when **Calendar** $\rightarrow \ $**tradingDays**
     $\rightarrow \ $**option** is set to *Holidays*.    
-    The user is expected to click the field to expand a list the previously defined calendars and choose an appropriate       
-    item. 
-    The default setting is *Default,* which implies that the default calendar is used and no country-specific holidays are     
-    considered. 
+    The user is expected to click the *Holidays* field to expand a list of previously defined calendars and choose an appropriate item. 
+    The default setting is *Default,* which implies that the default calendar is used and no country-specific holidays are considered. 
 
  - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**userVariables**<br> *Regression variables; ireg, user,* *usertype= (\...td\...)\**
    
-   List of the predefined regression variables to be included in the model. Option is available when **Calendar**  $\rightarrow \ $ **tradingDays** $\rightarrow \ $**option** is set to *UserDefined*. 
+   List of the pre-defined regression variables to be included in the model. Option is available when **Calendar**  $\rightarrow \ $ **tradingDays** $\rightarrow \ $**option** is set to *UserDefined*. 
    When the user chooses the *UserDefined* type for a trading day effect estimation, one must specify the corresponding      
    variables by clicking the field and choosing variables from the list. It should be noted that [such variables need to be   
    already defined](../reference-manual/user-defined-variables.html), otherwise the list is empty.
@@ -240,7 +237,7 @@ These basic structures enable generation of not only AO, LS, TC, SO and RP outli
     
 	The calendar component is not available in this section. Therefore, a user-defined variable assigned to the calendar effect should be added in the calendar part of the specification. 
     For the user-defined variable the structure of the lags can be specified using the options *first lag* and *last lag*.[^20] When the regression variable $x_{t}$ is introduced with *first lag* = $l_a$ and *last lag* = $l_b$,            JDemetra+ includes in the TRAMO model a set of variables, $x_{t - l_{a}}$,...,$\ x_{t - l_{ b}}$,and estimates the        respective regression coefficients called the impulse response weights.
-    To include only the first lag ($x_{t - 1})\ $of the user-defined variable ($x_{t})\ $in the RegARIMA model, the user should put *first lag* = *last lag* = 1. If for a monthly series one puts *first lag* = 0 and *last lag* = 11, it means    that in addition to the instantaneous effect of the user-defined variable, also the effects of 11 lagged explanatory      variables are included in the model. In this case the set of estimated coefficients, called a transfer function, 
+    To include only the first lag $(x_{t - 1})\ $of the user-defined variable $(x_{t})\ $in the Tramo model, the user should put *first lag* = *last lag* = 1. If for a monthly series one puts *first lag* = 0 and *last lag* = 11, it means    that in addition to the instantaneous effect of the user-defined variable, also the effects of 11 lagged explanatory      variables are included in the model. In this case the set of estimated coefficients, called a transfer function, 
 	describe how the changes in $x_{t}$ that took place over a year are transferred to the dependent variable.        
     However, the lagged variables are often collinear, so that caution is needed in attributing much meaning to each coefficient.[^21] 
     No user-defined variables are included in the pre-defined specifications. They can only be added to the user-defined specifications.
@@ -312,7 +309,7 @@ types, using the specified model.
  
 #### Arima
 
-Identification of the ARIMA part of the RegARIMA model can be done
+Identification of the ARIMA part of the Tramo model can be done
 either in an automatic way or by the user, who specifies the appropriate
 parameters. This choice is controlled by the **Automatic** option and
 results in a list of parameters specific to the chosen ARIMA
@@ -360,7 +357,7 @@ automatic model identification are presented below.
 
 When the **Automatic** checkbox in the **Arima** section is unmarked,
 JDemetra+ allows the user to specify the structure of the ARIMA part of
-the RegARIMA model. Initial values for the individual AR and MA
+the Tramo model. Initial values for the individual AR and MA
 parameters can be specified for the iterative estimation. Also,
 individual parameters can be held fixed at these initial values while
 the rest of the parameters are estimated. The options available here

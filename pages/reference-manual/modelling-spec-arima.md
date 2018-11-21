@@ -68,7 +68,7 @@ the RegARIMA model determined in the [*Regression*](#regression) and [*Arima*](#
    With the options *Last*, *First*, *Excluding* the span can be computed dynamically on theseries. The default setting is    *All*.
  - **Tolerance**<br>*estimate {tol}*
  
-     Convergence tolerance for the nonlinear estimation. The absolute changes in the          log-likelihood function are compared to **Tolerance** to check for the convergence of the estimation iterations. The      default setting is 0.0000001.
+     Convergence tolerance for the nonlinear estimation. The absolute changes in the log-likelihood function are compared to **Tolerance** to check for the convergence of the estimation iterations. The      default setting is 0.0000001.
 
 
 #### Transformation

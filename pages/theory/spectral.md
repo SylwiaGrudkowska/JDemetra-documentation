@@ -1,16 +1,13 @@
 ---
 layout: left-menu
-title: Emmanuelle
+title: Spectral analysis
 tagline: technical documentation for JDemetra+ using GitHub Pages
-description: Basics
+description: Basics  
 ---
-Spectral analysis
------------------
 
-A time series $x_{t}\ $with stationary covariance, mean $\text{μ\ }$and
-$k^{\text{th}}\ $autocovariance
-$E\left( \left( x_{t} - \mu \right)\left( x_{t - k} - \mu \right) \right) = \gamma(k)\ $can
-be described as a weighted sum of periodic trigonometric functions:
+A time series $$x_{t}$$ with stationary covariance, mean $μ$ and
+$$k^{th}$$ autocovariance
+$E\left( \left( x_{t} - \mu \right)\left( x_{t - k} - \mu \right) \right) = \gamma(k)\$ can be described as a weighted sum of periodic trigonometric functions:
 sin$(\omega t)$ and cos$(\omega t)$, where $\omega$ denotes frequency.
 Spectral analysis investigates this frequency domain representation of
 $x_{t}$ to determine how important cycles of different frequencies are
@@ -76,10 +73,10 @@ that can be observed in the time series with $n$ observations is
 $\omega = \frac{2\pi}{n}$ and is called the fundamental (Fourier)
 frequency.
 
-Note that if ${\{ x}_{t}\}$ is a white noise process with zero mean and
-variance $\sigma^{2}$, then for all $\left| k \right| > 0$
-$\gamma\left( k \right) = 0$ and spectrum of${\ \{ x}_{t}\}$ is constant
-($f\left( \omega \right) = \frac{\sigma^{2}}{\pi}$) since each frequency
+Note that if $$x_{t}$$ is a white noise process with zero mean and
+variance $$\sigma^{2}$$, then for all $$\left| k \right| > 0$$
+$$\gamma\left(k\right)=0$$ and the spectrum of $$x_{t}$$ is constant
+($$f\left(\omega\right)= \frac{\sigma^{2}}{\pi}$$) since each frequency
 in the specrum contributes equally to the variance of the process.[^68]
 
 The aim of spectral analysis is to determine how important cycles of

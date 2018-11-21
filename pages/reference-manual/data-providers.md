@@ -27,11 +27,9 @@ The allowed data sources include:
 All standard databases (Oracle, SQLServer, DB2, MySQL) are supported by
 JDemetra+ via JDBC, which is a generic interface to many relational
 databases. Other providers can be added by users by creating plugins
-(see *Plugins* section in [Tools](tools.html)). To import data, right-click on the appropriate
+(see *Plugins* section in the [Tools](tools.html) menu). To import data, right-click on the appropriate
 provider from the *Providers* panel and specify the required parameters.
-For all providers the procedure follows the same logic. The requirements
-for each of these data sources as well as the importing procedure are
-discussed in the ‘*JDemetra+ User Guide*’ (2017), item 2.1.2.
+For all providers the procedure follows the same logic. An example is provided [here](#import-data).
 
 The *Providers* window organises data in a tree structure reflecting the
 manner in which data are presented in the original source. The picture
@@ -52,13 +50,12 @@ sheets’ names.
 
 **A structure of a dataset**
 
-Series uploaded to the *Providers* window can be displayed (see
-‘*JDemetra+ User Guide*’ (2017), item 2.1.4), modified and tested (see
-‘*JDemetra+ User Guide*’ (2017), item 3.4) and used in estimation
-routines (see [Modelling](modelling.html) and [Seasonal adjustment](sa.html)). The data sources can be restored after
+Series uploaded to the *Providers* window can be [displayed](../reference-manual/data-visualization.html), modified and [tested for seasonality](../case-studies/seasonalitytests.html)
+and used in estimation routines (see [Modelling](modelling.html) and [Seasonal adjustment](sa.html)). 
+The data sources can be restored after
 re-starting the application so that there is no need to get them
 again. This functionality can be set in the *Behaviour* tab available at
-the *Option* item from the *Tools* menu.
+the *Option* item from the [*Tools*](../reference-manual/tools.html) menu.
 
 #### Spreadsheets {#spreadsheets}
 
@@ -174,3 +171,4 @@ the data from an Excel file.
 
 	**Dataset structure**
 
+	Once the data has been successfully imported, it is available to the user for various analyses (e.g. visualization, modelling, seasonal adjustment, etc.)
