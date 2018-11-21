@@ -19,7 +19,7 @@ itself over successive time intervals is called an autocorrelation.
 The autocorrelation coefficient at lag $k$ is defined as:
 
 $$\rho\left( k \right) = \frac{\sum_{t = k + 1}^{n}\left( x_{t} - \overline{x} \right)}{\sum_{t = 1}^{n}\left( x_{t} - \overline{x} \right)^{2}}
-$$,   \[1\] <--- \[7.159\]--> 
+$$,   \[1\] <!--- \[7.159\]--> 
 
 where:
 
