@@ -24,20 +24,57 @@ series from a browser of the application, available in the *Providers* window. D
 re-opened. Therefore, it is a convenient solution for creating 
 user-defined variables.
 
-
-By default, JDemetra+ uses the conventions Vars_#number to name 
-the series in the *Variables* window. The original name of the series is 
-recorded in the *Description* column of the *Variables* window. The name of 
-the series in the *Variables* window can be changed by selecting a series 
-and clicking once again when it has been selected allowing the variable 
-to be renamed. 
+To create a dynamic variable first right-click on the *Variables* node in the *Workspace* window and chose the option **New**.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/Variables rename.jpg)
+![Text](/assets/img/reference-manual/manual/A_Ref_d3.jpg)
+
+{: .text-center.small}
+
+**Creating an empty dataset for the user-defined variables**
+
+Next, double click on the newly created *Vars-1* item to display it in the *Results* panel. By default, JDemetra+ uses the conventions Vars_#number to name 
+the tabs under the *Variables* node.
+
+{: .text-center.image-wrapper}
+
+![Text](/assets/img/reference-manual/manual/A_Ref_d4.jpg)
+
+{: .text-center.small}
+
+**Activation of an empty dataset for the user-defined variables**
+
+Then, go to *Providers* window and open your file that contains external variables following the instructions provided [here](../quick-start/datasources.html).
+Drag and drop your external regressors from the *Providers* window to the *Vars-1* window.
+
+{: .text-center.image-wrapper}
+
+![Text](/assets/img/reference-manual/manual/A_Ref_d5.jpg)
+
+{: .text-center.small}
+
+**Importing the user-defined variables to JDemetra+**
+
+ The original name of the series is 
+recorded in the *Description* column of the *Variables* window. 
+
+{: .text-center.image-wrapper}
+
+![Text](/assets/img/reference-manual/manual/A_Ref_d6.jpg)
+
+{: .text-center.small}
+
+**Assigning regressors from the *Providers* window to the user-defined variables**
+
+In order to rename the series in the *Variables* window, right click on the series and chose **Rename**. 
+
+{: .text-center.image-wrapper}
+
+![Text](/assets/img/reference-manual/manual/A_Ref_d7.jpg)
 
 {: .text-center.small}
 
 **A local menu for the user-defined variables**
 
-
+Once the variables are imported they can be used for further analysis (e.g. as regressors in the [specifications for RegArima and TRAMO](../reference-manual/modelling-specifications.html#user-definedSpec)).

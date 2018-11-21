@@ -43,7 +43,7 @@
       subitems:
         - title: "Tramo"
           file: "modelling-spec-tramo"
-        - title: "Arima"
+        - title: "RegArima"
           file: "modelling-spec-arima"
     - title: "Output"
       file: "output-modelling"
