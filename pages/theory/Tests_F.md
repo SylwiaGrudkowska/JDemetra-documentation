@@ -74,11 +74,11 @@ $$\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{3}M_{3,t
 
 where:
 
-$M_{j,t} = \left\{ \begin{matrix}
+$$M_{j,t} = \left\{ \begin{matrix}
 1\ in\ quarter\ j = 1,\ldots 3 \\
  - 1\ in\ the\ fourth\ quarter \\
 0\ otherwise \\
-\end{matrix} \right.\ $ -- dummy variables.
+\end{matrix} \right.\ $$ -- dummy variables.
 
 One can use the individual t-statistics to assess whether seasonality
 for a given month is significant, or a chi-squared test statistic if the
@@ -91,16 +91,17 @@ $df = 11\ $(monthly series) or $df = 3$ (quarterly series). Since the
 ${Var(\widehat{\beta})}^{\ }$ computed using the estimated variance of
 $\alpha_{t}$ may be very different from the actual variance in small
 samples, this test is corrected using the proposed
-$\text{F\ }$statistic:
+$\text{F}$statistic:
 
-  ---------------------------------------------------------------------------- -----------
-  $F = \frac{ {\widehat{\chi}}^{2}}{s - 1} \times \frac{n - d - k}{n - d}$*,*   \[7.157\]
-  ---------------------------------------------------------------------------- -----------
+  
+  $$
+  F = \frac{ {\widehat{\chi}}^{2}}{s - 1} \times \frac{n - d - k}{n - d}
+  $$*,*   \[7.157\]
 
 where $n$ is the sample size, $d$ is the degree of differencing, s is
 time series frequency (12 for a monthly series, 4 for a quarterly
 series) and $k$ is the total number of regressors in the RegARIMA model
-(including the seasonal dummies$\text{\ M}_{j,t}$ and the intercept).
+(including the seasonal dummies $\text{M}_{j,t}$ and the intercept).
 
 This statistic follows a $F_{s - 1,n - d - k}$ distribution under the
 null hypothesis.
