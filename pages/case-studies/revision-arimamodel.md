@@ -12,8 +12,8 @@ parameters are re-estimated. The transformation type remains unchanged.
 The picture below presents the initial model (on the left) and the
 results of the refreshment procedure with the *Partial concurrent
 adjustment → Estimate regression coefficient + Arima model* option (on
-the right). The ARIMA part have been re-identified (a change from (2,1,0)(0,1,1) to
-(0,1,1)(1,1,1)). Also regression coefficients for the
+the right). The ARIMA part has been re-identified (a change from (2,1,0)(0,1,1) to
+(0,1,1)(1,1,1)). Also the regression coefficients for the
 calendar variables have been re-estimated. In the revised model there is
 a no *Prespecified outliers* section. Therefore, the outliers were
 re-identified.
