@@ -31,6 +31,16 @@ where:
 
 $$
 M_{j,t} =
+\begin{cases}
+1 & \text{ in month } j = 1, \ldots, 11 \\
+- 1 & \text{ in December}\\
+0 & \text{ otherwise}
+\end{cases}
+$$ 
+-- dummy variables;
+
+$$
+M_{j,t} =
 \left\{\begin{matrix}
 1\ in \ month\ j = 1,\ \ldots \11 \\
 - 1\ in\ December \\
