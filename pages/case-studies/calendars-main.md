@@ -179,7 +179,7 @@ the long term mean effects.
 
 6.  Calendar variables can be copied/pasted to an Excel file. To do it,
     open an Excel file and click on the top-left cell in the panel on
-    the left and drag and drop series the to the Excel file.
+    the left and drag and drop the series to the Excel file.
 
 	{: .text-center.image-wrapper}
 
@@ -191,7 +191,7 @@ the long term mean effects.
 
 7.  A new calendar can be created through the user interface. This is a
     long process that will be described in the next three scenarios.
-    Another option to create a calendar is importing the existing file
+    Another option to create a calendar is by importing the existing file
     to JDemetra+. To do it, right click on the *Calendar* item from the
     *Workspace* window and choose the *Import* item from the menu.
 
@@ -278,15 +278,15 @@ the long term mean effects.
 	-   *National calendars*, which is appropriate to define a calendar that
 		includes country-specific holidays;
 
-	-   *Composite calendars*, which is an option designed e.g. for a
-		seasonal adjustment of an aggregated time series that are composed
-		of national data. It enables to create a calendar that is a weighted
+	-   *Composite calendars*, which is an option designed for the
+		seasonal adjustment of an aggregated time series that is composed
+		of national data. It enables the user to create a calendar that is the weighted
 		sum of several national calendars.
 
 	-   *Chained calendars*, defined by two national calendars and a break
 		date.
 
-	These options are considered in the separate sub-scenarios. Study the one that match your needs.
+	These options are considered in the separate sub-scenarios. Study the ones that match your needs.
 
 ##### Footnotes
 
