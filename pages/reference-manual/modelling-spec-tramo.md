@@ -534,7 +534,6 @@ polynomial with roots inside the unit circle.
    * *Initial --* estimates a parameter using as initial condition the value defined by the user.
    * *Fixed* *--* holds a parameter fixed during estimation at the value defined by the user. 
 
-
 ##### Footnotes
 
 [^5]: The test for a log-level specification used by TRAMO is based on
