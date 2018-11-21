@@ -8,7 +8,9 @@ description: Basics
 
 The Ljung-Box Q-statistics are given by:
 
-  $\text{LB}\left( k \right) = n \times (n + 2) \times \sum_{k = 1}^{K}\frac{\rho_{a,k}^{2}}{n - k}$,   \[7.144\]
+  $$
+  \text{LB}\left( k \right) = n \times (n + 2) \times \sum_{k = 1}^{K}\frac{\rho_{a,k}^{2}}{n - k}
+  $$,   \[1\] <!---\[7.144\]      --> 
 
 where:
 
