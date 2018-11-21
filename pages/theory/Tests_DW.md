@@ -9,7 +9,7 @@ The Durbin-Watson statistic is defined by[^81]:
 
  $$
  d = \frac{\sum_{t = 2}^{N}\left( {\widehat{a}}_{t} - {\widehat{a}}_{t - 1} \right)^{2}}{\sum_{t = 1}^{N}{\widehat{a}}_{t}^{2}}
- $$   \[7.143\]
+ $$   \[1\] <!---\[7.143\]      -->
 
 where:
 
@@ -59,3 +59,6 @@ upper ($d_{U,\alpha})$ critical values:
 
 -   If $d_{U,\alpha} < \left( 4 - d \right) < d_{U,\alpha}$ the test is
     > inconclusive.
+    
+    
+[^81]: CHATFIELD, C. (2004).
