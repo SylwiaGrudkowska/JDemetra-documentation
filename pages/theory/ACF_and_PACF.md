@@ -85,7 +85,7 @@ order of the autoregressive process.
 {: .text-center.small}
 
 **Partial autocorrelation function**
-
+ 
 The PACF graph (Figure 7.20: Partial autocorrelation function.), which
 is available from the *Tools*$\  \rightarrow \ $*Differencing* menu
 presents partial autocorrelation coefficients and the confidence
