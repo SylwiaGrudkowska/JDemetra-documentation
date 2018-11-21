@@ -18,9 +18,8 @@ itself over successive time intervals is called an autocorrelation.
 
 The autocorrelation coefficient at lag $k$ is defined as:
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------- -----------
-  $\rho\left( k \right) = \frac{\sum_{t = k + 1}^{n}\left( x_{t} - \overline{x} \right)}{\sum_{t = 1}^{n}\left( x_{t} - \overline{x} \right)^{2}}$,   \[7.159\]
-  --------------------------------------------------------------------------------------------------------------------------------------------------- -----------
+$$\rho\left( k \right) = \frac{\sum_{t = k + 1}^{n}\left( x_{t} - \overline{x} \right)}{\sum_{t = 1}^{n}\left( x_{t} - \overline{x} \right)^{2}}
+$$,   \[7.159\]
 
 where:
 
@@ -74,9 +73,9 @@ autocorrelation for lag 1 is equivalent to autocorrelation.
 
 The partial autocorrelation function (PACF) is the set of partial
 autocorrelation coefficients $(k)$ arranged as a function
-of$\text{\ k}$. This function can be used to detect the presence of an
+of $k$. This function can be used to detect the presence of an
 autoregressive process in time series and identify the order of this
-process. Theoretically, the number of significant lags determines the
+process. Theoretically, the number of significant lags determines the 
 order of the autoregressive process.
 
 {: .text-center.image-wrapper}
