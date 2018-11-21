@@ -88,3 +88,16 @@ especially true for constraints that contain differences (which is the
 case for non-binding constraints). The use of a special square root
 initialiser improves in a significant way the stability of the
 algorithm.
+
+[^86]: Description of the idea of benchmarking is based on DAGUM, B.E.,
+    and CHOLETTE, P.A. (1994) and QUENNEVILLE, B. et all (2003).
+    Detailed information can be found in: DAGUM, B.E., and CHOLETTE,
+    P.A. (2006).
+
+[^87]: DAGUM, B.E., and CHOLETTE, P.A. (2006).
+
+[^88]: '*X-12-ARIMA Reference Manual'* (2011).
+
+[^89]: HOOD, C.C.H. (2005).
+
+[^90]: CHOLETTE, P.A. (1979). 
