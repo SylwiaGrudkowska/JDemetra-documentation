@@ -7,15 +7,15 @@ description: Basics
 
 Seasonality tests play a fundamental role at different stages of the
 automatic model identification process used by TRAMO/SEATS. They are
-also crucial of an assessment of the results produced by
-X-13-ARIMA-SEATS. When this method is used, the seasonal component is
-estimated regardless the properties of the original time series.
-Therefore the user is expected to decide if the seasonality is present
+also crucial in the assessment of the results produced by
+X-13-ARIMA-SEATS. When X-13-ARIMA-SEATS is used, the seasonal component are
+estimated regardless of the properties of the original time series.
+Therefore the user is expected to decide if seasonality is (or is not) present
 in the time series.
 
 The scenario presented here helps to identify seasonal movements in the
 original time series using various tests available in JDemetra+. Its
-purpose is to check the presence of seasonal movements in the time
+purpose is to check for the presence of seasonal movements in the time
 series and decide whether it should be adjusted for them or not. Some
 explanations on the seasonality tests can be found in *JDemetra+
 Reference Manual* (2017), item 7.6.3.
@@ -55,9 +55,9 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	**Launching the functionality**
 
-3.  The testing process starts automatically. The upper panel presents
-    the time series graph. Once the given observation is pointed with a
-    mouse, JDemetra+ displays its value and the relevant date.
+3.  The testing process starts automatically. The upper panel displays
+    a time series graph of the unadjusted data. Hovering over an observation with the
+    mouse displays its value and date.
 
 	{: .text-center.image-wrapper}
 
@@ -68,7 +68,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 	**Time series graph**
 
 4.  Using the local menu the user may adjust the view of the picture,
-    save it and/or save it in a given location (for details see 2.1.3).
+    save it and/or save it to a set location (for details see 2.1.3).
 
 	{: .text-center.image-wrapper}
 
@@ -102,8 +102,8 @@ Go to the main menu and follow the path: *Statistical methods* →
     used. In general, an outcome that appears in JDemetra+ interface in
     green indicates no evidence of a problem in a tested area, yellow is
     uncertain and red indicates an issue that should be addressed. In
-    this scenario results in green indicate that the given test detected
-    seasonal movements. In case of the tests, for which p-values are
+    this scenario the results in green indicate that the given test detected
+    seasonal movements. For tests where p-values are
     given, green denotes that the desired test result was achieved at
     the 5% confidence level. An outcome in yellow means that the
     relevant test statistics can be accepted at the 1% level. An outcome
@@ -117,15 +117,15 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	**Seasonality tests results section**
 
-7.  The test on autocorrelation on seasonal lags is the Ljung-Box test
-    that checks the correlation between the actual observation and
+7.  The test on autocorrelation on seasonal lags is the Ljung-Box test.
+    It checks the correlation between the actual observation and
     observation lagged by one and two years. In the case of a monthly
     time series the autocorrelation between these values is denoted as
     ac(12) and ac(24) respectively. In case of a quarterly time series
     the autocorrelation between these values is denoted as ac(4) and
     ac(8) respectively. If the observations are independent from each
-    other, they are distributed as $\chi^{2}$. When this hypothesis is
-    rejected, the significant autocorrelation is confirmed, which is a
+    other, they follow a $\chi^{2}$ distribution. When this hypothesis is
+    rejected, a significant autocorrelation is confirmed, which is a
     sign of seasonal movements in the series and the test's outcome is
     displayed in green.
 
@@ -143,7 +143,7 @@ Go to the main menu and follow the path: *Statistical methods* →
     month (or quarter) effect is tested. The Friedman test requires no
     distributional assumptions. It uses the rankings of the
     observations. If the null hypothesis of no stable seasonality is
-    rejected at the 0.1% significance level $pValue < 0.001$, then the
+    rejected at the 0.1% significance level, $p Value < 0.001$, then the
     series is considered to be seasonal and the test's outcome is
     displayed in green.
 
@@ -176,20 +176,20 @@ Go to the main menu and follow the path: *Statistical methods* →
     autoregressive spectrum is based on the estimation of an AR(30)
     process, while the Tukey periodogram is a non-parametric estimator
     that introduces some degree of smoothing in the periodogram. In
-    order to decide whether a the series has a seasonal component that
+    order to decide whether the series has a seasonal component that
     is predictable (stable) enough the tests use visual criteria and
     formal tests that rely on two basic principles: a) the peaks
     associated to seasonal frequencies should be larger than the median
-    spectrum for all frequencies and, b) the peaks should exceed the
+    spectrum for all frequencies and b) the peaks should exceed the
     spectrum of the two adjacent values by more than a critical value.
-    When such case is detected, the test results are displayed in green.
+    When these principes are met, the test results are displayed in green.
     The statistical significance of each one of the seasonal peaks (i.e.
     frequencies
     $\frac{\pi}{6},\ \frac{\pi}{3},\ \frac{\pi}{2},\ \frac{2\pi}{3},\ \frac{5\pi}{6}\text{ }$and
-    $\pi$ corresponding to 1, 2, 3, 4, 5 and 6 cycles per year) is also
+    $\pi$ corresponding to 1, 2, 3, 4, 5 and 6 cycles per year) are also
     displayed.
 
-11. Auto-regressive spectrum is a test that originates from the
+11. The auto-regressive spectrum test is a test that originates from the
     X-13ARIMA-SEATS program. It is based on the spectral density
     (spectrum) function, which reformulates the content of the
     stationary time series' autocovariances in terms of amplitudes at
@@ -215,7 +215,7 @@ Go to the main menu and follow the path: *Statistical methods* →
     point, one can use a formal test to assess the statistical
     significance of the periodogram's peaks at seasonal frequencies. The
     test proposed is based on the sum of the values of the periodogram
-    at seasonal frequencies, which follows a $\chi^{2}$(24) under the
+    at seasonal frequencies, which follows a $\chi^{2}$(24) distribution under the
     null hypothesis of an absence of seasonality.
 
 	{: .text-center.image-wrapper}
@@ -226,11 +226,11 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	**A periodogram**
 
-13. Finally, the test on regression with seasonal dummies checks the
+13. Finally, a test on a regression with seasonal dummies checks the
     presence of deterministic seasonality. The first version of the test
-    uses the seasonal dummies (mean effect and 11 dummies for a monthly
-    data, or 3 dummies for a quarterly data) in a RegARIMA model, in
-    which the ARIMA part of the model has a form (0,1,1)(0,0,0). The
+    uses seasonal dummies (mean effect and 11 dummies for monthly
+    data, or 3 dummies for quarterly data) in a RegARIMA model, in
+    which the ARIMA part of the model is (0,1,1)(0,0,0). The
     test statistics checks if the seasonal dummies are jointly
     statistically insignificant. When this hypothesis is rejected, it is
     assumed that the deterministic seasonality is present and the test's
@@ -247,9 +247,8 @@ Go to the main menu and follow the path: *Statistical methods* →
 14. In the second version of this test the regression is performed on an
     automatically identified ARIMA model instead of ARIMA
     (0,1,1)(0,0,0). The test statistics checks if the seasonal dummies
-    are jointly statistically insignificant. The test statistics checks
-    if the seasonal dummies are jointly statistically insignificant.
-    When this hypothesis is rejected, it is assumed that the
+    are jointly statistically insignificant. 
+    When this hypothesis is rejected, it is assumed that
     deterministic seasonality is present and the test's results are
     displayed in green.
 
