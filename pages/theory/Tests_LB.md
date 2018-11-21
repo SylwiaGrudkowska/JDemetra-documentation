@@ -14,8 +14,8 @@ The Ljung-Box Q-statistics are given by:
 
 where:
 
-$\rho_{a,k}^{2}$ is the autocorrelation coefficient at lag $k$ of the
-residuals ${\widehat{a}}_{t}$.
+$$\rho_{a,k}^{2}$ is the autocorrelation coefficient at lag $k$ of the
+residuals ${\widehat{a}}_{t}$$.
 
 $n$ is the number of terms in differenced series;
 
