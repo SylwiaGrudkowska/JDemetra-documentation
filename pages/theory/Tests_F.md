@@ -38,33 +38,6 @@ M_{j,t} =
 \end{cases} \text{ -- dummy variables;}
 $$ 
 
-
-$$
-M_{j,t} =
-\left\{\begin{matrix}
-1\ in \ month\ j = 1,\ \ldots \11 \\
-- 1\ in\ December \\
-0\ otherwise \\
-\end{matrix} \right.\
-$$ -- dummy variables;
-
-$$
-M_{j,t} =
-\left\{\begin{matrix}
-1 & in month & j = 1,&\ldots & 11 \\
-- 1 & in & December \\
-0 & otherwise \\
-\end{matrix} \right.\
-$$ -- dummy variables;
-
- $$
- {\mathbf{e}_{j}^{*}\mathbf{e}}_{k} = n^{- 1}\sum_{r = 1}^{n}e^{ir(\omega_{j} - \omega_{k})} = 
- \left\{ \begin{matrix}  
-  1,\ if\ j = k \\                                                                                                         
-  0,\ if\ j \neq k \\                                                                                                      
-  \end{matrix} \right.\ 
-  $$ \[7.103\]
-
 $y_{t}$ -- the original time series;
 
 $B$ -- a backshift operator;
@@ -84,12 +57,14 @@ $$\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{3}M_{3,t
 
 where:
 
-$$M_{j,t} = \left\{ \begin{matrix}
-1\ in\ quarter\ j = 1,\ldots 3 \\
- - 1\ in\ the\ fourth\ quarter \\
-0\ otherwise \\
-\end{matrix} \right.\ 
-$$ -- dummy variables.
+$$
+M_{j,t} =
+\begin{cases}
+1 & \text{ in quarter} j = 1, \ldots, 3 \\
+- 1 & \text{ in the fourth quarter}\\
+0 & \text{ otherwise}
+\end{cases} \text{ -- dummy variables;}
+$$  
 
 One can use the individual t-statistics to assess whether seasonality
 for a given month is significant, or a chi-squared test statistic if the
