@@ -1,13 +1,9 @@
 ---
 layout: left-menu
-title: Calendar variables
+title: Calendar variables - User-defined calendar variables
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-
-
-
-#### User-defined calendar variables
 
 
 Although a flexible tool for defining calendars is available
