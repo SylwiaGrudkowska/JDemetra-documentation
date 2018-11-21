@@ -30,10 +30,20 @@ $$,   \[7.155\]
 where:
 
 $$
-M_{j,t} = \left\{\begin{matrix}
-1\ in\ month\ j = 1,\\ldots \11 \\
+M_{j,t} =
+\left\{\begin{matrix}
+1\in\ month\ j = 1,\\ldots \11 \\
 - 1\ in\ December \\
 0\ otherwise \\
+\end{matrix} \right.\
+$$ -- dummy variables;
+
+$$
+M_{j,t} =
+\left\{\begin{matrix}
+1 & in month & j = 1,&\ldots & 11 \\
+- 1 & in & December \\
+0 & otherwise \\
 \end{matrix} \right.\
 $$ -- dummy variables;
 
@@ -60,9 +70,7 @@ variance.
 
 In the case of a quarterly series the estimated model has a form:
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------
-  $\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{3}M_{3,t} - \gamma X_{t} \right) = \mu + (1 - B)a_{t}$,   \[7.156\]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------
+$$\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{3}M_{3,t} - \gamma X_{t} \right) = \mu + (1 - B)a_{t}$$,   \[7.156\]
 
 where:
 
