@@ -19,7 +19,7 @@ itself over successive time intervals is called an autocorrelation.
 The autocorrelation coefficient at lag $k$ is defined as:
 
 $$\rho\left( k \right) = \frac{\sum_{t = k + 1}^{n}\left( x_{t} - \overline{x} \right)}{\sum_{t = 1}^{n}\left( x_{t} - \overline{x} \right)^{2}}
-$$,   \[7.159\]
+$$,   \[1\] #\[7.159\]
 
 where:
 
@@ -93,3 +93,7 @@ confidence interval, it is regarded as statistically not significant.
 Therefore, the user should focus on the values where the absolute value
 of the PACF is outside the confidence interval. In JDemetra+ the
 confidence interval is indicated by two grey, horizontal, dotted lines.
+
+[^91]: MAKRIDAKIS, S., WHEELWRIGHT, S.C., and HYNDMAN, R.J. (1998).
+
+[^92]: CHATFIELD, C. (2004). 
