@@ -70,7 +70,7 @@ Seasonal Adjustment* (2015).
 	
 	**Choosing a specification for the analysis**
 
-5.  Next, run the process by clicking the button with a green arrow.
+5.  Next, run the process by clicking the button with the green arrow.
 
 	{: .text-center.image-wrapper}
 
@@ -80,11 +80,11 @@ Seasonal Adjustment* (2015).
 
 	**Running a process**
 
-6.  The bottom panel presents the detailed results. Seasonality test
+6.  The bottom panel presents the detailed results. The seasonality test
     node presents the outcome of the seasonality tests (see 3.4.1)
     performed for the aggregated series adjusted directly (*Direct sa*)
-    and indirectly (*Indirect sa*). The reason for presenting here these
-    tests is that the presence of residual seasonality and calendar
+    and indirectly (*Indirect sa*). The reason for presenting these
+    tests here is that the presence of residual seasonality and calendar
     effects should be monitored, especially in the indirectly adjusted
     series[^3]. It might happen that the seasonality is successfully
     removed from the components but it is still present in the
@@ -98,14 +98,14 @@ Seasonal Adjustment* (2015).
 
 	**Seasonality tests' results for a direct seasonal adjustment**
 
-7.  *Differences* node presents the properties of differences between
-    direct and indirect seasonal adjustment results. The *Statistics*
+7.  The *Differences* node presents selected different results between the
+    direct and the indirect seasonal adjustment approaches. The *Statistics*
     section shows basic statistics (average, standard deviation, minimum
     and maximum) for the relative differences (%) between the direct and
     the indirect SA series. *Chart* contains the graph of the
     differences, while *Table* includes the actual values. The
     *Periodogram* section presents graphs for two spectral estimators --
-    periodogram and auto-regressive spectrum. For their description
+    the periodogram and the auto-regressive spectrum. For their description
     refer to the 3.4.2.
 
 	{: .text-center.image-wrapper}
@@ -114,10 +114,10 @@ Seasonal Adjustment* (2015).
 
 	{: .text-center.small}
 
-	**Graph presenting the differences between direct and indirect seasonal adjustment's results**
+	**Graph presenting the differences between direct and indirect seasonal adjustment results**
 
 8.  The *Details* node include the basic statistics for the relative
-    differences between benchmarked and original series and the actual
+    differences between the benchmarked and original series as well as the actual
     time series adjusted directly (*Sa series*) and indirectly
     (*Benchmarked Sa series*).
 
