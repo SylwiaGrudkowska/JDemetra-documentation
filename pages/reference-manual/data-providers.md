@@ -171,3 +171,4 @@ the data from an Excel file.
 
 	**Dataset structure**
 
+	Once the data has been successfully imported, it is available to the user for various analyses (e.g. visualization, modelling, seasonal adjustment, etc.)

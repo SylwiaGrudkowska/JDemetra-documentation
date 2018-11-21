@@ -4,10 +4,15 @@ title: Specifications
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-JDemetra+ specifications are sets of parameters and values assigned to 
+Modelling can be performed with pre-defined or user-defined specifications. 
+Specifications are sets of parameters and values assigned to 
 them that contain all information necessary for time series modelling. 
 The default critical values used by the tests included in the 
-specifications can be changed by the user in the **Tools → Options** menu. The *Specifications* node, which belongs to the *Workspace* 
+specifications can be changed by the user in the **Tools → Options** menu. 
+
+#### Pre-defined modelling specifications
+
+The *Specifications* node, which belongs to the *Workspace* 
 window, contains a set of the pre-defined specifications that enables 
 the user to model the time series using two options: the TRAMO model or 
 the RegARIMA model. The set of pre-defined modelling specifications is 
@@ -21,8 +26,6 @@ need be, to change some of the options afterwards using [the
 The default specification for TRAMO is TR5, while for RegARIMA it is 
 RG4c. 
 
-#### Pre-defined modelling specifications
-
 {: .table .table-style}
 | Settings      |Transformation   | Pre-adjustment for leap-year | Working days | Trading days | Easter effect | Outliers| ARIMA model|
 | --------------| ---------------|------------------------------|------------- |-------------|--------------|-------- |-------------|
@@ -31,7 +34,8 @@ RG4c.
 | TR2| test|no|test|no|test|test |(0,1,1)(0,1,1)|
 | TR3| test|no|test|no|no|test |AMI|
 | TR4| test|no|test|no|test|test |AMI|
-| TR5| test|no|no|test|test|test |AMI|
+| TR5| test|no|no|test|test (Standard)|test |AMI|
+| TRfull| test|yes|no|test|test (Include Easter)|test |AMI|
 | RG0| no|no|no|no|no|no |(0,1,1)(0,1,1)|
 | RG1| test|no|no|no|no|test |(0,1,1)(0,1,1)|
 | RG2c| test|test|test|no|test|test |(0,1,1)(0,1,1)|
@@ -66,8 +70,8 @@ The user may add new modelling specifications to the *Workspace* window.
 To do this, go to the *Modelling* section, right click on the *tramo* or
 *regarima* item in the *specifications* node and select *New* from the
 local menu. The default values of the parameters can be changed by the user. 
-The possible options are discribed [here](../reference-manual/modelling-spec-tramo.html) 
-for Tramo and [here](../reference-manual/modelling-spec-arima.html) for RegArima.
+The possible options are described in the [Tramo](../reference-manual/modelling-spec-tramo.html) 
+ and [RegArima](../reference-manual/modelling-spec-arima.html) subitems.
 
 {: .text-center.image-wrapper}
 

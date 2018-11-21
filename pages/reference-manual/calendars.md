@@ -19,11 +19,13 @@ example of the workspace that contains two user defined calendars.
 **The *Calendars* section with the default calendar and two user-defined calendars**
 
 JDemetra+ estimates calendar effects by adding regressors to the RegARIMA or TRAMO 
-model. The detailed procedure applied in JDemetra+ for the creation of 
+models. The detailed procedure applied in JDemetra+ for the creation of 
 these regression variables is discussed [here](../case-studies/calendars-main.html). 
-The calendars defined by the user are used for calculation of the regression variables, which are added to the equation 
-estimated by the RegARIMA or the TRAMO procedures. The list of available 
-calendars is displayed in the *Workspace* window. The user can define three different types of calendar: 
+In addition to the default calendar option, calendars defined by the user can also be used for calculation of the regression variables, which are added to the equation 
+estimated by the RegARIMA or TRAMO procedures. The list of available 
+calendars is displayed in the *Workspace* window. 
+ 
+There are three different types of calendar that the user can define:
 * [National calendars](../case-studies/calendars-national.html), identified by specific days; 
 * [Composite calendars](../case-studies/calendars-composite.html), defined as a weighted sum of several national calendars; 
 * [Chained calendars](../case-studies/calendars-chained.html), defined by two national calendars and a break date.
