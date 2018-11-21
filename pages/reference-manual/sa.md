@@ -17,3 +17,18 @@ use different approach to the decomposition, the output produced for both of the
 different structure and content. Therefore, the results for both methods are discussed separately. 
 However, in contrast to the original programs, in JDemetra+ some quality indicators have been implemented 
 for both methods, therefore their descriptions in this document are provided.
+
+This section is divided into two parts:
+
+* [Specifications](../reference-manual/sa-specifications.html), which presents parameters of the seasonal adjustment procedure.
+* [Output](../reference-manual/output.html), which explains a typical output produced by the seasonal adjustment procedure.
+
+The specifications and output for the seasonal adjustment procedure are displayed in the *Workspace* window under the *Seasonal adjustment* item.
+
+{: .text-center.image-wrapper}
+
+![Text](/assets/img/reference-manual/manual/A_Ref_d2.jpg)
+
+{: .text-center.small}
+
+**The *Workspace* window with the nodes for the seasonal adjustment procedure marked**

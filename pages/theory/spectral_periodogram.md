@@ -32,9 +32,8 @@ complex-valued components.
 The Fourier frequencies associated with the sample size $$n$$ are
 defined as a set of values $$ω_{j} = \frac{2\pi j}{n}$$,
 $$j = - \lbrack \frac{n-1}{2}\rbrack,\ldots,\lbrack\frac{n}{2}\rbrack$$,
-$$-\pi< \omega_{j} \leq \pi$$, $$j\in F_{n}$$, where
-$$\lbrack h rbrack$$ denotes the largest integer less than or
-equal to $h$. The Fourier frequencies, which are called harmonics, are
+$$-\pi< \omega_{j} \leq \pi$$, $$j\in F_{n}$$, where ${\lbrack n\rbrack}$ denotes the largest integer less than or
+equal to $n$. The Fourier frequencies, which are called harmonics, are
 given by integer multiples of the fundamental frequency
 $\ \frac{2\pi}{n}$.
 
@@ -81,7 +80,7 @@ $$
   \sum_{t=1}^{n}{\left|x_{t}\right|}^{2} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}\left|a_{j}\right|^{2} = \sum_{j = - \lbrack\frac{n - 1}{2}\rbrack}^{\lbrack\frac{n}{2}\rbrack}{I\left( \omega_{j} \right)}
 $$   \[7.106\]
 
-If $\ \mathbf{x\  \in}\ \mathbb{R}^{n}$, $\omega_{j}$ and
+If $\ \mathbf{x\  \in}\ {R}^{n}$, $\omega_{j}$ and
 $${-\omega}_{j}$$ are both in
 $$\lbrack- \pi, -\pi \rbrack$$ and $$a_{j}$$ is presented in its polar form
 (i.e.$$a_{j} = r_{j}\exp\left( i\theta_{j} \right)$$), where
@@ -93,8 +92,8 @@ rewritten in the form:
  \mathbf{x} = a_{0}\mathbf{e}_{0} + \sum_{j = 1}^{\lbrack\frac{n - 1}{2}\rbrack}{ {2^{1/2}r}_{j}{(\mathbf{c}}_{j}\cos\theta_{j}{- \mathbf{s}}_{j}\sin\theta_{j}) + a_{n/2}\mathbf{e}_{n/2}}
  $$   \[7.107\]
 
-The orthonormal basis for $$\mathbb{R}^{n}$$ is
-$$\{\mathbf{e}_{0},\mathbf{c}_{1},\mathbf{s}_{1},\ldots,\mathbf{c}_{\lbrack\frac{n - 1}{2}\rbrack},\mathbf{s}_{\lbrack\frac{n - 1}{2}\rbrack},\mathbf{e}_{\frac{n}{2}\(excluded\ if\ n\ is\ odd)}\}
+The orthonormal basis for $${R}^{n}$$ is
+$$\{\mathbf{e}_{0},\mathbf{c}_{1},\mathbf{s}_{1},\ldots,\mathbf{c}_{\lbrack\frac{n - 1}{2}\rbrack},\mathbf{s}_{\lbrack\frac{n - 1}{2}\rbrack},\mathbf{e}_{\frac{n}{2}(excluded\ if\ n\ is\ odd)}\}
 $$,
 where: 
 
@@ -155,39 +154,17 @@ corresponding to the harmonics**
 
 {: .table .table-style}
   |**Frequency**                                   |**Degrees of freedom**   |**Sum of squares decomposition**|
-  |----------------------------------------------- |------------------------       |-------------------------------------------------------------------------------------------|
-  |$\omega_{0}$(mean)                              |1                        |${a_{0}^{2}}_{\ } = n^{- 1}\left( \sum_{t=1}^{n}x_{t} \right)^{2} = I\left( 0 \right)$|
-  |$$\omega_{1}$$                                  |2                        |$${2r_{1}^{2}}_{\ } = 2{|a_{1}|}^{2} = 2I\left( \omega_{1} \right)$$|
+  |----------------------------------------------- |------------------------ |-------------------------------------------------------------|
+  |$\omega_{0}$(mean)                              |1                        |$${a_{0}^{2}}_{\ }=n^{- 1}\left( \sum_{t=1}^{n}x_{t} \right)^{2} = I\left( 0 \right)$$|
+  |$$\omega_{1}$$                                  |2                        |$${2r_{1}^{2}}_{\ } = 2{\|a_{1}\|}^{2} = 2I\left( \omega_{1} \right)$$|
   |$$\vdots$$                                      |$$\vdots$$               |$$\vdots$$|
-  |$$\omega_{k}$$                                  |2                        |$${2r_{k}^{2}}_{\ } = 2{|a_{k}|}^{2} = 2I\left( \omega_{k} \right)$$|
+  |$$\omega_{k}$$                                  |2                        |$${2r_{k}^{2}}_{\ } = 2{\|a_{k}\|}^{2} = 2I\left( \omega_{k} \right)$$|
   |$$\vdots$$                                      |$$\vdots$$               |$$\vdots$$|
   |$\omega_{n/2} = \pi$ (excluded if $n$ is odd)   |1                        |$$a_{n/2}^{2} = I\left( \pi \right)$$|
-  |**Total**                                       |$$\mathbf{n}$$           |$\sum_{\mathbf{t = 1}}^{\mathbf{n}}\mathbf{x}_{\mathbf{t}}^{\mathbf{2}}$$|
+  |**Total**                                       |$$\mathbf{n}$$           |$$\sum_{\mathbf{t = 1}}^{\mathbf{n}}\mathbf{x}_{\mathbf{t}}^{\mathbf{2}}$$|
 
 Source: DE ANTONIO, D., and PALATE, J. (2015).
 
-$$
-{a_{0}^{2}}_{\ }=n^{- 1}\left( \sum_{t=1}^{n}x_{t} \right)^{2} = I\left( 0 \right)
-$$
-
-$$
-{2r_{1}^{2}}_{\ } = 2{|a_{1}|}^{2} = 2I\left( \omega_{1} \right)
-$$
-
-$$\vdots$$
-
-$${2r_{k}^{2}}_{\ } = 2{|a_{k}|}^{2} = 2I\left( \omega_{k} \right)$$
-
-$$\vdots$$
-
-$$
-a_{n/2}^{2} = I\left( \pi \right)
-$$
-
- 
-$$
-\sum_{\mathbf{t = 1}}^{\mathbf{n}}\mathbf{x}_{\mathbf{t}}^{\mathbf{2}}
-$$
 
 
 Obviously, if series were random then each component
