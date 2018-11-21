@@ -58,7 +58,7 @@ TRAMO/SEATS and X-13ARIMA-SEATS specifications because it has been shown
 in many studies that this model is appropriate for many real monthly and 
 quarterly time series with a statistically significant seasonal pattern. 
 Moreover, the Airline model approximates well many other models and 
-provides an excellent "benchmark" model. 
+provides an excellent "benchmark" model.  
 
 #### User-defined specifications 
 
