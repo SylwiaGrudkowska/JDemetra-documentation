@@ -30,11 +30,11 @@ $$,   \[7.155\]
 where:
 
 $$
-M_{j,t} = \left\{ \begin{matrix}
+M_{j,t} = \left\{\begin{matrix}
 1\ in\ month\ j = 1,\ldots 11 \\
- - 1\ in\ December \\
+- 1\ in\ December \\
 0\ otherwise \\
-\end{matrix} \right.\ 
+\end{matrix} \right.
 $$ -- dummy variables;
 
 $y_{t}$ -- the original time series;
