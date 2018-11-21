@@ -124,18 +124,43 @@ argument.
 
     The default setting is *Default*. 
 	
+    {: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d20.jpg)
+
+    {: .text-center.small}
+
+    **The *option* menu**
 	
  - **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **holidays**<br> *regression {variables=holiday}*
  
-     List of user-defined calendars to be used to create calendar regression variables. Option is available when **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **option** is set to *Holidays*.
+    A list of user-defined calendars to be used to create calendar regression variables. Option is available when **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **option** is set to *Holidays*.
 	The user is expected click the field to expand a list a previously defined calendars and choose an appropriate item.
 	The default setting is *Default,* which implies that the default calendar is used and no country-specific holidays are 
 	considered.
+	
+    {: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d22.jpg)
+
+    {: .text-center.small}
+
+    **The list of calendars displayed under *Holidays* option corresponds to the calendars defined in the *Workspace* window**
+	
+	
  - **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **userVariables**<br> *regression {variables=}*
     
-	List of predefined regression variables to be included in the model. Option is available when **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **option** is set to *UserDefined*.
-  When the user chooses the *UserDefined* type for the trading day effect estimation, one must specify the corresponding    variables. It should be noted that [such variables must have been previously defined](..\case-studies\detailedsa-calendarvariables.html), otherwise the list in    the field **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **userVariables** is empty.
-  The default setting is *Unsused.* 
+	A list of predefined regression variables to be included in the model. Option is available when **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **option** is set to *UserDefined*.
+    When the user chooses the *UserDefined* type for the trading day effect estimation, one must specify the corresponding    variables. It should be noted that [such variables must have been previously defined](..\case-studies\detailedsa-calendarvariables.html), otherwise the list in    the field **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **userVariables** is empty.
+    The default setting is *Unsused.* 
+  
+     {: .text-center.image-wrapper}
+
+     ![Text](/assets/img/reference-manual/manual/A_Ref_d23.jpg)
+
+     {: .text-center.small}
+
+      **Assigning the user-defined variables to the RegArima model**
   
  - **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **td**<br> *regression {variables=td}* 
  
@@ -144,7 +169,15 @@ argument.
     * *TradingDays* -- includes six day-of-the-week regression variables.
     * *WorkingDays* -- includes the working/non-working day contrast variable.
 
-   The default setting is *TradingDays.*  
+   The default setting is *TradingDays.* 
+
+   {: .text-center.image-wrapper}
+
+   ![Text](/assets/img/reference-manual/manual/A_Ref_d24.jpg)
+
+   {: .text-center.small}
+
+   **The *trading days* menu**   
 
  - **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **lp**<br> *regression {variables=lp}*
  
@@ -169,6 +202,15 @@ argument.
 
     These options have no direct impact on the calendar tests themselves, but indirectly, through the definition of the       regression model, on any previous test. For instance, on rare occasions the log/level test could be affected by           add/remove on the trading day effect.
     The default setting is *Remove*. 
+	
+	{: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d25.jpg)
+
+    {: .text-center.small}
+
+   **The *test* menu **
+
     
 - **Calendar** $\rightarrow\ $ **easter** $\rightarrow\ $ **IsEnabled**<br> *regression; variables and/or aictest* 
     
@@ -212,11 +254,30 @@ argument.
   These operations enable not only AO, LS, TC, SO and RP outliers to be generated, but also sophisticated intervention variables that are well-adjusted to the particular case. No intervention variables are included in the pre-defined        specifications. They can only be added to the user-defined specifications.Intervention variables are not implemented in    X-13ARIMA-SEATS, however they can be created by the user and introduced to the model as [user-defined variables](..case-studies/detailed-calendarvariables.html).
 - **Ramp effects**<br> *regression {variables = (rp)}*
 
-   A ramp effect means a linear increase or decrease in the level of the series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series      span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html).
-  No ramps are included in the pre-defined specifications. They can only be added to the user-defined specifications.
+   A ramp effect means a linear increase or decrease in the level of the series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html).
+   No ramps are included in the pre-defined specifications. They can only be added to the user-defined specifications.
+  
+   {: .text-center.image-wrapper}
+
+   ![Text](/assets/img/reference-manual/manual/A_Ref_d16.jpg)
+
+   {: .text-center.small}
+
+   **Defining the Ramp effects**
+  
 - **User-defined variables**<br> *regression {user=}*
 
-    The user-defined variable is an external regressor included by the user in the RegARIMA model. To add a user-defined variable to the model, one must specify the corresponding variable in   the *Variables* window. First, click the *Unnamed* item and then click the *Name* field to expand a list of available     variables and choose a variable from the list. It should be noted that such variables must have been previously defined, otherwise the list is empty. The user-defined regression variable associated to a specific component should   not contain effects that have to be associated with another component. Therefore, the following rules should be obeyed:
+    The user-defined variable is an external regressor included by the user in the RegARIMA model. To add a user-defined variable to the model, one must specify the corresponding variable in   the *Variables* window. First, click the *Unnamed* item and then click the *Name* field to expand a list of available     variables and choose a variable from the list. It should be noted that such variables must have been previously defined (see instructions provided [here](../reference-manual/user-defined-variables.html)), otherwise the list is empty. 
+	
+	{: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d17.jpg)
+
+    {: .text-center.small}
+
+    **Defining the user-defined variable**
+	
+	The user-defined regression variable associated to a specific component should not contain effects that have to be associated with another component. Therefore, the following rules should be obeyed:
   * The variable assigned to the trend or to the seasonally adjusted series should not contain a seasonal pattern; 
   * The variable assigned to the seasonal should contain neither a trend nor a level (i.e. should have a zero mean); 
   * The variable assigned to the irregular should contain neither a seasonal pattern nor a trend (i.e. should have a zero mean); 
@@ -237,6 +298,7 @@ argument.
    For the user-defined variable the structure of the lags can be specified using the options *first lag* and *last lag*[^49]. When the regression variable $x_{t}$ is introduced with *first lag* = and *last lag* =, JDemetra+ includes     in the TRAMO model a set of variables $x_{t - l_{a}}$,...,$\ x_{t - l_{ b}}$ and estimates the respective regression coefficients called the impulse response weights. 
    To include only the first lag ($x_{t - 1})\ $ of the user-defined variable ($x_{t})\ $in the RegARIMA model the user      should put *first lag* = *last lag* = 1. If for a monthly series one puts *first lag* = 0 and *last lag* = 11, it means    that in addition to instantaneous effect of the user-defined variable, also the effects of 11 lagged explanatory          variables are included in the model. In this case the set of estimated coefficients, called a transfer function,          describe how the changes in $x_{t}$ that took place over a year are transferred to the dependent variable. However, the    lagged variables are often collinear so that caution is needed in attributing much meaning to each coefficient[^50].
    No user-defined variables are included in the pre-defined specifications. They can only be added to the user-defined      specifications.
+   
 - **Fixed regression coefficients**<br> *estimate; fix*
 
   For the pre-specified regression variables this option specifies the parameter estimates that will be held fixed at the values provided by the user.
@@ -244,11 +306,17 @@ argument.
   * Choose the transformation (log or none). 
   * Define some regression variables in the *Regression* section.
   * Push on the fixed regression coefficients editor button in the *User-defined variables* row.
-  * Select the regression variable from the list.
-  * Specify the coefficient's value.
+  * Select the regression variable from the list for which the coefficient will be fixed.
+  * Save the new settings with the **Done** button.
+   
+  {: .text-center.image-wrapper}
 
+  ![Text](/assets/img/reference-manual/manual/A_Ref_d18.jpg)
+
+  {: .text-center.small}
   
-  Save the new settings with the **Done** button.
+
+    **Fixing the coefficient of the user-defined variable**
    
 #### Outliers
 
@@ -262,7 +330,9 @@ model.
 - **Is enabled**<br> *outlier; --*
 
    Enables/disables the automatic detection of outliers in the span determined by the  **Detection span** option. By default, the checkbox is marked, which implies that the automatic identification of         outliers is enabled. 
-- **Detection span** $\rightarrow\ $ **type**, *outlier, span* - A span of the time series to be searched for outliers.     The available parameter's values are: 
+- **Detection span** $\rightarrow\ $ **type**, *outlier; span* 
+
+  A span of the time series to be searched for outliers. The available parameter's values are: 
   * *All* -- full time series span is considered in the modelling;
   * *From* -- date of the first time series observation included in the pre-processing model;
   * *To* -- date of the last time series observation included in the pre-processing model;
@@ -361,6 +431,14 @@ the rest of the parameters are estimated. The options available here
 correspond to the original X-13ARIMA-SEATS **arima** spec with some
 limitations. JDemetra+ does not allow for operators with missing lags.
 Also the maximum lag is reduced in comparison with Win X-13.
+
+{: .text-center.image-wrapper}
+
+![Text](/assets/img/reference-manual/manual/A_Ref_d26.jpg)
+
+{: .text-center.small}
+
+**A checkbox for switching bewteen manual and automiatic choice of teh Arima model**
 
 JDemetra+ allows the user to fix individual parameters of the ARIMA
 model at initial values while the rest of the parameters are estimated.
@@ -473,8 +551,7 @@ MA parameters.
 
 [^34]: Definitions from '*X-12-ARIMA Reference Manual'* (2011).
 
-[^35]: In the TRAMO/SEATS method this type of outlier is called
-    transitory change.
+[^35]: In the TRAMO/SEATS method this type of outlier is called transitory change.
 
 [^36]: See GÓMEZ, V., and MARAVALL, A. (1997).
 
@@ -498,54 +575,13 @@ MA parameters.
 
 [^41]: MAKRIDAKIS, S., WHEELWRIGHT, S.C., and HYNDMAN R.J. (1998).
 
-[^42]: In the original X-12-ARIMA program the length of the Easter
-    effect can range from 1 to 25 days.
-
-[^43]: Definitions from '*X-12-ARIMA Reference Manual'* (2011).
-
-[^44]: In the TRAMO/SEATS method this type of outlier is called
-    transitory change.
-
-[^45]: See GÓMEZ, V., and MARAVALL, A. (1997).
-
-[^46]: Dummy variable is the variable that takes the values 0 or 1 to
-    indicate the absence or presence of some effect.
-
-[^47]: The convention for assigning effects for user-defined regressors
-    is based on the TRAMO/SEATS solution. The original X-12-ARIMA
-    program does not provide the same functionality. The effect of
-    additional component (option \"Undefined\") is a special feature
-    introduced in the original X-12-ARIMA program and not available in
-    TRAMO/SEATS.
-
-[^48]: A typical example could be a variable that measures the weather
-    conditions: introducing them could improve the linearization;
-    however, these effects are not allocated to a specific component. On
-    the contrary, the impact of this variable will be split between all
-    components.
-
-[^49]: More details and examples can be found in MARAVALL, A. (2008).
-
-[^50]: MAKRIDAKIS, S., WHEELWRIGHT, S.C., and HYNDMAN R.J. (1998).
-
-[^51]: Cancellation issue is described in LINK.
-
 [^52]: A time series $x_{t}$ is said to have a unit root if it can be
     modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and
     $\phi_{1} = 1.$
 
 [^53]: GÓMEZ, V., and MARAVALL, A. (1997).
 
-[^55]: See LINK.
 
-[^56]: See section LINK.
-
-
-[^58]: A time series $x_{t}$ is said to have a unit root if it can be
-    modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and
-    $\phi_{1} = 1.$
-
-[^59]: GÓMEZ, V., and MARAVALL, A. (1997).
 
 
 

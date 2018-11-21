@@ -161,7 +161,7 @@ and user-defined regression variables are selected with the
 	
  -  **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**holidays**<br> *Regression variables; ireg\**
     
-	List of user-defined calendars to be used to create the calendar is available when **Calendar** $\rightarrow \ $**tradingDays**
+	A list of user-defined calendars to be used to create the calendar is available when **Calendar** $\rightarrow \ $**tradingDays**
     $\rightarrow \ $**option** is set to *Holidays*.    
     The user is expected to click the *Holidays* field to expand a list of previously defined calendars and choose an appropriate item. 
     The default setting is *Default,* which implies that the default calendar is used and no country-specific holidays are considered. 
@@ -176,10 +176,9 @@ and user-defined regression variables are selected with the
 	
  - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**userVariables**<br> *Regression variables; ireg, user,* *usertype= (\...td\...)\**
    
-   List of the pre-defined regression variables to be included in the model. Option is available when **Calendar**  $\rightarrow \ $ **tradingDays** $\rightarrow \ $**option** is set to *UserDefined*. 
-   When the user chooses the *UserDefined* type for a trading day effect estimation, one must specify the corresponding      
-   variables by clicking the field and choosing variables from the list. It should be noted that [such variables need to be   
-   already defined](../reference-manual/user-defined-variables.html), otherwise the list is empty.
+   A list of the pre-defined regression variables to be included in the model. Option is available when **Calendar**  $\rightarrow \ $ **tradingDays** $\rightarrow \ $**option** is set to *UserDefined*. 
+   When the user chooses the *UserDefined* type for a trading day effect estimation, one must specify the corresponding 
+   variables by clicking the field and choosing variables from the list. It should be noted that [such variables need to be already defined](../reference-manual/user-defined-variables.html), otherwise the list is empty.
    The default setting is *Unsused.* 
   
    {: .text-center.image-wrapper}
@@ -188,7 +187,7 @@ and user-defined regression variables are selected with the
 
    {: .text-center.small}
 
-   **Assigning the user-defined variables to the model**
+   **Assigning the user-defined variables to the Tramo model**
 
 
  - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $ **tradingDays**<br> *regression variables, itrad*
@@ -468,13 +467,13 @@ correspond to the original X-13ARIMA-SEATS **arima** spec with some
 limitations. JDemetra+ does not allow for operators with missing lags.
 Also the maximum lag is reduced in comparison with Win X-13.
 
-	{: .text-center.image-wrapper}
+{: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d19.jpg)
+![Text](/assets/img/reference-manual/manual/A_Ref_d19.jpg)
 
-    {: .text-center.small}
+{: .text-center.small}
 
-    **Option for the **
+**A checkbox for switching bewteen manual and automiatic choice of teh Arima model**
 	
 Individual parameters can be held fixed at these initial values while
 the rest of the parameters are estimated. However, users should not
@@ -536,22 +535,27 @@ polynomial with roots inside the unit circle.
 
 ##### Footnotes
 
-[^5]: The test for a log-level specification used by TRAMO is based on
-    the maximum likelihood estimation of the parameter $\lambda$ in the
-    Box-Cox transformation, which is a power transformation such that
-    the transformed values of the time series $\text{y\ }$are a
+[^5]: The test for log-level specification used by TRAMO is based
+    on the maximum likelihood estimation of the parameter $\lambda$ in
+    the Box-Cox transformations (which is a power transformation such
+    that the transformed values of the time series $\text{y }$are a
     monotonic function of the observations, i.e.
-    $y^{\alpha} = \left\{ \begin{matrix}
-    \frac{\left( y_{i}^{\alpha} - 1 \right)}{\lambda},\ \lambda \neq 0 \\
-    \log{y_{i}^{\alpha},\ \lambda = 0} \\
-    \end{matrix} \right.\ $. The program first fits two Airline models
-    (i.e. ARIMA (0,1,1)(0,1,1) with a mean) to the time series: one in
-    logs ($\lambda = 0$), other without logs ($\lambda = 1$). The test
+    
+    $$
+    y^{\alpha} = 
+    \begin{cases}
+    \frac{y_{i}^{\alpha} - 1}{\lambda}, \lambda \neq 0 \\\\
+    \log  y_{i}^{\alpha}, \lambda = 0
+    \end{cases}
+    $$
+
+    The program first fits two Airline models
+    (i.e. ARIMA (0,1,1)(0,1,1)) to the time series: one in logs
+    ($\lambda = 0$), other without logs ($\lambda = 1$). The test
     compares the sum of squares of the model without logs with the sum
-    of squares multiplied by the square of the geometric mean of the
-    (regularly and seasonally) differenced series in the case of the
-    model in logs. Logs are taken in the case this last function is the
-    minimum. GÓMEZ, V., and MARAVALL, A. (2010).
+    of squares multiplied by the square of the geometric mean in the
+    case of the model in logs. Logs are taken in the case this last
+    function is the maximum, GÓMEZ, V., and MARAVALL, A. (2009).
 
 [^6]: Definitions from '*X-12-ARIMA Reference Manual'* (2011).
 
