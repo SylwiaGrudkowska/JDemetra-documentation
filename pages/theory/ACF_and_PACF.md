@@ -35,7 +35,7 @@ representation of the ACF is called autocorrelogram.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage20.jpeg)
+![Text](/assets/img/annex/UG_A_image20.png)
 
 {: .text-center.small}
 
