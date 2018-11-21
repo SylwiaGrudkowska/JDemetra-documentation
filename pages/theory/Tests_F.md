@@ -31,14 +31,15 @@ where:
 
 $$
 M_{j,t} = \left\{\begin{matrix}
-1\ in\ month\ j = 1,\ldots \11 \\
+1\ in\ month\ j = 1,\\ldots \11 \\
 - 1\ in\ December \\
 0\ otherwise \\
 \end{matrix} \right.\
 $$ -- dummy variables;
 
  $$
- {\mathbf{e}_{j}^{*}\mathbf{e}}_{k} = n^{- 1}\sum_{r = 1}^{n}e^{ir(\omega_{j} - \omega_{k})} = \left\{ \begin{matrix}  
+ {\mathbf{e}_{j}^{*}\mathbf{e}}_{k} = n^{- 1}\sum_{r = 1}^{n}e^{ir(\omega_{j} - \omega_{k})} = 
+ \left\{ \begin{matrix}  
   1,\ if\ j = k \\                                                                                                         
   0,\ if\ j \neq k \\                                                                                                      
   \end{matrix} \right.\ 
