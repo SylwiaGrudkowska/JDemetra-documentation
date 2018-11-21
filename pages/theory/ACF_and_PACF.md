@@ -18,9 +18,8 @@ itself over successive time intervals is called an autocorrelation.
 
 The autocorrelation coefficient at lag $k$ is defined as:
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------- -----------
-  $\rho\left( k \right) = \frac{\sum_{t = k + 1}^{n}\left( x_{t} - \overline{x} \right)}{\sum_{t = 1}^{n}\left( x_{t} - \overline{x} \right)^{2}}$,   \[7.159\]
-  --------------------------------------------------------------------------------------------------------------------------------------------------- -----------
+$$\rho\left( k \right) = \frac{\sum_{t = k + 1}^{n}\left( x_{t} - \overline{x} \right)}{\sum_{t = 1}^{n}\left( x_{t} - \overline{x} \right)^{2}}
+$$,   \[1\] <!--- \[7.159\]--> 
 
 where:
 
@@ -36,7 +35,7 @@ representation of the ACF is called autocorrelogram.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage20.jpeg)
+![Text](/assets/img/annex/UG_A_image20.png)
 
 {: .text-center.small}
 
@@ -51,13 +50,14 @@ shape, for the higher-order processes the ACF maybe a mixture of damper
 exponential or sinusoidal functions which makes the order of the AR
 process difficult to identify.[^92] JDemetra+ displays the values of
 autocorrelation function for the residuals from the ARIMA model (see
-4.2.7). The ACF graph (Figure 7.9), presents autocorrelation
+section [Residuals](..\reference-manual/residuals.html)). The ACF graph (Figure above), presents autocorrelation
 coefficients and the confidence intervals. If the autocorrelation
 coefficient is in the confidence interval, it is regarded as not
 statistically significant. Therefore, the user should focus on the
-values where the value of the ACF is outside the confidence interval. In
+values where the value of the ACF is outside the confidence interval. In 
 JDemetra+ the confidence interval is indicated by two grey, horizontal,
 dotted lines.
+
 
 **Partial autocorrelation function**
 
@@ -74,20 +74,19 @@ autocorrelation for lag 1 is equivalent to autocorrelation.
 
 The partial autocorrelation function (PACF) is the set of partial
 autocorrelation coefficients $(k)$ arranged as a function
-of$\text{\ k}$. This function can be used to detect the presence of an
+of $k$. This function can be used to detect the presence of an
 autoregressive process in time series and identify the order of this
-process. Theoretically, the number of significant lags determines the
+process. Theoretically, the number of significant lags determines the 
 order of the autoregressive process.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage21.jpeg)
+![Text](/assets/img/annex/UG_A_image21.png)
 
 {: .text-center.small}
 
 **Partial autocorrelation function**
-
-The PACF graph (Figure 7.20: Partial autocorrelation function.), which
+The PACF graph (Figure above : Partial autocorrelation function.), which
 is available from the *Tools*$\  \rightarrow \ $*Differencing* menu
 presents partial autocorrelation coefficients and the confidence
 intervals. If the partial autocorrelation coefficient is in the
@@ -95,3 +94,7 @@ confidence interval, it is regarded as statistically not significant.
 Therefore, the user should focus on the values where the absolute value
 of the PACF is outside the confidence interval. In JDemetra+ the
 confidence interval is indicated by two grey, horizontal, dotted lines.
+
+[^91]: MAKRIDAKIS, S., WHEELWRIGHT, S.C., and HYNDMAN, R.J. (1998).
+
+[^92]: CHATFIELD, C. (2004). 

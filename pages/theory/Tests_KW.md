@@ -31,7 +31,7 @@ observables$\ N = n_{1} + \ldots + \ n_{g}$, thereby ignoring group
 membership. The test statistic is given by$:$
 
 
-  $$Q = \frac{\text{SS}_{t}}{\text{SS}_{e}}$$   \[7.147\]
+  $$Q = \frac{\text{SS}_{t}}{\text{SS}_{e}}$$   \[1\] <!--- \[7.147\]     -->
 
 
 The test statistic is slightly different than the Friedman statistic.
