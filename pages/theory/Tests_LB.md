@@ -30,5 +30,5 @@ to the data.
 The Ljung-Box and Box-Pierce tests sometimes fail to reject a poorly
 fitting model. Therefore, care should be taken not to accept a model on
 a basis of their results. For the description of autocorrelation concept
-see 7.9.
+see section [Autocorrelation function and partial autocorrelation function](../ACF_and_PACF.html).
 
