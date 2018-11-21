@@ -61,7 +61,7 @@ means that there is no change in seasonality over the years. This
 hypothesis is verified by the following test statistic:
 
 
-  $F_{M} = \frac{\frac{S_{B}^{2}}{(n - 1)}}{\frac{S_{R}^{2}}{(n - 1)(k - 1)}}$,   \[4\] <!---  \[7.151\]     -->
+   $$F_{M} = \frac{\frac{S_{B}^{2}}{(n - 1)}}{\frac{S_{R}^{2}}{(n - 1)(k - 1)}}$$,   \[4\] <!---   \[7.151\]     -->
 
 
 which follows an $F$-distribution with $k - 1$ and $n - k$ degrees of
