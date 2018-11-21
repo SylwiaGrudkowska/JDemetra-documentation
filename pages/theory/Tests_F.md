@@ -32,7 +32,7 @@ where:
 $$
 M_{j,t} =
 \left\{\begin{matrix}
-1\in\ month\ j = 1,\\ldots \11 \\
+1\ in \ month\ j = 1,\ \ldots \11 \\
 - 1\ in\ December \\
 0\ otherwise \\
 \end{matrix} \right.\
@@ -78,7 +78,8 @@ $$M_{j,t} = \left\{ \begin{matrix}
 1\ in\ quarter\ j = 1,\ldots 3 \\
  - 1\ in\ the\ fourth\ quarter \\
 0\ otherwise \\
-\end{matrix} \right.\ $$ -- dummy variables.
+\end{matrix} \right.\ 
+$$ -- dummy variables.
 
 One can use the individual t-statistics to assess whether seasonality
 for a given month is significant, or a chi-squared test statistic if the
@@ -91,7 +92,7 @@ $df = 11\ $(monthly series) or $df = 3$ (quarterly series). Since the
 ${Var(\widehat{\beta})}^{\ }$ computed using the estimated variance of
 $\alpha_{t}$ may be very different from the actual variance in small
 samples, this test is corrected using the proposed
-$\text{F}$statistic:
+$\text{F}$ statistic:
 
   
   $$
