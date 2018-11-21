@@ -80,7 +80,7 @@ order of the autoregressive process.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage21.jpeg)
+![Text](/assets/img/annex/UG_A_image21.png)
 
 {: .text-center.small}
 
