@@ -36,8 +36,9 @@ M_{j,t} =
 - 1 & \text{ in December}\\
 0 & \text{ otherwise}
 \end{cases}
-$$ 
--- dummy variables;
+$$
+
+dummy variables;
 
 $$
 M_{j,t} =
