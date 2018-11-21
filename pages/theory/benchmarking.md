@@ -5,8 +5,6 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-Benchmarking
-------------
 
 Benchmarking[^86] is a procedure widely used when for the same target
 variable the two or more sources of data with different frequency are
@@ -51,13 +49,13 @@ second case, the multivariate benchmarking aims for consistency between
 the seasonally adjusted aggregate and its seasonally adjusted
 components.
 
-Given a set of initial time series $\left\{ z_{i,t} \right\}_{i \in I}$,
+Given a set of initial time series $$\left\{ z_{i,t} \right\}_{i \in I}$$,
 the aim of the benchmarking procedure is to find the corresponding
-$\left\{ x_{i,t} \right\}_{i \in I}$ that respect temporal aggregation
-constraints, represented by $X_{i,T} = \sum_{t \in T}^{}x_{i,t}$ and
+$$\left\{ x_{i,t} \right\}_{i \in I}$$ that respect temporal aggregation
+constraints, represented by $$X_{i,T} = \sum_{t \in T}^{}x_{i,t}$$ and
 contemporaneous constraints given by
-$q_{k,t} = \sum_{j \in J_{k}}^{}{w_{\text{kj}}x_{j,t}}$ or, in matrix
-form: $q_{k,t} = w_{k}x_{t}$.
+$$q_{k,t} = \sum_{j \in J_{k}}^{}{w_{\text{kj}}x_{j,t}}$$ or, in matrix
+form: $$q_{k,t} = w_{k}x_{t}$$.
 
 The underlying benchmarking method implemented in JDemetra+ is an
 extension of Cholette\'s[^90] method, which generalises, amongst others,
