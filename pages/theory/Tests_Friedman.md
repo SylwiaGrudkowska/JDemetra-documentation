@@ -27,7 +27,7 @@ $i$.
 The test statistic is given by:
 
   $$Q = \frac{\text{SS}_{t}}{\text{SS}_{e}},$$   \[1\] <!--- \[7.146\] -->
-
+ 
 
 where:
 
