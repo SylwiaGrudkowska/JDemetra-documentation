@@ -100,7 +100,7 @@ description: Basics
 	**Layout options for a *Csv* format**
 
 9.  The *Content* section presents a list of series that will be
-    included into set of output files. The list of available codes is
+    included into a set of output files. The list of available codes is
     given in the *JDemetra+ Reference Manual*, section 7.7. To modify
     the initial settings click on the grey button in the *Content*
     section. The *CVS-series* window presents two panels: the panel on
@@ -125,7 +125,7 @@ description: Basics
 	-   *BySeries* – all results for a given time series are placed in one
 		sheet;
 
-	-   *ByComponent* – results are grouped by components. Each component’
+	-   *ByComponent* – results are grouped by components. Each component
 		type is saved in a separate sheet.
 
 	-   *OneSheet* – all results are saved in one sheet.
@@ -160,7 +160,7 @@ description: Basics
 	**An Excel file view for the *OneSheet* option**
 
 13. By default, the series in the Excel output files are organised
-    vertically. When the user unmark the check box the horizontal
+    vertically. When the user unmarks the check box the horizontal
     orientation is used.
 
 	{: .text-center.image-wrapper}
@@ -171,7 +171,7 @@ description: Basics
 
 	**The *VerticalOrientatio*n option**
 
-14. In case of the *TXT* format the only available options are *folder*
+14. In the case of the *TXT* format the only available options are *folder*
     (location of the file) and *series* (results included in the output
     file). The list of available codes in the *Content* section is given
     in the *JDemetra+ Reference Manual*, section 7.7.
@@ -209,8 +209,8 @@ description: Basics
 
 	**Options for the *Csv matrix* output**
 
-17. For each output format JDemetra+ informs about the status of the
-    operation. An exemplary message in presented below.
+17. For each output JDemetra+ provides information on the status of the
+    operation. An example is presented below.
 
 	{: .text-center.image-wrapper}
 
@@ -218,5 +218,5 @@ description: Basics
 
 	{: .text-center.small}
 
-	**Generating output process result**
+	**Generating output process results**
 	
