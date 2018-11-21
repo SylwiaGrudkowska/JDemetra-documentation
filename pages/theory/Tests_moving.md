@@ -66,3 +66,4 @@ hypothesis is verified by the following test statistic:
 
 which follows an $F$-distribution with $k - 1$ and $n - k$ degrees of
 freedom.
+ 
