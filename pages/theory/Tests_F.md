@@ -56,7 +56,7 @@ In the case of a quarterly series the estimated model has a form:
 $$\left( 1 - B \right)\left( y_{t} - \beta_{1}M_{1,t} - \ldots - \beta_{3}M_{3,t} - \gamma X_{t} \right) = \mu + (1 - B)a_{t}$$,   \[7.156\]
 
 where:
-
+ 
 $$
 M_{j,t} =
 \begin{cases}
