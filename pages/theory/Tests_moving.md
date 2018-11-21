@@ -11,8 +11,13 @@ Depending on the decomposition type for the Seasonal -- Irregular
 component it uses \[7.148\] (in the case of a multiplicative model) or
 \[7.149\] (in the case of an additive model):
 
-  $\left| \text{SI}_{\text{ij}} - 1 \right| = X_{\text{ij}} = b_{i} + m_{j} + e_{\text{ij}}$,   \[7.148\]
-  $\left| \text{SI}_{\text{ij}} \right| = X_{\text{ij}} = b_{i} + m_{j} + e_{\text{ij}}$,       \[7.149\]
+  $$
+  \left|\text{SI}_{\text{ij}} - 1 \right| = X_{\text{ij}} = b_{i} + m_{j} + e_{\text{ij}}
+  $$,   \[7.148\]
+  
+  $$
+  \left| \text{SI}_{\text{ij}} \right| = X_{\text{ij}} = b_{i} + m_{j} + e_{\text{ij}}
+  $$,       \[7.149\]
 
 where:
 
@@ -32,19 +37,23 @@ The test is based on the following decomposition:
 
 where:
 
-$S^{2} = \sum_{j = 1}^{k}{\sum_{i = 1}^{N}\left( {\overline{X}}_{\text{ij}} - {\overline{X}}_{\bullet \bullet} \right)^{2}}\ $--
-the total sum of squares;
+$$
+S^{2} = \sum_{j = 1}^{k}{\sum_{i = 1}^{N}\left( {\overline{X}}_{\text{ij}} - {\overline{X}}_{\bullet \bullet} \right)^{2}}\ 
+$$ --the total sum of squares;
 
-$S_{A}^{2} = N\sum_{j = 1}^{k}\left( {\overline{X}}_{\bullet j} - {\overline{X}}_{\bullet \bullet} \right)^{2}$--
-the inter-month (inter-quarter, respectively) sum of squares, which
-mainly measures the magnitude of the seasonality;
+$$
+S_{A}^{2} = N\sum_{j = 1}^{k}\left( {\overline{X}}_{\bullet j} - {\overline{X}}_{\bullet \bullet} \right)^{2}
+$$ -- the inter-month (inter-quarter, respectively) sum of squares, which
+mainly measures the magnitude of the seasonality; 
 
-$S_{B}^{2} = k\sum_{i = 1}^{N}\left( {\overline{X}}_{i \bullet} - {\overline{X}}_{\bullet \bullet} \right)^{2}$
--- the inter-year sum of squares, which mainly measures the year-to-year
-movement of seasonality;
+$$
+S_{B}^{2} = k\sum_{i = 1}^{N}\left( {\overline{X}}_{i \bullet} - {\overline{X}}_{\bullet \bullet} \right)^{2}
+$$ -- the inter-year sum of squares, which mainly measures the year-to-year
+movement of seasonality; 
 
-$S_{R}^{2} = \sum_{i = 1}^{N}{\sum_{j = 1}^{k}\left( {\overline{X}}_{\text{ij}} - {\overline{X}}_{i \bullet} - {\overline{X}}_{\bullet j} - {\overline{X}}_{\bullet \bullet} \right)^{2}}$
--- the residual sum of squares.
+$$
+S_{R}^{2} = \sum_{i = 1}^{N}{\sum_{j = 1}^{k}\left( {\overline{X}}_{\text{ij}} - {\overline{X}}_{i \bullet} - {\overline{X}}_{\bullet j} - {\overline{X}}_{\bullet \bullet} \right)^{2}}
+$$ -- the residual sum of squares.
 
 The null hypothesis $H_{0}\ $is that $b_{1} = b_{2} = ... = b_{N}$ which
 means that there is no change in seasonality over the years. This
