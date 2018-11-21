@@ -13,12 +13,14 @@ SI component. The main purpose of the combined seasonality test is to
 check whether the seasonality of the series is identifiable. For
 example, the identification of the seasonal pattern is problematic if
 the process is dominated by highly moving seasonality[^83]. The testing
-procedure is shown in Figure 7.7.
+procedure is shown in the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage18.jpeg)
+![Text](/assets/img/annex/GU_A_image18.png)
 
 {: .text-center.small}
 
 **Combined seasonality test, source: LADIRAY, D., QUENNEVILLE, B. (2001)**
+
+[^83]: DAGUM, E.B. (1987).
