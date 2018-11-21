@@ -39,7 +39,7 @@ ARIMA errors. With these models TRAMO and RegARIMA also produce
 forecasts.
 
 
-  $z_{t} = y_{t}\mathbf{\beta} + x_{t}$,   \[7.5\]
+  $z_{t} = y_{t}\mathbf{\beta} + x_{t}$,   \[1\] <!--- \[7.5\] -->
   
 
 where:
@@ -66,7 +66,7 @@ polynomial in $B$ and the stationary seasonal polynomial
 in $\text{B}^{s}$:[^4]
 
   
-  $$\phi\left( B \right) = \phi_{p}\left( B \right)\Phi_{p_{s}}\left( B^{s} \right) = (1 + \phi_{1}B + \ldots + \phi_{p}B^{p})(1 + \Phi_{1}B^{s} + \ldots + \Phi_{p_{s}}B^{p_{s}s})$$   \[7.6\]
+  $$\phi\left( B \right) = \phi_{p}\left( B \right)\Phi_{p_{s}}\left( B^{s} \right) = (1 + \phi_{1}B + \ldots + \phi_{p}B^{p})(1 + \Phi_{1}B^{s} + \ldots + \Phi_{p_{s}}B^{p_{s}s})$$  \[2\] <!--- \[7.6\] -->
   
 
 where:
@@ -86,7 +86,7 @@ polynomial in $B$ and the invertible seasonal MA polynomial
 in $\text{B}$:
 
   
-  $\theta\left( B \right) = \theta_{q}\left( B \right)\Theta_{q_{s}}\left( B^{s} \right) = (1 + \theta_{1}B + \ldots + \theta_{q}B^{q})(1 + \Theta_{1}B^{s} + \ldots + \Theta_{q_{s}}B^{q_{s}s})$,   \[7.7\]
+  $\theta\left( B \right) = \theta_{q}\left( B \right)\Theta_{q_{s}}\left( B^{s} \right) = (1 + \theta_{1}B + \ldots + \theta_{q}B^{q})(1 + \Theta_{1}B^{s} + \ldots + \Theta_{q_{s}}B^{q_{s}s})$,  \[3\]<!--- \[7.7\] -->
 
 
 where:
@@ -107,7 +107,7 @@ The polynomial $\delta\left( B \right)$ is the non-stationary AR
 polynomial in $B$ (unit roots):
 
   
-  $\delta\left( B \right) = {(1 - B)}^{d}{(1 - B^{s})}^{d_{s}}$,   \[7.8\]
+  $\delta\left( B \right) = {(1 - B)}^{d}{(1 - B^{s})}^{d_{s}}$,   \[4\]<!---\[7.8\]-->
   
 where:
 
@@ -147,7 +147,7 @@ KAISER, R., and MARAVALL, A. (1999) express the impact of the outliers
 on the observed series as:[^6]
 
   
-  $y_{t}^{*} = \sum_{j = 1}^{k}\xi_{j}\left( B \right)\omega_{j}I_{t}^{\left( \tau_{j} \right)} + y_{t}$,   \[7.9\]
+  $y_{t}^{*} = \sum_{j = 1}^{k}\xi_{j}\left( B \right)\omega_{j}I_{t}^{\left( \tau_{j} \right)} + y_{t}$,   \[5\] <!---\[7.9\]-->
  
 
 where:
@@ -192,7 +192,7 @@ by JDemetra+ without any user intervention are:
   1  \text{ for }  t = t_{0} \\\\                              
   0  \text{ for }  t \neq t_{0}                            
   \end{cases}
-  $$;               \[7.10\]           
+  $$;              \[6\] <!---\[7.10\]-->           
   
 
 -   Level shift (LS) -- a variable for a constant level shift beginning
@@ -206,7 +206,7 @@ by JDemetra+ without any user intervention are:
   -1  \text{ for }  t < t_{0} \\\\                              
   0  \text{ for }  t \geq t_{0}                            
   \end{cases}
-  $$;               \[7.11\]
+  $$;              \[7\] <!---\[7.11\]-->
                           
   
 
@@ -222,7 +222,7 @@ by JDemetra+ without any user intervention are:
   0  \text{ for }  t < t_{0} \\\\                              
   \alpha^{t - t_{0}}  \text{ for }  t \geq t_{0}                            
   \end{cases}
-  $$;               \[7.12\]
+  $$;               \[8\]<!---\[7.12\]-->
                          
   
 
@@ -241,7 +241,7 @@ by JDemetra+ without any user intervention are:
   0  \text{ for }  t < t_{0} \\\\                              
   1  \text{ for }  t \geq t_{0}, \text{$t$ same month/quarter as $t_{0}$}   \\\\                    \frac{- 1}{(s - 1)} \text{ otherwise}       
   \end{cases}
-  $$;               \[7.13\]
+  $$;               \[9\] <!---\[7.13\]-->
                              
   
 
@@ -270,7 +270,7 @@ the regression variable:
   1  \text{ for }  t_{1} \geq t \geq t_{0}   \\\\                    
   0 \text{ for } t > t_{1}       
   \end{cases}
-  $$;               \[7.14\]
+  $$;               \[10\]<!---\[7.14\]-->
                                            
   
 
@@ -288,7 +288,7 @@ $$
  -1 \text{ for } t \leq t_{0} \\\\                              
  -\frac{t - t_{0}}{t_{1} - t_{0}} - 1 \text{ for } t_{0} < t < t_{1}   \\\\    0 \text{ for } t \geq t_{1}       
   \end{cases}
-  $$;               \[7.15\]
+  $$;               \[11\] <!---\[7.15\]-->
                                              
 
 
@@ -310,7 +310,7 @@ where $s$ is frequency of the time series ($s = 12\ $for a monthly time
 series, $s = 4\ $for a quarterly time series).
 
 The structures considered by intervention variables allow for generation
-of all pre-defined outliers described by \[7.10\] -- \[7.15\], as well
+of all pre-defined outliers described by \[6\] -- \[11\], as well
 as some more sophisticated effects. An example can be a level shift
 effect reached after a sequence of damped overshootings and
 undershootings, presented in the figure below and denoted there as IV. Another
@@ -329,7 +329,7 @@ the series. It is defined as:
  0 \text{ for } t \notin j \text{ or } t \geq t_{0} \\\\    
  -1 \text{ for } t \epsilon s \text{ and } t < t_{0}       
   \end{cases}
-  $$;               \[7.16\]
+  $$;               \[12\]<!---\[7.16\]-->
                      
 
 where $j = 1,\ldots s - 1$.
@@ -422,7 +422,7 @@ outliers are detected, then a multiple regression is performed using the
 Kalman filter and the [QR algorithm](../theory/SA_lin.html#least-squares-estimation-by-means-of-the-qr-decomposition)
  to avoid (as much as possible)
 masking effects (i.e. detecting spurious outliers) and to correct for
-the bias produced in the estimators sequentially obtained[^15]. If there
+the bias produced in the estimators sequentially obtained[^3]. If there
 are outliers for which the absolute $t$-values are greater than the
 critical value, the one with the greatest absolute $t$-value is selected
 and the algorithm continues to the estimation of the ARMA model
@@ -431,7 +431,7 @@ from the final ARIMA model are checked for adequacy against the
 estimated residuals produced by the balanced model. The final model
 identified by the AMI procedure must show some improvement over the
 default model in these residual diagnostics; otherwise, the program will
-accept the default model[^17].
+accept the default model[^7].
 
 #### Automatic model identification procedure in RegARIMA
 
@@ -442,7 +442,7 @@ algorithm implementation in JDemetra+ for RegARIMA follows the TRAMO
 logic. It is very similar to the TRAMO procedure presented in the
 previous section, but contains modifications to make use of the
 X-13ARIMA-SEATS estimation procedure, which is different from the one
-that TRAMO uses[^19]. The examples of extensions that are specific to
+that TRAMO uses[^7]. The examples of extensions that are specific to
 RegARIMA only are: special treatment of the leap year effect in the
 multiplicative model, automatic detection of the length of the Easter
 effect[^20], option to reduce a series of level shifts to the temporary
@@ -473,20 +473,20 @@ The formulae for the model selection criteria used by JDemetra+ are:
 
   $$
   AIC_{N} = -2L_{N} + {2n}_{p}
-  $$                                          \[7.17\]
+  $$                                          \[13\]<!---\[7.17\]-->
   
 
 $$
 AICC_{N} = - 2L_{N} + 2n_{p}\left( 1 - \frac{n_{p} + 1}{N} \right)^{- 1}
-$$   \[7.18\]
+$$   \[14\]<!---\[7.18\]-->
 
 $$
 HQ_{N} = - 2L_{N} + 2n_{p}\text{ln(ln(N))}
-$$                         \[7.19\]
+$$                         \[15\]<!---\[7.19\]-->
 
 $$
 BIC_{N} = - 2L_{N} + n_{p}\text{logN}
-$$                           \[7.20\]
+$$                           \[16\]<!---\[7.20\]-->
 
 where:
 
@@ -522,7 +522,7 @@ $q$. The residuals $$\widehat{a}_{k}$$ from this model are used
 to provide estimates of the innovations in the ARMA model $a_{t}$:
 
   
-  $$a_{t} = X_{t} - \sum_{k = 1}^{m}{\widehat{a}_{k}X}_{t - k}$$   \[7.21\]
+  $$a_{t} = X_{t} - \sum_{k = 1}^{m}{\widehat{a}_{k}X}_{t - k}$$   \[17\]<!---\[7.21\]-->
   
 
 In the second step the parameters $p$ and $q$ of the ARMA model are
@@ -537,7 +537,7 @@ values for which $BIC_{p,q}$ is the smallest. $BIC_{p,q}$
 is defined as:
 
  
-  $$\text{BIC}_{p,q} = \log\left( \sigma_{p,q}^{2} \right) + \frac{\left( p + q \right)\log\left( n - d \right)}{n - d}$$   \[7.22\]
+  $$\text{BIC}_{p,q} = \log\left( \sigma_{p,q}^{2} \right) + \frac{\left( p + q \right)\log\left( n - d \right)}{n - d}$$   \[18\]<!---\[7.22\]-->
 
 
 where:
@@ -565,7 +565,7 @@ accurate are already available, such as when one is re-estimating a
 model with a small amount of new data added to a time series. However,
 the main reason for specifying initial parameter values is to deal with
 convergence problems that may arise in difficult estimation
-situations[^29].
+situations[^7].
 
 #### Cancellation of AR and MA factors
 
@@ -579,14 +579,14 @@ Such model causes problems with convergence of the nonlinear estimation.
 For this reason the X-13ARIMA-SEATS and TRAMO/SEATS programs deal with a
 cancellation problem by computing zeros of the AR and MA polynomials. As
 the cancellation does not need to be exact, the cancellation limit can
-be provided by the user[^30].
+be provided by the user[^7].
 
 #### Least squares estimation by means of the QR decomposition
 
 We consider the regression model:
 
 
-  $y = X\beta + \varepsilon$   \[7.23\]
+  $y = X\beta + \varepsilon$   \[19\]<!---\[7.23\]-->
   
 
 The least squares problem consists in minimizing the quantity
@@ -600,7 +600,7 @@ We have now to minimize:
 
   $$\left\| QX\beta - Qy \right\|_{2}^{2} = \left\|                                                  
   \left( \frac{R}{0} \right)                                                                                       
-  \ \beta - Qy \right\|_{2}^{2} = \left\| R\beta - a \right\|_{2}^{2} + \left\| b \right\|_{2}^{2}$$   \[7.24\]
+  \ \beta - Qy \right\|_{2}^{2} = \left\| R\beta - a \right\|_{2}^{2} + \left\| b \right\|_{2}^{2}$$   \[20\]<!---\[7.24\]-->
   
 
 where $Qy_{0\ldots x - 1} = a$ and
@@ -627,7 +627,7 @@ variables (the columns of $X$).
 [^9]: GÓMEZ, V., and MARAVALL, A. (1997).
 [^10]: Dummy variable is the variable that takes the values 0 or 1 to indicate the absence or presence of some effect.
 [^11]: GÓMEZ, V., and MARAVALL, A. (2010).
-[^12]: Parsimonious models are those which have a great deal of explanatory power using a relatively small number of parameters. Balanced models are models for which the order of the combined AR and differencing operators is equal to the order of the combined MA operator (see GÓMEZ, V., and MARAVALL, A. (1997)). A model is said to be more balanced than a competing model if the absolute difference between the total orders of the AR plus differencing and MA operators is smaller for one model than another. For description of the (hannan-rissanen-algorithm)[../theory/SA_lin.html#Hannan-Rissanen algorithm] see HANNAN, E.J., and RISSANEN, J. (1982), GÓMEZ, V., and MARAVALL, A. (2001b).
+[^12]: Parsimonious models are those which have a great deal of explanatory power using a relatively small number of parameters. Balanced models are models for which the order of the combined AR and differencing operators is equal to the order of the combined MA operator (see GÓMEZ, V., and MARAVALL, A. (1997)). A model is said to be more balanced than a competing model if the absolute difference between the total orders of the AR plus differencing and MA operators is smaller for one model than another. For description of the Hannan-Rissanen algorithm see he respective section above, a well as HANNAN, E.J., and RISSANEN, J. (1982), GÓMEZ, V., and MARAVALL, A. (2001b).
 [^15]: GÓMEZ, V., and MARAVALL, A. (2001b).
 [^16]: MARAVALL, A. (2000).
 [^17]: ‘X-13ARIMA-SEATS Reference Manual’ (2015).
