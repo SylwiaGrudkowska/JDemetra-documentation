@@ -167,4 +167,4 @@ The CSV matrix of JDemetra+ may contain:
 | $${decomposition.trendfilter}$$ | The order of the trend filter     |
 | $${decomoposition.seasfilter}$$ | The order of the seasonal filter  |
 
- 
+  
