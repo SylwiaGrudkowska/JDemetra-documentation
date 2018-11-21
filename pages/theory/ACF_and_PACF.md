@@ -50,7 +50,7 @@ shape, for the higher-order processes the ACF maybe a mixture of damper
 exponential or sinusoidal functions which makes the order of the AR
 process difficult to identify.[^92] JDemetra+ displays the values of
 autocorrelation function for the residuals from the ARIMA model (see
-section [Residuals](..\reference-manual/residuals.html). The ACF graph (Figure above), presents autocorrelation
+section [Residuals](..\reference-manual/residuals.html)). The ACF graph (Figure above), presents autocorrelation
 coefficients and the confidence intervals. If the autocorrelation
 coefficient is in the confidence interval, it is regarded as not
 statistically significant. Therefore, the user should focus on the
