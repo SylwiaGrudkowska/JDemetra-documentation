@@ -5,10 +5,10 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-This section discusses the options available for the TRAMO/SEATS
+This section discusses the options available for the TRAMO-SEATS
 specifications, which are based on the original program developed by
 Agustin Maravall and Victor Gómez. It is divided into five parts that
-correspond to the TRAMO/SEATS specification sections and are presented
+correspond to the TRAMO-SEATS specification sections and are presented
 in the order in which they are displayed in the graphical interface of
 JDemetra+.
 
@@ -18,7 +18,7 @@ JDemetra+.
 
 {: .text-center.small}
 
-**A list of the TRAMO/SEATS specification’s sections**
+**A list of the TRAMO-SEATS specification’s sections**
 
 To avoid unnecessary repetitions, click on the respective link for a description of the following sections of the TRAMO/SEATS specification:
 
@@ -56,7 +56,7 @@ structure. In this case the adjustment over the whole series may produce
 sub-optimal results mainly in the most recent period and in the initial
 parts of the series. Therefore it is reasonable to limit long time
 series to the most recent observations. The *Series* section allows
-the user to limit the span (data interval) of the data to modelled or
+the user to limit the span (data interval) of the data to be modelled or
 seasonally adjusted.
 
 ###### **Series span →  type**<br> *–; –*
@@ -84,6 +84,9 @@ By default, the checkbox is marked.
 This section includes the settings relevant for the decomposition step,
 performed by the [SEATS algorithm](../theory/SA_SEATS.html).
 
+###### **Prediction length**<br> *Seats parameters; npred*
+
+Number of forecasts used in the decomposition. Positive values correspond to the number of months while negative values correspond to the numbers of years.
 
 ###### **Approximation mode**<br> *Seats parameters; noadmiss*
 
@@ -94,7 +97,7 @@ have a non-negative spectrum for all frequencies has failed. In such cases an ap
 choose an acceptable ARIMA model. The available actions that can be performed in the case of a non-admissible 
 decomposition are:
 
-- *None* – when the model does not accept an admissible decomposition, no approximation is made, which means that no decomposition is performed by SEATS
+- *None* – when the model does not accept an admissible decomposition, no approximation is made, which means that no decomposition is performed by SEATS.
 - *Legacy* – when the model does not accept an admissible decomposition, it is automatically replaced with a decomposable one. The forecasts of the components obtained from SEATS with a new ARIMA model (sum of the components forecasts) will not add to the series forecast of the model passed by TRAMO.
 - *Noisy* – a new ARIMA model is obtained by adding a white noise to the non-admissible model estimated by TRAMO. In this case, the forecasts of the series from TRAMO and from SEATS are the same; also the sum of the components forecasts is the same as the forecast of the series with the TRAMO model.
 
@@ -129,7 +132,7 @@ Options:
 - *KalmanSmoother* – the most robust algorithm. It is not disturbed by (quasi-) unit roots in MA. It is slightly slower than the Burman's algorithm[^1]. It should also be noted that it provides exact measures of the standard errors of the estimates (identical to the McElroy's results).
 - *McElroyMatrix* – the algorithm, which is much slower than the two other options and presents the same stability issues as the Burman's algorithm. However, it provides additional results (full covariance matrix of the estimates) that may be useful.
 
-The default setting is Burman.
+The default setting is *Burman*.
 
 
 #### Benchmarking
@@ -163,8 +166,6 @@ The value of the AR(1) parameter (set between 0 and 1). The default value of 1 i
 
 A parameter that relates to the weights in the regression equation; it is typically equal to 0, 1/2 or 1. A parameter equal to 1 (default value) makes the method equivalent to the multiplicative benchmarking, while a parameter equal to 0 makes the method equivalent to the additive benchmarking.
 
-
-##### Footnotes
 
 [^1]: The disturbance filter of Koopman is nearly as fast as the Burman’s solution. However, it does not provide the standard deviations of the estimates.
 

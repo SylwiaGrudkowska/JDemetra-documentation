@@ -5,7 +5,6 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-
 The X-13ARIMA-SEATS method consists of two linked parts: the RegARIMA
 model and the decomposition step that can be performed using the X-11
 algorithm or the SEATS program. The results from the RegARIMA model,
