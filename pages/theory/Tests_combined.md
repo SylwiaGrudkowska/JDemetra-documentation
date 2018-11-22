@@ -2,7 +2,7 @@
 layout: left-menu
 title: Combined seasonality test
 tagline: technical documentation for JDemetra+ using GitHub Pages
-description: Basics
+description: Basics 
 ---
 
 This test combines the Kruskal-Wallis test along with test for the
