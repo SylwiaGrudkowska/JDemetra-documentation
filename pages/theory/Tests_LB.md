@@ -19,7 +19,7 @@ residuals $${\widehat{a}}_{t}$$.
 
 $n$ is the number of terms in differenced series;
 
-$K$ is the maximum lag being considered, set in JDemetra+ to $24$
+$$K$$ is the maximum lag being considered, set in JDemetra+ to $24$
 (monthly series) or $8$ (quarterly series).
 
 If the residuals are random (which is the case for residuals from a well
