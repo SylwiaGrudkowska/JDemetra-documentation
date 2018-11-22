@@ -561,7 +561,7 @@ series illustrated above is shown on the figure below: WK filters for components
 The WK filter from \[24\] <!---\[7.48\]--> can also be expressed as a ratio of two
 pseudo-autocovariance generating functions (p-ACGF). The p-ACGF function
 summarizes the sequence of absolutely summable autocovariances of a
-stationary process $x_{t}$ (see section  [Spectral Analisys] (..\spectral.html)).
+stationary process $x_{t}$ (see section  section  [Spectral Analysis] (..\theory\spectral.html)).
 
 The ACGF function of an ARIMA process is expressed as:
 
