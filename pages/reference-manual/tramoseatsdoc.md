@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: TramoSeats menu
+title: TramoSeatsDoc menu
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---

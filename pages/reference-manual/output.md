@@ -87,8 +87,8 @@ in the *Workspace\_\#number* tree.
 All documents are added to the relevant part of the *Workspace* window.
 Once [the workspace is saved](../reference-manual/file.html) all the documents defined for this
 workspace are saved as well. The user may then investigate the saved
-results of the seasonal adjustment and update [the documents for a single time series](../simplesa-single.html) 
-and [the documents for a dataset](../simplesa-muliple.html). 
+results of the seasonal adjustment and update the documents created for a adjustment of a single time series with TRAMO-SEATS [see **Refresh data** option for the *TramoSeatsDoc* menu](../reference-manual/tramoseatsdoc.html),
+with X-13ARIMA-SEATS [see **Refresh data** option for the *X13Doc* menu](../reference-manual/x-13doc.html) and [the documents for a dataset](../case-studies/revision.html). 
 
 {: .text-center.image-wrapper}
 
@@ -158,7 +158,7 @@ content of the section using the vertical scrollbar.
 **The seasonal adjustment results**
 
 The structure and the content of the output presented in the [*Input*](../reference-manual/input.html) and
-[*Pre-processing*](../model-generalities.html) nodes is the same for both seasonal adjustment methods. The content of the
+[*Pre-processing*](../reference-manual/model-generalities.html) nodes is the same for both seasonal adjustment methods. The content of the
 other nodes depends on the decomposition method. As both methods vary
 substantially in their approach to the decomposition, the description of
 the output is presented separately for both methods.

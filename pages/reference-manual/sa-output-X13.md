@@ -8,14 +8,14 @@ description: Basics
 The X-13ARIMA-SEATS method consists of two linked parts: the RegARIMA
 model and the decomposition step that can be performed using the X-11
 algorithm or the SEATS program. The results from the RegARIMA model,
-which are displayed under the [Output from a modelling procedure](../reference-manual/output-modelling.html)section. 
+which are displayed under the [Output from a modelling procedure](../reference-manual/output-modelling.html) section. 
 The output from the decomposition step is presented in the three
 nodes: [*Decomposition*](../reference-manual/sa-output-tramo.html#decomposition), 
 [*Benchmarking*](../reference-manual/sa-output-tramo.html#benchmarking) 
 and [*Diagnostics*](../reference-manual/sa-output-tramo.html#diagnostic). 
-The majority of indicators displayed in the *Diagnostics* is shared with TRAMO/SEATS. 
+The majority of indicators displayed in the *Diagnostics* are shared with TRAMO-SEATS. 
 For the *Main results* node only one section is different from
-the output produced by TRAMO/SEATS. This section focuses on the nodes
+the output produced by TRAMO-SEATS. This section focuses on the nodes
 that are not handled elsewhere, i.e. the output produced by X-11.
 Therefore the sections that are explained here are *Decomposition* and
 some parts of the *Main results* and *Diagnostics* sections. Their
