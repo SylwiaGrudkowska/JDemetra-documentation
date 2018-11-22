@@ -14,12 +14,12 @@ available at the time of the diagnostic analysis (*the* *most recent*
 
 In the case of the multiplicative decomposition the revision history of
 the seasonal adjustment from time $N_{0}\ $to $N_{1}$ is a sequence of
-$R_{t|N}^{A}$ calculated in a following way [^157]:
+$R_{t|N}^{A}$ calculated in the following way :
 
 
   $$
   R_{t|N}^{A} = 100 \times \frac{A_{t|N} - A_{t|t}}{A_{t|t}}
-  $$   \[7.126\]
+  $$   \[1\] <!---\[7.126\]      -->
   
 
 The revision history of the trend is computed in the same manner.
@@ -31,15 +31,15 @@ are calculated as:
  
   $$
   R_{t|N}^{A} = A_{t|N} - A_{t|t}
-  $$   \[7.127\]
+  $$   \[2\] <!---\[7.158\]      --> 
  
 
-> The analogous expression for the trend component is:
+The analogous expression for the trend component is:
 
 
   $$
   R_{t|N}^{T} = T_{t|N} - T_{t|t}
-  $$   \[7.128\]
+  $$   \[3\] <!---\[7.128\]      -->
 
 
 Revision in the period-to-period (month-on-month or quarter-to-quarter)
@@ -49,12 +49,10 @@ series $y_{1},y_{2},\ldots y_{n}$ is defined as:
   
   $$
   R_{t}^{A} = C_{t|N} - C_{t|t}
-  $$   \[7.129\]
+  $$   \[4\] <!---\[7.129\]      -->
  
 
-where $$
-\text{C}_{t|n}^{A} = \frac{A_{t|n} - A_{t - 1|n}}{A_{t - 1|n}}
-$$.
+where $$\text{C}_{t|n}^{A} = \frac{A_{t|n} - A_{t - 1|n}}{A_{t - 1|n}}$$.
 
 Revisions for the period-to-period changes in the trend component are
 computed in the same manner.
