@@ -14,7 +14,7 @@ available at the time of the diagnostic analysis (*the* *most recent*
 
 In the case of the multiplicative decomposition the revision history of
 the seasonal adjustment from time $N_{0}\ $to $N_{1}$ is a sequence of
-$R_{t|N}^{A}$ calculated in a following way :
+$R_{t|N}^{A}$ calculated in the following way :
 
 
   $$
