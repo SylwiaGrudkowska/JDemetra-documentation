@@ -17,7 +17,9 @@ spectrum estimation. It is based on the approximation of the stochastic
 process $\left\(x_{t}\right\)$ by an autoregressive process of
 sufficiently high order $p$:
 
-  $$x_{t} = \mu + \left( \phi_{1}B + \ldots + \phi_{p}B^{p} \right)x_{t} + \varepsilon_{t}$$   \[7.118\]
+  $$
+  x_{t} = \mu + \left( \phi_{1}B + \ldots + \phi_{p}B^{p} \right)x_{t} + \varepsilon_{t}
+  $$   \[1\] <!---\[7.118\]      -->
 
 where $\varepsilon_{t}$ is a white-noise variable with mean zero and a
 constant variance.
@@ -27,7 +29,7 @@ as: [^76]
 
  $$
  \widehat{s}\left( \omega \right) = 10\operatorname{\times}{\log_{10}\frac{\sigma_{x}^{2}}{2\pi{|1 - \sum_{k = 1}^{p}{\widehat{\phi}}_{k}e^{- ik\omega}|}^{2}}}
- $$   \[7.119\]
+ $$ \[2\] <!---\[7.119\]      --> 
 
 where:
 
@@ -82,3 +84,10 @@ SOUKUP, R.J., and FINDLEY, D.F. (1999) also explain that the periodogram
 can be used in the *visual significance* test as it has as good as those
 of the AR(30) spectrum abilities to detect trading day effect, but also
 has a greater false alarm rate[^77].
+
+[^76]: Definition from '*X-12-ARIMA Reference Manual*' (2011).
+
+[^77]: The false alarm rate is defined as the fraction of the 50
+    replicates for which a visually significant spectral peak occurred
+    at one of the trading day frequencies being considered in the
+    designated output spectra (SOUKUP, R.J., and FINDLEY, D.F. (1999)).
