@@ -89,5 +89,5 @@ time series frequency (12 for a monthly series, 4 for a quarterly
 series) and $k$ is the total number of regressors in the RegARIMA model
 (including the seasonal dummies $\text{M}_{j,t}$ and the intercept).
 
-This statistic follows a $F_{s - 1,n - d - k}$ distribution under the
+This statistic follows a $$F_{s - 1,n - d - k}$$ distribution under the
 null hypothesis.
