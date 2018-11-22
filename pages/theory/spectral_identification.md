@@ -92,5 +92,5 @@ frequencies highlighted**
 This implies that it may be hard to disentangle both effects using the
 frequency domain techniques.
 
-[^85]: For definition of the periodogram and Fourier frequencies see section  [Spectral Analisys](..\spectral.html)
+[^85]: For definition of the periodogram and Fourier frequencies see section [Spectral Analisys](..\spectral.html)
  
