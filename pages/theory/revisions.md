@@ -52,7 +52,9 @@ series $y_{1},y_{2},\ldots y_{n}$ is defined as:
   $$   \[4\] <!---\[7.129\]      -->
  
 
-where $$\text{C}_{t|n}^{A} = \frac{A_{t|n} - A_{t - 1|n}}{A_{t - 1|n}}$$.
+where $$
+\text{C}_{t|n}^{A} = \frac{A_{t|n} - A_{t - 1|n}}{A_{t - 1|n}}
+$$.
 
 Revisions for the period-to-period changes in the trend component are
 computed in the same manner.
