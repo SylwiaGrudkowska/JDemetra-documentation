@@ -5,28 +5,28 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-This scenario is designed for advanced users for an in-depth analysis of
+This scenario is designed for advanced users interested in an in-depth analysis of
 time series in the frequency domain using three spectral graphs. Those
 graphs can also be used as a complementary analysis to have a better
 understanding of the results obtained with some of the tests described
 above.
 
 Economic time series are usually presented in a time domain (X-axis).
-However, for the analytical purposes it is convenient to convert the
+However, for analytical purposes it is convenient to convert the
 series to a frequency domain due to the fact that any stationary time
 series can be expressed as a combination of cosine (or sine) functions.
 These functions are characterized with different periods (amount of time
 to complete a full cycle) and amplitudes (maximum/minimum value during
 the cycle).
 
-The tool used for the analysis of time series in a frequency domain is
+The tool used for the analysis of a time series in a frequency domain is
 called a spectrum. The peaks in the spectrum indicate the presence of
-cyclical movements with periodicity between two months and one year. The
-series, which is thought seasonal, should have peaks at the seasonal
-frequencies. Calendar adjusted data are not expected have peak at a
+cyclical movements with periodicity between two months and one year. A seasonal
+series should have peaks at the seasonal
+frequencies. Calendar adjusted data are not expected to have peak at with a
 calendar frequency.
 
-The periodicity of phenomenon at frequency *f* is $\frac{2\pi}{f}$. It
+The periodicity of the phenomenon at frequency *f* is $\frac{2\pi}{f}$. It
 means that for a monthly time series the seasonal frequencies
 $\frac{\pi}{6},\ \frac{\pi}{3},\ \frac{\pi}{2},\ \frac{2\pi}{3},\ \frac{5\pi}{6}\ $
 and $\pi$ correspond to 1, 2, 3, 4, 5 and 6 cycles per year. For
@@ -35,7 +35,7 @@ months (2 cycles per year are completed). For the quarterly series there
 are two seasonal frequencies: $\frac{\pi}{2}$ (one cycle per year) and
 $\pi$ (two cycles per year). A peak at the zero frequency always
 corresponds to the trend component of the series. Seasonal frequencies
-are marked as grey vertical lines, while violet lines represent the
+are marked as grey vertical lines, while violet vertical lines represent the
 trading-days frequencies. The trading day frequency is 0.348 and derives
 from the fact that a daily component which repeats every seven days goes
 through 4.348 cycles in a month of average length 30.4375 days. It is
@@ -102,7 +102,7 @@ graph by the peaks on the seasonal frequencies.
 
 	-   **Log** - a log transformation of a time series;
 
-	-   *Differencing* - transforms a data by calculating a regular (order
+	-   **Differencing** - transforms a data by calculating a regular (order
 		1,2..) or seasonal (order 4, 12, depending on the time series
 		frequency) differences;
 
@@ -128,7 +128,7 @@ graph by the peaks on the seasonal frequencies.
 4. The seasonality test described above uses an empirical criterion to
     check whether the series has a seasonal component that is
     predictable (stable) enough that it can be estimated with reasonable
-    success. The peak has to be greater than median of the 61 spectrum
+    success. The peak has to be greater than the median of the 61 spectrum
     ordinates and has to exceed the two adjacent spectral values by more
     than a critical value. When such a case is detected, the test
     results are displayed in green. For a detailed description of an
@@ -145,7 +145,7 @@ graph by the peaks on the seasonal frequencies.
 
 5. The second spectral graph is a periodogram. To perform the analysis 
 of a single time series using this tool, choose *Tools* →*Spectral 
-analysis* → *Periodogram* and drag and drop series from the 
+analysis* → *Periodogram* and drag and drop a series from the 
 *Providers* window to the empty *Periodogram* window. 
 
 	{: .text-center.image-wrapper}
@@ -160,11 +160,11 @@ analysis* → *Periodogram* and drag and drop series from the
 
 	-   **Log** - a log transformation of a time series;
 
-	-   **Differencing** - transforms a data by calculating regular (order 1,2..) or seasonal (order 4, 12, depending on the time series frequency) differences;
+	-   **Differencing** - transforms the data by calculating regular (order 1,2..) or seasonal (order 4, 12, depending on the time series frequency) differences;
 
 	-   **Differencing lag** - the number of lags that you will use to take differences. For example, if *Differencing lag = 3* then the differencing filter does not apply to the first lag (default) but to the third lag.
 
-	-   **Last years** - a number of years at the end of the time series taken to produce periodogram. By default it is 0, which means that the whole time series is considered.
+	-   **Last years** - the number of years at the end of the time series taken to produce periodogram. By default it is 0, which means that the whole time series is considered.
 			
 	{: .text-center.image-wrapper}
 
@@ -174,7 +174,7 @@ analysis* → *Periodogram* and drag and drop series from the
 
 	**Periodogram's properties**
 
-6.  The periodogram is one of the earliest tools used for the analysis
+7.  The periodogram was one of the earliest tools used for the analysis
     of time series in the frequency domain. It enables the user to
     identify the dominant periods (or frequencies) of a time series.
     In general, the periodogram is a wildly fluctuating estimate of
@@ -191,7 +191,7 @@ analysis* → *Periodogram* and drag and drop series from the
 
 	**An example of a periodogram**
 
-7.  The third spectral graph is a Tukey spectrum. To perform the
+8.  The third spectral graph is the Tukey spectrum. To perform the
     analysis of time series using this tool, choose *Tools* → *Spectral
     analysis* → *Tukey spectrum* and drag and drop a single series from
     the *Providers* window to the empty *Periodogram* window*.*
@@ -204,8 +204,7 @@ analysis* → *Periodogram* and drag and drop series from the
 
 	**Launching a Tukey spectrum**
 
-8.  The Tukey spectrum estimates the spectral density by smoothing the
-    > periodogram.
+9.  The Tukey spectrum estimates the spectral density by smoothing the periodogram.
 	
 	{: .text-center.image-wrapper}
 
@@ -215,13 +214,13 @@ analysis* → *Periodogram* and drag and drop series from the
 
 	**An example of a Tukey spectrum**
 
-9.  The options for the Tuckey window can be specified by opening the
+10. The options for the Tuckey window can be specified by opening the
     *Window* → *Properties* from the main menu. The *Periodogram -
     Properties* window contains the following options:
 
 	-   **Log** - a log transformation of a time series.
 
-	-   **Differencing** - transforms a data by calculating regular (order 1,
+	-   **Differencing** - transforms the data by calculating regular (order 1,
 		 2..) or seasonal (order 4, 12, depending on the time series
 		frequency) differences.
 
@@ -235,7 +234,7 @@ analysis* → *Periodogram* and drag and drop series from the
 		applied to the auto-covariance function.
 
 	-   **Window length** -- the size of the window that is used to smooth the
-		auto-covariance function. The value zero considers the whole
+		auto-covariance function. A value of zero includes the whole
 		series.
 
 	-   **Window type** -- it refers to the weighting scheme that it is used

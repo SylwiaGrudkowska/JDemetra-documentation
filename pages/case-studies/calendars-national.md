@@ -31,7 +31,7 @@ description: Basics
 		specific week of the specific month;
 
 	-   **Special Day** -- enables to choose a holiday from the list of
-		pre-defined holidays, which includes the commonly used moving and
+		pre-defined holidays, which includes commonly used moving and
 		constant holidays.
 		
 
@@ -56,10 +56,10 @@ description: Basics
 
 	{: .text-center.small}
 
-	**A long term mean correction**
+	**The long term mean correction**
 
-3.  When the user wants to include Easter, which date derives from the
-    Julian calendar, the *Julian Easter* checkbox should be marked. By
+3.  When the user wants to include an Easter effect based on the
+    Julian calendar then the *Julian Easter* checkbox should be marked. By
     default, the checkbox is unmarked.
 
 	{: .text-center.image-wrapper}
@@ -68,7 +68,7 @@ description: Basics
 
 	{: .text-center.small}
 
-	**A *Julian Easter* option**
+	**The *Julian Easter* option**
 
 4.  The holidays that are celebrated in many European countries and in
     the USA are included in the *Special days* list. Their definitions
@@ -104,18 +104,18 @@ description: Basics
 
 	**Adding a pre-defined holiday to the calendar**
 
-5.  By default, when *Special Days* option is selected, JDemetra+ always
+5.  By default, when the *Special Days* option is selected, JDemetra+ always
     adds *Christmas* to the list of selected holidays. The user can
     change this initial choice by specifying the settings in the panel
     on the right and clicking *OK*. The settings that can be changed
     include:
 
 	-   **Start** -- the start date of the holiday. The default is the start
-		date of the calendar (empty cell). Date specified by the user should
+		date of the calendar (empty cell). The date specified by the user should
 		be entered in the format *yyyy-mm-dd*.
 
 	-   **End** -- the end date of the holiday. The default is the end date of
-		the calendar (empty cell). Date specified by the user should be
+		the calendar (empty cell). The date specified by the user should be
 		entered in the format *yyyy-mm-dd*.
 
 	-   **Weight** -- specifies the impact of the holiday on the series. The
@@ -145,16 +145,16 @@ description: Basics
 
 6.  To define a fixed holiday, which is not included in the list of
     pre-defined holidays, choose *Fixed* from the *Special days* list.
-    By default, JDemetra+ always displays here 1st of January. The user
+    By default, JDemetra+ always displays January, 1 here. The user
     can change this initial choice by specifying the settings in the
     panel on the right. These settings include:
 
 	-   **Start** -- the start date of the holiday. The default is the start
-		date of the calendar (empty cell). Date specified by the user should
+		date of the calendar (empty cell). The date specified by the user should
 		be entered in the format *yyyy-mm-dd*.
 
 	-   **End** -- the end date of the holiday. The default is the end date of
-		the calendar (empty cell). Date specified by the user should be
+		the calendar (empty cell). The date specified by the user should be
 		entered in the format *yyyy-mm-dd*.
 
 	-   **Weight** -- specifies the impact of the holiday on the series. The
@@ -177,10 +177,10 @@ description: Basics
 	
 	**Options for a fixed holiday**
 
-7.  The example below shows how to define an *Epiphany*, which is a
-    holiday celebrated in Poland from 2011 onwards. To modify the values
-    of the parameters click on the appropriate cell and insert values
-    (*Start*, *End*, *Weight*, *Day*) or choose an item from the list
+7.  The example below shows how to define the *Epiphany* holiday, which has been
+    celebrated in Poland from 2011 onwards. To modify the values
+    of the parameters click on the appropriate cell and insert values for
+    *Start*, *End*, *Weight*, *Day* and choose an item from the list
     (*Month*). JDemetra+ signals if the parameter value is allowed
     (parameter displayed in green) or not (parameter displayed in red).
 
@@ -194,9 +194,9 @@ description: Basics
 
 8.  Most events connected with Easter are included in the special day
     list of the pre-defined holidays. The list of pre-defined holidays
-    does not include Corpus Christi, which is a moving holiday
+    does not however include Corpus Christi, which is a moving holiday
     celebrated in some countries 60 days after Easter. To add this
-    holiday or other Easter related event to the calendar, choose
+    holiday or other Easter related events to the calendar, choose the
     *Easter related* item from the *Special days* list.
 
 	{: .text-center.image-wrapper}
@@ -208,17 +208,17 @@ description: Basics
 	**Defining an Easter related holiday**
 
 9.  To define an *Easter related* holiday, which is not included in the
-    list of pre-defined holidays, choose *Easter related* item from the
-    *Special days* list. By default JDemetra+ always displays here
-    *Easter + 1*. The user can change this initial choice by specifying
+    list of pre-defined holidays, choose the *Easter related* item from the
+    *Special days* list. By default JDemetra+ always displays
+    *Easter + 1* here. The user can change this initial choice by specifying
     the settings in the panel on the right. These settings include:
 
 	-   **Start** -- the start date of the holiday. The default is the start
-		date of the calendar (empty cell). Date specified by the user should
+		date of the calendar (empty cell). The date specified by the user should
 		be entered in the format *yyyy-mm-dd*.
 
 	-   **End** -- the end date of the holiday. The default is the end date of
-		the calendar (empty cell). Date specified by the user should be
+		the calendar (empty cell). The date specified by the user should be
 		entered in the format *yyyy-mm-dd*.
 
 	-   **Weight** -- specifies the impact of the holiday on the series. The
@@ -266,11 +266,11 @@ description: Basics
 11. For a fixed week, the following parameters should be entered:
 
 	-   **Start** -- the start date of the holiday. The default is the start
-		date of the calendar (empty cell). Date specified by the user should
+		date of the calendar (empty cell). The date specified by the user should
 		be entered in the format *yyyy-mm-dd*.
 
 	-   **End** -- the end date of the holiday. The default is the end date of
-		the calendar (empty cell). Date specified by the user should be
+		the calendar (empty cell). The date specified by the user should be
 		entered in the format *yyyy-mm-dd*.
 
 	-   **Weight** -- specifies the impact of the holiday on the series. The
@@ -321,7 +321,7 @@ description: Basics
 
 	{: .text-center.small}
 
-	**A no-name calendar**
+	**A calendar without a name**
 
 14. The final view of the properly defined calendar for Poland is
     presented below. Click *OK* to save the calendar.
@@ -336,5 +336,5 @@ description: Basics
 
 15. The calendar is visible in the *Workspace* window. To display the
     available options right-click on it. The national calendar can be
-    edited, duplicated (to create another calendar) deleted and analysed
-    (double click to display it in the panel on the right).
+    edited, duplicated (to create another calendar) and/or analysed
+    (double click to display it in the panel on the right) or deleted.

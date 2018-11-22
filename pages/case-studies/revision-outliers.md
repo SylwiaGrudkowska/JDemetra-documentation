@@ -6,8 +6,8 @@ description: Basics
 ---
 The *Partial concurrent adjustment → Estimate regression coefficient +
 outliers* option means that the ARIMA model and regression parameters,
-except from the parameters for the outliers, are not re-identified. The
-parameters of these variables are re-estimated. All outliers are
+except outliers, are not re-identified. The
+parameters of these variables, however, are re-estimated. All outliers are
 re-identified, i.e. the previous outcome of the outlier detection
 procedure is not taken into account and all outliers are identified and
 estimated once again. The transformation type remains unchanged.

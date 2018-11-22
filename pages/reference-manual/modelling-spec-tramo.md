@@ -62,7 +62,7 @@ The *Transformation* section is used to transform the series prior to estimating
 
 **Function**<br> *Transformation; lam*
 
-Transformation of data. The user can choose between: 
+Transformation of data[^5]. The user can choose between: 
   * *None* – no transformation of data;
   * *Auto* – the program tests for the log-level specification. This option is recommended for an automatic modelling of many series.
   * *Log* – takes logs of data.
@@ -84,7 +84,17 @@ and user-defined regression variables are selected with the
 
 * **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **automatic**<br> *Trading day; itrad\**
  
-  Determines the manner in which the calendar effects are entered in the TRAMO model. It can be done in 
+  This option is available when the **Option** parameter is set to *Default*.
+  
+   {: .text-center.image-wrapper}
+
+   ![Text](/assets/img/reference-manual/manual/A_Ref_d9.jpg)
+
+   {: .text-center.small}
+
+   **The *Trading days* section of the specifcation**
+   
+  The **Automatic** option determines the manner in which the calendar effects are entered in the TRAMO model. It can be done in 
   two ways: automatically (on a basis of the specified test) or manually. The calendar effects that are 
   considered here are: trading day, working day and leap year effects. The significance of the Easter effect 
   is considered in the subsequent part of this section.   
@@ -100,12 +110,28 @@ and user-defined regression variables are selected with the
       The P-value computed on the preferred model must be higher than **Pftd** (see **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $**Pftd**). 
 
     The default setting is *Unused*.  
+	
+	{: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d10.jpg)
+
+    {: .text-center.small}
+
+    **The *Automatic* section menu**
     
  -  **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $ **Pftd**<br> *Trading day; pftd*
  
     P-Value applied in the test specified by the **automatic** parameter to assess the significance of the pre-tested calendar effects 
     and to decide if the calendar effects are included in the TRAMO model. The **Pftd** option is displayed when **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **automatic** is set to *FTest* or *WaldTest*. 
     The default **Pftd** setting is 0.01.
+	
+	{: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d11.jpg)
+
+    {: .text-center.small}
+
+    **The *Pftd* option**
 
 - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $ **option**<br> *Trading day; itrad\**
     
@@ -122,23 +148,47 @@ and user-defined regression variables are selected with the
    * *UserDefined* -- used when the user wants to specify his own trading day variables. With this option the 
      calendar effects are captured only by the regression variables chosen by the user from the previously 
      created list of the [user-defined variables](../reference-manual/user-defined-variables.html).
+   
+     The default setting is *Default*. 
+	 
+	{: .text-center.image-wrapper}
 
-   The default setting is *Default*. 
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d12.jpg)
 
+    {: .text-center.small}
+
+    **The *option* menu**
+	
  -  **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**holidays**<br> *Regression variables; ireg\**
     
-	List of user-defined calendars to be used to create the calendar is available when **Calendar** $\rightarrow \ $**tradingDays**
+	A list of user-defined calendars to be used to create the calendar is available when **Calendar** $\rightarrow \ $**tradingDays**
     $\rightarrow \ $**option** is set to *Holidays*.    
     The user is expected to click the *Holidays* field to expand a list of previously defined calendars and choose an appropriate item. 
     The default setting is *Default,* which implies that the default calendar is used and no country-specific holidays are considered. 
 
+    {: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d13.jpg)
+
+    {: .text-center.small}
+
+    **The list of calendars displayed under *Holidays* option corresponds to the calendars defined in the *Workspace* window**
+	
  - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**userVariables**<br> *Regression variables; ireg, user,* *usertype= (\...td\...)\**
    
-   List of the pre-defined regression variables to be included in the model. Option is available when **Calendar**  $\rightarrow \ $ **tradingDays** $\rightarrow \ $**option** is set to *UserDefined*. 
-   When the user chooses the *UserDefined* type for a trading day effect estimation, one must specify the corresponding      
-   variables by clicking the field and choosing variables from the list. It should be noted that [such variables need to be   
-   already defined](../reference-manual/user-defined-variables.html), otherwise the list is empty.
-  The default setting is *Unsused.* 
+   A list of the pre-defined regression variables to be included in the model. Option is available when **Calendar**  $\rightarrow \ $ **tradingDays** $\rightarrow \ $**option** is set to *UserDefined*. 
+   When the user chooses the *UserDefined* type for a trading day effect estimation, one must specify the corresponding 
+   variables by clicking the field and choosing variables from the list. It should be noted that [such variables need to be already defined](../reference-manual/user-defined-variables.html), otherwise the list is empty.
+   The default setting is *Unsused.* 
+  
+   {: .text-center.image-wrapper}
+
+   ![Text](/assets/img/reference-manual/manual/A_Ref_d8.jpg)
+
+   {: .text-center.small}
+
+   **Assigning the user-defined variables to the Tramo model**
+
 
  - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $ **tradingDays**<br> *regression variables, itrad*
   
@@ -151,17 +201,33 @@ and user-defined regression variables are selected with the
 
    The default setting is *TradingDays*. 
    
+   {: .text-center.image-wrapper}
+
+   ![Text](/assets/img/reference-manual/manual/A_Ref_d14.jpg)
+
+   {: .text-center.small}
+
+   **The *trading days* menu**
+   
 - **Calendar** $\rightarrow \ $**tradingDays** $\rightarrow \ $**leapYear**<br> *regression variables; itrad*
    
    Enables/disables a leap-year correction. By default, the checkbox is marked, which implies that the leap-year effect correction is enabled.
 - **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **RegressionTestType**<br> *regression variables; itrad\**
    
-   Option for a pre-test of the trading day effects. It is not available when the **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **automatic** checkbox is marked. Available options:
+   Option for a pre-test of the trading day effects. It is not available when the **Calendar** $\rightarrow \ $ **tradingDays** $\rightarrow \ $ **automatic** checkbox is set to **Unused**. Available options:
   * *None* -- the test is not performed; the specified calendar variables are used in the model without pre-testing.
   * *Separate\_T* -- a t-test is applied to each trading day variable separately. The trading day variables are included in the TRAMO model if at least one t-statistic is greater than 2.6 or if two t-statistics are greater than 2.0 (in the absolute values).
   * *Joint\_F* -- a joint F-test of significance of all the trading day variables. The trading day effect is significant if the F statistic is greater than 0.95.
 
   The default setting is *Separate\_T.* 
+  
+  {: .text-center.image-wrapper}
+
+  ![Text](/assets/img/reference-manual/manual/A_Ref_d15.jpg)
+
+  {: .text-center.small}
+
+  **The *RegressionTestType* menu**
   
  -  **Calendar** $\rightarrow \ $ **easter** $\rightarrow \ $ **Option**<br> *easter effect; ieast\**
     
@@ -185,7 +251,7 @@ and user-defined regression variables are selected with the
 - **Calendar** $\rightarrow \ $ **easter** $\rightarrow \ $ **test**<br> *easter effect; ieast*
    
    A t-test applied for the significance of the Easter effect. The Easter effect is considered as significant if the t-statistic is higher than 1.96. 
-By default, the checkbox is marked, which implies that the t-test is used.
+   By default, the checkbox is marked, which implies that the t-test is used.
  
  - **Pre-specified outliers**<br> *regression variables; --*
    
@@ -198,9 +264,9 @@ By default, the checkbox is marked, which implies that the t-test is used.
    Descriptions and formulas are available in [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html).
    No pre-specified outliers are included in the pre-defined specifications. They can only be added to the user-defined specifications.
    
-  - **Intervention variables**<br> *regression variables; --*
+ - **Intervention variables**<br> *regression variables; --*
  
- The intervention variables are defined as in TSW+. Following the definition, these effects are special events known a-priori (strikes, devaluations, political events, and so on). Intervention variables are modelled as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as combinations of the following basic structures[^16]: 
+   The intervention variables are defined as in TSW+. Following the definition, these effects are special events known a-priori (strikes, devaluations, political events, and so on). Intervention variables are modelled as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as combinations of the following basic structures[^16]: 
    *  Dummy variables[^17];
    *  Any possible sequence of ones and zeros;
    *  $\frac{1}{(1 - \delta B)}$, 
@@ -209,22 +275,46 @@ By default, the checkbox is marked, which implies that the t-test is used.
    *  $(0 < \delta_{s} \leq 1)$;
    *  $\frac{1}{(1 - B)(1 - B^{s})}$;
     where $B$ is backshift operator (i.e. $B^{k}X_{t} = X_{t - k}$) and $s$ is frequency of the time series ($s = 12\ $for a monthly time series, $s = 4\ $for a quarterly time series). 
-
-These basic structures enable generation of not only AO, LS, TC, SO and RP outliers but also sophisticated intervention variables that are well-adjusted to the particular case. 
-    No intervention variables are included in the pre-defined specifications. They can only be added to the user-defined specifications. 
+   <br>
+	
+   These basic structures enable generation of not only AO, LS, TC, SO and RP outliers but also sophisticated intervention variables that are well-adjusted to the particular case. 
+   No intervention variables are included in the pre-defined specifications. They can only be added to the user-defined specifications. 
     
  - **Ramp effects**<br> *regression variables; --* 
 
    A ramp effect means a linear increase or decrease in the level of the series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series      span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html).
    No ramps are included in the pre-defined specifications. They can only be added to the user-defined specifications.
 
+   {: .text-center.image-wrapper}
+
+   ![Text](/assets/img/reference-manual/manual/A_Ref_d16.jpg)
+
+   {: .text-center.small}
+
+   **Defining the Ramp effects**
+   
+   
  - **User-defined variables**<br> *regression variables; --* 
  
-    The user-defined variable is an external regressor included by the user in the TRAMO model. To add a user-defined variable to the model, one must specify the corresponding variable by   clicking the *Name* field and choosing a variable from the list. It should be noted that such variables must have been    previously defined, otherwise the list is empty. The user-defined regression variable associated to a         specific component should not contain effects that have to be associated with another component. Therefore, the           following rules should be obeyed: 
+    The user-defined variable is an external regressor included by the user in the TRAMO model. 
+	To add a user-defined variable to the model, one must specify the corresponding variable by clicking the *Name* field and choosing a variable from the list. 
+	It should be noted that such variables must have been previously defined (see instructions provided [here](../reference-manual/user-defined-variables.html)) otherwise the list is empty. 
+	
+    {: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d17.jpg)
+
+    {: .text-center.small}
+
+    **Defining the user-defined variable**
+    
+	
+	The user-defined regression variable associated to a specific component should not contain effects that have to be associated with another component. Therefore, the following rules should be obeyed: 
     * The variable assigned to the trend or to the seasonally adjusted series should not contain a seasonal pattern;
     * The variable assigned to the seasonal should not contain a trend (or level); 
     * The variable assigned to the irregular should contain neither a seasonal pattern nor a trend (or level). 
-
+    
+	<br>
     
 	The user-defined variables should cover the period of the dependent series and the appropriate number of forecasts. For the other periods, the variables are implicitly set to 0. If the forecasts are not provided, it will not alter the     results of the seasonal adjustment but the forecasts of the final components will be unusable. 
     The effect of the user-defined variable can be assigned to the:
@@ -233,9 +323,10 @@ These basic structures enable generation of not only AO, LS, TC, SO and RP outli
     * *Seasonal component*; 
     * *Seasonally adjusted series*;
     * *Undefined* (a default setting), which implies that the effect is an additional component [^18]. With this option the regression variable is used to improve the modelling, but it is not removed from the series for the decomposition[^19].
-    
-    
+    <br>
+	
 	The calendar component is not available in this section. Therefore, a user-defined variable assigned to the calendar effect should be added in the calendar part of the specification. 
+	<br>
     For the user-defined variable the structure of the lags can be specified using the options *first lag* and *last lag*.[^20] When the regression variable $x_{t}$ is introduced with *first lag* = $l_a$ and *last lag* = $l_b$,            JDemetra+ includes in the TRAMO model a set of variables, $x_{t - l_{a}}$,...,$\ x_{t - l_{ b}}$,and estimates the        respective regression coefficients called the impulse response weights.
     To include only the first lag $(x_{t - 1})\ $of the user-defined variable $(x_{t})\ $in the Tramo model, the user should put *first lag* = *last lag* = 1. If for a monthly series one puts *first lag* = 0 and *last lag* = 11, it means    that in addition to the instantaneous effect of the user-defined variable, also the effects of 11 lagged explanatory      variables are included in the model. In this case the set of estimated coefficients, called a transfer function, 
 	describe how the changes in $x_{t}$ that took place over a year are transferred to the dependent variable.        
@@ -244,15 +335,25 @@ These basic structures enable generation of not only AO, LS, TC, SO and RP outli
    
  - **Fixed regression coefficients**<br> *regression variables; --* 
  
-     For the pre-specified regression variables this option specifies the parameter estimates that will be held fixed at the values provided by the user.
-     To fix a coefficient the user should undertake the following actions:    
+    For the pre-specified regression variables this option specifies the parameter estimates that will be held fixed at the values provided by the user.
+    To fix a coefficient the user should undertake the following actions:    
     * Choose the transformation (log or none).
     * Define some regression variables in the *Regressors* specification.
     * Push on the fixed regression coefficients editor button in the **User-defined variables** row.
-    * Select the regression variable from the list. 
-    * Specify the coefficient's value.
+    * Select the regression variable from the list for which the coefficient will be fixed. 
     * Save the new setting with the **Done** button.
     
+	
+	{: .text-center.image-wrapper}
+
+    ![Text](/assets/img/reference-manual/manual/A_Ref_d18.jpg)
+
+    {: .text-center.small}
+
+    **Fixing the coefficient of the user-defined variable**
+	
+	
+	
 #### Outliers
 
 The *Outliers* section enables the user to perform an automatic
@@ -322,7 +423,7 @@ automatic model identification are presented below.
 #### **TRAMO specification -- options for the automatic identification of the ARIMA model**
 
 
-- **Automatic**<br> *automdl; ami;idif, inic\**
+- **Automatic**<br> *automdl; ami; idif, inic\**
 
   When marked it enables an automatic modelling of the ARIMA model to be performed. 
 
@@ -332,16 +433,17 @@ automatic model identification are presented below.
 - **Cancelation limit**<br> *ami; cancel*
    
    [A limit for the AR and the MA roots to be assumed equal](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors). This option is used in the automatic identification of the differencing order. If the difference in moduli of an AR and an MA root (when      estimating ARIMA(1,0,1)(1,0,1) models in the second step of the automatic identification of the differencing polynomial)   is smaller than **Cancelation limit**, the two roots cancel out. The default parameter value is 0.05.
-- **Initial UR (Diff.)**<br> ami; ub1*
+- **Initial UR (Diff.)**<br> *ami; ub1*
 
   The threshold value for the initial unit root[^27] test in the automatic differencing procedure. When one of the roots in the estimation of the (2,0,0)(1,0,0) plus mean model, which is performed in the first step of the automatic model identification procedure, is larger than **First unit root limit**,    in modulus, it is set equal to unity. 
   This value should be less than 1 and greater than 0.8. The default parameter value is 0.97.
  - **Final UR (Diff.)**<br>*ami; ub2*
 
-   A unit root test in the automatic differencing procedure. When one of the roots in the estimation of the (1,0,1)(1,0,1) plus mean model, which is performed in the second step of the automatic model identification procedure, is larger than **Second unit root limit**, in modulus, it is checked if there is a common       factor in the corresponding AR and MA polynomials of the ARMA model that can be [cancelled](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors) (see **Cancelation limit**)).    If there is no cancellation, **the** AR root it is set equal to unity (i.e. the differencing order changes). The value    of the **Second unit root limit** should be less than 1 and greater than 0.8.The default parameter value is 0.91.
+   A unit root test in the automatic differencing procedure. When one of the roots in the estimation of the (1,0,1)(1,0,1) plus mean model, which is performed in the second step of the automatic model identification procedure, is larger than **Second unit root limit**, in modulus, it is checked if there is a common factor in the corresponding AR and MA polynomials of the ARMA model that can be
+   [cancelled](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors) (see **Cancelation limit**)). If there is no cancellation, **the** AR root it is set equal to unity (i.e. the differencing order changes). The value of the **Second unit root limit** should be less than 1 and greater than 0.8.The default parameter value is 0.91.
  - **Arma limit**<br>*ami; tsig*
  
-   The threshold value for t-statistics of ARMA coefficients used for the final test of [a model parsimony](../theory/SA_lin.html#automatic-model-identification-procedure-in-tramo). If the highest order of ARMA coefficient has a t-value less than this value in magnitude,          JDemetra+ will reduce the order of the model. The value given for **ArmaLimit** is also used for the final check of the   constant term; if the constant term has a t-value less than **ArmaLimit** in magnitude, the program will remove the       constant term from the set of regressors.
+   The threshold value for t-statistics of ARMA coefficients used for the final test of a model parsimony[^22]. If the highest order of ARMA coefficient has a t-value less than this value in magnitude,          JDemetra+ will reduce the order of the model. The value given for **ArmaLimit** is also used for the final check of the   constant term; if the constant term has a t-value less than **ArmaLimit** in magnitude, the program will remove the       constant term from the set of regressors.
    The **ArmaLimit** value should be greater than zero. The default parameter value is 1.
  
  - **Reduce CV**<br>*automdl; reducecv*
@@ -365,6 +467,14 @@ correspond to the original X-13ARIMA-SEATS **arima** spec with some
 limitations. JDemetra+ does not allow for operators with missing lags.
 Also the maximum lag is reduced in comparison with Win X-13.
 
+{: .text-center.image-wrapper}
+
+![Text](/assets/img/reference-manual/manual/A_Ref_d19.jpg)
+
+{: .text-center.small}
+
+**A checkbox for switching bewteen manual and automiatic choice of teh Arima model**
+	
 Individual parameters can be held fixed at these initial values while
 the rest of the parameters are estimated. However, users should not
 specify initial values for the MA parameters that yield the MA
@@ -423,47 +533,29 @@ polynomial with roots inside the unit circle.
    * *Initial --* estimates a parameter using as initial condition the value defined by the user.
    * *Fixed* *--* holds a parameter fixed during estimation at the value defined by the user. 
 
-
 ##### Footnotes
 
-[^2]: TSW+ is a Windows extension of programs TRAMO and SEATS. See
-    MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014).
-
-[^3]: MARAVALL, A. (2009).
-
-[^4]: The test for a log-level specification used by TRAMO is based on
-    the maximum likelihood estimation of the parameter $\lambda$ in the
-    Box-Cox transformation, which is a power transformation such that
-    the transformed values of the time series $\text{y\ }$are a
+[^5]: The test for log-level specification used by TRAMO is based
+    on the maximum likelihood estimation of the parameter $\lambda$ in
+    the Box-Cox transformations (which is a power transformation such
+    that the transformed values of the time series $\text{y }$are a
     monotonic function of the observations, i.e.
-    $y^{\alpha} = \left\{ \begin{matrix}
-    \frac{\left( y_{i}^{\alpha} - 1 \right)}{\lambda},\ \lambda \neq 0 \\
-    \log{y_{i}^{\alpha},\ \lambda = 0} \\
-    \end{matrix} \right.\ $. The program first fits two Airline models
-    (i.e. ARIMA (0,1,1)(0,1,1) with a mean) to the time series: one in
-    logs ($\lambda = 0$), other without logs ($\lambda = 1$). The test
-    compares the sum of squares of the model without logs with the sum
-    of squares multiplied by the square of the geometric mean of the
-    (regularly and seasonally) differenced series in the case of the
-    model in logs. Logs are taken in the case this last function is the
-    minimum. GÓMEZ, V., and MARAVALL, A. (2010).
+    
+    $$
+    y^{\alpha} = 
+    \begin{cases}
+    \frac{y_{i}^{\alpha} - 1}{\lambda}, \lambda \neq 0 \\\\
+    \log  y_{i}^{\alpha}, \lambda = 0
+    \end{cases}
+    $$
 
-[^5]: The test for a log-level specification used by TRAMO is based on
-    the maximum likelihood estimation of the parameter $\lambda$ in the
-    Box-Cox transformation, which is a power transformation such that
-    the transformed values of the time series $\text{y\ }$are a
-    monotonic function of the observations, i.e.
-    $y^{\alpha} = \left\{ \begin{matrix}
-    \frac{\left( y_{i}^{\alpha} - 1 \right)}{\lambda},\ \lambda \neq 0 \\
-    \log{y_{i}^{\alpha},\ \lambda = 0} \\
-    \end{matrix} \right.\ $. The program first fits two Airline models
-    (i.e. ARIMA (0,1,1)(0,1,1) with a mean) to the time series: one in
-    logs ($\lambda = 0$), other without logs ($\lambda = 1$). The test
+    The program first fits two Airline models
+    (i.e. ARIMA (0,1,1)(0,1,1)) to the time series: one in logs
+    ($\lambda = 0$), other without logs ($\lambda = 1$). The test
     compares the sum of squares of the model without logs with the sum
-    of squares multiplied by the square of the geometric mean of the
-    (regularly and seasonally) differenced series in the case of the
-    model in logs. Logs are taken in the case this last function is the
-    minimum. GÓMEZ, V., and MARAVALL, A. (2010).
+    of squares multiplied by the square of the geometric mean in the
+    case of the model in logs. Logs are taken in the case this last
+    function is the maximum, GÓMEZ, V., and MARAVALL, A. (2009).
 
 [^6]: Definitions from '*X-12-ARIMA Reference Manual'* (2011).
 
@@ -518,6 +610,10 @@ polynomial with roots inside the unit circle.
 
 [^21]: MAKRIDAKIS, S., WHEELWRIGHT, S.C., and HYNDMAN, R.J. (1998).
 
+[^22]: Parsimonious models are those which have a great deal of explanatory power using a relatively 
+      small number of parameters. Balanced models are models for which the order of the combined AR and differencing 
+      operators is equal to the order of the combined MA operator 
+	  (see GÓMEZ, V., and MARAVALL, A. (1997)). 
 
 [^27]: A time series $x_{t}$ is said to have a unit root if it can be
     modelled as $x_{t} = \phi_{0} + \phi_{1}y_{t - 1}$ and

@@ -10,7 +10,8 @@ them that contain all information necessary for time series modelling.
 The default critical values used by the tests included in the 
 specifications can be changed by the user in the **Tools → Options** menu. 
 
-#### Pre-defined modelling specifications
+#### Pre-defined modelling specifications {#pre-definedSpec}
+
 
 The *Specifications* node, which belongs to the *Workspace* 
 window, contains a set of the pre-defined specifications that enables 
@@ -58,9 +59,9 @@ TRAMO/SEATS and X-13ARIMA-SEATS specifications because it has been shown
 in many studies that this model is appropriate for many real monthly and 
 quarterly time series with a statistically significant seasonal pattern. 
 Moreover, the Airline model approximates well many other models and 
-provides an excellent "benchmark" model.  
+provides an excellent "benchmark" model[^2].
 
-#### User-defined specifications 
+#### User-defined specifications {#user-definedSpec}
 
 The user may add new modelling 
 specifications to the *Workspace* window. To do this, go to the 
@@ -84,3 +85,4 @@ The possible options are described in the [Tramo](../reference-manual/modelling-
 ##### Footnotes
 
 [^1]: TSW+ is a Windows extension of programs TRAMO and SEATS. See MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014).
+[^2]: MARAVALL, A. (2009).

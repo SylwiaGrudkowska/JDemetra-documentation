@@ -12,7 +12,7 @@
   subitems:
     - title: "Single time series"
       file: "simplesa-single"
-    - title: "Dataset"
+    - title: "Muliple time series"
       file: "simplesa-muliple" 
 - title: "Advanced seasonal adjustment"
   file: "detailedsa"

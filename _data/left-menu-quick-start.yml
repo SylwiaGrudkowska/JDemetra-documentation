@@ -2,9 +2,8 @@
   file: "index"
 - title: "Installing JDemetra+"
   file: "installing-jdemetra"
+- title: "Data sources"
+  file: "datasources"
 - title: "A demonstration"
   file: "demonstration"
-- title: "Data Sources"
-  file: "datasources"
-- title: "Seasonal Adjustment Processing"
-  file: "sa-process"
+

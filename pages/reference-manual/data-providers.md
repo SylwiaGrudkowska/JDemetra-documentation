@@ -55,7 +55,7 @@ and used in estimation routines (see [Modelling](modelling.html) and [Seasonal a
 The data sources can be restored after
 re-starting the application so that there is no need to get them
 again. This functionality can be set in the *Behaviour* tab available at
-the *Option* item from the [*Tools*](../reference-manual/tools.html) menu.
+the [*Option*](../reference-manual/tools.html#options) item from the [*Tools*](../reference-manual/tools.html) menu.
 
 #### Spreadsheets {#spreadsheets}
 

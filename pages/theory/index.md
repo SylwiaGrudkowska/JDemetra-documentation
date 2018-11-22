@@ -325,7 +325,7 @@ then decomposed into the stochastic components with [SEATS](..theory/SA_SEATS.ht
 [^48]: KAISER, R., and MARAVALL, A. (2000).
 
 [^49]: The choice of the estimation method is controlled by the *Method*
-    parameter, explained in 5.1.1.2.
+    parameter, explained in the [SEATS specification](../reference-manual/sa-spec-tramo.html) section.
 
 [^50]: MARAVALL, A. (2008c).
 
