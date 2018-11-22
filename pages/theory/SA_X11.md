@@ -36,7 +36,7 @@ divided into two parts.
 
 {: .text-center.small}
 
-**The flow diagram for seasonal adjustment with X-13ARIMA-SEATS using the X-11 algorithm.
+**The flow diagram for seasonal adjustment with X-13ARIMA-SEATS using the X-11 algorithm.**
 
 #### Moving averages
 
@@ -44,7 +44,7 @@ The moving average of coefficient $\theta_{i}$ is
 defined as:
 
   
-  $$M\left( X_{t} \right) = \sum_{k = - p}^{+ f}\theta_{k}X_{t + k}$$   \[7.61\]
+  $$M\left( X_{t} \right) = \sum_{k = - p}^{+ f}\theta_{k}X_{t + k}$$   \[1\]<!---\[7.61\]-->
  
 
 The value at time $t$ of the series is therefore replaced by a weighted
@@ -102,7 +102,7 @@ coefficients of a Henderson moving average of order $2p + 1$ may be
 calculated using the formula:
 
 
-  $\theta_{i} = \frac{315\left\lbrack \left( n - 1 \right)^{2} - i^{2} \right\rbrack\left\lbrack n^{2} - i^{2} \right\rbrack\left\lbrack \left( n + 1 \right)^{2} - i^{2} \right\rbrack\left\lbrack {3n}^{2} - 16 - 11i^{2} \right\rbrack}{8n\left( n^{2} - 1 \right)\left( {4n}^{2} - 1 \right)\left( {4n}^{2} - 9 \right)\left( 4n^{2} - 25 \right)}$,   \[7.62\]
+  $\theta_{i} = \frac{315\left\lbrack \left( n - 1 \right)^{2} - i^{2} \right\rbrack\left\lbrack n^{2} - i^{2} \right\rbrack\left\lbrack \left( n + 1 \right)^{2} - i^{2} \right\rbrack\left\lbrack {3n}^{2} - 16 - 11i^{2} \right\rbrack}{8n\left( n^{2} - 1 \right)\left( {4n}^{2} - 1 \right)\left( {4n}^{2} - 9 \right)\left( 4n^{2} - 25 \right)}$,   \[2\]<!---\[7.62\]-->
 
 
 where: $n = p + 2$$n = p + 2$.
@@ -128,20 +128,20 @@ moving average instead of the $2 \times 12$ moving average is used.
   ***Estimation of Trend by*** $\mathbf{2 \times 12}$ ***moving
     average:***
 
-  $TC_{t}^{(1)} = M_{2 \times 12}(X_{t})$   \[7.63\]
+  $TC_{t}^{(1)} = M_{2 \times 12}(X_{t})$   \[3\]<!---\[7.63\]-->
   
 
   ***Estimation of the Seasonal-Irregular component:***
 
   
-  $\left( S_{t} + I_{t} \right)^{(1)} = X_{t} - \text{TC}_{t}^{(1)}$   \[7.64\]
+  $\left( S_{t} + I_{t} \right)^{(1)} = X_{t} - \text{TC}_{t}^{(1)}$   \[4\]<!---\[7.64\]-->
 
 
   ***Estimation of the Seasonal component by*** $\mathbf{3 \times 3}$
     ***moving average over each month:***
 
   
-  $S_{t}^{(1)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(1)} \right\rbrack$   \[7.65\]
+  $S_{t}^{(1)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(1)} \right\rbrack$   \[5\]<!---\[7.65\]-->
  
 
 The moving average used here is a $3 \times 3$ moving average over
@@ -152,7 +152,7 @@ is then centred using a $2 \times 12$ moving average.
 
   $$
    \widetilde{S}_{t}^{(1)} = S_{t}^{(1)} - M_{2 \times 12}\left( S_{t}^{(1)} \right)
-  $$   \[7.66\]
+  $$   \[6\]<!---\[7.66\]-->
 
 
   ***Estimation of the seasonally adjusted series:***
@@ -160,7 +160,7 @@ is then centred using a $2 \times 12$ moving average.
 
   $$
   SA_{t}^{\left( 1 \right)} = \left( \text{TC}_{t} + I_{t} \right)^{(1)} = X_{t} - {\widetilde{S}}_{t}^{(1)}
-  $$   \[7.67\]
+  $$   \[7\]<!---\[7.67\]-->
 
 
 This first estimation of the seasonally adjusted series must, by
@@ -173,7 +173,7 @@ property into account.
   
   $$
   TC_{t}^{(2)} = H_{13}\left( \text{SA}_{t}^{\left( 1 \right)} \right)
-  $$   \[7.68\]
+  $$   \[8\]<!---\[7.68\]-->
   
 
 Henderson moving averages, while they do not have special properties in
@@ -186,13 +186,13 @@ $2$ and preserve a local polynomial trend of degree $3$.
  
   $$
   \left( S_{t} + I_{t} \right)^{(2)} = X_{t} - \text{TC}_{t}^{(2)}
-  $$   \[7.69\]
+  $$   \[9\]<!---\[7.69\]-->
   
 
   ***Estimation of the Seasonal component by*** $\mathbf{3 \times 5}$
     ***moving average over each month:***
 
-  $$S_{t}^{(2)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(2)} \right\rbrack$$   \[7.70\]
+  $$S_{t}^{(2)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(2)} \right\rbrack$$   \[10\]<!---\[7.70\]-->
 
 
 The moving average used here is a $3 \times 5$ moving average over $7$
@@ -202,13 +202,13 @@ linear trends. The coefficients are then normalised such that their sum
 over the whole $12$-month period is approximately cancelled out:
 
   
-  $${ \widetilde{S}}_{t}^{(2)} = S_{t}^{(2)} - M_{2 \times 12}\left( S_{t}^{(2)} \right)$$   \[7.71\]
+  $${ \widetilde{S}}_{t}^{(2)} = S_{t}^{(2)} - M_{2 \times 12}\left( S_{t}^{(2)} \right)$$   \[11\]<!---\[7.71\]-->
  
 
 8.  ***Estimation of the seasonally adjusted series:***
 
 
-  $$SA_{t}^{\left( 2 \right)} = \left(TC_{t} + I_{t} \right)^{(2)} = X_{t} - {\widetilde{S}}_{t}^{(2)}$$   \[7.72\]
+  $$SA_{t}^{\left( 2 \right)} = \left(TC_{t} + I_{t} \right)^{(2)} = X_{t} - {\widetilde{S}}_{t}^{(2)}$$   \[12\]<!---\[7.72\]-->
  
 
 The whole difficulty lies, then, in the choice of the moving averages
@@ -457,7 +457,7 @@ but the user can select different moving averages for each month.
 The overall Moving Seasonality Ratio is calculated as follows:
 
 
-  $$\text{MSR}_{i} = \frac{\sum_{i}^{}{N_{i}\ }\ {\overline{I}}_{i}}{\sum_{i}^{}N_{i}{\overline{S}}_{i}}$$   \[7.73\]
+  $$\text{MSR}_{i} = \frac{\sum_{i}^{}{N_{i}\ }\ {\overline{I}}_{i}}{\sum_{i}^{}N_{i}{\overline{S}}_{i}}$$   \[13\]<!---\[7.73\]-->
 
 
 ***Step 4: Selecting a moving average and estimating the seasonal
@@ -534,7 +534,7 @@ separately for each period using a $3 \times 3$ moving average, i.e.:
   2,0,0,0,0,0,0,0,0,0,0,0, \\           
   1,0,0,0,0,0,0,0,0,0,0,0, \\           
   \end{Bmatrix}
-  $$ \[7.74\]                       
+  $$ \[14\]<!---\[7.74\]-->                      
 
 
 ***Step 2: Normalizing the seasonal factors***
@@ -604,10 +604,10 @@ for detection and replacement of extreme values.
 The list of tables produced by JDemetra+ is presented below. It is not
 identical to the output produced by the original X-11 program.
 
-**Part A -- Preliminary Estimation of Outliers and Calendar Effects. **
+**Part A -- Preliminary Estimation of Outliers and Calendar Effects.**
 
 This part includes prior modifications to the original data made in the
-RegARIMA part**:**
+RegARIMA part:
 
 -   Table A1 -- Original series;
 
@@ -766,3 +766,8 @@ RegARIMA part**:**
     > the stationary part of the original series;
 
 -   Table F2G -- Autocorrelogram of the irregular component.
+
+
+
+[^61]: This is a general estimation procedure used by the U.S. Census
+    Bureau. JDemetra+ does not calculate backcasts for X-13ARIMA-SEATS.
