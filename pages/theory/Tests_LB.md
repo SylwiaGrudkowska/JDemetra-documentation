@@ -8,12 +8,14 @@ description: Basics
 
 The Ljung-Box Q-statistics are given by:
 
-  $\text{LB}\left( k \right) = n \times (n + 2) \times \sum_{k = 1}^{K}\frac{\rho_{a,k}^{2}}{n - k}$,   \[7.144\]
+  $$
+  \text{LB}\left( k \right) = n \times (n + 2) \times \sum_{k = 1}^{K}\frac{\rho_{a,k}^{2}}{n - k}
+  $$,   \[1\] <!---\[7.144\]      --> 
 
 where:
 
-$\rho_{a,k}^{2}$ is the autocorrelation coefficient at lag $k$ of the
-residuals ${\widehat{a}}_{t}$.
+$$\rho_{a,k}^{2}$ is the autocorrelation coefficient at lag $k$ of the
+residuals ${\widehat{a}}_{t}$$.
 
 $n$ is the number of terms in differenced series;
 
@@ -28,5 +30,5 @@ to the data.
 The Ljung-Box and Box-Pierce tests sometimes fail to reject a poorly
 fitting model. Therefore, care should be taken not to accept a model on
 a basis of their results. For the description of autocorrelation concept
-see 7.9.
+see section [Autocorrelation function and partial autocorrelation function](../theory/ACF_and_PACF.html).
 
