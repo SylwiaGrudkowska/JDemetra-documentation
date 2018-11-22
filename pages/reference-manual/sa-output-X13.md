@@ -22,6 +22,7 @@ some parts of the *Main results* and *Diagnostics* sections. Their
 content is accessible once the user selects the appropriate node from
 the left-hand side seasonal adjustment results panel.
 
+
 {: .text-center.image-wrapper}
 
 ![Text](/assets/img/reference-manual/manual/RDimage38.png)
