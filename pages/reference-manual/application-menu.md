@@ -21,49 +21,9 @@ The key parts of the user interface are:
 * A central empty zone for presenting the actual analyses further called the [Results](#results-panel) panel.
 
 
-The majority of functionalities are available from the main menu of the 
-application, which is situated at the very top of the main window. If 
-the user moves the cursor to an entry in the main menu and clicks on the 
-left mouse button, a drop-down menu will appear. Clicking on an entry in 
-the drop-down menu selects the highlighted item. 
-
-{: .text-center.image-wrapper}
-
-![Text](/assets/img/reference-manual/manual/Main menu.jpg)
-
-{: .text-center.small}
-
-**The main menu with a selected drop-down menu unfolded**
-
-The functions available in the main menu of the application are explained below.
- 
- 
-### Results panel {#results-panel}
--------------
-
-The empty zone on the right is a place where JDemetra+ displays various
-windows (see the figure below). More than one window can be displayed at the same
-time. Windows can overlap each other with the foremost window being in
-focus or active. The active window has a darkened title bar. [The windows
-in the results panel can be arranged in many different ways](../reference-manual/window.html), depending
-on the user’s needs. The example below shows one of the
-possible views of this panel. The results of the user’s analysis are
-displayed in the respective windows. The picture below shows two panels
-– a window containing seasonal adjustment results (upper panel) and the
-other one containing an autoregressive spectrum (lower panel).
-
-{: .text-center.image-wrapper}
-
-![Text](/assets/img/reference-manual/manual/A_Ref9.jpg)
-
-{: .text-center.small}
- 
-**The *Results* panel filled with two windows**
-
 ### Application menu {#application-menu}
 
-The majority of functionalities are available from the main menu of the
-application, which is situated at the very top of the main window. If
+The majority of functionalities are available from the main application menu, which is situated at the very top of the main window. If
 the user moves the cursor to an entry in the main menu and clicks on the
 left mouse button, a drop-down menu will appear. Clicking on an entry in
 the drop-down menu selects the highlighted item.
@@ -76,15 +36,39 @@ the drop-down menu selects the highlighted item.
  
 **The main menu with selected drop-down menu**
 
-The functions available in the menu of the application are grouped into the following sections:
+The functions available in the main application menu are:
 * [File](file.html)
 * [Statistical methods](statistical-methods.html)
-* [Tools](tools.html)
-* [View](view.html)
-* [Help](help.html)
-* [Window](window.html)
-* [RegArimaDoc](regarimadoc.html)
 * [X-13Doc](x-13doc.html)
+* [RegArimaDoc](regarimadoc.html)
 * [TramoDoc](tramodoc.html)
 * [TramoSeatsDoc](tramoseatsdoc.html)
+* [View](view.html)
+* [Tools](tools.html)
+* [Window](window.html)
+* [Help](help.html)
+
+
+ 
+### Results panel {#results-panel}
+-------------
+
+The blank zone in the figure above (on the right of the view) is the location where JDemetra+ displays various
+windows. More than one window can be displayed at the same
+time. Windows can overlap with each other with the foremost window being the one in
+focus or active. The active window has a darkened title bar. [The windows
+in the results panel can be arranged in many different ways](../reference-manual/window.html), depending
+on the user’s needs. The example below shows one of the
+possible views of this panel. The results of the user’s analysis are
+displayed in an accompanying window. The picture below shows two panels
+– a window containing seasonal adjustment results (upper panel) and
+another one containing an autoregressive spectrum (lower panel).
+
+{: .text-center.image-wrapper}
+
+![Text](/assets/img/reference-manual/manual/A_Ref9.jpg)
+
+{: .text-center.small}
+ 
+**The *Results* panel filled with two windows**
 
