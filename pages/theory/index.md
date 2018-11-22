@@ -1,15 +1,15 @@
 ---
 layout: left-menu
-title: Seasonal adjustment methods - TRAMO/SEATS and X-13ARIMA-SEATS
+title: Seasonal adjustment methods - TRAMO-SEATS and X-13ARIMA-SEATS
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 This section describes selected aspects of the seasonal adjustment methods and
 technical issues including descriptions of the theoretical models used
-by X-12-ARIMA and TRAMO/SEATS. Information provided here are vital for a good understanding of the
+by X-12-ARIMA and TRAMO-SEATS. Information provided here are vital for a good understanding of the
 results produced by the software.
 
-TRAMO/SEATS is a model-based seasonal adjustment method developed by
+TRAMO-SEATS is a model-based seasonal adjustment method developed by
 Victor Gómez (Ministerio de Hacienda), and Agustin Maravall (Banco de
 España). It consists of two linked programs: TRAMO and SEATS. TRAMO
 (\"Time Series Regression with ARIMA Noise, Missing Observations, and
@@ -18,11 +18,11 @@ regression models with missing observations and ARIMA errors, in the
 presence of possibly several types of outlier. SEATS (\"Signal
 Extraction in ARIMA Time Series\") performs an ARIMA-based decomposition
 of an observed time series into unobserved components. Information about
-the TRAMO/SEATS method available in this section derives directly from
+the TRAMO-SEATS method available in this section derives directly from
 papers by Victor Gómez and Agustin Maravall; the most important ones
 are: GÓMEZ, V., and MARAVALL, A. (1996), GÓMEZ, V., and MARAVALL, A.
 (2001a, b) and MARAVALL, A. (2009). More information about the
-TRAMO/SEATS method, TRAMO/SEATS software (DOS version and TSW+ -- Tramo
+TRAMO-SEATS method, TRAMO-SEATS software (DOS version and TSW+ -- Tramo
 Seats Windows software and several interfaces) and its documentation as
 well as papers on methodology and application of the programs, can be
 found in the dedicated section of the [Banco de España site](https://www.bde.es/bde/es/) (Services
@@ -71,17 +71,17 @@ In general, the trend consists of 2 sub-components:
 
 -   The cycle, that represents the smooth, almost periodic movement around the long-term evolution of the series. It reveals a succession of phases of growth and recession.
 
-For seasonal adjustment purposes both TRAMO/SEATS and X-13ARIMA-SEATS do
+For seasonal adjustment purposes both TRAMO-SEATS and X-13ARIMA-SEATS do
 not separate the long-term trend from the cycle as these two components
 are usually too short to perform their reliable estimation.
-Consequently, hereafter TRAMO/SEATS and X-13ARIMA-SEATS estimate the
-trend component. However, the original TRAMO/SEATS may separate the
+Consequently, hereafter TRAMO-SEATS and X-13ARIMA-SEATS estimate the
+trend component. However, the original TRAMO-SEATS may separate the
 long-term trend from the cycle through the Hodrick-Precsott filter using
 the output of the standard decomposition. It should be remembered that
 JDemetra+ refers to the trend-cycle as trend ($T_{t}$), and consequently
 this convention is used in this document.
 
-TRAMO/SEATS considers two decomposition models:
+TRAMO-SEATS considers two decomposition models:
 
 -   The additive model: $X_{t} = T_{t} + S_{t} + I_{t}$;
 
@@ -100,7 +100,7 @@ any stochastic, covariance-stationary process can be presented in the
 form:
 
   
-  $x_{t} = \mu_{t} + {\widetilde{x}}_{t}$,   \[7.1\]
+  $x_{t} = \mu_{t} + {\widetilde{x}}_{t}$,   \[1\]<!---\[7.1\]-->
   
 
 where $\mu_{t}$ is a linearly deterministic component and
@@ -109,7 +109,7 @@ ${\widetilde{x}}_{t}$ is a linearly interderministic component, such as:
   
   $$
   {\widetilde{x}}_{t} = {\sum_{j = 0}^{\infty}\psi_{j}a}_{t - j}
-  $$,   \[7.2\]
+  $$,   \[2\]<!---\[7.2\]-->
   
 
 where $\sum_{j = 0}^{\infty}\psi_{i}^{2} < \infty$ (coefficients
@@ -121,13 +121,13 @@ $x_{t}$, that is:
   
   $$
   a_{t} = {\widetilde{x}}_{t} - {\widehat{x}}_{t|t - 1}
-  $$,   \[7.3\]
+  $$,   \[3\]<!---\[7.3\]-->
   
 
 where $${\widehat{x}}_{t|t - 1}$$ is the forecast of $${\widetilde{x}}_{t}$$
-made at period $t - 1$. As $a_{t}$ represents what is new in $${\widetilde{x}}_{t}$$ in point $t$, i.e., not contained in the past values of $${\widetilde{x}}_{t}$$, it is also called innovation of the process. From \[7.3\] $${\widetilde{x}}_{t}$$ can be viewed as a linear filter applied to the innovations.
+made at period $t - 1$. As $a_{t}$ represents what is new in $${\widetilde{x}}_{t}$$ in point $t$, i.e., not contained in the past values of $${\widetilde{x}}_{t}$$, it is also called innovation of the process. From \[3\]<!---\[7.3\]--> $${\widetilde{x}}_{t}$$ can be viewed as a linear filter applied to the innovations.
 
-The equation 7.1 is called a Wold representation. It presents a process
+The equation \[1\] is called a Wold representation. It presents a process
 as a sum of linearly deterministic component $\mu_{t}$ and linearly
 interderministic component $\sum_{j = 0}^{\infty}\psi_{j}a_{t - j}$, the
 first one is perfectly predictable once the history of the process
@@ -140,11 +140,11 @@ Under suitable conditions $${\widetilde{x}}_{t}$$ can be presented as a weighted
 
   $$
   { {\widetilde{x}}_{t} = \sum_{j = 0}^{\infty}\pi_{j}{\widetilde{x}}_{t - j} + a}_{t}
-  $$,   \[7.4\]
+  $$,   \[4\]<!---\[7.4\]-->
 
 
 In general, for the observed time series, the assumptions concerning the
-nature of the process \[7.1\] do not hold for various reasons. Firstly,
+nature of the process \[1\]<!---\[7.1\]--> do not hold for various reasons. Firstly,
 most observed time series display a mean that cannot be assumed to be
 constant due to the presence of a trend and the seasonal movements.
 Secondly, the variance of the time series may vary in time. Finally, the
@@ -167,7 +167,7 @@ the final components.
 
 In the next step the linearised series is decomposed into its
 components. There is a fundamental difference in how this process is
-performed in TRAMO/SEATS and X-13ARIMA-SEATS. In TRAMO/SEATS the
+performed in TRAMO-SEATS and X-13ARIMA-SEATS. In TRAMO-SEATS the
 decomposition is performed by the SEATS procedure, which follows a so
 called ARIMA model based approach. In principle, it aims to derive the
 components with statistical models. More information is given in the [SEATS](..theory/SA_SEATS.html) section.
@@ -176,7 +176,7 @@ The X-11 algorithm, which is described in the [X-11](..theory/SA_X11.html) secti
 means of linear filters. Finally, in both methods the final components
 are derived by the assignment of the deterministic effects to the
 stochastic components. Consequently, the role of the ARIMA models is
-different in each method. TRAMO/SEATS applies the ARIMA models both in
+different in each method. TRAMO-SEATS applies the ARIMA models both in
 the preadjustment step and in the decomposition procedure. On the
 contrary, when the X-11 algorithm is used for decomposition,
 X-13ARIMA-SEATS uses the ARIMA model only in the preadjustment step. In
@@ -210,7 +210,7 @@ then decomposed into the stochastic components with [SEATS](..theory/SA_SEATS.ht
 
 [^7]: '*X-13ARIMA-SEATS Reference Manual*' (2015).
 
-[^8]: In the TRAMO/SEATS method this type of outlier is called a
+[^8]: In the TRAMO-SEATS method this type of outlier is called a
     transitory change.
 
 [^9]: See GÓMEZ, V., and MARAVALL, A. (1997).
