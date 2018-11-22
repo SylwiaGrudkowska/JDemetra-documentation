@@ -12,6 +12,7 @@ The default view of the JDemetra+ window, which is displayed after launching the
 {: .text-center.small}
 
 **JDemetra+ default window**
+
 By default, on the left hand side of the window two panels are visible: the [*Workspace* panel](../reference-manual/workspace.html) and the [*Providers* panel](../reference-manual/data-providers.html). 
 The *Workspace* panel stores the work performed by the user in a coherent and structured way.
 The *Providers* panel presents the list of the [data sources](../quick-start/datasources.html) and organizes the imported series within each data provider. 

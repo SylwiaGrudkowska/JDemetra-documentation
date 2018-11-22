@@ -23,7 +23,7 @@ The tests rely on two basic principles:
 > requirements are met, the test results are displayed in green. The
 > statistical significance of each of the seasonal peaks (i.e.
 > frequencies
-> $\frac{\pi}{6},\ \frac{\pi}{3},\ \frac{\pi}{2},\ \frac{2\pi}{3}\text{\ and\ }\frac{5\pi}{6}\ $corresponding
+> $\frac{\pi}{6},\ \frac{\pi}{3},\ \frac{\pi}{2},\ \frac{2\pi}{3}\text{ and } \frac{5\pi}{6}\ $corresponding
 > to 1, 2, 3, 4 and 5 cycles per year) is also displayed. The seasonal
 > and trading days frequencies depends on the frequency of time series.
 > They are shown in the table below. The symbol $d$ denotes a default
@@ -57,31 +57,29 @@ fundamental frequency for the effects associated with monthly data. In
 JDemetra+ the fundamental frequency corresponding to $0.3482$ cycles per
 month is used in place of the closest frequency$\ \frac{\text{πk}}{60}$.
 Thus, the quantity $\frac{\pi \times 42}{60}$ is replaced
-by$\text{\ ω}_{42} = 0.3482 \times 2\pi = 2.1878.$ The frequencies
-neighbouring $\omega_{42}$, i.e. $\omega_{41}$ and $\omega_{43}$ are set
-to, respectively, $2.1865 - \frac{1}{60}$ and $2.1865 + \frac{1}{60}$.
+by $$\omega_{42} = 0.3482 \times 2\pi = 2.1878$$. The frequencies
+neighbouring $\omega_{42}$, i.e. $$\omega_{41}$$ and $$\omega_{43}$$ are set
+to, respectively, $$2.1865 - \frac{1}{60}$$ and $$2.1865 + \frac{1}{60}$$.
 
 The default frequencies ($d)\ $for calendar effect are: 2.188 (monthly
 series) and 0.280 (quarterly series). They are computed as:
 
- $\omega_{\text{ce}} = \frac{2\pi}{7}\left( n - 7 \times \left\lbrack \frac{n}{7} \right\rbrack \right)$,   \[7.158\]
-
+ $\omega_{\text{ce}} = \frac{2\pi}{7}\left( n - 7 \times \left\lbrack \frac{n}{7} \right\rbrack \right)$,   \[1\] <!---\[7.158\]      -->
 where:
-
+ 
 $n = \frac{365.25}{s}$, $s = 4$ for quarterly series and $s = 12$ for
 monthly series.
 
 Other frequencies that correspond to trading day frequencies are: 2.714
 (monthly series) and 1.292, 1.850, 2.128 (quarterly series).
 
-In particular, the calendar frequency in monthly data (marked in red in
-Figure 7.18) is very close to the seasonal frequency corresponding to 4
-cycles per year$\text{\ ω}_{40} = \frac{2}{3}\pi = 2.0944$.
+In particular, the calendar frequency in monthly data (marked in red on the figure below) is very close to the seasonal frequency corresponding to 4
+cycles per year $\text{ω}_{40} = \frac{2}{3}\pi = 2.0944$.
 
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/Aimage19.jpeg)
+![Text](/assets/img/annex/UG_A_image19.png)
 
 {: .text-center.small}
 
@@ -90,3 +88,7 @@ frequencies highlighted**
 
 This implies that it may be hard to disentangle both effects using the
 frequency domain techniques.
+
+
+[^85]: For definition of the periodogram and Fourier frequencies see
+    7.3.

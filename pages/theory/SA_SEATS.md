@@ -20,20 +20,20 @@ is always provided by TRAMO and includes the original series $y_{t}$,
 the linearized series $x_{t}$ (i.e. the original series $y_{t}\ $with
 the deterministic effects removed), the ARIMA model for the stochastic
 (linearized) time series $x_{t}$ and the deterministic effects (calendar
-effects, outliers and other regression variable effects).[^31] SEATS
+effects, outliers and other regression variable effects)[^31]. SEATS
 decomposes the linearized series (and the ARIMA model) into trend,
 seasonal, transitory and irregular components, provides forecasts for
 these components, together with the associated standard errors, and
 finally assign the deterministic effects to each component yielding the
-*final* components..[^32] The Minimum Mean Square Error (MMSE)
+*final* components[^32]. The Minimum Mean Square Error (MMSE)
 estimators of the components are computed with a Wiener-Kolmogorov
 filter applied to the finite series extended with forecasts and 
-backcasts.[^33]
+backcasts[^33].
 
 One of the fundamental assumptions made by SEATS is that the linearized
 time series $x_{t}$ follows the ARIMA model
 
-  $$\phi(B)\delta\left( B \right)x_{t} = \theta(B)a_{t}$$   \[7.25\]
+  $$\phi(B)\delta\left( B \right)x_{t} = \theta(B)a_{t}$$   \[1\] <!---\[7.25\]-->
   
 where:
 
@@ -61,9 +61,9 @@ on the past history of the series.
 
 Denoting
 $\varphi\left( B \right) = \phi\left( B \right)\delta\left( B \right),\ $
-\[7.25\] can be written in a more concise form as
+\[1\] <!---\[7.25\]--> can be written in a more concise form as
 
-  $$\varphi\left( B \right)x_{t} = \theta(B)a_{t}$$,   \[7.26\]
+  $$\varphi\left( B \right)x_{t} = \theta(B)a_{t}$$,   \[2\] <!---\[7.26\]-->
 
 where $\varphi\left( B \right)$ contains both the stationary and the
 nonstationary roots.
@@ -72,14 +72,14 @@ nonstationary roots.
 
 Let us consider the additive decomposition model
 
-  $$x_{t} = \sum_{i = 1}^{k}x_{\text{it}}$$,   \[7.27\]
+  $$x_{t} = \sum_{i = 1}^{k}x_{\text{it}}$$,   \[3\] <!---\[7.27\]-->
  
 where *i* refers to the orthogonal components: trend, seasonal,
 transitory or irregular. Apart from the irregular component, supposed to
 be a white noise, it is assumed that each component follows the ARIMA
-model which can be represented, using the notation of \[7.26\], as:
+model which can be represented, using the notation of \[2\] <!---\[7.26\]-->, as:
 
-  $$\varphi_{i}\left( B \right)\ x_{\text{it}} = \theta_{i}(B)a_{\text{it}}$$,   \[7.28\]
+  $$\varphi_{i}\left( B \right)\ x_{\text{it}} = \theta_{i}(B)a_{\text{it}}$$,   \[4\] <!---\[7.28\]-->
 
 where
 $\varphi_{i}\left( B \right) = \phi_{i}\left( B \right)\delta_{i}\left( B \right),\ \ x_{\text{it}}$
@@ -91,11 +91,11 @@ constant variance $V(a_{i})$ and $a_{\text{it}}$ and
 $a_{\text{jt}}\ $are not correlated for $i \neq j\ $and for any $t$..
 These disturbances are functions of the innovations in the series and
 are called \"pseudo-innovations\" in the literature concerning the AMB
-decomposition as they refer to the components that are never observed.
-[^34] In the JDemetra+ documentation the term \"innovations\" is used to
+decomposition as they refer to the components that are never observed
+[^34]. In the JDemetra+ documentation the term \"innovations\" is used to
 refer to the \"pseudo-innovations\".
 
-The following assumptions hold for \[7.28\]. For each $\text{i\ }$the
+The following assumptions hold for \[4\] <!---\[7.28\]-->. For each $\text{i}$ the
 polynomials $\phi_{i}\left( B \right)$, $\delta_{i}\left( B \right)$ and
 $\theta_{i}(B)$ are prime and of finite order. The roots of
 $\delta_{i}\left( B \right)$ lies on the unit circle; those of
@@ -114,30 +114,30 @@ the overall series. In fact, since the unit root of
 $\theta_{i}\left( B \right)$ induce a spectral zero, when the
 polynomials $\theta_{i}\left( B \right),\ i = 1,\ldots,k$ share no unit
 root in common, there is no frequency for which all component spectra
-become zero.[^36]
+become zero[^36].
 
 Since aggregation of ARIMA models yields ARIMA models, the series
-$x_{t}\ $will also follow an ARIMA model, as in \[7.26\], and
+$x_{t}\ $will also follow an ARIMA model, as in \[2\] <!---\[7.26\]-->, and
 consequently the following identity can be derived:
 
 
-$$\frac{\theta(B)}{\varphi(B)}a_{t} = \sum_{i = 1}^{k}{\frac{\theta_{i}(B)}{\varphi_{i}(B)}a_{\text{it}}}$$.   \[7.29\]
+$$\frac{\theta(B)}{\varphi(B)}a_{t} = \sum_{i = 1}^{k}{\frac{\theta_{i}(B)}{\varphi_{i}(B)}a_{\text{it}}}$$.   \[5\] <!---\[7.29\]-->
 
 
 In the ARIMA model based approach implemented in SEATS, the ARIMA model
-identified and estimated for the observed series $x_{t}\text{\ \ }$is
+identified and estimated for the observed series $x_{t}$ is
 decomposed to derive the models for the components. In particular, the
 AR polynomials for the components, $\varphi_{i}\left( B \right),$ are
 easily derived through the factorization of the AR polynomial
 $\varphi\left( B \right)$:
 
-  $$\varphi\left( B \right) = \prod_{i = 1}^{k}{\varphi_{i}\left( B \right)}$$,   \[7.30\]
+  $$\varphi\left( B \right) = \prod_{i = 1}^{k}{\varphi_{i}\left( B \right)}$$,   \[6\] <!---\[7.30\]-->
 
 while the MA polynomials for the components, together with the
 innovation variances $V(a_{i})$, cannot simply be obtained through the
 relationship:
 
-  $$\theta(B)a_{t} = \sum_{i = 1}^{k}{\varphi_{\text{ni}}\left( B \right)}\theta_{i}(B)a_{\text{it}}$$,   \[7.31\]
+  $$\theta(B)a_{t} = \sum_{i = 1}^{k}{\varphi_{\text{ni}}\left( B \right)}\theta_{i}(B)a_{\text{it}}$$,   \[7\] <!---\[7.31\]-->
 
 
 where $\varphi_{\text{ni}}\left( B \right)$ is the product of all
@@ -151,35 +151,35 @@ noninvertible components except the irregular).
 To understand how SEATS factorizes the AR polynomials, first a concept
 of a root will be explored[^37].
 
-The equation \[7.26\] can be expressed as:
+The equation \[2\] <!---\[7.26\]--> can be expressed as:
 
-$$\psi^{- 1}(B)x_{t} = a_{t}(1 + \varphi_{1}B + \ldots\varphi_{p}B^{p})x_{t} =(1 + \theta_{1}B + \ldots\theta_{q}B^{q})a_{t}$$,   \[7.32\] 
+$$\psi^{- 1}(B)x_{t} = a_{t}(1 + \varphi_{1}B + \ldots\varphi_{p}B^{p})x_{t} =(1 + \theta_{1}B + \ldots\theta_{q}B^{q})a_{t}$$,   \[8\] <!---\[7.32\]--> 
 
 
-Let us now consider \[7.26\] in the inverted form:
+Let us now consider \[2\] <!---\[7.26\]--> in the inverted form:
 
-  $$\theta\left( B \right)y_{t} = \varphi(B)a_{t}$$,   \[7.33\]
+  $$\theta\left( B \right)y_{t} = \varphi(B)a_{t}$$,   \[9\] <!---\[7.33\]--> 
 
-If both sides of \[7.32\] are multiplied by $x_{t - k}$ with $k > q$,
+If both sides of \[8\] <!---\[7.32\]-->  are multiplied by $x_{t - k}$ with $k > q$,
 and expectations are taken, the right hand side of the equation vanishes
 and the left hand side becomes:
 
-$$\varphi(B)\gamma_{k} = \gamma_{k} + \varphi_{1}\gamma_{k - 1} + \ldots\varphi_{p}\gamma_{k - p} = 0 $$,   \[7.34\]  
+$$\varphi(B)\gamma_{k} = \gamma_{k} + \varphi_{1}\gamma_{k - 1} + \ldots\varphi_{p}\gamma_{k - p} = 0 $$,   \[10\] <!---\[7.34\]-->
 
 where $B$ operates on the subindex $k$.
 
-The autocorrelation function $\gamma_{k}$ is a solution of \[7.34\] with
+The autocorrelation function $\gamma_{k}$ is a solution of \[10\] <!---\[7.34\]--> with
 the characteristic equation:
 
-  $$z^{p} + \varphi_{1}z^{p - 1} + \ldots\varphi_{p - 1}z + \varphi_{p} = 0$$.   \[7.35\]
+  $$z^{p} + \varphi_{1}z^{p - 1} + \ldots\varphi_{p - 1}z + \varphi_{p} = 0$$.   \[11\] <!---\[7.35\]-->
 
-If $z_{1}$,...,$\ z_{p}$ are the roots of \[7.35\], the solutions of
-\[7.34\] can be expressed as:
+If $z_{1}$,...,$\ z_{p}$ are the roots of \[11\] <!---\[7.35\]-->, the solutions of
+\[10\] <!---\[7.34\]--> can be expressed as:
 
-  $\gamma_{k} = \sum_{i = 1}^{p}z_{i}^{k}$,   \[7.36\]
+  $\gamma_{k} = \sum_{i = 1}^{p}z_{i}^{k}$,   \[12\] <!---\[7.36\]-->
 
 and will converge to zero as $k \rightarrow \infty$ when
-$\left| r_{i} \right| < 1,\ i = 1,\ldots,p$. From \[7.34\] and \[7.36\]
+$\left| r_{i} \right| < 1,\ i = 1,\ldots,p$. From \[10\] <!---\[7.34\]--> and \[12\] <!---\[7.36\]-->
 it can be noticed that $z_{1} = B_{i}^{- 1}$, meaning that
 $z_{1}$,...,$\ z_{p}$ are the inverses of the roots $B_{1},\ldots,B_{p}$
 of the polynomial $\varphi(B)$. The convergence of $\gamma_{k}$ implies
@@ -188,13 +188,13 @@ outside the unit circle). Therefore, from the equation
 
   $$
   {\varphi(B)}^{- 1} = \frac{1}{(1 - z_{1})\ldots(1 - z_{1})}
-  $$   \[7.37\]
+  $$   \[13\] <!---\[7.37\]-->
   
 it can be derived that ${\varphi(B)}^{- 1}$ is convergent and all its
 inverse roots are less than 1 in modulus.
 
-Equation \[7.35\] has real and complex roots (solutions). Complex number
-$x = a + bi$, with $a$ and $\text{b\ }$both real numbers, can be
+Equation \[11\] <!---\[7.35\]--> has real and complex roots (solutions). Complex number
+$x = a + bi$, with $a$ and $\text{b}$ both real numbers, can be
 represented as $x = r\left( cos(\omega) + i\ sin(\omega \right))$, where
 $i$ is the imaginary unit${\ (i}^{2} = - 1)$, $r$ is the modulus of $x$,
 that is $\ r = \left| x \right| = \sqrt{a^{2} + b^{2}}$ and $\omega$ is
@@ -211,9 +211,9 @@ established by the real axis and the orthogonal imaginary axis.
 
 **Geometric representation of a complex number and of its conjugate**
 
-Representing the roots of the characteristic equation \[7.35\] in the
+Representing the roots of the characteristic equation \[11\] <!---\[7.35\]--> in the
 complex plane enhances understanding how they are allocated to the
-components. When the modulus $r$ of the roots in $\text{z\ }$are greater
+components. When the modulus $r$ of the roots in $\text{z}$ are greater
 than 1 (i.e. modulus of the roots in $\varphi(B)\  < 1$), the solution
 of the characteristic equation has a systematic explosive process, which
 means that the impact of the given impulse on the time series is more
@@ -250,7 +250,7 @@ The complex conjugates roots generate the periodic movements of the
 type:
 
 
-  $$z_{t} = A^{t}\cos\left( \omega t + W \right).$$   \[7.38\]
+  $$z_{t} = A^{t}\cos\left( \omega t + W \right).$$   \[14\] <!---\[7.38\]-->
 
 
 where:
@@ -264,7 +264,7 @@ $W$ -- phase (angle at $t = 0)$.
 The frequency $f$, i.e. the number of cycles per unit time, is
 $\frac{\omega}{2\pi}$. If it is multiplied by *s*, the number of
 observations per year, the number of cycles completed in one year is
-derived. The period of function \[7.38\], denoted by $\tau$, is the
+derived. The period of function \[14\] <!---\[7.38\]-->, denoted by $\tau$, is the
 number of units of time (months/quarters) it takes for a full circle to
 be completed.
 
@@ -353,7 +353,7 @@ transitory). In this case the transitory component will appear even when
 there is no AR factor allocated to it.
 
 Once these rules are applied, the factorization of the AR polynomial
-presented by \[7.26\] yields to the identification of the AR polynomials
+presented by \[2\] <!---\[7.26\]--> yields to the identification of the AR polynomials
 for the components which contain, respectively, the AR roots associated
 with the trend component, the seasonal component and the transitory
 component.[^40]
@@ -363,19 +363,19 @@ components are obtained.
 
 For example, the Airline model for a monthly time series:
 
-  $$(1 - B)(1 - B^{12})x_{t} = (1 + \theta_{1}B)(1 + \Theta_{1}B^{12})\ a_{t}$$,   \[7.39\]
+  $$(1 - B)(1 - B^{12})x_{t} = (1 + \theta_{1}B)(1 + \Theta_{1}B^{12})\ a_{t}$$,   \[15\] <!---\[7.39\]-->
  
 is decomposed by SEATS into the model for the trend component:
 
-  $$(1 - B)(1 - B)c_{t} = (1 + \theta_{c,1}B + \theta_{c,2}B^{2})a_{c,t}$$,   \[7.40\]
+  $$(1 - B)(1 - B)c_{t} = (1 + \theta_{c,1}B + \theta_{c,2}B^{2})a_{c,t}$$,   \[16\] <!---\[7.40\]-->
   
 and the model for the seasonal component:
 
-  $$\left( 1 + B + \ldots + B^{11} \right)s_{t} = \left( 1 + \theta_{s,1}B + \ldots + {\theta_{s,11}B}^{11} \right)a_{s,t},$$   \[7.41\]
+  $$\left( 1 + B + \ldots + B^{11} \right)s_{t} = \left( 1 + \theta_{s,1}B + \ldots + {\theta_{s,11}B}^{11} \right)a_{s,t},$$   \[17\] <!---\[7.41\]-->
 
 As a result, the Airline model is decomposed as follows:
 
-$$\frac{(1 + \theta_{1}B)(1 + \Theta_{1}B^{12})}{(1 - B)(1 - B)}a_{t} = \frac{\left( 1 + \theta_{s,1}B + \ldots + {\theta_{s,11}B}^{11} \right)}{\left( 1 + B + \ldots + B^{11} \right)}a_{s,t} + \frac{(1 + \theta_{c,1}B + \theta_{c,2}B^{2})}{(1 - B)(1 - B)}a_{c,t} + u_{t}$$.   \[7.42\]
+$$\frac{(1 + \theta_{1}B)(1 + \Theta_{1}B^{12})}{(1 - B)(1 - B)}a_{t} = \frac{\left( 1 + \theta_{s,1}B + \ldots + {\theta_{s,11}B}^{11} \right)}{\left( 1 + B + \ldots + B^{11} \right)}a_{s,t} + \frac{(1 + \theta_{c,1}B + \theta_{c,2}B^{2})}{(1 - B)(1 - B)}a_{c,t} + u_{t}$$.   \[18\] <!---\[7.42\]-->
 
 The transitory component is not present in this case and the irregular
 component is the white noise.
@@ -384,7 +384,7 @@ The partial fractions decomposition is performed in a frequency domain.
 In essence, it consists in portioning of the pseudo-spectrum[^41]
 of$x_{t}$ into additive spectra of the components. When the AMB
 decomposition of the ARIMA model results in the non-negative spectra for
-all components, the decomposition is called admissible.[^42] In such
+all components, the decomposition is called admissible[^42]. In such
 case an infinite number of admissible decompositions exists, i.e.
 decompositions that yield the non-negative spectra of all components.
 Therefore, the MA polynomials and the innovation variances cannot be yet
@@ -396,11 +396,11 @@ canonical solution of S.C. Hillmer and G.C. Tiao is applied[^43], i.e.
 all additive white noise is added to the irregular component As a
 consequence all components derived from the canonical decomposition,
 except from the irregular, have a spectral minimum of zero and are thus
-noninvertible.[^44]. Given the stochastic features of the series, it can
+noninvertible[^34]. Given the stochastic features of the series, it can
 be shown by that the canonical decomposition produces as stable as
 possible trend and seasonal components since it maximizes the variance
 of the irregular and minimizes the variance of the other
-components[^45]. However, there is a price to be paid as canonical
+components[^43]. However, there is a price to be paid as canonical
 components can produce larger revisions in the preliminary estimators of
 the component[^46] than any other admissible decomposition.
 
@@ -420,7 +420,7 @@ represents the angular frequency. The pseudo-spectrum of $x_{\text{it}}$
 is defined as the Fourier transform of ACGF of$\ x_{t}$ which is
 expressed as:
 
-$$\frac{\psi_{i}\left( B \right)\psi_{i}\left( F \right)}{\delta_{i}\left( B \right)\delta_{i}\left( F \right)}V(a_{i})$$,   \[7.43\]
+$$\frac{\psi_{i}\left( B \right)\psi_{i}\left( F \right)}{\delta_{i}\left( B \right)\delta_{i}\left( F \right)}V(a_{i})$$,     \[19\] <!---\[7.43\]-->
 
 
 where:
@@ -471,11 +471,11 @@ example figure below, four components were obtained).
 
 **The pseudo-spectra for the components**
 
-#### Estimation of the components with the Wiener-Kolmogorow filter {#estimation-of-the-components-with-the-wiener-kolmogorow-filter .ListParagraph}
+#### Estimation of the components with the Wiener-Kolmogorow filter {#estimation-of-the-components-with-the-wiener-kolmogorow-filter}
 
 The various components are estimated using Wiener-Kolmogorow (WK)
 filters. JDemetra+ includes three options to estimate the WK filter,
-namely *Burman*, *KalmanSmoother* and *MCElroyMatrix*.[^49] Here the
+namely *Burman*, *KalmanSmoother* and *MCElroyMatrix*[^49]. Here the
 first of abovementioned options, proposed by BURMAN, J.P. (1980) will be
 explained.
 
@@ -483,16 +483,16 @@ The estimation procedure and the properties of the WK filter are easier
 to explain with a two-component model. Let the seasonally adjusted
 series ($s_{t}$) be the signal of interest and the seasonal component
 ($n_{t}$) be the remainder, \"the noise\". The series is given by the
-model \[7.26\] and from \[7.28\] the models for theoretical components
+model \[2\] <!---\[7.26\]--> and from \[4\] <!---\[7.28\]--> the models for theoretical components
 are:
 
-$$\varphi_{s}(B)s_{t} = \theta_{s}(B)a_{\text{st}}$$   \[7.44\]
+$$\varphi_{s}(B)s_{t} = \theta_{s}(B)a_{\text{st}}$$     \[20\] <!---\[7.44\]-->
 
 and 
 
-  $$\varphi_{n}(B)n_{t} = \theta_{n}(B)a_{\text{nt}}$$.   \[7.45\]
+  $$\varphi_{n}(B)n_{t} = \theta_{n}(B)a_{\text{nt}}$$.   \[21\] <!---\[7.45\]-->
 
-From \[7.30\] and \[7.31\] it is clear that
+From \[6\] <!---\[7.30\]--> and \[7\] <!---\[7.31\]--> it is clear that
 $\varphi\left( B \right) = \varphi_{s}(B)\varphi_{n}(B)$ and 
 $\theta\left( B \right)a_{t} = \theta_{s}(B)a_{\text{st}}+\theta_{n}(B)a_{\text{nt}}$. 
 
@@ -507,7 +507,7 @@ can be presented as a linear function of the elements
 in $$X_{T}$$.[^50] WHITTLE (1963) shows that the MMSE estimator of
 $${\widehat{s}}_{t}$$ is:
 
-  $${\widehat{s}}_{t} = k_{s}\frac{\psi_{s}(B)\psi_{s}(F)}{\psi(B)\psi(F)}x_{t}$$,   \[7.46\]
+  $${\widehat{s}}_{t} = k_{s}\frac{\psi_{s}(B)\psi_{s}(F)}{\psi(B)\psi(F)}x_{t}$$,   \[22\] <!---\[7.46\]-->
   
 where $$\psi(B)= \frac{\theta(B)}{\phi(B)}$$,
 
@@ -520,16 +520,16 @@ Expressing the $$\psi\left(B\right)$$ polynomials as functions of the AR
 and MA polynomials, after cancelation of roots, the estimator
 of $$s_{t}$$ can be expressed as:
 
-  $${\widehat{s}}_{t} = k_{s}\frac{\theta_{s}\left(B\right)\theta_{s}\left(F\right)\varphi_{n}\left(B \right)\delta_{n}\left(B\right)\varphi_{n}\left(F\right)\delta_{n}\left(F\right)}{\theta\left(B\right)\theta\left(F \right)}x_{t}$$,   \[7.47\]
+  $${\widehat{s}}_{t} = k_{s}\frac{\theta_{s}\left(B\right)\theta_{s}\left(F\right)\varphi_{n}\left(B \right)\delta_{n}\left(B\right)\varphi_{n}\left(F\right)\delta_{n}\left(F\right)}{\theta\left(B\right)\theta\left(F \right)}x_{t}$$,   \[23\] <!---\[7.47\]-->
 
 
 where:
 
-  $$\nu_{s}\left( B,F \right) = k_{s}\frac{\theta_{s}\left( B \right)\theta_{s}\left( F \right)\varphi_{n}\left( B \right)\delta_{n}\left( B \right)\varphi_{n}\left( F \right)\delta_{n}\left( F \right)}{\theta\left( B \right)\theta\left( F \right)}$$   \[7.48\]
+  $$\nu_{s}\left( B,F \right) = k_{s}\frac{\theta_{s}\left( B \right)\theta_{s}\left( F \right)\varphi_{n}\left( B \right)\delta_{n}\left( B \right)\varphi_{n}\left( F \right)\delta_{n}\left( F \right)}{\theta\left( B \right)\theta\left( F \right)}$$   \[24\] <!---\[7.48\]-->
 
 is a WK filter.
 
-Equation \[7.48\] shows that the WK filter is two-sided (uses
+Equation \[24\] <!---\[7.48\]--> shows that the WK filter is two-sided (uses
 observations both from the past and from the future), centered (the
 number of points in the past is the same as in the future) and symmetric
 (for any $k$ the weight applied to $x_{t - k}$ and $x_{t + k}$ is the
@@ -539,7 +539,7 @@ convergent in the past and in the future.
 
 The estimator can be presented as
 
-  $${\widehat{s}}_{t} = \nu_{i}\left(B,F\right)x_{t}$$,   \[7.49\]
+  $${\widehat{s}}_{t} = \nu_{i}\left(B,F\right)x_{t}$$,   \[25\] <!---\[7.49\]-->
   
 where
 
@@ -558,18 +558,18 @@ series illustrated above is shown on the figure below: WK filters for components
 
 **WK filters for components**
 
-The WK filter from \[7.48\] can also be expressed as a ratio of two
+The WK filter from \[24\] <!---\[7.48\]--> can also be expressed as a ratio of two
 pseudo-autocovariance generating functions (p-ACGF). The p-ACGF function
 summarizes the sequence of absolutely summable autocovariances of a
 stationary process $x_{t}$ (see 7.3).
 
 The ACGF function of an ARIMA process is expressed as:
 
-  $$acgf(B) = \frac{\theta\left( B \right)\theta\left( F \right)}{\phi\left( B \right)\delta\left( B \right)\phi\left( F \right)\delta\left( F \right)}V(a)$$   \[7.50\]
+  $$acgf(B) = \frac{\theta\left( B \right)\theta\left( F \right)}{\phi\left( B \right)\delta\left( B \right)\phi\left( F \right)\delta\left( F \right)}V(a)$$   \[26\] <!---\[7.50\]-->
 
 And, the WK filter can be rewritten as:
 
-  $$\nu_{s}\left( B,F \right) = \frac{\gamma_{s}(B,F)}{\gamma(B,F)}$$,   \[7.51\]
+  $$\nu_{s}\left( B,F \right) = \frac{\gamma_{s}(B,F)}{\gamma(B,F)}$$,   \[27\] <!---\[7.51\]-->
 
 where:
 
@@ -579,7 +579,7 @@ is the p-ACGF of $$s_{t}$$;
 $\gamma\left( B,F \right) = \frac{\theta\left( B \right)\theta\left( F \right)}{\phi\left( B \right)\delta\left( B \right)\phi\left( F \right)\delta\left( F \right)}V(a)$
 is the p-ACGF of $x_{t}$.
 
-From \[7.48\] it can be seen that the WK filter depends on both the
+From \[24\] <!---\[7.48\]--> it can be seen that the WK filter depends on both the
 component and the series models. Consequently, the estimator of the
 component and the WK filter reflect the characteristic of data and by
 construction, the WK filter adapts itself to the series under
@@ -610,11 +610,11 @@ approximated by a truncated (finite) filter and, in most applications,
 for large $$k$$ the estimator for the central periods of the
 series can be safely seen as generated by the WK filter[^52]:
 
-  $${\widehat{s}}_{t}=\nu_{k}x_{t-k} + \ldots + \nu_{0}x_{t} + \ldots + \nu_{k}x_{t+k}$$.   \[7.52\]
+  $${\widehat{s}}_{t}=\nu_{k}x_{t-k} + \ldots + \nu_{0}x_{t} + \ldots + \nu_{k}x_{t+k}$$.   \[28\] <!---\[7.52\]-->
 
 When $T > 2L + 1$, where $T$ is the last observed period, and $L$ is an
 a priori number that typically expands between 3 and 5 years, the
-estimator expressed by \[7.47\] can be assumed as the final (historical)
+estimator expressed by \[23\] <!---\[7.47\]--> can be assumed as the final (historical)
 estimator for the central observations of the series[^53]. In practice,
 the Wiener-Kolmogorov filter is applied to $x_{t}$ extended with
 forecasts and backcasts from the ARIMA model. The final or historical
@@ -626,10 +626,10 @@ In the frequency domain, the Wiener-Kolmogorov filter$\ \nu(B,F)$ that
 provides the final estimator of $s_{t}\ $is expressed as the ratio of
 the $s_{t}\ $and $x_{t}$ pseudo-spectra:
 
-  $$\widetilde{\nu}\left( \omega \right) = \frac{g_{s}(\omega)}{g_{x}(\omega)}$$.   \[7.53\]
+  $$\widetilde{\nu}\left( \omega \right) = \frac{g_{s}(\omega)}{g_{x}(\omega)}$$.   \[29\] <!---\[7.53\]-->
 
 The function $\widetilde{\nu}\left( \omega \right)\ $is also referred as
-the gain of the filter.[^54] GÓMEZ, V., and MARAVALL, A. (2001a) show
+the gain of the filter.[^34] GÓMEZ, V., and MARAVALL, A. (2001a) show
 that when for some frequency the signal (the seasonally adjusted series)
 dominates the noise (seasonal fluctuations) the gain
 $\widetilde{\nu}\left( \omega \right)$ approaches 1. On the contrary,
@@ -638,7 +638,7 @@ $\widetilde{\nu}\left( \omega \right)\ $approaches 0.
 
 The spectrum of the estimator of the seasonal component is expressed as:
 
-  $$g_{\widehat{s}}\left( \omega \right) = \left\lbrack \frac{g_{s}(\omega)}{g_{x}(\omega)} \right\rbrack^{2}g_{x}(\omega)$$,   \[7.54\]
+  $$g_{\widehat{s}}\left( \omega \right) = \left\lbrack \frac{g_{s}(\omega)}{g_{x}(\omega)} \right\rbrack^{2}g_{x}(\omega)$$,   \[30\] <!---\[7.54\]-->
 
 where$\ \left\lbrack \widetilde{\nu}\left( \omega \right) \right\rbrack^{2} = \left\lbrack \frac{g_{s}(\omega)}{g_{x}(\omega)} \right\rbrack^{2} = \left\lbrack \frac{g_{s}(\omega)}{g_{s}(\omega) + g_{n}(\omega)} \right\rbrack^{2} = \left\lbrack \frac{1}{1 + \frac{1}{r(\omega)}} \right\rbrack^{2}$
 is the squared gain of the filter and
@@ -666,7 +666,7 @@ spectrum for trend.
 
 **Component spectrum and estimator spectrum for trend**
 
-From the equation \[7.53\] it is clear that the squared gain of the
+From the equation \[29\] <!---\[7.53\]--> it is clear that the squared gain of the
 filter determines how the variance of the series contributes to the
 variance of the seasonal component for the different frequencies. When
 $\widetilde{\nu}\left( \omega \right) = 1$, the full variation of
@@ -687,7 +687,7 @@ analysed in the figure abive (Fiure: WK filters for stable and stochastic season
 **The squared gain of the WK filter for stable and stochastic seasonal components.**
 
 Since $r\left( \omega \right) \geq 0$, then
-$\widetilde{\nu}\left( \omega \right) \leq 1$ and from \[7.53\] it can
+$\widetilde{\nu}\left( \omega \right) \leq 1$ and from \[29\] <!---\[7.53\]--> it can
 be derived that
 $g_{\widehat{s}}\left( \omega \right) = \widetilde{\nu}\left( \omega \right)g_{s}(\omega)$.
 As a result, the estimator will always underestimate the component, i.e.
@@ -714,7 +714,7 @@ estimators. For a finite (long enough) realization, they can be assumed
 to characterize the estimators for the central observations of the
 series, but for periods close to the beginning of the end the filter
 cannot be completed and some preliminary estimator has to be used*.
-Indeed, the historical estimator shown in \[7.52\] is obtained for the
+Indeed, the historical estimator shown in \[28\] <!---\[7.52\]--> is obtained for the
 central periods of the series. However, when $t$ approaches $T$ (last
 observation), the WK filter requires observations, which are not
 available yet. For this reason a preliminary estimator needs to be used.
@@ -726,7 +726,7 @@ at $T$ $$(T - t = k \geq 0)$$ can be expressed as
 
 $$
 {\widehat{x}}_{it|t + k}=\nu_{i}\left(B,F\right)x_{t|T}^{e}
-$$,   \[7.55\] 
+$$,   \[31\] <!---\[7.55\]--> 
   
 where $$\nu_{i}\left(B,F \right)$$ is the WK filter and $$x_{t|T}^{e}$$ is
 the extended series, such that $x_{t|T}^{e} = x_{t}$ for $t \leq T$ and
@@ -745,14 +745,14 @@ filter applied to $$x_{t}$$ that generates a phase effect[^56].
 When a new observation $$x_{T + 1}$$ becomes available the forecast
 $${\widehat{x}}_{T + 1|T}$$ is replaced by the observation and the
 forecast $${\widehat{x}}_{iT + j|T}$$, $$j > 1$$ are updated to
-$$x_{T + j|T + 1}$$ resulting in the revision error[^57]. The total error
+$$x_{T + j|T + 1}$$ resulting in the revision error[^51]. The total error
 in the preliminary estimator $$d_{it|t + k}$$ is expressed as a sum of the
 final estimation error ($$e_{it}$$) and the revision error
 ($$r_{it|t + k}$$), i.e.: 
 
 $$
 d_{it|t + k} = x_{it}-{\widehat{x}}_{it|t + k} = \left(x_{it} - {\widehat{x}}_{it}\right) + \left(          {\widehat{x}}_{it} - {\widehat{x}}_{it|t + k} \right) = e_{it} + r_{it|t + k}
-$$,  \[7.56\]
+$$,  \[32\] <!---\[7.56\]-->
  
 where:
 
@@ -788,14 +788,14 @@ component estimator can be expressed as[^59]:
 
   $$
   {\widehat{x}}_{it} = \xi_{s}\left(B,F\right)a_{t}
-  $$,   \[7.57\]
+  $$,   \[33\] <!---\[7.57\]-->
 
 where
 $\xi_{s}\left( B,F \right) = \ldots + \xi_{j}B^{j} + \ldots + \xi_{1}B + \xi_{0} + \xi_{- 1}F\ldots\xi_{- j}F^{j} + \ldots$.
 
 This representation shows the estimator as a filter applied to the
 innovation $$a_{t}$$, rather than on the
-series $$x_{t}$$[^60]. Hence, the filter from \[7.56\] can be
+series $$x_{t}$$[^60]. Hence, the filter from \[32\] <!---\[7.56\]--> can be
 divided into two components: the first one, i.e.
 $$\ldots + \xi_{j}B^{j}+ \ldots+ \xi_{1}B + \xi_{0}$$, applies to
 prior and concurrent innovations, the second one, i.e.
@@ -808,7 +808,7 @@ expressed as:
 
   $$
   {\widehat{x}}_{it} =\xi_{i}(B)^{-}a_{t} + \xi_{i}(F)^{+}a_{t + 1}
-  $$,   \[7.58\]
+  $$,   \[34\] <!---\[7.58\]-->
 
 where:
 
@@ -824,19 +824,97 @@ For the two cases already presented in figure *WK filters for stable and stochas
 ![Text](/assets/img/annex/UG_A_image12.png)
 
 It can be shown that $${\xi}_{- 1},\ldots,\xi_{- j}$$ are convergent and
-$$\xi_{j},\ldots, {\xi}_{1},\xi_{0}$$ are divergent. From \[7.57\], the
+$$\xi_{j},\ldots, {\xi}_{1},\xi_{0}$$ are divergent. From \[33\] <!---\[7.57\]-->, the
 concurrent estimator is equal to 
 $$
 {\widehat{x}}_{it|t} = E_{t}x_{it}=E_{t}{\widehat{x}}_{it} = {\xi}_{i}(B)^{-}a_{t}
-$$, \[7.59\]
+$$, \[35\] <!---\[7.59\]-->
 
 so that the revision 
 $$
 r_{it} = {\widehat{x}}_{it} - {\widehat{x}}_{it|t} = \xi_{i}(F)^{+}a_{t + 1}
-$$   \[7.60\]  
+$$   \[36\] <!---\[7.60\]-->
 
  
 is a zero-mean stationary MA process. As a result, historical and
-preliminary estimators are cointegrated. From expression \[7.49\] the
+preliminary estimators are cointegrated. From expression \[25\] <!---\[7.49\]--> the
 relative size of the full revision and the speed of convergence can be
 obtained.
+
+[^31]: In the original software SEATS can be used either with TRAMO,
+    operating on the input received from the latter, or alone, fitting
+    an ARIMA model to the series.
+
+[^32]: GÓMEZ, V., and MARAVALL, A. (1998).
+
+[^33]: GÓMEZ, V., and MARAVALL, A. (1997).
+
+[^34]: GÓMEZ, V., and MARAVALL, A. (2001a).
+
+[^35]: For description of the spectrum see section [Spectral analysis](../spectral.html).
+
+[^36]: MARAVALL, A. (1995).
+
+[^37]: Description based on KAISER, R., and MARAVALL, A. (2000) and
+    MARAVALL, A. (2008c).
+
+[^38]: For details see MARAVALL, A., CAPORELLO, G., PÉREZ, D., and
+    LÓPEZ, R. (2014).
+
+[^39]: In JDemetra+ this argument is called *Trend boundary*.
+
+[^40]: The AR roots close to or at the trading day frequency generates a
+    stochastic trading day component. A stochastic trading day component
+    is always modelled as a stationary ARMA(2,2), where the AR part
+    contains the roots close to the TD frequency, and the MA(2) is
+    obtained from the model decomposition (MARAVALL, A., and PÉREZ, D.
+    (2011)). This component, estimated by SEATS, is not implemented by
+    the current version of JDemetra+.
+
+[^41]: The term pseudo-spectrum is used for a non-stationary time
+    series, while the term spectrum is used for a stationary time
+    series.
+
+[^42]: If the ARIMA model estimated in TRAMO does not accept an
+    admissible decomposition, SEATS replaces it with a decomposable
+    approximation. The modified model is therefore used to decompose the
+    series. There are also other rare situations when the ARIMA model
+    chosen by TRAMO is changed by SEATS. It happens when, for example,
+    the ARIMA models generate unstable seasonality or produce a
+    senseless decomposition. Such examples are discussed by MARAVALL, A.
+    (2009).
+
+[^43]: HILLMER, S.C., and TIAO, G.C. (1982).
+
+[^44]: GÓMEZ, V., and MARAVALL, A. (2001a).
+
+[^45]: HILLMER, S.C., and TIAO, G.C. (1982).
+
+[^46]: MARAVALL, A. (1986).
+
+[^47]: Ibid.
+
+[^48]: KAISER, R., and MARAVALL, A. (2000).
+
+[^49]: The choice of the estimation method is controlled by the *Method*
+    parameter, explained in the [SEATS specification](../reference-manual/sa-spec-tramo.html) section.
+
+[^50]: MARAVALL, A. (2008c).
+
+[^51]: MARAVALL, A. (1995).
+
+[^52]: MARAVALL, A., and PLANAS, C. (1999).
+
+[^53]: MARAVALL, A. (1998).
+
+[^54]: GÓMEZ, V., and MARAVALL, A. (2001a).
+
+[^55]: Ibid.
+
+[^56]: KAISER, R., and MARAVALL, A. (2000).
+
+[^57]: MARAVALL, A. (1995).
+
+[^58]: MARAVALL, A. (2009).
+
+[^59]: The section is based on KAISER, R., and MARAVALL, A. (2000).

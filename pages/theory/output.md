@@ -111,7 +111,7 @@ The CSV matrix of JDemetra+ may contain:
 | $${residuals.lb2}$$ | The Ljung-Box test on the squared residuals  |
 | $${residuals.seaslb}$$  | The Ljung-Box test on the residuals at seasonal lags  |
 | $${residuals.bp}$$  | The Box-Pierce test on the residuals  |
-| $${esiduals.bp2$$        | The Box-Pierce test on the squared residuals   |
+| $${residuals.bp2}$$        | The Box-Pierce test on the squared residuals   |
 | $${residuals.seasbp}$$  | The Box-Pierce test on the residuals at seasonal lags   |
 | $${residuals.nruns}$$        | Test on the number of runs of the residuals |
 | $${residuals.lruns}$$        | Test on the length of runs of the residuals |
@@ -167,4 +167,4 @@ The CSV matrix of JDemetra+ may contain:
 | $${decomposition.trendfilter}$$ | The order of the trend filter     |
 | $${decomoposition.seasfilter}$$ | The order of the seasonal filter  |
 
-
+  
