@@ -8,7 +8,7 @@ The default JDemetra+ window, which is displayed after launching the program, is
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref4.jpg)
+![Text](/assets/img/reference-manual/manual/A_Ref_d28.jpg)
 
 {: .text-center.small}
 
