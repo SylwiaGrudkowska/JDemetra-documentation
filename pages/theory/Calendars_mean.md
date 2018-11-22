@@ -22,7 +22,7 @@ revised).
 
 The mean effect of a calendar variable is the average number of days in
 its group. Taking into account that one year has on average 365.25 days,
-the monthly mean effects for a working days are, as shown in Table 7.3,
+the monthly mean effects for a working days are, as shown in the table below,
 21.7411 for week days and 8.696 for weekends.
 
 **Monthly mean effects for the Working day variable**
@@ -34,7 +34,7 @@ the monthly mean effects for a working days are, as shown in Table 7.3,
  |Weekends                        |  365.25/12\*2/7 = **8.696**  |
  |Total                           | 365.25/12 = **30.4375**      |
 
-The number of days by period is highly seasonal, as, apart from
+The number of days by period is highly seasonal, as apart from
 February, the length of each month is the same every year. For this
 reason, any set of calendar variables will contain, at least in some
 variables, a significant seasonal effect, which is defined as the
@@ -42,7 +42,7 @@ average number of days by period (Januaries\..., first quarters\...)
 outside the mean effect. Removing that fixed seasonal effects consists
 of removing for each period the long term average of days that belong to
 it. The calculation of a seasonal effect for the working days
-classification is presented in Table 7.4.
+classification is presented in the table below.
 
 **The mean effect and the seasonal effect for the calendar periods**
 
@@ -66,7 +66,7 @@ classification is presented in Table 7.4.
 For a given time span, the actual calendar effect for week days can be
 easily calculated as the difference between the number of week days in a
 specific period and the sum of the mean effect and the seasonal effect
-assigned to this period, as it is shown in Table 7.5 for the period
+assigned to this period, as it is shown in the table below for the period
 01.2013 -- 06.2013.
 
 **The calendar effect for the period 01.2013 - 06.2013**
