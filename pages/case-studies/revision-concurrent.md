@@ -7,19 +7,18 @@ description: Basics
 
 According to the *ESS Guidelines on Seasonal Adjustment* (2015),
 concurrent adjustment means that the model, filters, outliers,
-regression parameters and transformation type are re-identified and the
+regression parameters and transformation type are all re-identified and the
 respective parameters and factors re-estimated every time new
-observation is available. This option in JDemetra+ means that the
+observations are available. This option in JDemetra+ means that a
 completely new model is identified, and the previous results are not
 taken into account.
 
 The picture below presents the initial model (on the left) and the
 results of the refreshment procedure with the *Concurrent adjustment*
 option (on the right). The transformation type has changed from none to
-log. The ARIMA part have been re-identified (a change from
+log. The ARIMA model has been re-identified (it has changed from
 (0,1,1)(1,1,0) to (1,1,0)(0,1,1)). In contrast to the initial model, in
-the updated model the trading days and a leap year effect have been not
-estimated. Also the results of the automatic outlier identification are
+the updated model trading day effects and a leap year effect are no longer included. Also the automatically identified outliers are
 not the same in both models.
 
 {: .text-center.image-wrapper}

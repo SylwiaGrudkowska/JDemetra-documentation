@@ -1,24 +1,24 @@
 ---
 layout: left-menu
-title: Transformation choice
+title: Transformation choices
 
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-Logging is an is an optional transformation of the original data that is
+The log transformation of the original data is an option that is often
 applied to achieve a stationary autocovariance function. The decision
-concerning logging (or not) the time series has a great impact on
+concerning logging (or not) of a time series has a great impact on
 seasonal adjustment outcomes[^4]. JDemetra+ offers two options: logging
 (which means that the multiplicative decomposition is used) or no
 transformation (the additive decomposition is used). The selection of
-the transformation type can be done automatically, on a basis of the
+the transformation type can be done automatically, on the basis of the
 outcome of a log-level test.
 
 The test used by TRAMO/SEATS is based on the maximum likelihood
 estimation of the parameter $\lambda$ in the Box-Cox transformations
 (which is a power transformations such that the transformed values of
-time series $\text{y\ }$are a monotonic function of the observations,
+time series $\text{y }\$are a monotonic function of the observations,
 i.e.:
 
 $$y_{i}^{\alpha} = \left\{ \frac{\left( y_{i}^{\alpha} - 1 \right)}{\begin{matrix}
@@ -27,14 +27,14 @@ $$y_{i}^{\alpha} = \left\{ \frac{\left( y_{i}^{\alpha} - 1 \right)}{\begin{matri
 \end{matrix}} \right.\ ,\ \lambda \neq 0$$
 
 The automatic procedure first fits two Airline models (i.e. ARIMA
-(0,1,1)(0,1,1)) to the time series: one in logs ($\lambda = 0$), other
+(0,1,1)(0,1,1)) on the time series: one in logs ($\lambda = 0$), the other
 without logs ($\lambda = 1$). The test compares the sum of squares of
 the model without logs with the sum of squares multiplied by the square
 of the geometric mean from the model in logs. Logs are taken in case the
 last function is the maximum[^5]. The parameter *fct* controls the bias
 in the log/level pre-test (the function is active when **Function** is
 set to *Auto*); *fct* \> 1 favours levels, *fct* \< 1 favours logs. The
-same test is used for a modelling with the TRAMO model (see 3.3.2).
+same test is used for modelling with the TRAMO model (see 3.3.2).
 
 {: .text-center.image-wrapper}
 
@@ -45,11 +45,11 @@ same test is used for a modelling with the TRAMO model (see 3.3.2).
 **The *Transformation* options for the TRAMO/SEATS method**
 
 The test used by X-13ARIMA-SEATS is based on the AICC information
-criteria[^6]. To choose the transformation type X-13ARIMA-SEATS fits the
-RegARIMA model to the untransformed and transformed series and chooses
+criteria[^6]. To choose the transformation type, X-13ARIMA-SEATS fits the
+RegARIMA model to the untransformed and the transformed series.  X-13ARIMA-SEATS will choose
 the log transformation except when[^7]:
 
-$\text{AICC}_{\log} - \text{AICC}_{\text{no\ log}} < \Delta_{\text{AICC}}$,
+$$\text{AICC}_{\log} - \text{AICC}_{\text{no\ log}} < \Delta_{\text{AICC}}$$
 
 where:
 
@@ -60,11 +60,11 @@ $\text{AICC}_{\log}$ is the value of AICC from fitting the RegARIMA
 model to the transform series;
 
 $\Delta_{\text{AICC}}$ is the threshold value; $\Delta_{\text{AICC}}$\>
-0 favours levels, $\Delta_{\text{AICC}}$ \< 0 favours logs.
+0 favours levels and $\Delta_{\text{AICC}}$ \< 0 favours logs.
 
 The RegARIMA model used in the test is the one specified in the ARIMA
-part of the specification. If no intervention is made the (0,1,1)(0,1,1)
-model is used. The same test is used for a modelling with the RegARIMA
+part of the specification. If model is specified then the (0,1,1)(0,1,1)
+model is used. The same test is used for modelling with the RegARIMA
 model (see 3.3.2).
 
 {: .text-center.image-wrapper}
@@ -81,7 +81,7 @@ however in case of the most problematic series the manual selection is
 recommended. The manual selection of the transformation is usually made
 in the specifications used for a regular data production.
 
-The options available for functionalities presented in this case study
+The options available for the functionalities presented in this case study
 are described in the *JDemetra+ Reference Manual* (2017), item 4.1.1.2
 for TRAMO/SEATS and TRAMO, and item 4.1.2.2 for X-13ARIMA-SEATS and
 RegARIMA.
