@@ -81,7 +81,6 @@ A list of output items of JDemetra+ CSV, TXT and XLS formats.
  |$${benchmarking.target}$$  |Target for the benchmarking|
 
 
-
 The CSV matrix of JDemetra+ may contain:
 
 {: .table .table-style}
