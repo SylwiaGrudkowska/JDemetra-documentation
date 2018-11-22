@@ -21,7 +21,7 @@ sufficiently high order $p$:
   x_{t} = \mu + \left( \phi_{1}B + \ldots + \phi_{p}B^{p} \right)x_{t} + \varepsilon_{t}
   $$   \[1\] <!---\[7.118\]      -->
 
-where $\varepsilon_{t}$ is a white-noise variable with mean zero and a
+where $$\varepsilon_{t}$$ is a white-noise variable with mean zero and a
 constant variance.
 
 The autoregressive spectrum estimator for the series $x_{t}$ is defined
