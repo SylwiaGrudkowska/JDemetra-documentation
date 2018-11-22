@@ -75,7 +75,7 @@ calculated as it is shown in table below.
   |Nov-13      |4         |4         |4         |4         |5         |5         |4|
   |Dec-13      |5         |5         |4         |4         |4         |4         |5|
 
-Next, the contrast variables are calculated (Table 7.11) as a result of
+Next, the contrast variables are calculated (table below) as a result of
 the linear transformation applied to the variables presented in table below.
 
 **Contrast variables (series corrected for leap year effects)**
@@ -115,21 +115,21 @@ way:
     applied. In 2013 it falls on a Tuesday. Consequently, the following
     corrections are applied to the number of each weekday in January:
     Tuesday -1, Sunday +1, so the following corrections are applied to
-    the contrast variables:-2 for Tuesday and -1 for the other contrast
+    the contrast variables: -2 for Tuesday and -1 for the other contrast
     variables.
 
 -   Shrove Tuesday: It is a fixed day of the week holiday that always
     falls on Tuesday. For this reason in 2012 the following corrections
     are applied to the number of each weekday in February: Tuesday -1,
     Sunday +1, so the following corrections are applied to the contrast
-    variables:- -2 for the contrast variable associated with Tuesday,
+    variables: -2 for the contrast variable associated with Tuesday,
     and -1 for the other contrast variables. The holiday expires at the
     end of 2012. Therefore no corrections are made for 2013.
 
 -   Freedom Day: In 2012 it falls on a Wednesday. Consequently, the
     following corrections are applied to the number of each weekday in
     April: Wednesday -1, Sunday +1, so the following corrections are
-    applied to the contrast variables:- -2 for Wednesday and -1 for the
+    applied to the contrast variables: -2 for Wednesday and -1 for the
     other contrast variables. In 2013 it falls on Thursday. Therefore,
     the following corrections are applied to the number of each weekday
     in April: Thursday -1, Sunday +1, so the following corrections are
@@ -177,7 +177,7 @@ validity period of the holiday.
 -   Shrove Tuesday: It may fall either in February or in March. It will
     fall in March if Easter is on or after 17 April. Taking into account
     the theoretical distribution of Easter, it gives: prob(March) =
-    +0.22147, prob(February) =+0.77853. The correction of the contrasts
+    +0.22147, prob(February) = +0.77853. The correction of the contrasts
     will be +1.55707 for Tuesday in February 2012 and +0.77853 for the
     other contrast variables. The correction of the contrasts will be
     +0.44293 for Tuesday in March 2012, +0.22147 for the other contrast

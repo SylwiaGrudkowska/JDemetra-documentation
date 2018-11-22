@@ -9,15 +9,15 @@ As far as the RegARIMA and the TRAMO models are considered, any
 non-degenerated linear transformation of the calendar variables can be
 used. It will produce the same results (likelihood, residuals,
 parameters, joint effect of the calendar variables, joint F-test on the
-coefficients of the calendar variables,\...). The linearised series that
+coefficients of the calendar variables...). The linearised series that
 will be further decomposed is invariant to any linear transformation of
 the calendar variables.
 
 However, it should be mentioned that choices of calendar corrections
 based on the tests on the individual t statistics are dependent on the
 transformation, which is rather arbitrary. This is the case in old
-versions of TRAMO/SEATS. That is why the joint F-test (as in the version
-of TRAMO/SEATS implemented in TSW+) should be preferred.
+versions of TRAMO-SEATS. That is why the joint F-test (as in the version
+of TRAMO-SEATS implemented in TSW+) should be preferred.
 
 An example of a linear transformation is the calculation of the contrast
 variables. In the case of the usual trading day variables, they are
@@ -49,7 +49,7 @@ used with the length of period.
   Thu - Sun \\                      
   Fri - Sun \\                      
   Sat - Sun \\                      
-  \text{Length\ of\ period} \\      
+  \text{Length of period} \\      
   \end{bmatrix}$$                   
   
 For the usual working day variables, two variables are used: one
@@ -62,14 +62,14 @@ contrast variable and the length of period
   \text{Week} \\                    
   \text{Weekend} \\                 
   \end{bmatrix} = \begin{bmatrix}   
-  \text{Contrast\ week} \\          
-  \text{Length\ of\ period} \\      
+  \text{Contrast week} \\          
+  \text{Length of period} \\      
   \end{bmatrix}$$
 
 The $\text{Length of period}$ variable is defined as a deviation from
 the length of the month (in days) and the average month length, which is
 equal to $30.4375.$ Instead, the leap-year variable can be used here
-(see 4.1.1.3 or 4.1.2.3)[^62].
+(see Regression sections in [RegARIMA](../reference-manual/modelling-spec-arima.html#regression) or [Tramo](../reference-manual/modelling-spec-tramo.html#regression))[^62].
 
 Such transformations have several advantages. They suppress from the
 contrast variables the mean and the seasonal effects, which are
@@ -77,3 +77,6 @@ concentrated in the last variable. So, they lead to fewer correlated
 variables, which are more appropriate to be included in the regression
 model. The sum of the effects of each day of the week estimated with the
 trading (working) day contrast variables cancel out.
+
+
+[^62]: GÓMEZ, V., and MARAVALL, A (2001b).
