@@ -5,10 +5,10 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 The results of the seasonal adjustment process
-resulting from the TRAMO/SEATS and X-13ARIMA-SEATS methods is presented in the *Documents* section,
+resulting from the TRAMO-SEATS and X-13ARIMA-SEATS methods is presented in the *Documents* section,
 which belongs to the *Seasonal Adjustment* node.
 These documents are displayed in the *TramoSeatsDoc* windows (for a time
-series adjusted with TRAMO/SEATS), the *RegArimaSeatsDoc* window (for a
+series adjusted with TRAMO-SEATS), the *RegArimaSeatsDoc* window (for a
 time series adjusted with X-13ARIMA-SEATS) and the *SAProcessing* window
 (for a set of series adjusted with one or both methods).
 
