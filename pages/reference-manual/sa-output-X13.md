@@ -114,7 +114,7 @@ As an example the view of the D-table group is presented below.
 
 {: .text-center.small}
 
-**The outcome of the part D of the algorithm**
+**The outcome of the part D of the X-11 algorithm**
 
 By default, each table is displayed as a time series. To switch into
 table view select the *Single time series* option from the local menu.
@@ -138,8 +138,6 @@ the table, and choose table’s name.
 
 **X-11 outcomes presented as tables**
 
-The description of the all options from the local menu is
-available below Figure 4.11.
 
 ##### **Final filters**
 
