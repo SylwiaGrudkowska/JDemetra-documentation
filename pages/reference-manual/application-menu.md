@@ -38,7 +38,7 @@ the drop-down menu selects the highlighted item.
 
 The functions available in the main application menu are:
 * [File](file.html)
-* [Statistical methods](statistical-methods.html)
+* [Statistical methods](Statistical-methods.html)
 * [X-13Doc](x-13doc.html)
 * [RegArimaDoc](regarimadoc.html)
 * [TramoDoc](tramodoc.html)
