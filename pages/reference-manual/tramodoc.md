@@ -6,7 +6,7 @@ description: Basics
 ---
 
 *TramoDoc* is a main menu item that includes functionalities designated
-for *Tramo* documents. To create a *Tramo* document select *Tramo* from
+to *Tramo* documents. To create a *Tramo* document select *Tramo* from
 *the Statistical methods* \\(\rightarrow\\) *Modelling* \\(\rightarrow\\)
 *Single Analysis* menu.
 
@@ -61,5 +61,5 @@ The options for the *TramoDoc* include:
     window. However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec**. to workspace – copy the specification of the active
-    document into the workspace. In that way, it can be used for other
-    processing.
+    document into the workspace. This allows it be used for
+    further processing.

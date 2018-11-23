@@ -32,7 +32,7 @@ when a newly created or existing *RegArima* document is active.
 
 *RegArimaDoc-\#number* is a default name that corresponds to the
 *RegArima* document’s name. The default name can be changed by the user
-in the [*Workspace* window](../reference-manual/workspace.html) (right click on *RegArimaDoc-\#number* under
+in the [*Workspace*](../reference-manual/workspace.html) window (right click on *RegArimaDoc-\#number* under
 the *regarima* node in the *Workspace* window and select rename from the
 local menu).
 
@@ -47,7 +47,7 @@ The options for *RegArimaDoc* include:
 -   **Refresh data** – updates the input data and executes the seasonal
     adjustment process. This option is only available for *RegArimaDoc*
     documents saved during a previous session with JDemetra+. To use
-    this option, first create *RegArimaDoc* document and drag and drop
+    this option, first create a *RegArimaDoc* document and drag and drop
     the time series into it. Then save the workspace and close
     JDemetra+. Next, update the time series (add/change the
     observations, but do not change either the localisation of the file
@@ -57,13 +57,13 @@ The options for *RegArimaDoc* include:
     **Refresh data** option from the *RegArimaDoc* menu. JDemetra+
     re-estimates the complete seasonal adjustment model automatically,
     so the results are updated immediately. The user can modify the
-    specification and validate the newly introduced changes using the
-    *Specifications* functionality (see [Specifications](modelling-specifications.html)).
+    specification and validate the newly introduced changes using the [Specifications](modelling-specifications.html)
+    functionality.
 
 -   **Lock** – prevents the series from the *RegArimaDoc* from being
-    changed when the user double clicks on a new one in the *Providers*
+    changed when the user double clicks on a new series in the *Providers*
     window. However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec**. **to workspace** – copy the specification of the
-    active document into the workspace. In that way, it can be used for
-    other processing.
+    active document into the workspace. This allows it be used for
+    further processing.
