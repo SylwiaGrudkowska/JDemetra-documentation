@@ -20,7 +20,7 @@ needs.
 -   **Preview Time Series** – opens a window that plots any of the
     series the user selects from *Providers*.
 
--   **Debug** – opens a *Preview Time Series* window that enable
+-   **Debug** – opens a *Preview Time Series* window that enables a
     fast display of the graphs for time series from a large dataset. To
     display the graph click on the series in the *Providers* window.
 
@@ -33,7 +33,7 @@ needs.
 -   **Workspace** – opens (if closed) and activates the *Workspace*
     window.
 
--   **Output** – generic window to display outputs in the form of text;
+-   **Output** – a generic window to display outputs in the form of text;
     useful with certain plug-ins (e.g. tutorial descriptive statistics).
 
 -   **Editor** – activates the editor panel (and update the main menu
