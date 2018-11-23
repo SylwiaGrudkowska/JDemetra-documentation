@@ -6,7 +6,7 @@ description: Basics
 ---
 
 *X13Doc* is a main menu item that includes functionalities designated
-for *X13* documents. To create a *X13* document select *X13* from the
+to *X13* documents. To create a *X13* document select *X13* from the
 *Seasonal Adjustment* \\(\rightarrow\\) *Statistical Methods* \\(\rightarrow\\) *Single Analysis* menu.
 
 {: .text-center.image-wrapper}
@@ -36,8 +36,8 @@ The options for the *X13Doc* include:
 
 -   **Paste** – pastes the time series to the *X13Doc* window and
     performs seasonal adjustment for this time series using settings
-    selected for the current process. The series needs to be previously
-    copied, e.g. from the *Providers* window. Otherwise the message
+    selected for the current process. The series needs to be
+    copied previously, e.g. from the *Providers* window. Otherwise a message
     informing that the action cannot be done is displayed.
 
 -   **Refresh data** – updates the input data and executes the seasonal
@@ -60,5 +60,5 @@ The options for the *X13Doc* include:
     However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec**. to workspace – copy the specification of the active
-    document into the workspace. In that way, it can be used for other
-    processing.
+    document into the workspace. This allows it be used for
+    further processing.
