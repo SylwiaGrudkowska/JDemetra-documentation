@@ -62,8 +62,7 @@ $\frac{6}{52}$ times the range
 ${\widehat{s}}^{\max} - {\widehat{s}}^{\min}$.
 
 Following the suggestion of SOUKUP, R.J., and FINDLEY, D.F. (1999),
-JDemetra+ uses an autoregressive model spectral estimator of model order 30. This order yields high resolution of strong components, meaning
-peaks that are sharply defined in the plot of
+JDemetra+ uses an autoregressive model spectral estimator of model order 30. This order yields high resolution of strong components, meaning peaks that are sharply defined in the plot of
 $\widehat{s}\left( \omega \right)$ with 61 frequencies. The minimum
 number of observations needed to compute the spectrum is set to $n =$ 80
 for monthly data and to $n =$ 60 for quarterly series while the maximum
