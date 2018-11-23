@@ -306,7 +306,9 @@ series:
 In the case of an additive decomposition, for each component the average
 absolute changes over several periods are calculated as[^38]:
 
-$$\text{Component}_{d} = \frac{1}{n - d}\sum_{t = d + 1}^{n}{|Table_{t} - Table_{t - d}|}\quad\left[5.28\right]$$
+$$
+\text{Component}_{d} = \frac{1}{n - d}\sum_{t = d + 1}^{n}|Table_{t} - Table_{t - d}|
+$$ \[4\]
  
 where:
 
@@ -511,7 +513,7 @@ suitable given the noisiness of the series.
 
 **Table D9a – Moving seasonality ratios**
 
-##### Footnotes
+
 
 
 [^35]: For description of the pre-defined specifications see sections [Seasonal adjustment specifications](sa-specifications.html) and [Modelling specifications](modelling-specifications.html). Also see [User-defined specifications](sa-specifications.html) section for more detail.
