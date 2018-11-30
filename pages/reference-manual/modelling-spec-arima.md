@@ -9,7 +9,7 @@ This section discusses the options available for the RegARIMA
 specifications, which are based on the original X-13ARIMA-SEATS program
 developed by the U.S. Census Bureau. 
 
-The options available for the RegaRIMA specification are divided into five parts. These sections are: 
+The options available for the RegARIMA specifications are divided into five parts. These sections are: 
 * [*Estimate*](#estimate);
 * [*Transformation*](#transformation);
 * [*Regression*](#regression);
@@ -36,7 +36,7 @@ corresponding specification and argument from the original software is
 given, if any. For an exact description of the different parameters, the
 user should refer to the documentation of the original X-13ARIMA-SEATS
 program[^30]. Some additional explanations about the RegARIMA model, its
-parameters and estimation procedure are given [here](../pages/theory/SA_lin.html).
+parameters and estimation procedure are given [here](..\theory\SA_lin.html).
 
 For the pre-defined specifications the parameters are fixed, but in the
 case of the user-defined specification the user can set them
