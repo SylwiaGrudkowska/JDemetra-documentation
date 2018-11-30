@@ -391,7 +391,7 @@ identification are presented below.
 
 - **Accept Default**<br> *automdl; acceptdefault* 
     
-	Controls whether the default model (ARIMA(0,1,1)(0,1,1)) is chosen if the [Ljung-Box Q-statistics]((../theory/Tests_LB.html)) for these model residuals is acceptable. If the default model is found to be acceptable, no        further attempt will be made to identify a model or differencing order. By default, the **Accept Default** checkbox is    unmarked.
+	Controls whether the default model (ARIMA(0,1,1)(0,1,1)) is chosen if the [Ljung-Box Q-statistics](../theory/Tests_LB.html) for these model residuals is acceptable. If the default model is found to be acceptable, no        further attempt will be made to identify a model or differencing order. By default, the **Accept Default** checkbox is    unmarked.
 - **Cancelation limit**<br> *automdl; --* 
     
 	[Cancellation limit for the AR and the MA roots to be assumed equal](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors). This      option is mainly used in the automatic identification of the differencing order. The default parameter value is 0.1.
