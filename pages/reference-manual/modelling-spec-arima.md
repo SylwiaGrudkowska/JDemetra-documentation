@@ -105,7 +105,7 @@ estimating the RegARIMA model.
 
 The *Regression* section allows for estimating deterministic effects in
 the series with the pre-defined regression variables. These variables
-include [user-defined variables](user-defined-variables.html), several types of [pre-specified outliers](..case-studies/detailedsa-outliers.html),
+include [user-defined variables](user-defined-variables.html), several types of [pre-specified outliers](../case-studies/detailedsa-outliers.html),
 intervention variables and [calendar effects](../case-studies/calendars-main.html). The pre-defined and
 user-defined regression variables are selected with the **Variables**
 argument.
