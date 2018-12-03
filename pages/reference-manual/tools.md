@@ -24,7 +24,7 @@ The following functionalities are available from the *Tools* menu:
 * [*Spectral analysis*](#spectral-analysis) – contains tools for the analysis of a time series in a frequency domain;
 * [*Aggregation*](#aggregation) – enables the user to investigate a graph of the sum of multiple time series;
 * [*Differencing*](#differencing) – allows for the inspection of the first regular differences of the time series;
-* [*Spreadsheet profiler*](#spreadsheet profiler) – offers an Excel-type view of the XLS file imported to JDemetra+.
+* [*Spreadsheet profiler*](#spreadsheet-profiler) – offers an Excel-type view of the XLS file imported to JDemetra+.
 * [*Plugins*](#plugins) – allows for the installation and activation of plugins, which extend JDemetra+ functionalities.
 * [*Options*](#options) – presents the default interface settings and allows for their modification.
 
