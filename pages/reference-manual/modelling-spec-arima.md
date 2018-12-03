@@ -9,7 +9,7 @@ This section discusses the options available for the RegARIMA
 specifications, which are based on the original X-13ARIMA-SEATS program
 developed by the U.S. Census Bureau. 
 
-The options available for the RegaRIMA specification are divided into five parts. These sections are: 
+The options available for the RegARIMA specifications are divided into five parts. These sections are: 
 * [*Estimate*](#estimate);
 * [*Transformation*](#transformation);
 * [*Regression*](#regression);
@@ -36,7 +36,7 @@ corresponding specification and argument from the original software is
 given, if any. For an exact description of the different parameters, the
 user should refer to the documentation of the original X-13ARIMA-SEATS
 program[^30]. Some additional explanations about the RegARIMA model, its
-parameters and estimation procedure are given [here](../pages/theory/SA_lin.html).
+parameters and estimation procedure are given [here](..\theory\SA_lin.html).
 
 For the pre-defined specifications the parameters are fixed, but in the
 case of the user-defined specification the user can set them
@@ -105,7 +105,7 @@ estimating the RegARIMA model.
 
 The *Regression* section allows for estimating deterministic effects in
 the series with the pre-defined regression variables. These variables
-include [user-defined variables](user-defined-variables.html), several types of [pre-specified outliers](..case-studies/detailedsa-outliers.html),
+include [user-defined variables](user-defined-variables.html), several types of [pre-specified outliers](../case-studies/detailedsa-outliers.html),
 intervention variables and [calendar effects](../case-studies/calendars-main.html). The pre-defined and
 user-defined regression variables are selected with the **Variables**
 argument.
@@ -391,7 +391,7 @@ identification are presented below.
 
 - **Accept Default**<br> *automdl; acceptdefault* 
     
-	Controls whether the default model (ARIMA(0,1,1)(0,1,1)) is chosen if the [Ljung-Box Q-statistics]((../theory/Tests_LB.html)) for these model residuals is acceptable. If the default model is found to be acceptable, no        further attempt will be made to identify a model or differencing order. By default, the **Accept Default** checkbox is    unmarked.
+	Controls whether the default model (ARIMA(0,1,1)(0,1,1)) is chosen if the [Ljung-Box Q-statistics](../theory/Tests_LB.html) for these model residuals is acceptable. If the default model is found to be acceptable, no        further attempt will be made to identify a model or differencing order. By default, the **Accept Default** checkbox is    unmarked.
 - **Cancelation limit**<br> *automdl; --* 
     
 	[Cancellation limit for the AR and the MA roots to be assumed equal](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors). This      option is mainly used in the automatic identification of the differencing order. The default parameter value is 0.1.
