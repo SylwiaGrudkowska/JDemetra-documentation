@@ -22,11 +22,11 @@ JDemetra+.
 
 To avoid unnecessary repetitions, click on the respective link for a description of the following sections of the TRAMO/SEATS specification:
 
-* [*Estimate*](/reference-manual/modelling-spec-tramo.html#estimate); 
-* [*Transformation*](/reference-manual/modelling-spec-tramo.html#transformation); 
-* [*Regression*](/reference-manual/modelling-spec-tramo.html#regression); 
-* [*Outliers*](/reference-manual/modelling-spec-tramo.html#outliers);
-* [*Arima*](/reference-manual/modelling-spec-tramo.html#arima).
+* [*Estimate*](../reference-manual/modelling-spec-tramo.html#estimate); 
+* [*Transformation*](../reference-manual/modelling-spec-tramo.html#transformation); 
+* [*Regression*](../reference-manual/modelling-spec-tramo.html#regression); 
+* [*Outliers*](../reference-manual/modelling-spec-tramo.html#outliers);
+* [*Arima*](../reference-manual/modelling-spec-tramo.html#arima).
  
 This section focuses on the decomposition part of the seasonal adjustment process and the
 options for benchmarking.
