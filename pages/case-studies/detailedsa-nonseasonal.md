@@ -134,7 +134,6 @@ in JDemetra+.
 	{: .text-center.small}
 	**SI ratios for a non-seasonal time series - TRAMO/SEATS**
 
-##### Footnotes
 
 [^1]: When the series are non-stationary differentiation is performed
     before the seasonality tests.

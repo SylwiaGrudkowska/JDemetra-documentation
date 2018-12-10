@@ -1,11 +1,11 @@
 ---
 layout: left-menu
-title: Simple seasonal adjustment
+title: Automatic seasonal adjustment
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-*Simple seasonal adjustment* scenarios are intended for users who do not
+*Automatic seasonal adjustment* scenarios are intended for users who do not
 have much practical experience in seasonal adjustment. They show how to
 define a seasonal adjustment process, generate results swiftly, correct
 the specification for the most severe shortcomings (if any) and export

@@ -79,7 +79,7 @@ The possible options are described in the [Tramo](../reference-manual/modelling-
 
 **Creating a new user-defined specification in the *Modelling* section**
 
-##### Footnotes
+
 
 [^1]: TSW+ is a Windows extension of programs TRAMO and SEATS. See MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014).
 [^2]: MARAVALL, A. (2009).

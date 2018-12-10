@@ -7,8 +7,8 @@ description: Basics
 
 This scenario guides the user through all the steps involved in the
 process of seasonally adjusting a single time series. Links to the
-appropriate parts of the *JDemetra+ Reference Manual* (2017) for
-detailed explanations of actions to be performed are enclosed when
+appropriate parts of the *Reference Manual* for
+detailed explanations of actions to be performed are provided when
 necessary.
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
@@ -55,9 +55,9 @@ necessary.
     adjustment process automatically. By default, a summary of results
     is displayed. It is accompanied with two graphs: an overlay graph on the left with the original unadjusted series,
     the seasonally-adjusted series and the trend-cycle and the *SI
-    ratio* graph on the right. The diagnostics and graphs are discussed
-    in the *JDemetra+ Reference Manual* (2017), Chapter 4 and Chapter 5
-    (see 5.2.2 for X-13ARIMA-SEATS, 5.2.1 for TRAMO/SEATS). The *Main
+    ratio* graph on the right. The diagnostics and graphs for the modelling part are discussed [here](../reference-manual/output-modelling.html)
+    The user can find also find some explanations of the [results of seasonal adjustment for X-13ARIMA-SEATS]..(/reference-manual/sa-output-X13.html) and for [TRAMO/SEATS](../reference-manual/sa-output-tramo.html)). 
+	The *Main
     results* panel provides a first impression of the quality of the
     adjustment. Study the diagnostics section using the vertical
     scrollbar.
@@ -89,8 +89,7 @@ necessary.
 	**Diagnostic results - simple seasonal adjustment of single time series**
 
 6.  To explore the results, expand the tree in the left panel and click
-    on the desired node. Here *Out-of-sample test* was chosen (see the
-    *JDemetra+ Reference Manual* (2017), 4.2.3).
+    on the desired node. Here [*Out-of-sample test*](../reference-manual/forecasts.html) was chosen.
 
 	{: .text-center.image-wrapper}
 
@@ -167,8 +166,7 @@ necessary.
 
 12. Copy the series by clicking the *Copy* item from the context menu or
     use the standard *Ctrl+C* keys. Other options from this menu are
-    explained in the appropriate items of JDemetra+ Reference Manual
-    (2017), item 4.2.3.
+    explained [here](../reference-manual/input.html).
 
 	{: .text-center.image-wrapper}
 

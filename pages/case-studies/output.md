@@ -99,9 +99,8 @@ description: Basics
 
 	**Layout options for a *Csv* format**
 
-9.  The *Content* section presents a list of series that will be
-    included into a set of output files. The list of available codes is
-    given in the *JDemetra+ Reference Manual*, section 7.7. To modify
+9.  The *Content* section presents [a list of series that will be
+    included into a set of output files](../theory/output.html). To modify
     the initial settings click on the grey button in the *Content*
     section. The *CVS-series* window presents two panels: the panel on
     the left includes a list of all valuable output items. The panel on
@@ -119,8 +118,7 @@ description: Basics
 
 10. Options available for the *XLS* format are the same as for the *TXT*
     format with an exception of the *Layout* section. The list of
-    available codes in the *Content* section is given in the *JDemetra+
-    Reference Manual*, section 7.7.
+    available codes in the *Content* section is given [here](../theory/output.html).
 
 	-   *BySeries* – all results for a given time series are placed in one
 		sheet;
@@ -173,8 +171,7 @@ description: Basics
 
 14. In the case of the *TXT* format the only available options are *folder*
     (location of the file) and *series* (results included in the output
-    file). The list of available codes in the *Content* section is given
-    in the *JDemetra+ Reference Manual*, section 7.7.
+    file). The list of available codes in the *Content* section is given [here](../theory/output.html).
 
 	{: .text-center.image-wrapper}
 
@@ -188,8 +185,7 @@ description: Basics
     the model and quality diagnostics of the seasonal adjustment. The
     user may generate the list of default items or create their own
     quality report. By default, all the available items are included in
-    the output. The list of the items is given in the *JDemetra+
-    Reference Manual*, section 7.7.
+    the output. The list of the items is given [here](../theory/output.html).
 
 	{: .text-center.image-wrapper}
 

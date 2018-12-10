@@ -55,9 +55,8 @@ Seasonal Adjustment* (2015).
 
 	**The properties of the *Direct - Indirect seasonal adjustment* functionality**
 
-4.  By default, the pre-defined TRAMO/SEATS specification is used
-    \[RSAfull\] (see the *JDemetra+ Reference Manual* (2017), section
-    5.1) for seasonal adjustment of a dataset. To change it, click on
+4.  By default, the [pre-defined TRAMO-SEATS specification](../reference-manual/sa-specifications.html#pre-defined-specifications) is used
+    (RSAfull) for seasonal adjustment of a dataset. To change it, click on
     the button marked in the picture below. This will provide you with
     the alternative specifications. Here the user defined specification
     named *My spec* is chosen.
@@ -81,7 +80,7 @@ Seasonal Adjustment* (2015).
 	**Running a process**
 
 6.  The bottom panel presents the detailed results. The seasonality test
-    node presents the outcome of the seasonality tests (see 3.4.1)
+    node presents the outcome of the [seasonality tests](../theory/Tests_seas.html)
     performed for the aggregated series adjusted directly (*Direct sa*)
     and indirectly (*Indirect sa*). The reason for presenting these
     tests here is that the presence of residual seasonality and calendar
@@ -105,8 +104,7 @@ Seasonal Adjustment* (2015).
     the indirect SA series. *Chart* contains the graph of the
     differences, while *Table* includes the actual values. The
     *Periodogram* section presents graphs for two spectral estimators --
-    the periodogram and the auto-regressive spectrum. For their description
-    refer to the 3.4.2.
+    [the periodogram](../theory/spectral_periodogram.html) and [the auto-regressive spectrum](../theory/spectral_AR.html).
 
 	{: .text-center.image-wrapper}
 
@@ -129,7 +127,6 @@ Seasonal Adjustment* (2015).
 
 	**Details of the differences between direct and indirect seasonal adjustment results**
 
-##### Footnotes
 
 [^2]: Description based on the *ESS Guidelines on Seasonal Adjustment*
     (2015).

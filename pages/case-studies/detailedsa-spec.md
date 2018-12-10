@@ -10,7 +10,7 @@ adjustment process by creating a specification with given settings or by
 changing some settings in the specification currently in use.
 
 1.  To create a new specification go to the *Workspace* window and choose a
-    node for which you wish to add a specification (Modelling or
+    node, to which you wish to add a specification (Modelling or
     Seasonal adjustment). Then choose a method (*tramo* or *regarima* for
     *Modelling*, *tramoseats* or *x13* for *Seasonal adjustment*). Click
     on the left mouse button and choose a *New* option. The user can
@@ -43,7 +43,7 @@ changing some settings in the specification currently in use.
 	-   **Edit comments** -- a functionality for monitoring how a seasonal
 		adjustment process is implemented. The user can add and modify short
 		notes concerning a given time series. These notes are visible in the
-		Comments column in the Processing window. The notes are displayed
+		*Comments* column in the *Processing* window. The notes are displayed
 		when the user hovers the mouse on the given cell.
 
 	-   **Create document** -- adds a new document to the relevant place in

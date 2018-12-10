@@ -128,7 +128,7 @@ description: Basics
 
 	-   **Day event** -- a list of pre-defined holidays.
 
-	-   *Offset* -- The position of the holiday in relation to the selected
+	-   **Offset** -- The position of the holiday in relation to the selected
 		pre-specified holiday measured in days. By default, the offset is 1.
 		It can be positive or negative. The positive offset denotes a
 		holiday that is followed by the selected pre-specified holiday. On

@@ -300,8 +300,7 @@ Parts E includes:
 
 -   Components modified for large extreme values;
 
--   Comparison the annual totals of the raw time series and seasonally
-    > adjusted time series;
+-   Comparison the annual totals of the raw time series and seasonally adjusted time series;
 
 -   Changes in the final seasonally adjusted series;
 
@@ -309,8 +308,7 @@ Parts E includes:
 
 -   Robust estimation of the final seasonally adjusted series.
 
-The results from part E are used in part F to calculate the quality
-measures.
+The results from part E are used in part F to calculate the quality measures.
 
 -   **Part F: Seasonal adjustment quality measures**
 
@@ -374,8 +372,7 @@ $\overline{I} = \frac{1}{n - 1}\sum_{t = 2}^{n}\left| I_{t} - I_{t - 1} \right|$
 Then the value of $\frac{\overline{I}}{\overline{C}}\ $ ratio is checked
 and in iteration B:
 
--   If the ratio is smaller than 1, a 9-term Henderson moving average is
-    > selected;
+-   If the ratio is smaller than 1, a 9-term Henderson moving average is selected;
 
 -   Otherwise, a 13-term Henderson moving average is selected.
 
@@ -387,11 +384,9 @@ moving averages.
 
 In iterations C and D:
 
--   If the ratio is smaller than 1, a 9-term Henderson moving average is
-    > selected;
+-   If the ratio is smaller than 1, a 9-term Henderson moving average is selected;
 
--   If the ratio is greater than 3.5, a 23-term Henderson moving average
-    > is selected.
+-   If the ratio is greater than 3.5, a 23-term Henderson moving average is selected.
 
 -   Otherwise, a 13-term Henderson moving average is selected.
 
@@ -494,7 +489,7 @@ averages.
 
 **Moving average selection procedure, source: DAGUM, E. B.(1999)**
 
-##### **Identification and replacement of extreme values **
+##### **Identification and replacement of extreme values**
 
 X-13ARIMA-SEATS detects and removes outliers in the RegARIMA part.
 However, if there is a seasonal heteroscedasticity in a time series i.e.
@@ -587,11 +582,9 @@ weighted average of five values:
 
 -   The value itself with its weight;
 
--   The two preceding values, for the same period, having a full weight
-    > (if available);
+-   The two preceding values, for the same period, having a full weight(if available);
 
--   The next two values, for the same period, having full a weight (if
-    > available).
+-   The next two values, for the same period, having full a weight (if available).
 
 When the four full-weight values are not available, then a simple
 average of all the values available for the given period is taken.
@@ -627,25 +620,19 @@ RegARIMA part:
 
 -   Table A8s -- Transitory effect;
 
--   Table A9 -- Effect of user-defined regression variables assigned to
-    > the seasonally adjusted series or for which the component has not
-    > been defined;
+-   Table A9 -- Effect of user-defined regression variables assigned to the seasonally adjusted series or for which the component has not been defined;
 
--   Table 9sa -- Effect of user-defined regression variables assigned to
-    > the seasonally adjusted series;
+-   Table 9sa -- Effect of user-defined regression variables assigned to the seasonally adjusted series;
 
--   Table9u -- Effect of user-defined regression variables for which the
-    > component has not been defined.
+-   Table9u -- Effect of user-defined regression variables for which the component has not been defined.
 
 **Part B -- Preliminary Estimation of the Time Series Components:**
 
 -   Table B1 -- Original series after adjustment by the RegARIMA model;
 
--   Table B2 -- Unmodified Trend (preliminary estimation using composite
-    > moving average);
+-   Table B2 -- Unmodified Trend (preliminary estimation using composite moving average);
 
--   Table B3 -- Unmodified Seasonal -- Irregular Component (preliminary
-    > estimation);
+-   Table B3 -- Unmodified Seasonal -- Irregular Component (preliminary estimation);
 
 -   Table B4 -- Replacement Values for Extreme SI Values;
 
@@ -673,8 +660,7 @@ RegARIMA part:
 
 -   Table C1 -- Modified Raw Series;
 
--   Table C2 -- Trend (preliminary estimation using composite moving
-    > average);
+-   Table C2 -- Trend (preliminary estimation using composite moving average);
 
 -   Table C4 -- Modified Seasonal -- Irregular Component;
 
@@ -698,8 +684,7 @@ RegARIMA part:
 
 -   Table D1 -- Modified Raw Series;
 
--   Table D2 -- Trend (preliminary estimation using composite moving
-    > average);
+-   Table D2 -- Trend (preliminary estimation using composite moving average);
 
 -   Table D4 -- Modified Seasonal -- Irregular Component;
 
@@ -721,8 +706,7 @@ RegARIMA part:
 
 -   Table D11A -- Forecast of Final Seasonally Adjusted Series;
 
--   Table D12 -- Final Trend (estimation using Henderson moving
-    > average);
+-   Table D12 -- Final Trend (estimation using Henderson moving average);
 
 -   Table D12A -- Forecast of Final Trend Component;
 
@@ -742,28 +726,23 @@ RegARIMA part:
 
 -   Table E2 -- SA Series Modified for Large Extreme Values;
 
--   Table E3 -- Final Irregular Component Adjusted for Large Extreme
-    > Values;
+-   Table E3 -- Final Irregular Component Adjusted for Large Extreme Values;
 
 -   Table E11 -- Robust Estimation of the Final SA Series.
 
 **Part F -- Quality indicators:**
 
--   Table F2A -- Changes, in the absolute values, of the principal
-    > components;
+-   Table F2A -- Changes, in the absolute values, of the principal components;
 
--   Table F2B -- Relative contribution of components to changes in the
-    > raw series;
+-   Table F2B -- Relative contribution of components to changes in the raw series;
 
--   Table F2C -- Averages and standard deviations of changes as a
-    > function of the time lag;
+-   Table F2C -- Averages and standard deviations of changes as a function of the time lag;
 
 -   Table F2D -- Average duration of run;
 
 -   Table F2E -- I/C ratio for periods span;
 
--   Table F2F -- Relative contribution of components to the variance of
-    > the stationary part of the original series;
+-   Table F2F -- Relative contribution of components to the variance of the stationary part of the original series;
 
 -   Table F2G -- Autocorrelogram of the irregular component.
 

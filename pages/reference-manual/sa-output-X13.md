@@ -461,7 +461,7 @@ where \\(N\\) is number of observations in the time series and
 **Table F2G – Autocorrelation of the irregular component**
 
 The Cochran test is design to identify the heterogeneity of a series of
-variances. X-13-ARIMA-SEATS uses this test in the extreme value
+variances. X-13-ARIMA-SEATS uses this test in the extreme value
 detection procedure to check if the irregular component is
 heteroskedastic. In this procedure the standard errors of the irregular
 component are used for an identification of extreme values. If the null
@@ -530,6 +530,13 @@ suitable given the noisiness of the series.
     trend component presented in Table D12.
 
 [^40]: For the additive decomposition the formula is:
+[^40]: For the additive decomposition the formula is:
     $$
+[^40]: For the additive decomposition the formula is:
 	Corr_{k}I_{t} = \frac{\sum_{t = k + 1}^{N}{(I_{t} \times I_{t - k})}}{\sum_{t = 1}^{N}{(I_{t})}^{2}}
 	$$
+    $$
+    $$
+	Corr_{k}I_{t} = \frac{\sum_{t = k + 1}^{N}{(I_{t} \times I_{t - k})}}{\sum_{t = 1}^{N}{(I_{t})}^{2}}
+	Corr_{k}I_{t} = \frac{\sum_{t = k + 1}^{N}{(I_{t} \times I_{t - k})}}{\sum_{t = 1}^{N}{(I_{t})}^{2}}
+	$$	$$

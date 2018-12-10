@@ -100,7 +100,7 @@ any stochastic, covariance-stationary process can be presented in the
 form:
 
   
-  $x_{t} = \mu_{t} + {\widetilde{x}}_{t}$,   \[7.1\]
+  $x_{t} = \mu_{t} + {\widetilde{x}}_{t}$,   \[1\]
   
 
 where $\mu_{t}$ is a linearly deterministic component and
@@ -109,7 +109,7 @@ ${\widetilde{x}}_{t}$ is a linearly interderministic component, such as:
   
   $$
   {\widetilde{x}}_{t} = {\sum_{j = 0}^{\infty}\psi_{j}a}_{t - j}
-  $$,   \[7.2\]
+  $$,   \[2\]
   
 
 where $\sum_{j = 0}^{\infty}\psi_{i}^{2} < \infty$ (coefficients
@@ -121,11 +121,11 @@ $x_{t}$, that is:
   
   $$
   a_{t} = {\widetilde{x}}_{t} - {\widehat{x}}_{t|t - 1}
-  $$,   \[7.3\]
+  $$,   \[3\]
   
 
 where $${\widehat{x}}_{t|t - 1}$$ is the forecast of $${\widetilde{x}}_{t}$$
-made at period $t - 1$. As $a_{t}$ represents what is new in $${\widetilde{x}}_{t}$$ in point $t$, i.e., not contained in the past values of $${\widetilde{x}}_{t}$$, it is also called innovation of the process. From \[7.3\] $${\widetilde{x}}_{t}$$ can be viewed as a linear filter applied to the innovations.
+made at period $t - 1$. As $a_{t}$ represents what is new in $${\widetilde{x}}_{t}$$ in point $t$, i.e., not contained in the past values of $${\widetilde{x}}_{t}$$, it is also called innovation of the process. From \[3\] $${\widetilde{x}}_{t}$$ can be viewed as a linear filter applied to the innovations.
 
 The equation 7.1 is called a Wold representation. It presents a process
 as a sum of linearly deterministic component $\mu_{t}$ and linearly
@@ -140,11 +140,11 @@ Under suitable conditions $${\widetilde{x}}_{t}$$ can be presented as a weighted
 
   $$
   { {\widetilde{x}}_{t} = \sum_{j = 0}^{\infty}\pi_{j}{\widetilde{x}}_{t - j} + a}_{t}
-  $$,   \[7.4\]
+  $$,   \[4\]
 
 
 In general, for the observed time series, the assumptions concerning the
-nature of the process \[7.1\] do not hold for various reasons. Firstly,
+nature of the process \[1\] do not hold for various reasons. Firstly,
 most observed time series display a mean that cannot be assumed to be
 constant due to the presence of a trend and the seasonal movements.
 Secondly, the variance of the time series may vary in time. Finally, the

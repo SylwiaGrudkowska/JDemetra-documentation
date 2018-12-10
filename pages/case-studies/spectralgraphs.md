@@ -128,12 +128,11 @@ graph by the peaks on the seasonal frequencies.
 4. The seasonality test described above uses an empirical criterion to
     check whether the series has a seasonal component that is
     predictable (stable) enough that it can be estimated with reasonable
-    success. The peak has to be greater than the median of the 61 spectrum
+    success. The peak in the [auto-regressive spectrum](../theory/spectral_AR.html) 
+	has to be greater than the median of the 61 spectrum
     ordinates and has to exceed the two adjacent spectral values by more
     than a critical value. When such a case is detected, the test
-    results are displayed in green. For a detailed description of an
-    auto-regressive spectrum see the *JDemetra+ Reference Manual*
-    (2017), item 7.3.2.
+    results are displayed in green.
 	
 	{: .text-center.image-wrapper}
 
@@ -174,14 +173,12 @@ analysis* → *Periodogram* and drag and drop a series from the
 
 	**Periodogram's properties**
 
-7.  The periodogram was one of the earliest tools used for the analysis
+7.  The [periodogram](../theory/spectral_periodogram.html) was one of the earliest tools used for the analysis
     of time series in the frequency domain. It enables the user to
     identify the dominant periods (or frequencies) of a time series.
     In general, the periodogram is a wildly fluctuating estimate of
     the spectrum with a high variance and is less stable than an
-    auto-regressive spectrum. For a detailed description of a
-    periodogram see the *JDemetra+ Reference Manual* (2017), item
-    7.3.1.
+    auto-regressive spectrum.
 
 	{: .text-center.image-wrapper}
 
