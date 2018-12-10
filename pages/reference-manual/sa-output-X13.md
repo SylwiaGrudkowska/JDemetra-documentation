@@ -530,13 +530,6 @@ suitable given the noisiness of the series.
     trend component presented in Table D12.
 
 [^40]: For the additive decomposition the formula is:
-[^40]: For the additive decomposition the formula is:
-    $$
-[^40]: For the additive decomposition the formula is:
+	$$
 	Corr_{k}I_{t} = \frac{\sum_{t = k + 1}^{N}{(I_{t} \times I_{t - k})}}{\sum_{t = 1}^{N}{(I_{t})}^{2}}
 	$$
-    $$
-    $$
-	Corr_{k}I_{t} = \frac{\sum_{t = k + 1}^{N}{(I_{t} \times I_{t - k})}}{\sum_{t = 1}^{N}{(I_{t})}^{2}}
-	Corr_{k}I_{t} = \frac{\sum_{t = k + 1}^{N}{(I_{t} \times I_{t - k})}}{\sum_{t = 1}^{N}{(I_{t})}^{2}}
-	$$	$$
