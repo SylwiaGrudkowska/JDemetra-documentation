@@ -95,8 +95,8 @@ and user-defined regression variables are selected with the
    **The *Trading days* section of the specifcation**
    
   The **Automatic** option determines the manner in which the calendar effects are entered in the TRAMO model. It can be done in 
-  two ways: automatically (on a basis of the specified test) or manually. The calendar effects that are 
-  considered here are: trading day, working day and leap year effects. The significance of the Easter effect 
+  two ways: automatically (on the basis of the specified test) or manually. The calendar effects that are 
+  considered here are: trading days, working days and leap year effects. The significance of the Easter effect 
   is considered in the subsequent part of this section.   
 
    * *Unused* -- no test is performed for the calendar effects. JDemetra+ includes in the TRAMO model the calendar effects specified by the user under the 
@@ -266,7 +266,7 @@ and user-defined regression variables are selected with the
    
  - **Intervention variables**<br> *regression variables; --*
  
-   The intervention variables are defined as in TSW+. Following the definition, these effects are special events known a-priori (strikes, devaluations, political events, and so on). Intervention variables are modelled as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as combinations of the following basic structures[^16]: 
+   The intervention variables are defined as in TSW+. Following the definition, these effects are special events known a priori (strikes, devaluations, political events, and so on). Intervention variables are modelled as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as combinations of the following basic structures[^16]: 
    *  Dummy variables[^17];
    *  Any possible sequence of ones and zeros;
    *  $\frac{1}{(1 - \delta B)}$, 
@@ -309,7 +309,7 @@ and user-defined regression variables are selected with the
     **Defining the user-defined variable**
     
 	
-	The user-defined regression variable associated to a specific component should not contain effects that have to be associated with another component. Therefore, the following rules should be obeyed: 
+	The user-defined regression variable associated to a specific component should not contain effects that have to be associated with another component. Therefore, the following rules should be observed: 
     * The variable assigned to the trend or to the seasonally adjusted series should not contain a seasonal pattern;
     * The variable assigned to the seasonal should not contain a trend (or level); 
     * The variable assigned to the irregular should contain neither a seasonal pattern nor a trend (or level). 
@@ -425,11 +425,11 @@ automatic model identification are presented below.
 
 - **Automatic**<br> *automdl; ami; idif, inic\**
 
-  When marked it enables an automatic modelling of the ARIMA model to be performed. 
+  When marked it enables an automatic modelling of the ARIMA model. 
 
 - **Accept Default**
   
-  Controls whether the default model (ARIMA(0,1,1)(0,1,1)) may be chosen in the first step of the automatic model identification. More explicitly, if the [Ljung-Box Q-statistics](../theory/Tests_LB.html) for the residuals is acceptable, the       default model is accepted and no further attempt will be made to identify and other. By default, the **Accept Default**   option is false. 
+  Controls whether the default model (ARIMA(0,1,1)(0,1,1)) may be chosen in the first step of the automatic model identification. More explicitly, if the [Ljung-Box Q-statistics](../theory/Tests_LB.html) for the residuals is acceptable, the       default model is accepted and no further attempt will be made to identify another one. By default, the **Accept Default**   option is false. 
 - **Cancelation limit**<br> *ami; cancel*
    
    [A limit for the AR and the MA roots to be assumed equal](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors). This option is used in the automatic identification of the differencing order. If the difference in moduli of an AR and an MA root (when      estimating ARIMA(1,0,1)(1,0,1) models in the second step of the automatic identification of the differencing polynomial)   is smaller than **Cancelation limit**, the two roots cancel out. The default parameter value is 0.05.
@@ -473,7 +473,7 @@ Also the maximum lag is reduced in comparison with Win X-13.
 
 {: .text-center.small}
 
-**A checkbox for switching bewteen manual and automiatic choice of teh Arima model**
+**A checkbox for switching bewteen manual and automatic choice of teh Arima model**
 	
 Individual parameters can be held fixed at these initial values while
 the rest of the parameters are estimated. However, users should not

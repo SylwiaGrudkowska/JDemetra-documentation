@@ -1,21 +1,19 @@
 ---
 layout: left-menu
-title: Detailed seasonal adjustment
+title: Advanced seasonal adjustment
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-*Detailed seasonal adjustment* scenarios present the in-depth analysis
+*Advanced seasonal adjustment* scenarios present the in-depth analysis
 of seasonal adjustment results for time series generated with the
 user-defined specifications. They are intended for the advanced users
 who already have some practical experience of seasonal adjustment. They
 focus on how to correct the deficiencies of the specification and
-improve the modelling. This section is divided into two parts: *Detailed
-seasonal adjustment of a single time series* and *Detailed seasonal
-adjustment of multiple time series*.
+improve the modelling.
 
-### Detailed seasonal adjustment of a single time series
+### Chosing parameters of seasonal adjustment process
 
-This part guides the user through functions that can be used in the
+This section guides the user through functions that can be used in the
 process of seasonal adjustment of a single time series. It explains how
 to use available options to enhance the automatically selected seasonal
 adjustment model. This part is divided into several case studies. Each

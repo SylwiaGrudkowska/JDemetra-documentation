@@ -35,7 +35,7 @@ M_{j,t} =
 1 & \text{ in month } j = 1, \ldots, 11 \\
 - 1 & \text{ in December}\\
 0 & \text{ otherwise}
-\end{cases} \text{ -- dummy variables;}
+\end{cases} \text{ - dummy variables;}
 $$ 
 
 $y_{t}$ -- the original time series;

@@ -200,7 +200,6 @@ tml)
 10.7](http://www.oracle.com/technetwork/java/javase/downloads/index.html). 
 
 
-##### Footnotes
 
 [^1]: Eurostat is the statistical office of the European Union. Its task is to provide the European Union with statistics at European level that enable comparisons between countries and regions.
 [^2]: X-12-ARIMA is a seasonal adjustment program developed and supported by the U.S. Census Bureau. It includes all the capabilities of the X-11 program (see DAGUM, E.B. (1980)), which estimates trend and seasonal component using moving averages. X-12-ARIMA offers useful enhancements including: extension of the time series with forecasts and backcasts from the ARIMA models prior to seasonal adjustment, adjustment for effects estimated with user-defined regressors, additional seasonal and trend filter options, alternative seasonal-trend-irregular decomposition, additional diagnostics of the quality and stability of the adjustments, extensive time series modelling and model selection capabilities for linear regression models with ARIMA errors. For basic information on the X-12-ARIMA program see ‘X-12-ARIMA Reference Manual’ (2011). More information on X-12-ARIMA can be found at http://www.census.gov.

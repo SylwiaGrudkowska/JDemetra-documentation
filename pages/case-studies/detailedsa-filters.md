@@ -118,6 +118,6 @@ document is created.
 
 	**Launching a seasonal adjustment process with modified set of seasonal filters**
 
-##### Footnotes
+
 
 [^1]: *ESS Guidelines on Seasonal Adjustment* (2015).

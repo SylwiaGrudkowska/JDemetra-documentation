@@ -14,7 +14,7 @@ sets of holidays. The final Polish calendar is then defined as a chained
 calendar by specifying in this case the two calendars and a break date.
 
 1.  To create the chained calendar, first define two national calendars,
-    following scenario 3.4.3.1. The two calendars will appear in the
+    following the [National calendars](../calendars-national.html) scenario. The two calendars will appear in the
     *Workspace* panel.
 
 	{: .text-center.image-wrapper}

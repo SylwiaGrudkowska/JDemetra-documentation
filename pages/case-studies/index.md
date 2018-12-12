@@ -20,14 +20,11 @@ series*, *trend-cycle*, *seasonality*, *descriptive statistics*,
 *confidence levels*, *mean square error*, *estimate*, *estimator*,
 *linear regression, stationarity*, *ARIMA process* and so on. Readers
 with insufficient background to follow this document are encouraged to
-refer to an appropriate textbook, e.g. Chatfield (2004). Some background
-knowledge about seasonality in time series can be gained from the
-e-learning courses on Seasonal Adjustment that are available at [<span
-class="underline">http://www.sa-elearning.eu/</span>](http://www.sa-elearning.eu/).
+refer to an appropriate textbook, e.g. Chatfield (2004).
 
 JDemetra+ uses the notation "X12", "X13","Arima", "RegArima" and
 "TramoSeats" instead of "X-12-ARIMA", "X-13ARIMA-SEATS", "ARIMA",
-"RegARIMA" and "TRAMO/SEATS" respectively. This notation is also used in
+"RegARIMA" and "TRAMO-SEATS" respectively. This notation is also used in
 the *Case Studies* when references to the user interface are
 made.
 
@@ -47,9 +44,9 @@ outcomes, at least at a basic level.
 *Case Studies* neither describes in detail how the seasonal
 adjustment methods work, nor the underlying mathematics. For
 readers interested in seasonal adjustment methods a brief
-sketch of the X-13ARIMA-SEATS and TRAMO/SEATS algorithms and concepts
+sketch of the X-13ARIMA-SEATS and TRAMO-SEATS algorithms and concepts
 are included in the [*Reference Manual*](../reference-manual/). 
-For those interested in a more detailed discussion of seasonal adjustment you are encouraged to refer to the [bibliography](..references/).
+For those interested in a more detailed discussion of seasonal adjustment you are encouraged to refer to the [References] section(../references).
 
 ### How the document is organized {#how-the-document-is-organized}
 
@@ -79,23 +76,25 @@ analysis of the results, readjustment of the parameters and regular data
 production. Therefore, it is recommended to study each scenario from
 beginning to the end.
 
-The scenarios on seasonal adjustment consist of two simple scenarios 
+The scenarios on seasonal adjustment consist of [two simple scenarios](../case-studies/simplesa.html)
 for beginners and users with limited
-time for performing seasonal adjustment and then two scenarios of more
-detailed seasonal adjustment for experienced users. The simple and
-detailed scenarios both have an example of analysing a single time
-series and another example of analysing multiple time series. These
-scenarios can be found in section 3.
+time for performing seasonal adjustment and [several scenarios of more
+detailed seasonal adjustment](../case-studies/detailedsa.html) for experienced users. The simple and
+detailed scenarios include examples of analysing a single time
+series and multiple time series.
 
-There are two time series modelling scenarios, one advanced and another
-basic one that provide examples of the analysis time series characteristics. The
+There are [two time series modelling scenarios](../pages/case-studies/modelling-main.html), 
+one [advanced](../case-studies/modelling-basic.html) and another
+[basic](../case-studies/modelling-basic.html) one 
+that provide examples of the analysis time series characteristics. The
 scenario for advanced users provides a more detailed analysis that includes
-identification and estimation of outliers[^1], calendar effects[^2],
+identification and estimation of outliers, calendar effects,
 interpolation of missing values and forecasting. The basic scenario is a
 limited version of the advanced analysis, focused mostly on automatic
 detection of outliers and calendar effects.
 
-A scenario on seasonality tests is for all types of users and explains
+A [scenario on seasonality tests](../case-studies/seasonalitytests.html) 
+is for all types of users and explains
 how to test for the presence of seasonal movements in time series. The
 presence of seasonality should be checked for each time series in a
 dataset. The tests for seasonality are integral to the seasonal
@@ -107,9 +106,9 @@ important series. For example, it can be used for checking the presence
 of seasonal movements to decide if a series should be seasonally
 adjusted or for regular monitoring of seasonality in time series.
 
-The spectral graphs scenario is for advanced users and introduces
+The [spectral graphs scenario](../case-studies/spectralgraphs.html) is for advanced users and introduces
 in-depth analysis of a time series in the frequency domain.
 
-The calendars scenario explains how to define country-specific holidays
-and include them into a national calendar. It also deals with more
-sophisticated types of calendars and explains how to import them.
+The [calendars scenarios](../case-studies/calendars-main.html) explain how to define country-specific holidays
+and include them into a national calendar. They also deal with more
+sophisticated types of calendars and explain how to import them.

@@ -61,7 +61,7 @@ stronger.
     decomposition), 0.5 (for a proportional decomposition) or 1 (for a
     multiplicative decomposition). The default value is 1.
 
-2.  To launch the benchmarking procedure click on the apply button. The
+2.  To launch the benchmarking procedure click on the **Apply** button. The
     results are displayed in four panels. The top-left one compares the
     original output from the seasonal adjustment procedure with the result
     from applying a benchmarking to the seasonal adjustment. The
@@ -102,7 +102,6 @@ stronger.
 	**Exporting the results of the benchmarking procedure**
 
 
-##### Footnotes
 
 [^1]: Description of the idea of benchmarking is based on Dagum, B.E.,
     Cholette, P.A. 1994), and Quenneville, B. et all (2003). Detailed

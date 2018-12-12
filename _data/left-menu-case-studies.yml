@@ -17,7 +17,7 @@
 - title: "Advanced seasonal adjustment"
   file: "detailedsa"
   subitems:
-    - title: "Chosing parameters of seasonal adjustemnt process"
+    - title: "Chosing parameters of seasonal adjustment process"
       file: "specification"
       subitems:
         - title: "Seasonal adjustement specification"

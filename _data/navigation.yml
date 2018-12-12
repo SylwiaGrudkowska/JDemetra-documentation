@@ -2,13 +2,6 @@
   href: "/"
 - title: "What's new"
   href: "/pages/basic/"
-  subitems:
-    - title: "JDemetra+ 2.1"
-      href: "JD21/"
-    - title: "JDemetra+ 2.2"
-      href: "JD22/"
-    - title: "JDemetra+ 3.0"
-      href: "JD30/"
 - title: "Quick Start"
   href: "/pages/quick-start/"
 - title: "Reference Manual"

@@ -33,8 +33,7 @@ the model without logs with the sum of squares multiplied by the square
 of the geometric mean from the model in logs. Logs are taken in case the
 last function is the maximum[^5]. The parameter *fct* controls the bias
 in the log/level pre-test (the function is active when **Function** is
-set to *Auto*); *fct* \> 1 favours levels, *fct* \< 1 favours logs. The
-same test is used for modelling with the TRAMO model (see 3.3.2).
+set to *Auto*); *fct* \> 1 favours levels, *fct* \< 1 favours logs. [This test is used for modelling with the TRAMO model](../reference-manual/modelling-spec-tramo.html#transformation).
 
 {: .text-center.image-wrapper}
 
@@ -46,7 +45,7 @@ same test is used for modelling with the TRAMO model (see 3.3.2).
 
 The test used by X-13ARIMA-SEATS is based on the AICC information
 criteria[^6]. To choose the transformation type, X-13ARIMA-SEATS fits the
-RegARIMA model to the untransformed and the transformed series.  X-13ARIMA-SEATS will choose
+RegARIMA model to the untransformed and the transformed series. X-13ARIMA-SEATS will choose
 the log transformation except when[^7]:
 
 $$\text{AICC}_{\log} - \text{AICC}_{\text{no\ log}} < \Delta_{\text{AICC}}$$
@@ -64,8 +63,8 @@ $\Delta_{\text{AICC}}$ is the threshold value; $\Delta_{\text{AICC}}$\>
 
 The RegARIMA model used in the test is the one specified in the ARIMA
 part of the specification. If model is specified then the (0,1,1)(0,1,1)
-model is used. The same test is used for modelling with the RegARIMA
-model (see 3.3.2).
+model is used. [This test is used for modelling with the RegARIMA
+model](../reference-manual/modelling-spec-arima.html#transformation).
 
 {: .text-center.image-wrapper}
 
@@ -81,13 +80,9 @@ however in case of the most problematic series the manual selection is
 recommended. The manual selection of the transformation is usually made
 in the specifications used for a regular data production.
 
-The options available for the functionalities presented in this case study
-are described in the *JDemetra+ Reference Manual* (2017), item 4.1.1.2
-for TRAMO/SEATS and TRAMO, and item 4.1.2.2 for X-13ARIMA-SEATS and
-RegARIMA.
 
-1.  To determine the transformation choice first create and open a new
-    specification as shown in 3.2.1.1.
+1.  To determine the transformation choice first [create and open a new
+    specification](../reference-manual/sa-specifications.html#pre-defined-specifications).
 
 2.  For *tramo* and *tramoseats* specifications from the
     *Transformation* section choose the *function* option and input the
@@ -116,7 +111,6 @@ RegARIMA.
 	It is also possible to change the transformation's options in the currently used specification (see 3.2.1.1, step 4).
 
 
-##### Footnotes
 
 
 [^4]: *ESS Guidelines on Seasonal Adjustment* (2015).

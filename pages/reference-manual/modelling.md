@@ -3,17 +3,16 @@ layout: left-menu
 title: Modelling
 ---
 
-The algorithms implemented in JDemetra+ enebles for a modelling the original time series with the RegARIMA model, 
+The algorithms implemented in JDemetra+ enable a modelling of the original time series with the RegARIMA model, 
 including estimation of the regression effects such as outliers and calendar effects. These procedures can be 
-used simply for the modelling and forecasting of the orignal time series as well as for a pre-treatment of the series, 
-which aims to ensure a reliable estimation of the time series components performed by the seasonal adjustment procedures.
+used just for modelling and forecasting of the original time series but also as a  pre-treatment before performing a seasonal adjustement of the series. Hence, this pre-treatement will allow for a more reliable estimation of the time series components performed by the seasonal adjustment procedures.
 
 
 This section is divided into two parts: 
 * [Specifications](../reference-manual/modelling-specifications.html), which presents parameters of the modelling procedure.
-* [Output](../reference-manual/output-modelling.html), which explains a typical output produced by the modelling procedure.
+* [Output](../reference-manual/output-modelling.html), which details a typical output produced by the modelling procedure.
 
-The specifications and output for the modelling procedure are displayed in the *Workspace* window.
+The specifications and output of the modelling procedure are displayed in the *Workspace* window.
 
 {: .text-center.image-wrapper}
 

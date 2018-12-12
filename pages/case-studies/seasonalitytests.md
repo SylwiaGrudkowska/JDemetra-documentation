@@ -17,8 +17,7 @@ The scenario presented here helps to identify seasonal movements in the
 original time series using various tests available in JDemetra+. Its
 purpose is to check for the presence of seasonal movements in the time
 series and decide whether it should be adjusted for them or not. Some
-explanations on the seasonality tests can be found in *JDemetra+
-Reference Manual* (2017), item 7.6.3.
+explanations on the seasonality tests can be found [here](../theory/Tests_seas.html).
 
 Go to the main menu and follow the path: *Statistical methods* →
 *Seasonal Adjustment* → *Tools* → *Seasonality tests*.
@@ -178,10 +177,10 @@ Go to the main menu and follow the path: *Statistical methods* →
     that introduces some degree of smoothing in the periodogram. In
     order to decide whether the series has a seasonal component that
     is predictable (stable) enough the tests use visual criteria and
-    formal tests that rely on two basic principles: a) the peaks
-    associated to seasonal frequencies should be larger than the median
-    spectrum for all frequencies and b) the peaks should exceed the
-    spectrum of the two adjacent values by more than a critical value.
+    formal tests that rely on two basic principles: 
+	a) the peaks associated to seasonal frequencies should be larger than the median
+    spectrum for all frequencies and 
+	b) the peaks should exceed the spectrum of the two adjacent values by more than a critical value.
     When these principes are met, the test results are displayed in green.
     The statistical significance of each one of the seasonal peaks (i.e.
     frequencies

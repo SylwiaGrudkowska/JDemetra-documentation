@@ -10,7 +10,7 @@ cannot be properly explained by the ARIMA model and its underlying
 normality assumption. They tend to be associated with irregular
 special events that produce a distortion in the series. The presence of
 such values disturbs the modelling of time series with methods like
-X-13ARIMA-SEATS and TRAMO/SEATS because of the linear procedures (e.g.
+X-13ARIMA-SEATS and TRAMO-SEATS because of the linear procedures (e.g.
 moving averages and regression analysis) implemented by them. The
 presence of outliers has an adverse effect on the quality of seasonal
 adjustment because outliers can lead to model misspecification,
@@ -18,7 +18,7 @@ biased parameter estimation, poor forecasts and inappropriate
 decomposition of a series. Therefore, it is vital to identify and
 include them in the modelling step of seasonal adjustment. The aim is to
 remove the effect of outliers from a time series before its
-decomposition into its components. Both X-13ARIMA-SEATS and TRAMO/SEATS
+decomposition into its components. Both X-13ARIMA-SEATS and TRAMO-SEATS
 include automatic procedure for the treatment of outliers (detection and
 correction). However, a priori information about an event that may have
 caused the abnormal observations (the date of its occurrence and type of an
@@ -50,8 +50,7 @@ described as a smooth, linear transition between two time points unlike
 the abrupt change associated with level shifts. This case study explains
 how to add ramp effects into a specification.
 
-The formulas that describe outliers are given in the *JDemetra+
-Reference Manual* (2017), item 7.1.
+The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 1.  The picture below presents the number of registered
     unemployed persons in Poland. It is clear that in the beginning of
@@ -68,8 +67,8 @@ Reference Manual* (2017), item 7.1.
 	
 	**Registered unemployed persons in Poland**
 
-2.  To include these events in the model, first create and open a new
-    specification as shown in 3.2.1.1.
+2.  To include these events in the model, first [create and open a new
+    specification](../reference-manual/modelling-specifications.html).
 
 3.  In the *Regression* section choose the *Pre-defined outliers* item.
 
@@ -168,8 +167,8 @@ Reference Manual* (2017), item 7.1.
 	**Launching the automatic identification of seasonal outliers**
 
 11. Alternatively, the user may include the identification and estimation of
-    seasonal outliers in the user-defined specification (see
-    3.2.1.1) by marking the *Seasonal* option in the *Outliers* section.
+    seasonal outliers in the [user-defined specification](../reference-manual/modelling-specifications.html#user-defined-specifications) 
+	by marking the *Seasonal* option in the *Outliers* section.
 
 12. To include a Ramp effect go to the *Regression* part of the
     specification and click the *Ramp effects* item.
@@ -206,7 +205,7 @@ Reference Manual* (2017), item 7.1.
 
 	**Estimation results for a ramp regression variable**
 
-##### Footnotes
+
 
 [^2]: Definition of outliers is based on Kaiser, R. and Maravall, A.
     (2003).
