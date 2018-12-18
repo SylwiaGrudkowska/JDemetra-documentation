@@ -5,11 +5,11 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-The TRAMO/SEATS method consists of two linked programs: TRAMO and SEATS.
-The results from TRAMO are displayed in the [Output from a modelling procedure](../reference-manual/output-modelling.html)section. 
+The TRAMO-SEATS method consists of two linked programs: TRAMO and SEATS.
+The results from TRAMO are displayed in the [Output from a modelling procedure](../reference-manual/output-modelling.html) section. 
 This section focuses on the nodes that arenot described there, in particular on the output produced by SEATS.
 Therefore, the sections that are explained here are: [*Main results*](../reference-manual/sa-output-tramo.html#main-results),
-[*Decomposition*](../reference-manual/sa-output-tramo.html#decomposition), [*Benchmarking*](../reference-manual/sa-output-tramo.html#benchmarking) and [*Diagnostic*](../reference-manual/sa-output-tramo.html#diagnostic). Their content is
+[*Decomposition*](../reference-manual/sa-output-tramo.html#decomposition), [*Benchmarking*](../reference-manual/sa-output-tramo.html#benchmarking) and [*Diagnostics*](../reference-manual/sa-output-tramo.html#diagnostics). Their content is
 accessible once the user selects the appropriate node from the left-hand
 side seasonal adjustment results panel.
 
@@ -19,7 +19,7 @@ side seasonal adjustment results panel.
 
 {: .text-center.small}
 
-**The structure of the results for TRAMO/SEATS**
+**The structure of the results for TRAMO-SEATS**
 
 #### Main results
 
@@ -73,9 +73,9 @@ Further sections of the *Main results* node includes summary information
 from TRAMO and SEATS and presents the main statistics that assess the
 quality of the outcomes.
 
-[Information about the TRAMO part of the process includes the estimation
+Information about the TRAMO part of the process includes the estimation
 span, number of observations, transformation (if any) and deterministic
-effects](../reference-manual/model-generalities.html). 
+effects. This is discussed in detail in the [Model summary](../reference-manual/model-generalities.html) section. 
 
 {: .text-center.image-wrapper}
 
@@ -110,7 +110,7 @@ decomposition, \\(x_{t}\ \\)can be presented as a sum of the components:
 
 |                                             |         |
 |---------------------------------------------|---------|
-| \\[x_{t} = \sum_{i = 1}^{k}x_{\text{it}}\\] | \[5.1\] |
+| \\[x_{t} = \sum_{i = 1}^{k}x_{\text{it}}\\] | <!---\[5.1\]-->\[1\] |
 
 where:
 
@@ -121,7 +121,7 @@ The linearised series \\(x_{t}\ \\)follows an ARIMA model of the type:
 
 |     |                                                           |         |
 |-----|-----------------------------------------------------------|---------|
-|     | \\[\phi(B)\delta\left( B \right)x_{t} = \theta(B)a_{t}\\] | \[5.2\] |
+|     | \\[\phi(B)\delta\left( B \right)x_{t} = \theta(B)a_{t}\\] | <!---\[5.2\]-->\[2\] |
 
 where:
 
@@ -139,11 +139,12 @@ and a stationary seasonal polynomial in\\(\ B^{S}\\).
 \\(a_{t}\\) – a white-noise variable with the variance\\(\ V(a)\\), also
 referred as *innovation*.[^16]
 
-Each component follows the general ARIMA model[^17]:
+Each component follows the general ARIMA model[^16]:
 
-|                                                                                                        |         |
-|--------------------------------------------------------------------------------------------------------|---------|
-| \\[{\phi_{i}\left( B \right)\delta}_{i}\left( B \right)\ x_{\text{it}} = \theta_{i}(B)a_{\text{it}}\\] | \[5.3\] |
+
+$$
+{\phi_{i}\left( B \right)\delta}_{i}\left( B \right)\ x_{\text{it}} = \theta_{i}(B)a_{\text{it}}
+$$  <!---\[5.3\]-->\[3\]
 
 where:
 
@@ -164,13 +165,7 @@ The components can be also expressed in a compact form:
 
 |                                                                              |         |
 |------------------------------------------------------------------------------|---------|
-| \\(\varphi_{i}\left( B \right)x_{\text{it}} = \theta_{i}(B)a_{\text{it}}\\), | \[5.4\] |
-
-
-|                                                                                                        |         |
-|--------------------------------------------------------------------------------------------------------|---------|
-| \\(\varphi_{i}\left( B \right){\delta}_{i}\left( B \right)x_{\text{it}} = \theta_{i}(B)a_{\text{it}}\\) | \[5.3\] |
-
+| \\(\varphi_{i}\left( B \right)x_{\text{it}} = \theta_{i}(B)a_{\text{it}}\\), | <!---\[5.4\]-->\[4\] |
 
 
 where \\(\varphi_{i}\left( B \right)\\) is a product of the stationary
@@ -187,7 +182,7 @@ innovation \\(V\left( a \right)\\):[^19]
 
 |                                      |         |
 |--------------------------------------|---------|
-| \\(k_{i} = \frac{V(a_{i})}{V(a)}\\). | \[5.5\] |
+| \\(k_{i} = \frac{V(a_{i})}{V(a)}\\). | <!---\[5.5\]-->\[5\] |
 
 The innovations in the components are the cause of their stochastic
 behaviour (i.e., their moving features). The larger the variance, the
@@ -208,8 +203,8 @@ noise as possible.
 **The summary of the results from SEATS**
 
 The *Diagnostics* section is displayed below the summary of the
-decomposition results produced by SETAS. It includes the outcome of the
-most important quality indicators. They are discussed in 5.2.1.4. The
+decomposition results produced by SEATS. It includes the outcome of the
+most important quality indicators. They are discussed in the [*Diagnostics*](../reference-manual/sa-output-tramo.html#diagnostics) section. The
 results are accompanied by two figures. The one on the left shows the
 original series, the final seasonally adjusted series, and the final
 trend.
@@ -221,7 +216,7 @@ trend.
 {: .text-center.small}
 
 **The original series and the results from decomposition: the
-seasonally adjusted series and the trend.
+seasonally adjusted series and the trend.**
 
 The local menu, which can be activated by right clicking on the graph,
 contains the following options:
@@ -249,8 +244,7 @@ contains the following options:
 -   **Configure** – enables the user to customize chart and series
     display.
 
-The panel on the right shows the SI ratios, which are discussed in
-detail in ‘*JDemetra+ User Guide*’ (2017).[^22]
+The panel on the right shows the SI ratios.
 
 {: .text-center.image-wrapper}
 
@@ -297,11 +291,11 @@ seasonal component**
 
 For both charts the local menu, which is activated by right click on the
 graph, offers the same set of options as the ones available for the
-chart presented in Figure 5.21. The *Table* section presents the data
+chart presented below Figure **The original series and the results from decomposition** above. The *Table* section presents the data
 for the original series with forecasts, the final seasonally adjusted
 series, the trend with forecasts, the seasonal component with forecasts
 and the irregular component. In general, the irregular component, by
-definition, cannot be forecast, therefore for TRAMO/SEATS its forecasts
+definition, cannot be forecast, therefore for TRAMO-SEATS its forecasts
 are set to 0 (additive model) or 1 (multiplicative model). However,
 there are some exceptions from this rule. Firstly, when the transitory
 component has been extracted, it is not displayed in a separate table,
@@ -319,8 +313,7 @@ forecasting period of the irregular component are computed, following
 the approach implemented in the original software.
 
 The local menu, activated by right clicking on the table, contains the
-same functions that are available for *Grid* (see description below
-Figure 3.22). All series are extended with one year of forecasts. These
+same functions that are available for *Grid*. All series are extended with one year of forecasts. These
 forecasts are presented in the bottom part of the table.
 
 {: .text-center.image-wrapper}
@@ -337,9 +330,7 @@ and the seasonal factors for each of the periods in the time series
 the ratio of the original series to the estimated trend, thus it
 presents an estimate of the detrended series. Blue curves represent the
 final seasonal factors and the red straight lines represent the mean
-seasonal factor for each period. For the investigation of the S-I ratio
-tool and options available for this chart refer to the ‘*JDemetra+ User
-Guide*’ (2017).
+seasonal factor for each period.
 
 {: .text-center.image-wrapper}
 
@@ -443,9 +434,9 @@ displayed for the model identified by SEATS.
 ##### **Stochastic series**
 
 A discrete-time stochastic process is a collection of random variables
-\\(\left\{ X_{t}(\omega) \right\},\ \\)where \\(t\\) denotes time and
-\\(\omega\\) denotes an elementary event. A [time
-series](https://en.wikipedia.org/wiki/Time_series) associated with these
+${ X_{t}(\omega)}$, where \\(t\\) denotes time and
+\\(\omega\\) denotes an elementary event. A time
+series associated with these
 random variables is called a stochastic time series. In general, a
 stochastic time series is made of two components, one which is
 predictable once the history of the process \\(X_{t - 1}\\) is known,
@@ -497,7 +488,7 @@ intervals shows the size of uncertainty of the estimation results,
 which, in general, is greater at the end of the time series. The
 prediction intervals, which are available for the forecasts, are even
 wider than the confidence intervals. The graph is available for the
-trend (Figure 5.31) and for the seasonal component (Figure 5.32).
+trend and for the seasonal component, as illustrated on the figures below, respectively.
 
 {: .text-center.image-wrapper}
 
@@ -555,8 +546,7 @@ characterised by wide spectral peaks.
 
 If a series contains an important component for a certain frequency, its
 spectrum should reveal a peak around that frequency. As a trend can be
-thought as a cyclical component with an
-[infinite](http://pl.bab.la/slownik/angielski-polski/infinite) length of
+thought as a cyclical component with an infinite length of
 the movement, the spectral peak should occur at the frequency
 \\(\omega = 0\\).[^27] For a monthly time series there are six seasonal
 frequencies: \\(\frac{\pi}{6}\\),
@@ -565,7 +555,7 @@ while for a quarterly data there are two seasonal frequencies:
 \\(\ \frac{\pi}{2},\pi\\). The spectrum for a seasonal component has
 peaks around these frequencies.
 
-In Figure 5.34 the standard spectra for trend (green), seasonal (blue),
+In the figure below the standard spectra for trend (green), seasonal (blue),
 transitory (black) and irregular (orange) are displayed. As it was
 already explained, the frequency \\(\omega = 0\\) is associated with a
 trend. For the frequencies in the range
@@ -621,14 +611,14 @@ as a final one (also called a historical estimator)[^32].
 
 Regarding the importance of final (historical) estimators, which are
 derived by applying the WK filters, JDemetra+ presents several graphs
-showing their properties (see 7.1.2.2) the corresponding graphs for the
+showing their properties (see Wiener-Kolmogorow filter section in [SEATS](../theory/SA_SEATS.html)) the corresponding graphs for the
 components and for the final estimators of the components vary, as
 components and final estimators follow different models. For example,
 the seasonal component follows the
 model:\\(\ \phi_{s}\left( B \right)s_{t} = \theta_{s}(B)a_{t}\\), while
 the corresponding MMSE estimator of the seasonal component follows the
 model:
-\\(\phi_{s}\left( B \right){\widehat{s}}_{t} = \theta_{s}\left( B \right)\alpha_{s}(F)a_{t}\\),
+$$\phi_{s}\left( B \right){\widehat{s}}_{t} = \theta_{s}\left( B \right)\alpha_{s}(F)a_{t}$$,
 where \\(\alpha_{s}(F)\\) is a difference between the theoretical
 component and the estimator.[^33]
 
@@ -639,7 +629,7 @@ available by right clicking on the graph.
 
 **Spectrum**
 
-The spectra[^34] of the final estimators are shown in the first graph.
+The spectra[^32] of the final estimators are shown in the first graph.
 The spectrum of the estimator of the seasonal component is obtained by
 multiplying the squared gain[^35] of the filter by the spectrum of the
 linearised series.
@@ -650,7 +640,7 @@ at the frequencies where the component spectra are close but not exactly
 zero. The estimator adapts to the structure of the analysed series, i.e.
 the width of the spectral holes in the seasonally adjusted series
 (yellow line) depends on the width of the seasonal peaks in the seasonal
-component estimator spectrum (blue lines).[^36]
+component estimator spectrum (blue lines).[^18]
 
 {: .text-center.image-wrapper}
 
@@ -674,7 +664,7 @@ frequencies.[^38] On the contrary, when for some \\(\omega\\) the
 squared gain is 1, then all variation is passed on to the component
 estimator.
 
-Figure 5.37 shows that the seasonal frequencies are assigned to the
+The figure below shows that the seasonal frequencies are assigned to the
 seasonal component while the seasonally adjusted series captures the
 non-seasonal frequencies. As a consequence, it is expected that the
 seasonal component estimator captures only the seasonal frequencies, so
@@ -685,11 +675,10 @@ frequencies. Therefore, the squared gain of seasonally adjusted data
 should be nearly zero for seasonal frequencies.
 
 The squared gain shape depends on the model used for the time series.
-Figure 5.37 and Figure 5.38 show squared gains derived from two
-different models are represented. In Figure 5.37, the squared gain of
+The two figures below show squared gains derived from two
+different models are represented. In the first figure, the squared gain of
 the seasonal adjustment filter shows relatively large troughs to
-suppress a highly stochastic seasonal component. In contrast, Figure
-5.38 presents the estimators for a seasonal component, which is much
+suppress a highly stochastic seasonal component. In contrast, the second figure presents the estimators for a seasonal component, which is much
 more deterministic than the previous one.
 
 {: .text-center.image-wrapper}
@@ -713,17 +702,17 @@ more deterministic than the previous one.
 The Wiener-Kolmogorov (WK) filter \\(\nu_{i}(B,F)\\) shows the weights
 that have been applied to the original series \\(x_{t}\ \\)to estimate
 the \\(\ {\widehat{x}}_{\text{it}}\ \\)component in the following way
-(see 7.1.2.2 for a description of the WK filter):
+(see Wiener-Kolmogorow filter section in [SEATS](../theory/SA_SEATS.html) for a description of the WK filter):
 
-|     |                                                                   |         |
-|-----|-------------------------------------------------------------------|---------|
-|     | \\[{\widehat{x}}_{\text{it}} = \nu_{i}\left( B,F \right)x_{t},\\] | \[5.6\] |
+$$
+\widehat{x}_{\text{it}} = \nu_{i}\left( B,F \right)x_{t}
+$$ <!--\[5.6\]--> \[6\]
 
 where:
 
 |     |                                                                                     |         |
 |-----|-------------------------------------------------------------------------------------|---------|
-|     | \\(\nu_{i}\left( B,F \right) = \nu_{0} + \sum_{j = 0}^{\infty}{(B^{j} + F^{j}})\\). | \[5.7\] |
+|     | \\(\nu_{i}\left( B,F \right) = \nu_{0} + \sum_{j = 0}^{\infty}{(B^{j} + F^{j}})\\)  | <!--\[5.6\]--> \[7\] |
 
 Since each WK filter is symmetric and centred, it is also convergent,
 which enables the user to approximate an infinite number of realizations
@@ -758,16 +747,16 @@ linearised series.
 
 PsiE-weights (\\(\psi\\)) are a different representation of the final
 estimator, i.e. this representation shows the estimator as a filter
-applied to the innovations\\(\text{\ a}_{t}\\), rather than the
-series\\(\text{\ x}_{t}\\)[^39]. Figure 5.40 shows for each component
+applied to the innovations $$\text{ a}_{t}$$, rather than the
+series $$\text{ x}_{t}$$[^39]. The figure below shows for each component
 how the contribution of the total innovation to the component estimator
-\\({\widehat{x}}_{\text{it}}\\) varies in time (the size of this
+$$\widehat{x}_{\text{it}}$$ varies in time (the size of this
 contribution is shown on the Y-axis). For the non-negative values on the
 X-axis, PsiE-weights show the effect of starting conditions, present and
 past innovations in series, while for negative observations they present
 the effect of future innovations. It can be seen that they are
 non-convergent in the past (they are convergent when series
-\\(\text{\ x}_{t}\\) is stationary). On the contrary, the effect of
+$$\text{ x}_{t}$$ is stationary). On the contrary, the effect of
 future innovations is a zero-mean and convergent process. PsiE-weights
 are important to analyse the convergence of estimators and revision
 errors.
@@ -796,25 +785,25 @@ spectra can be computed. The speed of convergence of the revision can
 also be assessed. For each \\(i^{\text{th}}\\) component, the total
 error in the preliminary estimator \\(d_{it|t + k}\\) is expressed as:
 
-|     |                                                               |         |
-|-----|---------------------------------------------------------------|---------|
-|     | \\[d_{it|t + k} = x_{\text{it}} - {\widehat{x}}_{it|t + k}\\] | \[5.8\] |
+$$
+d_{it|t + k} = x_{\text{it}} - {\widehat{x}}_{it|t + k}
+$$ <!--\[5.8\]--> \[8\]
 
 where:
 
 \\(x_{\text{it}}\\) is the \\(i^{\text{th}}\ \\)component;
 
-\\({\widehat{x}}_{it|t + k}\\)is the estimator of
-\\(x_{\text{it}}\ \\)when the last observation is \\(x_{t + k}\\)
-(\\(x_{t}\ \\)is a time series).
+$$\widehat{x}_{it|t + k}$$ is the estimator of
+$$x_{\text{it}}$$ when the last observation is $$x_{t + k}$$
+($x_{t}$ is a time series).
 
 The total error in the preliminary estimator can be also presented as a
 sum of the final estimation error (\\(e_{\text{it}}\\)) and the revision
 error (\\(r_{it|t + k}\\)), i.e.:
 
-|     |                                                                                                                                                                                                                               |         |
-|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-|     | \\[d_{it|t + k} = x_{\text{it}} - {\widehat{x}}_{it|t + k} = \left( x_{\text{it}} - {\widehat{x}}_{\text{it}} \right) + \left( {\widehat{x}}_{\text{it}} - {\widehat{x}}_{it|t + k} \right) = e_{\text{it}} + r_{it|t + k}\\] | \[5.9\] |
+$$
+d_{it|t + k} = x_{\text{it}} - {\widehat{x}}_{it|t + k} = \left( x_{\text{it}} - {\widehat{x}}_{\text{it}} \right) + \left( {\widehat{x}}_{\text{it}} - {\widehat{x}}_{it|t + k} \right) = e_{\text{it}} + r_{it|t + k}
+$$ <!--\[5.9\]--> \[9\]
 
 The final estimation error (\\(e_{\text{it}}\\)) and the revision error
 (\\(r_{it|t + k}\\)) are orthogonal[^40].
@@ -825,8 +814,8 @@ series. The values are given in units of variance of the innovations in
 the linearized series. Therefore, from the examples presented below it
 can be noticed that the variance of the concurrent estimator of the
 seasonally adjusted series is roughly 17% of the variance of the
-innovations of the linearized series (Figure 5.41) and 27% for the trend
-(Figure 5.42).
+innovations of the linearized series and 27% for the trend
+(see the two figures below, respectively).
 
 {: .text-center.image-wrapper}
 
@@ -910,19 +899,19 @@ the seasonally adjusted series. The errors in the parameter estimates
 are not considered.
 
 When the multiplicative model is applied, the growth rate over the
-\\(\text{m\ }\\)periods is defined as
+\\(\text{m }\\)periods is defined as
 \\(\left( \frac{Z_{t}}{Z_{t_{t - m}}} - 1 \right) \times 100\\). All
 standard errors reported for the growth rates in the following tables
 are computed using a linear approximation to the rates. When
 period-to-period changes are large, these standard errors should be
 interpreted as broad approximations, that will tend to underestimate the
 true values. In the case of the additive model the growth rate is given
-by the difference between\\(\text{\ z}_{t_{t - m}}\ \\)and\\(\ z_{t}\\).
+by the difference between $$z_{t_{t - m}}$$ and $$z_{t}$$.
 
 The total estimation error is the largest for the first period
 (concurrent estimator) and it decreases (for preliminary estimators)
 until it reaches a constant value. This constant value is the standard
-deviation of the historic estimator. In Figure 5.45 the total estimation
+deviation of the historic estimator. In the figure below the total estimation
 error for historic estimator is around 0.38. From the observation of
 convergence, it can be judged that after 6 periods a new observation no
 longer significantly affects the estimate (the standard error is 0.38%
@@ -936,10 +925,10 @@ from this point onwards).
 
 **Analysis of growth rates for seasonally adjusted series**
 
-For the series presented in Figure 5.45Figure 5.46 and Figure 5.46 the
+For the series presented in the figure above, the figure below illustrates that the
 trend estimator converges faster than that of the seasonally adjusted
 series because the trend component is stochastic while the seasonal
-component is rather stable.[^43] After 2 years (8 additional
+component is rather stable.[^42] After 2 years (8 additional
 observations) all estimators have practically converged (revision error
 is close to zero).
 
@@ -987,7 +976,7 @@ is close to zero).
 
 [^22]: To be available in the ‘*JDemetra+ User Guide*’ (2017).
 
-[^23]: See 7.1.1.
+[^23]: See [Linearization](../theory/SA_lin.html) section
 
 [^24]: MARAVALL, A. (1995).
 
@@ -1012,15 +1001,15 @@ is close to zero).
 
 [^34]: See 7.3.
 
-[^35]: See 7.1.2.2.
+[^35]: See *Estimation of the components with the Wiener-Kolmogorow filter* in the [SEATS](../theory/SA_SEATS.html) section.
 
 [^36]: MARAVALL, A. (2003).
 
-[^37]: Squared gain definition is in 7.1.2.2.
+[^37]: Squared gain definition is in [SEATS](../theory/SA_SEATS.html).
 
 [^38]: PLANAS, C. (1998).
 
-[^39]: See 7.1.2.3. For further details see MARAVALL, A. (2008b).
+[^39]: See *PsiE-weights* in the [SEATS](../theory/SA_SEATS.html) section. For further details see MARAVALL, A. (2008b).
 
 [^40]: MARAVALL, A. (2000).
 
@@ -1054,8 +1043,7 @@ In this panel the variances of the component innovations are displayed
 (variance of the component innovation[^2], (*Component*), theoretical
 variances of the stationary transformation of the estimated components
 and empirical variances of the stationary transformation of the
-estimated components (*Estimate*)) are displayed[^3] (see also section
-5.2.1.1).
+estimated components (*Estimate*)) are displayed[^42] (see also [*Main results*](../reference-manual/sa-output-tramo.html#main-results) section).
 
 SEATS identifies the components assuming that, except for the irregular
 component, they are clean of noise. It implies that the variance of the
@@ -1093,13 +1081,13 @@ innovation is greater than the variance of its theoretical
 estimators[^7]. The later should be relatively close to the variance of
 the empirical estimate[^8]. As a rule, if the correct WK filter was
 applied then the empirical variance will be in close agreement with the
-theoretical ones[^9]. If for a given component, the variance of its
+theoretical ones[^42]. If for a given component, the variance of its
 theoretical estimators is significantly greater than the variance of its
 empirical estimate, then this component is underestimated. The opposite
 relationship indicates the overestimation of the component.
 
 The outcome of the over/under estimation test is provided as a p-value
-in the last column of the table presented in Figure 5.47. A p-value in
+in the last column of the table presented in the figure above. A p-value in
 green denotes that the problematic characteristic has not been detected.
 An outcome in yellow signals the uncertain results. An outcome in red
 implies that an issue should be addressed. For example, when for a given
@@ -1129,14 +1117,14 @@ the autocorrelation function should be close to the theoretical
 estimator of the autocorrelation function. However, for small values of
 the innovation variance\\(\ \\)the discrepancy between the ACF function
 of the components and of the estimator may be substantial. In general,
-the more stable a component is, the larger is the discrepancy[^11].
+the more stable a component is, the larger is the discrepancy[^5].
 
 For each table displayed in the *Autocorrelation* section the p-values
 of the test are given in the last column. The user should check whether
 the empirical estimates agree with the model, i.e. if their ACF
 functions are close to those of the model for the estimators. Special
 attention should be given to the first and/or seasonal order
-autocorrelation[^12].
+autocorrelation[^40].
 
 Meaning of the p-value for autocorrelation tests.
 
@@ -1154,7 +1142,7 @@ direction of the autocorrelation.
 A comparison of the theoretical MMSE estimators with the estimates
 actually calculated can be used as a diagnostic tool for the model
 validation. The closeness of the estimators and estimates points towards
-validation of the results[^13]. The failure of this test indicates the
+validation of the results[^16]. The failure of this test indicates the
 misspecification of the component models, which is often due to the
 replacement of a non-admissible TRAMO model with its decomposable
 approximation performed by SEATS[^14].
@@ -1192,10 +1180,9 @@ the autocorrelation function of the irregular component are always zero
 component (\\(u_{t}\\)) is a white noise[^15]. However the irregular
 estimator follows the ARMA model:
 
-\\({\widehat{u}}_{t}\ = k_{u}\\)
-
-
-\\[{\widehat{u}}_{t} = k_{u}\frac{1}{\psi(B)\psi(F)}x_{t},\\] | \[5.10\] |
+$$
+\widehat{u}_{t} = k_{u}\frac{1}{\psi(B)\psi(F)}x_{t}
+$$ \[10\]<!--\[5.10\]-->
 
 where \\(k_{u} = \frac{Var(u)}{Var(a)}\\).
 
@@ -1234,7 +1221,7 @@ underestimate the component variance. MMSE estimator implies a
 correlation between the estimators of the components[^16]. For this
 reason a correlations between the stationary transformations of the
 estimators and of the estimates actually obtained should be
-checked[^17].
+checked[^16].
 
 The first column gives the theoretical correlations. The second column
 provides the empirical correlation between the stationary
@@ -1255,12 +1242,12 @@ component estimators will be close to their sample estimates[^19].
 
 ##### **Significant seasonality**
 
-In a model-based seasonal adjustment the mean (\\({\widehat{s}}_{i})\\)
-and the variance (\\({\widehat{v}}_{i}\\)) of the different components
+In a model-based seasonal adjustment the mean $$\widehat{s}_{i}$$
+and the variance $$\widehat{v}_{i}$$ of the different components
 can be computed. Under the usual hypothesis of normal distributions, a
 straightforward way tests is applied to test if an estimate is
 significantly different from 0. This is done by comparing
-\\(\left| \frac{{\widehat{s}}_{i}}{\sqrt{{\widehat{v}}_{i}}} \right|\\)
+$$| \frac{\widehat{s}_{i}}{\sqrt{\widehat{v}_{i}}}|$$
 with the suited critical value.
 
 The table displayed in this section presents the number of periods in
@@ -1316,9 +1303,7 @@ it, click on the *Specifications* button, and then activate the checkbox
 
 **The *Benchmarking* option – a default view**
 
-The results of the benchmaring procedure are explained in the
-‘*JDemetra+ User Guide*’ (2017), item 3.2.1.9. The description of the
-benchmarking procedure is given in 7.8.
+The benchmaring procedure explained in the [Benchmarking](../theory/benchmarking.html) section.
 
 #### Diagnostics
 
@@ -1339,7 +1324,7 @@ The interpretation of the outcomes of the tests could be problematic for
 an inexperienced user. For this reason, the outcomes of the tests are
 accompanied with the values of the qualitative indicator, which
 facilitate the assessment of the results from the process. The values of
-this qualitative indicator are given in Table 5.7.
+this qualitative indicator are given in the table below.
 
 The values of the qualitative indicator.
 
@@ -1373,7 +1358,7 @@ additional validation of the results by the user is recommended.
 
 The rule for the calculation of the *Summary* indicator as well as other
 aggregated indicators, which combine \\(n\\) qualitative indicators, is
-given in Table 5.8. To calculate the average of the (defined)
+given in the table below. To calculate the average of the (defined)
 diagnostics, 0 is assigned to *Bad*, 2 is assigned to *Uncertain* and 3
 is assigned to *Good*.
 
@@ -1386,10 +1371,10 @@ The overall value of the aggregated indicator.
 | *Error*     | The value of at least one of \\(n\\) qualitative indicators is *Error*.                                                                   |
 | *Severe*    | None of the \\(n\\) qualitative indicators is *Error* and at least one of them is *Severe*.                                               |
 | *Bad*       | None of the \\(n\\) qualitative indicators is *Error* or *Severe*. The average of the (defined) diagnostics is less than 1.5.             |
-| *Uncertain* | None of the \\(n\\) qualitative indicators is *Error* or *Severe*. The average of the (defined) diagnostics is in the range \[1.5, 2.5\[. |
+| *Uncertain* | None of the \\(n\\) qualitative indicators is *Error* or *Severe*. The average of the (defined) diagnostics is in the range \[1.5, 2.5\]. |
 | *Good*      | None of the \\(n\\) qualitative indicators is *Error* or *Severe*. The average of the (defined) diagnostics is at least 2.5.              |
 
-According to Table 5.8, the *Error* and *Severe* diagnostics are
+According to the table above, the *Error* and *Severe* diagnostics are
 unacceptable results.
 
 The *basic checks* section includes two quality diagnostics:
@@ -1463,7 +1448,7 @@ formulas.
 
 A multiplicative model[^21] is obtained in the same way by replacing the
 operations "+" and "-" by "\*" and "/" respectively. The explanations of
-the abbreviations are given in 7.7.
+the abbreviations are given in the [Output items](../theory/output.html) section.
 
 The *definition* test verifies that all the definition constraints are
 well respected. The maximum of the absolute differences is computed for
@@ -1489,14 +1474,14 @@ The threshold values for the results of the *annual totals* test.
 | **Q **         | **Diagnostic** |
 |----------------|----------------|
 | \> 0.5         | Error          |
-| \]0.1, 0.5\]   | Severe         |
-| \]0.05, 0.1\]  | Bad            |
-| \]0.01, 0.05\] | Uncertain      |
+| \[0.1, 0.5\]   | Severe         |
+| \[0.05, 0.1\]  | Bad            |
+| \[0.01, 0.05\] | Uncertain      |
 | \<=0.01        | Good           |
 
 Several tests are computed on the residuals of the TRAMO model. The
 definition of the residuals slightly differs from those of the original
-X-13ARIMA-SEATS and the TRAMO/SEATS algorithms. However, their global
+X-13ARIMA-SEATS and the TRAMO-SEATS algorithms. However, their global
 messages are nearly always very similar.
 
 {: .text-center.image-wrapper}
@@ -1508,7 +1493,7 @@ messages are nearly always very similar.
 **Tests on residuals from the RegARIMA model**
 
 The normality test (which combines skewness and kurtosis tests),
-displayed in Figure 5.58, is the Doornik-Hansen test (see 7.6.1.1),
+displayed in the figure above, is the [Doornik-Hansen](../theory/Tests_DH.html) test,
 which follows a\\(\ \chi^{2}\\) distribution.
 
 The threshold values for the results of the Doornik-Hansen normality test.
@@ -1517,10 +1502,10 @@ The threshold values for the results of the Doornik-Hansen normality test.
 | **Pr( \>val)** | **JDemetra+ default settings** |
 |----------------|--------------------------------|
 | \<0.01         | Bad                            |
-| \[0.01, 0.1\[  | Uncertain                      |
+| \[0.01, 0.1\]  | Uncertain                      |
 | ≥0.1           | Good                           |
 
-The independence test is the Ljung-Box test (see 7.6.1.3), which follows
+The independence test is the [Ljung-Box](../theory/Tests_LB.html) test, which follows
 a \\(\chi_{(k - np)\ }^{2}\\) distribution, where \\(k\\) depends on the
 frequency of the series (24 for a monthly series, 8 for a quarterly
 series, \\(4 \times freq\ \\)for the other frequencies, where
@@ -1534,7 +1519,7 @@ The threshold values for the results of the Ljung-Box test.
 | **Pr(\>val)** | **JDemetra+ default settings** |
 |---------------|--------------------------------|
 | \<0.01        | Bad                            |
-| \[0.01, 0.1\[ | Uncertain                      |
+| \[0.01, 0.1\] | Uncertain                      |
 | ≥0.1          | Good                           |
 
 JDemetra+ checks for the presence of trading day (*spectral td peaks*)
@@ -1543,7 +1528,7 @@ based on the periodogram of the residuals. The periodogram is computed
 at the so-called Fourier frequencies. Under the hypothesis of a Gaussian
 white noise of the residuals, it is possible to derive a simple test on
 the periodogram, around specific (groups of) frequencies. The exact
-definition of the test is described in 7.6.3.9.
+definition of the test is described [here](../theory/Tests_peaks.html).
 
 The threshold values for the results of the test on periodogram.
 
@@ -1551,8 +1536,8 @@ The threshold values for the results of the test on periodogram.
 | **P(stat\>val)** | **JDemetra+ default settings** |
 |------------------|--------------------------------|
 | \<0.001          | Severe                         |
-| \[0.001, 0.01\[  | Bad                            |
-| \[0.01, 0.1\[    | Uncertain                      |
+| \[0.001, 0.01\]  | Bad                            |
+| \[0.01, 0.1\]    | Uncertain                      |
 | ≥0.1             | Good                           |
 
 In the *outliers* section the result of the test that checks the number
@@ -1564,7 +1549,7 @@ share of the outliers in the series span is justified, e.g. when the
 series is affected by several methodological changes. The settings for
 this test can be modified in the **Tools**
 \\(\mathbf{\rightarrow}\ \\)**Options** menu, **Demetra**
-\\(\mathbf{\rightarrow}\ \\) **Statistics** section (see 3.4.7).
+\\(\mathbf{\rightarrow}\ \\) **Statistics** section (see *Tools* in the [Options](../reference-manual/tools.html) section).
 {: .text-center.image-wrapper}
 
 ![Text](/assets/img/reference-manual/manual/RDimage17.png)
@@ -1573,9 +1558,9 @@ this test can be modified in the **Tools**
 
 **Test on outliers**
 
-Indicators in the *seats* section check if the crucial assumptions
+Indicators in the *SEATS* section check if the crucial assumptions
 concerning the relationship between the components are fulfilled. These
-tests are discussed in 5.2.1.2.7.
+tests are discussed in the **Model-based tests** section above.
 
 {: .text-center.image-wrapper}
 
@@ -1605,7 +1590,7 @@ difference of lag three is applied (a first order difference of lag one
 in the other cases)[^22] to the seasonally adjusted series. For the
 detrended seasonally adjusted series the presence of residual
 seasonality is tested on the complete time span and on the last 3 years
-span. For the description of the test see 7.6.3.8.
+span. See [here](../theory/Tests_F.html) for the description of the test.
 
 The threshold values for the results of the F-test for the presence of residual seasonality.
 
@@ -1613,8 +1598,8 @@ The threshold values for the results of the F-test for the presence of residual 
 | **P-value**    | **JDemetra+ default settings** |
 |----------------|--------------------------------|
 | \<0.01         | Severe                         |
-| \[0.01, 0.05\[ | Bad                            |
-| \[0.05, 0.1\[  | Uncertain                      |
+| \[0.01, 0.05\] | Bad                            |
+| \[0.05, 0.1\]  | Uncertain                      |
 | ≥0.1           | Good                           |
 
 The F-test is also performed on a seasonally adjusted series to check if
@@ -1635,7 +1620,7 @@ produced for the time series using all pre-defined and user-defined
 specifications. The list of all specifications is given in the first
 column. The one, which was chosen by the user to perform a seasonal
 adjustment is marked with \[C\]. The specifications’ names shown here
-correspond to the names used in the *Workspace* window (see 2.2). The
+correspond to the names used in the [*Workspace*](../reference-manual/workspace.html) window. The
 results are divided into six tabs:
 
 -   **Main** – main information on the ARIMA model:
@@ -1704,10 +1689,8 @@ results are divided into six tabs:
 
 -   **Custom** – a set of model parameters and diagnostics. A list of
     these items matches the CSV matrix, which is one of the output
-    format available for the *SAProcessing* menu. The **Output** option
-    is discussed in detail in the ‘*JDemetra+ User Guide*’ (2017), item
-    3.2.2.1. For the descriptions of the items presented in the Custom
-    tab see 7.7.
+    format available for the *SAProcessing* menu. For the descriptions of the items presented in the Custom
+    tab see [Output items](../theory/output.html).
 
 The matrices can be copied by using the local menu option, and used in
 other applications, e.g. Excel.
@@ -1724,8 +1707,7 @@ other applications, e.g. Excel.
 
 The *Diagnostics* node includes a set of seasonality tests that are
 useful for checking for the presence of seasonality in the time series.
-The tests are described in 7.6.3 and in the ‘*JDemetra+ User Guide*’
-(2017), item 3.4. The tests check for the presence of seasonality in:
+The tests are described in the [Seasonality tests](../theory/Tests_seas.html) sections. The tests check for the presence of seasonality in:
 
 -   The original series (log transformed, if necessary);
 
@@ -1767,7 +1749,7 @@ of 6 months (2 cycles per year are completed)). For a quarterly series
 there are two seasonal frequencies: \\(\frac{\pi}{2}\\) (one cycle per
 year) and \\(\pi\\) (two cycles per year). A peak at the zero frequency
 always corresponds to the trend component of the series. For more
-details about spectral analysis see 7.3.
+details about spectral analysis see [here](../theory/spectral.html).
 
 JDemetra+ displays the spectral plots obtained for two spectrum
 estimators: periodogram and autoregressive spectrum[^25]. They are
@@ -1789,7 +1771,7 @@ peaks, then it is highly probable that the series is a random process.
 The presence of seasonality in a time series is manifested by the peaks
 at the seasonal frequencies, while the peaks at the trading day
 frequencies correspond to the presence of a trading day effect. The
-explanations for the trading day frequencies are given in 7.6.3.9.
+explanations for the trading day frequencies are given in [here](../theory/Tests_peaks.html).
 
 At the seasonal and trading day frequencies, a peak in the residuals
 indicates the need for fitting a better model. In particular, peaks at
@@ -1815,7 +1797,7 @@ a cycle per month or less.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage22.png)
+![Text](/assets/img/reference-manual/manual/RDimage23.png)
 
 {: .text-center.small}
 
@@ -1875,7 +1857,7 @@ adjustments vary more than a specified amount across the spans.
 The summary of the sliding spans includes the results of several
 seasonality tests for each span. The differences between spans signal
 the change in the characteristic of seasonal movements in the time
-series. For the description of the seasonality tests see 7.4.
+series. For the description of the seasonality tests see [here](../theory/Tests_seas.html).
 
 {: .text-center.image-wrapper}
 
@@ -1904,7 +1886,7 @@ in the sub-nodes: *Seasonal*, *Trading days* and *SA (changes)*. The
 later panel is related to the period-to-period percentage changes in
 seasonally adjusted series. The threshold value to detect abnormal
 values is set to 3% of the testing statistics. The respective formulas
-are given in 7.4. In this section the standard *Copy/Print/Export*
+are given in the [Seasonality tests](../theory/Tests_seas.html) sections. In this section the standard *Copy/Print/Export*
 options are available only for graph that presents the sliding spans
 statistics.
 
@@ -1935,8 +1917,7 @@ The next panel presents the cumulative frequency distribution of the
 sliding spans statistics (months or quarters) using the frequency
 polygon. On the horizontal axis the values of the sliding spans
 statistics are shown, while the vertical axis presents the frequency (in
-percentages) of each class interval[^33]. For a distribution shown in
-Figure 5.70 the first interval extends from 0 to 0.005. This interval
+percentages) of each class interval[^33]. For a distribution shown in the figure below the first interval extends from 0 to 0.005. This interval
 has a frequency 9%, which means that 9% of the sliding spans statistics
 are in this interval.
 
@@ -1953,13 +1934,13 @@ According to FINDLEY, D., MONSELL, B.C., SHULMAN, H.B., and PUGH, M.G.
 of unstable (abnormal) seasonal factors is less than 15% of the total
 number of observations. Empirical surveys support the view that seasonal
 adjustments with more than 25% of the months (or quarters) flagged for
-unstable seasonal factor estimates are not acceptable[^34]. Therefore,
+unstable seasonal factor estimates are not acceptable[^32]. Therefore,
 the user should check for the total frequency of the intervals between
 0.03 and 1.
 
 The last panel contains detailed information about the percentage of
 values that exceed the threshold value (0.03) and therefore are
-considered to be abnormal. In the example presented in Figure 5.71,
+considered to be abnormal. In the example presented in the figure below,
 28.6% of values have been marked by the sliding spans diagnostic as
 abnormal.
 
@@ -1968,7 +1949,7 @@ unstable factors and average maximum percentage differences grouped by
 month (or quarter) and by year. It gives an idea of whether observations
 with unreliable seasonal adjustment values cluster in certain calendar
 periods and whether their sliding spans statistics barely or
-substantially exceed the threshold value. Figure 5.71 presents that
+substantially exceed the threshold value. The figure below presents that
 three sliding spans statistic calculated for January are above 3% and
 that the average maximum percentage difference across spans for this
 period was 2.0.
@@ -2055,7 +2036,7 @@ available for the trend analysis.
 **Revision history results – insight into successive estimations for the given period**
 
 By looking at the vertical axis the user could assess the size of the
-revision. The revisions presented in Figure 5.74 are about 2% (103 - 101
+revision. The revisions presented in the figure above are about 2% (103 - 101
 = 2). The figure size can be enlarged by dragging the bottom-right
 corner.
 
@@ -2088,7 +2069,7 @@ as the mean.
 The revision history provides no absolute measure of what is an
 acceptable level of revisions. Therefore the revision history is of
 limited use on a single series. More information about the revision
-history is available in 7.5.
+history is available [here](../theory/revisions.html).
 
 ##### **Model stability**
 
@@ -2118,7 +2099,7 @@ effects is included in the TRAMO model.
 
 The concentration of the estimation results (denoted by blue circles)
 around the mean (red, horizontal line) indicates the stability of the
-results in time. In the case presented in Figure 5.77 however, the
+results in time. In the case presented in the figure below however, the
 values of the Easter effect parameters vary from 2.5 to -3.5, indicating
 the instability of the results and potential insignificance of this
 effect.
@@ -2132,7 +2113,7 @@ effect.
 **Estimation parameters for the Easter effect**
 
 The results from the estimation of an ARIMA (3,1,0)(0,0,1) model over 8
-spans, which is shown in Figure 5.78, reveal quite high stability of the
+spans, which is shown in the figure below, reveal quite high stability of the
 estimations.
 
 {: .text-center.image-wrapper}
@@ -2153,7 +2134,7 @@ view).
 
 The *Multi processing* section, which belongs to the *Seasonal
 adjustment* node, is designed to store the results of the seasonal
-adjustment procedure performed with the TRAMO/SEATS or X-13ARIMA-SEATS
+adjustment procedure performed with the TRAMO-SEATS or X-13ARIMA-SEATS
 methods. The *Multi processing* is designed for a quick and efficient
 seasonal adjustment of large data sets using different seasonal
 adjustment methods and different specifications. The functionality is
@@ -2181,14 +2162,9 @@ expected to specify the seasonal adjustment specification in the
 **Specifying the default seasonal adjustment method**
 
 The consecutive steps necessary to launch the seasonal adjustment
-process for a dataset are described in the ‘*JDemetra+ User Guide*’
-(2017), case study 3.1.2. The in-depth analysis of seasonal adjustment
+process for a dataset are described in this [case study](../case-studies/simplesa-muliple.html). The in-depth analysis of seasonal adjustment
 results and possible ways to correct the deficiencies of the
-specification and improve the modelling are given in the ‘*JDemetra+
-User Guide*’ (2017), item 3.2.1. Further functionalities intended for
-the regular production of the seasonally adjusted data, such as
-summarising the results, saving and refreshing options are discussed in
-the ‘*JDemetra+ User Guide*’ (2017), item 3.2.2.
+specification and improve the modelling are given throughout the [Case studies](../case-studies/detailedsa.html) sections. 
 
 Within one multi-document the user may apply different specifications to
 the different time series and/or perform the seasonal adjustment for a
@@ -2206,8 +2182,7 @@ the panel below the list of series. By default, a summary of results is
 displayed, accompanied by two graphs: the original data,
 seasonally-adjusted series and trend on the left and the *SI ratios* on
 the right. All the options available for this panel, including launching
-the seasonal adjustment process, are presented in the ‘*JDemetra+ User
-Guide*’ (2017), items 3.1.2 and 3.2.1.
+the seasonal adjustment process, are presented [here](../case-studies/simplesa-muliple.html) and [here](../case-studies/detailedsa.html).
 
 {: .text-center.image-wrapper}
 
@@ -2238,7 +2213,7 @@ seasonally adjusted with the X-13ARIMA-SEATS method.
 **The *Summary* panel view**
 
 The last panel – *Matrix view* panel – provides information similar to
-the matrix output of TSW+ (TRAMO/SEATS for the Windows program).
+the matrix output of TSW+ (TRAMO-SEATS for the Windows program).
 
 {: .text-center.image-wrapper}
 
@@ -2263,7 +2238,7 @@ the matrix output of TSW+ (TRAMO/SEATS for the Windows program).
 
 [^6]: MARAVALL, A. (1997).
 
-[^7]: From the TRAMO/SEATS estimator structure it can be shown that the
+[^7]: From the TRAMO-SEATS estimator structure it can be shown that the
     estimator will always underestimate the component. The amount of the
     underestimation depends on the particular model and as a rule the
     relative underestimation will be large when the variance of the
@@ -2276,7 +2251,7 @@ the matrix output of TSW+ (TRAMO/SEATS for the Windows program).
 
 [^9]: MARAVALL, A. (1995).
 
-[^10]: See 7.9.
+[^10]: See Autocorrelation and partial autocorrelation functions [here](../theory/ACF_and_PACF.html).
 
 [^11]: MARAVALL, A. (1993).
 
@@ -2288,7 +2263,7 @@ the matrix output of TSW+ (TRAMO/SEATS for the Windows program).
 
 [^15]: MARAVALL, A. (1987).
 
-[^16]: GÓMEZ, V., and MARAVALL, A. (2001).
+[^16]: GÓMEZ, V., and MARAVALL, A. (2001). <!--[^16]-->
 
 [^17]: GÓMEZ, V., and MARAVALL, A. (2001).
 
@@ -2298,7 +2273,7 @@ the matrix output of TSW+ (TRAMO/SEATS for the Windows program).
 
 [^20]: The series is deterended with the Hodrick-Prescott filter.
 
-[^21]: See 7.1.1.
+[^21]: See [Linearization](../theory/SA_lin.html) section.
 
 [^22]: DAGUM, E.B. (1987).
 
@@ -2315,10 +2290,10 @@ the matrix output of TSW+ (TRAMO/SEATS for the Windows program).
     (residuals) as the periodogram is then distributed as a
     \\(\chi^{2}\\).
 
-[^27]: For description of the periodogram see 7.3.1. The autoregressive
-    spectrum is discussed in 7.3.2.
+[^27]: For description of the periodogram see [Periodogram](../theory/spectral_periodogram.html). The autoregressive
+    spectrum is discussed [here](../theory/spectral_AR.html).
 
-[^28]: See 7.4.
+[^28]: See [Sliding spans](../theory/sliding_spans.html).
 
 [^29]: A seasonal break is defined as a sudden and sustained change in
     the seasonal pattern of a series. The presence of this event is
