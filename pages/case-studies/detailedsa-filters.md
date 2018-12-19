@@ -69,8 +69,8 @@ options in the *single spec* mode as well as in the *multispec* mode,
 albeit they are available only in the *Specifications* window, after a
 document is created.
 
-1.  Go to the X11-part of the *Specification* window (see 3.1.1, step
-    8). By default a single pre-defined filter length (*Msr*) is used
+1.  Go to the X11-part of the *Specification* window (see step 8 from the [Simple seasonal adjustment of a single time series](../case-studies/simplesa-single.html) scenario). 
+    By default a single pre-defined filter length (*Msr*) is used
     for all months or quarters.
 
 	{: .text-center.image-wrapper}

@@ -117,7 +117,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 	**Specification that includes the pre-specified outliers**
 
 7.  Use the newly created specification to perform the seasonal adjustment
-    using a *Multi Processing* option (see 3.1.2).
+    using a *Multi Processing* option (see [*Simple seasonal adjustment of a single time series*](../case-studies/simplesa-single.html) scenario.
 
 	{: .text-center.image-wrapper}
 

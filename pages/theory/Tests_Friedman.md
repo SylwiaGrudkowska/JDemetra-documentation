@@ -53,10 +53,10 @@ seasonality is rejected at the 1% significance level, then the series is
 considered to be seasonal and the outcome of the test is displayed in
 green.
 
-This test uses the preliminary estimate of the unmodified Seasonal --
-Irregular component[^82] (for X-13ARIMA-SEATS this time series is shown
+This test uses the preliminary estimate of the unmodified Seasonal-Irregular 
+component[^82] (for X-13ARIMA-SEATS this time series is shown
 in Table B3). In this estimate, the number of observations is lower than
-in the final estimate of the unmodified Seasonal -- Irregular component.
+in the final estimate of the unmodified Seasonal-Irregular component.
 Because of this, the number of degrees of freedom in the stable
 seasonality test is lower than the number of degrees of freedom in the
 test for the presence of seasonality assuming stability. For
@@ -64,7 +64,7 @@ example, X-13ARIMA-SEATS uses a centred moving average of order 12 to
 calculate the preliminary estimation of trend. Consequently, the first
 six and last six points in the series are not computed at this stage of
 calculation. The preliminary estimation of the trend is then used for
-the calculation of the preliminary estimation of the unmodified Seasonal -- Irregular.
+the calculation of the preliminary estimation of the unmodified Seasonal-Irregular.
 
-[^82]: The unmodified Seasonal -- Irregular component corresponds to the
-    Seasonal -- Irregular factors with the extreme values.
+[^82]: The unmodified Seasonal-Irregular component corresponds to the
+    Seasonal-Irregular factors with the extreme values.

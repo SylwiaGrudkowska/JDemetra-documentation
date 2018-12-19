@@ -435,11 +435,11 @@ automatic model identification are presented below.
    [A limit for the AR and the MA roots to be assumed equal](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors). This option is used in the automatic identification of the differencing order. If the difference in moduli of an AR and an MA root (when      estimating ARIMA(1,0,1)(1,0,1) models in the second step of the automatic identification of the differencing polynomial)   is smaller than **Cancelation limit**, the two roots cancel out. The default parameter value is 0.05.
 - **Initial UR (Diff.)**<br> *ami; ub1*
 
-  The threshold value for the initial unit root[^27] test in the automatic differencing procedure. When one of the roots in the estimation of the (2,0,0)(1,0,0) plus mean model, which is performed in the first step of the automatic model identification procedure, is larger than **First unit root limit**,    in modulus, it is set equal to unity. 
+  The threshold value for the initial unit root[^27] test in the automatic differencing procedure. When one of the roots in the estimation of the ARIMA(2,0,0)(1,0,0) plus mean model, which is performed in the first step of the automatic model identification procedure, is larger than **First unit root limit**,    in modulus, it is set equal to unity. 
   This value should be less than 1 and greater than 0.8. The default parameter value is 0.97.
  - **Final UR (Diff.)**<br>*ami; ub2*
 
-   A unit root test in the automatic differencing procedure. When one of the roots in the estimation of the (1,0,1)(1,0,1) plus mean model, which is performed in the second step of the automatic model identification procedure, is larger than **Second unit root limit**, in modulus, it is checked if there is a common factor in the corresponding AR and MA polynomials of the ARMA model that can be
+   A unit root test in the automatic differencing procedure. When one of the roots in the estimation of the ARIMA(1,0,1)(1,0,1) plus mean model, which is performed in the second step of the automatic model identification procedure, is larger than **Second unit root limit**, in modulus, it is checked if there is a common factor in the corresponding AR and MA polynomials of the ARMA model that can be
    [cancelled](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors) (see **Cancelation limit**)). If there is no cancellation, **the** AR root it is set equal to unity (i.e. the differencing order changes). The value of the **Second unit root limit** should be less than 1 and greater than 0.8.The default parameter value is 0.91.
  - **Arma limit**<br>*ami; tsig*
  
@@ -451,7 +451,7 @@ automatic model identification are presented below.
    The percentage by which the outlier critical value will be reduced when the preferred model is found to have a [Ljung-Box Q-statistic](../theory/Tests_LB.html) with an unacceptable confidence coefficient. The parameter should be between 0 and 1, and will only be active when automatic outlier identification is selected. The    reduced critical value will be set to (1−**ReduceCV**)×CV, where CV is the original critical value. The default          parameter value is 0.12.
  - **LjungBox limit**
  
-    Acceptance criterion for the confidence intervals of the [Ljung-Box Q-statistic](../theory/Tests_LB.html). If the Ljung-Box Q-statistics for the residuals of a final model (checked at lag 24 if the series is monthly, 16 if the series is          quarterly) is greater than **LjungBox limit**, the model is rejected, the outlier critical value is reduced, and model    and outlier identification (if specified) is redone with a reduced value (see the **Reduce CV** argument). After two      unfruitful attempts, a default model (usually (3,1,1)(0,1,1)) will be used. 
+    Acceptance criterion for the confidence intervals of the [Ljung-Box Q-statistic](../theory/Tests_LB.html). If the Ljung-Box Q-statistics for the residuals of a final model (checked at lag 24 if the series is monthly, 16 if the series is          quarterly) is greater than **LjungBox limit**, the model is rejected, the outlier critical value is reduced, and model    and outlier identification (if specified) is redone with a reduced value (see the **Reduce CV** argument). After two      unfruitful attempts, a default model (usually ARIMA(3,1,1)(0,1,1)) will be used. 
    The default parameter value is 0.95. 
  - **Compare to default**<br>*ami; amicomp*
  
@@ -533,7 +533,8 @@ polynomial with roots inside the unit circle.
    * *Initial --* estimates a parameter using as initial condition the value defined by the user.
    * *Fixed* *--* holds a parameter fixed during estimation at the value defined by the user. 
 
-##### Footnotes
+
+
 
 [^5]: The test for log-level specification used by TRAMO is based
     on the maximum likelihood estimation of the parameter $\lambda$ in

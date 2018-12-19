@@ -125,19 +125,19 @@ The steps presented below are designed for the monthly time series. In
 the algorithm that is run for the quarterly time series the $2 \times 4$
 moving average instead of the $2 \times 12$ moving average is used.
 
-  ***Estimation of Trend by*** $\mathbf{2 \times 12}$ ***moving
+***Step 1: Estimation of Trend by*** $\mathbf{2 \times 12}$ ***moving
     average:***
 
   $TC_{t}^{(1)} = M_{2 \times 12}(X_{t})$   \[3\]<!---\[7.63\]-->
   
 
-  ***Estimation of the Seasonal-Irregular component:***
+***Step 2: Estimation of the Seasonal-Irregular component:***
 
   
   $\left( S_{t} + I_{t} \right)^{(1)} = X_{t} - \text{TC}_{t}^{(1)}$   \[4\]<!---\[7.64\]-->
 
 
-  ***Estimation of the Seasonal component by*** $\mathbf{3 \times 3}$
+***Step 3: Estimation of the Seasonal component by*** $\mathbf{3 \times 3}$
     ***moving average over each month:***
 
   
@@ -155,7 +155,7 @@ is then centred using a $2 \times 12$ moving average.
   $$   \[6\]<!---\[7.66\]-->
 
 
-  ***Estimation of the seasonally adjusted series:***
+***Step 4: Estimation of the seasonally adjusted series:***
 
 
   $$
@@ -168,7 +168,7 @@ construction, contain less seasonality. The X-11 method again executes
 the algorithm presented above, changing the moving averages to take this
 property into account.
 
-  ***Estimation of Trend by 13-term Henderson moving average:***
+***Step 5: Estimation of Trend by 13-term Henderson moving average:***
 
   
   $$
@@ -181,7 +181,7 @@ terms of eliminating seasonality (limited or none at this stage), have a
 very good smoothing power and retain a local polynomial trend of degree
 $2$ and preserve a local polynomial trend of degree $3$.
 
-  ***Estimation of the Seasonal-Irregular component:***
+***Step 6: Estimation of the Seasonal-Irregular component:***
 
  
   $$
@@ -189,7 +189,7 @@ $2$ and preserve a local polynomial trend of degree $3$.
   $$   \[9\]<!---\[7.69\]-->
   
 
-  ***Estimation of the Seasonal component by*** $\mathbf{3 \times 5}$
+***Step 7: Estimation of the Seasonal component by*** $\mathbf{3 \times 5}$
     ***moving average over each month:***
 
   $$S_{t}^{(2)} - M_{3 \times 3}\left\lbrack \left( S_{t} + I_{t} \right)^{(2)} \right\rbrack$$   \[10\]<!---\[7.70\]-->
@@ -205,7 +205,7 @@ over the whole $12$-month period is approximately cancelled out:
   $${ \widetilde{S}}_{t}^{(2)} = S_{t}^{(2)} - M_{2 \times 12}\left( S_{t}^{(2)} \right)$$   \[11\]<!---\[7.71\]-->
  
 
-8.  ***Estimation of the seasonally adjusted series:***
+***Step 8: Estimation of the seasonally adjusted series:***
 
 
   $$SA_{t}^{\left( 2 \right)} = \left(TC_{t} + I_{t} \right)^{(2)} = X_{t} - {\widetilde{S}}_{t}^{(2)}$$   \[12\]<!---\[7.72\]-->
@@ -227,7 +227,7 @@ decomposition step.
 
 {: .text-center.small}
 
-**A workflow diagram for the X-11 algorithm. Source: Based upon training material from the Deutsche Bundesbank**
+**A workflow diagram for the X-11 algorithm based upon training material from the Deutsche Bundesbank**
 
 ##### **The iterative principle of X-11**
 
@@ -745,6 +745,8 @@ RegARIMA part:
 -   Table F2F -- Relative contribution of components to the variance of the stationary part of the original series;
 
 -   Table F2G -- Autocorrelogram of the irregular component.
+
+
 
 
 

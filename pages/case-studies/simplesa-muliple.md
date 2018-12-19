@@ -31,7 +31,7 @@ that the analysis is done in a multi-document.
 datasets with multiple time series**
 
 2.  JDemetra+ opens an empty window (default name: *SAProcessing-1*). By
-    default, one of the [pre-defined specifications](../reference-manual/sa-specifications.html)
+    default, one of the [pre-defined specifications](../reference-manual/sa-specifications.html#pre-defined-specifications)
 	will be used for the seasonal
     adjustment of the dataset. To change the specification used for an
     adjustment in the current document, click on the button marked in
@@ -48,8 +48,7 @@ datasets with multiple time series**
 
 3.  The list available from the *SAProcessing* window includes the
     pre-defined specifications and the [user-defined specifications](/reference-manual/sa-specifications.html#user-defined-specifications) (if
-    any). For a description of the user-defined specifications see
-    3.2.1.1). Click on the specification that will be used for the
+    any). Click on the specification that will be used for the
     seasonal adjustment (in the example below *RSA4* is selected).
 
 	{: .text-center.image-wrapper}
@@ -120,8 +119,7 @@ datasets with multiple time series**
     displayed, accompanied by two graphs: an overlay graph on the left with the original data,
     seasonally-adjusted series and the trend-cycle and the SI
     ratio graph on the right. These diagnostics and graphs are
-    discussed in *JDemetra+ Reference Manual* (2017), Chapter 4 and
-    Chapter 5 (see 5.2.2 for X-13ARIMA-SEATS, 5.2.1 for TRAMO/SEATS).
+    discussed [here](../reference-manual/output.html).
 
 	{: .text-center.image-wrapper}
 
@@ -163,7 +161,7 @@ datasets with multiple time series**
 
 10. The specifications used for a seasonal adjustment of an individual
     series can be changed by clicking on the *Specifications* button as
-    described in the section 3.1.1.
+    described [here](../case-studies/simplesa-single.html).
 
 11. To export the output for a whole dataset, select the *Output* item
     from the *SAProcessing* menu.
@@ -233,7 +231,7 @@ datasets with multiple time series**
 	**The content of the context menu for a multi-document**
 
 17. The document can be opened, deleted or renamed from the context
-    menu. The user can also add comments to the document (see 3.1.1).
+    menu. The user can also [add comments to the document](../reference-manual/saprocessingdoc.html).
     When JDemetra+ is launched again the saved workspace can be opened
     and the multi-document can be run again.
 

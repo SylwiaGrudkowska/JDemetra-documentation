@@ -13,7 +13,7 @@ the *ESS Guidelines on Seasonal Adjustment* (2015) requirements.
 
 1.  To refresh the results open a previously saved workspace using the
     path *File* → *Open Workspace*. Choose the multi-document option from the
-    [*Workspace* window] (../reference-manual/workspace.html) and double click on it to display the
+    [*Workspace* window](../reference-manual/workspace.html) and double click on it to display the
     multi-document menu (*SAProcessing*).
 
 	{: .text-center.image-wrapper}

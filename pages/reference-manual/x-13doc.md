@@ -53,12 +53,12 @@ The options for the *X13Doc* include:
     JDemetra+ re-estimates the complete seasonal adjustment model
     automatically, so the results are updated immediately. The user can
     modify the specification and validate the newly introduced changes
-    using the *Specification* functionality (see [Modelling-Specifications](modelling-specifications.html) and [Seasonal adjustment-Specifications](sa-specifications.html)).
+    using the *Specification* functionality (see [modelling specifications](modelling-specifications.html) and [seasonal adjustment specifications](sa-specifications.html)).
 
 -   **Lock** – prevents the series from the *X13Doc* from being changed
     when the user double clicks on a new one in the *Providers* window.
     However, with this option the user can still change the settings of the specification.
 
--   **Copy spec**. to workspace – copy the specification of the active
+-   **Copy spec. to workspace** – copy the specification of the active
     document into the workspace. This allows it be used for
     further processing.

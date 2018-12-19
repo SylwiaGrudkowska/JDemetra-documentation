@@ -651,20 +651,20 @@ actions performed by the user.
 
 The *Demetra UI* tab enables the setting of:
 
--   a default colour scheme for the graphs (**Color scheme**).
+-   A default colour scheme for the graphs (**Color scheme**).
 
--   the data format (uses MS Excel conventions). For example,
+-   The data format (uses MS Excel conventions). For example,
     \#\#\#,\#\#\#.\#\#\#\# implies the numbers in the tables and the
     y-axis of the graphs will be rounded up to four decimals after the decimal
     point (**Data format**).
 
--   the default number of last years of the time series displayed in charts
+-   The default number of last years of the time series displayed in charts
     representing growth rates (**Growth rates**).
 
--   the control of the view of the window for adding pre-specified outliers.
-    (**Pre-specified Outliers**)
+-   The control of the view of the window for adding pre-specified outliers.
+    (**Pre-specified Outliers**).
 
--   the visibility of the icons in the context menus (**Context Menus**).
+-   The visibility of the icons in the context menus (**Context Menus**).
 
 {: .text-center.image-wrapper}
 
@@ -721,13 +721,12 @@ displayed in the *Default components* section can be found [here](../theory/outp
 
 To modify the settings for a particular measure, double click on a
 selected row (select the test’s name from the list and click on the
-working tools button), introduce changes in the pop-up window and click
-OK.
+working tools button), introduce changes in the pop-up window and click the **OK** button.
 
 To reset the default settings for a given test, select this test from
 the list and click on the backspace button situated below the working
 tools button. The description of the parameters for each quality measure
-and test used in a diagnostic procedure can be found in 7.12.
+and test used in a diagnostic procedure can be found in the [output from modelling](../reference-manual/output-modelling.html) and the [output from seasonal adjustement](../reference-manual/output.html) nodes.
 
 {: .text-center.image-wrapper}
 

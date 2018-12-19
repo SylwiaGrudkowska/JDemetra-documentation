@@ -10,8 +10,8 @@ adjustment process by creating a specification with given settings or by
 changing some settings in the specification currently in use.
 
 1.  To create a new specification go to the *Workspace* window and choose a
-    node, to which you wish to add a specification (Modelling or
-    Seasonal adjustment). Then choose a method (*tramo* or *regarima* for
+    node, to which you wish to add a specification (*Modelling* or
+    *Seasonal adjustment*). Then choose a method (*tramo* or *regarima* for
     *Modelling*, *tramoseats* or *x13* for *Seasonal adjustment*). Click
     on the left mouse button and choose a *New* option. The user can
     also import the specification from the external file with the
@@ -93,4 +93,4 @@ changing some settings in the specification currently in use.
 
 	{: .text-center.small}
 	
-	**Modifying a specification which is currently in use**
+	**Modifying a specification, which is currently in use**

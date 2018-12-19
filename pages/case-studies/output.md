@@ -6,7 +6,7 @@ description: Basics
 ---
 
 
-1.  Once a seasonal adjustment process for the dataset is performed the
+1.  Once a seasonal adjustment process for the dataset is performed  (see the [*Simple seasonal adjustment of a single time series*](../case-studies/simplesa-single.html) scenario) the
     results can be exported to the external file. Go to the main menu
     and follow the path: *SAProcessing* → *Output…*
 

@@ -108,7 +108,7 @@ in the specifications used for a regular data production.
 
 	**Transformation's option for *X13* specification**
 
-	It is also possible to change the transformation's options in the currently used specification (see 3.2.1.1, step 4).
+	It is also possible to change the transformation's options in the currently used specification (see [*Defining and modifying a specification*](../case-studies/detailedsa-spec.html) scenario, step 4).
 
 
 

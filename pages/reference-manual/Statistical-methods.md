@@ -201,7 +201,7 @@ seasonal adjustment. Finally, the *Direct-Indirect Seasonal Adjustment*
 tool enables a comparison of the results from direct and indirect
 seasonal adjustment performed on the aggregated series.
 
-The guidance for using these functionalities is given in the Case Studies section:
+The guidance for using these functionalities is given in the [Case studies](../case-studies) section:
 - [basic scenario detailing the use of automatic modelling in seasonal adjustment](../case-studies/simplesa.html);
 - [different types of user interventions](../case-studies/detailedsa.html);
 - [*Seasonality Tests*](../case-studies/seasonalitytests.html); 

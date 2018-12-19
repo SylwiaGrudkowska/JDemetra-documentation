@@ -297,7 +297,6 @@ of the residuals: [periodogram](../theory/spectral_periodogram.html) and [autore
 to reveal any seasonal and trading day effects remaining in the
 residuals (see also [a scenerio that concerns these graphs](../case-studies/spectralgraphs.html)).
 
-##### Footnotes
 
 [^1]: The theoretical motivation for the choice of spectral estimator is
     provided by SOKUP, R., and FINDLEY, D. (1999).

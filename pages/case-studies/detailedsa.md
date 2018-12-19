@@ -10,6 +10,8 @@ user-defined specifications. They are intended for the advanced users
 who already have some practical experience of seasonal adjustment. They
 focus on how to correct the deficiencies of the specification and
 improve the modelling.
+Links to the appropriate parts of the [*Reference Manual*](../reference-manual/) for detailed explanations on actions to be performed are provided
+when necessary.
 
 ### Chosing parameters of seasonal adjustment process
 
@@ -19,14 +21,10 @@ to use available options to enhance the automatically selected seasonal
 adjustment model. This part is divided into several case studies. Each
 of them address a certain issue and suggests how to deal with it.
 
-As a prerequisite, the 3.1.1 scenario should be studied. The majority of
+As a prerequisite, the [*single time series*](../case-studies/simplesa-single.html) scenario should be studied. The majority of
 the case studies in this section concern working with modelling or
-seasonal adjustment specifications. These issues are explained in
-3.2.1.1.
+seasonal adjustment specifications. These issues are explained in the [*seasonal adjustment specification*](../case-studies/detailedsa-spec.html) scenario.
 
-Links to the appropriate parts of the *JDemetra+ Reference Manual*
-(2017) for detailed explanations on actions to be performed are provided
-when necessary.
 
 ### Detailed seasonal adjustment of multiple time series
 
@@ -36,17 +34,14 @@ results, saving and refreshing options. This part is divided into
 several case studies. Each of them focuses on a given issue and presents
 available options.
 
-As a prerequisite, the 3.1.2 scenario should be studied. The specification
-for each series included in the multi-document can be modified using the
-case studies presented in 3.2.1. Although the case studies presented in
+As a prerequisite, the [*Simple seasonal adjustment of multiple time series scenario should be studied*](../case-studies/simplesa-muliple.html). The specification
+for each series included in the multi-document can be modified using the instructions from the [*Defining and modifying a specification*](../case-studies/detailedsa-spec.html) specification.
+Although the case studies presented in
 this section are intended for the datasets, they can be also performed
 for a single time series, provided that the analysis is done in a
 multi-document (the user is expected to follow the path *Statistical
 methods* → *Seasonal adjustment* → *Multi Processing* → *New*).
 
-Links to the appropriate parts of the *JDemetra+ Reference Manual*
-(2017) for detailed explanations on actions are provided when
-necessary.
 
 Once a seasonal adjustment process for multiple time series is initiated
 a relevant item appears in the main menu. It includes the following
@@ -56,7 +51,7 @@ options:
 
 -   *Start –* runs the defined seasonal adjustment process. The item is active when some of the series included into SA-Processing window are unprocessed**.**
 
--   *Refresh* – refresh a process with new data. Option is active when the previously saved workspace is opened and a relevant multi-document opened. For description of the *Refresh* options refer to 3.2.2.3.
+-   *Refresh* – refresh a process with new data. Option is active when the previously saved workspace is opened and a relevant multi-document opened. For description of the *Refresh* options refer to the [*Revision policies*](../case-studies/revision.html) section.
 
 -   *Accept* – for a time series marked in the *SA-Processing* window this option sets the *Quality* value to *Accepted*. This option is helpful when the user wishes to indicate the series for which the results have been reviewed and accepted by the user.
 

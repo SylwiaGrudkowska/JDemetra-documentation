@@ -55,7 +55,7 @@ The following items can appear here:
 
 -   **Total regression effect (reg)** – the sum of the regression effects on the trend, seasonal component, irregular component, seasonally adjusted series and the separate regression effects assigned to none of components (in the last case the *Component type* option for the *User-defined variables* parameter should be set to *Undefined*; see a decription of [Tramo specification](../reference-manual/modelling-spec-tramo.html#regression) or [Arima specification](../reference-manual/modelling-spec-arima.html#regression)).
 
-##### Footnotes
 
-[^1]: When \\(Delta \neq 0\\) and \\(DeltaS = 0,\ \\), an intervention variable is automatically assigned to the trend component.
-[^2]: When both \\(Delta \neq 0\\) and \\(DeltaS \neq 0,\ \\), an intervention variable is automatically assigned to the seasonal component. 
+
+[^1]: When \\(Delta \neq 0\\) and \\(DeltaS = 0\ \\), an intervention variable is automatically assigned to the trend component.
+[^2]: When both \\(Delta \neq 0\\) and \\(DeltaS \neq 0\ \\), an intervention variable is automatically assigned to the seasonal component. 

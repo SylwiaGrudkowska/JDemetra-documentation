@@ -172,7 +172,7 @@ a clear evidence of a model inadequacy.
 
 **An example of out-of-sample test results**
 
-##### Footnotes
+
 
 
 [^1]: PEÑA, D. (2001).

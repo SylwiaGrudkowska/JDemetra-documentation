@@ -182,7 +182,7 @@ in the model.
     currently in use. For example, once the seasonal adjustment is done,
     the user-defined calendar variables can be introduced to the
     specification to study their impact on the results and then the
-    best model settings can be selected (see 3.1.1 for more details).
+    best model settings can be selected (see [*Simple seasonal adjustment of a single time series*](../case-studies/simplesa-single.html) scenario for more details).
 
 
 	{: .text-center.image-wrapper}

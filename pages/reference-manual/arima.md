@@ -39,6 +39,6 @@ For each regular AR root the argument and modulus are also reported (if
 present, i.e. if \\(\mathbf{P > 0}\\)) to inform to which time series
 component the regular roots would be assigned.
 
-##### Footnotes
+
 
 [^3]: A backshift operator \\(B\ \\)is defined as: ($B^{k}x_{t} = x_{t - k})$. It is used to denote lagged series.

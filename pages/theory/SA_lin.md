@@ -615,7 +615,7 @@ It should be noted that the $\text{QR}$ factorization is not unique, and
 that the final residuals also depend on the order of the regression
 variables (the columns of $X$).
 
-##### Footnotes
+
 
 [^1]: DAGUM, E.B. (1980).
 [^3]: GÓMEZ, V., and MARAVALL, A. (2001b).

@@ -16,7 +16,7 @@
 		{% if item.file == include.searched-item %}
 			<nav class='col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar left'>
 				<ul>
-					{% include left-menu.html items = include.init-items folder = include.folder path-items = path-items %}
+					{% include left-menu.html items = include.init-items folder = include.folder path-items = path-items file = item.file %}
 				</ul>
 			</nav>
 		{% else if item.subitems != null %}
@@ -36,7 +36,7 @@
 		{% else %} 
 			{% assign isInPath = false %}
 		{% endif %}
-		{% if isInPath and include.path-items.size == 1 %} 
+		{% if isInPath and include.path-items.size == 1 and include.file == item.file %} 
 			{% assign isActive = true %} 
 		{% else %}
 			{% assign isActive = false %}
@@ -47,7 +47,7 @@
 				{% assign menu-items = item.subitems %}
 				{% assign path-items = include.path-items | shift %}
 				<ul class='{% if isInPath %} opened {% else %} hidden {% endif %}'>
-					{% include left-menu.html items = menu-items folder = include.folder path-items = path-items %}
+					{% include left-menu.html items = menu-items folder = include.folder path-items = path-items file = include.file %}
 				</ul>
 			{% endif %}
 		</li>

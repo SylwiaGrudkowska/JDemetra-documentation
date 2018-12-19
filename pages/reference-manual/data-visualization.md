@@ -4,8 +4,6 @@ title: Data visualization
 description: Basics
 ---
 
-### Displaying data {#displaying-data}
-
 1.  To display a given series, right click on it and chose the *Chart &
     grid* option from the local menu. The graph is displayed in the
     panel on the right.

@@ -12,7 +12,7 @@ This section is divided into two parts:
 * [Specifications](../reference-manual/modelling-specifications.html), which presents parameters of the modelling procedure.
 * [Output](../reference-manual/output-modelling.html), which details a typical output produced by the modelling procedure.
 
-The specifications and output of the modelling procedure are displayed in the *Workspace* window.
+The specifications and output of the modelling procedure are displayed in the [*Workspace* window](../reference-manual/workspace.html).
 
 {: .text-center.image-wrapper}
 

@@ -1,5 +1,5 @@
 ---
-layout: left-menu
+layout: default
 title: A brief description of JDemetra+
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics

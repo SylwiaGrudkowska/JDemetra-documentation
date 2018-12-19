@@ -164,3 +164,6 @@ seasonal effects used for the calendar effects, provided that those
 effects are integrated in the corresponding final components. If these
 corrections are not taken into account, the main series of the
 decomposition will only differ by a constant.
+
+
+[^64]: In case of SEATS the properties can be trivially derived from the matrix formulation of signal extraction. They are also valid for X-11 (additive).

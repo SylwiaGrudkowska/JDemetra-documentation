@@ -90,5 +90,4 @@ This implies that it may be hard to disentangle both effects using the
 frequency domain techniques.
 
 
-[^85]: For definition of the periodogram and Fourier frequencies see
-    7.3.
+[^85]: For definition of the periodogram and Fourier frequencies see the [Periodogram](../spectral_periodogram.html) section.

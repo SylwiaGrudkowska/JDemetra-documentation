@@ -171,8 +171,7 @@ user can both save and refresh results with updated series.
     indicates that the test outcome is uncertain. Those in red indicate that there are issues that should be addressed. 
 	The user is expected to investigate the problematic test statistics and try to improve the
     model, so that no uncertain or rejected test results are present.
-    The colour coding of the displayed outcomes is explained in more detail [here] in the *JDemetra+
-    Reference Manual* (2017), item 4.2.
+   
 
 	{: .text-center.image-wrapper}
 

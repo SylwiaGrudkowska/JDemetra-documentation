@@ -56,10 +56,10 @@ in JDemetra+.
     outcomes of three tests: the auto-correlation at seasonal lags, the
     spectral peaks test and the seasonal dummies test all indicate no
     seasonality in the original time series). These tests are available
-    in the *Diagnostic* section of the output tree. The descriptions of
-    these tests are given in 3.4.1. The seasonality tests can also be
-    executed independently from the seasonal adjustment process, as it
-    is shown in 3.4.1.
+    in the *Diagnostic* section of the output tree. The seasonality tests can be
+    executed independently from the seasonal adjustment proces. The descriptions of
+    these tests are given in the [*Seasonality tests*] (../case-studies/seasonalitytests.html) scenerio. 
+	
 
 	{: .text-center.image-wrapper}
 

@@ -25,7 +25,7 @@ $R_{t|N}^{A}$ calculated in the following way :
 The revision history of the trend is computed in the same manner.
 
 With an additive decomposition $R_{t|N}^{A}$ is calculated in the same
-way if all values $A_{t|t}$ have the same sign158. Otherwise differences
+way if all values $A_{t|t}$ have the same sign. Otherwise differences
 are calculated as:
 
  
