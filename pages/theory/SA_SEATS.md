@@ -219,7 +219,7 @@ of the characteristic equation has a systematic explosive process, which
 means that the impact of the given impulse on the time series is more
 and more pronounced in time. This behaviour is not in line with the
 developments that can be identified in actual economic series.
-Therefore, the models estimated by TRAMO/SEATS (and X-13ARIMA-SEATS)
+Therefore, the models estimated by TRAMO-SEATS (and X-13ARIMA-SEATS)
 have never inverse roots in $B$ with modulus greater than 1.
 
 The characteristic equations associated with the regular and the
@@ -702,7 +702,7 @@ is the cross-spectrum. As it is positive, the MMSE yields correlated
 estimators. This effect emerges since variance of estimator is smaller
 than the variance of component. Nevertheless, if at least one
 non-stationary component exists, cross-correlations estimated by
-TRAMO/SEATS will tend to zero as cross-covariances between estimators of
+TRAMO-SEATS will tend to zero as cross-covariances between estimators of
 the components are finite. In practice, the inconvenience caused by this
 property will likely be of little relevance.
 
