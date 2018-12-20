@@ -110,7 +110,7 @@ in JDemetra+.
 	
 	**Decomposition's results**
 
-7.  In general, in the case of a non-seasonal time series the TRAMO/SEATS
+7.  In general, in the case of a non-seasonal time series the TRAMO-SEATS
     method produces more coherent results than X-13ARIMA-SEATS. When no
     seasonal movements are detected the non-seasonal ARIMA model is used
     and the seasonal component is not estimated.
@@ -120,9 +120,9 @@ in JDemetra+.
 	![Text](/assets/img/user-guide/UG_SA_image11.jpg)
 
 	{: .text-center.small}
-	**Decomposition result for a non-seasonal time series - TRAMO/SEATS**
+	**Decomposition result for a non-seasonal time series - TRAMO-SEATS**
 
-8.  Consequently, the *SI ratios* (dots) estimated by TRAMO/SEATS are
+8.  Consequently, the *SI ratios* (dots) estimated by TRAMO-SEATS are
     equal to the irregular component and for each month the seasonal
     component is equal to the mean (red, horizontal line), which is
     one.
@@ -132,7 +132,7 @@ in JDemetra+.
 	![Text](/assets/img/user-guide/UG_SA_image12.jpg)
 
 	{: .text-center.small}
-	**SI ratios for a non-seasonal time series - TRAMO/SEATS**
+	**SI ratios for a non-seasonal time series - TRAMO-SEATS**
 
 
 [^1]: When the series are non-stationary differentiation is performed

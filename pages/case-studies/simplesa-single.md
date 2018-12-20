@@ -13,7 +13,7 @@ necessary.
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
     *Seasonal adjustment* → *Single analysis*. Select a seasonal
-    adjustment method (*TramoSeats* (i.e. the TRAMO/SEATS method will be
+    adjustment method (*TramoSeats* (i.e. the TRAMO-SEATS method will be
     used) or *X13* (i.e. the X13ARIMA-SEATS will be used).
 
 	{: .text-center.image-wrapper}
@@ -56,7 +56,7 @@ necessary.
     is displayed. It is accompanied with two graphs: an overlay graph on the left with the original unadjusted series,
     the seasonally-adjusted series and the trend-cycle and the *SI
     ratio* graph on the right. The diagnostics and graphs for the modelling part are discussed [here](../reference-manual/output-modelling.html).
-    The user can find also find some explanations of the [results of seasonal adjustment for X-13ARIMA-SEATS](../reference-manual/sa-output-X13.html) and for [TRAMO/SEATS](../reference-manual/sa-output-tramo.html)). 
+    The user can find also find some explanations of the [results of seasonal adjustment for X-13ARIMA-SEATS](../reference-manual/sa-output-X13.html) and for [TRAMO-SEATS](../reference-manual/sa-output-tramo.html)). 
 	The *Main results* panel provides a first impression of the quality of the
     adjustment. Study the diagnostics section using the vertical
     scrollbar.

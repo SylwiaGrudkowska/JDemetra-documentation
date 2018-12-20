@@ -15,7 +15,7 @@ transformation (the additive decomposition is used). The selection of
 the transformation type can be done automatically, on the basis of the
 outcome of a log-level test.
 
-The test used by TRAMO/SEATS is based on the maximum likelihood
+The test used by TRAMO-SEATS is based on the maximum likelihood
 estimation of the parameter $\lambda$ in the Box-Cox transformations
 (which is a power transformations such that the transformed values of
 time series $\text{y }\$are a monotonic function of the observations,
@@ -41,7 +41,7 @@ set to *Auto*); *fct* \> 1 favours levels, *fct* \< 1 favours logs. [This test i
 
 {: .text-center.small}
 
-**The *Transformation* options for the TRAMO/SEATS method**
+**The *Transformation* options for the TRAMO-SEATS method**
 
 The test used by X-13ARIMA-SEATS is based on the AICC information
 criteria[^6]. To choose the transformation type, X-13ARIMA-SEATS fits the

@@ -6,7 +6,7 @@ description: Basics
 ---
 
 Seasonality tests play a fundamental role at different stages of the
-automatic model identification process used by TRAMO/SEATS. They are
+automatic model identification process used by TRAMO-SEATS. They are
 also crucial in the assessment of the results produced by
 X-13-ARIMA-SEATS. When X-13-ARIMA-SEATS is used, the seasonal component are
 estimated regardless of the properties of the original time series.
