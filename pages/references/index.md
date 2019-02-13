@@ -98,7 +98,7 @@ Statistics*, Vol. 70, Issue s1, 927-939.
 DURBIN, J., and KOOPMAN, S.J. (2001), 'Time Series Analysis by State
 Space Methods', Oxford University Press.
 
-(2015), 'ESS Guidelines on Seasonal Adjustment', Eurostat
+Eurostat, (2015), 'ESS Guidelines on Seasonal Adjustment', Eurostat
 Methodological Working Papers.
 
 FINDLEY, D., and MARTIN, D. (2006), 'Frequency Domain Analyses of SEATS
@@ -301,7 +301,7 @@ QUENNEVILLE, B., CHOLETTE, P., HUOT, G., CHIU, K., DIFONZO, T., (2003),
 'Adjustment of Seasonally Adjusted Series to Annual Totals', Proceedings
 of Statistics Canada Symposium.
 
-PALATE, J. (2014), '[Calendars in JDemetra+](www.cros-portal.eu)'.
+PALATE, J. (2014), '[Calendars in JDemetra+](https://ec.europa.eu/eurostat/cros/content/calendar-regressors-jd_en)'.
 
 PEÑA, D. (2001), 'Prediction and Model Selection, in 'A Course in
 Advanced Time Series Analysis', PEÑA, D., TIAO, G.C., and TSAY, R.
@@ -330,14 +330,11 @@ Association*, Business and Economic Statistics Section.
 TSAY, R.S. (1986), 'Time Series Model Specification in the Presence of
 Outliers', Journal of the American Statistical Association, Vol. 81, pp. 132-141.
 
-(2015), '*X-13ARIMA-SEATS Reference Manual*', Time Series Research
-Staff, Statistical Research Division, U.S. Bureau of the Census.
+U.S. Bureau of the Census (2015), '*X-13ARIMA-SEATS Reference Manual*', Time Series Research
+Staff, Statistical Research Division.
 
+U.S. Bureau of the Census (2011), '*X-12-ARIMA Reference Manual*', Version 0.3, Time Series
+Research Staff, Statistical Research Division.
 
-(2011), '*X-12-ARIMA Reference Manual*', Version 0.3, Time Series
-Research Staff, Statistical Research Division, U.S. Bureau of the
-Census.
-
-(2015), '*X-13ARIMA-SEATS Quick Reference for Unix\\Linux. Version
-1.1*', Time Series Research Staff, Statistical Research Division, U.S.
-Bureau of the Census.
+U.S. Bureau of the Census (2015), '*X-13ARIMA-SEATS Quick Reference for Unix\\Linux. Version
+1.1*', Time Series Research Staff, Statistical Research Division.
