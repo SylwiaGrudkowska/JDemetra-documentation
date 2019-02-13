@@ -145,7 +145,7 @@ moving average instead of the $2 \times 12$ moving average is used.
  
 
 The moving average used here is a $3 \times 3$ moving average over
-$5$ $5$ terms, with coefficients
+$5$ terms, with coefficients
 $$\frac{1}{9} \left\{1, 2, 3, 2, 1 \right\}$$. The seasonal component
 is then centred using a $2 \times 12$ moving average.
 

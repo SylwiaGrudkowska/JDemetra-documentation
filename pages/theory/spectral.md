@@ -56,7 +56,7 @@ presented as equation \[4\]<!---\[7.101\]-->[^67].
 
 $$f\left( \omega \right) = \frac{1}{\pi}\left\lbrack \ \gamma(0) + 2\sum_{k = 1}^{\infty}{\ \gamma(k)}cos\text{ωk} \right\rbrack$$,   \[4\]<!---\[7.101\]-->
 
-which implies that if autocovariances are absolutely summable the
+This implies that if autocovariances are absolutely summable the
 population spectrum exists and is a continuous, real-valued function of
 $\omega$. Due to the properties of trigonometric functions
 $\left( \cos\left( - \omega k \right) = \cos\left( \text{ωk} \right) \right.\ \ $and
