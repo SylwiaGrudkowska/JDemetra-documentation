@@ -12,11 +12,11 @@ results produced by the software.
 TRAMO-SEATS is a model-based seasonal adjustment method developed by
 Victor Gómez (Ministerio de Hacienda), and Agustin Maravall (Banco de
 España). It consists of two linked programs: TRAMO and SEATS. TRAMO
-(\"Time Series Regression with ARIMA Noise, Missing Observations, and
-Outliers\") performs estimation, forecasting, and interpolation of
+(Time Series Regression with ARIMA Noise, Missing Observations, and
+Outliers) performs estimation, forecasting, and interpolation of
 regression models with missing observations and ARIMA errors, in the
-presence of possibly several types of outlier. SEATS (\"Signal
-Extraction in ARIMA Time Series\") performs an ARIMA-based decomposition
+presence of possibly several types of outlier. SEATS (Signal
+Extraction in ARIMA Time Series) performs an ARIMA-based decomposition
 of an observed time series into unobserved components. Information about
 the TRAMO-SEATS method available in this section derives directly from
 papers by Victor Gómez and Agustin Maravall; the most important ones
@@ -25,9 +25,7 @@ are: GÓMEZ, V., and MARAVALL, A. (1996), GÓMEZ, V., and MARAVALL, A.
 TRAMO-SEATS method, TRAMO-SEATS software (DOS version and TSW+ -- Tramo
 Seats Windows software and several interfaces) and its documentation as
 well as papers on methodology and application of the programs, can be
-found in the dedicated section of the [Banco de España site](https://www.bde.es/bde/es/) (Services
-$\rightarrow \ $Professionals $\rightarrow \ $Statistical and
-Econometric Software).
+found in the dedicated section of the [Banco de España site](https://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas_estad_d9fa7f3710fd821.html).
 
 X-13ARIMA-SEATS is a seasonal adjustment program developed and supported
 by the U.S. Census Bureau. It is based on the U.S. Census Bureau\'s
@@ -170,9 +168,9 @@ components. There is a fundamental difference in how this process is
 performed in TRAMO-SEATS and X-13ARIMA-SEATS. In TRAMO-SEATS the
 decomposition is performed by the SEATS procedure, which follows a so
 called ARIMA model based approach. In principle, it aims to derive the
-components with statistical models. More information is given in the [SEATS](..theory/SA_SEATS.html) section.
+components with statistical models. More information is given in the [SEATS](../theory/SA_SEATS.html) section.
 X-13ARIMA-SEATS offers two algorithms for decomposition: SEATS and X-11.
-The X-11 algorithm, which is described in the [X-11](..theory/SA_X11.html) section, decomposes a series by
+The X-11 algorithm, which is described in the [X-11 section](../theory/SA_X11.html) section, decomposes a series by
 means of linear filters. Finally, in both methods the final components
 are derived by the assignment of the deterministic effects to the
 stochastic components. Consequently, the role of the ARIMA models is
@@ -184,9 +182,9 @@ summary, the decomposition procedure that results in an estimation of
 the seasonal component requires prior identification of the
 deterministic effects and their removal from the time series. This is
 achieved through the linearisation process performed by the TRAMO and
-the RegARIMA models, shortly discussed in the [Linearisation with the TRAMO and RegARIMA models](..theory/SA_lin.html) section.The linearised series is
-then decomposed into the stochastic components with [SEATS](..theory/SA_SEATS.html) or
-[X-11](..theory/SA_X11.html) algorithms.
+the RegARIMA models, shortly discussed in the [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html) section.The linearised series is
+then decomposed into the stochastic components with [SEATS](../theory/SA_SEATS.html) or
+[X-11](../theory/SA_X11.html) algorithms.
 
 
 
