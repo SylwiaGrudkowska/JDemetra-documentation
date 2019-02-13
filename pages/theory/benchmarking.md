@@ -8,12 +8,12 @@ description: Basics
 
 Benchmarking[^86] is a procedure widely used when for the same target
 variable the two or more sources of data with different frequency are
-available. Generally, the two sources of data do not agree, as an
+available. Generally, the two sources of data rarely agree, as an
 aggregate of higher-frequency measurements is not necessarily equal to
 the less-aggregated measurement. Moreover, the sources of data may have
 different reliability. Usually it is thought that less frequent data are
 more trustworthy as they are based on larger samples and compiled more
-precisely. The more reliable measurements are considered as benchmarks.
+precisely. The more reliable measurement is considered as a benchmark.
 
 Benchmarking also occurs in the context of seasonal adjustment. Seasonal
 adjustment causes discrepancies between the annual totals of the

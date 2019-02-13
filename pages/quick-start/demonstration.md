@@ -49,8 +49,7 @@ to the main menu and follow the path: **Statistical methods → Seasonal
 adjustment → Multi Processing → New**. This command opens an empty 
 *SAProcessing* window. Next, drag and drop series in the *SAProcessing* 
 window and launch the seasonal adjustment process. Explore the results 
-and save them. The gif below shows the details of the actions required 
-for the seasonal adjustment process. 
+and save them. The gif below shows the details of the actions performed in an automatic seasonal adjustment process.
 
 {: .text-center.image-wrapper}
 

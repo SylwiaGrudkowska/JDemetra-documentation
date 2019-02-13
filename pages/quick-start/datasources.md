@@ -21,12 +21,12 @@ By default, JDemetra+ supports the following data sources:
 * ODBC;
 * SDMX;
 * Excel spreadsheets;
-* TSW (input files for the Tramo-Seats -Windows application by the Bank of Spain);
+* TSW (input files for the [Tramo-Seats-Windows application](https://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas.html) by the Bank of Spain);
 * TXT;
-* USCB (input files for the X-13-ARIMA-SEATS application U.S. Census Bureau);
+* USCB (input files for the [X-13-ARIMA-SEATS application](https://www.census.gov/srd/www/winx13/) by the U.S. Census Bureau);
 * XML.
 
-All standard databases (Oracle, SQLServer, DB2, MySQL) are supported by JDemetra+ via JDBC which is a generic interface to many relational databases. Other providers can be added by users by creating plugins.
+All standard databases (Oracle, SQLServer, DB2, MySQL) are supported by JDemetra+ via JDBC, which is a generic interface to many relational databases. Other providers can be added by users by creating plugins.
 We will now focus on the Spreadsheets data source, which corresponds to the series prepared in an Excel file. The file should have dates in Excel date format. Dates should be placed in the first column (or in the first row) and titles of the series in the corresponding cell of the first row (or in the first column). The top-left cell [A1] can include text or it can be left empty. The empty cells are interpreted by JDemetra+ as missing values and they can appear at the beginning, in the middle and at the end of the time series. The example is shown below.
 
 {: .text-center.image-wrapper}

@@ -5,14 +5,14 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-JDemetra+ is open source, platform independent, extensible software for 
+JDemetra+ is an open source, platform independent, extensible software for 
 seasonal adjustment (SA) and other related time series problems 
-developed by the National Bank of Belgium in cooperation with the 
-Deutsche Bundesbank and [Eurostat](http://ec.europa.eu/eurostat).
+developed by the [National Bank of Belgium](https://www.nbb.be/en) in cooperation with the 
+[Deutsche Bundesbank](https://www.bundesbank.de/en) and [Eurostat](http://ec.europa.eu/eurostat)[^1].
 
 JDemetra+ implements the concepts and algorithms used in the two leading SA methods:
-[TRAMO-SEATS+](https://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas.html)
-and [X-12ARIMA/X-13ARIMA-SEATS](https://www.census.gov/srd/www/x13as/). 
+[TRAMO-SEATS+](https://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Notas_introduct_3638497004e2e21.html)[^4]
+and [X-12ARIMA/X-13ARIMA-SEATS](https://www.census.gov/srd/www/x13as/)[^3]. 
 These methods have been re-engineered using an object-oriented approach that enables easier handling, extensions and modifications.
 
 The program TRAMO-SEATS+ was developed by Gianluca Caporello and Agustin Maravall - with programming support from Domingo Perez and Roberto Lopez - at the Bank of Spain. 
@@ -24,12 +24,12 @@ in the production or analysis of economic statistics, including for instance out
 temporal disaggregation and benchmarking.
 
 JDemetra+ enables the implementation of the ‘[ESS 
-Guidelines on Seasonal Adjustment’ (2015)](https://ec.europa.eu/eurostat/.../KS-GQ-15-001-EN-N.pdf).
+Guidelines on Seasonal Adjustment’ (2015)](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf).
 JDemetra+ has been [officially recommended](https://ec.europa.eu/eurostat/cros/system/files/Jdemetra_%20release.pdf), as of 2 February 2015, 
 to the members of the ESS and the European System of Central Banks as software for seasonal and calendar adjustment of official statistics.
 
 From a technical point of view, JDemetra+ is a collection of reusable and extensible Java components, 
-which can be easily accessed through a rich graphical interface. The software is a free and open-source software (FOSS)
+which can be easily accessed through a rich graphical interface. The software is a free and open-source(FOSS)
 developed under the [EUPL licence](http://ec.europa.eu/idabc/eupl.html).
 
  
@@ -40,13 +40,13 @@ Seasonal adjustment (SA) is an important component of the official
 statistics business process. This technique is widely used for
 estimating and removing seasonal and calendar-related movements from
 time series resulting in data that present a clear picture of economic
-phenomena. Therefore, Eurostat[^1] takes part in various activities that
+phenomena. Therefore, Eurostat takes part in various activities that
 aim to promote, develop and maintain a publicly available software
 solution for SA in line with established best practices.
 
 Among many seasonal adjustment methods that produce reliable results for
 large datasets the most widely used and recommended ones are
-X-12-ARIMA[^2] /X-13ARIMA-SEATS[^3] developed at the U.S. Census Bureau
+X-12-ARIMA[^2]/X-13ARIMA-SEATS developed at the U.S. Census Bureau
 and TRAMO-SEATS developed by Victor Gómez and Agustín Maravall, from
 the Banco de España. Both methods are divided into two main parts. The
 first part is called a pre-adjustment. It removes various deterministic
@@ -64,8 +64,8 @@ The TRAMO-SEATS method was originally implemented in 2001 in the program
 TSW (Tramo-Seats-Windows), which is a Windows extension of programs
 TRAMO and SEATS. Since then, a considerable amount of changes and
 additions have been added, that affect many important input parameters,
-as well as the output obtained. These changes resulted in program TSW+
-launched in 2014.[^6] A LINUX version of TRAMO-SEATS is also available. 
+as well as the output obtained. These changes resulted in program [TSW+](https://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas.html)[^6]
+launched in 2014. A LINUX version of TRAMO-SEATS is also available. 
 
 For X-13ARIMA-SEATS the U.S. Census Bureau provides the Windows
 interface called [Win X-13](https://www.census.gov/srd/www/winx13/).[^7]
@@ -81,7 +81,7 @@ maintenance of the relevant IT codes increasingly burdensome.
 These original seasonal adjustment programs are commonly perceived by
 users as difficult to operate. Therefore, to improve access to these SA
 methods for non-specialists, Eurostat introduced new software called
-Demetra. It offered a user-friendly interface to the two SA algorithms:
+Demetra. It offers a user-friendly interface to the two SA algorithms:
 TRAMO-SEATS and X-12-ARIMA and facilitated the comparison of the output
 from those two algorithms. Even so, Demetra uses the FORTRAN libraries,
 which, together with an insufficient product development and handling of
@@ -139,7 +139,7 @@ TRAMO-SEATS and of X-12-ARIMA/X-13ARIMA-SEATS. Most analyses
 implemented in JDemetra+ are available in the core engines. However, the 
 results produced by JDemetra+ may slightly differ for several reasons 
 (different statistical/algorithmic choices). In any case the global 
-mes-sages from seasonal adjustment are (nearly) always similar. Among 
+messages from seasonal adjustment are (nearly) always similar. Among 
 numerous important tools implemented in JDemetra+, the following 
 functionalities should be highlighted:
 * RegARIMA modelling (using concepts developed in TRAMO and in X-12-ARIMA); 
@@ -191,14 +191,7 @@ operating systems that support the Java VM (Virtual Machine) such as:
 * Solaris OS version 11 Express (SPARC and x86/x64 Platform Edition); 
 * Macintosh OS X 10.6 Intel. 
 JDemetra+ runs on the Java SE Runtime Environment (JRE) 
-version 8 update 21 or later. JRE can be downloaded to the user’s 
-platform from one of the sites listed below: 
-	* [Windows, Linux and 
-Solaris](http://www.oracle.com/technetwork/java/javase/downloads/index.h 
-tml) 
-	* Mac OS: [Mac OS X 10.6](http://support.apple.com/downloads), [OS X Lion 
-10.7](http://www.oracle.com/technetwork/java/javase/downloads/index.html). 
-
+version 8 update 21 or later.
 
 
 [^1]: Eurostat is the statistical office of the European Union. Its task is to provide the European Union with statistics at European level that enable comparisons between countries and regions.
@@ -207,6 +200,6 @@ tml)
 [^4]: TRAMO-SEATS is a model-based seasonal adjustment method developed by Victor Gómez and Agustin Maravall (the Banco de España). It consists of two linked programs: TRAMO and SEATS. TRAMO ("Time Series Regression with ARIMA Noise, Missing Observations, and Outliers") performs estimation, forecasting, and interpolation of regression models with missing observations and ARIMA errors, in the presence of possibly several types of outlier. SEATS ("Signal Extraction in ARIMA Time Series") performs an ARIMA-based decomposition of an observed time series into unobserved components. Both programs are supported by the Banco de España. For basic information on the TRAMO-SEATS see CAPORELLO, G., and MARAVALL, A. (2004). More information on TRAMO-SEATS can be found at www.bde.es. 
 [^5]: For description of the ARIMA model see the [Linearisation](../pages/theory/SA_lin.html) section.
 [^6]: MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014).
-[^7]: Documentation on Win X-X13 can be found on: [https://www.census.gov/srd/www/winx13/WinX13Doc.html](https://www.census.gov/srd/www/winx13/WinX13Doc.html).
-[^8]: (2015), ‘X-13ARIMA-SEATS Quick Reference for Unix\Linux’.
+[^7]: Documentation on Win X-X13 can be found at: [https://www.census.gov/srd/www/winx13/WinX13Doc.html](https://www.census.gov/srd/www/winx13/WinX13Doc.html).
+[^8]: (2015), ‘[X-13ARIMA-SEATS Quick Reference for Unix\Linux](https://www.census.gov/ts/x13as/unix/qrefX13ASunix.pdf)’.
 [^9]: Endorsed by the Statistical Programme Committee, the European Statistical System (ESS) ‘Guidelines on Seasonal Adjustment’ (2009) aim to harmonize European practices and to improve the comparability of infra-annual national statistics as well as enhance the overall quality of the European Union and the euro area aggregates. The ‘ESS Guidelines on Seasonal Adjustment’ (2009) and its revised version released in 2015 cover all the key steps of the seasonal and calendar adjustment process. They discuss both the theoretical aspects and practical implementation of seasonal adjustment issues.
