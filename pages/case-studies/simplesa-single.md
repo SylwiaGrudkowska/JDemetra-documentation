@@ -3,13 +3,12 @@ layout: left-menu
 title: Simple seasonal adjustment of a single time series
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
----
+--- 
 
-This scenario guides the user through all the steps involved in the
-process of seasonally adjusting a single time series. Links to the
-appropriate parts of the *Reference Manual* for
-detailed explanations of actions to be performed are provided when
-necessary.
+This scenario guides the user through all the steps of the
+process required to seasonally adjust a single time series. Links to the
+appropriate parts of the [*Reference Manual*](../pages/reference-manual/) for
+detailed explanations are provided when necessary.
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
     *Seasonal adjustment* → *Single analysis*. Select a seasonal
@@ -37,8 +36,8 @@ necessary.
 3.  Select a data provider and unfold an already imported dataset. Drag
     and drop one time series from the *Providers* window to the *Drop
     data here* box as shown below. The window contains two panels. The
-    one on the left presents the structure of the output in a form of an
-    output tree. The other one is empty. Once seasonal adjustment has
+    one on the left presents the structure of the output in the form of an
+    output tree. The other one is empty. Once the seasonal adjustment has
     been performed, this panel will show detailed results for any item
     chosen by the user from the output tree.
 
@@ -53,11 +52,11 @@ necessary.
 4.  When the user drops a series into the document window (X13Doc in the
     example presented in this scenario) JDemetra+ starts the seasonal
     adjustment process automatically. By default, a summary of results
-    is displayed. It is accompanied with two graphs: an overlay graph on the left with the original unadjusted series,
+    is displayed. It is accompanied by two graphs: an overlay graph on the left with the original unadjusted series,
     the seasonally-adjusted series and the trend-cycle and the *SI
     ratio* graph on the right. The diagnostics and graphs for the modelling part are discussed [here](../reference-manual/output-modelling.html).
     The user can find also find some explanations of the [results of seasonal adjustment for X-13ARIMA-SEATS](../reference-manual/sa-output-X13.html) and for [TRAMO-SEATS](../reference-manual/sa-output-tramo.html)). 
-	The *Main results* panel provides a first impression of the quality of the
+	The *Main results* panel provides a quick summary of the quality of the
     adjustment. Study the diagnostics section using the vertical
     scrollbar.
 
@@ -69,12 +68,10 @@ necessary.
 
 	**Simple seasonal adjustment, single time series: main results panel**
 
-5.  The results are in green, yellow or red text, depending on the
-    result of the statistical test. The results are
-    marked in green, yellow or red, depending on the result of the
+5.  The results are highlighted in green, yellow or red, depending on the result of the
     statistical test used. Green indicates that problematic
     characteristics have not been detected (e.g. lack of normality of
-    residuals, the autocorrelation in residuals). Yellow
+    residuals, autocorrelation in residuals). Yellow
     indicates that the test outcome is uncertain. Those in red indicate that there are issues that should be addressed. 
 	The user is expected to investigate the problematic test statistics and try to improve the
     model, so that no uncertain or rejected test results are present. 

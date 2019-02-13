@@ -3,7 +3,7 @@ layout: left-menu
 title: Direct versus indirect approach
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
----
+--- 
 Economic time series are often computed and reported according to a
 certain classification or a breakdown. For example, in National Accounts
 total consumption expenditures are a sum of individual consumption
@@ -15,8 +15,8 @@ adjustment). The point is that these two strategies result in different
 seasonally adjusted aggregates. As neither theoretical nor empirical
 evidence uniformly favours one approach over the other, the choice of
 the seasonal adjustment strategy concerning aggregated series depends on
-the user[^2]. Guidance in this field is given in the *ESS Guidelines on
-Seasonal Adjustment* (2015).
+the user[^2]. Guidance in this field is given in the
+[ESS Guidelines on Seasonal Adjustment (2015)](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3)
 
 1.  JDemetra+ offers a *Direct--Indirect Seasonal Adjustment*
     functionality that facilitates the comparison of the results from

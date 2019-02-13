@@ -9,7 +9,8 @@ description: Basics
 The saved results from a seasonal adjustment multi-process can be
 refreshed when new or modified observations are available. JDemetra+
 offers several options for refreshing the output, which are in line with
-the *ESS Guidelines on Seasonal Adjustment* (2015) requirements.
+the [ESS Guidelines on Seasonal Adjustment (2015)](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3) 
+requirements.
 
 1.  To refresh the results open a previously saved workspace using the
     path *File* → *Open Workspace*. Choose the multi-document option from the
@@ -46,7 +47,7 @@ table.
 | Partial concurrent adjustment → Estimate regression coefficients + Last outliers      | The ARIMA model, outliers (except from the outliers in the last year of the sample) and other regression parameters are not re-identified. All parameters of the RegARIMA model are re-estimated. The outliers in the last year of the sample are re-identified. The transformation type remains unchanged. |
 | Partial concurrent adjustment → Estimate regression coefficients + all outliers       | The ARIMA model and regression parameters, except from outliers) are not re-identified. All parameters of the RegARIMA model are re-estimated. All outliers are re-identified. The transformation type remains unchanged.                                                                                   |
 | Partial concurrent adjustment → Estimate regression coefficients + Arima model        | Re-identification of the ARIMA model, outliers and regression variables, except from the calendar variables. The transformation type remains unchanged.                                                                                                                                                     |
-| Concurrent                                                                            | Re-identification of the whole ARIMA model.                                                                                                                                                                                                                                                                 |
+| Concurrent                                                                            | Re-identification of the whole RegARIMA model.                                                                                                                                                                                                                                                                 |
 
 
 

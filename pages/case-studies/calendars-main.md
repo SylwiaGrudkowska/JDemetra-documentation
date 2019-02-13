@@ -250,7 +250,7 @@ the long term mean effects.
     holiday from the list click on it and choose the \"-\" button. To
     remove the existing holiday from the list, click on it and press the
     \"-\" button. Once all changes are introduced, click *OK*. More
-    details the user can find in the [*National calendars*](../calendars-national.html) case study.
+    details the user can find in the [*National calendars*](../case-studies/calendars-national.html) case study.
 
 	{: .text-center.image-wrapper}
 

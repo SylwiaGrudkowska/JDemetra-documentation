@@ -4,22 +4,23 @@ title: Advanced seasonal adjustment
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-*Advanced seasonal adjustment* scenarios present the in-depth analysis
+*Advanced seasonal adjustment* scenarios present an in-depth analysis
 of seasonal adjustment results for time series generated with the
 user-defined specifications. They are intended for the advanced users
 who already have some practical experience of seasonal adjustment. They
 focus on how to correct the deficiencies of the specification and
 improve the modelling.
-Links to the appropriate parts of the [*Reference Manual*](../reference-manual/) for detailed explanations on actions to be performed are provided
+Links to the appropriate parts of the [*Reference Manual*](../reference-manual/) 
+for detailed explanations are provided
 when necessary.
 
-### Chosing parameters of seasonal adjustment process
+### Choosing parameters of seasonal adjustment process
 
 This section guides the user through functions that can be used in the
 process of seasonal adjustment of a single time series. It explains how
 to use available options to enhance the automatically selected seasonal
 adjustment model. This part is divided into several case studies. Each
-of them address a certain issue and suggests how to deal with it.
+of them address a given issue and suggests how to deal with it.
 
 As a prerequisite, the [*single time series*](../case-studies/simplesa-single.html) scenario should be studied. The majority of
 the case studies in this section concern working with modelling or
@@ -34,7 +35,7 @@ results, saving and refreshing options. This part is divided into
 several case studies. Each of them focuses on a given issue and presents
 available options.
 
-As a prerequisite, the [*Simple seasonal adjustment of multiple time series scenario should be studied*](../case-studies/simplesa-muliple.html). The specification
+As a prerequisite, the [*simple seasonal adjustment of multiple time series*](../case-studies/simplesa-muliple.html) scenario should be studied. The specification
 for each series included in the multi-document can be modified using the instructions from the [*Defining and modifying a specification*](../case-studies/detailedsa-spec.html) specification.
 Although the case studies presented in
 this section are intended for the datasets, they can be also performed
@@ -59,7 +60,7 @@ options:
 
 -   *Clear selection* – unmarks series selected in the *SA-Processing* window.
 
--   *Specification…* – enables the user to pick the seasonal adjustment specification from the list. The chosen specification will be applied to the time series once processed.
+-   *Specification…* – enables the user to pick a seasonal adjustment specification from the list. The chosen specification will be applied to the time series once processed.
 
 -   *Priority* – an indicator that can be used to mark a series that require more or less attention. Priorities take values from 0 to 10. JDemetra+ computes them automatically, based on the average of the (logged) series. The user can choose the method of computation (log-based or level based).
 

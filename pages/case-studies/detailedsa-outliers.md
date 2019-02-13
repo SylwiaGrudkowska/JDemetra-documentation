@@ -54,8 +54,8 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 1.  The picture below presents the number of registered
     unemployed persons in Poland. It is clear that in the beginning of
-    1999 the sudden, permanent shift in the trend level took place as a
-    result of the poor state of the economy. In the end of 2008 a
+    1999 a sudden, permanent shift in the trend level took place as a
+    result of the poor state of the economy. At the end of 2008 a
     single peak can be observed, which can be interpreted as a reaction
     by entrepreneurs to the beginning of the economic crisis.
 

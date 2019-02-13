@@ -4,8 +4,8 @@ title: Non-seasonal time series
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-The *ESS Guidelines on Seasonal Adjustment* (2015) recommend to apply
-seasonal adjustment only to those time series for which the seasonal
+The [ESS Guidelines on Seasonal Adjustment (2015)](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3) 
+recommend to apply seasonal adjustment only to those time series for which the seasonal
 and/or calendar effects can be properly explained, identified and
 estimated. Therefore, seasonal adjustment of non-seasonal time series is
 an inappropriate treatment. This case study explains how to recognize a
@@ -58,8 +58,8 @@ in JDemetra+.
     seasonality in the original time series). These tests are available
     in the *Diagnostic* section of the output tree. The seasonality tests can be
     executed independently from the seasonal adjustment proces. The descriptions of
-    these tests are given in the [*Seasonality tests*] (../case-studies/seasonalitytests.html) scenerio. 
-	
+    these tests are given in the [*Seasonality tests*](../case-studies/seasonalitytests.html) scenario. 
+	 
 
 	{: .text-center.image-wrapper}
 
@@ -68,8 +68,8 @@ in JDemetra+.
 	{: .text-center.small}
 	**Seasonality test for the original (transformed) series**
 
-4.  Another sign that indicates that the presence of seasonality issue
-    should be addressed is the non-seasonal ARIMA model chosen by the
+4.  Another sign indicating that the presence of seasonality is uncertain
+    should be addressed : the non-seasonal ARIMA model chosen by the
     automatic model identification procedure. The details of the
     RegARIMA model are available in the *Pre-processing* node.
 
@@ -80,7 +80,7 @@ in JDemetra+.
 	{: .text-center.small}
 	**Estimation results for the RegARIMA model**
 
-5.  For X-13ARIMA-SEATS the most meaningful tool to assess the presence
+5.  For X-13ARIMA-SEATS the most relevant tool to assess the presence
     of seasonal movement in the time series is a combined seasonality
     test. For the series presented in this case study the result of the
     combined seasonality test confirms that the movements observed in

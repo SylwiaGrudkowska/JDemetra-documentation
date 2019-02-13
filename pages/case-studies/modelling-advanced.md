@@ -53,7 +53,7 @@ user can both save and refresh results with updated series.
     be displayed in the bottom part of the window. The results include
     the [model selection criteria, the estimated ARIMA model, any identified
     outliers](../theory/SA_lin.html)
-    and any [calendar effects]((../theory/Calendars.html)).
+    and any [calendar effects](../case-studies/calendars-main.html).
     Note that outliers and calendar effects are presented only if
     specified in the model or if detected automatically by the specified
     modelling routine.
@@ -167,7 +167,7 @@ user can both save and refresh results with updated series.
     marked in green, yellow or red, depending on the result of the
     statistical test used. Green indicates that problematic
     characteristics have not been detected (e.g. lack of normality of
-    residuals, the autocorrelation in residuals). Yellow
+    residuals, autocorrelation in residuals). Yellow
     indicates that the test outcome is uncertain. Those in red indicate that there are issues that should be addressed. 
 	The user is expected to investigate the problematic test statistics and try to improve the
     model, so that no uncertain or rejected test results are present.

@@ -4,7 +4,7 @@ title: Series span and model span
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-
+  
 By default, JDemetra+ performs an analysis on the whole span available for
 a time series. However, in some cases there is a need to limit an
 analysis to a subset (span) of the time series.
@@ -26,19 +26,19 @@ or irregulars[^3]. Also a change to the method or timing of data
 collection might be a reason for a shortening a time series.
 
 JDemetra+ offers two useful options to deal with the issue of the length
-of time series: *model span* and *series span*. *Model span* determines
-the subset of a time series that is used for the seasonal
-adjustment/modelling process. When the user limits the original time
-series to a given span, only this span will be used in the computations.
+of time series: *Model span* and *Series span*. 
 
-On the other hand, *Series span* determines the time series span used
-for the estimation of the pre-processing mode. This option can be
-utilized when, for example if the user does not want data early in the
+With the *Series span* the user can determine a sub-series on which 
+he wants to run the seasonal adjustement or modelling process.
+
+Then he can determine an even shorter *Model span*, which is the sub-series 
+on which the pre-adjustement regressions and the Arima model will be estimated. 
+This option can be chosen when, for example the user does not want data early in the
 series to affect the forecasts, or, alternatively, data late in the
-series to affect regression estimates used for the pre-adjustment before
-seasonal adjustment. The span determined by the *Model span* option is
-used for modelling and decomposition of a span resulting from the
-settings chosen for the *Series span*.
+series to affect regression estimates used for the pre-adjustment.
+
+The final modelling and decomposition of the series will be performed on the *Series span* using 
+the settings determined with the *Model span*.
 
 {: .text-center.image-wrapper}
 

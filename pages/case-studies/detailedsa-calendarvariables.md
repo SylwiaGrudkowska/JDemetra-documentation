@@ -7,7 +7,7 @@ description: Basics
 
 
 Although a flexible [tool for defining calendars](../case-studies/calendars-main.html) is available
-in JDemetra+, in some cases it might be necessary to use 
+in JDemetra+, in some cases it might be necessary to intruduce 
 user-defined variables due to unusual calendar effects and/or
 expected heterogeneous period-specific calendar effects.
 
@@ -23,7 +23,7 @@ necessary. Furthermore, it is not the number of working days but the
 deviation of the number of working days from its long-term average in a
 specific month, which is used to model the calendar effects. Since the
 functionality for centring the variables is not available in JDemetra+,
-the user need to prepare bespoke centred regressors and use them
+the user needs to prepare bespoke centred regressors and use them
 in the model.
 
 1.  To be able to use a user-defined variables as the calendar
@@ -148,11 +148,11 @@ in the model.
 
 9.  In this case study two variables were chosen to be used in the
     modelling of the calendar effects. They can be seen next to the
-    option userVariables. In the last step one can decide the algorithm
+    option userVariables. In the last step one can decide how the algorithm
     will use the user defined variables. This can be set by choosing one
     of the [test options](../reference-manual/modelling-spec-arima.html#regression).
 
-
+ 
 	{: .text-center.image-wrapper}
 
 	![Text](/assets/img/user-guide/UG_SA_image33.jpg)

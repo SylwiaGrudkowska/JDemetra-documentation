@@ -5,7 +5,7 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-According to the *ESS Guidelines on Seasonal Adjustment* (2015),
+According to the [ESS Guidelines on Seasonal Adjustment (2015)](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3) ,
 concurrent adjustment means that the model, filters, outliers,
 regression parameters and transformation type are all re-identified and the
 respective parameters and factors re-estimated every time new

@@ -168,7 +168,7 @@ description: Basics
 	{: .text-center.small}
 
 	**The *VerticalOrientatio*n option**
-
+ 
 14. In the case of the *TXT* format the only available options are *folder*
     (location of the file) and *series* (results included in the output
     file). The list of available codes in the *Content* section is given [here](../theory/output.html).
@@ -195,7 +195,7 @@ description: Basics
 	
 	**List of items available for the *Csv matrix* output type**
 
-16. Once the output settings are introduced, click the *OK* button.
+16. Once the output settings are selected, click the *OK* button.
 
 	{: .text-center.image-wrapper}
 

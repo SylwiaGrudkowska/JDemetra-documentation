@@ -1,10 +1,10 @@
 ---
 layout: left-menu
-title: Partial concurrent adjustment → Estimate regression coefficient + Arima parameters
+title: Partial concurrent adjustment → Estimate regression coefficients + Arima parameters
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-The *Partial concurrent adjustment → Estimate regression coefficient +
+The *Partial concurrent adjustment → Estimate regression coefficients +
 Arima parameters* strategy means that the ARIMA model, outliers and
 other regression parameters are not re-identified. All parameters of the
 RegARIMA model are re-estimated but the explanatory variables remain the
@@ -26,5 +26,7 @@ coefficients have been updated.
 
 {: .text-center.small}
 
-**The *Partial concurrent adjustment* → *Estimate regression coefficient + Arima parameters* revision policy results**
+**The *Partial concurrent adjustment* → *Estimate regression coefficients + Arima parameters* revision policy results**
+
+
 

@@ -56,7 +56,7 @@ $\text{AICC}_{\text{no\ log}}$ is the value of AICC from fitting the
 RegARIMA model to the untransformed series;
 
 $\text{AICC}_{\log}$ is the value of AICC from fitting the RegARIMA
-model to the transform series;
+model to the transformed series;
 
 $\Delta_{\text{AICC}}$ is the threshold value; $\Delta_{\text{AICC}}$\>
 0 favours levels and $\Delta_{\text{AICC}}$ \< 0 favours logs.
@@ -74,8 +74,9 @@ model](../reference-manual/modelling-spec-arima.html#transformation).
 
 **The *Transformation* options for the X-13ARIMA-SEATS method**
 
-According to the *ESS Guidelines on Seasonal Adjustment* (2015), the
-automatic procedures should be applied for the transformation choice,
+According to the 
+[ESS Guidelines on Seasonal Adjustment (2015)](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3),
+the automatic procedures should be applied for the transformation choice,
 however in case of the most problematic series the manual selection is
 recommended. The manual selection of the transformation is usually made
 in the specifications used for a regular data production.

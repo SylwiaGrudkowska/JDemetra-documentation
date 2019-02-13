@@ -6,30 +6,31 @@ description: Basics
 ---
 Often one has two (or multiple) datasets of different frequency for the same
 target variable. Sometimes, however, these datasets are not coherent in the
-sense that they don’t match up. Benchmarking[^1] is a method to overcome
-this situation. It happens quite often, as an aggregate of a higher-frequency
-measurement is not necessarily equal to the less-aggregated measurement.
-Moreover, the sources of data may have different reliability issues. Usually it
-is thought that less frequent data are more trustworthy as they are
-based on larger samples and compiled more precisely. In general, the
-more reliable measurements are considered as the benchmark.
+sense that they don’t match up. Benchmarking[^1] is a method todeal with
+this situation. An aggregate of a higher-frequency measurement variables is not necessarily
+equal to the corresponding lower-frequency less-aggregated measurement.
+Moreover, the sources of data may have different reliability levels. Usually,
+less frequent data are considered more trustworthy as they are
+based on larger samples and compiled more precisely. The
+more reliable measurements, hence often the less frequent, will serve as benchmark.
 
-In seasonal adjustment methods benchmarking means the procedure that
+In seasonal adjustment methods benchmarking is the procedure that
 ensures the consistency over the year between adjusted and
-non-seasonally adjusted data. It should be noted that the *ESS
-Guidelines on Seasonal Adjustment* (2015) does not recommend
-benchmarking as it introduces a bias in the seasonally adjusted data.
-Also the U.S. Census Bureau points out that "*forcing the seasonal
+non-seasonally adjusted data. It should be noted that the 
+[ESS Guidelines on Seasonal Adjustment (2015)](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3),
+do not recommend benchmarking as it introduces a bias in the seasonally adjusted data.
+The U.S. Census Bureau also points out that "*forcing the seasonal
 adjustment totals to be the same as the original series annual totals
 can degrade the quality of the seasonal adjustment, especially when the
 seasonal pattern is undergoing change. It is not natural if trading day
 adjustment is performed because the aggregate trading day effect over a
 year is variable and moderately different from zero*"[^2]. Nevertheless,
-some users may prefer that the annual totals of the seasonally adjusted
+some users may need that the annual totals of the seasonally adjusted
 series match the annual totals of the original, non-seasonally adjusted
 series[^3].
 
-According to the *ESS Guidelines on Seasonal Adjustment* (2015), the
+According to the
+[ESS Guidelines on Seasonal Adjustment (2015)](https://ec.europa.eu/eurostat/documents/3859598/6830795/KS-GQ-15-001-EN-N.pdf/d8f1e5f5-251b-4a69-93e3-079031b74bd3), the
 only benefit of this approach is that there is consistency over the year
 between adjusted and the non-seasonally adjusted data; this can be of
 particular interest when low-frequency (e.g. annual) benchmarking
@@ -39,7 +40,7 @@ stronger.
 
 1.  With the [pre-defined specifcations](../reference-manual/sa-specifications.html) the benchmarking functionality is not
     applied by default following the *ESS Guidelines on Seasonal Adjustment* (2015)
-    recommendations. It means that once the user seasnally adjust the series using a pre-defined specifcation the *Benchmarking* node is empty.
+    recommendations. It means that once the user has seasonally adjustd the series with a pre-defined specifcation the *Benchmarking* node is empty.
 	To execute benchmarking click on
     the *Specifications* button and activate the checkbox in the
     *Benchmarking* section.
@@ -79,7 +80,7 @@ stronger.
 
 	**The results of the benchmarking procedure**
 
-1.  Both pictures and the table can be copied in the usual way 
+1.  Both pictures and the table can be copied the usual way 
     (see the [*Simple seasonal adjustment of a single time series*](../case-studies/simplesa-single.html) scenario).
 
 	{: .text-center.image-wrapper}
@@ -91,7 +92,7 @@ stronger.
 	**Options for benchmarking results**
 
 1.  To export the result of the benchmarking procedure (*benchmarking.result*) and
-    the target data (*benchmarking.target*) once need to execute the seasonal adjustment with benchmarking using the
+    the target data (*benchmarking.target*) one needs to once execute the seasonal adjustment with benchmarking using the
 	muli-processing option (see the [*Simple seasonal adjustment of multiple time series*](../case-studies/simplesa-muliple.html) scenario.
 	Once the muli-processing is executed, select the *Output* item from the *SAProcessing* menu.
 
@@ -116,11 +117,11 @@ stronger.
 
 	**Exporting data to an Excel file**
 
-1. Chose the output items that refer to the results from teh benchmarking procedure, move them to the window on teh right and  click **OK**.
+1. Chose the output items that refer to the results from the benchmarking procedure, move them to the window on the right and  click **OK**.
 
 
 	{: .text-center.image-wrapper}
-
+ 
 	![Text](/assets/img/user-guide/UDimage4.jpg)
 
 	{: .text-center.small}

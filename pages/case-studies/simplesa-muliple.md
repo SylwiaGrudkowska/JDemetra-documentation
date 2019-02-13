@@ -4,7 +4,7 @@ title: Simple seasonal adjustment of multiple time series
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-This scenario is intended for the seasonal adjustment of a dataset with
+This scenario describes the seasonal adjustment of a dataset with
 multiple time series. It is especially useful when hundreds of series
 need to be processed and the quality of their adjustment assessed. This
 scenario can be used in a regular production process. As it does not
@@ -12,10 +12,10 @@ focus on individual series, it is not recommended for the adjustment of
 key indicators that requires a detailed analysis of the results and possible refining
 of the seasonal adjustment settings. The scenario shows the steps of the
 data generating process for multiple series, with references to the
-appropriate sections of the *Reference Manual* for more
+appropriate sections of the [*Reference Manual*](../pages/reference-manual/) for more
 detailed explanations. Although this case study is intended for
 datasets with multiple time series, it can be also performed for a single time series, provided
-that the analysis is done in a multi-document.
+that the analysis is done in a multi-document. 
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
     *Seasonal adjustment* → *Multi Processing* → *New* to open a
@@ -43,11 +43,11 @@ datasets with multiple time series**
 	![Text](/assets/img/user-guide/UG_SSA_image20.jpg)
 
 	{: .text-center.small}
-
+ 
 	**Default window for seasonal adjustment process of the dataset**
 
 3.  The list available from the *SAProcessing* window includes the
-    pre-defined specifications and the [user-defined specifications](/reference-manual/sa-specifications.html#user-defined-specifications) (if
+    pre-defined specifications and the [user-defined specifications](../reference-manual/sa-specifications.html#user-defined-specifications) (if
     any). Click on the specification that will be used for the
     seasonal adjustment (in the example below *RSA4* is selected).
 
@@ -74,8 +74,8 @@ datasets with multiple time series**
     is launched (as they do not exist). However, a seasonal adjustment
     processing window may be saved and re-launched in the next session
     of JDemetra+. Then the user can decide [if and how the previous
-    results will be taken into account in the current session]((../case-studies/revision.html)). At this stage the
-    *Priority*, *Quality* and *Warnings* columns are empty as seasonal
+    results will be taken into account in the current session](../case-studies/revision.html).
+	At this stage the *Priority*, *Quality* and *Warnings* columns are empty as seasonal
     adjustment has not yet been performed.
 	
 	{: .text-center.image-wrapper}
@@ -103,7 +103,7 @@ datasets with multiple time series**
 6.  Generally, the warnings are put forward for short series,
     non-decomposable models (SEATS) or when the differenced series do
     not show seasonal peaks. Information on the warnings is displayed
-    when the cursor hovers over an exclamation mark.
+    when the cursor hovers over an exclamation mark. 
 
 	{: .text-center.image-wrapper}
 
@@ -134,7 +134,7 @@ datasets with multiple time series**
     scrollbar. The results are marked in green, yellow or red, depending
     on the result of a statistical test used. Those in green indicate that
     no problematic characteristic have been detected (e.g. lack of
-    normality of residuals, the autocorrelation in residuals). Yellow indicates that the test outcome is uncertain. The
+    normality of residuals, autocorrelation in residuals). Yellow indicates that the test outcome is uncertain. The
     outcomes in red highlight cases where an issue should be addressed.
     Hence, test statistics will indicate the need (if any) to improve the model.
     Ideally, the model should be improved so that no test statistics

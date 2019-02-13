@@ -8,7 +8,7 @@ description: Basics
 Seasonality tests play a fundamental role at different stages of the
 automatic model identification process used by TRAMO-SEATS. They are
 also crucial in the assessment of the results produced by
-X-13-ARIMA-SEATS. When X-13-ARIMA-SEATS is used, the seasonal component are
+X-13-ARIMA-SEATS. When X-13-ARIMA-SEATS is used, the seasonal component is
 estimated regardless of the properties of the original time series.
 Therefore the user is expected to decide if seasonality is (or is not) present
 in the time series.
@@ -106,8 +106,8 @@ Go to the main menu and follow the path: *Statistical methods* →
     given, green denotes that the desired test result was achieved at
     the 5% confidence level. An outcome in yellow means that the
     relevant test statistics can be accepted at the 1% level. An outcome
-    in red denotes that the test statistic was rejected.
-
+    in red denotes that the hypothesis of the desired outcome was rejected.
+ 
 	{: .text-center.image-wrapper}
 
 	![Text](/assets/img/user-guide/UG_PCA_image31.jpg)

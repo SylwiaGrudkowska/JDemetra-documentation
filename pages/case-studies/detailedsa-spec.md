@@ -54,7 +54,7 @@ changing some settings in the specification currently in use.
 		the list.
 
 	Chose **Open** from the menu.
-
+ 
 	{: .text-center.image-wrapper}
 
 	![Text](/assets/img/user-guide/UG_SA_image2.jpg)
@@ -63,7 +63,7 @@ changing some settings in the specification currently in use.
 	
 	**Opening a new specification**
 
-3.  The *Specification* window is divided into several section. The
+3.  The *Specification* window is divided into several sections. The
     actual content depends on the choice made by the user in step 1
     of this scenario. To introduce changes unfold the sections, modify
     the current settings (choose from the list or insert the value by
@@ -82,8 +82,8 @@ changing some settings in the specification currently in use.
     after the modelling/seasonal adjustment process. In such a case, to
     introduce changes click on the *Specification* button. JDemetra+
     opens the *Specifications* panel on the right. Unfold the sections,
-    modify the current settings (choose from the list or insert the value
-    by hand) and confirm the changes with the *Apply* button. JDemetra+
+    modify the current settings (choose from the list or type a new value)
+	and confirm the changes with the *Apply* button. JDemetra+
     automatically applies the new settings and displays the outcome
     resulting from the modified specification.
 

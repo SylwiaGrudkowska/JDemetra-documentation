@@ -1,10 +1,10 @@
 ---
 layout: left-menu
-title: Partial concurrent adjustment → Estimate regression coefficient + outliers
+title: Partial concurrent adjustment → Estimate regression coefficients + outliers
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
-The *Partial concurrent adjustment → Estimate regression coefficient +
+The *Partial concurrent adjustment → Estimate regression coefficients +
 outliers* option means that the ARIMA model and regression parameters,
 except outliers, are not re-identified. The
 parameters of these variables, however, are re-estimated. All outliers are
@@ -14,7 +14,7 @@ estimated once again. The transformation type remains unchanged.
 
 The picture below presents the initial model (on the left) and the
 results of the refreshment procedure with the *Partial concurrent
-adjustment → Estimate regression coefficient + outliers* option (on the
+adjustment → Estimate regression coefficients + outliers* option (on the
 right). The parameters of the ARIMA part have been re-estimated and
 their values have been updated. Also regression coefficients for the
 calendar variables have been re-estimated. In the revised model there is
@@ -28,3 +28,4 @@ re-identified.
 {: .text-center.small}
 
 **The *Partial concurrent adjustment* → *Estimate regression coefficient + outliers* revision policy results**
+

@@ -18,7 +18,7 @@ for identifying regression effects in a purely automatic way (i.e. using
 	![Text](/assets/img/user-guide/UG_PCA_image3.jpg)
 
 	{: .text-center.small}
-
+ 
 	**Activating the *Outliers detection* option**
 
 2.  To display the default settings choose the *Properties* item from
@@ -26,10 +26,10 @@ for identifying regression effects in a purely automatic way (i.e. using
     Detection - Properties* window. The user can modify the
     specification used for an outlier detection (*Default
     Specification*), use the default critical value for an outlier
-    detection or change it (i.e. enter a new critical value into a *Critical
-	In the *Outliers to display* section one can decide which [outliers](../theory/SA_lin.html)
-    value* box) and choose the [transformation type](../reference-manual/modelling-spec-tramo.html#transformation).
-    are to be considered in the identification procedure.
+    detection or change it (i.e. enter a new critical value into  *Critical Value*.
+	In the *Outliers to display* section one can decide which [outliers](../theory/SA_lin.html) take into account 
+	and choose the [transformation type](../reference-manual/modelling-spec-tramo.html#transformation) 
+	which is to be considered in the identification procedure.
 
 	{: .text-center.image-wrapper}
 

@@ -7,7 +7,7 @@ description: Basics
 
 This scenario is designed for advanced users interested in an in-depth analysis of
 time series in the frequency domain using three spectral graphs. Those
-graphs can also be used as a complementary analysis to have a better
+graphs can also be used as a complementary analysis for a better
 understanding of the results obtained with some of the tests described
 above.
 
@@ -94,10 +94,10 @@ graph by the peaks on the seasonal frequencies.
     amplitudes at frequencies of half a cycle per month or less. The
     number of observations, data transformations and other options such
     as the specification of the frequency grid and the order of the
-    autoregresive polynomial (30 by default) can be specified by opening
+    autoregressive polynomial (30 by default) can be specified by opening
     the *Window* → *Properties* from the main menu.
 	
-
+ 
 	The *Auto-regressive - Properties* window contains the following options:
 
 	-   **Log** - a log transformation of a time series;

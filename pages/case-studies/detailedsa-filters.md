@@ -3,7 +3,7 @@ layout: left-menu
 title: Customised seasonal filters
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
----
+--- 
 
 A seasonal filter is a weighted average of a moving span of fixed length
 within a time series that can be used to remove a fixed seasonal pattern.
@@ -12,7 +12,7 @@ the different stages of the program. As only X-13ARIMA-SEATS allows the
 user to manually select seasonal filters, this case study can be
 applied only to the X-13ARIMA-SEATS specifications.
 
-In general the automatic seasonal adjustment procedure uses the default
+The automatic seasonal adjustment procedure uses the default
 options to select the most appropriate moving average. However there are
 occasions when the user will need to specify a different seasonal moving
 average to that identified by the program. For example, if the SI values
@@ -21,12 +21,12 @@ use a shorter moving average. Also the presence of sudden breaks in
 the seasonal pattern -- e.g. due to changes in the methodology -- can
 negatively impact on the automatic selection of the most appropriate
 seasonal filter. In such cases the usage of short seasonal filters in
-the selected months or quarters can be considered. In general, short
+the selected months or quarters can be considered. Usually, a shorter
 seasonal filter $(3 \times 1)$ allows seasonality to change very rapidly
-over time. However, very short seasonal filter should not normally be
-used, as it will usually lead to large revisions as new data becomes
-available. If a short filter is to be used it will usually be in one
-month/quarter, and because there is a known reason for wanting to capture
+over time. However, a very short seasonal filter should not normally be
+used, as it might often lead to large revisions as new data becomes
+available. If a short filter is to be used it will usually be limited to one
+month/quarter with a known reason for wanting to capture
 a rapidly changing seasonality.
 
 In the standard situation one seasonal filter is applied to all
