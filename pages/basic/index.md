@@ -1,20 +1,11 @@
 ---
 layout: default
-title: What's new in JDemetra+ 2.2
+title: News and updates
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-JDemetra+ version 2.2.0 features vital enhancements resulting from the 
-collaboration between the developers at the NBB, the Deutsche Bundesbank 
-and the group of testers, composed of the members of the Seasonal 
-Adjustment Centre of Excellence (SACE) and the Seasonal Adjustment User 
-Group (SAUG). The following is an overview of the most important new 
-features in JDemetra+ version 2.2.0. 
+The current pages refer only to capabilities and functions of JDemetra+ versions 2.x.x. 
+The latest releases and information on improvements and bug fixes can be obtained through [GitHub](https://github.com/jdemetra/jdemetra-app/releases).
 
-* Refreshing the results with a model with fixed parameters;
-* Option for fixing the coefficient of pre-specified regression variables;
-* Option to use of backcasts in X11;
-* Test for detecting residual calendar effects;
-* The modified Ljung-Box test and the F-test test for detecting a residual seasonality;
-* Options to customize the diagnostics and select a set of diagnostics in the matrix view.
+The current documentation is also available in a pdf format, which can be found on a [dedicated page](https://ec.europa.eu/eurostat/cros/content/documentation_en) on the CROS portal. However, this format is not a subject to maintenance or updates.
