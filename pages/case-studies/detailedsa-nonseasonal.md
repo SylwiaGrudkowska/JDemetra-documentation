@@ -56,10 +56,10 @@ in JDemetra+.
     outcomes of three tests: the auto-correlation at seasonal lags, the
     spectral peaks test and the seasonal dummies test all indicate no
     seasonality in the original time series). These tests are available
-    in the *Diagnostic* section of the output tree. The descriptions of
-    these tests are given in 3.4.1. The seasonality tests can also be
-    executed independently from the seasonal adjustment process, as it
-    is shown in 3.4.1.
+    in the *Diagnostic* section of the output tree. The seasonality tests can be
+    executed independently from the seasonal adjustment proces. The descriptions of
+    these tests are given in the [*Seasonality tests*] (../case-studies/seasonalitytests.html) scenerio. 
+	
 
 	{: .text-center.image-wrapper}
 
@@ -110,7 +110,7 @@ in JDemetra+.
 	
 	**Decomposition's results**
 
-7.  In general, in the case of a non-seasonal time series the TRAMO/SEATS
+7.  In general, in the case of a non-seasonal time series the TRAMO-SEATS
     method produces more coherent results than X-13ARIMA-SEATS. When no
     seasonal movements are detected the non-seasonal ARIMA model is used
     and the seasonal component is not estimated.
@@ -120,9 +120,9 @@ in JDemetra+.
 	![Text](/assets/img/user-guide/UG_SA_image11.jpg)
 
 	{: .text-center.small}
-	**Decomposition result for a non-seasonal time series - TRAMO/SEATS**
+	**Decomposition result for a non-seasonal time series - TRAMO-SEATS**
 
-8.  Consequently, the *SI ratios* (dots) estimated by TRAMO/SEATS are
+8.  Consequently, the *SI ratios* (dots) estimated by TRAMO-SEATS are
     equal to the irregular component and for each month the seasonal
     component is equal to the mean (red, horizontal line), which is
     one.
@@ -132,9 +132,8 @@ in JDemetra+.
 	![Text](/assets/img/user-guide/UG_SA_image12.jpg)
 
 	{: .text-center.small}
-	**SI ratios for a non-seasonal time series - TRAMO/SEATS**
+	**SI ratios for a non-seasonal time series - TRAMO-SEATS**
 
-##### Footnotes
 
 [^1]: When the series are non-stationary differentiation is performed
     before the seasonality tests.

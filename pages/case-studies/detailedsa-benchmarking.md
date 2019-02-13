@@ -37,9 +37,10 @@ figures officially exist (e.g. National Accounts, Balance of Payments,
 External Trade, etc.) and where users' needs for time consistency are
 stronger.
 
-1.  Following the *ESS Guidelines on Seasonal Adjustment* (2015)
-    recommendations the benchmarking functionality is not
-    applied by default (the *Benchmarking* node is empty). To activate it, click on
+1.  With the [pre-defined specifcations](../reference-manual/sa-specifications.html) the benchmarking functionality is not
+    applied by default following the *ESS Guidelines on Seasonal Adjustment* (2015)
+    recommendations. It means that once the user seasnally adjust the series using a pre-defined specifcation the *Benchmarking* node is empty.
+	To execute benchmarking click on
     the *Specifications* button and activate the checkbox in the
     *Benchmarking* section.
 	
@@ -61,7 +62,7 @@ stronger.
     decomposition), 0.5 (for a proportional decomposition) or 1 (for a
     multiplicative decomposition). The default value is 1.
 
-2.  To launch the benchmarking procedure click on the apply button. The
+2.  To launch the benchmarking procedure click on the **Apply** button. The
     results are displayed in four panels. The top-left one compares the
     original output from the seasonal adjustment procedure with the result
     from applying a benchmarking to the seasonal adjustment. The
@@ -78,8 +79,8 @@ stronger.
 
 	**The results of the benchmarking procedure**
 
-1.  Both pictures and the table can be copied in the usual way (see
-    2.1.4 and 3.1.1).
+1.  Both pictures and the table can be copied in the usual way 
+    (see the [*Simple seasonal adjustment of a single time series*](../case-studies/simplesa-single.html) scenario).
 
 	{: .text-center.image-wrapper}
 
@@ -89,9 +90,34 @@ stronger.
 
 	**Options for benchmarking results**
 
-1.  The result of the benchmarking procedure (*benchmarking.result*) and
-    the target data (*benchmarking.target*) can be also exported to an
-    Excel file (see 3.1.2).
+1.  To export the result of the benchmarking procedure (*benchmarking.result*) and
+    the target data (*benchmarking.target*) once need to execute the seasonal adjustment with benchmarking using the
+	muli-processing option (see the [*Simple seasonal adjustment of multiple time series*](../case-studies/simplesa-muliple.html) scenario.
+	Once the muli-processing is executed, select the *Output* item from the *SAProcessing* menu.
+
+	{: .text-center.image-wrapper}
+
+	![Text](/assets/img/user-guide/UG_SSA_image28.jpg)
+
+	{: .text-center.small}
+
+	**The *SAProcessing* menu**
+	
+1. Expand the \"+\" menu and choose an appropriate data format (here
+    Excel has been chosen). It is possible to save the results in TXT,
+    XLS, CSV, and CSV matrix formats. Note that the [available content of
+    the output depends on the output type](../theory/output.html).
+
+	{: .text-center.image-wrapper}
+
+	![Text](/assets/img/user-guide/UG_SSA_image29.jpg)
+
+	{: .text-center.small}
+
+	**Exporting data to an Excel file**
+
+1. Chose the output items that refer to the results from teh benchmarking procedure, move them to the window on teh right and  click **OK**.
+
 
 	{: .text-center.image-wrapper}
 
@@ -102,7 +128,6 @@ stronger.
 	**Exporting the results of the benchmarking procedure**
 
 
-##### Footnotes
 
 [^1]: Description of the idea of benchmarking is based on Dagum, B.E.,
     Cholette, P.A. 1994), and Quenneville, B. et all (2003). Detailed

@@ -7,8 +7,8 @@ description: Basics
 
 The Box-Pierce Q-statistics are given by:
 
-  $$\text{BP}\left( k \right) = n\sum_{k = 1}^{K}\rho_{a,k}^{2}$$,   
-  \[1\] <!---\[7.145\]      -->
+  $$\text{BP}\left( k \right) = n\sum_{k = 1}^{K}\rho_{a,k}^{2}
+  $$,   \[1\] <!---\[7.145\]      -->
  
 
 where:

@@ -10,7 +10,7 @@ contains the pre-defined modelling and seasonal adjustment
 specifications and a basic calendar. A specification is a set of 
 modelling and/or seasonal adjustment parameters. Within the workspace 
 the following items can be saved:
-* [User-defined modelling specifications](../reference-manual/modelling-specifications.html) and [seasonal adjustment specifications](../reference-manual/sa-specifications.html); 
+* [User-defined modelling specifications](../reference-manual/modelling-specifications.html#user-definedSpec) and [seasonal adjustment specifications](../reference-manual/sa-specifications.html); 
 * Documents that contain [results from time series modelling](../reference-manual/output-modelling.html) and [output from the seasonal adjustment process](../reference-manual/output.html);
 * [User-defined calendars](../reference-manual/calendars.html); 
 * [User-defined regression variables](../reference-manual/user-defined-variables.html). 

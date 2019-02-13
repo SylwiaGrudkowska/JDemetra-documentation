@@ -96,16 +96,16 @@ Next, the estimated values of model parameters (*Coefficients*),
 t-statistics (*T-Stat*) and corresponding p-values (*P\[\|T\|\>t\]*) are
 displayed. JDemetra+ uses the following notation:
 
--   *Phi($p$)* -- the $p^{\text{th}}\ $ term in the non-seasonal
+-   *Phi(p)* -- the \\(p^{\text{th}}\\) term in the non-seasonal
     autoregressive polynomial;
 
--   *Theta(q)* -- the $q^{\text{th}}\ $ term in the non-seasonal moving
+-   *Theta(q)* -- the $q^{\text{th}}$ term in the non-seasonal moving
     average polynomial;
 
--   *BPhi($P$)* -- the $P^{\text{th}}\ $ term in the seasonal
+-   *BPhi(P)* -- the $P^{\text{th}}$ term in the seasonal
     autoregressive polynomial;
 
--   *BTheta(Q)* -- the $Q^{\text{th}}\ $ term in the seasonal moving
+-   *BTheta(Q)* -- the $Q^{\text{th}}$ term in the seasonal moving
     average polynomial.
 
 In the example below, the ARIMA model (0,1,1)(0,1,1) was chosen, which
@@ -322,7 +322,7 @@ in the following sections:
 - [Residuals](../reference-manual/residuals.html)
 - [Likelihood](../reference-manual/likelihood.html)
 
-##### Footnotes
+
 
 
 [^64]: The likelihood function is the joint probability (density)

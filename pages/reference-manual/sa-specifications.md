@@ -255,7 +255,7 @@ settings accordingly and confirm with the **OK** button.
 
 **Changing settings of seasonal adjustment specification**
 
-##### Footnotes
+
 
 [^10]: [MARAVALL, A. (2009), 'Identification of Reg-ARIMA Models and of Problematic Series in Large Scale Applications: Program TSW (TRAMO-SEATS for Windows)](http://www.bde.es/webbde/es/secciones/servicio/software/tramo/Large_Scale_TSW.pdf), Banco de España
 

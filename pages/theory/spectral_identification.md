@@ -13,11 +13,9 @@ seasonal frequencies[^85].
 
 The tests rely on two basic principles:
 
--   The peaks associated with seasonal frequencies should be larger than
-    > the median spectrum for all frequencies and;
+-   The peaks associated with seasonal frequencies should be larger than the median spectrum for all frequencies and;
 
--   The peaks should exceed the spectrum of the two adjacent values by
-    > more than a critical value.
+-   The peaks should exceed the spectrum of the two adjacent values by more than a critical value.
 
 > JDemetra+ performs this test on the original series. If these two
 > requirements are met, the test results are displayed in green. The

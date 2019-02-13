@@ -8,7 +8,7 @@ description: Basics
 The Statistical methods menu includes functionalities for modelling, analysis and the seasonal adjustment of a time series. They are divided into three groups:
 * [Anomaly Detection](#anomaly-detection) – allows for a purely automatic identification of regression effects;
 * [Modelling](#modelling) – enables time series modelling using the TRAMO and RegARIMA models; 
-* [Seasonal adjustment](#seasonal-adjustment) – intended for the seasonal adjustment of a time series with the TRAMO/SEATS and X-13ARIMA-SEATS methods. 
+* [Seasonal adjustment](#seasonal-adjustment) – intended for the seasonal adjustment of a time series with the TRAMO-SEATS and X-13ARIMA-SEATS methods. 
 
 {: .text-center.image-wrapper}
 
@@ -201,10 +201,10 @@ seasonal adjustment. Finally, the *Direct-Indirect Seasonal Adjustment*
 tool enables a comparison of the results from direct and indirect
 seasonal adjustment performed on the aggregated series.
 
-The guidance for using these functionalities is given in the Case Studies section:
+The guidance for using these functionalities is given in the [Case studies](../case-studies) section:
 - [basic scenario detailing the use of automatic modelling in seasonal adjustment](../case-studies/simplesa.html);
 - [different types of user interventions](../case-studies/detailedsa.html);
-- [*Seasonality Tests*](); 
+- [*Seasonality Tests*](../case-studies/seasonalitytests.html); 
 - [*Direct-Indirect Seasonal Adjustment*](../case-studies/detailedsa-direct.html).
 
 {: .text-center.image-wrapper}

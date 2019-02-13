@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: Calendars
+title: Chosing parameters of seasonal adjustment process
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---

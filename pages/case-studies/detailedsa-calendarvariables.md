@@ -6,8 +6,8 @@ description: Basics
 ---
 
 
-Although a flexible tool for defining calendars is available
-in JDemetra+ (section 3.4.3), in some cases it might be necessary to use 
+Although a flexible [tool for defining calendars](../case-studies/calendars-main.html) is available
+in JDemetra+, in some cases it might be necessary to use 
 user-defined variables due to unusual calendar effects and/or
 expected heterogeneous period-specific calendar effects.
 
@@ -59,8 +59,8 @@ in the model.
 
 3.  Now, the regressor variable(s),
     have to be imported into the *Workspace* window. The regressors can
-    be imported like all other time series through the different
-    channels (see section 2.1.3). In this case the *Spreadsheets* data
+    be [imported like all other time series](../reference-manual/data-providers.html) through the different
+    channels. In this case the *Spreadsheets* data
     source is used to import the data from an excel file. Drag and drop
     variables from the *Workspace* window to the *Vars-1* window.
 
@@ -88,10 +88,10 @@ in the model.
 	**Investigating the variables dataset**
 
 
-5.  These variables can be used in the modelling (3.3) or seasonal
-    adjustment (3.1, 3.2) procedures. The user can use these variables
-    in the newly created specification. In this example a new
-    specification file *X13Spec-1* is created (see 3.2.1.1) and used for
+5.  These variables can be used in the [modelling](../reference-manual/modelling.html) or [seasonal
+    adjustment](../reference-manual/sa.html) procedures. The user can use these variables
+    in the newly created specification. In this example [a new
+    specification file *X13Spec-1* is created](../reference-manual/sa-specifications.html#user-defined-specifications) and used for
     this purpose.
 
 
@@ -114,6 +114,7 @@ in the model.
 	![Text](/assets/img/user-guide/UG_SA_image30.jpg)
 
 	{: .text-center.small}
+	
 	**Settings to include user defined calendar variables into a specification**
 	
 
@@ -127,7 +128,7 @@ in the model.
 	![Text](/assets/img/user-guide/UG_SA_image31.jpg)
 
 	{: .text-center.small}
-	**Opening a dialog box to input the user-defined calendar variables **
+	**Opening a dialog box to input the user-defined calendar variables**
 
 
 8.  To define the regressor(s) as the calendar variables select them in
@@ -149,9 +150,7 @@ in the model.
     modelling of the calendar effects. They can be seen next to the
     option userVariables. In the last step one can decide the algorithm
     will use the user defined variables. This can be set by choosing one
-    of the test options (see the *JDemetra+ Reference Manual* (2017),
-    section 4.1.1.3 for a more detailed description on these
-    significance tests).
+    of the [test options](../reference-manual/modelling-spec-arima.html#regression).
 
 
 	{: .text-center.image-wrapper}
@@ -164,9 +163,9 @@ in the model.
 
 10. The figure below presents the output from the calendar adjustment
     with the user defined variables. This output is very similar to the
-    one from the calendar adjustment using the pre-specified calendar
-    variables (see the *JDemetra+ Reference Manual* (2017), section
-    4.2.2. Although *Leap Year* is not statistically significant (p-value above 0.05)
+    one from the calendar adjustment using the [pre-specified calendar
+    variables](../reference-manual/modelling-spec-arima.html#regression). 
+	Although *Leap Year* is not statistically significant (p-value above 0.05)
     the calendar variables defined by the user are jointly significant
     (p-value for the joint F-test is below 0.05).
 
@@ -183,7 +182,7 @@ in the model.
     currently in use. For example, once the seasonal adjustment is done,
     the user-defined calendar variables can be introduced to the
     specification to study their impact on the results and then the
-    best model settings can be selected (see 3.1.1 for more details).
+    best model settings can be selected (see [*Simple seasonal adjustment of a single time series*](../case-studies/simplesa-single.html) scenario for more details).
 
 
 	{: .text-center.image-wrapper}
@@ -191,4 +190,5 @@ in the model.
 	![Text](/assets/img/user-guide/UG_SA_image35.jpg)
 
 	{: .text-center.small}
+	
 	**Modifying a current specification to include user-defined calendar variables**

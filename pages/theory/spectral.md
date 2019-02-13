@@ -87,7 +87,7 @@ trading day effects as well as seasonal effects[^70]. Among the tools
 used for spectral analysis are the autoregressive spectrum and the
 periodogram.
 
-The explanations given in the subsections below derive mainly from DE
+The explanations given in the subsections of this node derive mainly from DE
 ANTONIO, D., and PALATE, J. (2015) and BROCKWELL, P.J., and DAVIS, R.A.
 (2006).
 

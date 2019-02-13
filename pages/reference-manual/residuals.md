@@ -97,7 +97,7 @@ uncertainties in the results.
 
 The normality of residuals is crucial for the validity of the prediction
 intervals produced in forecasting. To assess this property the
-[Doornik-Hansen](../theory/Tests_DW.html)test is applied. To give more insight into the
+[Doornik-Hansen](../theory/Tests_DH.html) test is applied. To give more insight into the
 outcome of this test also the closeness between the residuals mean,
 skewness and kurtosis is tested. A significant value of one of these
 statistics indicates that the standardized residuals do not follow a
@@ -295,9 +295,8 @@ In this section two spectral plots obtained for the residuals from the
 TRAMO model are displayed. These graphs present two spectrum estimators
 of the residuals: [periodogram](../theory/spectral_periodogram.html) and [autoregressive spectrum](../theory/spectral_AR.html)[^1]. They help
 to reveal any seasonal and trading day effects remaining in the
-residuals (see also [a scenerio that cocnerns these graphs](../case-studies/spectralgraphs.html)).
+residuals (see also [a scenerio that concerns these graphs](../case-studies/spectralgraphs.html)).
 
-##### Footnotes
 
 [^1]: The theoretical motivation for the choice of spectral estimator is
     provided by SOKUP, R., and FINDLEY, D. (1999).

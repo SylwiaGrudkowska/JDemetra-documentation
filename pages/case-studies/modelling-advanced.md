@@ -5,15 +5,14 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 This scenario shows how to identify regression effects using the
-pre-defined or user-defined specifications (*JDemetra+ Reference Manual*
-(2017), item 4.1). It includes all capabilities from the pre-processing
+[pre-defined or user-defined specifications](../reference-manual/modelling-specifications.html). 
+It includes all capabilities from the pre-processing
 part of TRAMO and RegARIMA. Model specification is flexible, and the
 user can both save and refresh results with updated series.
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
     *Modelling* → *Single Analysis* → *Tramo/RegArima*. The scenario
-    works in the same way for both options (*Tramo* or *RegArima*, see
-    the *JDemetra+ Reference Manual* (2017), Chapter 4). Here *Tramo*
+    works in the same way for both *Tramo* and *RegArima* options. Here *Tramo*
     has been chosen.
 
 	{: .text-center.image-wrapper}
@@ -48,13 +47,13 @@ user can both save and refresh results with updated series.
 
 4.  The modelling process starts automatically. By default, a summary of
     the results is displayed in the *TramoDoc-1* window. The diagnostics
-    presented here are discussed in the *JDemetra+ Reference Manual*
-    (2017), section 4.2. To explore the results, expand the tree in the
+    presented in this window are explained [here](../reference-manual/output-modelling.html). 
+	To explore the results, expand the tree in the
     *TramoDoc-1* window and click on the selected item. The details will
     be displayed in the bottom part of the window. The results include
-    the model selection criteria, the estimated ARIMA model, any identified
-    outliers (see the *JDemetra+ Reference Manual* (2017), item 7.1.1)
-    and any calendar effects (the *JDemetra+ Reference Manual* (2017), 7.2).
+    the [model selection criteria, the estimated ARIMA model, any identified
+    outliers](../theory/SA_lin.html)
+    and any [calendar effects]((../theory/Calendars.html)).
     Note that outliers and calendar effects are presented only if
     specified in the model or if detected automatically by the specified
     modelling routine.
@@ -151,7 +150,7 @@ user can both save and refresh results with updated series.
 
 12. Copy the series by clicking the *Copy* item from the context menu or
     use the standard *Ctrl+C* keys. Other options from this menu are
-    explained in the *JDemetra+ Reference Manual* (2017), item 4.1.2.
+    explained [here](../reference-manual/input.html).
 
 	{: .text-center.image-wrapper}
 
@@ -161,7 +160,7 @@ user can both save and refresh results with updated series.
 
 	**Copying the modelling results**
 
-13. Paste the series to a destination file (see 3.1.1, point 13).
+13. Paste the series to a destination file.
 
 14. The quality of the modelling can be assessed by studying the
     *Statistics* and *Out-of-sample test* sections. The results are
@@ -172,8 +171,7 @@ user can both save and refresh results with updated series.
     indicates that the test outcome is uncertain. Those in red indicate that there are issues that should be addressed. 
 	The user is expected to investigate the problematic test statistics and try to improve the
     model, so that no uncertain or rejected test results are present.
-    The colour coding of the displayed outcomes is explaoned in more detail in the *JDemetra+
-    Reference Manual* (2017), item 4.2.
+   
 
 	{: .text-center.image-wrapper}
 

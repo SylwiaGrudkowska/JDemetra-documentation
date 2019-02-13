@@ -34,11 +34,9 @@ significance level $\alpha$, the Durbin-Watson statistics is compared to
 the lower ($d_{L,\alpha}\ )\ $and upper ($d_{U,\alpha})$ critical
 values:
 
--   If $d < d_{L,\alpha}$ there is statistical evidence that the error
-    > terms are positively autocorrelated.
+-   If $d < d_{L,\alpha}$ there is statistical evidence that the error terms are positively autocorrelated.
 
--   If $d > d_{U,\alpha}$ there is no statistical evidence that the
-    > error terms are positively autocorrelated.
+-   If $d > d_{U,\alpha}$ there is no statistical evidence that the error terms are positively autocorrelated.
 
 -   If  $d_{L,\alpha}$ $< d < d_{U,\alpha}$ the test is inconclusive.
 
@@ -50,15 +48,11 @@ To test for negative autocorrelation at significance$\ \alpha$, the test
 statistic $(4 - d)$ is compared to the lower ($d_{L,\alpha}\ )\ $and
 upper ($d_{U,\alpha})$ critical values:
 
--   If $\left( 4 - d \right) < d_{L,\alpha}$ there is
-    > statistical evidence that the error terms are negatively
-    > autocorrelated.
+-   If $\left( 4 - d \right) < d_{L,\alpha}$ there is statistical evidence that the error terms are negatively autocorrelated.
 
--   If $\left( 4 - d \right) > d_{U,\alpha}$ there is no statistical
-    > evidence that the error terms are negatively autocorrelated.
+-   If $\left( 4 - d \right) > d_{U,\alpha}$ there is no statistical evidence that the error terms are negatively autocorrelated.
 
--   If $d_{U,\alpha} < \left( 4 - d \right) < d_{U,\alpha}$ the test is
-    > inconclusive.
+-   If $d_{U,\alpha} < \left( 4 - d \right) < d_{U,\alpha}$ the test is inconclusive.
     
     
 [^81]: CHATFIELD, C. (2004).

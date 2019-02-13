@@ -8,7 +8,7 @@ description: Basics
 For any given frequency $\omega$ the sample periodogram is the sample
 analog of the sample spectrum. In general, the periodogram is used to
 identify the periodic components of unknown frequency in the time
-series. X-13ARIMA-SEATS and TRAMO/SEATS use this tool for detecting
+series. X-13ARIMA-SEATS and TRAMO-SEATS use this tool for detecting
 seasonality in raw time series and seasonally adjusted series. Apart
 from this it is applied for checking randomness of the residuals from
 the ARIMA model.

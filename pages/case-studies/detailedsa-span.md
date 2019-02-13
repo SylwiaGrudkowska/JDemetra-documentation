@@ -48,10 +48,9 @@ settings chosen for the *Series span*.
 
 **The *Model span* options**
 
-More detailed descriptions of available *Series span* and *Model span* options are
-given in the *JDemetra+ Reference Manual* (2017), sections 5.1.1.1 and
-4.1.1.1.
+Both Tramo-Seats and X-13ARIMA-SEATS offer the same set of options for [*Series span*](../reference-manual/sa-spec-X13.html)
+and [*Model span*](../reference-manual/modelling-spec-arima.html#estimate) parameters. 
 
-##### Footnotes
+
 
 [^3]: *Guide to seasonal adjustment with X-12-ARIMA* (2007).

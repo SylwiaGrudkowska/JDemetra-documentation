@@ -64,6 +64,6 @@ The options for *RegArimaDoc* include:
     changed when the user double clicks on a new series in the *Providers*
     window. However, with this option the user can still change the settings of the specification.
 
--   **Copy spec**. **to workspace** – copy the specification of the
+-   **Copy spec. to workspace** – copy the specification of the
     active document into the workspace. This allows it be used for
     further processing.

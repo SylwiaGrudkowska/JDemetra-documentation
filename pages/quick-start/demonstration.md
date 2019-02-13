@@ -5,6 +5,9 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 order: 2
 ---
+
+For a detailed demonstration of the seasonal adjustment process, please refer to the [JDemetra+ Tutorial](https://www.youtube.com/watch?v=cYDyEqMSjZ8&t=) video developed by Andreea Mirica (Statistics Romania). For a step-by-step illustration of the key stages for seasonal adjustment, refer to the guidance below.
+
 The default view of the JDemetra+ window, which is displayed after launching the program, is shown below. 
 
 {: .text-center.image-wrapper}

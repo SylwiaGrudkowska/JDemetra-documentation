@@ -209,8 +209,6 @@ A parameter that relates to the weights in the regression equation; it is typica
 
 
 
-
-
 [^1]: When the series is logarithmically transformed, the annual mean of original series is greater than the mean of seasonally adjusted series (and of trend). It is due to the fact that the geometric mean is less than arithmetic mean. For this reason, if the bias is large the correction should be applied to avoid such discrepancies.
 [^2]: GHYSELS, E., and OSBORN, D.R. (2001).
 

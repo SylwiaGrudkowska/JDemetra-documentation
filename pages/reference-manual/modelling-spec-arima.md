@@ -9,7 +9,7 @@ This section discusses the options available for the RegARIMA
 specifications, which are based on the original X-13ARIMA-SEATS program
 developed by the U.S. Census Bureau. 
 
-The options available for the RegaRIMA specification are divided into five parts. These sections are: 
+The options available for the RegARIMA specifications are divided into five parts. These sections are: 
 * [*Estimate*](#estimate);
 * [*Transformation*](#transformation);
 * [*Regression*](#regression);
@@ -36,7 +36,7 @@ corresponding specification and argument from the original software is
 given, if any. For an exact description of the different parameters, the
 user should refer to the documentation of the original X-13ARIMA-SEATS
 program[^30]. Some additional explanations about the RegARIMA model, its
-parameters and estimation procedure are given [here](../pages/theory/SA_lin.html).
+parameters and estimation procedure are given [here](..\theory\SA_lin.html).
 
 For the pre-defined specifications the parameters are fixed, but in the
 case of the user-defined specification the user can set them
@@ -105,7 +105,7 @@ estimating the RegARIMA model.
 
 The *Regression* section allows for estimating deterministic effects in
 the series with the pre-defined regression variables. These variables
-include [user-defined variables](user-defined-variables.html), several types of [pre-specified outliers](..case-studies/detailedsa-outliers.html),
+include [user-defined variables](user-defined-variables.html), several types of [pre-specified outliers](../case-studies/detailedsa-outliers.html),
 intervention variables and [calendar effects](../case-studies/calendars-main.html). The pre-defined and
 user-defined regression variables are selected with the **Variables**
 argument.
@@ -230,22 +230,22 @@ argument.
   The default setting is *Add.*
 - **Calendar** $\rightarrow \ $ **easter** $\rightarrow \ $ **Easter duration**<br> *regression {variables = easter\[w\]}*
    
-   Duration (length in days) of the Easter effect. The length of the Easter effect can range from 1 to 20 days.[^42] The     *Easter duration* option is displayed when **Calendar** $\rightarrow\ $ **easter** $\rightarrow\ $ **Pre-test** is set   to either *None* or *Remove*. 
+   Duration (length in days) of the Easter effect. The length of the Easter effect can range from 1 to 20 days.[^33] The     *Easter duration* option is displayed when **Calendar** $\rightarrow\ $ **easter** $\rightarrow\ $ **Pre-test** is set   to either *None* or *Remove*. 
   The default value is 8.  
 - **Pre-specified outliers**<br> *regression {variables = (ao tc ls so)}*
      
-  User-defined outliers are used when prior knowledge suggests that certain effects exist at known time points.[^43] Four pre-defined outlier types, which are        simple forms of intervention variables, are implemented:
+  User-defined outliers are used when prior knowledge suggests that certain effects exist at known time points.[^34] Four pre-defined outlier types, which are        simple forms of intervention variables, are implemented:
   * Additive Outlier (AO); 
   * Level shift (LS); 
-  * Temporary change (TC)[^44]; 
+  * Temporary change (TC)[^35]; 
   * Seasonal outliers (SO). 
 
   Descriptions and formulas are available in [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html).
   By default, no pre-specified outlier is included in the specification.
 - **Intervention variables**<br> *regression {user=}*
 
-    The intervention variables are defined as in TRAMO. Following the definition, these effects are special events known a priori (strikes, devaluations, political events, and so on). Intervention variables are modelled   as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as  combinations of the following basic structures:[^45]
-  * Dummy variables[^46];
+    The intervention variables are defined as in TRAMO. Following the definition, these effects are special events known a priori (strikes, devaluations, political events, and so on). Intervention variables are modelled   as any possible sequence of ones and zeros, on which some operators may be applied. Intervention variables are built as  combinations of the following basic structures:[^36]
+  * Dummy variables[^37];
   * Any possible sequence of ones and zeros;
   * $\frac{1}{(1 - \delta B)}$, $(0 < \delta \leq 1)$; 
   * $\frac{1}{(1 - \delta_{s}B^{s})}$, $(0 < \delta_{s} \leq 1)$;
@@ -290,13 +290,13 @@ argument.
    * *Seasonal component*;
    * *Seasonally adjusted series*;
    * *Series*;
-   * *Undefined* (a default setting), which implies that the effect is an additional component [^47]. With this option the regression variable is used to improve the modelling, but it is not removed from the series for the decomposition[^48].
+   * *Undefined* (a default setting), which implies that the effect is an additional component [^38]. With this option the regression variable is used to improve the modelling, but it is not removed from the series for the decomposition[^41].
 
  
    The calendar component is not available in this section. Therefore, a user-defined variable assigned to the calendar 
    effect should be added in the calendar part of the specification. 
-   For the user-defined variable the structure of the lags can be specified using the options *first lag* and *last lag*[^49]. When the regression variable $x_{t}$ is introduced with *first lag* = and *last lag* =, JDemetra+ includes     in the TRAMO model a set of variables $x_{t - l_{a}}$,...,$\ x_{t - l_{ b}}$ and estimates the respective regression coefficients called the impulse response weights. 
-   To include only the first lag ($x_{t - 1})\ $ of the user-defined variable ($x_{t})\ $in the RegARIMA model the user      should put *first lag* = *last lag* = 1. If for a monthly series one puts *first lag* = 0 and *last lag* = 11, it means    that in addition to instantaneous effect of the user-defined variable, also the effects of 11 lagged explanatory          variables are included in the model. In this case the set of estimated coefficients, called a transfer function,          describe how the changes in $x_{t}$ that took place over a year are transferred to the dependent variable. However, the    lagged variables are often collinear so that caution is needed in attributing much meaning to each coefficient[^50].
+   For the user-defined variable the structure of the lags can be specified using the options *first lag* and *last lag*[^40]. When the regression variable $x_{t}$ is introduced with *first lag* = and *last lag* =, JDemetra+ includes     in the TRAMO model a set of variables $x_{t - l_{a}}$,...,$\ x_{t - l_{ b}}$ and estimates the respective regression coefficients called the impulse response weights. 
+   To include only the first lag ($x_{t - 1})\ $ of the user-defined variable ($x_{t})\ $in the RegARIMA model the user      should put *first lag* = *last lag* = 1. If for a monthly series one puts *first lag* = 0 and *last lag* = 11, it means    that in addition to instantaneous effect of the user-defined variable, also the effects of 11 lagged explanatory          variables are included in the model. In this case the set of estimated coefficients, called a transfer function,          describe how the changes in $x_{t}$ that took place over a year are transferred to the dependent variable. However, the    lagged variables are often collinear so that caution is needed in attributing much meaning to each coefficient[^39].
    No user-defined variables are included in the pre-defined specifications. They can only be added to the user-defined      specifications.
    
 - **Fixed regression coefficients**<br> *estimate; fix*
@@ -344,7 +344,7 @@ model.
    With the options *Last*, *First*, *Excluding* the span can be computed dynamically on the series. The default setting     is *All*.
 - **Use default critical value**<br> *outlier; critical* 
    
-   The critical value is automatically determined by the number of observations in the interval specified by the **Detection span** option. When **Use default critical value** is           disabled, the procedure uses the critical value inputted in the **Critical value** item (see below). Otherwise, the       default value is used (the first case corresponds to **Critical value** = \"*xxx*\"; the second corresponds to a          specification without the critical argument). It should be noted that it is not possible to define a separate critical    value for each outlier type.
+   The critical value is automatically determined by the number of observations in the interval specified by the **Detection span** option. When **Use default critical value** is           disabled, the procedure uses the critical value inputted in the **Critical value** item (see below). Otherwise, the  default value is used (the first case corresponds to **Critical value** = \"*xxx*\"; the second corresponds to a          specification without the critical argument). It should be noted that it is not possible to define a separate critical    value for each outlier type.
    By default, the checkbox is marked, which implies that the automatic determination of the critical value is enabled.  
 - **Critical value**<br> *outlier; critical*
     
@@ -391,13 +391,13 @@ identification are presented below.
 
 - **Accept Default**<br> *automdl; acceptdefault* 
     
-	Controls whether the default model (ARIMA(0,1,1)(0,1,1)) is chosen if the [Ljung-Box Q-statistics]((../theory/Tests_LB.html)) for these model residuals is acceptable. If the default model is found to be acceptable, no        further attempt will be made to identify a model or differencing order. By default, the **Accept Default** checkbox is    unmarked.
+	Controls whether the default model (ARIMA(0,1,1)(0,1,1)) is chosen if the [Ljung-Box Q-statistics](../theory/Tests_LB.html) for these model residuals is acceptable. If the default model is found to be acceptable, no        further attempt will be made to identify a model or differencing order. By default, the **Accept Default** checkbox is    unmarked.
 - **Cancelation limit**<br> *automdl; --* 
     
 	[Cancellation limit for the AR and the MA roots to be assumed equal](../theory/SA_lin.html#cancellation-of-ar-and-ma-factors). This      option is mainly used in the automatic identification of the differencing order. The default parameter value is 0.1.
 - **Initial UR (Diff.)**<br> *automdl; --* 
     
-	The threshold value for the initial unit root[^58] test in the automatic          identification of differencing order procedure. When one of the roots in the estimation of the (2,0,0)(1,0,0) plus mean   model, which is performed in the first step of the automatic model identification procedure, is larger than **First unit   root limit**, in modulus, it is set equal to unity.
+	The threshold value for the initial unit root[^52] test in the automatic identification of differencing order procedure. When one of the roots in the estimation of the (2,0,0)(1,0,0) plus mean   model, which is performed in the first step of the automatic model identification procedure, is larger than **First unit   root limit**, in modulus, it is set equal to unity.
     The default parameter value is 1.0416666666666667.
 - **Final UR (Diff.)**<br> *automdl; --* 
     
@@ -408,13 +408,13 @@ identification are presented below.
    Controls whether ARIMA models with non-seasonal AR and MA terms or seasonal AR and MA terms will be considered in the automatic model identification procedure. When this option is disabled, a model with AR   and MA terms in both the seasonal and non-seasonal parts of the model can be acceptable, provided there are not AR and    MA terms in either the seasonal or non-seasonal.
 - **Balanced**<br> *automdl; balanced*  
     
-	Controls whether the automatic model procedure will have a preference for balanced models (i.e. models for which the order of the combined AR and differencing operator is equal to the order of the         combined MA operator[^59]). By default, the **Balanced** checkbox is unmarked. When it is marked, the same preference    as for the TRAMO program is used.
+	Controls whether the automatic model procedure will have a preference for balanced models (i.e. models for which the order of the combined AR and differencing operator is equal to the order of the         combined MA operator[^53]). By default, the **Balanced** checkbox is unmarked. When it is marked, the same preference    as for the TRAMO program is used.
 - **ArmaLimit**<br> *automdl; armalimit* 
     
 	The threshold value for t-statistics of ARMA coefficients used for the final test of [a model parsimony](../theory/SA_lin.html#automatic-model-identification-procedure-in-tramo). If the highest order of the ARMA coefficient has a t-value less than this value in magnitude,    JDemetra+ will reduce the order of the model. The value given for **ArmaLimit** is also used for the final check for the   significance of the constant term; if the constant term has a t-value less than **ArmaLimit** in magnitude, the program   will remove the constant term from the set of regressors. The **ArmaLimit** value should be greater than zero. The        default parameter value is 1.
 - **Reduce CV**<br> *automdl; reducecv* 
     
-	The percentage by which the outlier critical value will be reduced when the preferred model is found to have [the Ljung-Box Q-statistic](../theory/Tests_LB.html) with an unacceptable confidence coefficient[^61]. The parameter   should be between 0 and 1, and will only be active when automatic outlier identification is selected. The reduced         critical value will be set to (1-**ReduceCV**)×CV, where CV is the original critical value. The default parameter value   is 0.14268.
+	The percentage by which the outlier critical value will be reduced when the preferred model is found to have [the Ljung-Box Q-statistic](../theory/Tests_LB.html) with an unacceptable confidence coefficient. The parameter   should be between 0 and 1, and will only be active when automatic outlier identification is selected. The reduced         critical value will be set to (1-**ReduceCV**)×CV, where CV is the original critical value. The default parameter value   is 0.14268.
 - **LjungBox limit**<br> *automdl; ljungboxlimit* 
     
 	Acceptance criterion for the confidence intervals of [the Ljung-Box Q-statistic](../theory/Tests_LB.html). If the Ljung-Box Q-statistic for the residuals of a final model (checked at lag 24 if the series is    monthly, 16 if the series is quarterly) is greater than **LjungBox limit**, the model is rejected, the outlier critical   value is reduced, and model and outlier identification (if specified) is redone with a reduced value (see **Reduce CV**  argument). The default parameter value is 0.95.
@@ -504,7 +504,8 @@ MA parameters.
    * *Initial --* estimates a parameter using as initial condition the value defined by the user.
    * *Fixed* *--* holds a parameter fixed during estimation at the value defined by the user.
 
-##### Footnotes
+
+   
  
 [^30]: '*X-13ARIMA-SEATS Reference Manual*' (2015).
 

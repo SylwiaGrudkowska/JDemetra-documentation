@@ -7,9 +7,7 @@ description: Basics
 
 The aim of this scenario is to present the steps required in JDemetra+
 for identifying regression effects in a purely automatic way (i.e. using
-pre-defined specifications, see the *JDemetra+ Reference Manual* (2017),
-item 4.1). Links to appropriate parts of the *JDemetra+ Reference
-Manual* (2017) are included for further details.
+[pre-defined specifications](../reference-manual/modelling-specifications.html#pre-defined-modelling-specifications)).
 
 1.  Go to the main menu and follow the path: *Statistical methods* →
     *Anomaly Detection* → *Outliers Detection*. JDemetra+ opens an empty
@@ -29,10 +27,9 @@ Manual* (2017) are included for further details.
     specification used for an outlier detection (*Default
     Specification*), use the default critical value for an outlier
     detection or change it (i.e. enter a new critical value into a *Critical
-    value* box) and choose the transformation type (see 3.2.1.6). In the
-    *Outliers to display* section one can decide which outliers
-    are to be considered in the identification procedure. Outliers are
-    described in the *JDemetra+ Reference Manual* (2017), item 7.1.1.
+	In the *Outliers to display* section one can decide which [outliers](../theory/SA_lin.html)
+    value* box) and choose the [transformation type](../reference-manual/modelling-spec-tramo.html#transformation).
+    are to be considered in the identification procedure.
 
 	{: .text-center.image-wrapper}
 
@@ -43,11 +40,11 @@ Manual* (2017) are included for further details.
 	**The settings for the outlier detection procedure**
 
 3.  By default, the pre-defined TR4 specification will be used for time
-    series modelling. To learn about the settings used for this
-    specification see the *JDemetra+ Reference Manual* (2017), item 4.1
-    or double click the *TR4* item, which can be found in the
+    series modelling (click [here](../reference-manual/modelling-specifications.html)
+	to learn about the settings used for this
+    specification or double click the *TR4* item, which can be found in the
     *Modelling* → *specifications* → *tramo* branch of the *Workspace*
-    window and study the settings in the *TR4* window.
+    window and study the settings in the *TR4* window).
 
 	{: .text-center.image-wrapper}
 
@@ -82,10 +79,9 @@ Manual* (2017) are included for further details.
 
 6.  To display the results of the modelling, click on the time series
     header. JDemetra+ shows the results in the upper panel and the time
-    series graph in the bottom panel. The results include selection
-    criteria, estimated ARIMA model, identified outliers (see the
-    *JDemetra+ Reference Manual* (2017), item 7.1.1) and calendar
-    effects (see the *JDemetra+ Reference Manual* (2017), item 7.2).
+    series graph in the bottom panel. The results include [selection
+    criteria, estimated ARIMA model, identified outliers](../theory/SA_lin.html) and [calendar
+    effects](../theory/Calendars.html).
 
 	{: .text-center.image-wrapper}
 

@@ -57,7 +57,7 @@ Easter related days always fall the same week day (denoted as Y in the table bel
 quarters). Suppose that, taking into account the distribution of the
 dates for Easter and the fact that this holiday falls in one of two
 periods, the probability that Easter falls during the period
-$\text{m\ }$is $p$, which implies that the probability that it falls in
+$m$ is $p$, which implies that the probability that it falls in
 the period $m + 1$ is $1 - p$. The effects of Easter on the seasonal
 means are presented in the table below.
 

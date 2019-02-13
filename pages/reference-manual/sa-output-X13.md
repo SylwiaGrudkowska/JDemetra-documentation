@@ -245,14 +245,14 @@ The \\(Q\\) statistic is a composite indicator calculated from the
 
 |     |                                                                                               |          |
 |-----|-----------------------------------------------------------------------------------------------|----------|
-|     | \\[Q = \frac{10M1 + 11M2 + 10M3 + 8M4 + 11M5 + 10M6 + 18M7 + 7M8 + 7M9 + 4M10 + 4M11}{100}\\] | \[5.25\] |
+|     | \\[Q = \frac{10M1 + 11M2 + 10M3 + 8M4 + 11M5 + 10M6 + 18M7 + 7M8 + 7M9 + 4M10 + 4M11}{100}\\] | \[1\]<!---\[5.25\]--> |
 
 \\(Q = Q - M2\\) (also called \\(Q2\\)) is the \\(Q\\) statistic for
 which the \\(M2\\) statistics was excluded from the formula, i.e.:
 
 |     |                                                                                            |          |
 |-----|--------------------------------------------------------------------------------------------|----------|
-|     | \\[Q - M2 = \frac{10M1 + 10M3 + 8M4 + 11M5 + 10M6 + 18M7 + 7M8 + 7M9 + 4M10 + 4M11}{89}\\] | \[5.26\] |
+|     | \\[Q - M2 = \frac{10M1 + 10M3 + 8M4 + 11M5 + 10M6 + 18M7 + 7M8 + 7M9 + 4M10 + 4M11}{89}\\] | \[2\]<!---\[5.26\]--> |
 
 If a time series does not cover at least 6 years, the \\(M8\\),
 \\(M9\\), \\(M10\\) and \\(M11\\) statistics cannot be calculated. In
@@ -260,7 +260,7 @@ this case the \\(Q\\) statistic is computed as:
 
 |     |                                                                     |          |
 |-----|---------------------------------------------------------------------|----------|
-|     | \\[Q = \frac{14M1 + 15M2 + 10M3 + 8M4 + 11M5 + 10M6 + 32M7}{100}\\] | \[5.27\] |
+|     | \\[Q = \frac{14M1 + 15M2 + 10M3 + 8M4 + 11M5 + 10M6 + 32M7}{100}\\] | \[3\]<!---\[5.27\]--> |
 
 The model has a satisfactory quality if the \\(Q\\) statistic is lower
 than 1.
@@ -306,7 +306,9 @@ series:
 In the case of an additive decomposition, for each component the average
 absolute changes over several periods are calculated as[^38]:
 
-$$\text{Component}_{d} = \frac{1}{n - d}\sum_{t = d + 1}^{n}{|Table_{t} - Table_{t - d}|}\quad\left[5.28\right]$$    
+$$
+\text{Component}_{d} = \frac{1}{n - d}\sum_{t = d + 1}^{n}|Table_{t} - Table_{t - d}|
+$$ \[4\]
  
 where:
 
@@ -336,14 +338,14 @@ components are independent, the following relation is valid:
 
 |                                                                                           |          |
 |-------------------------------------------------------------------------------------------|----------|
-| \\(O_{d}^{2} \approx C_{d}^{2} + S_{d}^{2} + I_{d}^{2} + P_{d}^{2} + {TD\& H}_{d}^{2}\\). | \[5.29\] |
+| \\(O_{d}^{2} \approx C_{d}^{2} + S_{d}^{2} + I_{d}^{2} + P_{d}^{2} + {TD\& H}_{d}^{2}\\). | \[5\]<!---\[5.29\]--> |
 
 In order to simplify the analysis, the approximation can be replaced by
 the following equation:
 
 |     |                                                                                      |          |
 |-----|--------------------------------------------------------------------------------------|----------|
-|     | \\(O_{d}^{*2} = C_{d}^{2} + S_{d}^{2} + I_{d}^{2} + P_{d}^{2} + {TD\& H}_{d}^{2}\\). | \[5.30\] |
+|     | \\(O_{d}^{*2} = C_{d}^{2} + S_{d}^{2} + I_{d}^{2} + P_{d}^{2} + {TD\& H}_{d}^{2}\\). | \[6\]<!---\[5.30\]--> |
 
 The notation is the same as for Table F2A. The column \\(\text{Total}\\)
 denotes total changes in the raw time series.
@@ -360,7 +362,7 @@ over each span, and are calculated as:
 
 \\(\frac{P_{d}^{2}}{O_{d}^{*2}}\\)
 
-and \\(\frac{\{TD\& H}_{d}^{2}}{O_{d}^{*2}}\\) 
+and \\(\frac{TD\& H_{d}^{2}}{O_{d}^{*2}}\\)  
 
 where:
 \\(O_{d}^{*2} = I_{d}^{2} + C_{d}^{2} + S_{d}^{2} + P_{d}^{2}{+ TD\& H}_{d}^{2}\\).
@@ -444,12 +446,11 @@ Table D13. In the case of multiplicative decomposition it is calculated
 for time lags between 1 and the number of periods per year +2 using the
 formula[^40]:
 
-|     |                                                                                                                      |          |
-|-----|----------------------------------------------------------------------------------------------------------------------|----------|
-|     | \\[\text{Corr}_{k}I = \frac{\sum_{t = k + 1}^{N}{(I_{t} - 1)(I_{t - k} - 1)}}{\sum_{t = 1}^{N}{(I_{t} - 1)}^{2}}\\] | \[5.31\] |
+
+$$\text{Corr}_{k}I = \frac{\sum_{t = k + 1}^{N}{(I_{t} - 1)(I_{t - k} - 1)}}{\sum_{t = 1}^{N}{(I_{t} - 1)}^{2}}]$$ \[7\]<!---\[5.31\]-->
 
 where \\(N\\) is number of observations in the time series and
-\\(\text{k}\\)the lag.
+\\(\text{k}\\) the lag.
 
 {: .text-center.image-wrapper}
 
@@ -460,7 +461,7 @@ where \\(N\\) is number of observations in the time series and
 **Table F2G – Autocorrelation of the irregular component**
 
 The Cochran test is design to identify the heterogeneity of a series of
-variances. X-13-ARIMA-SEATS uses this test in the extreme value
+variances. X-13-ARIMA-SEATS uses this test in the extreme value
 detection procedure to check if the irregular component is
 heteroskedastic. In this procedure the standard errors of the irregular
 component are used for an identification of extreme values. If the null
@@ -480,19 +481,23 @@ will be computed separately for each period (in case the option
 For each \\(i^{\text{th}}\\) month we will be looking at the mean annual
 changes for each component by calculating:
 
-\\({\overline{S}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}\left| S_{i,t} - S_{i,t - 1} \right|\\)
+$$
+{\overline{S}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}|S_{i,t} - S_{i,t - 1}|
+$$
 
 and
 
-\\({\overline{I}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}\left| I_{i,t} - I_{i,t - 1} \right|\\),
+$$
+{\overline{I}}_{i} = \frac{1}{N_{i} - 1}\sum_{t = 2}^{N_{i}}| I_{i,t} - I_{i,t - 1}|
+$$,
 
 
-where \\(N_{i}\\) refers to the number of months \\(\text{i\ }\\)in the
+where \\(N_{i}\\) refers to the number of months \\(\text{i}\\) in the
 data, and the moving seasonality ratio of month \\(i\\):
 
-\\(\text{MSR}_{i} = \frac{\{\overline{I}}_{i}}{{\overline{S}}_{i}}\\).
+$$MSR_{i} = \frac{\overline{I}_{i}}{\overline{S}_{i}}$$
 
-These ratios are published in Table D9A in X13-ARIMA-SEATS software. In
+These ratios are published in Table D9A in X13ARIMA-SEATS software. In
 JDemetra+ they are presented in the details of the quality measures.
 
 The [Moving Seasonality Ratio (MSR)](../theory/SA_X11.html#choosing-the-composite-moving-averages-when-estimating-the-seasonal-component) is used to measure the amount of
@@ -508,23 +513,23 @@ suitable given the noisiness of the series.
 
 **Table D9a – Moving seasonality ratios**
 
-##### Footnotes
 
 
-[^35]: For description of the pre-defined specifications see 4.1 and
-    5.1. User-defined specifications are described in ‘*JDemetra+ User
-    Guide*’ (2017), item 3.2.1.
+
+[^35]: For description of the pre-defined specifications see sections [Seasonal adjustment specifications](sa-specifications.html) and [Modelling specifications](modelling-specifications.html). Also see [User-defined specifications](sa-specifications.html) section for more detail.
 
 [^36]: For the definitions of the M and Q statistics see LADIRAY, D.,
     and QUENNEVILLE, B. (1999).
 
-[^37]: See 7.6.3.6.
+[^37]: See section [Combined seasonality tests](../theory/Tests_combined.html).
 
 [^38]: For the multiplicative decomposition the following formula is
-    used:\\(\ \text{Component}_{d} = \frac{1}{n - d}\sum_{t = d + 1}^{n}{|\frac{\text{Tabl}e_{t}}{\text{Tabl}e_{t - d}} - 1|}\\).
+    used: $$\text{Component}_{d} = \frac{1}{n - d}\sum_{t = d + 1}^{n}{|\frac{\text{Tabl}e_{t}}{\text{Table}_{t - d}} - 1|}$$.
 
 [^39]: The component is estimated by extracting a linear trend from the
     trend component presented in Table D12.
 
-[^40]: For the additive decomposition the formula is
-    \\(\text{Corr}_{k}I_{t} = \frac{\sum_{t = k + 1}^{N}{\{(I}_{t} \times I_{t - k})}}{\sum_{t = 1}^{N}{(I_{t})}^{2}}.\\)
+[^40]: For the additive decomposition the formula is:
+	$$
+	Corr_{k}I_{t} = \frac{\sum_{t = k + 1}^{N}{(I_{t} \times I_{t - k})}}{\sum_{t = 1}^{N}{(I_{t})}^{2}}
+	$$

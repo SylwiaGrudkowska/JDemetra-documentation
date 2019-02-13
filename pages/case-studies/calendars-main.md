@@ -104,7 +104,7 @@ the long term mean effects.
 	T - S \\
 	F - S \\
 	Sat - S \\
-	\text{Length\ of\ periods} \\
+	\text{Length of periods} \\
 	\end{bmatrix}$$
 
 	{: .text-center.image-wrapper}
@@ -124,8 +124,8 @@ the long term mean effects.
 	\text{Week} \\
 	\text{Weekend} \\
 	\end{bmatrix} = \begin{bmatrix}
-	\text{Contrast\ week} \\
-	\text{Length\ of\ periods} \\
+	\text{Contrast week} \\
+	\text{Length of periods} \\
 	\end{bmatrix}$$
 
 	The transformations used for creating the trading days variables and the working days variables have several advantages. They suppress from the contrast variables the mean and the seasonal effects, which are concentrated in the last variable. So, they lead to less correlated variables.
@@ -250,7 +250,7 @@ the long term mean effects.
     holiday from the list click on it and choose the \"-\" button. To
     remove the existing holiday from the list, click on it and press the
     \"-\" button. Once all changes are introduced, click *OK*. More
-    details are given in 3.4.3.1.
+    details the user can find in the [*National calendars*](../calendars-national.html) case study.
 
 	{: .text-center.image-wrapper}
 
@@ -288,7 +288,7 @@ the long term mean effects.
 
 	These options are considered in the separate sub-scenarios. Study the ones that match your needs.
 
-##### Footnotes
+
 
 [^1]: Trading Days -- seven regression variables, which correspond to
     differences in economic activity between all days of the week and a

@@ -12,7 +12,7 @@ implemented in the seasonal adjustment methods make specific assumptions
 concerning the input series. One of the crucial assumptions is that the
 input series is stochastic, i.e. it is clean of deterministic effects.
 Another important limitation derives from the symmetric linear filter
-used in TRAMO/SEATS and X-13ARIMA-SEATS. A symmetric linear filter
+used in TRAMO-SEATS and X-13ARIMA-SEATS. A symmetric linear filter
 cannot be applied to the first and last observations with the same set
 of weights as for the central observations[^1]. Therefore, for the most
 recent observations these filters provide estimates that are subject to
@@ -576,7 +576,7 @@ $Q > 0$). For example, a cancellation problem occurs with ARMA (1,1)
 model, $\left( 1 - \phi B \right)z_{t} = (1 - \theta B)a_{t}$ when
 $\phi = \theta\ $as then model is simply of the form: $z_{t} = a_{t}$.
 Such model causes problems with convergence of the nonlinear estimation.
-For this reason the X-13ARIMA-SEATS and TRAMO/SEATS programs deal with a
+For this reason the X-13ARIMA-SEATS and TRAMO-SEATS programs deal with a
 cancellation problem by computing zeros of the AR and MA polynomials. As
 the cancellation does not need to be exact, the cancellation limit can
 be provided by the user[^7].
@@ -615,7 +615,7 @@ It should be noted that the $\text{QR}$ factorization is not unique, and
 that the final residuals also depend on the order of the regression
 variables (the columns of $X$).
 
-##### Footnotes
+
 
 [^1]: DAGUM, E.B. (1980).
 [^3]: GÓMEZ, V., and MARAVALL, A. (2001b).
@@ -623,7 +623,7 @@ variables (the columns of $X$).
 [^5]: BOX G.E.P., JENKINS, G.M., and REINSEL, G.C. (2007).
 [^6]: KAISER, R., and MARAVALL, A. (1999).
 [^7]: ‘X-13ARIMA-SEATS Reference Manual’ (2015).
-[^8]: In the TRAMO/SEATS method this type of outlier is called a transitory change.
+[^8]: In the TRAMO-SEATS method this type of outlier is called a transitory change.
 [^9]: GÓMEZ, V., and MARAVALL, A. (1997).
 [^10]: Dummy variable is the variable that takes the values 0 or 1 to indicate the absence or presence of some effect.
 [^11]: GÓMEZ, V., and MARAVALL, A. (2010).

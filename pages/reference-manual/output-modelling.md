@@ -59,7 +59,7 @@ menu.
 **Creating a new document in the *Documents* section**
 
 All documents are added to the *Modelling* → *documents* part of the
-*Workspace* window. Once the workspace is saved (see 3.1) all the
+*Workspace* window. Once the [workspace](../reference-manual/workspace.html) is saved all the
 documents defined for this workspace are saved as well. The user may
 then investigate the saved results of the modelling and update them
 using the **Refresh data** option from the *TramoSeats Doc* menu or the
@@ -75,9 +75,8 @@ document belongs to (*tramo* or *regarima*).
 **Location of the documents for modelling with the RegARIMA model**
 
 To use the templates created directly in the *Workspace* window, double
-click on its name to display it. To perform an analysis, drag and drop
-the series from the *Workspace* window to the document window (for more
-details see 3.1.1).
+click on its name to display it. [To perform an analysis, drag and drop
+the series from the *Workspace* window to the document window](../reference-manual/data-visualization.html).
 
 {: .text-center.image-wrapper}
 

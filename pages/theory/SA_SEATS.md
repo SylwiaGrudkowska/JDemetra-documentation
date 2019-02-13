@@ -219,7 +219,7 @@ of the characteristic equation has a systematic explosive process, which
 means that the impact of the given impulse on the time series is more
 and more pronounced in time. This behaviour is not in line with the
 developments that can be identified in actual economic series.
-Therefore, the models estimated by TRAMO/SEATS (and X-13ARIMA-SEATS)
+Therefore, the models estimated by TRAMO-SEATS (and X-13ARIMA-SEATS)
 have never inverse roots in $B$ with modulus greater than 1.
 
 The characteristic equations associated with the regular and the
@@ -271,7 +271,7 @@ be completed.
 For quarterly series the seasonal movements are produced by complex
 conjugates roots with angular frequencies at $\frac{\pi}{2}$ (one cycle
 per year) and $\pi$ (two cycles per year). The corresponding number of
-cycles per year and the length of the movements are presented in the table below
+cycles per year and the length of the movements are presented in the table below.
 
 **Seasonal frequencies for a quarterly time series**
 
@@ -320,7 +320,7 @@ i.e.:[^38]
     transitory component.
 
 -   Real negative inverse roots of
-    $\text{\ ϕ}_{p}\left( B \right)\ $associated with the seasonal
+    $\text{ ϕ}_{p}\left( B \right)\ $associated with the seasonal
     two-period cycle are assigned to the seasonal component if their
     modulus is greater than *k*, where $k$ is the threshold value
     controlled by the *Seasonal boundary* and the *Seas. boundary
@@ -344,7 +344,7 @@ i.e.:[^38]
     Otherwise it goes to the transitory component. Also, when
     $\text{Bphi} > 0$, roots are assigned to the transitory component.
 
-Further details about JDemetra+ parameters see section [TramoSeats](../reference-manual/sa-spec-tramo.html).
+For further details about JDemetra+ parameters see section [TramoSeats](../reference-manual/sa-spec-tramo.html).
 
 It should be highlighted that when$\ Q > P$, where $Q$ and $P$ denote
 the orders of the polynomials $\varphi\left( B \right)$ and $\theta(B)$,
@@ -497,7 +497,7 @@ $\varphi\left( B \right) = \varphi_{s}(B)\varphi_{n}(B)$ and
 $\theta\left( B \right)a_{t} = \theta_{s}(B)a_{\text{st}}+\theta_{n}(B)a_{\text{nt}}$. 
 
 As the time series components are never observed, their estimators have
-to be used. Let us note $X_{T}$an infinite realization of the
+to be used. Let us note $X_{T}$ an infinite realization of the
 time series $x_{t}$. SEATS computes the Minimum Mean Square Error (MMSE)
 estimator of $s_{t}$, e.g. the estimator $$\widehat{s}_{t}$$ that
 minimizes $$E\lbrack\left({s_{t}-{\widehat{s}}_{t})}^{2}|X_{T} \right)\rbrack$$. 
@@ -533,7 +533,7 @@ Equation \[24\] <!---\[7.48\]--> shows that the WK filter is two-sided (uses
 observations both from the past and from the future), centered (the
 number of points in the past is the same as in the future) and symmetric
 (for any $k$ the weight applied to $x_{t - k}$ and $x_{t + k}$ is the
-same) which allows the phase effect to be avoided. Due to invertibility
+same), which allows the phase effect to be avoided. Due to invertibility
 of $\theta\left( B \right)$ (and $\theta\left( F \right)$) the filter is
 convergent in the past and in the future.
 
@@ -702,7 +702,7 @@ is the cross-spectrum. As it is positive, the MMSE yields correlated
 estimators. This effect emerges since variance of estimator is smaller
 than the variance of component. Nevertheless, if at least one
 non-stationary component exists, cross-correlations estimated by
-TRAMO/SEATS will tend to zero as cross-covariances between estimators of
+TRAMO-SEATS will tend to zero as cross-covariances between estimators of
 the components are finite. In practice, the inconvenience caused by this
 property will likely be of little relevance.
 

@@ -24,13 +24,13 @@ needs.
     fast display of the graphs for time series from a large dataset. To
     display the graph click on the series in the *Providers* window.
 
--   **Providers** – opens (if closed) and activates the *Providers*
+-   [**Providers**](../reference-manual/data-providers.html) – opens (if closed) and activates the *Providers*
     window.
 
--   **Variables** – opens (if closed) and activates the *Variable*
+-   [**Variables**](../reference-manual/user-defined-variables.html) – opens (if closed) and activates the *Variable*
     window.
 
--   **Workspace** – opens (if closed) and activates the *Workspace*
+-   [**Workspace**](../reference-manual/workspace.html) – opens (if closed) and activates the *Workspace*
     window.
 
 -   **Output** – a generic window to display outputs in the form of text;

@@ -20,7 +20,7 @@ the RegARIMA model. The set of pre-defined modelling specifications is
 presented in the table below. It contains the most commonly used 
 specifications for seasonal adjustment. The pre-defined specifications 
 correspond to the terminology used in TSW+[^1]. The users are strongly 
-recommended to start their analysis with one of those specifications 
+advised to start their analysis with one of those specifications 
 (usually RG4c or RG5c for RegARIMA and TR4 or TR5 for TRAMO) then, if 
 need be, to change some of the options afterwards using [the 
 *Specification* button](../case-studies/modelling-advanced.html). 
@@ -44,7 +44,7 @@ RG4c.
 | RG4c| test|test|test|no|test|test |AMI|
 | RG5c| test|test|no|test|test|test |AMI|
 
-Explanations for settings:
+Explanations for the settings:
 * **Transformation test** – a test is performed to choose between an additive decomposition (no transformation of the series) and a multiplicative decomposition (a logarithmic transformation of the series).
 * **Pre-adjustment for leap-year** – a correction of the February values applied to the original series before a logarithmic transformation. The original values in February are multiplied by 28.25/29 for leap years and by 28.25/28 for non-leap years. Values for other months are not modified. 
 * **Working days** – a pre-test is made for the presence of the working day effect by using one calendar variable in the specification.
@@ -67,10 +67,7 @@ The user may add new modelling
 specifications to the *Workspace* window. To do this, go to the 
 *Modelling* section, right click on the tramo or regarima item in the 
 *specifications* node and select *New* from the local menu. 
-The user may add new modelling specifications to the *Workspace* window.
-To do this, go to the *Modelling* section, right click on the *tramo* or
-*regarima* item in the *specifications* node and select *New* from the
-local menu. The default values of the parameters can be changed by the user. 
+The default values of the parameters can be changed by the user. 
 The possible options are described in the [Tramo](../reference-manual/modelling-spec-tramo.html) 
  and [RegArima](../reference-manual/modelling-spec-arima.html) subitems.
 
@@ -82,7 +79,7 @@ The possible options are described in the [Tramo](../reference-manual/modelling-
 
 **Creating a new user-defined specification in the *Modelling* section**
 
-##### Footnotes
+
 
 [^1]: TSW+ is a Windows extension of programs TRAMO and SEATS. See MARAVALL, A., CAPORELLO, G., PÉREZ, D., and LÓPEZ, R. (2014).
 [^2]: MARAVALL, A. (2009).
