@@ -382,7 +382,7 @@ component is the white noise.
 
 The partial fractions decomposition is performed in a frequency domain.
 In essence, it consists in portioning of the pseudo-spectrum[^41]
-of$x_{t}$ into additive spectra of the components. When the AMB
+of $x_{t}$ into additive spectra of the components. When the AMB
 decomposition of the ARIMA model results in the non-negative spectra for
 all components, the decomposition is called admissible[^42]. In such
 case an infinite number of admissible decompositions exists, i.e.
@@ -851,7 +851,7 @@ obtained.
 
 [^34]: GÓMEZ, V., and MARAVALL, A. (2001a).
 
-[^35]: For description of the spectrum see section [Spectral analysis](../spectral.html).
+[^35]: For description of the spectrum see section [Spectral Analysis](..\theory\spectral.html).
 
 [^36]: MARAVALL, A. (1995).
 

@@ -437,7 +437,7 @@ accept the default model[^7].
 
 The original RegARIMA algorithm developed by the U.S. Census Bureau
 includes two automatic model selection procedures: *automdl* that is
-based on TRAMO and *pickmdl* that originates from X-11-ARIMA88[^18]. The
+based on TRAMO and *pickmdl* that originates from X-11-ARIMA[^18]. The
 algorithm implementation in JDemetra+ for RegARIMA follows the TRAMO
 logic. It is very similar to the TRAMO procedure presented in the
 previous section, but contains modifications to make use of the
