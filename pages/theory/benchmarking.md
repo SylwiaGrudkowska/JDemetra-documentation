@@ -80,14 +80,14 @@ series, and length of the series) are much less important
 From a theoretical point of view, it should be noted that this approach
 may handle any set of linear restrictions (equalities), endogenous
 (between variables) or exogenous (related to external values), provided
-that they don\'t contain incompatible equations. The restrictions can
+that they don't contain incompatible equations. The restrictions can
 also be relaxed for any period by considering their \"observation\" as
 missing. However, in practice, it appears that several kinds of
 contemporaneous constraints yield unstable results. This is more
 especially true for constraints that contain differences (which is the
 case for non-binding constraints). The use of a special square root
 initialiser improves in a significant way the stability of the
-algorithm.
+algorithm. 
 
 [^86]: Description of the idea of benchmarking is based on DAGUM, B.E.,
     and CHOLETTE, P.A. (1994) and QUENNEVILLE, B. et all (2003).
