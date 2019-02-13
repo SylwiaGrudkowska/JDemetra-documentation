@@ -40,7 +40,7 @@ The options for *RegArimaDoc* include:
 
 -   **Paste** – pastes the time series to the *RegArimaDoc* window and
     performs seasonal adjustment for this time series using settings
-    selected for the current process. The series need to be previously
+    selected for the current process. The series needs to be previously
     copied, e.g. from the *Providers* window. Otherwise the message
     informing that the action cannot be done is displayed.
 
@@ -50,10 +50,10 @@ The options for *RegArimaDoc* include:
     this option, first create a *RegArimaDoc* document and drag and drop
     the time series into it. Then save the workspace and close
     JDemetra+. Next, update the time series (add/change the
-    observations, but do not change either the localisation of the file
+    observations, but do not change either the location of the file
     or the file name) and open JDemetra+ once again. Open the
     previously saved workspace and double click on the respective
-    *RegArima* document in the *Workspace* window. Finally, chose the
+    *RegArima* document in the *Workspace* window. Finally, choose the
     **Refresh data** option from the *RegArimaDoc* menu. JDemetra+
     re-estimates the complete seasonal adjustment model automatically,
     so the results are updated immediately. The user can modify the
@@ -65,5 +65,5 @@ The options for *RegArimaDoc* include:
     window. However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec. to workspace** – copy the specification of the
-    active document into the workspace. This allows it be used for
+    active document into the workspace. This allows it to be used for
     further processing.

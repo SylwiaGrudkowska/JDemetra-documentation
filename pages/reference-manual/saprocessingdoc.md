@@ -13,7 +13,7 @@ of the time series in the *SAProcessing* window is marked.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/SA_PROC_image1.jpg)
+![Text](/assets/img/reference-manual/manual/image3_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -24,7 +24,7 @@ multi-document.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/SA_PROC_image2.jpg)
+![Text](/assets/img/reference-manual/manual/image4_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -61,7 +61,7 @@ The available options include:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/SA_PROC_image3.jpg)
+![Text](/assets/img/reference-manual/manual/image5_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -105,15 +105,16 @@ The available options include:
     discussed in detail [here](../case-studies/output.html).
 
 -   **Report** -- generates a summary report from a multi-process that
-    includes information about e.g. number of series, specifications
-    used, models summary, diagnostic summary. An example of the output
+    includes summary information on several items, such as; the number of series, specifications
+    used, models' summary, diagnostic summary, etc.. An example of the output
     is presented below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/SA_PROC_image4.jpg)
+![Text](/assets/img/reference-manual/manual/image6_RMSB.png)
 
 {: .text-center.small}
+
 
 **The report from the multi-process**
 
@@ -125,7 +126,7 @@ The available options include:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/SA_PROC_image5.jpg)
+![Text](/assets/img/reference-manual/manual/image7_RMSB.png)
 
 {: .text-center.small}
 
@@ -137,7 +138,7 @@ menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/SA_PROC_image6.jpg)
+![Text](/assets/img/reference-manual/manual/image8_RMSB.png)
 
 {: .text-center.small}
 

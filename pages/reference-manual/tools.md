@@ -24,7 +24,7 @@ The following functionalities are available from the *Tools* menu:
 * [*Spectral analysis*](#spectral-analysis) – contains tools for the analysis of a time series in a frequency domain;
 * [*Aggregation*](#aggregation) – enables the user to investigate a graph of the sum of multiple time series;
 * [*Differencing*](#differencing) – allows for the inspection of the first regular differences of the time series;
-* [*Spreadsheet profiler*](#spreadsheet profiler) – offers an Excel-type view of the XLS file imported to JDemetra+.
+* [*Spreadsheet profiler*](#spreadsheet-profiler) – offers an Excel-type view of the XLS file imported to JDemetra+.
 * [*Plugins*](#plugins) – allows for the installation and activation of plugins, which extend JDemetra+ functionalities.
 * [*Options*](#options) – presents the default interface settings and allows for their modification.
 
@@ -239,7 +239,7 @@ are characteristic for the *Growth chart* are:
 
 The explanation of other options can be found below in the '*Local menu options for chart*' figure in the [*Container*](#container) section.
 
-The *List* tab tprovides basic information about the chosen time series, such as; the
+The *List* tab provides basic information about the chosen time series, such as; the
 start and end date, the number of observations and a sketch of the data
 graph. This function opens an empty window. To display information, drag
 and drop the series from the [*Providers*](../reference-manual/data-providers.html) window into the *List* window.
@@ -351,7 +351,7 @@ right-button menu offers "a copy series" option that allows data to be
 exported to another application and a graph to be printed and saved
 to a clipboard or as a jpg file. Information about the partial
 autocorrelation function is given [here](../theory/ACF_and_PACF.html). The description of a
-periodogram is presented in [the Spectral graphs scenario](/case-studies/spectralgraphs.html).
+periodogram is presented in [the Spectral graphs scenario](../case-studies/spectralgraphs.html).
 
 ### Spreadsheet profiler {#spreadsheet-profiler}
 

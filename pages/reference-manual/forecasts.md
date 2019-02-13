@@ -152,7 +152,7 @@ span excluding last 18 observations) and a test period (last 18
 observations). For the fit period the model is automatically selected
 and its parameters are fixed. The model is used to produce a
 one-period-ahead forecast (i.e. the forecast for $\mathbf{n + 1}$, where
-$\mathbf{n}$ is the length of the time series) This estimation is
+$\mathbf{n}$ is the length of the time series). This estimation is
 performed 18 times for the gradually extended time series.
 
 The first test compares forecast errors with the standard error of the

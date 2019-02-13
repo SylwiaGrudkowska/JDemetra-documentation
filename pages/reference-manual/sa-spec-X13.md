@@ -154,7 +154,7 @@ a seasonal heteroskedasticity (see description of the Cochran test under the [se
 This option enables the user to assign different seasonal filters to each period. 
 It is enabled only after executing a seasonal adjustment process with settings 
 described in the specification because only then the frequency of the series, 
-which is necessary to define the filters, is known. For instruction how to use this parameter see [the *Customised seasonal filters* case study](case-studies/detailedsa-filters.html). By default, this item is empty.
+which is necessary to define the filters, is known. For instruction how to use this parameter see [the *Customised seasonal filters* case study](../case-studies/detailedsa-filters.html). By default, this item is empty.
 
 ###### **Automatic Henderson filter**<br> *x11; trendma*
 
@@ -166,7 +166,7 @@ Enables the user to apply the user-defined length of the Henderson filter. The o
 
 ###### **Calendarsigma**<br> *X11; calendarsigma*
 
-Specifies if the standard errors used for the extreme values detection and adjustment are computed separately for each calendar month/quarter (<em>All</em>); or separately for two complementary sets of calendar months/quarters specified by the <em>sigmavec</em> parameter (<em>Select</em>). Other options are to compute the standard errors separately for each period only if [Cochran’s hypothesis test](/reference-manual/sa-output-X13.html#quality-measures) determines that the irregular component is heteroskedastic by calendar month/quarter (<em>Signif</em>) or to compute them from 5 year spans of irregulars (<em>None</em>). The default value is <em>None</em>.
+Specifies if the standard errors used for the extreme values detection and adjustment are computed separately for each calendar month/quarter (<em>All</em>); or separately for two complementary sets of calendar months/quarters specified by the <em>sigmavec</em> parameter (<em>Select</em>). Other options are to compute the standard errors separately for each period only if [Cochran’s hypothesis test](../reference-manual/sa-output-X13.html#quality-measures) determines that the irregular component is heteroskedastic by calendar month/quarter (<em>Signif</em>) or to compute them from 5 year spans of irregulars (<em>None</em>). The default value is <em>None</em>.
 
 ###### **Sigmavec**<br> *X11; sigmavec*
 

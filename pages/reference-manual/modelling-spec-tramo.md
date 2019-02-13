@@ -26,7 +26,7 @@ model, its parameters and estimation procedure are given in [Linearisation with 
 the pre-defined specifications the parameters are disabled, while in the 
 case of the user-defined specifications the user can set them 
 individually. However, as in some cases the choice of a given value 
-results in limitation of the possible alternatives for other parameters, 
+results limits the possible alternatives for other parameters, 
 the user is not entirely free to set the parameters values. Most 
 arguments have default values; these are given in the documentation and 
 used in the newly created user-defined specifications unless they are 
@@ -277,7 +277,7 @@ and user-defined regression variables are selected with the
     where $B$ is backshift operator (i.e. $B^{k}X_{t} = X_{t - k}$) and $s$ is frequency of the time series ($s = 12\ $for a monthly time series, $s = 4\ $for a quarterly time series). 
    <br>
 	
-   These basic structures enable generation of not only AO, LS, TC, SO and RP outliers but also sophisticated intervention variables that are well-adjusted to the particular case. 
+   These basic structures enable the generation of not only AO, LS, TC, SO and RP outliers but also sophisticated intervention variables that are well-adjusted to the particular case. 
    No intervention variables are included in the pre-defined specifications. They can only be added to the user-defined specifications. 
     
  - **Ramp effects**<br> *regression variables; --* 
@@ -473,7 +473,7 @@ Also the maximum lag is reduced in comparison with Win X-13.
 
 {: .text-center.small}
 
-**A checkbox for switching bewteen manual and automatic choice of teh Arima model**
+**A checkbox for switching bewteen manual and automatic choice of the Arima model**
 	
 Individual parameters can be held fixed at these initial values while
 the rest of the parameters are estimated. However, users should not

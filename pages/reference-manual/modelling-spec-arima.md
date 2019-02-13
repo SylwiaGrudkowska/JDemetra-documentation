@@ -17,7 +17,7 @@ The options available for the RegARIMA specifications are divided into five part
 * [*Arima*](#arima).
 
 The RegARIMA specifications are
-*--* to a very large extent *--* organised according to the different
+to a very large extent organised according to the different
 individual specifications of the original program and are presented in
 the order in which they are displayed in the graphical interface of
 JDemetra+.
@@ -135,7 +135,7 @@ argument.
  - **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **holidays**<br> *regression {variables=holiday}*
  
     A list of user-defined calendars to be used to create calendar regression variables. Option is available when **Calendar** $\rightarrow\ $ **tradingDays** $\rightarrow\ $ **option** is set to *Holidays*.
-	The user is expected click the field to expand a list a previously defined calendars and choose an appropriate item.
+	The user is expected to click the field to expand a list a previously defined calendars and choose an appropriate item.
 	The default setting is *Default,* which implies that the default calendar is used and no country-specific holidays are 
 	considered.
 	
@@ -202,14 +202,14 @@ argument.
 
     These options have no direct impact on the calendar tests themselves, but indirectly, through the definition of the       regression model, on any previous test. For instance, on rare occasions the log/level test could be affected by           add/remove on the trading day effect.
     The default setting is *Remove*. 
-	
-	{: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d25.jpg)
+   {: .text-center.image-wrapper}
 
-    {: .text-center.small}
+   ![Text](/assets/img/reference-manual/manual/A_Ref_d25.jpg)
 
-   **The *test* menu **
+   {: .text-center.small}
+
+   **The *test* menu**   
 
     
 - **Calendar** $\rightarrow\ $ **easter** $\rightarrow\ $ **IsEnabled**<br> *regression; variables and/or aictest* 
@@ -251,7 +251,7 @@ argument.
   * $\frac{1}{(1 - \delta_{s}B^{s})}$, $(0 < \delta_{s} \leq 1)$;
   * $\frac{1}{(1 - B)(1 - B^{s})} $; where $B$ is a backshift operator (i.e. $B^{k}X_{t} = X_{t - k}$) and $s$ is frequency of the time series ($s = 12\ $for a monthly time series, $s = 4\ $for a quarterly time series). 
    
-  These operations enable not only AO, LS, TC, SO and RP outliers to be generated, but also sophisticated intervention variables that are well-adjusted to the particular case. No intervention variables are included in the pre-defined        specifications. They can only be added to the user-defined specifications.Intervention variables are not implemented in    X-13ARIMA-SEATS, however they can be created by the user and introduced to the model as [user-defined variables](..case-studies/detailed-calendarvariables.html).
+  These operations enable not only AO, LS, TC, SO and RP outliers to be generated, but also sophisticated intervention variables that are well-adjusted to the particular case. No intervention variables are included in the pre-defined        specifications. They can only be added to the user-defined specifications.Intervention variables are not implemented in    X-13ARIMA-SEATS, however they can be created by the user and introduced to the model as [user-defined variables](../reference-manual/user-defined-variables.html).
 - **Ramp effects**<br> *regression {variables = (rp)}*
 
    A ramp effect means a linear increase or decrease in the level of the series over a specified time interval $t_{0}$ to $\ t_{1}$. All dates of the ramps must occur within the time series span. Ramps can overlap other ramps, additive outliers and level shifts. The graph and formula are available in [Linearisation with the TRAMO and RegARIMA models](../theory/SA_lin.html).
@@ -460,7 +460,7 @@ MA parameters.
    When marked t is considered that the mean is part of the ARIMA model (it highly depends on the chosen model).
 - **P**<br> *arima; model*
 
-   The order of the non-seasonal autoregressive polynomial. The maximum order of the non-seasonal autoregressive polynomial is 4. The default value is 0. 
+   The order of the non-seasonal autoregressive polynomial. The maximum order of the non-seasonal autoregressive polynomial is 6. The default value is 0. 
 - **phi**<br> *arima; --* 
 
   Coefficients of the non-seasonal autoregressive polynomial (AR). If it is used, a label that indicates the way in which it was estimated should be assigned to each non-seasonal AR parameter in the model. The choice can be made   from: 
@@ -472,7 +472,7 @@ MA parameters.
   Non-seasonal differencing order. The maximum number of non-seasonal differences is 2. The default value is 1.
 - **Q**<br> *arima; model*
 
-  The order of the non-seasonal moving average polynomial. The maximum order of the non-seasonal moving average polynomial is 4. The default value is 1.
+  The order of the non-seasonal moving average polynomial. The maximum order of the non-seasonal moving average polynomial is 6. The default value is 1.
 - **theta**<br> *arima; --*
 
   Coefficients of the parameters of the non-seasonal, moving average polynomial (MA). If it is used, a label that indicates the way in which it was estimated should be assigned to each non-seasonal MA parameter in the model.

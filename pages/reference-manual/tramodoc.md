@@ -44,13 +44,13 @@ The options for the *TramoDoc* include:
 -   **Refresh data** – updates the input data and executes the seasonal
     adjustment process. This option is only available for *Tramo*
     documents saved during previous session with JDemetra+. To use this
-    option, first create *Tramo* document and drag and drop the data
+    option, first create the *Tramo* document and drag and drop the data
     into it. Then save the workspace and close JDemetra+. Next, update
     the time series (add/change the observations, but do not change
-    neither the localisation of the file nor the file name) and open
+    neither the location of the file nor the file name) and open
     JDemetra+ once again. Open the previously saved workspace and double
     click on the respective *Tramo* document in the *Workspace* window.
-    Finally, chose the **Refresh data** option from the *TramoDoc* menu.
+    Finally, choose the **Refresh data** option from the *TramoDoc* menu.
     JDemetra+ re-estimates the complete seasonal adjustment model
     automatically, so the results are updated immediately. The user can
     modify the specification and validate the newly introduced changes
@@ -61,5 +61,5 @@ The options for the *TramoDoc* include:
     window. However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec. to workspace** – copy the specification of the active
-    document into the workspace. This allows it be used for
+    document into the workspace. This allows it to be used for
     further processing.
