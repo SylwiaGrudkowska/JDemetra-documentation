@@ -10,6 +10,13 @@ seasonal adjustment (SA) and other related time series problems
 developed by the [National Bank of Belgium](https://www.nbb.be/en) in cooperation with the 
 [Deutsche Bundesbank](https://www.bundesbank.de/en) and [Eurostat](http://ec.europa.eu/eurostat)[^1].
 
+Though the acronym is usually used to refer to the graphical interface, JDemetra+ consists in fact of several
+software components, designed for different uses.
+The core of the tool is a collection of Java packages, which contain mainly the statistical algorithms and the
+I/O routines. Those packages can be used independently in home-made applications.
+On top of the core libraries we will find the main graphical interface, a command line tool for batch SA processing (called the [“Cruncher”](https://github.com/jdemetra/jwsacruncher/wiki)), a WEB service around the main statistical methods and extensions for the
+“R” language.
+
 JDemetra+ implements the concepts and algorithms used in the two leading SA methods:
 [TRAMO-SEATS+](https://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Notas_introduct_3638497004e2e21.html)[^4]
 and [X-12ARIMA/X-13ARIMA-SEATS](https://www.census.gov/srd/www/x13as/)[^3]. 
