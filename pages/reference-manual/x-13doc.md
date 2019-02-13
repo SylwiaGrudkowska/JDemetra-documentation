@@ -43,13 +43,13 @@ The options for the *X13Doc* include:
 -   **Refresh data** – updates the input data and executes the seasonal
     adjustment process. This option is only available for *X13*
     documents saved during a previous session with JDemetra+. To use
-    this option, first create *X13* document and drag and drop the data
+    this option, first create the *X13* document and drag and drop the data
     into it. Then save the workspace and close JDemetra+. Next, update
     the time series (add/change the observations, but do not change
-    either the localisation of the file or the file name) and open
+    either the location of the file or the file name) and open
     JDemetra+ once again. Open the previously saved workspace and double
     click on the respective *X13* document in the *Workspace* window.
-    Finally, chose the **Refresh data** option from the *X13Doc* menu.
+    Finally, choose the **Refresh data** option from the *X13Doc* menu.
     JDemetra+ re-estimates the complete seasonal adjustment model
     automatically, so the results are updated immediately. The user can
     modify the specification and validate the newly introduced changes
@@ -60,5 +60,5 @@ The options for the *X13Doc* include:
     However, with this option the user can still change the settings of the specification.
 
 -   **Copy spec. to workspace** – copy the specification of the active
-    document into the workspace. This allows it be used for
+    document into the workspace. This allows it to be used for
     further processing.

@@ -4,7 +4,7 @@ title: Data visualization
 description: Basics
 ---
 
-1.  To display a given series, right click on it and chose the *Chart &
+1.  To display a given series, right click on it and choose the *Chart &
     grid* option from the local menu. The graph is displayed in the
     panel on the right.
 
@@ -56,7 +56,7 @@ description: Basics
 
 	***Chart & grid* view**
 
-1.  *Rename* option (see below) enables to change the time series
+1.  *Rename* option (see below) enables the user to change the time series
     name.
 
 	{: .text-center.image-wrapper}

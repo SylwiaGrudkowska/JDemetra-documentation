@@ -335,7 +335,7 @@ in the following sections:
 [^65]: [AIC, AICC, BIC and Hannan-Quinn criteria are used by
     X-13ARIMA-SEATS while BIC (TRAMO definition)](../theory/SA_lin.html#model-selection-criteria) by TRAMO/SEATS. These criteria
     are used in seasonal adjustment procedures for the selection of the
-    proper ARIMA model. The model with the smaller value of the model
+    optimum ARIMA model. The model with the smaller value of the model
     selection criteria is preferred.
 
 [^66]: Maximum Likelihood Estimation is a statistical method for

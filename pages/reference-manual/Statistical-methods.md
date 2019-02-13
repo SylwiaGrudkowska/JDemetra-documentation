@@ -175,7 +175,7 @@ capabilities and options can be found [here](../case-studies/modelling-basic.htm
 The aim of the *Modelling* section is to provide tools for time series
 modelling and forecasting without performing the estimation of its
 components and decomposition. The estimated results can be useful for
-time series analysis and in theprediction of short-term developments.
+time series analysis and in the prediction of short-term developments.
 
 The *Modelling* section includes all capabilities from the TRAMO and
 RegARIMA models. It is flexible in [specifying model parameters](../reference-manual/modelling-specifications.html). The
