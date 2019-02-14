@@ -10,10 +10,10 @@ presents an overview of the capabilities of the software and
 includes detailed documentation on all of the specifications, with
 discussions of the available arguments and their default values. Also,
 the results displayed by JDemetra+ are explored in detail. For a short introduction to JDemetra+ software the user 
-should refer to the [*Quick Start*](../quick-start/) section. A step-by-step
+should refer to the [Quick Start](../quick-start/) section. A step-by-step
 descriptions on how to perform a typical analysis with useful tips that
 facilitate the replication of the results with the user's own data and
-working instructions are all included in the [*Case Studies*](../case-studies) section.
+working instructions are all included in the [Case Studies](../case-studies) section.
 
 JDemetra+ uses the notation "X12", "X13","Arima", "RegArima", "Tramo",
 "Seats" and "TramoSeats" instead of "X-12-ARIMA", "X-13ARIMA-SEATS",

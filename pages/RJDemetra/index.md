@@ -6,7 +6,8 @@ description: Basics
 ---
 
 
-JDemetra+ can be used either as a stand-alone software with the graphical user interface on the NetBeans platform, or it can also be called through "R" with the dedicated package <a href="https://github.com/jdemetra/rjdemetra/" target="_blank">RJDemetra</a>.
+JDemetra+ can be used either as a stand-alone software with the graphical user interface on the NetBeans platform, or it can also be called through "R" with the dedicated
+package <a href="https://github.com/jdemetra/rjdemetra/" target="_blank">RJDemetra</a>.
 
 {: .text-center.image-wrapper}
 

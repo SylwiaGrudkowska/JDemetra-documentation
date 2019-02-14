@@ -12,7 +12,7 @@ step-by-step descriptions of how to perform a typical analysis and
 useful tips that facilitate replication of the results with the user’s own
 data and working instructions. The *Case Studies* section does not cover
 all available JDemetra+ functionalities. These are included in the
-[*Reference Manual*](../reference-manual/) and the user should refer to it for
+[Reference Manual](../reference-manual/) and the user should refer to it for
 additional information.
 
 It is assumed that the reader is familiar with concepts, such as *time
@@ -45,8 +45,8 @@ outcomes, at least at a basic level.
 adjustment methods work, nor the underlying mathematics. For
 readers interested in seasonal adjustment methods a brief
 sketch of the X-13ARIMA-SEATS and TRAMO-SEATS algorithms and concepts
-are included in the [*Reference Manual*](../reference-manual/). 
-For those interested in a more detailed discussion of seasonal adjustment you are encouraged to refer to the [References] section(../references).
+are included in the [Reference Manual](../reference-manual/). 
+For those interested in a more detailed discussion of seasonal adjustment you are encouraged to refer to the [References](../references) section.
 
 ### How the document is organized {#how-the-document-is-organized}
 

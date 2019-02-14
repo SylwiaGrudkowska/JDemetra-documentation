@@ -25,7 +25,8 @@ are: GÓMEZ, V., and MARAVALL, A. (1996), GÓMEZ, V., and MARAVALL, A.
 TRAMO-SEATS method, TRAMO-SEATS software (DOS version and TSW+ -- Tramo
 Seats Windows software and several interfaces) and its documentation as
 well as papers on methodology and application of the programs, can be
-found in the dedicated section of the [Banco de España site](https://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas_estad_d9fa7f3710fd821.html).
+found in the dedicated section of the 
+<a href="https://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas_estad_d9fa7f3710fd821.html" target="_blank">Banco de España website</a>.
 
 X-13ARIMA-SEATS is a seasonal adjustment program developed and supported
 by the U.S. Census Bureau. It is based on the U.S. Census Bureau\'s
@@ -35,7 +36,7 @@ the SEATS program developed at the Banco de España. The program is now
 used by the U.S. Census Bureau for a seasonal adjustment of time series.
 Users can download the X-13ARIMA-SEATS application, which is a Windows
 interface for the X-13ARIMA-SEATS program. Detailed information on
-X-13ARIMA-SEATS can be found at [U.S. Census Bureau](https://www.census.gov/).
+X-13ARIMA-SEATS can be found at a <a href="https://www.census.gov/srd/www/winx13//" target="_blank">dedicated U.S. Census Bureau webpage</a>.
 
 In contrast to the earlier product (X-12-ARIMA), X-13ARIMA-SEATS
 includes not only the enhanced X-11 seasonal adjustment procedure but
