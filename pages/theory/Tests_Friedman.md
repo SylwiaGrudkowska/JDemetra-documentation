@@ -5,61 +5,48 @@ tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
 
-The Friedman test (also called a stable seasonality test) is a
-non-parametric method for testing that samples are drawn from the same
-population or from populations with equal medians. In the regression
-equation the significance of the month (or quarter) effect is tested.
-The Friedman test requires no distributional assumptions. It uses the
-rankings of the observations.
+The Friedman test is a non-parametric method for testing that samples are drawn from the same population or from populations with equal medians. 
+The significance of the month (or quarter) effect is tested. The Friedman test requires no distributional assumptions. It uses the rankings of the observations. 
+If the null hypothesis of no stable seasonality is rejected at the 0.10% significance level then the series is considered to be seasonal 
+and the test’s outcome is displayed in green.
 
-Seasonal adjustment procedures use the Friedman test for checking for
-the presence of seasonality. For the purpose of the test the time series
-$x_{t}\ $is presented as a matrix of data
-$$\left\{ x_{\text{ij}} \right\}_{n \times k}$$ with $n$ rows (the blocks,
-i.e. number of years in the sample) and $k$ columns (the treatments,
-i.e. either 12 months or 4 quarters, depending on the frequency of the
-data). This matrix is transformed into a new
-matrix $${\ \left\{ r_{\text{ij}} \right\}}_{n \times k}$$, where the entry
-$r_{\text{ij}}$ is the rank of $x_{\text{ij}}\ $within block$\ i$. In
-other words, $r_{\text{ij}}$ is the rank of the period $j$ in the year
-$i$.
+The test statistic is constructed as follows. Consider first the matrix of data $$ \left\{x_{ij}\right\}_{n \times k} $$ with $$ n $$ rows (the blocks, 
+i.e. number of years in the sample), $$ k $$ columns (the treatments, i.e. either 12 months or 4 quarters, depending on the frequency of the data).  
+The data matrix needs to be replaced by a new matrix $$ \left\{r_{ij}\right\}_{n \times k} $$, where the entry $$ r_{ij} $$ is the rank of  $$ x_{ij} $$ 
+within block $$ i $$ .
 
-The test statistic is given by:
+The test statistic is given by
 
-  $$Q = \frac{\text{SS}_{t}}{\text{SS}_{e}},$$   \[1\] <!--- \[7.146\] -->
- 
+$$
+Q=\frac{SS_t}{SS_e}
+$$
 
-where:
+where $$ SS_t=n \sum_{j=1}^{k}(\bar{r}_{.j}-\bar{r})^2 $$ and $$ SS_e=\frac{1}{n(k-1)} \sum_{i=1}^{n}\sum_{j=1}^{k}(r_{ij}-\bar{r})^2 $$ 
+It represents the variance of the average ranking across treatments j  relative to the total.  
 
-$$\text{SS}_{t} = n\sum_{j = 1}^{k}{ {(\overline{r}}_{\bullet \ j} - {\overline{r}}_{\ })}^{2}$$;
+Under the hypothesis of no seasonality, all months can be equally treated. For the sake of completeness:
+- $$ \bar{r}_{.j} $$ is the average ranks of each treatment (month) j within each block (year)
+- The average rank is given by $$ \bar{r}= \frac{1}{nk}\sum_{i=1}^{n}\sum_{j=1}^{k}(r_{ij})$$
 
-$$\text{SS}_{e} = \frac{1}{n(k - 1)}\sum_{i = 1}^{n}{\sum_{j = 1}^{k}{ {(r}_{\text{ij}} - {\overline{r}}_{\ })}^{2}}$$;
+For large $$ n $$ or $$ k $$ , i.e. n > 15 or k > 4, the probability distribution of $$ Q $$ can be approximated by that of 
+a chi-squared distribution. Thus, the p-value is given by $$ P( \chi^2_{k-1}>Q) $$ . 
 
-$${\overline{r}}_{\bullet j}$$ is the average ranks of each
-treatment (month or quarter) $j$ within each block (year);
+If the null hypothesis of no stable seasonality is rejected at the 1% significance level, then the series is
+considered to be seasonal and the outcome of the test is displayed in green. 
 
-$${\overline{r}}_{\ } = \frac{1}{2}(N + 1)$$ is by construction the
-average rank.
+The test can be applied to any series by selecting the 
+option *Statistical Methods >> Seasonal Adjustment >> Tools >> Seasonality Tests*. This is
+an example of how results are displayed for the case of a monthly series:
+![friedman](../seasonality/images/friedman.png)
 
-The test statistic represents the variance of the average ranking across
-treatments$j$ in relation to the total. Under the null hypothesis of no
-seasonality, all periods (months or quarters) can be treated equally.
 
-For large $n$ or $k$, i.e. $n$ \> 15 or $k$ \> 4, the probability
-distribution of $Q$ can be approximated by that of a chi-squared
-distribution. Thus, the p-value is given
-by$\ P(\ \chi_{\ }^{2}(k - 1) > Q)$. If the null hypothesis of no stable
-seasonality is rejected at the 1% significance level, then the series is
-considered to be seasonal and the outcome of the test is displayed in
-green.
-
-This test uses the preliminary estimate of the unmodified Seasonal-Irregular 
-component[^82] (for X-13ARIMA-SEATS this time series is shown
+This test is also used to detect residual seasonality. In this case, the test uses the preliminary estimate 
+of the unmodified Seasonal-Irregular component[^82] (for X-13ARIMA-SEATS this time series is shown
 in Table B3). In this estimate, the number of observations is lower than
 in the final estimate of the unmodified Seasonal-Irregular component.
-Because of this, the number of degrees of freedom in the stable
+Thus, the number of degrees of freedom in the stable
 seasonality test is lower than the number of degrees of freedom in the
-test for the presence of seasonality assuming stability. For
+test for the [presence of seasonality assuming stability](../seasonality/Tests_presence_stability.html). For
 example, X-13ARIMA-SEATS uses a centred moving average of order 12 to
 calculate the preliminary estimation of trend. Consequently, the first
 six and last six points in the series are not computed at this stage of
@@ -68,3 +55,22 @@ the calculation of the preliminary estimation of the unmodified Seasonal-Irregul
 
 [^82]: The unmodified Seasonal-Irregular component corresponds to the
     Seasonal-Irregular factors with the extreme values.
+	
+
+####  Related tests
+
+- 	When using this kind of design for a binary response, one instead uses the Cochran's Q test.
+- 	Kendall's W is a normalization of the Friedman statistic between 0 and 1.
+- 	The Wilcoxon signed-rank test is a nonparametric test of non-independent data from only two groups.
+
+
+####  References
+
+- Friedman, Milton (December 1937). "The use of ranks to avoid the assumption of normality implicit in the analysis of variance". Journal of the American Statistical Association (American Statistical Association) 32 (200): 675–701. doi:10.2307/2279372. JSTOR 2279372. 
+
+- Friedman, Milton (March 1939). "A correction: The use of ranks to avoid the assumption of normality implicit in the analysis of variance". Journal of the American Statistical Association (American Statistical Association) 34 (205): 109. doi:10.2307/2279169. JSTOR 2279169. 
+
+- Friedman, Milton (March 1940). "A comparison of alternative tests of significance for the problem of m rankings". The Annals of Mathematical Statistics 11 (1): 86–92. doi:10.1214/aoms/1177731944. JSTOR 2235971.
+
+
+ 
