@@ -16,4 +16,8 @@
   href: "/pages/helpdesk/"
 - title: "References"
   href: "/pages/references/"
+- title: "Blog"
+  href: "/blog.html"
+- title: '<i class="fa fa-search" style="font-size:20px;"></i>'
+  href: "/search.html"
 
