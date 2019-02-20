@@ -37,7 +37,7 @@ considered to be seasonal and the outcome of the test is displayed in green.
 The test can be applied to any series by selecting the 
 option *Statistical Methods >> Seasonal Adjustment >> Tools >> Seasonality Tests*. This is
 an example of how results are displayed for the case of a monthly series:
-![friedman](../seasonality/images/friedman.png)
+![friedman]({{ site.baseurl }}/assets/img/theory/friedman.png)
 
 
 This test is also used to detect residual seasonality. In this case, the test uses the preliminary estimate 
@@ -46,7 +46,7 @@ in Table B3). In this estimate, the number of observations is lower than
 in the final estimate of the unmodified Seasonal-Irregular component.
 Thus, the number of degrees of freedom in the stable
 seasonality test is lower than the number of degrees of freedom in the
-test for the [presence of seasonality assuming stability](../seasonality/Tests_presence_stability.html). For
+test for the [presence of seasonality assuming stability](../theory/Tests_presence_stability.html). For
 example, X-13ARIMA-SEATS uses a centred moving average of order 12 to
 calculate the preliminary estimation of trend. Consequently, the first
 six and last six points in the series are not computed at this stage of
