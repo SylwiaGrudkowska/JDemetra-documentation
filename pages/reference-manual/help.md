@@ -12,7 +12,7 @@ the directories used by an application.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref52.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref52.jpg)
 
 {: .text-center.small}
 

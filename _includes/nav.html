@@ -15,11 +15,11 @@
 				<a class="nav-link dropdown-toggle" href="{{ menu.href }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ menu.title }}</a>
 				<div class="dropdown-menu" aria-labelledby="dropdown01">
 				{% for item in menu.subitems %}
-				{% capture url %}{{ menu.href }}{{ item.href }}{% endcapture %}
+				{% capture url %}{{{{ menu.href }}{{ item.href }}{% endcapture %}
 				{% if page.url contains url %}
 				{% capture current_folder %}{{ url }}{% endcapture %}
 				{% endif %}
-					<a class="dropdown-item" href="{{ menu.href }}{{ item.href }}">{{ item.title }}</a>
+					<a class="dropdown-item" href="{{ site.baseurl }}{{ menu.href }}{{ item.href }}">{{ item.title }}</a>
 				{% endfor %}
 				</div>
 			</li>
@@ -28,7 +28,7 @@
 				{% capture current_folder %}{{ menu.href }}{% endcapture %}
 				{% endif %}
 				<li {% if page.url contains menu.href %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-					<a class="nav-link" href="{{ menu.href }}">{{ menu.title }}</a>
+					<a class="nav-link" href="{{ site.baseurl }}{{ menu.href }}">{{ menu.title }}</a>
 				</li>
 			{% endif %}
 		{% endfor %}

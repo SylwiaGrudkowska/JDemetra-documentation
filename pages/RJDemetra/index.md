@@ -11,6 +11,6 @@ package <a href="https://github.com/jdemetra/rjdemetra/" target="_blank">RJDemet
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/RJDemetra.png)
+![Text]({{ site.baseurl }}/assets/img/RJDemetra.png)
 
 Most of the functionalities of the stand-alone version are also available through RJDemetra. Please refer to the GitHub page for installation instructions, examples, and documentation.

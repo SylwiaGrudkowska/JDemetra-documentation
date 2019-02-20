@@ -11,7 +11,7 @@ to *X13* documents. To create a *X13* document select *X13* from the
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref55.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref55.jpg)
 
 {: .text-center.small}
 
@@ -22,7 +22,7 @@ a newly created or existing *X13* document is active.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref56.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref56.jpg)
 
 {: .text-center.small}
 

@@ -53,7 +53,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image1.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image1.jpg)
 
 	{: .text-center.small}
 
@@ -67,7 +67,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image2.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image2.jpg)
 
 	{: .text-center.small}
 
@@ -109,7 +109,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image3.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image3.jpg)
 
 	{: .text-center.small}
 
@@ -133,7 +133,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image4.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image4.jpg)
 
 	{: .text-center.small}
 
@@ -171,7 +171,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image6.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image6.jpg)
 
 	{: .text-center.small}
 
@@ -183,7 +183,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image7.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image7.jpg)
 
 	{: .text-center.small}
 
@@ -197,7 +197,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image8.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image8.jpg)
 
 	{: .text-center.small}
 
@@ -207,7 +207,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image9.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image9.jpg)
 
 	{: .text-center.small}
 
@@ -218,7 +218,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image10.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image10.jpg)
 
 	{: .text-center.small}
 
@@ -228,7 +228,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image11.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image11.jpg)
 
 	{: .text-center.small}
 
@@ -240,7 +240,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image12.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image12.jpg)
 
 	{: .text-center.small}
 
@@ -254,7 +254,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image13.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image13.jpg)
 
 	{: .text-center.small}
 
@@ -267,7 +267,7 @@ the long term mean effects.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image14.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image14.jpg)
 
 	{: .text-center.small}
 

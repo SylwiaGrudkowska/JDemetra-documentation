@@ -24,7 +24,7 @@ JDemetra+.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image13_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image13_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -126,7 +126,7 @@ argument.
 	
     {: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d20.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d20.jpg)
 
     {: .text-center.small}
 
@@ -141,7 +141,7 @@ argument.
 	
     {: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d22.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d22.jpg)
 
     {: .text-center.small}
 
@@ -156,7 +156,7 @@ argument.
   
      {: .text-center.image-wrapper}
 
-     ![Text](/assets/img/reference-manual/manual/A_Ref_d23.jpg)
+     ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d23.jpg)
 
      {: .text-center.small}
 
@@ -173,7 +173,7 @@ argument.
 
    {: .text-center.image-wrapper}
 
-   ![Text](/assets/img/reference-manual/manual/A_Ref_d24.jpg)
+   ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d24.jpg)
 
    {: .text-center.small}
 
@@ -205,7 +205,7 @@ argument.
 
    {: .text-center.image-wrapper}
 
-   ![Text](/assets/img/reference-manual/manual/A_Ref_d25.jpg)
+   ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d25.jpg)
 
    {: .text-center.small}
 
@@ -259,7 +259,7 @@ argument.
   
    {: .text-center.image-wrapper}
 
-   ![Text](/assets/img/reference-manual/manual/A_Ref_d16.jpg)
+   ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d16.jpg)
 
    {: .text-center.small}
 
@@ -271,7 +271,7 @@ argument.
 	
 	{: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d17.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d17.jpg)
 
     {: .text-center.small}
 
@@ -311,7 +311,7 @@ argument.
    
   {: .text-center.image-wrapper}
 
-  ![Text](/assets/img/reference-manual/manual/A_Ref_d18.jpg)
+  ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d18.jpg)
 
   {: .text-center.small}
   
@@ -434,7 +434,7 @@ Also the maximum lag is reduced in comparison with Win X-13.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d26.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d26.jpg)
 
 {: .text-center.small}
 

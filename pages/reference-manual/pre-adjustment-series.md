@@ -11,7 +11,7 @@ model.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic04.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic04.jpg)
 
 {: .text-center.small}
 

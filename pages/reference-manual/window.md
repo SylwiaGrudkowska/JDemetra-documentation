@@ -11,7 +11,7 @@ needs.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref51.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref51.jpg)
 
 {: .text-center.small}
 

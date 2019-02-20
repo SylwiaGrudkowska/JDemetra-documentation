@@ -22,7 +22,7 @@ re-identified.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UG_PCA_image1.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image1.jpg)
 
 {: .text-center.small}
 

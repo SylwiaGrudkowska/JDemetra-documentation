@@ -23,7 +23,7 @@ identified in the last year of the data span.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UDimage26.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage26.jpg)
 
 {: .text-center.small}
 

@@ -12,7 +12,7 @@ The default view of the JDemetra+ window, which is displayed after launching the
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/quick-start/Jd+mainwindow.jpg)
+![Text]({{ site.baseurl }}/assets/img/quick-start/Jd+mainwindow.jpg)
 
 {: .text-center.small}
 
@@ -29,7 +29,7 @@ it can be imported to JDemetra+ as it is shown in the video below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/quick-start/Import_spreadsheet.gif)
+![Text]({{ site.baseurl }}/assets/img/quick-start/Import_spreadsheet.gif)
 
 {: .text-center.small}
 
@@ -53,7 +53,7 @@ and save them. The gif below shows the details of the actions performed in an au
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/quick-start/FirstSAprocess.gif)
+![Text]({{ site.baseurl }}/assets/img/quick-start/FirstSAprocess.gif)
 
 {: .text-center.small}
 
@@ -68,7 +68,7 @@ and the options for the pure seasonal adjustment process are explained under [se
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/quick-start/First-SA-process-specifcation.gif)
+![Text]({{ site.baseurl }}/assets/img/quick-start/First-SA-process-specifcation.gif)
 
 {: .text-center.small}
 
@@ -80,7 +80,7 @@ select the *Output* item from the *SAProcessing* menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/quick-start/output.jpg)
+![Text]({{ site.baseurl }}/assets/img/quick-start/output.jpg)
 
 {: .text-center.small}
 

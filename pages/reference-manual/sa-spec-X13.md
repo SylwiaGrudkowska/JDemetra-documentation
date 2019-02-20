@@ -15,7 +15,7 @@ JDemetra+.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic35.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic35.jpg)
 
 {: .text-center.small}
 
@@ -102,7 +102,7 @@ Time series can be regard as a composition of distinctive components: trend, sea
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d27.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d27.jpg)
 
 {: .text-center.small}
 

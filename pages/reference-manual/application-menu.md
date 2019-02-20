@@ -8,7 +8,7 @@ The default JDemetra+ window, which is displayed after launching the program, is
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d28.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d28.jpg)
 
 {: .text-center.small}
 
@@ -30,7 +30,7 @@ the drop-down menu selects the highlighted item.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref10.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref10.jpg)
 
 {: .text-center.small}
  
@@ -66,7 +66,7 @@ another one containing an autoregressive spectrum (lower panel).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref9.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref9.jpg)
 
 {: .text-center.small}
  

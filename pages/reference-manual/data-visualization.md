@@ -10,7 +10,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage11.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage11.jpeg)
 
 	{: .text-center.small}
 
@@ -22,7 +22,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage12.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage12.jpeg)
 
 	{: .text-center.small}
 
@@ -34,7 +34,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage13.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage13.jpeg)
 
 	{: .text-center.small}
 
@@ -50,7 +50,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage14.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage14.jpeg)
 
 	{: .text-center.small}
 
@@ -61,7 +61,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage15.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage15.jpeg)
 
 	{: .text-center.small}
 
@@ -76,7 +76,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage16.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage16.jpeg)
 
 	{: .text-center.small}
 
@@ -88,7 +88,7 @@ description: Basics
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage17.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage17.jpeg)
 
 	{: .text-center.small}
 

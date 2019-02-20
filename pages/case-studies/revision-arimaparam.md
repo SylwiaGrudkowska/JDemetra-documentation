@@ -22,7 +22,7 @@ coefficients have been updated.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UDimage25.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage25.jpg)
 
 {: .text-center.small}
 

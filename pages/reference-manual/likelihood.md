@@ -16,7 +16,7 @@ The menu offers additional options for adjusting a view.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic18.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic18.jpg)
 
 {: .text-center.small}
 

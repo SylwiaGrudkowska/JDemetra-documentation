@@ -88,7 +88,7 @@ and user-defined regression variables are selected with the
   
    {: .text-center.image-wrapper}
 
-   ![Text](/assets/img/reference-manual/manual/A_Ref_d9.jpg)
+   ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d9.jpg)
 
    {: .text-center.small}
 
@@ -113,7 +113,7 @@ and user-defined regression variables are selected with the
 	
 	{: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d10.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d10.jpg)
 
     {: .text-center.small}
 
@@ -127,7 +127,7 @@ and user-defined regression variables are selected with the
 	
 	{: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d11.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d11.jpg)
 
     {: .text-center.small}
 
@@ -153,7 +153,7 @@ and user-defined regression variables are selected with the
 	 
 	{: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d12.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d12.jpg)
 
     {: .text-center.small}
 
@@ -168,7 +168,7 @@ and user-defined regression variables are selected with the
 
     {: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d13.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d13.jpg)
 
     {: .text-center.small}
 
@@ -183,7 +183,7 @@ and user-defined regression variables are selected with the
   
    {: .text-center.image-wrapper}
 
-   ![Text](/assets/img/reference-manual/manual/A_Ref_d8.jpg)
+   ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d8.jpg)
 
    {: .text-center.small}
 
@@ -203,7 +203,7 @@ and user-defined regression variables are selected with the
    
    {: .text-center.image-wrapper}
 
-   ![Text](/assets/img/reference-manual/manual/A_Ref_d14.jpg)
+   ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d14.jpg)
 
    {: .text-center.small}
 
@@ -223,7 +223,7 @@ and user-defined regression variables are selected with the
   
   {: .text-center.image-wrapper}
 
-  ![Text](/assets/img/reference-manual/manual/A_Ref_d15.jpg)
+  ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d15.jpg)
 
   {: .text-center.small}
 
@@ -287,7 +287,7 @@ and user-defined regression variables are selected with the
 
    {: .text-center.image-wrapper}
 
-   ![Text](/assets/img/reference-manual/manual/A_Ref_d16.jpg)
+   ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d16.jpg)
 
    {: .text-center.small}
 
@@ -302,7 +302,7 @@ and user-defined regression variables are selected with the
 	
     {: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d17.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d17.jpg)
 
     {: .text-center.small}
 
@@ -346,7 +346,7 @@ and user-defined regression variables are selected with the
 	
 	{: .text-center.image-wrapper}
 
-    ![Text](/assets/img/reference-manual/manual/A_Ref_d18.jpg)
+    ![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d18.jpg)
 
     {: .text-center.small}
 
@@ -469,7 +469,7 @@ Also the maximum lag is reduced in comparison with Win X-13.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d19.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d19.jpg)
 
 {: .text-center.small}
 

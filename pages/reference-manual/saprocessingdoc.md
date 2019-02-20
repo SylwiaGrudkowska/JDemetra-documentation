@@ -13,7 +13,7 @@ of the time series in the *SAProcessing* window is marked.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image3_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image3_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -24,7 +24,7 @@ multi-document.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image4_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image4_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -61,7 +61,7 @@ The available options include:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image5_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image5_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -111,7 +111,7 @@ The available options include:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image6_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image6_RMSB.png)
 
 {: .text-center.small}
 
@@ -126,7 +126,7 @@ The available options include:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image7_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image7_RMSB.png)
 
 {: .text-center.small}
 
@@ -138,7 +138,7 @@ menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image8_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image8_RMSB.png)
 
 {: .text-center.small}
 

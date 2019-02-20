@@ -7,7 +7,7 @@ The default view of the JDemetra+ window, which is displayed after launching the
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/quick-start/Jd+mainwindow.jpg)
+![Text]({{ site.baseurl }}/assets/img/quick-start/Jd+mainwindow.jpg)
 
 {: .text-center.small}
 
@@ -31,7 +31,7 @@ We will now focus on the Spreadsheets data source, which corresponds to the seri
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/quick-start/Spreadsheet.jpg)
+![Text]({{ site.baseurl }}/assets/img/quick-start/Spreadsheet.jpg)
 
 {: .text-center.small}
 **Example of an Excel spreadsheet that can be imported to JDemetra+**
@@ -40,7 +40,7 @@ Once the spreadsheet is prepared and saved, it can be imported to JDemetra+ as i
 
 {: .text-center.image-wrapper}
 
-![Alt](/assets/img/quick-start/Import_spreadsheet.gif)
+![Alt]({{ site.baseurl }}/assets/img/quick-start/Import_spreadsheet.gif)
 
 {: .text-center.small}
 

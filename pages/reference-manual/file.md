@@ -16,7 +16,7 @@ The *File* menu is intended for working with [workspaces](workspace.html) and [d
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/File menu.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/File menu.jpg)
 
 {: .text-center.small}
 

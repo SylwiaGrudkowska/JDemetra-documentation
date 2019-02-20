@@ -37,7 +37,7 @@ set to *Auto*); *fct* \> 1 favours levels, *fct* \< 1 favours logs. [This test i
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UG_SA_image37.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image37.jpg)
 
 {: .text-center.small}
 
@@ -68,7 +68,7 @@ model](../reference-manual/modelling-spec-arima.html#transformation).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UG_SA_image38.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image38.jpg)
 
 {: .text-center.small}
 
@@ -91,7 +91,7 @@ in the specifications used for a regular data production.
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image39.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image39.jpg)
 
 	{: .text-center.small}
 
@@ -103,7 +103,7 @@ in the specifications used for a regular data production.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image40.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image40.jpg)
 
 	{: .text-center.small}
 

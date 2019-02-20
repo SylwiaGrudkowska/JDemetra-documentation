@@ -33,7 +33,7 @@ representation of the ACF is called an autocorrelogram.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image20.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image20.png)
 
 {: .text-center.small}
 
@@ -79,7 +79,7 @@ order of the autoregressive process.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image21.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image21.png)
 
 {: .text-center.small}
 

@@ -18,7 +18,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage6.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage6.jpg)
 	
 	{: .text-center.small}
 	
@@ -29,7 +29,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage7.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage7.jpg)
 
 	{: .text-center.small}
 
@@ -46,7 +46,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage8.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage8.jpg)
 
 	{: .text-center.small}
 
@@ -58,7 +58,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage9.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage9.jpg)
 
 	{: .text-center.small}
 
@@ -69,7 +69,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage10.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage10.jpg)
 
 	{: .text-center.small}
 
@@ -93,7 +93,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage11.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage11.jpg)
 
 	{: .text-center.small}
 
@@ -110,7 +110,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage12.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage12.jpg)
 
 	{: .text-center.small}
 
@@ -130,7 +130,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage13.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage13.jpg)
 
 	{: .text-center.small}
 
@@ -141,7 +141,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage14.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage14.jpg)
 
 	{: .text-center.small}
 
@@ -151,7 +151,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage15.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage15.jpg)
 
 	{: .text-center.small}
 
@@ -163,7 +163,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage16.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage16.jpg)
 
 	{: .text-center.small}
 
@@ -175,7 +175,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage17.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage17.jpg)
 
 	{: .text-center.small}
 
@@ -189,7 +189,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage18.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage18.jpg)
 
 	{: .text-center.small}
 	
@@ -199,7 +199,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage19.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage19.jpg)
 
 	{: .text-center.small}
 
@@ -210,7 +210,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage20.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage20.jpg)
 
 	{: .text-center.small}
 

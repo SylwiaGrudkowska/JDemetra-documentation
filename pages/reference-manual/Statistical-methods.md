@@ -12,7 +12,7 @@ The Statistical methods menu includes functionalities for modelling, analysis an
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/Statistical methods menu.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Statistical methods menu.jpg)
 
 {: .text-center.small}
 
@@ -49,7 +49,7 @@ automatically (with several available options) detect outliers.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref13.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref13.jpg)
 
 {: .text-center.small}
 
@@ -72,7 +72,7 @@ the TRAMO specification selected from the list. By default, TR4 is used.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref14.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref14.jpg)
 
 {: .text-center.small}
 
@@ -89,7 +89,7 @@ accordingly to the user's choice.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref15.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref15.jpg)
 
 {: .text-center.small}
 
@@ -103,7 +103,7 @@ marked with the working tools.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref16.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref16.jpg)
 
 {: .text-center.small}
 
@@ -117,7 +117,7 @@ detailed results section using the vertical scrollbar.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref17.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref17.jpg)
 
 {: .text-center.small}
 
@@ -135,7 +135,7 @@ the observation is accepted as "without an error"[^1].
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref18.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref18.jpg)
 
 {: .text-center.small}
 
@@ -147,7 +147,7 @@ Report** button and specify the sorting options.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref19.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref19.jpg)
 
 {: .text-center.small}
 
@@ -157,7 +157,7 @@ To save the report click **OK** and select a destination folder.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref20.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref20.jpg)
 
 {: .text-center.small}
 
@@ -184,7 +184,7 @@ how to use this functionality is given in [the step-by-step demonstration on adv
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref21.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref21.jpg)
 
 {: .text-center.small}
 
@@ -209,7 +209,7 @@ The guidance for using these functionalities is given in the [Case studies](../c
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref22.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref22.jpg)
 
 {: .text-center.small}
 

@@ -27,7 +27,7 @@ The specifications and output for the seasonal adjustment procedure are displaye
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d2.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d2.jpg)
 
 {: .text-center.small}
 

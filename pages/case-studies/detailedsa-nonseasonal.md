@@ -23,7 +23,7 @@ in JDemetra+.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image5.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image5.jpg)
 
 	{: .text-center.small}
 	
@@ -45,7 +45,7 @@ in JDemetra+.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image6.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image6.jpg)
 
 	{: .text-center.small}
 
@@ -63,7 +63,7 @@ in JDemetra+.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image7.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image7.jpg)
 
 	{: .text-center.small}
 	**Seasonality test for the original (transformed) series**
@@ -75,7 +75,7 @@ in JDemetra+.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image8.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image8.jpg)
 
 	{: .text-center.small}
 	**Estimation results for the RegARIMA model**
@@ -89,7 +89,7 @@ in JDemetra+.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image9.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image9.jpg)
 
 	{: .text-center.small}
 	
@@ -104,7 +104,7 @@ in JDemetra+.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image10.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image10.jpg)
 
 	{: .text-center.small}
 	
@@ -117,7 +117,7 @@ in JDemetra+.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image11.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image11.jpg)
 
 	{: .text-center.small}
 	**Decomposition result for a non-seasonal time series - TRAMO-SEATS**
@@ -129,7 +129,7 @@ in JDemetra+.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image12.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image12.jpg)
 
 	{: .text-center.small}
 	**SI ratios for a non-seasonal time series - TRAMO-SEATS**

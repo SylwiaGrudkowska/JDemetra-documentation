@@ -19,7 +19,7 @@ requirements.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage21.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage21.jpg)
 
 	{: .text-center.small}
 
@@ -29,7 +29,7 @@ requirements.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage22.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage22.jpg)
 
 	{: .text-center.small}
 

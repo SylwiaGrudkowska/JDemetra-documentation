@@ -15,7 +15,7 @@ for identifying regression effects in a purely automatic way (i.e. using
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image3.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image3.jpg)
 
 	{: .text-center.small}
  
@@ -33,7 +33,7 @@ for identifying regression effects in a purely automatic way (i.e. using
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image4.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image4.jpg)
 
 	{: .text-center.small}
 	
@@ -48,7 +48,7 @@ for identifying regression effects in a purely automatic way (i.e. using
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image5.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image5.jpg)
 
 	{: .text-center.small}
 
@@ -60,7 +60,7 @@ for identifying regression effects in a purely automatic way (i.e. using
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image6.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image6.jpg)
 
 	{: .text-center.small}
 
@@ -71,7 +71,7 @@ for identifying regression effects in a purely automatic way (i.e. using
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image7.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image7.jpg)
 
 	{: .text-center.small}
 	
@@ -85,7 +85,7 @@ for identifying regression effects in a purely automatic way (i.e. using
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image8.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image8.jpg)
 
 	{: .text-center.small}
 

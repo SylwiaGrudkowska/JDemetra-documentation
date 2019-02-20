@@ -75,7 +75,7 @@ document is created.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image1.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image1.jpg)
 
 	{: .text-center.small}
 
@@ -87,7 +87,7 @@ document is created.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image2.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image2.jpg)
 
 	{: .text-center.small}
 
@@ -102,7 +102,7 @@ document is created.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image3.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image3.jpg)
 
 	{: .text-center.small}
 
@@ -112,7 +112,7 @@ document is created.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image4.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image4.jpg)
 
 	{: .text-center.small}
 

@@ -17,7 +17,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image1.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image1.jpg)
 
 	{: .text-center.small}
 	
@@ -27,7 +27,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image2.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image2.jpg)
 
 	{: .text-center.small}
 
@@ -43,7 +43,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image3.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image3.jpg)
 
 	{: .text-center.small}
 
@@ -62,7 +62,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image4.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image4.jpg)
 
 	{: .text-center.small}
 
@@ -78,7 +78,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image5.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image5.jpg)
 
 	{: .text-center.small}
 
@@ -89,7 +89,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image6.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image6.jpg)
 
 	{: .text-center.small}
 
@@ -100,7 +100,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image7.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image7.jpg)
 
 	{: .text-center.small}
 	
@@ -112,7 +112,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image8.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image8.jpg)
 
 	{: .text-center.small}
 
@@ -127,7 +127,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image9.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image9.jpg)
 
 	{: .text-center.small}
 
@@ -141,7 +141,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image10.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image10.jpg)
 
 	{: .text-center.small}
 
@@ -154,7 +154,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image11.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image11.jpg)
 
 	{: .text-center.small}
 
@@ -166,7 +166,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image12.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image12.jpg)
 
 	{: .text-center.small}
 
@@ -176,7 +176,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image13.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image13.jpg)
 
 	{: .text-center.small}
 
@@ -187,7 +187,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image14.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image14.jpg)
 
 	{: .text-center.small}
 
@@ -197,7 +197,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image15.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image15.jpg)
 
 	{: .text-center.small}
 
@@ -210,7 +210,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image16.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image16.jpg)
 
 	{: .text-center.small}
 
@@ -222,7 +222,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image17.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image17.jpg)
 
 	{: .text-center.small}
 
@@ -239,7 +239,7 @@ detailed explanations are provided when necessary.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image18.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image18.jpg)
 
 	{: .text-center.small}
 

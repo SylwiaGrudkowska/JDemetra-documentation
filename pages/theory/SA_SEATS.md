@@ -205,7 +205,7 @@ established by the real axis and the orthogonal imaginary axis.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image3.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image3.png)
 
 {: .text-center.small}
 
@@ -234,7 +234,7 @@ the black points on the unit circle on the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image4.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image4.png)
 
 {: .text-center.small}
 
@@ -409,7 +409,7 @@ admissible trend.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image5.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image5.png)
 
 {: .text-center.small}
 
@@ -453,7 +453,7 @@ $\frac{2\pi}{6},\ \frac{3\pi}{6},\ \frac{4\pi}{6},\frac{5\pi}{6},\pi$).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image6.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image6.png)
 
 {: .text-center.small}
 
@@ -465,7 +465,7 @@ example figure below, four components were obtained).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image7.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image7.png)
 
 {: .text-center.small}
 
@@ -552,7 +552,7 @@ series illustrated above is shown on the figure below: WK filters for components
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image8.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image8.png)
 
 {: .text-center.small}
 
@@ -597,7 +597,7 @@ presented on the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image9.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image9.png)
 
 {: .text-center.small}
 
@@ -660,7 +660,7 @@ spectrum for trend.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image10.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image10.png)
 
 {: .text-center.small}
 
@@ -679,7 +679,7 @@ analysed in the figure above (Figure: WK filters for stable and stochastic seaso
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image11.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image11.png)
 
 {: .text-center.small}
 
@@ -821,7 +821,7 @@ For the two cases already presented in figure *WK filters for stable and stochas
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image12.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image12.png)
 
 It can be shown that $${\xi}_{- 1},\ldots,\xi_{- j}$$ are convergent and
 $$\xi_{j},\ldots, {\xi}_{1},\xi_{0}$$ are divergent. From \[33\] <!---\[7.57\]-->, the

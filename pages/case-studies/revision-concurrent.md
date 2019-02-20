@@ -23,7 +23,7 @@ not the same in both models.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UG_PCA_image2.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image2.jpg)
 
 {: .text-center.small}
 

@@ -28,7 +28,7 @@ To create a dynamic variable first right-click on the *Variables* node in the *W
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d3.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d3.jpg)
 
 {: .text-center.small}
 
@@ -39,7 +39,7 @@ the tabs under the *Variables* node.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d4.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d4.jpg)
 
 {: .text-center.small}
 
@@ -50,7 +50,7 @@ Drag and drop your external regressors from the *Providers* window to the *Vars-
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d5.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d5.jpg)
 
 {: .text-center.small}
 
@@ -61,7 +61,7 @@ recorded in the *Description* column of the *Variables* window.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d6.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d6.jpg)
 
 {: .text-center.small}
 
@@ -71,7 +71,7 @@ In order to rename the series in the *Variables* window, right click on the seri
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d7.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d7.jpg)
 
 {: .text-center.small}
 
