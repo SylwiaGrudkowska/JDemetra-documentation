@@ -13,7 +13,7 @@ example of the workspace that contains two user defined calendars.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/calendars-example.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/calendars-example.jpg)
 
 {: .text-center.small}
 **The *Calendars* section with the default calendar and two user-defined calendars**

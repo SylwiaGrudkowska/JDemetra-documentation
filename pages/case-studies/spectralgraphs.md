@@ -57,7 +57,7 @@ graph by the peaks on the seasonal frequencies.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/image3_342.jpeg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/image3_342.jpeg)
 
 {: .text-center.small}
 
@@ -69,7 +69,7 @@ graph by the peaks on the seasonal frequencies.
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/image1_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/image1_342.jpeg)
 
 	{: .text-center.small}
 
@@ -82,7 +82,7 @@ graph by the peaks on the seasonal frequencies.
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/image2_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/image2_342.jpeg)
 		
 	{: .text-center.small}
 
@@ -136,7 +136,7 @@ graph by the peaks on the seasonal frequencies.
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/image4_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/image4_342.jpeg)
 
 	{: .text-center.small}
 
@@ -149,7 +149,7 @@ analysis* → *Periodogram* and drag and drop a series from the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/image5_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/image5_342.jpeg)
 
 	{: .text-center.small}
 
@@ -167,7 +167,7 @@ analysis* → *Periodogram* and drag and drop a series from the
 			
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/image6_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/image6_342.jpeg)
 
 	{: .text-center.small}
 
@@ -182,7 +182,7 @@ analysis* → *Periodogram* and drag and drop a series from the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/image7_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/image7_342.jpeg)
 
 	{: .text-center.small}
 
@@ -195,7 +195,7 @@ analysis* → *Periodogram* and drag and drop a series from the
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide//image8_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide//image8_342.jpeg)
 
 	{: .text-center.small}
 
@@ -205,7 +205,7 @@ analysis* → *Periodogram* and drag and drop a series from the
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/image9_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/image9_342.jpeg)
 		
 	{: .text-center.small}
 
@@ -241,7 +241,7 @@ analysis* → *Periodogram* and drag and drop a series from the
 		
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/image10_342.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/image10_342.jpeg)
 
 	{: .text-center.small}
 

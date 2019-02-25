@@ -32,7 +32,7 @@ divided into two parts.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image13.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image13.png)
 
 {: .text-center.small}
 
@@ -223,7 +223,7 @@ decomposition step.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image14.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image14.png)
 
 {: .text-center.small}
 
@@ -245,7 +245,7 @@ algorithm is used as is indicated in the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image15.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image15.png)
 
 {: .text-center.small}
 
@@ -483,7 +483,7 @@ averages.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image16.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image16.png)
 
 {: .text-center.small}
 

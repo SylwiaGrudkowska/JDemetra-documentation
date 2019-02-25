@@ -12,7 +12,7 @@ main *Model* node. The content of this panel depends on the [settings](../refere
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image22_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image22_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -22,7 +22,7 @@ The first part contains fundamental information about the model.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image23_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image23_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -86,7 +86,7 @@ An example of the output is presented in the chart below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image24_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image24_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -116,7 +116,7 @@ significant [^67].
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image25_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image25_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -130,7 +130,7 @@ not displayed as no estimation is done for this parameter.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image26_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image26_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -142,7 +142,7 @@ reported.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image27_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image27_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -154,7 +154,7 @@ a working days effect one regressor is estimated.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image28_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image28_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -167,7 +167,7 @@ not significant the test result is displayed in red.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image29_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image29_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -181,7 +181,7 @@ jointly significant (the F-test statistic is lower than 5%).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image30_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image30_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -195,7 +195,7 @@ effect is not significant.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image31_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image31_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -210,7 +210,7 @@ variable is used.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image32_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image32_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -222,7 +222,7 @@ significant effect on the time series.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image33_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image33_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -234,7 +234,7 @@ coefficient and corresponding t-statistics and p-values.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image34_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image34_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -247,7 +247,7 @@ also enabled, they appear in the same table as other outliers.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image35_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image35_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -258,7 +258,7 @@ displayed in a separate table.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image36_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image36_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -273,7 +273,7 @@ statistics, is shown in a separate table.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image37_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image37_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -284,7 +284,7 @@ under the *Intervention variable(s)* table.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image38_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image38_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -295,7 +295,7 @@ User-defined variables are marked as *Vars-1.x\_1, Vars-1.x\_2*, ...,
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image39_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image39_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -307,7 +307,7 @@ observations[^68].
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image40_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image40_RMSB.jpg)
 
 {: .text-center.small}
 

@@ -12,7 +12,7 @@ functionalities designated to *TramoSeats* documents. To create a
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref59.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref59.jpg)
 
 {: .text-center.small}
 
@@ -24,7 +24,7 @@ active.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref60.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref60.jpg)
 
 {: .text-center.small}
 

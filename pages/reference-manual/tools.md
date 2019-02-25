@@ -29,7 +29,7 @@ The following functionalities are available from the *Tools* menu:
 * [*Options*](#options) – presents the default interface settings and allows for their modification.
 
 {: .text-center.image-wrapper}
-![Text](/assets/img/reference-manual/manual/Tools menu.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Tools menu.jpg)
 
 {: .text-center.small}
 
@@ -41,7 +41,7 @@ The following functionalities are available from the *Tools* menu:
 items are available: *Chart*, *Grid*, *Growth Chart* and *List*.
 
 {: .text-center.image-wrapper}
-![Text](/assets/img/reference-manual/manual/Container tools.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Container tools.jpg)
 
 {: .text-center.small}
 
@@ -58,7 +58,7 @@ graph. The chart is automatically rescaled after adding a new series.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref26.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref26.jpg)
 
 {: .text-center.small}
 
@@ -71,7 +71,7 @@ the results of the estimation procedure.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref27.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref27.jpg)
 
 {: .text-center.small}
 
@@ -82,7 +82,7 @@ local menu, which is displayed after right-clicking on the chart. The
 explanation of the functions available for the local menu is given below.
 
 {: .text-center.image-wrapper}
-![Text](/assets/img/reference-manual/manual/A_Ref28.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref28.jpg)
 
 {: .text-center.small}
 
@@ -94,7 +94,7 @@ right mouse button, the options dedicated to this series are available.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref29.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref29.jpg)
 
 {: .text-center.small}
 
@@ -161,7 +161,7 @@ series can be displayed in one table.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref30.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref30.jpg)
 
 {: .text-center.small}
 
@@ -172,7 +172,7 @@ time series’ observation.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref31.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref31.jpg)
 
 {: .text-center.small}
 
@@ -205,7 +205,7 @@ figure in the [*Container*](#container) section.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref32.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref32.jpg)
 
 {: .text-center.small}
 
@@ -219,7 +219,7 @@ adding a new series.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref33.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref33.jpg)
 
 {: .text-center.small}
 
@@ -251,7 +251,7 @@ explanation of other options can be found below in the '*Local menu options for 
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref34.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref34.jpg)
 
 {: .text-center.small}
 
@@ -263,7 +263,7 @@ below in the '*Local menu options for chart*' figure in the [*Container*](#conta
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref35.jpg) 
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref35.jpg) 
 
 {: .text-center.small}
 
@@ -279,7 +279,7 @@ and [a detailed presentation of the abovementioned tools](../case-studies/spectr
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref36.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref36.jpg)
 
 {: .text-center.small}
 
@@ -308,7 +308,7 @@ panel on the left are the same as the ones available in *Chart* (see
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref37.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref37.jpg)
 
 {: .text-center.small}
 
@@ -326,7 +326,7 @@ periodogram and the PACF function can be found [here](../theory/spectral_periodo
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref38.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref38.jpg)
 
 {: .text-center.small}
 
@@ -340,7 +340,7 @@ below in the "*Local menu options for chart*" figure in the [*Container*](#conta
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref39.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref39.jpg)
 
 {: .text-center.small}
 
@@ -362,7 +362,7 @@ window.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref40.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref40.jpg)
 
 {: .text-center.small}
 
@@ -402,7 +402,7 @@ the *Plugin* functionality activated from the *Tools* menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image22.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image22.png)
 
 {: .text-center.small}
 
@@ -414,7 +414,7 @@ the folder in which the plugins have been saved and click the **OK** button.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image23.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image23.png)
 
 {: .text-center.small}
 
@@ -424,7 +424,7 @@ The new plugin is now visible in the panel.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image24.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image24.png)
 
 {: .text-center.small}
 
@@ -434,7 +434,7 @@ Click on it and choose the **Install** button.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image25.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image25.png)
 
 {: .text-center.small}
 
@@ -446,7 +446,7 @@ the process.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image26.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image26.png)
 
 {: .text-center.small}
 
@@ -456,7 +456,7 @@ Next, mark the terms of agreements and choose **Install**.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image27.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image27.png)
 
 {: .text-center.small}
 
@@ -466,7 +466,7 @@ Then the process is started.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image28.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image28.png)
 
 {: .text-center.small}
 
@@ -477,7 +477,7 @@ close the window.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image29.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image29.png)
 
 {: .text-center.small}
 
@@ -490,7 +490,7 @@ installation of the NbDemetra-ODBC plugin.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image30.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image30.png)
 
 {: .text-center.small}
 
@@ -516,7 +516,7 @@ Inactive plugins can be activated or uninstalled.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image31.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image31.png)
 
 {: .text-center.small}
 
@@ -524,7 +524,7 @@ Inactive plugins can be activated or uninstalled.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image32.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image32.png)
 
 {: .text-center.small}
 
@@ -537,7 +537,7 @@ deactivation.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image33.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image33.png)
 
 {: .text-center.small}
 
@@ -548,7 +548,7 @@ restarted immediately after the uninstallation is completed or not.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image34.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image34.png)
 
 {: .text-center.small}
 
@@ -559,7 +559,7 @@ restart is necessary to complete the process.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image35.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image35.png)
 
 {: .text-center.small}
 
@@ -594,7 +594,7 @@ This list is displayed in the *Installed* panel. This panel is available from th
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image36.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image36.png)
 
 {: .text-center.small}
 
@@ -608,7 +608,7 @@ top of the *Options* window.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref41.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref41.jpg)
 
 {: .text-center.small}
 
@@ -643,7 +643,7 @@ actions performed by the user.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref42.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref42.jpg)
 
 {: .text-center.small}
 
@@ -668,7 +668,7 @@ The *Demetra UI* tab enables the setting of:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref43.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref43.jpg)
 
 {: .text-center.small}
 
@@ -710,7 +710,7 @@ The *Statistics* tab includes options to control:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref44.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref44.jpg)
 
  {: .text-center.small}
   
@@ -730,7 +730,7 @@ and test used in a diagnostic procedure can be found in the [output from modelli
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref45.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref45.jpg)
 
 {: .text-center.small}
 
@@ -743,7 +743,7 @@ of the *Options* panel.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref46.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref46.jpg)
 
 {: .text-center.small}
 
@@ -756,7 +756,7 @@ modifications are introduced, confirm them with the **OK** button.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref47.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref47.jpg)
 
 {: .text-center.small}
 **The content of the *Data Transfer* tab**
@@ -770,7 +770,7 @@ specify the location.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref48.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref48.jpg)
 
 {: .text-center.small}
 
@@ -791,7 +791,7 @@ get time series from remote servers like .Stat.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref49.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref49.jpg)
 
 {: .text-center.small}
 
@@ -803,7 +803,7 @@ additional shortcuts.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref50.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref50.jpg)
 
 {: .text-center.small}
 

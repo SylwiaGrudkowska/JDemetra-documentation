@@ -23,7 +23,7 @@ that the analysis is done in a multi-document.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image19.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image19.jpg)
 
 	{: .text-center.small}
 
@@ -40,7 +40,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image20.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image20.jpg)
 
 	{: .text-center.small}
  
@@ -53,7 +53,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image21.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image21.jpg)
 
 	{: .text-center.small}
 
@@ -80,7 +80,7 @@ datasets with multiple time series**
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image22.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image22.jpg)
 
 	{: .text-center.small}
 
@@ -94,7 +94,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image23.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image23.jpg)
 
 	{: .text-center.small}
 
@@ -107,7 +107,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image24.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image24.jpg)
 
 	{: .text-center.small}
 
@@ -123,7 +123,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image25.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image25.jpg)
 
 	{: .text-center.small}
 
@@ -142,7 +142,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image26.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image26.jpg)
 
 	{: .text-center.small}
 
@@ -153,7 +153,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image27.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image27.jpg)
 
 	{: .text-center.small}
 
@@ -168,7 +168,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image28.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image28.jpg)
 
 	{: .text-center.small}
 
@@ -181,7 +181,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image29.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image29.jpg)
 
 	{: .text-center.small}
 
@@ -191,7 +191,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image30.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image30.jpg)
 
 	{: .text-center.small}
 
@@ -203,7 +203,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image31.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image31.jpg)
 
 	{: .text-center.small}
 
@@ -213,7 +213,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image31_1.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image31_1.jpg)
 
 	{: .text-center.small}
 
@@ -224,7 +224,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image32.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image32.jpg)
 
 	{: .text-center.small}
 
@@ -237,7 +237,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image33.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image33.jpg)
 
 	{: .text-center.small}
 
@@ -250,7 +250,7 @@ datasets with multiple time series**
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image34.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image34.jpg)
 
 	{: .text-center.small}
 

@@ -20,7 +20,7 @@ single time series select *Statistical methods* → *Seasonal Adjustment*
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic24.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic24.jpg)
 
 {: .text-center.small}
 
@@ -37,7 +37,7 @@ For an analysis of a time series dataset select *Statistical methods* →
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic25.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic25.jpg)
 
 {: .text-center.small}
 
@@ -53,7 +53,7 @@ assigned to it.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic26.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic26.jpg)
 
 {: .text-center.small}
 
@@ -66,7 +66,7 @@ from the local menu (right click).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic27.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic27.jpg)
 
 {: .text-center.small}
 
@@ -78,7 +78,7 @@ in the *Workspace\_\#number* tree.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic28.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic28.jpg)
 
 {: .text-center.small}
 
@@ -92,7 +92,7 @@ with X-13ARIMA-SEATS [see **Refresh data** option for the *X13Doc* menu](../refe
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic29.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic29.jpg)
 
 {: .text-center.small}
 
@@ -106,7 +106,7 @@ the series from the *Workspace* window to the document window
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic30.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic30.jpg)
 
 {: .text-center.small}
 
@@ -123,7 +123,7 @@ on the *Start* button (the green arrow marked in the picture below).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic31.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic31.jpg)
 
 {: .text-center.small}
 
@@ -135,7 +135,7 @@ the panel below the list of the series.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic32.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic32.jpg)
 
 {: .text-center.small}
 
@@ -151,7 +151,7 @@ content of the section using the vertical scrollbar.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic33.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic33.jpg)
 
 {: .text-center.small}
 

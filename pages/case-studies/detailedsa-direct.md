@@ -24,7 +24,7 @@ the user[^2]. Guidance in this field is given in the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image5.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image5.jpg)
 
 	{: .text-center.small}
 
@@ -35,7 +35,7 @@ the user[^2]. Guidance in this field is given in the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image6.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image6.jpg)
 
 	{: .text-center.small}
 
@@ -49,7 +49,7 @@ the user[^2]. Guidance in this field is given in the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image7.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image7.jpg)
 
 	{: .text-center.small}
 
@@ -63,7 +63,7 @@ the user[^2]. Guidance in this field is given in the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image8.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image8.jpg)
 
 	{: .text-center.small}
 	
@@ -73,7 +73,7 @@ the user[^2]. Guidance in this field is given in the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image9.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image9.jpg)
 
 	{: .text-center.small}
 
@@ -91,7 +91,7 @@ the user[^2]. Guidance in this field is given in the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image10.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image10.jpg)
 
 	{: .text-center.small}
 
@@ -108,7 +108,7 @@ the user[^2]. Guidance in this field is given in the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image11.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image11.jpg)
 
 	{: .text-center.small}
 
@@ -121,7 +121,7 @@ the user[^2]. Guidance in this field is given in the
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SF_image12.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SF_image12.jpg)
 
 	{: .text-center.small}
 

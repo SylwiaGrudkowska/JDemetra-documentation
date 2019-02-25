@@ -34,7 +34,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image25.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image25.jpg)
 
 	{: .text-center.small}
 	**Creating the dataset for the user-defined variables**
@@ -51,7 +51,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image26.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image26.jpg)
 
 	{: .text-center.small}
 	**Opening the *Vars-1* window**
@@ -67,7 +67,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image27.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image27.jpg)
 
 	{: .text-center.small}
 	**Importing the variables**
@@ -82,7 +82,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image28.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image28.jpg)
 
 	{: .text-center.small}
 	**Investigating the variables dataset**
@@ -97,7 +97,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image29.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image29.jpg)
 
 	{: .text-center.small}
 	**Opening a user-defined specification**
@@ -111,7 +111,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image30.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image30.jpg)
 
 	{: .text-center.small}
 	
@@ -125,7 +125,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image31.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image31.jpg)
 
 	{: .text-center.small}
 	**Opening a dialog box to input the user-defined calendar variables**
@@ -140,7 +140,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image32.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image32.jpg)
 
 	{: .text-center.small}
 	**Choosing the calendar variables**
@@ -155,7 +155,7 @@ in the model.
  
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image33.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image33.jpg)
 
 	{: .text-center.small}
 	**Options for testing procedure to include calendar variables in the model**
@@ -172,7 +172,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image34.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image34.jpg)
 
 	{: .text-center.small}
 	**An extract from the seasonal adjustment output presenting the results for the calendar variables**
@@ -187,7 +187,7 @@ in the model.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image35.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image35.jpg)
 
 	{: .text-center.small}
 	

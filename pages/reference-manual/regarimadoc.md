@@ -13,7 +13,7 @@ select *RegArima* from the *Statistical methods*
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref53.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref53.jpg)
 
 {: .text-center.small}
 
@@ -24,7 +24,7 @@ when a newly created or existing *RegArima* document is active.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref54.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref54.jpg)
 
 {: .text-center.small} 
 

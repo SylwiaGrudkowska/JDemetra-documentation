@@ -23,7 +23,7 @@ directly in the *Forecast* node.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image41_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image41_RMSB.png)
 
 {: .text-center.small}
 
@@ -40,7 +40,7 @@ the another application.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image42_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image42_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -52,7 +52,7 @@ table.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image43_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image43_RMSB.png)
 
 {: .text-center.small}
 
@@ -138,7 +138,7 @@ When a time series is marked, a local menu offers the following options:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image44_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image44_RMSB.png)
 
 {: .text-center.small}
 
@@ -166,7 +166,7 @@ a clear evidence of a model inadequacy.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image45_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image45_RMSB.jpg)
 
 {: .text-center.small}
 

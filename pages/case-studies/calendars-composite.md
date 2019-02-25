@@ -22,7 +22,7 @@ is celebrated only in Saxony.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image33.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image33.jpg)
 
 	{: .text-center.small}
 
@@ -34,7 +34,7 @@ is celebrated only in Saxony.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image34.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image34.jpg)
 
 	{: .text-center.small}
 
@@ -53,7 +53,7 @@ is celebrated only in Saxony.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image35.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image35.jpg)
 
 	{: .text-center.small}
 
@@ -65,7 +65,7 @@ is celebrated only in Saxony.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image36.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image36.jpg)
 
 	{: .text-center.small}
 

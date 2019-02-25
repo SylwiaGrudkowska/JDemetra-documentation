@@ -20,7 +20,7 @@ document's window.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image14_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image14_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -35,7 +35,7 @@ then chose an option *Create document*.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image15_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image15_RMSB.png)
 
 {: .text-center.small}
 
@@ -52,7 +52,7 @@ menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image16_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image16_RMSB.png)
 
 {: .text-center.small}
 
@@ -68,7 +68,7 @@ document belongs to (*tramo* or *regarima*).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image17_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image17_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -80,7 +80,7 @@ the series from the *Workspace* window to the document window](../reference-manu
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image18_RMSB.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image18_RMSB.jpg)
 
 {: .text-center.small}
 
@@ -98,7 +98,7 @@ section using the vertical scrollbar.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image19_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image19_RMSB.png)
 
 {: .text-center.small}
 

@@ -42,7 +42,7 @@ the settings determined with the *Model span*.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UG_SA_image36.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image36.jpg)
 
 {: .text-center.small}
 

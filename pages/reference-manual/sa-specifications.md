@@ -25,7 +25,7 @@ X-13ARIMA-SEATS.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic19.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic19.jpg)
 
 {: .text-center.small}
 
@@ -237,7 +237,7 @@ node and select *New* from the local menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic20.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic20.jpg)
 
 {: .text-center.small}
 
@@ -249,7 +249,7 @@ settings accordingly and confirm with the **OK** button.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic21.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic21.jpg)
 
 {: .text-center.small}
 

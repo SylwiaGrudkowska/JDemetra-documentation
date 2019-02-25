@@ -21,7 +21,7 @@ nbdemetra64.exe for the 64-bit system version).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/quick-start/RunningJDemetra.jpg)
+![Text]({{ site.baseurl }}/assets/img/quick-start/RunningJDemetra.jpg)
 
 {: .text-center.small}
 
@@ -52,7 +52,7 @@ version (*nbdemetra.exe* for the 32-bit system version and
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref1.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref1.jpg)
 
 {: .text-center.small}
 
@@ -64,7 +64,7 @@ To close the application, select *File → Exit* from the [File menu](http://loc
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref2.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref2.jpg)
 
 {: .text-center.small}
 
@@ -78,7 +78,7 @@ it. The message box is shown below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref3.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref3.jpg)
 
 {: .text-center.small}
 

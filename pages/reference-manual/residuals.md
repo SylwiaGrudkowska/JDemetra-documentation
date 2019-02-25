@@ -24,7 +24,7 @@ and export it to the another application.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic05.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic05.jpg)
 
 {: .text-center.small}
 
@@ -34,7 +34,7 @@ The lower part of the panel presents the values of the residuals.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic06.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic06.jpg)
 
 {: .text-center.small}
 
@@ -107,7 +107,7 @@ performance.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic07.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic07.jpg)
 
 {: .text-center.small}
 
@@ -130,7 +130,7 @@ to 2 indicates no sign of autocorrelation.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic08.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic08.jpg)
 
 {: .text-center.small}
 
@@ -153,7 +153,7 @@ the hypothesis that the length of runs is random.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic09.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic09.jpg)
 
 {: .text-center.small}
 
@@ -175,7 +175,7 @@ left in the residuals.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic10.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic10.jpg)
 
 {: .text-center.small}
 
@@ -187,7 +187,7 @@ error of residuals.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic11.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic11.jpg)
 
 {: .text-center.small}
 
@@ -198,7 +198,7 @@ distribution of residuals.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic12.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic12.jpg)
 
 {: .text-center.small}
 
@@ -210,7 +210,7 @@ the Box-Pierce statistics are computed through each lag.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic13.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic13.jpg)
 
 {: .text-center.small}
 
@@ -223,7 +223,7 @@ function of residuals and its standard deviations.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic14.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic14.jpg)
 
 {: .text-center.small}
 
@@ -235,7 +235,7 @@ the next section of the output tree.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic15.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic15.jpg)
 
 {: .text-center.small}
 
@@ -248,7 +248,7 @@ residual autocorrelation structures.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic16.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic16.jpg)
 
 {: .text-center.small}
 
@@ -282,7 +282,7 @@ structure left in the residuals.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic17.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic17.jpg)
 
 {: .text-center.small}
 

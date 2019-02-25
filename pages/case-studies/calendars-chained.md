@@ -19,7 +19,7 @@ calendar by specifying in this case the two calendars and a break date.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image30.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image30.jpg)
 
 	{: .text-center.small}
 
@@ -30,7 +30,7 @@ calendar by specifying in this case the two calendars and a break date.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image31.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image31.jpg)
 
 	{: .text-center.small}
 
@@ -41,7 +41,7 @@ calendar by specifying in this case the two calendars and a break date.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image32.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image32.jpg)
 
 	{: .text-center.small}
 

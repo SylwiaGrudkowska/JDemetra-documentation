@@ -23,7 +23,7 @@ re-identified.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UDimage27.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage27.jpg)
 
 {: .text-center.small}
 

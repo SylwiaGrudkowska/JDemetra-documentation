@@ -14,7 +14,7 @@ time series data to the another application.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic02.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic02.jpg)
 
 {: .text-center.small}
 
@@ -29,7 +29,7 @@ regular AR root (i.e. the solution of the characteristic equation) the
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic03.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic03.jpg)
 
 {: .text-center.small}
 

@@ -14,7 +14,7 @@ JDemetra+.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic22.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic22.jpg)
 
 {: .text-center.small}
 

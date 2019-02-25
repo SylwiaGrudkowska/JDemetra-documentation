@@ -16,7 +16,7 @@ The specifications and output of the modelling procedure are displayed in the [*
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref_d1.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref_d1.jpg)
 
 {: .text-center.small}
 

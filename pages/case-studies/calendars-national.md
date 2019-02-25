@@ -14,7 +14,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image15.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image15.jpg)
 
 	{: .text-center.small}
 
@@ -52,7 +52,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image16.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image16.jpg)
 
 	{: .text-center.small}
 
@@ -64,7 +64,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image17.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image17.jpg)
 
 	{: .text-center.small}
 
@@ -98,7 +98,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image18.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image18.jpg)
 
 	{: .text-center.small}
 
@@ -137,7 +137,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image19.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image19.jpg)
 
 	{: .text-center.small}
 
@@ -171,7 +171,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image20.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image20.jpg)
 
 	{: .text-center.small}
 	
@@ -186,7 +186,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image21.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image21.jpg)
 
 	{: .text-center.small}
 	
@@ -201,7 +201,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image22.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image22.jpg)
 
 	{: .text-center.small}
 
@@ -243,7 +243,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image23.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image23.jpg)
 
 	{: .text-center.small}
 
@@ -257,7 +257,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image24.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image24.jpg)
 
 	{: .text-center.small}
 
@@ -294,7 +294,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image25.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image25.jpg)
 
 	{: .text-center.small}
 
@@ -306,7 +306,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image26.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image26.jpg)
 
 	{: .text-center.small}
 
@@ -317,7 +317,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image27.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image27.jpg)
 
 	{: .text-center.small}
 
@@ -328,7 +328,7 @@ description: Basics
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_CAL_image28.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_CAL_image28.jpg)
 
 	{: .text-center.small}
 

@@ -17,7 +17,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image9.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image9.jpg)
 
 	{: .text-center.small}
 
@@ -27,7 +27,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image10.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image10.jpg)
 
 	{: .text-center.small}
 
@@ -39,7 +39,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image11.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image11.jpg)
 
 	{: .text-center.small}
 
@@ -60,7 +60,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image12.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image12.jpg)
 
 	{: .text-center.small}
 
@@ -72,7 +72,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image13.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image13.jpg)
 
 	{: .text-center.small}
 
@@ -83,7 +83,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image14.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image14.jpg)
 
 	{: .text-center.small}
 
@@ -94,7 +94,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image15.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image15.jpg)
 
 	{: .text-center.small}
 
@@ -106,7 +106,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image16.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image16.jpg)
 
 	{: .text-center.small}
  
@@ -117,7 +117,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image17.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image17.jpg)
 
 	{: .text-center.small}
 
@@ -131,7 +131,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image18.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image18.jpg)
 
 	{: .text-center.small}
 
@@ -142,7 +142,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image19.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image19.jpg)
 
 	{: .text-center.small}
 
@@ -154,7 +154,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image20.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image20.jpg)
 
 	{: .text-center.small}
 
@@ -175,7 +175,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image21.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image21.jpg)
 
 	{: .text-center.small}
 
@@ -186,7 +186,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image22.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image22.jpg)
 
 	{: .text-center.small}
 
@@ -196,7 +196,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image23.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image23.jpg)
 
 	{: .text-center.small}
 
@@ -207,7 +207,7 @@ user can both save and refresh results with updated series.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image24.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image24.jpg)
 
 	{: .text-center.small}
 

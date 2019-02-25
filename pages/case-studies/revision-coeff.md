@@ -20,7 +20,7 @@ the revised model (the parameters of the ARIMA model are not estimated.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UDimage24.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage24.jpg)
 
 {: .text-center.small}
 

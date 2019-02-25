@@ -25,7 +25,7 @@ the left-hand side seasonal adjustment results panel.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage38.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage38.png)
 
 {: .text-center.small}
 
@@ -55,7 +55,7 @@ found in the *Pre-processing* node.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage39.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage39.png)
 
 {: .text-center.small}
 
@@ -73,7 +73,7 @@ is above one, the test fails and the statistic is displayed in red.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage40.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage40.png)
 
 {: .text-center.small}
 
@@ -110,7 +110,7 @@ As an example the view of the D-table group is presented below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage41.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage41.png)
 
 {: .text-center.small}
 
@@ -121,7 +121,7 @@ table view select the *Single time series* option from the local menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage42.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage42.png)
 
 {: .text-center.small}
 
@@ -132,7 +132,7 @@ the table, and choose table’s name.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage43.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage43.png)
 
 {: .text-center.small}
 
@@ -153,7 +153,7 @@ component and of the seasonal. In the case of user-defined seasonal adjustment s
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage44.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage44.png)
 
 {: .text-center.small}
 
@@ -167,7 +167,7 @@ filters can be checked in the *Specification* panel in the *X11* **→**
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage45.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage45.png)
 
 {: .text-center.small}
 
@@ -188,7 +188,7 @@ displayed in red indicate that the test failed.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage46.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage46.png)
 
 {: .text-center.small}
 
@@ -324,7 +324,7 @@ component.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage48.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage48.png)
 
 {: .text-center.small}
 
@@ -380,7 +380,7 @@ holds.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage49.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage49.png)
 
 {: .text-center.small}
 
@@ -395,7 +395,7 @@ deviations.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage50.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage50.png)
 
 {: .text-center.small}
 
@@ -409,7 +409,7 @@ trend and for the irregular component.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage51.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage51.png)
 
 {: .text-center.small}
 
@@ -420,7 +420,7 @@ presented in Table F2E, are computed on a basis of the data in Table F2A.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage52.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage52.png)
 
 {: .text-center.small}
 
@@ -435,7 +435,7 @@ of the calculation method is given in LADIRAY, D., and QUENNEVILLE, B.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage53.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage53.png)
 
 {: .text-center.small}
 
@@ -454,7 +454,7 @@ where \\(N\\) is number of observations in the time series and
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage54.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage54.png)
 
 {: .text-center.small}
 
@@ -472,7 +472,7 @@ will be computed separately for each period (in case the option
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage55.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage55.png)
 
 {: .text-center.small}
 
@@ -507,7 +507,7 @@ suitable given the noisiness of the series.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage56.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage56.png)
 
 {: .text-center.small}
 

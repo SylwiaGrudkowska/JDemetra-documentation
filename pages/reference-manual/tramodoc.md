@@ -12,7 +12,7 @@ to *Tramo* documents. To create a *Tramo* document select *Tramo* from
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref57.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref57.jpg)
 
 {: .text-center.small}
 
@@ -23,7 +23,7 @@ newly created or existing *Tramo* document is active.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref58.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref58.jpg)
 
 {: .text-center.small}
 

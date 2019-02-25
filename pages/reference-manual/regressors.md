@@ -15,7 +15,7 @@ the top-left empty cell and use the standard *Ctrl+C* shortcut.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic01.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic01.jpg)
 
 {: .text-center.small}
 

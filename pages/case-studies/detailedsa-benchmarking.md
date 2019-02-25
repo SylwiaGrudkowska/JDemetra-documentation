@@ -47,7 +47,7 @@ stronger.
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage1.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage1.jpg)
 
 	{: .text-center.small}
 
@@ -74,7 +74,7 @@ stronger.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage2.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage2.jpg)
 
 	{: .text-center.small}
 
@@ -85,7 +85,7 @@ stronger.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage3.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage3.jpg)
 
 	{: .text-center.small}
 
@@ -98,7 +98,7 @@ stronger.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image28.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image28.jpg)
 
 	{: .text-center.small}
 
@@ -111,7 +111,7 @@ stronger.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SSA_image29.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SSA_image29.jpg)
 
 	{: .text-center.small}
 
@@ -122,7 +122,7 @@ stronger.
 
 	{: .text-center.image-wrapper}
  
-	![Text](/assets/img/user-guide/UDimage4.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage4.jpg)
 
 	{: .text-center.small}
 

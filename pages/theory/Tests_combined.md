@@ -17,7 +17,7 @@ procedure is shown in the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image18.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image18.png)
 
 {: .text-center.small}
 

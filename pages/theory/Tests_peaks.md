@@ -79,7 +79,7 @@ cycles per year $\text{ω}_{40} = \frac{2}{3}\pi = 2.0944$.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/annex/UG_A_image19.png)
+![Text]({{ site.baseurl }}/assets/img/annex/UG_A_image19.png)
 
 {: .text-center.small}
 

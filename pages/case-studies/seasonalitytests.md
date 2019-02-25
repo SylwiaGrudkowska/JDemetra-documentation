@@ -24,7 +24,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UG_PCA_image25.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image25.jpg)
 
 {: .text-center.small}
 
@@ -37,7 +37,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image26.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image26.jpg)
 
 	{: .text-center.small}
 
@@ -48,7 +48,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image27.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image27.jpg)
 
 	{: .text-center.small}
 
@@ -60,7 +60,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image28.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image28.jpg)
 
 	{: .text-center.small}
 
@@ -71,7 +71,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image29.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image29.jpg)
 
 	{: .text-center.small}
 
@@ -88,7 +88,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image30.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image30.jpg)
 
 	{: .text-center.small}
 
@@ -110,7 +110,7 @@ Go to the main menu and follow the path: *Statistical methods* →
  
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image31.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image31.jpg)
 
 	{: .text-center.small}
 
@@ -130,7 +130,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image32.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image32.jpg)
 
 	{: .text-center.small}
 
@@ -148,7 +148,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image33.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image33.jpg)
 
 	{: .text-center.small}
 
@@ -164,7 +164,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image34.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image34.jpg)
 
 	{: .text-center.small}
 
@@ -203,7 +203,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image35.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image35.jpg)
 
 	{: .text-center.small}
 
@@ -219,7 +219,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image36.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image36.jpg)
 
 	{: .text-center.small}
 
@@ -237,7 +237,7 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image37.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image37.jpg)
 
 	{: .text-center.small}
 
@@ -253,6 +253,6 @@ Go to the main menu and follow the path: *Statistical methods* →
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_PCA_image38.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_PCA_image38.jpg)
 
 	{: .text-center.small}

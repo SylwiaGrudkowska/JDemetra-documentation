@@ -10,7 +10,7 @@ to generate the output presented in the *Model* section.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image20_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image20_RMSB.png)
 
 {: .text-center.small}
 
@@ -21,7 +21,7 @@ display the local menu, point any value in the table and right click.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image21_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image21_RMSB.png)
 
 {: .text-center.small}
 

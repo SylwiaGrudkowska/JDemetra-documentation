@@ -9,7 +9,7 @@ The *Providers* window presents the list of the data sources and organises the i
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref5.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref5.jpg)
 
 {: .text-center.small}
 **The *Providers* window**
@@ -44,7 +44,7 @@ sheets’ names.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref6.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref6.jpg)
 
 {: .text-center.small}
 
@@ -71,7 +71,7 @@ An example is presented below:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/Aimage5.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage5.jpg)
 
 {: .text-center.small}
 
@@ -95,7 +95,7 @@ the data from an Excel file.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage6.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage6.jpeg)
 
 	{: .text-center.small}
 
@@ -131,7 +131,7 @@ the data from an Excel file.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage7.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage7.jpeg)
 
 	{: .text-center.small}
 
@@ -141,7 +141,7 @@ the data from an Excel file.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage8.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage8.jpeg)
 
 	{: .text-center.small}
 
@@ -155,7 +155,7 @@ the data from an Excel file.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage9.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage9.jpeg)
 
 	{: .text-center.small}
 
@@ -165,7 +165,7 @@ the data from an Excel file.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/reference-manual/manual/Aimage10.jpeg)
+	![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/Aimage10.jpeg)
 
 	{: .text-center.small}
 

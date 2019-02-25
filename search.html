@@ -1,0 +1,20 @@
+---
+layout: default
+title: Search the documentation
+---
+
+<input class="form-control" id="search-input" type="text" placeholder="Search...">
+<br>
+<div class="span8" id="results-container"></div>
+
+<!-- script pointing to jekyll-search.js -->
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+<script>
+	var sjs = SimpleJekyllSearch({
+	  searchInput: document.getElementById('search-input'),
+	  resultsContainer: document.getElementById('results-container'),
+	  json: '{{ site.baseurl }}/search.json',
+	  searchResultTemplate: `<h4><a href="{url}">{title}</a></h4><p>{short} <a class="badge badge-primary" href="{url}">Read more →</a></p><hr>`,
+	  limit: 20
+	})
+</script>

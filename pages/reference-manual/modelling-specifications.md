@@ -73,7 +73,7 @@ The possible options are described in the [Tramo](../reference-manual/modelling-
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/image9_RMSB.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/image9_RMSB.png)
 
 {: .text-center.small}
 

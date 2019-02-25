@@ -15,7 +15,7 @@ side seasonal adjustment results panel.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic34.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic34.jpg)
 
 {: .text-center.small}
 
@@ -34,7 +34,7 @@ perform the decomposition due to an insufficient number of observations.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic35.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic35.jpg)
 
 {: .text-center.small}
 
@@ -49,7 +49,7 @@ perform the decomposition.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic36.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic36.jpg)
 
 {: .text-center.small}
 
@@ -63,7 +63,7 @@ displays the following warning.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic37.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic37.jpg)
 
 {: .text-center.small}
 
@@ -79,7 +79,7 @@ effects. This is discussed in detail in the [Model summary](../reference-manual/
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic38.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic38.jpg)
 
 {: .text-center.small}
 
@@ -196,7 +196,7 @@ noise as possible.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic39.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic39.jpg)
 
 {: .text-center.small}
 
@@ -211,7 +211,7 @@ trend.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic40.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic40.jpg)
 
 {: .text-center.small}
 
@@ -248,7 +248,7 @@ The panel on the right shows the SI ratios.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic41.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic41.jpg)
 
 {: .text-center.small}
 
@@ -262,7 +262,7 @@ for the next year for each of these series.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic42.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic42.jpg)
 
 {: .text-center.small}
 
@@ -281,7 +281,7 @@ one (for the multiplicative model).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic43.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic43.jpg)
 
 {: .text-center.small}
 
@@ -318,7 +318,7 @@ forecasts are presented in the bottom part of the table.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic44.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic44.jpg)
 
 {: .text-center.small}
 
@@ -334,7 +334,7 @@ seasonal factor for each period.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic45.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic45.jpg)
 
 {: .text-center.small}
 
@@ -394,7 +394,7 @@ model for the trend is: ARIMA(1,2,3)(0,0,0) with an innovation variance
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic46.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic46.jpg)
 
 {: .text-center.small}
 
@@ -413,7 +413,7 @@ one from the TRAMO model and one from the SEATS model.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic47.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic47.jpg)
 
 {: .text-center.small}
 
@@ -425,7 +425,7 @@ displayed for the model identified by SEATS.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic48.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic48.jpg)
 
 {: .text-center.small}
 
@@ -473,7 +473,7 @@ in the bottom part of the table.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic49.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic49.jpg)
 
 {: .text-center.small}
 
@@ -492,7 +492,7 @@ trend and for the seasonal component, as illustrated on the figures below, respe
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic50.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic50.jpg)
 
 {: .text-center.small}
 
@@ -500,7 +500,7 @@ trend and for the seasonal component, as illustrated on the figures below, respe
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic51.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic51.jpg)
 
 {: .text-center.small}
 
@@ -514,7 +514,7 @@ an abbreviation from *component.*
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic52.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic52.jpg)
 
 {: .text-center.small}
 
@@ -569,7 +569,7 @@ in the transitory component is an evidence of a trading day effect.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic53.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic53.jpg)
 
 {: .text-center.small}
 
@@ -583,7 +583,7 @@ but on the ARIMA model).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic54.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic54.jpg)
 
 {: .text-center.small}
 
@@ -644,7 +644,7 @@ component estimator spectrum (blue lines).[^18]
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic55.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic55.jpg)
 
 {: .text-center.small}
 
@@ -683,7 +683,7 @@ more deterministic than the previous one.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic56.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic56.jpg)
 
 {: .text-center.small}
 
@@ -691,7 +691,7 @@ more deterministic than the previous one.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic57.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic57.jpg)
 
 {: .text-center.small}
 
@@ -728,7 +728,7 @@ component.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic58.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic58.jpg)
 
 {: .text-center.small}
 
@@ -763,7 +763,7 @@ errors.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic59.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic59.jpg)
 
 {: .text-center.small}
 
@@ -819,7 +819,7 @@ innovations of the linearized series and 27% for the trend
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic60.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic60.jpg)
 
 {: .text-center.small}
 
@@ -828,7 +828,7 @@ series – the case of deterministic seasonal pattern**
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic61.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic61.jpg)
 
 {: .text-center.small}
 
@@ -868,7 +868,7 @@ converge slowly[^42].
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic62.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic62.jpg)
 {: .text-center.small}
 
 **Revision errors analysis up to five years of observations**
@@ -881,7 +881,7 @@ swiftly.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic63.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic63.jpg)
 
 {: .text-center.small}
 
@@ -919,7 +919,7 @@ from this point onwards).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic64.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic64.jpg)
 
 {: .text-center.small}
 
@@ -934,7 +934,7 @@ is close to zero).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RM_C_pic65.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RM_C_pic65.jpg)
 
 {: .text-center.small}
 
@@ -1056,7 +1056,7 @@ empirical (actually obtained) estimates (*Estimate*).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage3.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage3.png)
 
 {: .text-center.small}
 
@@ -1151,7 +1151,7 @@ Examples of the ACF function for the components are presented below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage4.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage4.png)
 
 {: .text-center.small}
 
@@ -1159,7 +1159,7 @@ Examples of the ACF function for the components are presented below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage5.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage5.png)
 
 {: .text-center.small}
 
@@ -1168,7 +1168,7 @@ seasonally adjusted series, the estimators and the sample estimates**
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage6.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage6.png)
 
 {: .text-center.small}
 **Autocorrelations of the stationary transformation of the
@@ -1197,7 +1197,7 @@ non-zero (the *Component* column).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage7.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage7.png)
 
 {: .text-center.small}
 
@@ -1231,7 +1231,7 @@ correlations differ from their theoretical values.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage8.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage8.png)
 
 {: .text-center.small}
 
@@ -1258,7 +1258,7 @@ for the first year of forecasts.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage9.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage9.png)
 
 {: .text-center.small}
 
@@ -1277,7 +1277,7 @@ the results from both methods.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage10.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage10.png)
 
 {: .text-center.small}
 
@@ -1297,7 +1297,7 @@ it, click on the *Specifications* button, and then activate the checkbox
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage11.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage11.png)
 
 {: .text-center.small}
 
@@ -1350,7 +1350,7 @@ additional validation of the results by the user is recommended.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage12.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage12.png)
 
 {: .text-center.small}
 
@@ -1382,7 +1382,7 @@ The *basic checks* section includes two quality diagnostics:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage13.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage13.png)
 
 {: .text-center.small}
 
@@ -1486,7 +1486,7 @@ messages are nearly always very similar.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage14.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage14.png)
 
 {: .text-center.small}
 
@@ -1552,7 +1552,7 @@ this test can be modified in the **Tools**
 \\(\mathbf{\rightarrow}\ \\) **Statistics** section (see *Tools* in the [Options](../reference-manual/tools.html) section).
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage17.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage17.png)
 
 {: .text-center.small}
 
@@ -1564,7 +1564,7 @@ tests are discussed in the **Model-based tests** section above.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage18.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage18.png)
 
 {: .text-center.small}
 
@@ -1579,7 +1579,7 @@ adjusted series and on the irregular component.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage19.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage19.png)
 
 {: .text-center.small}
 
@@ -1607,7 +1607,7 @@ there is a significant trading days effect.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage20.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage20.png)
 
 {: .text-center.small}
 
@@ -1697,7 +1697,7 @@ other applications, e.g. Excel.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage21.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage21.png)
 
 {: .text-center.small}
 
@@ -1797,7 +1797,7 @@ a cycle per month or less.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage23.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage23.png)
 
 {: .text-center.small}
 
@@ -1811,7 +1811,7 @@ variance and is less stable than the autoregressive spectrum[^27].
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage24.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage24.png)
 
 {: .text-center.small}
 
@@ -1842,7 +1842,7 @@ intervals.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage25.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage25.png)
 
 {: .text-center.small}
 
@@ -1861,7 +1861,7 @@ series. For the description of the seasonality tests see [here](../theory/Tests_
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage26.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage26.png)
 
 {: .text-center.small}
 
@@ -1873,7 +1873,7 @@ characteristic of the seasonal fluctuations.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage27.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage27.png)
 
 {: .text-center.small}
 
@@ -1907,7 +1907,7 @@ regarded as unstable if this statistic is greater than 3%.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage28.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage28.png)
 
 {: .text-center.small}
 
@@ -1923,7 +1923,7 @@ are in this interval.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage29.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage29.png)
 
 {: .text-center.small}
 
@@ -1956,7 +1956,7 @@ period was 2.0.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage30.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage30.png)
 
 {: .text-center.small}
 
@@ -1972,7 +1972,7 @@ further and decide wether to reduce the time series span.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage31.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage31.png)
 
 {: .text-center.small}
 
@@ -2011,7 +2011,7 @@ series shorter than 62 observations (monthly series) or 22 observations
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage32.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage32.png)
 
 {: .text-center.small}
 
@@ -2029,7 +2029,7 @@ available for the trend analysis.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage33.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage33.png)
 
 {: .text-center.small}
 
@@ -2060,7 +2060,7 @@ as the mean.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage34.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage34.png)
 
 {: .text-center.small}
 
@@ -2091,7 +2091,7 @@ effects is included in the TRAMO model.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage35.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage35.png)
 
 {: .text-center.small}
 
@@ -2106,7 +2106,7 @@ effect.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage36.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage36.png)
 
 {: .text-center.small}
 
@@ -2118,7 +2118,7 @@ estimations.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage37.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage37.png)
 
 {: .text-center.small}
 
@@ -2142,7 +2142,7 @@ activated from the main menu.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage57.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage57.png)
 
 {: .text-center.small}
 
@@ -2155,7 +2155,7 @@ expected to specify the seasonal adjustment specification in the
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage58.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage58.png)
 
 {: .text-center.small}
 
@@ -2186,7 +2186,7 @@ the seasonal adjustment process, are presented [here](../case-studies/simplesa-m
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage59.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage59.png)
 
 {: .text-center.small}
 
@@ -2206,7 +2206,7 @@ seasonally adjusted with the X-13ARIMA-SEATS method.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage60.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage60.png)
 
 {: .text-center.small}
 
@@ -2217,7 +2217,7 @@ the matrix output of TSW+ (TRAMO-SEATS for the Windows program).
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/RDimage61.png)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/RDimage61.png)
 
 {: .text-center.small}
 

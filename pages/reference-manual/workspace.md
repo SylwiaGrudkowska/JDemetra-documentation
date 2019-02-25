@@ -32,7 +32,7 @@ An example of the workspace is shown in the figure below.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref7.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref7.jpg)
 
 {: .text-center.small}
 **A workspace saved on PC**
@@ -49,7 +49,7 @@ The content of the workspace is presented in the
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/A_Ref8.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/A_Ref8.jpg)
 
 {: .text-center.small}
 

@@ -20,7 +20,7 @@ effects are identified.
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/user-guide/UDimage23.jpg)
+![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage23.jpg)
 
 {: .text-center.small}
 

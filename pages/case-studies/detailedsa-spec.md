@@ -19,7 +19,7 @@ changing some settings in the specification currently in use.
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image1.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image1.jpg)
 
 	{: .text-center.small}
 
@@ -57,7 +57,7 @@ changing some settings in the specification currently in use.
  
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image2.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image2.jpg)
 
 	{: .text-center.small}
 	
@@ -71,7 +71,7 @@ changing some settings in the specification currently in use.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image3.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image3.jpg)
 
 	{: .text-center.small}
 	**Modifying a new specification**
@@ -89,7 +89,7 @@ changing some settings in the specification currently in use.
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image4.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image4.jpg)
 
 	{: .text-center.small}
 	

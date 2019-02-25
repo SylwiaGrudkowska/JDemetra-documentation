@@ -18,7 +18,7 @@ It offers the following items:
 
 {: .text-center.image-wrapper}
 
-![Text](/assets/img/reference-manual/manual/View menu.jpg)
+![Text]({{ site.baseurl }}/assets/img/reference-manual/manual/View menu.jpg)
 
 {: .text-center.small}
 

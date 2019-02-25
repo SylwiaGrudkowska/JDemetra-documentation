@@ -61,7 +61,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image13.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image13.jpg)
 
 	{: .text-center.small}
 	
@@ -74,7 +74,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image14.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image14.jpg)
 
 	{: .text-center.small}
 
@@ -86,7 +86,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image15.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image15.jpg)
 
 	{: .text-center.small}
 
@@ -97,7 +97,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image16.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image16.jpg)
 
 	{: .text-center.small}
 
@@ -110,7 +110,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image17.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image17.jpg)
 
 	{: .text-center.small}
 
@@ -121,7 +121,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image18.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image18.jpg)
 
 	{: .text-center.small}
 
@@ -133,7 +133,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image19.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image19.jpg)
 
 	{: .text-center.small}
 
@@ -146,7 +146,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 	
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image20.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image20.jpg)
 
 	{: .text-center.small}
 
@@ -160,7 +160,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image21.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image21.jpg)
 
 	{: .text-center.small}
 
@@ -175,7 +175,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image22.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image22.jpg)
 
 	{: .text-center.small}
 
@@ -187,7 +187,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image23.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image23.jpg)
 
 	{: .text-center.small}
 
@@ -198,7 +198,7 @@ The formulas that describe outliers are given [here](../theory/SA_lin.html).
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UG_SA_image24.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UG_SA_image24.jpg)
 
 	{: .text-center.small}
 	

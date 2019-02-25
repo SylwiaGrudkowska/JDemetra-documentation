@@ -72,7 +72,7 @@ options:
 
 	{: .text-center.image-wrapper}
 
-	![Text](/assets/img/user-guide/UDimage5.jpg)
+	![Text]({{ site.baseurl }}/assets/img/user-guide/UDimage5.jpg)
 
 	{: .text-center.small}
 
