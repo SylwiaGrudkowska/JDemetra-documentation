@@ -4,6 +4,7 @@ title: Friedman test (stable seasonality test)
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Basics
 ---
+####  Overview
 
 The Friedman test is a non-parametric method for testing that samples are drawn from the same population or from populations with equal medians. 
 The significance of the month (or quarter) effect is tested. The Friedman test requires no distributional assumptions. It uses the rankings of the observations. 
@@ -31,17 +32,23 @@ Under the hypothesis of no seasonality, all months can be equally treated. For t
 For large $$ n $$ or $$ k $$ , i.e. n > 15 or k > 4, the probability distribution of $$ Q $$ can be approximated by that of 
 a chi-squared distribution. Thus, the p-value is given by $$ P( \chi^2_{k-1}>Q) $$ . 
 
+
+####  Use
+
+The test can be applied directly to any series by selecting the 
+option *Statistical Methods >> Seasonal Adjustment >> Tools >> Seasonality Tests*. This is
+an example of how results are displayed for the case of a monthly series:
+
+ 
+![friedman]({{ site.baseurl }}/assets/img/theory/friedman.png)
+
 If the null hypothesis of no stable seasonality is rejected at the 1% significance level, then the series is
 considered to be seasonal and the outcome of the test is displayed in green. 
 
-The test can be applied to any series by selecting the 
-option *Statistical Methods >> Seasonal Adjustment >> Tools >> Seasonality Tests*. This is
-an example of how results are displayed for the case of a monthly series:
-![friedman]({{ site.baseurl }}/assets/img/theory/friedman.png)
-
-
-This test is also used to detect residual seasonality. In this case, the test uses the preliminary estimate 
-of the unmodified Seasonal-Irregular component[^82] (for X-13ARIMA-SEATS this time series is shown
+The test can be applied to the input series before any seasonal adjustment method has been 
+applied. It can also be applied to the seasonally adjusted series or to the irreguar component. In the case of
+X-13ARIMA-SEATS, the test is applied to the preliminary estimate 
+of the unmodified Seasonal-Irregular component[^82] (time series shown
 in Table B3). In this estimate, the number of observations is lower than
 in the final estimate of the unmodified Seasonal-Irregular component.
 Thus, the number of degrees of freedom in the stable
@@ -62,6 +69,12 @@ the calculation of the preliminary estimation of the unmodified Seasonal-Irregul
 - 	When using this kind of design for a binary response, one instead uses the Cochran's Q test.
 - 	Kendall's W is a normalization of the Friedman statistic between 0 and 1.
 - 	The Wilcoxon signed-rank test is a nonparametric test of non-independent data from only two groups.
+
+
+#### Implementation
+
+This test is implemented in the class `ec.satoolkit.diagnostics.FriedmanTest`
+
 
 
 ####  References
