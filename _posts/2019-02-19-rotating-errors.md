@@ -7,7 +7,7 @@ tags: [rotating panels, R, states space models, rjssf]
  
 
 
-Here, we show how to specify the complex structure of the measurement errors that may appear in surveys with a rotating panel design. Here, 
+Here, we show how to specify the complex structure of the measurement errors that may appear in surveys with a rotating panel design. 
 I briefly describe the model for the errors proposed by ELLIOTT, D. (2017), and I will show you how to specify it with the R package ```rjssf```, which exploits the Java libraries defining the state-space 
 framework (SSF) of JDemetra+. A completely unrelated SSF application regarding a structural model to forecast inflation can be 
 found [here]({{site.baseurl}}/2019/03/12/inflation-forecasting.html)
