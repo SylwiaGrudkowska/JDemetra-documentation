@@ -380,15 +380,13 @@ Let me show the code required to generate this graph (using ```ggplot```)
 library(ggplot2)
 library(reshape2)
 
-outputGap <- ts(result(rsltX_final, cycle)*scale, start=c(1995, 1), end=c(2020, 12), frequency=4)
-outputGapL <- ts(result(rsltX_final, cycle)*scale+2*sqrt(result(rsltX_final, vCycle))*scale, start=c(1995, 1), end=c(2020, 12), frequency=4)
-outputGapU <- ts(result(rsltX_final, cycle)*scale-2*sqrt(result(rsltX_final, vCycle))*scale, start=c(1995, 1), end=c(2020, 12), frequency=4)
+outputGap <- ts(result(rsltX_final, cycle)*scale, start=c(1995, 1), end=c(2020, 4), frequency=4)
+outputGapL <- ts(result(rsltX_final, cycle)*scale+2*sqrt(result(rsltX_final, vCycle))*scale, start=c(1995, 1), end=c(2020, 4), frequency=4)
+outputGapU <- ts(result(rsltX_final, cycle)*scale-2*sqrt(result(rsltX_final, vCycle))*scale, start=c(1995, 1), end=c(2020, 4), frequency=4)
 
 outputGap_<-data.frame(date=time(outputGap),Y=as.matrix(outputGap) )
 outputGap_L<-data.frame(date=time(outputGapL),Y=as.matrix(outputGapL) )
 outputGap_U<-data.frame(date=time(outputGapU),Y=as.matrix(outputGapU) )
-
-ggplot(outputGap_, aes(date, Y)) + geom_line()  + xlab("") + ylab("Output Gap")
 
 
 ggplot() +
