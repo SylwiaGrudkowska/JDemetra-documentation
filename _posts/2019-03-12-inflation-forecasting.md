@@ -372,7 +372,7 @@ the ```rjssf``` framework  are:
 One can also look at the unobserved components themselves. The picture below represents the smoothed value of $$\textcolor{blue}{\delta_{t}}$$ conditional
 con the estimated parameters, and a 95$\%$ confidence interval given by the smoothed variance.
 
-![Output gap]({{site.baseurl}}/assets/img/blog/gap.png)
+![Output gap]({{site.baseurl}}/assets/img/blog/LargeUnconstrained_GAP_Original.png)
 
 Let me show the code required to generate this graph (using ```ggplot```)
 
