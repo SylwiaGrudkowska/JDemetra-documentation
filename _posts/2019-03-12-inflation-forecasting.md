@@ -372,7 +372,7 @@ the ```rjssf``` framework  are:
 One can also look at the unobserved components themselves. The picture below represents the smoothed value of $$\textcolor{blue}{\delta_{t}}$$ conditional
 con the estimated parameters, and a 95$\%$ confidence interval given by the smoothed variance.
 
-![Output gap]({{site.baseurl}}/assets/img/blog/gap.png)
+![Output gap]({{site.baseurl}}/assets/img/blog/LargeUnconstrained_GAP_Original.png)
 
 Let me show the code required to generate this graph (using ```ggplot```)
 
@@ -380,15 +380,13 @@ Let me show the code required to generate this graph (using ```ggplot```)
 library(ggplot2)
 library(reshape2)
 
-outputGap <- ts(result(rsltX_final, cycle)*scale, start=c(1995, 1), end=c(2020, 12), frequency=4)
-outputGapL <- ts(result(rsltX_final, cycle)*scale+2*sqrt(result(rsltX_final, vCycle))*scale, start=c(1995, 1), end=c(2020, 12), frequency=4)
-outputGapU <- ts(result(rsltX_final, cycle)*scale-2*sqrt(result(rsltX_final, vCycle))*scale, start=c(1995, 1), end=c(2020, 12), frequency=4)
+outputGap <- ts(result(rsltX_final, cycle)*scale, start=c(1995, 1), end=c(2020, 4), frequency=4)
+outputGapL <- ts(result(rsltX_final, cycle)*scale+2*sqrt(result(rsltX_final, vCycle))*scale, start=c(1995, 1), end=c(2020, 4), frequency=4)
+outputGapU <- ts(result(rsltX_final, cycle)*scale-2*sqrt(result(rsltX_final, vCycle))*scale, start=c(1995, 1), end=c(2020, 4), frequency=4)
 
 outputGap_<-data.frame(date=time(outputGap),Y=as.matrix(outputGap) )
 outputGap_L<-data.frame(date=time(outputGapL),Y=as.matrix(outputGapL) )
 outputGap_U<-data.frame(date=time(outputGapU),Y=as.matrix(outputGapU) )
-
-ggplot(outputGap_, aes(date, Y)) + geom_line()  + xlab("") + ylab("Output Gap")
 
 
 ggplot() +
